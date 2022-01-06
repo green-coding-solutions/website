@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+  <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+  <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{ with  .OutputFormats.Get "css" }}
+    <link rel="stylesheet" href="{{.Permalink}}"  />
+{{ end }}
+
+<!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css">
+<![endif]-->
+
+  {{ if eq (.Params.Noindex) true }}
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  {{ else }}
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  {{ end }}
+
+    {{ partial "site-style.html" . }}
+    {{ partial "site-scripts.html" . }}
+
+    {{ block "favicon" . }}
+      {{ partialCached "site-favicon.html" . }}
+    {{ end }}
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="header" class="parentContainer container">
+        <div class="header-container">
+            <a href="/"><div class="content-logo">
+                <div class="logo"></div>
+                <div class="company-name">green <span>coding;</span></div>
+            </div></a>
+            {{ block "site-navigation" . }}{{ partial "site-navigation.html" .}}{{ end }}
+        </div>
+    </div> <!-- end header-->
+
+    {{ block "main" . }}{{ end }}
+
+    {{ partial "site-footer.html" . }}
+
+  </body>
+</html>

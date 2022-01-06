@@ -1,0 +1,9 @@
+baseURL = 'http://example.org/'
+languageCode = 'de-en'
+title = 'Green-Coding.org'
+
+[outputs]
+  home = ['HTML', 'CSS']
+
+[permalinks]
+  posts = "meetups/:filename"

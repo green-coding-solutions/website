@@ -1,0 +1,27 @@
+{{ define "site-navigation" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "site-navigation-single.html" . }}
+{{ end }}
+
+{{ define "main" }}
+    <section id="about" class="bg-one"><div id="ancla1"></div>
+        <div style="display:block; height: 100px;"></div>
+        <div class="section-one">
+            <div class="title-one">Meetup  {{.Params.Meetupdate}}</div>
+            <div class="separator"><div class="line line-1"></div></div>
+
+            <div class="data-content-one">
+                <img src="{{.Params.Meetupimg}}">
+            </div>
+            <div class="data-content-one">
+                <p><b>{{ .Params.Meetupname }}</b></p>
+                <p>{{ .Params.Meetupdatelong }}</p>
+                {{ .Content }}
+                <div class="btn-one" style="width: 80% !important; margin:auto !important; margin-top: 20px !important;">
+                        <span><a href="{{.Params.Meetuplink}}" style="text-decoration: none; color: #fff;">Join on Meetup.com</a></span>
+                </div>
+            </div>
+         </div>
+    </section><!-- end about -->
+
+{{ end }}

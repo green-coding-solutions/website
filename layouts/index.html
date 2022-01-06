@@ -1,0 +1,188 @@
+{{ define "main" }}
+    <section id="about" class="bg-one"><div id="nav-about"></div>
+        <div style="display:block; height: 100px;"></div>
+        <div class="section-one">
+            <div class="title-one">What is Green Coding?</div>
+            <div class="separator"><div class="line line-1"></div></div>
+            <div class="data-content-one">
+                The term green coding means climate focused agenda to develop software climate friendly.
+            </div>
+            <div class="data-content-one">
+                We host meetups and workshops to broaden the reach and knowledge about current climate related problems with
+                software companies and ways that software is created.
+                Through our community we hope to offer new ways of thinking and solutions and tackle the problem of climate crisis.
+            </div>
+
+            <div class="profile">
+                <div class="pofile-item">
+                    <div class="profile-element ico-two">
+                    </div>
+                    <div class="profile-title"><span>Buisness</span> Rules</div>
+                    <div class="profile-info">Businiesses often have climate feindliche routines that need to be transformed. From hosting, through in-person meetings and resource allocation.</div>
+                </div>
+                <div class="pofile-item">
+                    <div class="profile-element ico-one">
+                    </div>
+                    <div class="profile-title"><span>Developers</span> and Code</div>
+                    <div class="profile-info">Coding is often repetitive and generated abundant amounts of unneeded data (Logs, Videos etc.)</div>
+                </div>
+                <div class="pofile-item">
+                    <div class="profile-element ico-three"></div>
+                    <div class="profile-title"><span>Data</span> Delivery</div>
+                    <div class="profile-info">Data is often delivered uncached, over too long distances and in too big formats, which consumes unnecessary ressources.</div>
+                </div>
+            </div>
+         </div>
+    </section><!-- end about -->
+
+    <div class="works-container bg-two"><div id="nav-meetups"></div>
+    <div class="section-two bottom-works">
+    <div class="works-header">
+        <div class="title-two">Our Meetups</div>
+        <div class="separator"><div class="line line-2"></div></div>
+            <div class="data-content-two">
+                Browse through our latest meetups and watch recordings (if available :) )
+            </div>
+        </div>
+
+    <div id="portfolio" class="container">
+      <div class="section portfoliocontent">
+        <section id="options" class="clearfix">
+            <div id="filters" class="option-set clearfix foliomenu" data-option-key="filter">
+              <a href="#filter" data-option-value="*" class="selected folio-btn"><div class="portfolio-btn">all</div></a>
+              <a href="#filter" data-option-value=".talks" class="folio-btn"><div class="portfolio-btn">talks</div></a>
+              <a href="#filter" data-option-value=".workshops" class="folio-btn"><div class="portfolio-btn">workshops</div></a>
+            </div>
+        </section>
+        <div id="container2" class="clearfix">
+          <div class="inici"></div>
+
+
+            {{ range $index, $element := ( where .Site.RegularPages "Type" "posts" ) }}
+                <div class="element talks">
+                    <a href="{{.Permalink}}">
+                      <div class="ch-grid">
+                        <div class="work-info"><span> {{.Title}}<br><span>Meetup.com</span></span></div>
+                          <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-1"></div><![endif]-->
+                          <!--[if gt IE 9]><!--><div class="ch-item ch-img-{{$index}}"></div><!--<![endif]-->
+                      </div>
+                    </a>
+                </div>
+            {{end}}
+
+
+
+    <div class="final"></div>
+    </div>
+
+        <!-- Project -->
+        <div id="project-show"></div>
+        <div class="project-window">
+            <div class="project-content"></div><!-- AJAX Dinamic Content -->
+        </div><!-- end Project -->
+
+ </div> <!-- #container -->
+
+            </div> <!-- /END ISOTOPE PORTFOLIO-->
+    </div><!-- end portfolio -->
+</div>
+
+
+
+
+
+
+    <section id="team" class="container"><div id="nav-team"></div>
+        <div class="section-one">
+            <div class="title-one">team</div>
+            <div class="separator"><div class="line line-1"></div></div>
+            <div class="data-content-one">
+                The green coding organizer team consists of three enthusiasts for climate friendly tech from Berlin.
+            </div>
+            <article class="content-team teamshow">
+                <div class="teamlist">
+                    <div class="team">
+                        <div class="who"><!-- ONE -->
+                            <div class="members-box">
+                                <div class="photo photo-one"></div>
+                                <div class="name-team">Jonathan Saudhof</div>
+                            </div>
+                            <div class="photo-footer">
+                                <div class="plus-btn"></div>
+                                <div class="socialicons">
+                                    <a href="https://de.linkedin.com/in/jonathan-saudhof"><div class="t-flickr"></div></a>
+                                    <a href="mailto:info@green-coding.org"><div class="t-mail"></div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="who"><!-- TWO -->
+                            <div class="members-box">
+                                <div class="photo photo-two"></div>
+                                <div class="name-team">Constanze Bayer</div>
+                            </div>
+                            <div class="photo-footer">
+                                <div class="plus-btn"></div>
+                                <div class="socialicons">
+                                    <a href="https://www.datafuse.de"><div class="t-flickr"></div></a>
+                                    <a href="mailto:arne@datafuse.de"><div class="t-mail"></div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="who"><!-- THREE -->
+                            <div class="members-box">
+                                <div class="photo photo-three"></div>
+                                <div class="name-team">Arne Tarara</div>
+                            </div>
+                            <div class="photo-footer">
+                                <div class="plus-btn"></div>
+                                <div class="socialicons">
+                                    <a href="https://twitter.com/looreen"><div class="t-twitter"></div></a>
+                                    <a href="mailto:hi@jonathansaudhof.de"><div class="t-mail"></div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </article>
+        </div>
+<!--        <div class="navigation">
+            <div class="nav-bar"></div>
+            <ul class="dotsmenu">
+                <li class="dots jump0 activo" id="0"></li>
+                <li class="dots jump1" id="1"></li>
+                <li class="dots jump2" id="2"></li>
+                <li class="dots jump3 oculto" id="3"></li>
+                <li class="dots jump4 oculto" id="4"></li>
+                <li class="dots jump5 oculto" id="5"></li>
+                <li class="dots jump6 oculto" id="6"></li>
+                <li class="dots jump7 oculto" id="7"></li>
+                <li class="dots jump8 oculto" id="8"></li>
+                <li class="dots jump9 oculto" id="9"></li>
+            </ul>
+            <div class="direction-bar">
+                <div class="dir-left disable"></div>
+                <div class="dir-right"></div>
+            </div>
+        </div>
+    -->
+    </section><!-- end team -->
+
+
+
+    <div id="contact" class="container bg-two"><div id="nav-contact"></div>
+        <div class="section-two">
+          <div class="title-two">say hello</div>
+          <div class="separator"><div class="line line-2"></div></div>
+            <div class="data-content-two">
+                You would like to give a talk on a green coding topic? You are interested in a topic and want us to create the connection? You just want to connect?
+            </div>
+            <div class="data-content-two">
+                Shoot us an email: info@green-coding.org
+            </div>
+    </div>
+</div><!-- end contact -->
+
+<!-- map -->
+
+<!-- end map -->
+{{ end }}

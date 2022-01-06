@@ -1,0 +1,3 @@
+{{ range $index, $element := ( where .Site.RegularPages "Type" "posts" ) }}
+.ch-grid .ch-img-{{ $index }} {background-image: url( {{.Params.Meetupimg}});}
+{{end}}
