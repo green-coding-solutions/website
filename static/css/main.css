@@ -1871,6 +1871,7 @@ body .date{
 .t-flickr {float: left;background: url(../img/t-flickr.png) no-repeat;width: 28px;height: 27px;margin: 0px 4px;}
 .t-mail {float: left;background: url(../img/t-mail.png) no-repeat;width: 28px;height: 27px;margin: 0px 4px;}
 .t-fb:hover, .t-twitter:hover, .t-flickr:hover, .t-mail:hover{background-position: 0 -27px; cursor: pointer;}
+.t-linkedin {float: left;background: url(../img/t-linkedin.png) no-repeat;width: 28px;height: 27px;margin: 0px 4px;}
 
 .social{width: 150px;padding-top: 20px;margin: auto;text-align: center;}
 .social.member1{margin-left: 55px;}
