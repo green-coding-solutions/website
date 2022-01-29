@@ -20,11 +20,11 @@
 <!--[if IE 8]>
     <link rel="stylesheet" type="text/css" href="css/ie8.css">
 <![endif]-->
-
+  <meta name="google-site-verification" content="tPwJJw8YDSbAj8D2PCnMjnX5la8L0ELp7JCvQLKau8A" />
   {{ if eq (.Params.Noindex) true }}
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      <meta name="robots" content="noindex, follow">
   {{ else }}
-      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+      <meta robots="robots" CONTENT="index, follow">
   {{ end }}
 
     {{ partial "site-style.html" . }}
