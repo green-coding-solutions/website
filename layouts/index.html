@@ -58,7 +58,7 @@
           <div class="inici"></div>
 
 
-            {{ range $index, $element := ( where .Site.RegularPages "Type" "posts" ) }}
+            {{ range $index, $element := ( where .Site.RegularPages "Type" "meetups" ) }}
                 <div class="element talks">
                     <a href="{{.Permalink}}">
                       <div class="ch-grid">

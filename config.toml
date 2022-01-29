@@ -2,8 +2,11 @@ baseURL = 'https://www.green-coding.org/'
 languageCode = 'de-en'
 title = 'Green-Coding.org'
 
+paginate = 10
+paginatePath = "page"
+
+summaryLength = 30
+
 [outputs]
   home = ['HTML', 'CSS']
 
-[permalinks]
-  posts = "meetups/:filename"

@@ -1,0 +1,28 @@
+{{ define "site-navigation" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "site-navigation-single.html" . }}
+{{ end }}
+
+{{ define "main" }}
+    <section id="blog" class="bg-one"><div id="ancla1"></div>
+        <div style="display:block; height: 100px;"></div>
+        <div class="section-one">
+            <div class="title-one">Blog</div>
+            <div class="data-content-one">
+                {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "blog" ) ) }}
+                {{ range $paginator.Pages.ByDate }}
+                    <div class="line line-1" style="margin-bottom: 10px;"></div>
+                    <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
+                    <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+                    <div>
+                        {{ .Summary }} [...]
+                    </div>
+                {{end}}
+                {{ template "_internal/pagination.html" . }}
+
+
+            </div>
+         </div>
+    </section><!-- end about -->
+
+{{ end }}
