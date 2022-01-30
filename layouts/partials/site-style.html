@@ -1,7 +1,20 @@
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/css/skeleton.css">
-<link rel="stylesheet" href="/css/portfoliostyle.css" />
-<link rel="stylesheet" href="/css/roll_over.css" />
-<link rel="stylesheet" href="/css/layout.css">
+{{/*
+  The following block is using minification for the assets.
+
+  If you just want to normally include the assets, place them in
+  /static instead of /assets and include them as known:
+
+    <script src="/js/vendor/modernizr.custom.76532.js"></script> ...
+
+*/}}
+{{ $css_top_normalize := resources.Get "css/normalize.css" }}
+{{ $css_top_main := resources.Get "css/main.css" }}
+{{ $css_top_base := resources.Get "css/base.css" }}
+{{ $css_top_skeleton := resources.Get "css/skeleton.css" }}
+{{ $css_top_portfoliostyle := resources.Get "css/portfoliostyle.css" }}
+{{ $css_top_roll_over := resources.Get "css/roll_over.css" }}
+{{ $css_top_layout := resources.Get "css/layout.css" }}
+
+{{ $css_top := slice $css_top_normalize $css_top_main $css_top_base $css_top_skeleton $css_top_portfoliostyle $css_top_roll_over $css_top_layout | resources.Concat "css/bundle_top.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css_top.Permalink }}">
+

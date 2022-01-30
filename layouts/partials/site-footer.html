@@ -15,137 +15,23 @@
 
     </div>
 </div><!-- end footer -->
-<script src="js/plugins.js"></script>
-<script src="js/respond.min.js"></script>
-<script src="js/jquery.inview.js"></script>
-<script src="js/customScripts.js"></script>
+  {{/*
+      The following block is using minification for the assets.
 
+      If you just want to normally include the assets, place them in
+      /static instead of /assets and include them as known:
 
-<!-- LAYERSLIDER -->
-<script type="text/javascript">
-    // jQuery $('document').ready(); function
-    $('document').ready(function(){
-        // Calling LayerSlider on your selected element after the document loaded
-        $('#layerslider').layerSlider({
+        <script src="/js/vendor/modernizr.custom.76532.js"></script> ...
 
-    autoStart               : true,
-    responsive              : true,
-    responsiveUnder         : 959,
-    sublayerContainer       : 0,
-    firstLayer              : 1,
-    twoWaySlideshow         : false,
-    randomSlideshow         : false,
-    keybNav                 : true,
-    touchNav                : true,
-    imgPreload              : true,
-    navPrevNext             : true,
-    navStartStop            : false,
-    navButtons              : false,
-    thumbnailNavigation     : 'hover',
-    tnWidth                 : 100,
-    tnHeight                : 60,
-    tnContainerWidth        : '60%',
-    tnActiveOpacity         : 35,
-    tnInactiveOpacity       : 100,
-    hoverPrevNext           : false,
-    hoverBottomNav          : false,
-    skin                    : 'fullwidth',
-    skinsPath               : 'layerslider/skins/',
-    pauseOnHover            : true,
-    globalBGColor           : 'transparent',
-    globalBGImage           : false,
-    animateFirstLayer       : true,
-    yourLogo                : false,
-    yourLogoStyle           : 'position: absolute; z-index: 1001; left: 10px; top: 10px;',
-    yourLogoLink            : false,
-    yourLogoTarget          : '_blank',
-    loops                   : 0,
-    forceLoopNum            : true,
-    autoPlayVideos          : true,
-    autoPauseSlideshow      : 'auto',
-    youtubePreview          : 'maxresdefault.jpg',
-    showBarTimer        : false,
-    showCircleTimer     : true,
+  */}}
+  {{ $js_bottom_plugins := resources.Get "js/plugins.js" }}
+  {{ $js_bottom_respond := resources.Get "js/respond.min.js" }}
+  {{ $js_bottom_inview := resources.Get "js/jquery.inview.js" }}
+  {{ $js_bottom_custom := resources.Get "js/customScripts.js" }}
 
-    // you can change this settings separately by layers or sublayers with using html style attribute
+  {{ $js_bottom := slice $js_bottom_plugins $js_bottom_respond $js_bottom_inview $js_bottom_custom | resources.Concat "js/bundle_bottom.js" | minify | fingerprint }}
+  <script src="{{ $js_bottom.Permalink }}"></script>
 
-    slideDirection          : 'right',
-    slideDelay              : 4000,
-    durationIn              : 1000,
-    durationOut             : 1000,
-    easingIn                : 'easeInOutQuint',
-    easingOut               : 'easeInOutQuint',
-    delayIn                 : 0,
-    delayOut                : 0        });
-    });
-</script>
-
-
-<!-- isotope -->
-<script src="js/jquery.isotope.min.js"></script>
-<script>
-
-/*
-    calcul();
-    function calcul(){
-        size=$(window).width();
-        if (size > 959) { tam=4;} else
-        if (size > 767) { tam=3;} else
-        if (size > 479) { tam=2;} else
-        if (size < 480) { tam=1;}
-    }
-  */
-
-  $(function(){
-
-    var $container = $('#container2');
-
-    $container.isotope({
-      itemSelector : '.element'
-    });
-
-/*    $(window).bind("resize", function(){
-          vell=tam;
-        calcul();
-        if(vell!=tam){
-            $container.isotope( 'reLayout')
-        }
-    });
-*/
-
-    var $optionSets = $('#options .option-set'),
-        $optionLinks = $optionSets.find('a');
-
-    $optionLinks.click(function(){
-        $(".project-window").slideUp("slow");
-      var $this = $(this);
-      // don't proceed if already selected
-      if ( $this.hasClass('selected') ) {
-        return false;
-      }
-      var $optionSet = $this.parents('.option-set');
-      $optionSet.find('.selected').removeClass('selected');
-      $this.addClass('selected');
-
-      // make option object dynamically, i.e. { filter: '.my-filter-class' }
-      var options = {},
-          key = $optionSet.attr('data-option-key'),
-          value = $this.attr('data-option-value');
-      // parse 'false' as false boolean
-      value = value === 'false' ? false : value;
-      options[ key ] = value;
-      if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
-        // changes in layout modes need extra logic
-        changeLayoutMode( $this, options )
-      } else {
-        // otherwise, apply new options
-        $container.isotope( options );
-      }
-
-      return false;
-    });
-  });
-</script>
 
 <!-- Recent Works Slider -->
 

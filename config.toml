@@ -7,6 +7,9 @@ paginatePath = "page"
 
 summaryLength = 30
 
+[minify]
+  minifyOutput = true
+
 [outputs]
   home = ['HTML', 'CSS']
 
