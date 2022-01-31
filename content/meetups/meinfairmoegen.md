@@ -1,10 +1,9 @@
 ---
 title: "Meetup #1 Mein Fair Mögen"
+date: 2021-11-25 19:00:00
 draft: false
 meetuplink: "https://www.meetup.com/de-DE/green-coding/events/282028361/"
 meetupname: "MeinFairmögen"
-meetupdatelong: "Thursday, 25.11.21 at 7 pm."
-meetupdate: '25.11.21'
 meetupimg: '/img/meetups/meinfairmoegen.webp'
 ---
 

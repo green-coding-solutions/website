@@ -7,6 +7,7 @@
             <div class="data-content-one">
                 The term green coding means climate focused agenda to develop software climate friendly.
             </div>
+
             <div class="data-content-one">
                 We host meetups and workshops to broaden the reach and knowledge about current climate related problems with
                 software companies and ways that software is created.
@@ -38,10 +39,11 @@
     <div class="works-container bg-two"><div id="nav-meetups"></div>
     <div class="section-two bottom-works">
     <div class="works-header">
-        <div class="title-two">Our Meetups</div>
+        <div class="title-two">Latest Meetups</div>
         <div class="separator"><div class="line line-2"></div></div>
             <div class="data-content-two">
-                Browse through our latest meetups and watch recordings (if available :) )
+                Browse through our latest meetups and watch recordings (if available :) )<br>
+                For a list of all our meetups see: <a href="/meetups">All our meetups</a>
             </div>
         </div>
 
@@ -51,7 +53,7 @@
           <div class="inici"></div>
 
 
-            {{ range $index, $element := ( where .Site.RegularPages "Type" "meetups" ) }}
+            {{ range $index, $element := ( first 3 ( where .Site.RegularPages "Type" "meetups" ) ) }}
                 <div class="element talks">
                     <a href="{{.Permalink}}">
                       <div class="ch-grid">

@@ -601,7 +601,7 @@ li {list-style: none outside none !important;}
 	color: rgb(61, 147, 111);
 	text-align: center;
 	padding-bottom: 25px;
-    line-height:  27px;
+    line-height:  45px;
 }
 .data-content-one{
 	font-size: 18px;
@@ -620,7 +620,7 @@ li {list-style: none outside none !important;}
 	font-weight: 700;
 	color: #fff;
 	text-align: center;
-	padding-bottom: 25px;
+	padding-bottom: 45px;
 }
 .data-content-two{
 	font-size: 18px;
@@ -630,6 +630,14 @@ li {list-style: none outside none !important;}
 	padding: 25px 230px;
 	line-height: 28px;
 	text-align: center;
+}
+
+.data-content-three{
+    font-family: 'Titillium Web', sans-serif;
+    color: #949496;
+    padding: 25px 230px;
+    line-height: 28px;
+    text-align: center;
 }
 
 .profile-title{
@@ -2187,6 +2195,11 @@ body .date{
 /* --------------------- end BODY --------------------- */
 
 
-#blog time {
+time {
+    display:  block;
     color:  #f06862;
+}
+
+a {
+    color:  inherit;
 }

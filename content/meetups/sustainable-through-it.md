@@ -1,10 +1,9 @@
 ---
 title: "Sustainable (through) IT"
+date: 2021-09-12 19:00:00
 draft: false
 meetuplink: "https://www.meetup.com/de-DE/green-coding/events/282389911/"
 meetupname: "Sustainable (through) IT"
-meetupdatelong: "Thursday, 09.12.2021 at 7 pm."
-meetupdate: '09.12.2021'
 meetupimg: '/img/meetups/sustainable_it.webp'
 ---
 In his talk about "Sustainability (through) IT" Thomas will give an overview of different approaches and possibilities on how IT can reduce resource consumption and CO2 emissions by predicting and balancing supply and demand in volatile markets that usually see a lot of overproduction and resource loss.

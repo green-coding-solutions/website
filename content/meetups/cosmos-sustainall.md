@@ -1,10 +1,9 @@
 ---
-title: "Green Projects: Cosmos & Sustain.All"
+title: "Green Projects: Cosmos & Sustain.All Meetup 13.01.2022 | Green Coding.org"
+date: 2022-01-13 19:00:00
 draft: false
 meetuplink: "https://www.meetup.com/de-DE/green-coding/events/282895263/"
 meetupname: "Green Projects: Cosmos & Sustain.All"
-meetupdatelong: "Thursday, 13.01.2022 at 7 pm."
-meetupdate: '13.01.2022'
 meetupimg: '/img/meetups/cosmos-sustainall.webp'
 ---
 
