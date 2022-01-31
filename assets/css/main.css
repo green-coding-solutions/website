@@ -2194,12 +2194,28 @@ body .date{
 
 /* --------------------- end BODY --------------------- */
 
-
+/* New element additions by Arne */
 time {
     display:  block;
     color:  #f06862;
 }
 
+ul.pagination, ul.pagination li.page-item {
+    display: inline;
+    padding: 0 5px;
+}
+
+
+ul.pagination li.page-item.active {
+    color: #f06862;
+}
+
+ul.pagination a {
+    text-decoration: none;
+}
+
+
 a {
     color:  inherit;
 }
+
