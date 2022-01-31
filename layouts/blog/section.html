@@ -10,7 +10,7 @@
             <div class="title-one">Blog</div>
             <div class="data-content-one">
                 {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "blog" ) ) }}
-                {{ range $paginator.Pages.ByDate }}
+                {{ range $paginator.Pages.ByDate.Reverse }}
                     <div class="line line-1" style="margin: 25px auto;"></div>
                     <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
                     <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
