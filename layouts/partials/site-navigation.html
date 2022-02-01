@@ -1,6 +1,6 @@
 
 <div class="block-menu">
-     <select class="navegation_resp" onchange="location.hash=this.options[this.selectedIndex].value;">
+     <select class="navegation_resp" onchange="if(this.options[this.selectedIndex].value.substr(0,2) == '/#') document.location.hash=this.options[this.selectedIndex].value; else document.location=this.options[this.selectedIndex].value;">
         <option value="/" selected="selected">Home</option>
         <option value="#nav-about" class="second_item">About</option>
         <option value="#nav-meetups" class="second_item">Meetups</option>

@@ -39,62 +39,65 @@ $(document).ready(function() {
 	
 	// ----------- TEAM NEXT/PREV ----------- //
 
-	var y=0;
+	var current_team_page=0;
 
 	$(".dir-right").click(function() {
 		if(!$(this).hasClass('disable-2')){
-			$(".jump"+(y+1)).click();
+			$(".jump"+(current_team_page+1)).click();
 		}
 	});
 
 	$(".dir-left").click(function() {
 		if(!$(this).hasClass('disable')){
-			$(".jump"+(y-1)).click();
+			$(".jump"+(current_team_page-1)).click();
 		}
 	});
+    var teams = $('.team div.who');
+    var total_team_members = 0
+    var dotsul = '';
+    teams.each(function (index) {
+        total_team_members++;
+        if (index===0){dotsul = '<ul class="dotsmenu">';}
+        dotsul += '<li class="dots jump' + index + '" id="' + index + '"></li>';
+        if (index===teams.length-1) {
+            dotsul += '</ul>';
+            $('.team').after(dotsul);
+        }
+    });
 
-	var teams = $('.team li');
-	var dotsul = '';
-	teams.each(function (index) {
-		if (index===0){dotsul = '<ul class="dotsmenu">';}
-		dotsul += '<li class="dots jump' + index + '" id="' + index + '"></li>';
-		if (index===teams.length-1) {
-			dotsul += '</ul>';
-			$('.team').after(dotsul);
-		}
-	});
+
 	// ----------- TEAM DOTS ----------- //
-
 
 	$(".dots").click(function() {
 			$(".teamshow").stop().animate({scrollLeft:pos[$(this).attr('id')]},'slow');
 			$('.activo').removeClass('activo');
 			$(this).addClass('activo');
-			y=parseInt($(this).attr('id'),10);
+			current_team_page=parseInt($(this).attr('id'),10);
 
-			if(y===0){$('.dir-left').addClass('disable');}else{$('.dir-left').removeClass('disable');}
+            if(current_team_page===0) {
+                $('.dir-left').addClass('disable');
+            } else {
+                $('.dir-left').removeClass('disable');
+            }
 
-			if(tamany>2){
-				if(y===2){$('.dir-right').addClass('disable-2');}else{$('.dir-right').removeClass('disable-2');}
-			}else
-			if(tamany===2){
-				if(y===8){$('.dir-right').addClass('disable-2');}else{$('.dir-right').removeClass('disable-2');}
-			}else
-			if(tamany===1){
-				if(y===8){$('.dir-right').addClass('disable-2');}else{$('.dir-right').removeClass('disable-2');}
-			}
+			if(current_team_page < needed_pages_for_teammembers){
+                $('.dir-right').addClass('disable-2');
+            } else{
+                $('.dir-right').removeClass('disable-2');
+            }
 	});
 
 	var res= null;
-	var tamany= null;
+	var teammembers_per_page= null;
+    var needed_pages_for_teammembers = null;
 	var pos= null;
 	var old= null;
 	recalcul();
 
 	$(window).bind("resize", function(){
-		old=tamany;
+		old=teammembers_per_page;
 		recalcul();
-		if(old!==tamany){
+		if(old!==teammembers_per_page){
 			$(".jump0").click();
 			if(obert===true){obre($actual.attr('id'));}
 		}
@@ -104,10 +107,14 @@ $(document).ready(function() {
 
 	function recalcul(){
 		res=$(window).width();
-		if (res > 959) { tamany=4; pos=[0,900,1800];} else
-		if (res > 767) { tamany=3; pos=[0,780,1555]; } else
-		if (res > 479) { tamany=2; pos=[0, 302, 604, 903, 1204, 1507, 1782, 2085, 2385];} else
-		if (res < 480) { tamany=1; pos=[0, 302, 604, 903, 1204, 1507, 1782, 2085, 2385]; }
+		if (res > 959) {
+            teammembers_per_page=4; pos=[0,900,1800];
+        } else if (res > 767) {
+            teammembers_per_page=3; pos=[0,780,1555];
+        } else {
+            teammembers_per_page=1; pos=[0, 302, 604, 903, 1204, 1507, 1782, 2085, 2385];
+        }
+        needed_pages_for_teammembers = Math.ceil(total_team_members / teammembers_per_page)
 	}
 
 // ----------- PROJECT WINDOW SHOW/HIDE ----------- //

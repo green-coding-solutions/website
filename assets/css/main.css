@@ -295,7 +295,7 @@ textarea {
 
 .header-container{height: auto; overflow: auto; padding: 0 120px;}
 
-li a{text-decoration: none;}
+nav li a{text-decoration: none;}
 
 .displaymenu{
 	width: 940px;
@@ -621,6 +621,7 @@ li {list-style: none outside none !important;}
 	color: #fff;
 	text-align: center;
 	padding-bottom: 45px;
+    line-height:  45px;
 }
 .data-content-two{
 	font-size: 18px;
@@ -2219,3 +2220,6 @@ a {
     color:  inherit;
 }
 
+section li a:before {
+ content: "• "
+}

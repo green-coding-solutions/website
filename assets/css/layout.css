@@ -76,6 +76,9 @@
 		.data-content-two {
 			padding: 25px 125px;
 		}
+        .data-content-three {
+            padding: 25px 125px;
+        }
 		
 		.members-box {width: 216px;}
 		.plus-btn {width: 216px;}
@@ -275,6 +278,7 @@
 		}
 		.data-content-one {padding: 25px 20px;}
 		.data-content-two {padding: 25px 20px;}
+        .data-content-three {padding: 25px 20px;}
 		
 		.project-image img {width: 460px;}
 		
@@ -416,6 +420,7 @@
 		.section-two {width: 316px; overflow: inherit;}
 		.data-content-one {padding: 25px 5px;}
 		.data-content-two {padding: 25px 5px;}
+        .data-content-three {padding: 25px 5px;}
 		.title-one {font-size: 34px;}
 		.title-two {font-size: 34px;}
 		#slider li img {width: 300px;}
