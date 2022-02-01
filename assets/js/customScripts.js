@@ -76,6 +76,7 @@ $(document).ready(function() {
 
             if(current_team_page===0) {
                 $('.dir-left').addClass('disable');
+                $('.dir-right').removeClass('disable-2');
             } else {
                 $('.dir-left').removeClass('disable');
             }
