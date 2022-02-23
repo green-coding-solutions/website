@@ -13,3 +13,7 @@ summaryLength = 30
 [outputs]
   home = ['HTML', 'CSS']
 
+[taxonomies]
+  tag = ""
+  group = ""
+  category = ""
