@@ -2,10 +2,11 @@
 title: "New Blog and Github Repos"
 date: 2022-01-29
 draft: false
+author: "Arne Tarara"
+authorlink: "https://www.linkedin.com/in/arne-tarara"
+
 ---
 
-Today we are launching our blog, which will hopefully deliver frequent updates
-to what we @ Green Coding Berlin are currently working.
 
 First update comes right with this first blog-entry and is regarding our
 Github Repository.

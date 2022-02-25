@@ -13,10 +13,11 @@
                 {{ range $paginator.Pages.ByDate.Reverse }}
                     <div class="line line-1" style="margin: 25px auto;"></div>
                     <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
-                    <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
                     <div>
                         {{ .Summary }} [...]
                     </div>
+                    <br>
+                    <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time><span style="display:inline"> - by </span><a href="{{.Params.Authorlink}}" style="display:inline;">{{.Params.Author}} <img src="/img/t-linkedin.png" style="padding-left:  4px;padding-bottom: 4px; width: 16px; height: 16px;"></a>
                 {{end}}
                 {{ template "_internal/pagination.html" . }}
 

@@ -2,6 +2,9 @@
 title: "Links and resources now on Github for Green Software Development"
 date: 2022-01-31
 draft: false
+author: "Arne Tarara"
+authorlink: "https://www.linkedin.com/in/arne-tarara"
+
 ---
 
 Now just after announcing our public repo on with our website as HUGO source in it
@@ -37,12 +40,7 @@ As soon as we have some updates on this topic we will announce it in the blog.
 For any feedback regarding our resources repo or if you want to supply some interesting
 links we missed please hit us up at info@green-coding.org
 
-As a final note I want to point out, that similar lists exists already.
+As a final note I want to point out, that similar lists exist already.
 And although we believe that our list is a valuable addition and contains the most relevant resources,
 a shout out to the Green Software Foundation on their list: [Awesome Green Software](https://github.com/Green-Software-Foundation/awesome-green-software)
 
-
-### Update from 01, Feb 2022
-You can also now join us on Discord if you want to leave some feedback or connect with us
-
-[Green Coding Berlin Discord](https://discord.gg/KGqsK4dauz)

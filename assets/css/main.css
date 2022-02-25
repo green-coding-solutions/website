@@ -608,7 +608,7 @@ li {list-style: none outside none !important;}
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 400;
 	color: #949496;
-	padding: 25px 230px;
+	padding: 25px 30px;
 	line-height: 28px;
 	text-align: center;
 }
@@ -628,7 +628,7 @@ li {list-style: none outside none !important;}
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 400;
 	color: #fff;
-	padding: 25px 230px;
+	padding: 25px 30px;
 	line-height: 28px;
 	text-align: center;
 }
@@ -636,7 +636,7 @@ li {list-style: none outside none !important;}
 .data-content-three{
     font-family: 'Titillium Web', sans-serif;
     color: #949496;
-    padding: 25px 230px;
+    padding: 25px 30px;
     line-height: 28px;
     text-align: center;
 }
@@ -684,7 +684,7 @@ li {list-style: none outside none !important;}
 
 .photo-one{background:url(../img/team/jonathan_square.jpg);}
 .photo-two{background:url(../img/team/photo-team-02.jpg);}
-.photo-three{background:url(../img/team/arne_square.jpg);}
+.photo-three{background:url(../img/team/arne_square.webp); background-size: 165px 165px;}
 
 .name-team{
 	font-family: 'Open Sans', sans-serif;
@@ -982,7 +982,7 @@ li {list-style: none outside none !important;}
 .element-2{background: url(../img/about_ico_02.png) no-repeat;}
 .element-3{background: url(../img/about_ico_03.png) no-repeat;}
 
-.profile-element:hover{background-position: 0 -212px; cursor: pointer;}
+/*.profile-element:hover{background-position: 0 -212px; cursor: pointer;}*/
 
 .profile{
 	width: auto;
@@ -2222,4 +2222,9 @@ a {
 
 section li a:before {
  content: "• "
+}
+
+h1, h2, h3 h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif !important;
 }
