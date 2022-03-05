@@ -344,7 +344,6 @@ nav li a{text-decoration: none;}
 
 .logo{background: url(../img/logo_alt.png) no-repeat; width: 44px; height: 44px; float: left; margin: 0 7px 0 0;}
 
-li {list-style: none outside none !important;}
 
 .menubtn{
 	height: auto;
@@ -2220,11 +2219,27 @@ a {
     color:  inherit;
 }
 
-section li a:before {
- content: "• "
-}
+ol li {list-style: none outside none;}
 
-h1, h2, h3 h4, h5, h6 {
+li {list-style: circle inside none;}
+
+.data-content-one li p {display:  inline;}
+
+#single-page .data-content-one{
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: 'Titillium Web', sans-serif !important;
 }
+
+.btn-one-center {
+    text-align: center;
+}
+.btn-one-center .btn-one {
+    width:  100%;
+}
+.btn-one-center span {
+    float: none;
+}
+
