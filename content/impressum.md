@@ -3,17 +3,16 @@ title: "Impressum"
 draft: false
 noindex: true
 ---
-Betreiber und Author der Seite:
 
-Green Coding Berlin - Arne Tarara
+Green Coding Berlin
 
-Weingartenweg 5
+Arne Tarara
+Jablonskistr. 24
 
-D-53840 Troisdorf
+D-10405 Berlin
 
-Email: info@codetactics.de
+Email: info@green-coding.org
 
 Telefon: +49 (0) 30 265 945 57
-
 
 Info: Unter der Telefonnummer wird kein Support gegeben und sie dient nur der Vollständigkeit der Impressumspflicht
