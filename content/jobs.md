@@ -53,8 +53,10 @@ So please also include your expected salary in your email.
 
 ### What can you expect from us?
 
-We are currently functioning as a non-profit consisting of a team of two people.
+We are currently functioning as a non-profit consisting of a [team of two people](/#nav-team).
 For the scope above we secured funding for our first year to create a team of up to 5 people with a part-time office in Berlin-Mitte.
+
+Spoken languages are english or german. So if you are fluent in any, you are good to go.
 
 We hope to be fully staffed and functional by mid-April.
 
