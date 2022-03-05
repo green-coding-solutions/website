@@ -15,7 +15,7 @@
             </div>
             <div class="data-content-one">
                 <p><b>{{ .Params.Meetupname }}</b></p>
-                <p>{{ .Date.Format "2.1.2006 at 15:04" }}</p>
+                <p><strong>{{ .Date.Format "2.1.2006 at 15:04" }}</strong></p>
                 {{ .Content }}
                 <div class="btn-one" style="width: 80% !important; margin:auto !important; margin-top: 20px !important;">
                         <span><a href="{{.Params.Meetuplink}}" style="text-decoration: none; color: #fff;">Join on Meetup.com</a></span>
