@@ -43,7 +43,9 @@ We value motivation of coding profession, as this is the most important part whe
 
 ### Working hours and pay
 
-The job is part time and we are looking at around 20 hours per week.
+The job is preferrably part time and we are looking at around 20 hours per week.
+
+Depending on qualification and if you maybe also wanna be part in some of our organizational and educational work for our meetups and the GSF it can also be tailored to a fullt-time job.
 
 Although we are a non-profit we are currently looking into paying at least 80% of industry standard wages as we know that not everybody can live from climate positive motivation and thin air alone :)
 
