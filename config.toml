@@ -7,8 +7,10 @@ paginatePath = "page"
 
 summaryLength = 30
 
+# Minify removes also the "" (quotes) from the HTML tags. This breaks bing site validation and
+# also maybe some SEO features.
 [minify]
-  minifyOutput = true
+  minifyOutput = false
 
 [outputs]
   home = ['HTML', 'CSS']
