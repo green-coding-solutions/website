@@ -1,6 +1,6 @@
 ---
 title: "We are hiring!"
-date: 2022-02-06
+date: 2022-03-06
 draft: false
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
