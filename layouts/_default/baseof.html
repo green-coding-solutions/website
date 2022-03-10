@@ -13,10 +13,15 @@
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="msvalidate.01" content="047ED770C38FE8200066EA08D7D93ED7" />
+  {{ $site_title_rss := .Site.Title }}
+  {{ $page_title_rss := .Page.Title }}
+  {{ with  .OutputFormats.Get "rss" }}
+      <link rel="alternate" type="application/rss+xml" title="{{$site_title_rss}} - {{$page_title_rss}} Feed" href="{{.Permalink}}" />
+  {{ end }}
 
-{{ with  .OutputFormats.Get "css" }}
-    <link rel="stylesheet" href="{{.Permalink}}"  />
-{{ end }}
+  {{ with  .OutputFormats.Get "css" }}
+      <link rel="stylesheet" href="{{.Permalink}}"  />
+  {{ end }}
 
 <!--[if IE 8]>
     <link rel="stylesheet" type="text/css" href="css/ie8.css">

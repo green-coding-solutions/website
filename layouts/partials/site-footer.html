@@ -2,19 +2,28 @@
 <div id="footer" class="container-one">
     <div class="footer-line"></div>
     <div class="newsletter">
-<!--
-    <h1>Newsletter</h1>
-    <input type="text" name="newsletter" id="newsletter" value="email adress" onclick="if(this.value=='email adress') this.value=''" onblur="if(this.value=='') this.value='email adress'">
-    <p><a href="#" class="subscribe">Subcribe</a></p>
--->
-
-    <div class="credits">
-        <a href="/datenschutz"  style="text-decoration: none; color: #fff;">Datenschutz</a> - <a href="/impressum" style="text-decoration: none; color: #fff;">Impressum</a>
-         - {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} - {{ now.Format "2006"}} {{ end }}
-     </div>
-     <div id="wcb" class="carbonbadge wcb-d"></div>
-<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-
+        <!--
+        <h1>Newsletter</h1>
+        <input type="text" name="newsletter" id="newsletter" value="email adress" onclick="if(this.value=='email adress') this.value=''" onblur="if(this.value=='') this.value='email adress'">
+        <p><a href="#" class="subscribe">Subcribe</a></p>
+        -->
+        <div class="credits">
+            {{ $sections := where $.Site.Pages ".Kind" "section" }}
+            {{ range $sections }}
+                  {{ $site_title_rss := .Site.Title }}
+                  {{ $page_title_rss := .Page.Title }}
+                  {{ with  .OutputFormats.Get "rss" }}
+                      <a type="application/rss+xml" title="{{ $site_title_rss }} - {{ $page_title_rss }} Feed" href="{{.Permalink}}"><img src="/img/rss.png" height="20"> {{ $page_title_rss }}</a> &nbsp;
+                  {{ end }}
+            {{ end }}
+        </div>
+        <div>&nbsp;</div>
+        <div class="credits">
+            <a href="/datenschutz"  style="text-decoration: none; color: #fff;">Datenschutz</a> - <a href="/impressum" style="text-decoration: none; color: #fff;">Impressum</a>
+             - {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} - {{ now.Format "2006"}} {{ end }}
+        </div>
+        <div id="wcb" class="carbonbadge wcb-d"></div>
+        <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
     </div>
 </div><!-- end footer -->
   {{/*

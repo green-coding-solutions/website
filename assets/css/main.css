@@ -91,7 +91,7 @@
 	background: url("../img/footer_pattern.png") repeat-x;
 }
 
-.newsletter{display: inline-table; margin-top: 85px;}
+.newsletter{display: inline-table; margin-top: 35px;}
 .newsletter p{float: left;}
 
 
@@ -456,7 +456,7 @@ nav li a{text-decoration: none;}
 	font-family: 'Open Sans', sans-serif;
 	color: #577ea5;
 	text-transform: uppercase;
-	text-align: right;
+	text-align: center;
 	width:100%;
 	clear:both;
 }
