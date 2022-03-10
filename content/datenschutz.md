@@ -47,19 +47,19 @@ Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die perso
 
 Der Einsatz des Hosters erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).
 
-
 Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.
-
 
 Wir setzen folgenden Hoster ein:
 
+Netlify Inc.
 
-Heroku / Salesforce
-415 Mission Street
-Suite 300
+610 22nd Street
+
+Suite 315
+
 San Francisco, CA
-94105
-USA
+
+94107 United States
 
 ###### Abschluss eines Vertrages über Auftragsverarbeitung
 
@@ -83,10 +83,9 @@ Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
 Arne Tarara
 
-Weingartenweg 5
+Jablonskistr. 24
 
-53840 Troisdorf
-
+10405 Berlin
 
 Telefon: 030 / 30 265 945 57
 
@@ -171,8 +170,7 @@ Aktuell werden keine Cookies gesetzt
 
 ##### Server-Log-Dateien
 
-Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
-
+Der Hoster der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
 
 - Browsertyp und Browserversion
 - verwendetes Betriebssystem
@@ -195,10 +193,6 @@ Im Falle der Speicherung der Daten in Logfiles ist dies nach spätestens 14 Tage
 
 ### 5. Analyse-Tools und Werbung
 ##### Keine
-### 6. Google Fonts
-
-Wir binden die Schriftarten (“Google Fonts”) des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein. Datenschutzerklärung: https://www.google.com/policies/privacy/
-Opt-Out: https://adssettings.google.com/authenticated
 
 Quelle: https://www.e-recht24.de
 
