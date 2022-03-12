@@ -337,12 +337,15 @@ nav li a{text-decoration: none;}
 	text-transform: uppercase;
 	float: left;
 	padding-top: 11px;
+    background: url(../img/logo_alt.png) no-repeat;
+    background-position-y: bottom;
+    text-indent: 28px;
 } .company-name span{color: #AAA;
 }
 
 .content-logo{width: auto; height: auto;float: left;margin-top: 34px;text-decoration:none; border:0px;}
 
-.logo{background: url(../img/logo_alt.png) no-repeat; width: 44px; height: 44px; float: left; margin: 0 7px 0 0;}
+.logo{background: url(../img/logo_alt.png) no-repeat; width: 26px; height: 26px; float: left; margin: 0 7px 0 0;}
 
 
 .menubtn{
