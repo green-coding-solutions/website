@@ -19,8 +19,8 @@ we thrive to develop it to an industry standard tool.
 - Develop a flexible and extensible specification for the JSON format that specifies how to instrument the software and to simulate the standard usage flow of an application (similar to Selenium on web)
 - Creation of baseline values and categories for arbitrary software
 - Web-Frontend to visualize all collected open-source metrics
-- Conformity with [Green Software Foundation SCI spec](https://greensoftware.foundation/projects/software-carbon-intensity-sci-specification)
-- Conformity with ["Blauer Engel" / Umweltbundesamt Green Software Certification](https://www.blauer-engel.de/en/productworld/resources-and-energy-efficient-software-products)
+- Adapting tool to be compatible with [Green Software Foundation SCI spec](https://greensoftware.foundation/projects/software-carbon-intensity-sci-specification)
+- Adapting tool to be compatible with ["Blauer Engel" / Umweltbundesamt Green Software Certification](https://www.blauer-engel.de/en/productworld/resources-and-energy-efficient-software-products)
 - Development of a [Lighthouse](https://developers.google.com/web/tools/lighthouse) plugin
 - (Optionally) Community-Building, Speaking and Mentoring in our Meetups and Workshops
 
@@ -70,7 +70,7 @@ All code you write will and must be open source and free use (CC / MIT license).
 &nbsp;
 
 ### Remote or in office?
-Both is possible.
+Both is possible. However depending on your qualification we require you to be in Berlin for the duration of the onboarding.
 
 For everyone in Berlin we will be doing at least once a week meetings / get-togethers in person though for easier demoing and of course also socialising.
 
