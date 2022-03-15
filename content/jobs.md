@@ -46,9 +46,7 @@ We value motivation of coding profession, as this is the most important part whe
 
 Depending if you are only interested in the technical part or also want to take part in our community-building, organizational and educational work for our meetups and the GSF the job is 20-40 hours per week (part-time / full-time)
 
-Although we are a non-profit we are currently looking into paying at least 80% of industry standard wages as we know that not everybody can live from climate positive motivation and thin air alone :)
-
-So please also include your expected salary in your email.
+Please include your expected salary and part-time/full-time preference in your email.
 
 &nbsp;
 
