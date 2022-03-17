@@ -38,7 +38,7 @@ As a junior be reassured that you will get some guidance for the tasks.
 However if you are not too familiar with parts of the tasks mentioned before but feel confident you
 can learn them in a short time, also do not hesitate to apply.
 
-We value motivation of coding profession, as this is the most important part when working in the climate positive sector.
+We value motivation and interest for learning over current coding profession, since this is the most important part when working in the climate positive sector.
 
 &nbsp;
 
