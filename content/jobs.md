@@ -4,7 +4,9 @@ draft: false
 ---
 # (Green) Software Developer
 
-Green Coding Berlin is developing a metrics and certification tool for Green Software.
+Green Coding Berlin is developing a toolchain to identify and certify "green" software.
+
+The goal is to create an industry standard that can certify software in it's impact on the environment and to reduce resource usage, bloated software and unneeded computations.
 
 The current scope of the tool is only a prototype (https://github.com/green-coding-berlin/green-metrics-tool) and
 we thrive to develop it to an industry standard tool.
@@ -12,6 +14,17 @@ we thrive to develop it to an industry standard tool.
 &nbsp;
 
 ### What you will be working on:
+The work at Green Coding for our toolchain covers an extensive scope where you come into contact with a lot of tools that may be new to you. However, we supply an extensive onboarding and enough time to learn these tools if you are not already familiar with them.
+
+For all of these sub-parts you will have at least one team-mate which you will be working with. It is possible to switch teams or to focus on only parts of the mentioned tasks.
+
+We also do host talks and workshops for the Berlin Community for free and also for companies in-house. These talks range from talks about the current state of
+Green Coding, Best green software design practices to custom workshops where we transform old websites / shops to a state of the art cloud-hosted / edge-hosted website with serverless functions and dynamic edge network caching.
+
+We encourage you to take part in this mission and also get to know new technologies while doing so, but this part is optional for the job (see below).
+
+The following list provides the full scope of the tool which we hope to reach within a year:
+
 - You will be working on the tool to measure and certify resource usage of arbitrary software
 - Ability to test arbitrary console applications in docker setup
 - Ability to test arbitrary web app through instrumented Google Chrome headless
@@ -22,7 +35,8 @@ we thrive to develop it to an industry standard tool.
 - Adapting tool to be compatible with [Green Software Foundation SCI spec](https://greensoftware.foundation/projects/software-carbon-intensity-sci-specification)
 - Adapting tool to be compatible with ["Blauer Engel" / Umweltbundesamt Green Software Certification](https://www.blauer-engel.de/en/productworld/resources-and-energy-efficient-software-products)
 - Development of a [Lighthouse](https://developers.google.com/web/tools/lighthouse) plugin
-- (Optionally) Community-Building, Speaking and Mentoring in our Meetups and Workshops
+
+- (Optionally) Community-Building, Speaking and Mentoring in our Meetups and Workshops.
 
 &nbsp;
 
@@ -35,6 +49,8 @@ So as a senior be reassured, that you will work with people on the same qualific
 have some mentoring / delegation part.
 As a junior be reassured that you will get some guidance for the tasks.
 
+You should have at least a 1 year experience in using one of these programming languages: Node.JS / Javascript, Python or PHP.
+
 However if you are not too familiar with parts of the tasks mentioned before but feel confident you
 can learn them in a short time, also do not hesitate to apply.
 
@@ -44,7 +60,7 @@ We value motivation and interest for learning over current coding profession, si
 
 ### Working hours and pay
 
-Depending if you are only interested in the technical part or also want to take part in our community-building, organizational and educational work for our meetups and the GSF the job is 20-40 hours per week (part-time / full-time)
+The job is possible as part-time or full-time.
 
 Please include your expected salary and part-time/full-time preference in your email.
 
