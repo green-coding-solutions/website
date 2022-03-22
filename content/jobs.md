@@ -46,7 +46,7 @@ So as a senior be reassured, that you will work with people on the same qualific
 have some mentoring / delegation part.
 As a junior be reassured that you will get enough guidance for the tasks.
 
-You should have at least around a 1 year experience in using one of these programming languages: Node.JS / Javascript, Python or PHP.
+You should have at least around a 1 year experience in using one of these programming languages: Node.JS / Javascript or Python or PHP.
 
 However if you are not too familiar with parts of the tasks mentioned before but feel confident you
 can learn them in a short time, also do not hesitate to apply.
@@ -65,7 +65,6 @@ Please include your expected salary and part-time/full-time preference in your e
 
 ### What can you expect from us?
 
-We are currently functioning as a non-profit consisting of a [team of two people](/#nav-team).
 For the scope above we secured funding for our first year to create a team of up to 5 people with a part-time office in Berlin-Mitte.
 
 Spoken languages are english or german. So if you are fluent in any, you are good to go.
