@@ -8,9 +8,6 @@ At Green Coding Berlin we create a green software community and ecosystem in Ber
 
 The goal is to create an industry standard that can certify software in it's impact on the environment and to reduce resource usage, bloated software and unneeded computations.
 
-The current stage of the tool is a working prototype (https://github.com/green-coding-berlin/green-metrics-tool) and
-we thrive to develop it to an industry standard tool.
-
 &nbsp;
 
 ### What you will be working on:
