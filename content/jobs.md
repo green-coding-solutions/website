@@ -91,7 +91,7 @@ For everyone in Berlin we will be doing at least once a week meetings / get-toge
 &nbsp;
 
 ### How to apply
-Just shoot us an email at info@green-coding.org with a quick intro and why you would like to join our team.
+Just shoot us an email at jobs@green-coding.org with a quick intro and why you would like to join our team.
 Please also include a quick comment on your skills regarding the aformetioned features we want the tool to incorporate.
 
 A link to your Linked-In and Github profile is usually helpful.
