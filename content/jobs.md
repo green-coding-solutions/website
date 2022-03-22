@@ -71,11 +71,9 @@ Spoken languages are english or german. So if you are fluent in any, you are goo
 
 We hope to be fully staffed and functional by mid-April.
 
-The job would be preferrably as a regular employment with a one-year contract that is open to extension depending of the adoption and impact of the project.
-However freelance applications are also welcome.
-
 All our work in non-profit will be integrated into the greater scope of the [Green Software Foundation](https://greensoftware.foundation/) to allow for more traction and impact.
-All code you write will and must be open source and free use (CC / MIT license).
+
+All code you write will and must be open source and free use (GPL / Apache / MIT license).
 
 &nbsp;
 
@@ -88,8 +86,10 @@ For everyone in Berlin we will be doing at least once a week meetings / get-toge
 
 ### How to apply
 Just shoot us an email at jobs@green-coding.org with a quick intro and why you would like to join our team.
+
 Please also include a quick comment on your skills regarding the aformetioned features we want the tool to incorporate.
 
 A link to your Linked-In and Github profile is usually helpful.
+
 
 There is no need for formal documents. If you want to send them however, feel free to attach them.
