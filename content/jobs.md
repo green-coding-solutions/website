@@ -4,11 +4,11 @@ draft: false
 ---
 # (Green) Software Developer
 
-Green Coding Berlin is developing a toolchain to identify and certify "green" software.
+At Green Coding Berlin we create a green software community and ecosystem in Berlin. Our flagship work is an <a href="https://github.com/green-coding-berlin/green-metrics-tool">open-source green software certifcation toolchain</a> that let's you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
 
 The goal is to create an industry standard that can certify software in it's impact on the environment and to reduce resource usage, bloated software and unneeded computations.
 
-The current scope of the tool is only a prototype (https://github.com/green-coding-berlin/green-metrics-tool) and
+The current stage of the tool is a working prototype (https://github.com/green-coding-berlin/green-metrics-tool) and
 we thrive to develop it to an industry standard tool.
 
 &nbsp;
@@ -43,11 +43,11 @@ The following list provides the full scope of the tool which we hope to reach wi
 ### Your qualification:
 If you feel motivated and apt to work on the tasks mentioned in the section before that is all we ask for :)
 
-Seniors, juniors and entry-level developers are welcome. Since we are looking for more than one developer
+Juniors and senior developers are welcome. Since we are looking for more than one developer
 and already have one senior developer on board we will create a healthy mix.
 So as a senior be reassured, that you will work with people on the same qualification and level and also
 have some mentoring / delegation part.
-As a junior be reassured that you will get some guidance for the tasks.
+As a junior be reassured that you will get enough guidance for the tasks.
 
 You should have at least around a 1 year experience in using one of these programming languages: Node.JS / Javascript, Python or PHP.
 
