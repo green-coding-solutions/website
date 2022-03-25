@@ -12,7 +12,7 @@ Our first GreenProjects meeting will host two awesome projects “Cosmos” and 
 Both startups/projects will have 15 minutes for their pitch to answere following questions:
 - Which problem did they identify?
 - How big is the impact on the environment of the identified problem?
-- What is the project's answer / solution to the problem?
+- What is the projects answer / solution to the problem?
 - Which stage of the product/services development process have they reached?
 - Who is in their team?
 - Which help does they need from the GreenCoding Community?
