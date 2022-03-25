@@ -4,7 +4,7 @@ draft: false
 ---
 # (Green) Software Developer
 
-At Green Coding Berlin we create a green software community and ecosystem in Berlin. Our flagship work is an [open-source green software certifcation toolchain](https://github.com/green-coding-berlin/green-metrics-tool) that let's you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
+At Green Coding Berlin we create a green software community and ecosystem in Berlin. Our flagship work is an [open-source green software certifcation toolchain](https://github.com/green-coding-berlin/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
 
 The goal is to create an industry standard that can certify software in its impact on the environment and to reduce resource usage, bloated software and unneeded computations.
 
