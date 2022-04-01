@@ -8,14 +8,17 @@
         <p><a href="#" class="subscribe">Subcribe</a></p>
         -->
         <div class="credits">
+            <img src="/img/email.png" height="20"><a href="http://eepurl.com/hYCOCj">Subscribe to our Newsletter</a>
             {{ $sections := where $.Site.Pages ".Kind" "section" }}
             {{ range $sections }}
                   {{ $site_title_rss := .Site.Title }}
                   {{ $page_title_rss := .Page.Title }}
                   {{ with  .OutputFormats.Get "rss" }}
-                      <a type="application/rss+xml" title="{{ $site_title_rss }} - {{ $page_title_rss }} Feed" href="{{.Permalink}}"><img src="/img/rss.png" height="20"> {{ $page_title_rss }}</a> &nbsp;
+                      ----
+                      <a type="application/rss+xml" title="{{ $site_title_rss }} - {{ $page_title_rss }} Feed" href="{{.Permalink}}"><img src="/img/rss.png" height="20"> {{ $page_title_rss }}</a>
                   {{ end }}
             {{ end }}
+
         </div>
         <div>&nbsp;</div>
         <div class="credits">
