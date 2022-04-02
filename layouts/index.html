@@ -51,12 +51,12 @@
           <div class="inici"></div>
 
 
-            {{ range $index, $element := ( first 3 ( where .Site.RegularPages "Type" "meetups" ) ) }}
+            {{ range $index, $element := ( first 6 ( where .Site.RegularPages "Type" "meetups" ) ) }}
                 <div class="element talks">
                     <a href="{{.Permalink}}">
                       <div class="ch-grid">
                         <div class="work-info"><span> {{.Title}}<br><span>Meetup.com</span></span></div>
-                          <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-1"></div><![endif]-->
+                          <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-{{$index}}"></div><![endif]-->
                           <!--[if gt IE 9]><!--><div class="ch-item ch-img-{{$index}}"></div><!--<![endif]-->
                       </div>
                     </a>
