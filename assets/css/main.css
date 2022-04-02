@@ -1443,10 +1443,6 @@ padding-bottom: 20px;
 	transition: all 0.4s ease-in-out;
 }
 
-.team .ch-img-1 {background-image: url(../img/team/team_01.png);}
-.team .ch-img-2 {background-image: url(../img/team/team_02.png);}
-.team .ch-img-3 {background-image: url(../img/team/team_03.png);}
-
 .team .ch-info {
 	position: absolute;
 	width: 100%;
