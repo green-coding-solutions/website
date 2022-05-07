@@ -13,7 +13,7 @@
             <div class="data-content-three">
                 <h1><b>{{ .Params.Meetupname }}</b></h1>
                 <p><strong>{{ .Date.Format "2.1.2006 at 15:04" }}</strong></p>
-                <img src="{{.Params.Meetupimg}}">
+                <img src="{{.Params.Meetupimg}}" style="width: 100%; max-width: 300px;">
             </div>
             <div class="data-content-one">
                 {{ .Content }}
