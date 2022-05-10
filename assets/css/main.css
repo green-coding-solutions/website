@@ -683,12 +683,7 @@ nav li a{text-decoration: none;}
 .team .who:first-child{margin-left: 0;}
 .team .who:last-child{margin-right: 0;}
 
-
-.photo-one{background:url(../img/team/jonathan_square.jpg); background-size: 165px 165px;}
 .photo-two{background:url(../img/team/photo-team-02.jpg); background-size: 165px 165px;}
-.photo-three{background:url(../img/team/arne_square.webp); background-size: 165px 165px;}
-.photo-five{background:url(../img/team/alex.webp); background-size: 165px 165px;}
-.photo-six{background:url(../img/team/dan.webp); background-size: 165px 165px;}
 
 .name-team{
 	font-family: 'Open Sans', sans-serif;
