@@ -1,21 +1,22 @@
 
+
 <div id="footer" class="container-one">
     <div class="footer-line"></div>
     <div class="newsletter">
-        <!--
-        <h1>Newsletter</h1>
-        <input type="text" name="newsletter" id="newsletter" value="email adress" onclick="if(this.value=='email adress') this.value=''" onblur="if(this.value=='') this.value='email adress'">
-        <p><a href="#" class="subscribe">Subcribe</a></p>
-        -->
+        <form action="https://green-coding.us14.list-manage.com/subscribe" method="GET">
+            <h1>Newsletter</h1>			
+            <input type="hidden" value="95bb62bd0ea664ca96566837e" name="u" />
+            <input type="hidden" value="772d3b0db9" name="id" />
+            <input type="text" name="MERGE0" id="newsletter" value="email address" onclick="if(this.value=='email address') this.value=''" onblur="if(this.value=='') this.value='email address'">
+            <p><input type="submit" class="subscribe" name="submit" id="newsletter-button" ></p>
+            </form>   
         <div class="credits">
-            <img src="/img/email.png" height="20"><a href="http://eepurl.com/hYCOCj"> Subscribe to our Newsletter</a>
             {{ $sections := where $.Site.Pages ".Kind" "section" }}
             {{ range $sections }}
                   {{ $site_title_rss := .Site.Title }}
                   {{ $page_title_rss := .Page.Title }}
                   {{ with  .OutputFormats.Get "rss" }}
-                      ----
-                      <a type="application/rss+xml" title="{{ $site_title_rss }} - {{ $page_title_rss }} Feed" href="{{.Permalink}}"><img src="/img/rss.png" height="20"> {{ $page_title_rss }}</a>
+                      <a type="application/rss+xml" title="{{ $site_title_rss }} - {{ $page_title_rss }} Feed" href="{{.Permalink}}"><img src="/img/rss.png" height="20"> {{ $page_title_rss }}</a>&nbsp; &nbsp;
                   {{ end }}
             {{ end }}
 
