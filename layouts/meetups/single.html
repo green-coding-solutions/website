@@ -13,7 +13,18 @@
             <div class="data-content-three">
                 <h1><b>{{ .Params.Meetupname }}</b></h1>
                 <p><strong>{{ .Date.Format "2.1.2006 at 15:04" }}</strong></p>
-                <img src="{{.Params.Meetupimg}}" style="width: 100%; max-width: 300px;">
+                <!-- <img src="{{.Params.Meetupimg}}" style="width: 100%; max-width: 300px;"> -->
+                {{ if (isset .Params "meetupimg600w") }}
+                    <img srcset="{{.Params.Meetupimg}} 480w,
+                    {{.Params.Meetupimg600w}} 800w"
+                    src="{{.Params.Meetupimg}}"
+                    style="max-width: 600px"
+                    loading="lazy" >
+                {{ else }}
+                    <img src="{{.Params.Meetupimg}}"
+                    style="width: 300px"
+                    loading="lazy" >
+                {{ end }}
             </div>
             <div class="data-content-one">
                 {{ .Content }}

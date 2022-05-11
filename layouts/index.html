@@ -56,8 +56,17 @@
                     <a href="{{.Permalink}}">
                       <div class="ch-grid">
                         <div class="work-info"><span> {{.Title}}<br><span>Meetup.com</span></span></div>
-                          <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-{{$index}}"></div><![endif]-->
-                          <!--[if gt IE 9]><!--><div class="ch-item ch-img-{{$index}}"></div><!--<![endif]-->
+                            {{ if (isset .Params "meetupimg600w") }}
+                                <img srcset="{{.Params.Meetupimg}} 1x,
+                                {{.Params.Meetupimg600w}} 2x"
+                                src="{{.Params.Meetupimg}}"
+                                style="width: 300px"
+                                >
+                            {{ else }}
+                                <img src="{{.Params.Meetupimg}}"
+                                style="width: 300px"
+                                >
+                            {{ end }}
                       </div>
                     </a>
                 </div>
