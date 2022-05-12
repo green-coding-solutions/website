@@ -13,10 +13,6 @@ out if no need.
 They are however loaded in the site-style.html and site-scripts.html. There the
 bundling code is visible. Add new files to the bundle there
 
-- Exception to this rule is the dynamic way of rendering the meetup images.
-They are handled in index.css. Here all /meetup content articles are looped
-and for their value .Meetupimg some dynamic CSS rules are written out.
-
 ## Template
 This site uses the Candy Flat Theme.
 (Internal: It is in the company Shared Drive.)
