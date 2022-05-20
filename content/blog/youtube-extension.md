@@ -35,14 +35,22 @@ From now on, just go to Youtube, click on any video, and you'll see that the Aut
 
 The savings (in bandwidth and carbon) can be enormous.
 
-While watching "Björk - All Is Full of Love" (https://www.youtube.com/watch?v=k9YZW7XGON0), using the DevTools to measure the network activity, the total size of the video went down from 160MB (original 4k - 2160p quality) to 9.4MB (144p quality). That's a 94% savings! We also measured the same video using other available extensions, for instance Audio Only Youtube (89% savings) and Music Mode for Youtube (99%). While those two extensions also provided enormous savings, they didn't show the video, which in this case was not what we really wanted.
+While watching "Björk - All Is Full of Love" (https://www.youtube.com/watch?v=k9YZW7XGON0), using the DevTools to measure the network activity, the total size of the video went down from 160MB (original 4k - 2160p quality) to 9.4MB (144p quality).
+
+That's a 94% savings!
+
+We also measured the same video using other available extensions, for instance Audio Only Youtube (89% savings) and Music Mode for Youtube (99%).\
+While those two extensions also provided enormous savings, they didn't show the video, which in this case was not what we really wanted.
 
 {{< rawhtml >}}
 <img src="/img/blog/bjork.webp" alt="Björk clip" loading="lazy" style="display: block;
   margin-left: auto; margin-right: auto; margin-bottom: 25px;">
 {{< /rawhtml >}}
 
-When talking about music only, there's also another option. Take into example "Metallica - For Whom The Bell Tolls", a 5:09 "video" on https://www.youtube.com/watch?v=eeqGuaAl6Ic. Using our extension, it went down from 27.6 to 5.4MB (80% savings). For such audio-only videos which are also officially available at Youtube Music, a simple trick is to change the URL from www.youtube.com to music.youtube.com. The same song now has only 5.0MB by simply going to https://music.youtube.com/watch?v=eeqGuaAl6Ic.
+When talking about music only, there's also another option. Take into example "Metallica - For Whom The Bell Tolls", a 5:09 "video" on https://www.youtube.com/watch?v=eeqGuaAl6Ic. \
+Using our extension, it went down from 27.6 to 5.4MB (80% savings).\
+For such audio-only videos which are also officially available at Youtube Music, a simple trick is to change the URL from www.youtube.com to music.youtube.com. \
+The same song now has only 5.0MB by simply going to https://music.youtube.com/watch?v=eeqGuaAl6Ic.
 
 &nbsp;
 
