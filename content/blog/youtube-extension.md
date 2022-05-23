@@ -7,8 +7,7 @@ authorlink: "https://www.linkedin.com/in/alexandre-oliv"
 ---
 
 {{< rawhtml >}}
-<img src="/img/blog/youtube_extension.webp" alt="Greener Youtube extension" loading="lazy" style="display: block;
-  margin-left: auto; margin-right: auto; margin-bottom: 15px;">
+<img src="/img/blog/youtube_extension.webp" alt="Greener Youtube extension" loading="lazy" style="max-width: 600px; width: 80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;">
 {{< /rawhtml >}}
 
 How many times do we use Youtube only to listen to songs, or to watch videos without the necessity of going for that fancy 4k/HD resolution? Also: do we really want to automatically watch other (algorithmically-chosen) videos after the current video is finished? In other words, how can we have a carbon-friendly approach while still getting the content we wanted?
@@ -43,7 +42,7 @@ We also measured the same video using other available extensions, for instance A
 While those two extensions also provided enormous savings, they didn't show the video, which in this case was not what we really wanted.
 
 {{< rawhtml >}}
-<img src="/img/blog/bjork.webp" alt="Björk clip" loading="lazy" style="display: block;
+<img src="/img/blog/bjork.webp" alt="Björk clip" loading="lazy" style="max-width: 600px; width: 80%; display: block;
   margin-left: auto; margin-right: auto; margin-bottom: 25px;">
 {{< /rawhtml >}}
 
