@@ -18,11 +18,11 @@
                     <img srcset="{{.Params.Meetupimg}} 480w,
                     {{.Params.Meetupimg600w}} 800w"
                     src="{{.Params.Meetupimg}}"
-                    style="max-width: 600px"
+                    style="width: 80%; max-width: 600px"
                     loading="lazy" >
                 {{ else }}
                     <img src="{{.Params.Meetupimg}}"
-                    style="width: 300px"
+                    style="width: 80%; max-width: 300px;"
                     loading="lazy" >
                 {{ end }}
             </div>
