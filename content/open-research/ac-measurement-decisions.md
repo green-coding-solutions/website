@@ -23,3 +23,17 @@ So the two interesting devices for us where:
 
 Given the pricepoint the Janitza had a much higher price point, but was available used for the same price.
 So we opted for the latter.
+
+
+### IotaWATT
+
+https://docs.iotawatt.com/en/master/installation.html#voltage-and-frequency
+
+Being an open-source measurement device, this was particularly interesting for us.
+
+However the downside being that it uses current-clamps which the specification was a bit unclear to us.
+
+Since the measure indirectly there will be probably some alteration / smoothing of the signal happening.
+
+Still it would have the enormous benefit, that a pre-configured device could be shipped at low-cost to interested users
+and they just have to "clamp" around their PC line.
