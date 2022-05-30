@@ -38,7 +38,7 @@ setups as well as a typical usage case how a user will interct with the webshop.
 
 ## Demo
 To get a first glimpse and see some visual output we are hosting an instance of the
-tool at https://green-metric.codetactics.de/request.html
+tool at https://metrics.green-coding.org/request.html
 
 Here you can input your contact data and a repository URL. Please note that the
 repository must contain a usage_scenario.json in a correct format and
@@ -51,7 +51,7 @@ After submitting a URL your software will be tested in 5-15 minutes, depeding on
 the current queue. A link to the result page will be sent via e-mail.
 
 If you would like to see the results of the demo repository right away just
-go to: https://green-metric.codetactics.de/?id=04ca9a03-a6a0-4fa5-ac84-2e0a2a5a1375
+go to: https://metrics.green-coding.org/?id=04ca9a03-a6a0-4fa5-ac84-2e0a2a5a1375
 
 `
 &nbsp;
