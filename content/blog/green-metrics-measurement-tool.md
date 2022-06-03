@@ -50,8 +50,8 @@ that you can test: [https://github.com/green-coding-berlin/green-metric-demo-sof
 After submitting a URL your software will be tested in 5-15 minutes, depeding on
 the current queue. A link to the result page will be sent via e-mail.
 
-If you would like to see the results of the demo repository right away just
-go to: https://metrics.green-coding.org/?id=04ca9a03-a6a0-4fa5-ac84-2e0a2a5a1375
+If you would like to see some results of the demo repository right away just
+go to: https://metrics.green-coding.org/
 
 `
 &nbsp;
