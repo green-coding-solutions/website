@@ -1,0 +1,20 @@
+{{ define "site-navigation" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "site-navigation-single.html" . }}
+{{ end }}
+
+{{ define "main" }}
+    <section id="single-page" class="bg-one"><div id="ancla1"></div>
+        <div style="display:block; height: 100px;"></div>
+        <div class="section-one">
+            <div class="title-one">{{.Params.Title}}</div>
+            <div style="text-align: center;">
+                <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time><span style="display:inline"> - by </span><a href="{{.Params.Authorlink}}" style="display:inline;">{{.Params.Author}} <img src="/img/t-linkedin.png" style="padding-left:  4px;padding-bottom: 4px; width: 16px; height: 16px;"></a>
+            </div>
+            <div class="data-content-one">
+                {{ .Content }}
+            </div>
+         </div>
+    </section><!-- end about -->
+
+{{ end }}
