@@ -49,7 +49,7 @@ Here we compare the energy consumption of a Wordpress version against a static v
 - Wordpress: https://metrics.green-coding.org/stats.html?id=619e720e-f2fc-42fa-9786-c13cb4d9fb72
 
 An example on how to recreate these dashboards and also dive into the raw data to 
-answer more detailed questions we provide [Example Jupyter Notebooks](https://metrics.green-coding.org/data_analysis.html)
+answer more detailed questions we provide [Example Jupyter Notebooks](https://metrics.green-coding.org/data-analysis.html)
 
 
 **Please subscribe to our Newsletter to stay tuned when we release the Documentation and subsequent versions**
