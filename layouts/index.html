@@ -56,8 +56,17 @@
                     <a href="{{.Permalink}}">
                       <div class="ch-grid">
                         <div class="work-info"><span> {{.Title}}<br><span>Meetup.com</span></span></div>
-                          <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-{{$index}}"></div><![endif]-->
-                          <!--[if gt IE 9]><!--><div class="ch-item ch-img-{{$index}}"></div><!--<![endif]-->
+                            {{ if (isset .Params "meetupimg600w") }}
+                                <img srcset="{{.Params.Meetupimg}} 1x,
+                                {{.Params.Meetupimg600w}} 2x"
+                                src="{{.Params.Meetupimg}}"
+                                style="width: 300px"
+                                loading="lazy" >
+                            {{ else }}
+                                <img src="{{.Params.Meetupimg}}"
+                                style="width: 300px"
+                                loading="lazy" >
+                            {{ end }}
                       </div>
                     </a>
                 </div>
@@ -93,7 +102,8 @@
                         
                         <div class="who"><!-- THREE -->
                             <div class="members-box">
-                                <div class="photo photo-three"></div>
+                                <img src="../img/team/arne_square.webp" loading=lazy style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
+                                    
                                 <div class="name-team">Arne Tarara</div>
                             </div>
                             <div class="photo-footer">
@@ -106,7 +116,7 @@
                         </div>
                         <div class="who">
                             <div class="members-box">
-                                <div class="photo photo-six"></div>
+                                <img src="../img/team/dan.webp" loading=lazy style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
                                 <div class="name-team">Dan Mateas</div>
                             </div>
                             <div class="photo-footer">
@@ -119,7 +129,7 @@
                         </div>
                         <div class="who"><!-- TWO -->
                             <div class="members-box">
-                                <div class="photo photo-five"></div>
+                                <img src="../img/team/alex.webp" loading=lazy style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
                                 <div class="name-team">Alexandre Oliveira</div>
                             </div>
                             <div class="photo-footer">
@@ -132,7 +142,7 @@
                         </div>
                         <div class="who"><!-- ONE -->
                             <div class="members-box">
-                                <div class="photo photo-one"></div>
+                                <img src="../img/team/jonathan_square.jpg" loading=lazy style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
                                 <div class="name-team">Jonathan Saudhof</div>
                             </div>
                             <div class="photo-footer">

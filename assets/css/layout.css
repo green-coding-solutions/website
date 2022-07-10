@@ -410,7 +410,7 @@
 		
 		.credits {clear: both; font-size: 10px; margin-right: 18px; text-align:center;}
 		#newsletter {width: 155px;}
-		.subscribe {padding: 9px 15px 10px 15px;}
+		.subscribe {padding: 9px 15px 10px 15px !important;}
 		.newsletter h1 {margin-left: 14px;}
 		.newsletter {margin-top: 55px;}
 		

@@ -1,3 +1,0 @@
-{{ range $index, $element := ( where .Site.RegularPages "Type" "meetups" ) }}
-.ch-grid .ch-img-{{ $index }} {background-image: url( {{.Params.Meetupimg}}); background-size:  300px }
-{{end}}

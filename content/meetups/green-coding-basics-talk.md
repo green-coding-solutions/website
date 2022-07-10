@@ -5,7 +5,8 @@ publishDate: 2022-05-06
 draft: false
 meetuplink: "https://www.meetup.com/green-coding/events/285739714/"
 meetupname: "Green Coding Basics - carbon savings and rebound effects for users and web devs"
-meetupimg: '/img/meetups/green-coding-basics.webp'
+meetupimg: "/img/meetups/green-coding-basics.webp"
+meetupimg600w: "/img/meetups/green-coding-basics-600w.webp"
 ---
 
 We are proud to announce our first in-person Meetup where you can meet like minded green software engineers and our team.
@@ -17,11 +18,11 @@ Also some background info on DNS-blocking with Raspberry PI, why downloading "mu
 
 In the developer part we will highlight some techniques like
 
-- br-compression
-- static sites on cloudflare pages
-- Image compression with AVIF / webP
-- Green Hosting
-- etc.
+-   br-compression
+-   static sites on cloudflare pages
+-   Image compression with AVIF / webP
+-   Green Hosting
+-   etc.
 
 What we believe here is the unique and new view on all of these topics is that we present hard numbers regarding CO2 / Energy use of all of these techniques and also where the (potential) backlashes / rebound-effects are.
 
@@ -34,6 +35,7 @@ How much does green hosting really save in terms of carbon? Is a switch worth it
 We will give answers and strategies for you as a user and as a developer with hard numbers.
 
 ## Schedule
+
 [7:00 pm - 7:10 pm] Arrival and short Intro
 
 [7:10 pm - 7:45 pm] Talk
@@ -43,4 +45,3 @@ We will give answers and strategies for you as a user and as a developer with ha
 So we hope to see you on the 19th of May in Betahaus.
 
 There will be Food & Drinks :)
-

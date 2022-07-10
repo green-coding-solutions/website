@@ -19,6 +19,15 @@
       <link rel="alternate" type="application/rss+xml" title="{{$site_title_rss}} - {{$page_title_rss}} Feed" href="{{.Permalink}}" />
   {{ end }}
 
+  {{/* The following block means:
+      If there is a CSS file called the SAME name as the current page, please output
+      that. This functionality enables custom CSS files per template.
+      Example:
+          - index.css inside of /layouts would render for the main page
+          - single.css inside of /layouts/meetup would render only for single meetup pages etc.
+
+      Important: Remember to set also the [outputs] rule in the config.toml accordingly
+  */}}
   {{ with  .OutputFormats.Get "css" }}
       <link rel="stylesheet" href="{{.Permalink}}"  />
   {{ end }}

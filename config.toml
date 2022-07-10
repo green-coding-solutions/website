@@ -13,7 +13,8 @@ summaryLength = 30
   minifyOutput = false
 
 [outputs]
-  home = ['HTML', 'CSS']
+  home = ['HTML']
+  # home = ['HTML', 'CSS'] # if you want to render CSS for a normal page, please also set this rule acccordingly
 
 [taxonomies]
   tag = ""

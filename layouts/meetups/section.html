@@ -12,7 +12,7 @@
             <div class="data-content-one">
                 {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "meetups" ) ) }}
                 {{ range $paginator.Pages.ByDate.Reverse }}
-                    <div class="line line-1" style="margin: 25px auto;"></div>
+                    <div class="line line-1" style="margin: 60px auto;"></div>
                     <h3><a href="{{.Permalink}}">Meetup: {{.Params.Meetupname}}</a></h3>
                     <time>{{ .Date.Format "2.1.2006 at 15:04" }}</time>
                     <div>
