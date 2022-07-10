@@ -61,3 +61,11 @@ You have to monitor for context switches and then either take a time probe or a 
 Just relying on Instruction Counters OR on time without this signal can lead to skewed results.
 
 TODO: How do we do that?
+
+TODO2: When I do `perf stat -a stress -c 1 -t 5 ` I get varying amount of Instruction counters.
+even more confusing: 
+- sudo perf stat -a stress -c 1 -t 2 => ~ 6.900.000.000 Cycles 
+    + Also there is a value called "CPU Clock" which is very interesting! This is time that the CPU has actually spent!
+
+So although in servers the instruction counter is blocked the CPU clock is still possible!
+So the cpu-clock and task-clock in perf look very interesting!    
