@@ -92,7 +92,6 @@
 }
 
 .newsletter{display: inline-table; margin-top: 55px;}
-.newsletter p{float: left;}
 
 
 html,
@@ -450,7 +449,6 @@ nav li a{text-decoration: none;}
 	width: 100%;
 	height: 375px;
 	background: #2b3e50;
-	text-align: center;
 }
 
 .credits{
@@ -464,11 +462,10 @@ nav li a{text-decoration: none;}
 	clear:both;
 }
 
-.newsletter h1{font-size: 36px; font-weight: 400; font-family: 'Lato', sans-serif; color: #fff; width: auto; float: left; line-height: 36px;}
+.newsletter h1{font-size: 36px; font-weight: 400; font-family: 'Lato', sans-serif; color: #fff; width: auto; line-height: 36px;}
 #newsletter{
 	border: none;
 	background: #486e93;
-	width: 510px;
 	height: auto;
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
@@ -476,12 +473,10 @@ nav li a{text-decoration: none;}
 	color: #8caecf;
 	padding: 8px 15px;
 	outline: none;
-	float: left;
 	margin: 0 13px;
 }
 
 .subscribe{
-	float: left !important;
 	background-color: rgb(61, 147, 111) !important;
 	border-radius: 6px !important;
 	display: inline-block !important;
@@ -491,7 +486,6 @@ nav li a{text-decoration: none;}
 	font-weight: 400 !important;
 	padding: 9px 30px 10px 30px !important;
 	text-decoration: none !important;
-	text-align: center !important;
 	margin-right: 0px !important;
 	border: none !important;
 	background: rgb(61, 147, 111) !important;

@@ -178,7 +178,6 @@
 		.titlecontact {}
 		.contactinfo {width: 250px; margin-left: 30px;}
 		.contact-title {}
-		#newsletter {width: 300px;}
 
 	}
 
@@ -255,10 +254,7 @@
 		.ico-four {background-position: -7px -10px;}
 		.titleworks {width: 180px; height: 180px; border-radius: 50%;}
 		
-		#newsletter {width: 275px;}
-		.newsletter h1 {margin-left: 11px;}
 		.credits {clear: both; margin-right: 15px;}
-		.newsletter {margin-top: 45px; width: 480px;}
 		
 		.contactinfo {margin-left: 0;}
 		
@@ -409,10 +405,7 @@
 		.section-one {padding: 115px 0 65px;}
 		
 		.credits {clear: both; font-size: 10px; margin-right: 18px; text-align:center;}
-		#newsletter {width: 155px;}
 		.subscribe {padding: 9px 15px 10px 15px !important;}
-		.newsletter h1 {margin-left: 14px;}
-		.newsletter {margin-top: 55px;}
 		
 		.close {right: 14px; top: 4px;}
 		
