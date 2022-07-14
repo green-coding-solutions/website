@@ -34,27 +34,6 @@
     <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 
 </div><!-- end footer -->
-  {{/*
-      The following block is using minification for the assets.
-
-      If you just want to normally include the assets, place them in
-      /static instead of /assets and include them as known:
-
-        <script src="/js/vendor/modernizr.custom.76532.js"></script> ...
-
-  */}}
-  {{ $js_bottom_plugins := resources.Get "js/plugins.js" }}
-  {{ $js_bottom_respond := resources.Get "js/respond.min.js" }}
-  {{ $js_bottom_inview := resources.Get "js/jquery.inview.js" }}
-  {{ $js_bottom_custom := resources.Get "js/customScripts.js" }}
-
-  {{ $js_bottom := slice $js_bottom_plugins $js_bottom_respond $js_bottom_inview $js_bottom_custom | resources.Concat "js/bundle_bottom.js" | minify | fingerprint }}
-  <script src="{{ $js_bottom.Permalink }}"></script>
-
-
-<!-- Recent Works Slider -->
-
-<!--  end Recent Works Slider -->
 
     </body>
 </html>

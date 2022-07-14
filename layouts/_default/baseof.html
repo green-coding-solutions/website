@@ -13,11 +13,19 @@
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="msvalidate.01" content="047ED770C38FE8200066EA08D7D93ED7" />
+  <meta name="google-site-verification" content="tPwJJw8YDSbAj8D2PCnMjnX5la8L0ELp7JCvQLKau8A" />
+  {{ if eq (.Params.Noindex) true }}
+      <meta name="robots" content="noindex, follow">
+  {{ else }}
+      <meta robots="robots" CONTENT="index, follow">
+  {{ end }}
+
   {{ $site_title_rss := .Site.Title }}
   {{ $page_title_rss := .Page.Title }}
   {{ with  .OutputFormats.Get "rss" }}
       <link rel="alternate" type="application/rss+xml" title="{{$site_title_rss}} - {{$page_title_rss}} Feed" href="{{.Permalink}}" />
   {{ end }}
+  {{ partial "site-scripts.html" . }}
 
   {{/* The following block means:
       If there is a CSS file called the SAME name as the current page, please output
@@ -32,18 +40,7 @@
       <link rel="stylesheet" href="{{.Permalink}}"  />
   {{ end }}
 
-<!--[if IE 8]>
-    <link rel="stylesheet" type="text/css" href="css/ie8.css">
-<![endif]-->
-  <meta name="google-site-verification" content="tPwJJw8YDSbAj8D2PCnMjnX5la8L0ELp7JCvQLKau8A" />
-  {{ if eq (.Params.Noindex) true }}
-      <meta name="robots" content="noindex, follow">
-  {{ else }}
-      <meta robots="robots" CONTENT="index, follow">
-  {{ end }}
-
     {{ partial "site-style.html" . }}
-    {{ partial "site-scripts.html" . }}
 
     {{ block "favicon" . }}
       {{ partialCached "site-favicon.html" . }}
