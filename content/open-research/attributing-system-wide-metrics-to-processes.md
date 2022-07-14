@@ -53,10 +53,20 @@ and then 80% in sleep mode doing 0 instruction cycles. In total consuming 10J.
 When we split by time however we would attribute 2J to our process and 8J to the system. Instead a more logical attribution would to fully
 attribute the 10J to the process, cause the sleep did cost no Instruction Cycles.
 
+
+
+## Caveats of Instruction Cycles:
+
 Instuctions cycles have their own caveat though, cause the observed Instruction cycles might be necessary the ones that where relevant to our process as CPUs might execute different Instructions out of order: https://en.wikipedia.org/wiki/Hardware_performance_counter (IBS).
 
+Also it might be the case, that when you have high load, that the Instruction Count does actually go up in total.
+These *extra instructions* happen because of the more frequent context switches. 
+Even if the nice value of the process is very low the Linux Fair Scheduler will still schedule some other processes 
+in and especially if you run multiple workloads with same nice values they get context-switched.
 
-## Takeaway message:
+This can blow oup the total instruction count and it might in turn here be better to use time as your measurement.
+
+## Important Points:
 You have to monitor for context switches and then either take a time probe or a Instruction counter probe.
 Just relying on Instruction Counters OR on time without this signal can lead to skewed results.
 
@@ -67,5 +77,12 @@ even more confusing:
 - sudo perf stat -a stress -c 1 -t 2 => ~ 6.900.000.000 Cycles 
     + Also there is a value called "CPU Clock" which is very interesting! This is time that the CPU has actually spent!
 
-So although in servers the instruction counter is blocked the CPU clock is still possible!
+## Summary: When to pick which?
+- In burst loads, like for instance a server that has significant idle time the CPU will usually go into TurboBoost
+  when a request comes in. Here Instruction Cycle measurement will be better.
+- When having a very steadily loaded machine at around 70-80% utliziation time measurements are the easier and good enough way to go
+- When having a fully loaded machine around 90% or 100% or even doing High Performance Computing then time measurement might be the better way to go.
+
+TODO: So although in servers the instruction counter is blocked the CPU clock is still possible!
 So the cpu-clock and task-clock in perf look very interesting!    
+
