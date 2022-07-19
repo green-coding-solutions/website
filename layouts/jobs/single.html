@@ -1,0 +1,25 @@
+{{ define "site-navigation" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "site-navigation-single.html" . }}
+{{ end }}
+
+{{ define "main" }}
+    <section id="single-page" class="bg-one"><div id="ancla1"></div>
+        <div style="display:block; height: 100px;"></div>
+        <div class="section-one">
+            <div class="title-one">{{ .Title }}</div>
+            <div class="separator"><div class="line line-1"></div></div>
+
+            <div class="data-content-one">
+                {{ .Content }}
+            </div>
+            <div class="btn-one-center">
+                <div class="btn-one">
+                    <span><a href="mailto:jobs@green-coding.org?subject=I would like to work with you :)" style="text-decoration: none; color: #fff;">Apply now via email</a></span>
+                </div>
+            </div>
+
+         </div>
+    </section><!-- end about -->
+
+{{ end }}
