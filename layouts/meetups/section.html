@@ -8,16 +8,15 @@
         <div style="display:block; height: 100px;"></div>
         <div class="section-one">
             <div class="title-one">Meetups</div>
-            <div class="data-content-three">Here you will find a list of all our meetup. Be sure to check the detail page for the link to Meetup.com or Eventbrite. Some meetups are held in person while some are also done online online. We provide recordings if possible.</div>
             <div class="data-content-one">
                 {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "meetups" ) ) }}
                 {{ range $paginator.Pages.ByDate.Reverse }}
                     <div class="line line-1" style="margin: 60px auto;"></div>
-                    <h3><a href="{{.Permalink}}">Meetup: {{.Params.Meetupname}}</a></h3>
-                    <time>{{ .Date.Format "2.1.2006 at 15:04" }}</time>
+                    <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
                     <div>
                         {{ .Summary }} [...]
                     </div>
+                    <time>Meetup Date: {{ .Date.Format "2.1.2006 at 15:04" }}</time>
                 {{end}}
                 {{ template "_internal/pagination.html" . }}
             </div>

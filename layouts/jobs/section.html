@@ -13,11 +13,12 @@
                 {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "jobs" ) ) }}
                 {{ range $paginator.Pages.ByDate.Reverse }}
                     <div class="line line-1" style="margin: 60px auto;"></div>
-                    <h3><a href="{{.Permalink}}">Role: {{.Params.Title}}</a></h3>
-                    <time>Position currently open</time>
+                    <h2><a href="{{.Permalink}}">Role: {{.Params.Title}}</a></h2>
                     <div>
                         {{ .Summary }} [...]
                     </div>
+                    <time>Position currently open</time>
+
                 {{end}}
                 {{ template "_internal/pagination.html" . }}
             </div>
