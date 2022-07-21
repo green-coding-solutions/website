@@ -8,13 +8,12 @@
 
   */}}
 
-  {{ $js_top_jquery := resources.Get "js/jquery-1.9.0.min.js" }}
-  {{ $js_top_scrollto := resources.Get "js/jquery.scrollTo-1.4.3.1-min.js" }}
-  {{ $js_top_modernizr := resources.Get "js/modernizr.custom.76532.js" }}
-  {{ $js_top_plugins := resources.Get "js/plugins.js" }}
-  {{ $js_top_respond := resources.Get "js/respond.min.js" }}
-  {{ $js_top_inview := resources.Get "js/jquery.inview.js" }}
-  {{ $js_top_custom := resources.Get "js/customScripts.js" }}
 
-  {{ $js_top := slice $js_top_jquery $js_top_modernizr $js_top_modernizr $js_top_plugins $js_top_respond $js_top_inview $js_top_custom | resources.Concat "js/bundle_top.js" | minify | fingerprint }}
-  <script src="{{ $js_top.Permalink }}" defer></script>
+<script src='{{ (resources.Get "js/jquery-1.9.0.min.js" | minify | fingerprint).Permalink }}' defer></script>
+<script src='{{ (resources.Get "js/jquery.scrollTo-1.4.3.1-min.js" | minify | fingerprint).Permalink }}'></script>
+<script src='{{ (resources.Get "js/modernizr.custom.76532.js" | minify | fingerprint).Permalink }}' defer></script>
+<script src='{{ (resources.Get "js/plugins.js" | minify | fingerprint).Permalink }}' defer></script>
+<script src='{{ (resources.Get "js/respond.min.js" | minify | fingerprint).Permalink }}' defer></script>
+<script src='{{ (resources.Get "js/jquery.inview.js" | minify | fingerprint).Permalink }}' defer></script>
+<script src='{{ (resources.Get "js/customScripts.js" | minify | fingerprint).Permalink }}' defer></script>
+

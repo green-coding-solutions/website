@@ -7,14 +7,31 @@
     <script src="/js/vendor/modernizr.custom.76532.js"></script> ...
 
 */}}
-{{ $css_top_normalize := resources.Get "css/normalize.css" }}
-{{ $css_top_main := resources.Get "css/main.css" }}
-{{ $css_top_base := resources.Get "css/base.css" }}
-{{ $css_top_skeleton := resources.Get "css/skeleton.css" }}
-{{ $css_top_portfoliostyle := resources.Get "css/portfoliostyle.css" }}
-{{ $css_top_roll_over := resources.Get "css/roll_over.css" }}
-{{ $css_top_layout := resources.Get "css/layout.css" }}
 
-{{ $css_top := slice $css_top_normalize $css_top_main $css_top_base $css_top_skeleton $css_top_portfoliostyle $css_top_roll_over $css_top_layout | resources.Concat "css/bundle_top.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $css_top.Permalink }}">
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/normalize.css" | minify | fingerprint).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/main.css" | minify | fingerprint).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/base.css" | minify | fingerprint).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/skeleton.css" | minify | fingerprint).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/portfoliostyle.css" | minify | fingerprint).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/roll_over.css" | minify | fingerprint).Permalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/layout.css" | minify | fingerprint).Permalink }}'>
 
+{{ if or (eq .Page.Title "CO2 Formulas") (eq .Page.Section "showcases")   }}
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/reset.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/site.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/card.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/container.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/header.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/step.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/icon.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/menu.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/segment.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/message.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/placeholder.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/label.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/image.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/button.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/statistic.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/list.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/header.min.css">
+{{ end}}
