@@ -217,7 +217,7 @@ textarea {
 	margin: auto;
 	line-height: 25px;
 	text-align: center;
-	width: 960px;
+	max-width: 960px;
 }
 
 .btn-banner{
@@ -560,13 +560,13 @@ nav li a{text-decoration: none;}
 }
 
 .section-one{
-	width: 960px;
+	max-width: 960px;
 	margin:auto;
 	padding: 115px 0;
 	overflow: auto;
 }
 .section-two{
-	width: 960px;
+	max-width: 960px;
 	margin:auto;
 	padding: 115px 0;
 	overflow: auto;
@@ -1197,7 +1197,7 @@ h3, h3 a {
     text-decoration: none;
 }
 
-.works-header{width: 960px; height: auto; margin: auto;}
+.works-header{max-width: 1200px; height: auto; margin:960o;}
 
 #freebies .titlesection {margin-bottom: 35px; font-size: 39px;}
 
@@ -1299,7 +1299,7 @@ h3, h3 a {
 }
 
 .membersteamslider{
-	width: 960px;
+	max-width: 960px;
 	height: auto;
 }
 
@@ -1391,7 +1391,7 @@ h3, h3 a {
 /* --------------------- TEAM SECTION --------------------- */
 
 #team .section {
-width: 960px;
+max-width: 960px;
 margin: auto;
 padding-bottom: 20px;
 }
@@ -1882,7 +1882,7 @@ body .date{
 
 .infobanner{
 	height: auto;
-	width: 960px;
+	max-width: 960px;
 	margin: auto;
 	padding-top: 130px;
 }
@@ -2218,8 +2218,13 @@ li {list-style: circle inside none;}
 
 .data-content-one li p {display:  inline;}
 
-#single-page .data-content-one{
+.single-page .section-one, .single-page .section-tow {
+    max-width:  1200px !important;
+}
+#single-page .data-content-one, .single-page .data-content-one{
     text-align: left;
+    margin-left:  50px;
+    margin-right:  50px;
 }
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
