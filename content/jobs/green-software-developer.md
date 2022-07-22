@@ -6,10 +6,9 @@ draft: false
 At Green Coding Berlin we create a green software community and ecosystem in Berlin. 
 
 Our goal is to shape the industry for the better in terms of using software in a sustainable way.
-We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and 
-with strong planning to avoid rebound effects.
+We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and with strong planning to avoid rebound effects.
 
-Therefore we create tools to measure the the energy use of software in CI-Build-Pipelines, VMs, Containers and User Desktop environments.
+Therefore we create tools to measure the energy use of software in CI-Build-Pipelines, VMs, Containers and User Desktop environments.
 All of our software is Free and Open-Source Software to be used by anyone.
 
 Our flagship work is an [open-source green software certifcation toolchain](https://github.com/green-coding-berlin/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
@@ -17,13 +16,13 @@ Our flagship work is an [open-source green software certifcation toolchain](http
 &nbsp;
 
 ### What you will be working on:
-You will be working with our team to create tools to measure the energy use of software, and (drumroll please) actually MEASURE software :)
+You will be working with our team to create tools to measure the energy use of software and (drumroll please) actually MEASURE software :)
 
 This may include setting up and measuring Cloud environments, build-chains, Virtual Machines and more.
 
 The work at Green Coding for our toolchain covers an extensive scope where you come into contact with a lot of tools that may be new to you. However, we supply an extensive onboarding and enough time to learn these tools if you are not already familiar with them.
 
-Have a look at our Github Repository to get an overview of our tools: https://github.com/green-coding-berlin
+Have a look at our Github Repository to get an overview of our tools: https://github.com/green-coding-berlin 
 
 Also check out the documentation for our flagship tool to get an impression of it: https://docs.green-coding.org/
 
@@ -33,25 +32,23 @@ We also currently work on CO2 emission reporters for different CI-Pipelines as w
 
 ### How your typical week looks like
 
-When working at Green Coding Berlin GmbH as an engineer the work is quite different from traditional coding jobs.
+When working at Green Coding Berlin GmbH as an engineer, the work is quite different from traditional coding jobs.
 
-Working in CO2 measurement of software is currently still a very academic profession. Therefore your weekly work is typically 
-divided into reseach (reading Computer Science papers, articles and proof-of-concept code) and writing prototypes, tests and tools.
+Working in CO2 measurement of software is currently still a very academic profession. Therefore your weekly work is typically divided into reseach (reading Computer Science papers, articles and proof-of-concept code) and writing prototypes, tests and tools.
 
-Many already established measurement solutions do not work in Cloud environment and usually we have to find ways how to still get 
-the best possible data.
+Many already established measurement solutions do not work in Cloud environment and usually we have to find ways how to still get the best possible data.
 
-In order to foster this process we typically meet mutiple times per week with the team to discuss our approaches and generate new 
-methods and ideas how to solve open problems.
-We really like this create and architectural process and believe you will do too :)
+In order to foster this process we typically meet mutiple times per week with the team to discuss our approaches and generate new methods and ideas for solving open problems.
+
+We really like this creative and architectural process and believe you will do too :)
 
 Your concrete coding work will be mostly on Linux systems writing either Python, Javascript or C Code. 
 Typically when measuring architectures, applications or software libraries this means creating a demo application with them.
 
-To get an idea how this would look like have a look at our [repository for demo applications](https://github.com/green-coding-berlin/example-applications) (mostly web applications at the moment) and our documentation on [Example applications](https://docs.green-coding.org/docs/prologue/example-applications/) and [containerization of applications](https://docs.green-coding.org/docs/measuring/containerizing-applications/)
+To get an idea how this would look like have a look at our [repository for demo applications](https://github.com/green-coding-berlin/example-applications) (mostly web applications at the moment) and our documentation on [Example applications](https://docs.green-coding.org/docs/prologue/example-applications/) and [containerization of applications](https://docs.green-coding.org/docs/measuring/containerizing-applications/).
+Also check out our [Showcases](https://www.green-coding.org/showcases), [CO2 Formulas for digital products](https://www.green-coding.org/co2-formulas) and our [Green Metrics Dashboard](https://metrics.green-coding.org) to get an idea of how the raw metrics will be presented.
 
-Most of our tooling is written in script langauges like Python or Node. Most of the low-level measurement software is written
-in C.
+Most of our tooling is written in script langauges like Python or Node. Most of the low-level measurement software is written in C.
 
 
 ### Your qualification:
@@ -108,9 +105,9 @@ During the onboarding however, which can take around 1-2 months, we usually star
 ### How to apply
 Just shoot us an email at jobs@green-coding.org with a quick intro and why you would like to join our team.
 
-Please also include a quick comment on your skills regarding the aformetioned features we want the tool to incorporate.
+Please also include a quick comment on your skills regarding the aformetioned skills.
 
-A link to your Linked-In and Github profile is usually helpful.
+A link to your LinkedIn and Github profile is usually helpful.
 
 
 There is no need for formal documents. If you want to send them however, feel free to attach them.
