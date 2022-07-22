@@ -1,0 +1,43 @@
+{{ define "site-navigation" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "site-navigation-single.html" . }}
+{{ end }}
+
+{{ define "main" }}
+    {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "showcases" ) ) }}
+    {{ range $index, $element := $paginator.Pages.ByDate.Reverse }}
+
+        {{ if mod $index 2 | eq 0 }}
+            <section id="meetups" class="bg-one" style="padding: 0px;">
+                <div class="section-two"  style="padding: 0px;">
+                    <div class="data-content-two">
+                        <a href="{{.Permalink}}"><h3 class="title-one" style="padding: 0px;">{{.Params.Title}}</h3></a>
+                        <div class="separator" style="padding: 20px;"><div class="line line-1"></div></div>
+            <div>
+                            {{ .Summary }} [...]
+                        </div>
+                        <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time><span style="display:inline"> - by </span><a href="{{.Params.Authorlink}}" style="display:inline;">{{.Params.Author}} <img src="/img/t-linkedin.png" style="padding-left:  4px;padding-bottom: 4px; width: 16px; height: 16px;"></a>
+
+                    </div>
+                 </div>
+            </section><!-- end about -->
+        {{ else }}
+            <section id="meetups" class="bg-two"  style="padding: 0px;">
+                <div class="section-two"  style="padding: 0px;">
+                    <div class="data-content-two">
+                        <a href="{{.Permalink}}"><h3 class="title-two" style="padding: 0px;">{{.Params.Title}}</h3></a>
+                        <div class="separator" style="padding: 20px;"><div class="line line-1"></div></div>
+
+                        <div>
+                            {{ .Summary }} [...]
+                        </div>
+                        <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time><span style="display:inline"> - by </span><a href="{{.Params.Authorlink}}" style="display:inline;">{{.Params.Author}} <img src="/img/t-linkedin.png" style="padding-left:  4px;padding-bottom: 4px; width: 16px; height: 16px;"></a>
+
+                    </div>
+                 </div>
+            </section><!-- end about -->
+        {{end}}
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+
+{{ end }}

@@ -63,7 +63,7 @@
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		
 		.section-one {
-			width: 768px;
+			max-width: 959px;
 			margin: auto;
 		}
 		.section-two {
@@ -101,10 +101,10 @@
 			padding: 0 18px 0 0px;
 		}
 		
-		.profile {width: 767px;}
+		.profile {max-width: 959px;}
 
 		/*  MENU  */
-		.header-container {width: 768px;}
+		.header-container {max-width: 959px;}
 		.contentbtn, .contentbtn2 {font-size: 12px;}
 		.menubtn {margin: 0px 6px;}
 		.homebtn {margin: 0px 6px 0px 0px;}
@@ -115,8 +115,8 @@
 		.infobanner{padding-top: 70px; width: 100%;}
 		/*  ABOUT  */
 		#about, .page.first {}
-		.section {width: 768px;}
-		#team .section {width: 768px;}
+		.section {max-width: 959px;}
+		#team .section {max-width: 959px;}
 		.titlesection {font-size: 35px; margin-bottom: 30px;}
 		.title-2 {font-size: 22px;}
 		.contentsection {margin: 165px auto 0px;}
@@ -135,7 +135,7 @@
 		.centre {margin: 20px 15px 100px 15px;}
 		.infomembers {font-size: 18px;}
 		.direction-bar {margin-right: 40px;}
-		.navigation {width: 768px;}
+		.navigation {max-width: 959px;}
 		.teamcontent {width: 715px; font-size: 16px;}
 		.img-team {margin-top: 45px;}
 		 .teamshow {width: 735px; margin: auto;}
@@ -152,7 +152,7 @@
 		.close{top: 4px; right: 81px;}
 		.nav-project {margin-left: 350px;}
 		.view-project2 {margin-right: 60px;}
-		.works-header {width: 768px;}
+		.works-header {max-width: 959px;}
 
 		/*  SERVICES  */
 		.title.services {font-size: 23px;}
@@ -248,10 +248,6 @@
 		.dir-right {bottom: 280px;}
 		.dir-left {bottom: 280px;}
 		
-		.ico-one {background-position: -7px -10px;}
-		.ico-two {background-position: -7px -10px;}
-		.ico-three {background-position: -7px -10px;}
-		.ico-four {background-position: -7px -10px;}
 		.titleworks {width: 180px; height: 180px; border-radius: 50%;}
 		
 		.credits {clear: both; margin-right: 15px;}

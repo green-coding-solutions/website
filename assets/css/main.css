@@ -217,7 +217,7 @@ textarea {
 	margin: auto;
 	line-height: 25px;
 	text-align: center;
-	max-width: 960px;
+	max-width: 1200px;
 }
 
 .btn-banner{
@@ -286,7 +286,7 @@ textarea {
 	margin: 0px;
 	background: #2b3e50;
 	background-repeat: repeat-x;
-	position: fixed;
+	/*position: fixed;*/
 	z-index: 100!important;
 }
 
@@ -560,13 +560,13 @@ nav li a{text-decoration: none;}
 }
 
 .section-one{
-	max-width: 960px;
+	max-width: 1200px;
 	margin:auto;
 	padding: 115px 0;
 	overflow: auto;
 }
 .section-two{
-	max-width: 960px;
+	max-width: 1200px;
 	margin:auto;
 	padding: 115px 0;
 	overflow: auto;
@@ -950,7 +950,7 @@ nav li a{text-decoration: none;}
 	text-align: center;
 	margin: 50px auto 20px auto;
 	width: auto;
-	max-width: 960px;
+	max-max-width: 1200px;
 }
 
 .title-profile{
@@ -1197,7 +1197,7 @@ h3, h3 a {
     text-decoration: none;
 }
 
-.works-header{max-width: 1200px; height: auto; margin:960o;}
+.works-header{max-width: 1200px; height: auto; margin: auto;}
 
 #freebies .titlesection {margin-bottom: 35px; font-size: 39px;}
 
@@ -1299,7 +1299,7 @@ h3, h3 a {
 }
 
 .membersteamslider{
-	max-width: 960px;
+	max-width: 1200px;
 	height: auto;
 }
 
@@ -1391,7 +1391,7 @@ h3, h3 a {
 /* --------------------- TEAM SECTION --------------------- */
 
 #team .section {
-max-width: 960px;
+max-width: 1200px;
 margin: auto;
 padding-bottom: 20px;
 }
@@ -1882,7 +1882,7 @@ body .date{
 
 .infobanner{
 	height: auto;
-	max-width: 960px;
+	max-width: 1200px;
 	margin: auto;
 	padding-top: 130px;
 }
@@ -2241,3 +2241,20 @@ h1, h2, h3, h4, h5, h6 {
     float: none;
 }
 
+
+
+.gc-top-aligned {
+    align-items: flex-start;
+}
+
+.gc-stats-multiply {
+    text-transform: lowercase !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.gc-stats-multiply div.value {
+    text-transform: lowercase !important;
+}
+
+
+a{color:#4183c4;text-decoration:none}a:hover{color:#1e70bf;text-decoration:none}::-webkit-selection{background-color:#cce2ff;color:rgba(0,0,0,.87)}::-moz-selection{background-color:#cce2ff;color:rgba(0,0,0,.87)}::selection{background-color:#cce2ff;color:rgba(0,0,0,.87)}

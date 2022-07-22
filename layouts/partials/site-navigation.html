@@ -1,28 +1,17 @@
 
 <div class="block-menu">
      <select class="navegation_resp" onchange="if(this.options[this.selectedIndex].value.substr(0,2) == '/#') document.location.hash=this.options[this.selectedIndex].value; else document.location=this.options[this.selectedIndex].value;">
-        <option value="/" selected="selected">Home</option>
-        <option value="#nav-about" class="second_item">About</option>
         <option value="#nav-meetups" class="second_item">Meetups</option>
         <option value="/blog" class="second_item">Blog</option>
         <option value="/jobs" class="second_item">Jobs</option>
+        <option value="/co2-formulas" class="second_item">CO2-Formulas</option>
+        <option value="/showcases" class="second_item">Showcases</option>
         <option value="#nav-team" class="second_item">Team</option>
-        <option value="#nav-contact" class="second_item">Contact</option>
     </select>
 </div>
 <div class="menu-select">
     <nav>
         <ol class="contentMenu">
-            <li>
-                <a href="index.html"><div class="menubtn">
-                    <div class="contentbtn">home</div>
-                </div></a>
-            </li>
-              <li>
-                <a href="#nav-about"><div class="menubtn">
-                    <div class="contentbtn">about</div>
-                </div></a>
-            </li>
             <li>
                <a href="#nav-meetups"><div class="menubtn">
                     <div class="contentbtn">meetups</div>
@@ -39,13 +28,18 @@
                 </div></a>
             </li>
             <li>
-                <a href="#nav-team"><div class="menubtn">
-                    <div class="contentbtn">team</div>
+               <a href="/co2-formulas"><div class="menubtn">
+                    <div class="contentbtn">CO2-Formulas</div>
                 </div></a>
             </li>
-              <li>
-                <a href="#nav-contact"><div class="menubtn">
-                    <div class="contentbtn">contact</div>
+            <li>
+               <a href="/showcases"><div class="menubtn">
+                    <div class="contentbtn">Showcases</div>
+                </div></a>
+            </li>
+            <li>
+                <a href="#nav-team"><div class="menubtn">
+                    <div class="contentbtn">team</div>
                 </div></a>
             </li>
         </ol>
