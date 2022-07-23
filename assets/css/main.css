@@ -981,7 +981,7 @@ nav li a{text-decoration: none;}
 /*.profile-element:hover{background-position: 0 -212px; cursor: pointer;}*/
 
 #about .profile{
-	width: 960px;
+	max-width: 960px;
 	margin: auto;
 }
 
@@ -1749,7 +1749,7 @@ padding-bottom: 20px;
 
 /* Isotope content styles */
 
-#container2 {width: 960px; margin: auto;padding-bottom: 0px;}
+#container2 {max-width: 960px; margin: auto;padding-bottom: 0px;}
 
 .element {
   width: 299px;
