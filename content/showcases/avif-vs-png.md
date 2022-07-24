@@ -2,7 +2,7 @@
 title: "AVIF vs. PNG"
 draft: false
 summary: "In this showcase we will look at image compression with the AVIF format. Typically when trying to optimize a website for network resource consumption and thus CO2 emission images are the lowest hanging fruit."
-date: 2022-07-20 08:00:00
+date: 2022-07-01 08:00:00
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
 
@@ -27,7 +27,7 @@ In this detailed article we will look at the potential backlash when using polyf
             </div>
          </div>
     </section><!-- end about -->
-    <section class="single-page bg-two"><div id="ancla1"></div>
+    <section class="single-page bg-two">
         <div class="section-two" style="padding: 10px;">
             <div class="data-content-one">
                 <div class="ui segment raised">
@@ -42,7 +42,7 @@ In this detailed article we will look at the potential backlash when using polyf
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="#research-question">Introduction</a>
+                                    <a href="#introduction">Introduction</a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@ In this detailed article we will look at the potential backlash when using polyf
                             </div>
                         </div>
                     </div>
-                    <div class="ui message" id="research-question">
+                    <div class="ui message">
                         <h2 class="ui header">
                             <i class="help icon"></i>
                             <div class="content">
@@ -101,7 +101,7 @@ In this detailed article we will look at the potential backlash when using polyf
             </div>
         </div>
     </section><!-- end about -->
-    <section class="single-page bg-one" style=""><div id="ancla1"></div>
+    <section class="single-page bg-one">
         <div class="section-two">
             <div class="title-one">What do we want to find out?</div>
             <div class="separator"><div class="line line-1"></div></div>
@@ -118,7 +118,7 @@ In this detailed article we will look at the potential backlash when using polyf
             </div>
         </div>
     </section><!-- end about -->
-    <section class="single-page bg-two" style=""><div id="ancla1"></div>
+    <section class="single-page bg-two">
         <div class="section-two">
             <div class="title-two">Calculations</div>
             <div class="separator"><div class="line line-1"></div></div>
@@ -185,7 +185,7 @@ In this detailed article we will look at the potential backlash when using polyf
                         </a>
                     </div>
                     <p>First we calculate the savings in form of kB / MB we get when using the webP format:</p>
-                    <div class="ui mini statistics">
+                    <div class="ui ten mini statistics">
                         <div class="statistic">
                             <div class="value">1.000</div>
                             <div class="label">Users</div>
@@ -222,7 +222,7 @@ In this detailed article we will look at the potential backlash when using polyf
                     </div>
                     <h3>Calculate CO2 savings</h3>
                     <p>Since every network transmission has an energy and CO2 budget attached to it we no use our formulas from <a href="#TODO">TODO:_ CO2 formulas for software engineering</a> and then we plug in to calculate the savings per day. We also use the <a href="https://app.electricitymaps.com/zone/DE">avg. grid intensity in Germany</a> for today (280g / kWh).</p>
-                    <div class="ui mini statistics">
+                    <div class="ui ten mini statistics">
                         <div class="statistic">
                             <div class="value">135</div>
                             <div class="label">MB</div>
@@ -261,7 +261,7 @@ In this detailed article we will look at the potential backlash when using polyf
                     <p>In some cases it can be tricky to detect the correct browser and delivering the polyfill only to exactly them. Therefore for reduced complexity the polyfills are always delivered no matter if needed or not.</p>
                     <p>However in this case we believe separating the browsers out through some capability check or the user agent header should work just fine.</p>
                     <p>So we assume that the polyfill is only delivered for our 30% non-supporting Browsers</p>
-                    <div class="ui mini statistics">
+                    <div class="ui ten mini statistics">
                         <div class="statistic">
                             <div class="value">1.000</div>
                             <div class="label">Users</div>
