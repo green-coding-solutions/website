@@ -34,7 +34,8 @@ Working in CO2 measurement of software is currently still a very academic profes
 
 You, as a Junior Developer, will start out on a more guided path and begin with learning to use our tools and create sample applications.
 
-You will take part in the team meetups where we discuss our approaches and generate new methods and ideas for solving open problems.
+You will take part in the team meetups, where the whole team meets and presents current approaches, new ideas and concepts that we all evaluate and iterate together. We do this 1-2 times a week and apart from that are usually home-office first.
+
 We really like this creative and architectural process and believe you will do too :)
 
 
@@ -46,12 +47,12 @@ This is the skillset we think is very helpful to have:
 - HTML
 - CSS
 - Javascript ES6
-- Framwork development in Javascript (Reac, Vue.js, Svelte or similar)
+- Framework development in Javascript (React, Vue.js, Svelte or similar)
 - Databases (MariaDB, PostgreSQL, MongoDB, SQLite or similar)
 - Hosting providers (Cloudflare Pages, Digital Ocean, Heroku or similar)
 - At least around a 6-12 months experience in using one of these programming languages: Node.JS / Javascript or Python or PHP
 
-Spoken languages are english or german. So if you are fluent in any, you are good to go.
+Spoken language in the team is English. But we are a mixed group of English and German speakers.
 
 &nbsp;
 
@@ -76,8 +77,7 @@ Please include your expected salary and part-time/full-time preference in your e
 ### Home-office or in office?
 We are a home-office first company, but we do not offer remote work. You have to be based in Berlin.
 
-The reason is that we have a strong focus on weekly in-person creative meetups, where the whole team meets and presents
-current approaches, new ideas and concepts that we all evaluate and iterate together.
+The reason is that we have a strong focus on weekly in-person creative meetups.
 
 So expect 1-2 days in the office per week for 4-5 hours each.
 

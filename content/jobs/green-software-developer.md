@@ -53,7 +53,7 @@ Most of our tooling is written in script languages like Python or Node. Most of 
 
 ### Your qualification:
 
-We believe the role is best filled with at least 1-2 years experience as a professional software developer. 
+We believe the role is best filled with 2+ years experience as a professional software developer. 
 
 This is the skillset we believe is very helpful to have:
 - Container systems (docker, podman or similar)
@@ -61,13 +61,14 @@ This is the skillset we believe is very helpful to have:
 - Linux subsystem concepts for containerization (cgroups, namespaces, procfs, sysfs)
 - End-to-End Testing Tools (Selenium, Codeception, Playwright or similar)
 - CI-Pipelines (Github actions preferred)
-- At least around a 1 year experience in using one of these programming languages: Node.JS / Javascript or Python or PHP
+- At least around a 1-2 year experience in using one of these programming languages: Node.JS / Javascript or Python or PHP
+- Basic understanding of modern computer achitectures such as microprocessor design, machine registers, asssembly representation of code, microprocessor instructions etc.
 - At least entry level experience in reading, writing and adapting C code.
 
 However if you are not too familiar with some of the skills mentioned before but feel confident you
 can learn them in a short time, also do not hesitate to apply.
 
-Spoken languages are english or german. So if you are fluent in any, you are good to go.
+Spoken language in the team is English. But we are a mixed group of English and German speakers.
 
 &nbsp;
 
