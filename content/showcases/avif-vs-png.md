@@ -181,7 +181,7 @@ In this detailed article we will look at the potential backlash when using polyf
                 <div class="ui segment" id="calculating-savings">
                     <div class="header">
                         <a class="ui orange ribbon label" href="#calculating savings">
-                            <h3 style="color: #fff;">Caclulating savings</h3>
+                            <h3 style="color: #fff;">Calculating savings</h3>
                         </a>
                     </div>
                     <p>First we calculate the savings in form of kB / MB we get when using the AVIF format:</p>

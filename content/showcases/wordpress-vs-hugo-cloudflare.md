@@ -125,7 +125,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                 <div class="ui segment" id="calculating-savings">
                     <div class="header">
                         <a class="ui orange ribbon label" href="#calculating savings">
-                            <h3 style="color: #fff;">Caclulating savings</h3>
+                            <h3 style="color: #fff;">Calculating savings</h3>
                         </a>
                     </div>
                     <p>First we calculate the savings in form of kB / MB we get when using the webP format:</p>

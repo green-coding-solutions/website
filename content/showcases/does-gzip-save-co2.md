@@ -96,7 +96,7 @@ So is it really worth it to gzip if you just care about carbon emissions? Let's 
     </section><!-- end about -->
     <section class="single-page bg-two">
         <div class="section-two">
-            <div class="title-two">Caclulations</div>
+            <div class="title-two">Calculations</div>
             <div class="separator"><div class="line line-1"></div></div>
             <div class="data-content-one">
                 <div class="ui segment" id="energy-data-transfer">
@@ -185,7 +185,7 @@ So is it really worth it to gzip if you just care about carbon emissions? Let's 
                 <div class="ui segment" id="energy-for-compression">
                     <div class="header">
                         <a class="ui orange ribbon label" href="#energy-for-compression">
-                            <h3 style="color: #fff;">Caclulating compute cost</h3>
+                            <h3 style="color: #fff;">Calculating compute cost</h3>
                         </a>
                     </div>
                     <img class="ui large floated right rounded bordered image" src="/img/showcases/perf-call-gzip.webp">                    
