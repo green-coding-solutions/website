@@ -111,7 +111,7 @@ In this detailed article we will look at the potential backlash when using polyf
                         <i class="graduation cap icon"></i>
                         <div class="content">
                             Research question
-                            <div class="sub header">How much do we save in CO2 when converting all PNG to webP and is there a downside / rebound effect to it?</div>
+                            <div class="sub header">How much do we save in CO2 when converting all PNG to AVIF and is there a downside / rebound effect to it?</div>
                         </div>
                     </h2>
                 </div>
@@ -184,7 +184,7 @@ In this detailed article we will look at the potential backlash when using polyf
                             <h3 style="color: #fff;">Caclulating savings</h3>
                         </a>
                     </div>
-                    <p>First we calculate the savings in form of kB / MB we get when using the webP format:</p>
+                    <p>First we calculate the savings in form of kB / MB we get when using the AVIF format:</p>
                     <div class="ui ten mini statistics">
                         <div class="statistic">
                             <div class="value">1.000</div>
@@ -253,7 +253,7 @@ In this detailed article we will look at the potential backlash when using polyf
                         </a>
                     </div>
                     <p></p>
-                    <p>We now know, that we could save a potential <strong>2.268 gCO2e</strong> per day for our 1.000 users if we were to move to AVIF. However what we have not considered yet is the users of the <strong>IE 6-11</strong>,<strong>Safari</strong>, <strong>Edge</strong> and <strong>Chrome < 85</strong> browsers which do not support webP format out of the box.</p>
+                    <p>We now know, that we could save a potential <strong>2.268 gCO2e</strong> per day for our 1.000 users if we were to move to AVIF. However what we have not considered yet is the users of the <strong>IE 6-11</strong>,<strong>Safari</strong>, <strong>Edge</strong> and <strong>Chrome < 85</strong> browsers which do not support AVIF format out of the box.</p>
                     <p>The typical fix for this is to include a polyfill. A choice we have personally used in the past is this library: <a href="https://github.com/Kagami/avif.js">Kagami avif.js</a>, which itself relies on an npm package: <a href="https://www.npmjs.com/package/dav1d.js">dav1d.js</a></p>
                     <p>The total size of this polyfill is <strong>~300 kB</strong></p>
                     <h3>Calculating network traffic impact of the library</h3>
