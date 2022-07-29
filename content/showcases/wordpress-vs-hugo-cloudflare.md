@@ -1,8 +1,7 @@
 ---
 title: "Wordpress vs. Hugo + Cloudlfare"
-draft: true
-summary: "In this showcase we will look at image compression with the AVIF format. Typically when trying to optimize a website for network resource consumption and thus CO2 emission images are the lowest hanging fruit."
-date: 2022-07-22 08:00:00
+summary: "In this showcase we will look the carbon benefit of a static site compared to a Wordpress site. To get a more fair picture we will also include the HUGO build process and reason a bit about a possible hosting optimization."
+date: 2022-07-28 08:00:00
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
 
@@ -24,11 +23,26 @@ We will then look at the savings of HUGO and the potential tipping point if you 
 
 Also we will talk about hosting, as we will see that just moving your site to Wordpress without using a webhosting that can actually turn OFF the server you will have a close to zero impact in carbon emissions.
 
+
+
+- Cost of building around 1-6 Joules -> Link
+- Cost of RAM and disk not looked at. RAM however more than one order of magnitude lower in internal tests
+
+- We will try then the absolute most minimal setups to make the comparison as fair as possible.
+    + We will spin up a simple apache webserver and deliver the hugo public folder
+    + We will spin up the basic wordpress with the same template and just make a request to the root page
+
+
+- CURL vs. Firefox 
+- Exclude functionality for containers in measurement!
+
+
+
 {{< rawhtml >}}
             </div>
          </div>
     </section><!-- end about -->
-    <section class="single-page bg-two"><div id="ancla1"></div>
+    <section class="single-page bg-two">
         <div class="section-two" style="padding: 10px;">
             <div class="data-content-one">
             <div class="ui segment raised">
@@ -42,7 +56,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                         <i class="right triangle icon"></i>
                         <div class="content">
                             <div class="header">
-                                <a href="#research-question">Introduction</a>
+                                <a href="#introduction">Introduction</a>
                             </div>
                         </div>
                     </div>
@@ -58,7 +72,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="#collecting-data">Collecting all needed data to calculate</a>
+                                    <a href="#repositories">Repositories</a>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +80,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="#calculating-savings">Calculate savings</a>
+                                    <a href="#measurements">Measurements</a>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +88,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="#rebound-effects">Rebound effect</a>
+                                    <a href="#hosting-and-idle">Hosting and Idle time</a>
                                 </div>
                             </div>
                         </div>
@@ -85,13 +99,13 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                                     <a href="#summary">Summary & further considerations</a>
                                 </div>
                             </div>
-                        </li>
+                        </div>
                     </div>
                 </div>
             </div>
          </div>
     </section><!-- end about -->
-    <section class="single-page bg-one" style=""><div id="ancla1"></div>
+    <section class="single-page bg-one" style="">
         <div class="section-two">
             <div class="title-one">What do we want to find out?</div>
             <div class="separator"><div class="line line-1"></div></div>
@@ -101,135 +115,111 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                         <i class="graduation cap icon"></i>
                         <div class="content">
                             Research question
-                            <div class="sub header">How much do we save in CO2 when converting all PNG to webP and is there a downside / rebound effect to it?</div>
+                            <div class="sub header">How much do we save when moving our site from Wordpress to HUGO by looking at the per-request energy but also at the build time?</div>
                         </div>
                     </h2>
                 </div>
             </div>
          </div>
     </section><!-- end about -->
-    <section class="single-page bg-two" style=""><div id="ancla1"></div>
+    <section class="single-page bg-two" style="">
         <div class="section-two">
-            <div class="title-two">Calculations</div>
+            <div class="title-two">Data</div>
             <div class="separator"><div class="line line-1"></div></div>
             <div class="data-content-one">
-                <div class="ui segment" id="collecting-data">
+                <div class="ui segment" id="repositories">
                     <div class="header">
-                        <a class="ui blue ribbon label" href="#collecting-data">
-                            <h3 style="color: #fff;">Collecting data</h3>
+                        <a class="ui blue ribbon label" href="#repositories">
+                            <h3 style="color: #fff;">Repositories</h3>
                         </a>
                     </div>
-                    <p>First we need to calcuate some statistical data from Google Analytics or whatever product you are using.</p>
-                    <p>The following list outlines the questions and also the answers for the sample site that we are looking at:</p>
-                </div>
-                <div class="ui segment" id="calculating-savings">
-                    <div class="header">
-                        <a class="ui orange ribbon label" href="#calculating savings">
-                            <h3 style="color: #fff;">Calculating savings</h3>
-                        </a>
-                    </div>
-                    <p>First we calculate the savings in form of kB / MB we get when using the webP format:</p>
-                    <div class="ui mini statistics">
-                        <div class="statistic">
-                            <div class="value">1.000</div>
-                            <div class="label">Users</div>
+                    <p>All the software we are talking here about and are basing our calculations on you can run yourself and falsify.</p>
+                    <div class="ui list">
+                        <div class="item">
+                            <i class="right triangle icon"></i>
+                            <div class="content">
+                                <div class="header">
+                                    <a href="https://github.com/green-coding-berlin/wordpress-static">Wordpress Minimal Site</a>
+                                    <p>Github repository</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
-                        <div class="statistic">
-                            <div class="value">2</div>
-                            <div class="label">img / site</div>
+                        <div class="item">
+                            <i class="right triangle icon"></i>
+                            <div class="content">
+                                <div class="header">
+                                    <a href="https://metrics.green-coding.org/stats.html?id=ad66a391-eb61-49e0-a557-b8caf48f3aaa">Wordpress Minimal Site</a>
+                                    <p>Energy Measurements of web request</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
-                        <div class="statistic">
-                            <div class="value">50 kB</div>
-                            <div class="label">avg. img size</div>
+                        <div class="item">
+                            <i class="right triangle icon"></i>
+                            <div class="content">
+                                <div class="header">
+                                    <a href="https://github.com/green-coding-berlin/example-applications/tree/main/wordpress-vs-hugo/hugo-apache">HUGO Minimal Site</a>
+                                    <p>Github repository</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
-                        <div class="statistic">
-                            <div class="value">2.7</div>
-                            <div class="label">visits / site</div>
+                        <div class="item">
+                            <i class="right triangle icon"></i>
+                            <div class="content">
+                                <div class="header">
+                                    <a href="https://metrics.green-coding.org/stats.html?id=7e2da0da-ee0e-495a-960e-1f7af014643c">HUGO Minimal Site</a>
+                                    <p>Energy-Measurement of web request</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="statistic">
-                            <div class="value" style="text-transform: lowercase;">x</div>
-                        </div>
-                        <div class="statistic">
-                            <div class="value">50%</div>
-                            <div class="label">AVIF savings</div>
-                        </div>
-                        <div class="statistic">
-                            <div class="value" style="text-transform: lowercase;">=</div>
-                        </div>
-                        <div class="statistic">
-                            <div class="value">135</div>
-                            <div class="label">MB</div>
-                        </div>
-                    </div>
-                    <h3>Calculate CO2 savings</h3>
-                    <p>Since every network transmission has an energy and CO2 budget attached to it we no use our formulas from <a href="#TODO">TODO:_ CO2 formulas for software engineering</a> and then we plug in to calculate the savings per day. We also use the <a href="https://app.electricitymaps.com/zone/DE">avg. grid intensity in Germany</a> for today (280g / kWh).</p>
-                    <div class="ui mini statistics">
-                        <div class="statistic">
-                            <div class="value">135</div>
-                            <div class="label">MB</div>
-                        </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
-                        <div class="statistic">
-                            <div class="value">0.00006</div>
-                            <div class="label">kwH / MB</div>
-                        </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
-                        <div class="statistic">
-                            <div class="value">280</div>
-                            <div class="label">gCO2e / kWh</div>
-                        </div>
-                        <div class="statistic gc-stats-multiply">
-                            <div class="value">=</div>
-                        </div>
-                        <div class="statistic">
-                            <div class="value">2.268</div>
-                            <div class="label">gCO2e</div>
+                        <div class="item">
+                            <i class="right triangle icon"></i>
+                            <div class="content">
+                                <div class="header">
+                                    <a href="https://metrics.green-coding.org/stats.html?id=ecae575e-8c76-44eb-a3be-db1d6c5fd331">HUGO Minimal Site</a>
+                                    <p>Energy-Measurement of build process</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="ui segment" id="rebound-effects">
+                <div class="ui red message" id="research-question">
+                    <h2 class="ui header">
+                    <i class="warning icon floated left huge colored red"></i>                        
+                        <div class="content">
+                            Measurements Disclaimer
+                            <div class="sub header">All energy measurements and / or benchmarks on a normal operating system are by nature error prone and uncomparable. Please never compare our values with values on your system. Measurements of software can only ever be compared on the exact same system. Also measurements should never be seen as ground truth, but only as indicator of the order of magnitude.</div>
+                        </div>
+                    </h2>
+                </div>                
+                <div class="ui segment" id="measurements">
                     <div class="header">
-                        <a class="ui red ribbon label" href="#rebound-effects">
-                            <h3 style="color: #fff;">Potential Rebound effects</h3>
+                        <a class="ui orange ribbon label" href="#measurements">
+                            <h3 style="color: #fff;">Measurements</h3>
                         </a>
                     </div>
                     <p></p>
-                    <p>We now know, that we could save a potential <strong>2.268 gCO2e</strong> per day for our 1.000 users if we were to move to AVIF. However what we have not considered yet is the users of the <strong>IE 6-11</strong>,<strong>Safari</strong>, <strong>Edge</strong> and <strong>Chrome < 85</strong> browsers which do not support webP format out of the box.</p>
-                    <p>The typical fix for this is to include a polyfill. A choice we have personally used in the past is this library: <a href="https://github.com/Kagami/avif.js">Kagami avif.js</a>, which itself relies on an npm package: <a href="https://www.npmjs.com/package/dav1d.js">dav1d.js</a></p>
-                    <p>The total size of this polyfill is <strong>~300 kB</strong></p>
-                    <h3>Calculating network traffic impact of the library</h3>
-                    <h3>Getting CO2 impact of polyfill</h3>
-                    <p>In some cases it can be tricky to detect the correct browser and delivering the polyfill only to exactly them. Therefore for reduced complexity the polyfills are always delivered no matter if needed or not.</p>
-                    <p>However in this case we believe separating the browsers out through some capability check or the user agent header should work just fine.</p>
-                    <p>So we assume that the polyfill is only delivered for our 30% non-supporting Browsers</p>
-                    <div class="ui mini statistics">
-                        <div class="statistic">
-                            <div class="value">1.000</div>
-                            <div class="label">Users</div>
-                        </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
-                        <div class="statistic">
-                            <div class="value">30%</div>
-                            <div class="label">non-supporting browsers</div>
-                        </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
-                        <div class="statistic">
-                            <div class="value">300 kB</div>
-                            <div class="label">total polyfill size</div>
-                        </div>
-                        <div class="statistic">
-                            <div class="value" style="text-transform: lowercase;">=</div>
-                        </div>
-                        <div class="statistic">
-                            <div class="value">90</div>
-                            <div class="label">MB</div>
-                        </div>
+                    <div id="chart"style="width: 100%; max-width: 500px; height: 300px; display: block; float:right;"></div>
+                    <p>The chart on the right side shows the relation of the HUGO build process (<strong>~1.4 J</strong>), the HUGO energy per web request (<strong>~1 J</strong>) and the energy for a web request o Wordpress (<strong>~10 J</strong>)</p>
+                    <p>Since we have repeated the measurements 3 times we attached the error bars, which represent the 95% confidence interval.</p>
+                    <p>The measurements are already an order of magnitude off, which is kind of what we assumed from the start. A static site is enormously more efficient, even if you also include the build process. Even for this simple setup it is around 10x.</p>
+                    <p><strong>Note:</strong> If you want to drill down on the details of the measurement like: How long was the pre-heat time of the CPU, how long was the pre-idle time, which CPU was used, what was the measurement resolution etc. please check the details on the links in the box above.</p>                
+                </div>
+                <div class="ui segment" id="hosting-and-idle">
+                    <div class="header">
+                        <a class="ui red ribbon label" href="#hosting-and-idle">
+                            <h3 style="color: #fff;">Hosting and idle time</h3>
+                        </a>
                     </div>
-                    <h3>Getting total number</h3>
-                    <p>We get the total number by just subtracting the 135 MB with the 90 MB to a total of 45 MB.</p>
+                    <p></p>               
+                    <p>When optimizing for low carbon and low energy hosting is a very important topic.</p>
+                    <p>If you were just to replace the Wordpress site with a static site but the server will continue to run in idle it might be that your total energy savings are very minimal.</p>
+                    <p>If you look at the <a href="https://docs.microsoft.com/en-gb/learn/modules/sustainable-software-engineering-overview/7-energy-proportionality">simplified load to energy curve from Microsoft</a> you can see that just by having the machine in idle you are already using a significant portion of energy.</p>
+                    <p>These curves are, as said, simplified and a real curve might look better or worse. Very good and industry used measurements are the <a href="https://www.spec.org/power_ssj2008/results/res2022q3/power_ssj2008-20220617-01178.html">curves from the SPECpower team</a>.</p>
+                    <p>Typically a server runs at least at 10-15% load when it is fully hypervised and this means that when you are one client on the server you are typially in the flat part of the curve.</p>
+                    <p>An optimization for pure compute has the lowest effect here.</p>
+                    <p>Also you have to take into account that a typical webserver that only serves webpages is mostly idle. Therefore typically the idle power draw is your major concern, and not so much the minimal load that your website puts onto the server.</p>
+                    <p>If you have a typical web application (say a website) that has typically long patterns of idle time / time between requests, than you should go for a hosting solution that can dynamically scale to zero.</p>
+                    <p>Cloudflare for instance provides such a feature with their <a href="https://pages.cloudflare.com/">Cloudlfare Pages</a> product that also supports HUGO out of the box.</p>
                 </div>
             </div>
          </div>
@@ -239,9 +229,126 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
             <div class="title-one">Summary</div>
             <div class="separator"><div class="line line-1"></div></div>
             <div class="data-content-one">
-                <p>In this example moving to AVIF even with the needed polyfill is still worth regarding the carbon emissions. However the margin got quite diminished and if the users are visiting less pages or the browser ratio is different this might also easily reverse and become a rebound effect.</p>
-                <p>If you look at this example I hope we could convey that if you optimize for lesser CO2 emissions the backlash to consider are often different when optimizing just for performance, where a mere 300 kB polyfill will most likely go unnoticed.</p>
-                <p>When looking at our example one might also argue, that instead of including the polyfill we could also use a switch that would redirect to a different HTML page which includes only PNG images, or to use an image service, that only delivers the correct image based on detected browser capabilities.</p>
-                <p>All of these approaches have different problems and backlashes though, since they typically mean that you save on network bandwith, but therefore have to increase the storage, which is also powered by energy and thus emits CO2.</p>
-                <p>In a follow-up article we will further drill-down into the cost of storage in particular and how replicating your data manyfold to different CDNs also has a CO2 cost that has to be factored in.</p>
+                <p>We have looked at some rough metrics on the energy usage of Wordpress and HUGO in comparison and also looked at the potential minimal gain if you just have your website moved to a static version but do not adress the idle power draw issue.</p>
+                <p>If your website with wordpress however maxes out your CPU to > 80% the solution to go to Cloudflare Pages might not be the best scenario anymore. </p>
+                <p>Our goal of this showcase was to educate developers in what order of magnitude the energy budgets of idle power draw and compute power draw for a typical server are.</p>
+                <p>Also how the energy compares between the request to a static site and a Wordpress site.</p>
+                <p>You see that the exact path for optimizing your energy consumption for hosting depends on your load, but is always better when we look at static sites.</p>
+                <p>Further considerations might however include meta-criteria like the cost of development and maintenance, which will typically incur carbon or energy costs in the phyisical world.</p>
+                <p>If you want your specific architecture analysed or get a more detailed understanding for the optimization potential in your architecture shoot us an email at <a href="mailto:info@green-coding.org">info@green-coding.org</a></p>
+            </div>
+
+<script type="text/javascript" src="/dist/js/echarts.min.js"></script>
+<script type="module">
+
+var chartDom = document.getElementById('chart');
+var myChart = echarts.init(chartDom);
+var option;
+
+var categoryData = [
+  'HUGO-build',
+  'HUGO-request',
+  'WP-request'
+];
+var errorData = [
+  [0, 0.9209346288584132, 1.8923987044749198],
+  [1, 0, 2.198027357631517],
+  [2, 9.684064057746113, 10.482602608920555]
+];
+var barData = [1.4066666666666665, 0.9766666666666666, 10.083333333333334];
+var dataCount = 100;
+
+option = {
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  legend: {
+    data: ['Energy', 'error']
+  },
+  xAxis: {
+    data: categoryData
+  },
+  yAxis: {},
+  series: [
+    {
+      type: 'bar',
+      name: 'Energy',
+      data: barData,
+      itemStyle: {
+        color: '#77bef7'
+      }
+    },
+    {
+      type: 'custom',
+      name: 'error',
+      itemStyle: {
+        borderWidth: 1.5
+      },
+      renderItem: function (params, api) {
+        var xValue = api.value(0);
+        var highPoint = api.coord([xValue, api.value(1)]);
+        var lowPoint = api.coord([xValue, api.value(2)]);
+        var halfWidth = api.size([1, 0])[0] * 0.1;
+        var style = api.style({
+          stroke: api.visual('color'),
+          fill: undefined
+        });
+        return {
+          type: 'group',
+          children: [
+            {
+              type: 'line',
+              transition: ['shape'],
+              shape: {
+                x1: highPoint[0] - halfWidth,
+                y1: highPoint[1],
+                x2: highPoint[0] + halfWidth,
+                y2: highPoint[1]
+              },
+              style: style
+            },
+            {
+              type: 'line',
+              transition: ['shape'],
+              shape: {
+                x1: highPoint[0],
+                y1: highPoint[1],
+                x2: lowPoint[0],
+                y2: lowPoint[1]
+              },
+              style: style
+            },
+            {
+              type: 'line',
+              transition: ['shape'],
+              shape: {
+                x1: lowPoint[0] - halfWidth,
+                y1: lowPoint[1],
+                x2: lowPoint[0] + halfWidth,
+                y2: lowPoint[1]
+              },
+              style: style
+            }
+          ]
+        };
+      },
+      encode: {
+        x: 0,
+        y: [1, 2]
+      },
+      data: errorData,
+      z: 100
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+
+
+
+</script>
+
 {{< /rawhtml >}}
