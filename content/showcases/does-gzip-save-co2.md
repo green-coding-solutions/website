@@ -31,48 +31,48 @@ So is it really worth it to gzip if you just care about carbon emissions? Let's 
                         <h3 style="color: #fff;">Agenda</h3>
                     </a>
                 </div>
-                <ul class="ui list">
-                    <li class="item">
+                <div class="ui list">
+                    <div class="item">
                         <i class="right triangle icon"></i>
                         <div class="content">
                             <div class="header">
                                 <a href="#introduction">Introduction</a>
                             </div>
                         </div>
-                    </li>
-                        <li class="item">
+                    </div>
+                        <div class="item">
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
                                     <a href="#research-question">Research Question</a>
                                 </div>
                             </div>
-                        </li>
-                        <li class="item">
+                        </div>
+                        <div class="item">
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
                                     <a href="#energy-data-transfer">Energy for data transfer</a>
                                 </div>
                             </div>
-                        </li>
-                        <li class="item">
+                        </div>
+                        <div class="item">
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
                                     <a href="#energy-for-compression">Energy for compression</a>
                                 </div>
                             </div>
-                        </li>
-                        <li class="item">
+                        </div>
+                        <div class="item">
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
                                     <a href="#summary">Summary & further considerations</a>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
          </div>
@@ -108,22 +108,22 @@ So is it really worth it to gzip if you just care about carbon emissions? Let's 
                     <img class="ui medium floated right rounded bordered image" src="/img/showcases/gzip-files-compression.webp">
                     <p>For our showcase we will look at two cases: First we take the Javascript file from google.com</p>
                     <p>Then we will also look at a CSV file with a size of 10 MB, so that gzip takes at least a second to run.</p>
-                    <ul class="ui large divided list">
-                        <li class="item">
+                    <div class="ui large divided list">
+                        <div class="item">
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">google.js</div>
                                 <p><strong>805 kB</strong> uncompressed -> <strong>272 kB</strong> compressed</p>
                             </div>
-                        </li>
-                        <li class="item">
+                        </div>
+                        <div class="item">
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">accidents.csv</div>
                                 <p><strong>21 MB</strong> uncompressed -> <strong>5.2 MB</strong> compressed</p>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                     <p>Now we can calculate the carbon savings of each of these files using our <a href="/co2-formulas">CO2 Formulas</a>:</p>
                     <h3>VueJS</h3>
                     <div class="ui ten mini statistics">
