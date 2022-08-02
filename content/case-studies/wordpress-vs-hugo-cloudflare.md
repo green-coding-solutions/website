@@ -1,6 +1,6 @@
 ---
 title: "Wordpress vs. Hugo + Cloudlfare"
-summary: "In this showcase we will look the carbon benefit of a static site compared to a Wordpress site. To get a more fair picture we will also include the HUGO build process and reason a bit about a possible hosting optimization."
+summary: "In this case study we will look the carbon benefit of a static site compared to a Wordpress site. To get a more fair picture we will also include the HUGO build process and reason a bit about a possible hosting optimization."
 date: 2022-07-28 08:00:00
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
@@ -8,10 +8,10 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 ---
 
 {{< rawhtml >}}
-    <img class="ui medium floated right rounded bordered image" src="/img/showcases/wordpress-vs-cloudflare-and-hugo.webp">
+    <img class="ui medium floated right rounded bordered image" src="/img/case-studies/wordpress-vs-cloudflare-and-hugo.webp">
 {{< /rawhtml >}}
 
-In this showcase we will look the carbon benefit of a static site. 
+In this case study we will look the carbon benefit of a static site. 
 
 Site generators like [HUGO](https://www.gohugo.io) are currently all the hype. The idea is to write your website in simple markdown but still benefit from nice styling and templating. 
 
@@ -231,7 +231,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
             <div class="data-content-one">
                 <p>We have looked at some rough metrics on the energy usage of Wordpress and HUGO in comparison and also looked at the potential minimal gain if you just have your website moved to a static version but do not adress the idle power draw issue.</p>
                 <p>If your website with wordpress however maxes out your CPU to > 80% the solution to go to Cloudflare Pages might not be the best scenario anymore. </p>
-                <p>Our goal of this showcase was to educate developers in what order of magnitude the energy budgets of idle power draw and compute power draw for a typical server are.</p>
+                <p>Our goal of this case study was to educate developers in what order of magnitude the energy budgets of idle power draw and compute power draw for a typical server are.</p>
                 <p>Also how the energy compares between the request to a static site and a Wordpress site.</p>
                 <p>You see that the exact path for optimizing your energy consumption for hosting depends on your load, but is always better when we look at static sites.</p>
                 <p>Further considerations might however include meta-criteria like the cost of development and maintenance, which will typically incur carbon or energy costs in the phyisical world.</p>

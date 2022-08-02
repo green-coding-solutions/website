@@ -8,10 +8,10 @@ authorlink: "https://de.linkedin.com/in/dan-mateas-693634105"
 ---
 
 {{< rawhtml >}}
-    <img class="ui small floated right rounded bordered image" src="/img/showcases/gzip.webp">
+    <img class="ui small floated right rounded bordered image" src="/img/case-studies/gzip.webp">
 {{< /rawhtml >}}
 
-In this showcase we look at a question we have gotten multiple times from our community: We know gzip saves data transfer and makes pages load faster. But does gzip really carbon emissions?
+In this case study we look at a question we have gotten multiple times from our community: We know gzip saves data transfer and makes pages load faster. But does gzip really carbon emissions?
 
 
 Thinking about it the question is quite intriguing: gzip was not designed to reduce carbon emissions in particular and when the data is transfered it has to be first compressed and then on the end user device also decompressed. This obiously consumes energy and thus emits CO2.
@@ -105,8 +105,8 @@ So is it really worth it to gzip if you just care about carbon emissions? Let's 
                             <h3 style="color: #fff;">Energy for data transfer</h3>
                         </a>
                     </div>
-                    <img class="ui medium floated right rounded bordered image" src="/img/showcases/gzip-files-compression.webp">
-                    <p>For our showcase we will look at two cases: First we take the Javascript file from google.com</p>
+                    <img class="ui medium floated right rounded bordered image" src="/img/case-studies/gzip-files-compression.webp">
+                    <p>For our case study we will look at two cases: First we take the Javascript file from google.com</p>
                     <p>Then we will also look at a CSV file with a size of 10 MB, so that gzip takes at least a second to run.</p>
                     <div class="ui large divided list">
                         <div class="item">
@@ -188,7 +188,7 @@ So is it really worth it to gzip if you just care about carbon emissions? Let's 
                             <h3 style="color: #fff;">Calculating compute cost</h3>
                         </a>
                     </div>
-                    <img class="ui large floated right rounded bordered image" src="/img/showcases/perf-call-gzip.webp">                    
+                    <img class="ui large floated right rounded bordered image" src="/img/case-studies/perf-call-gzip.webp">                    
                     <p>We will use <code>perf</code> on linux and <strong>Intel RAPL</strong> to measure the energy for compression as this is typically a CPU only task.</p>
                     <p>When using Intel RAPL you have to watch out that when using it for a time window smaller than the minimal time resolution of the Intel RAPL interface we might get inaccurate results. Currently these limits are <strong>976 microseconds</strong> and <strong>15.3 microJoule</strong>.</p>
                     <p>Also you have to take care, if your process runs longer than a typical scheduler tick, that your 

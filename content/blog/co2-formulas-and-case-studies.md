@@ -1,5 +1,5 @@
 ---
-title: "CO2 Formulas and Showcases"
+title: "CO2 Formulas and Case Studies"
 date: 2022-07-02
 draft: false
 author: "Arne Tarara"
@@ -21,13 +21,13 @@ often assumptions are made.
 We discuss these problematics and current academic approaches how to still get some
 numbers.
 
-## Showcases
+## Case Studies
 
-The showcases are our new format about specific questions we sometimes get from 
+The case studies are our new format about specific questions we sometimes get from 
 developers in our Meetups, but also about things we just wanted to drill down on.
 
 For example:
 - How much more energy does Wordpress consume compared to a static site?
 - How much energy does content compression with `gzip` save?
 
-Check out our showcases to get into the details: [Showcases](/showcases)
+Check out our case studies to get into the details: [Case Studies](/case-studies)

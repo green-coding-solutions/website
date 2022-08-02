@@ -6,10 +6,10 @@
 {{ define "main" }}
     <section id="meetups" class="bg-one"><div id="ancla1"></div>
         <div class="section-one">
-            <div class="title-one">Showcases</div>
-            <div class="data-content-one">Here your find our list of Showcases that highlight the Carbon emissions of specific digital infratructure or software.</div>
+            <div class="title-one">Case Studies</div>
+            <div class="data-content-one">Here your find our list of case studies that highlight the carbon emissions of specific digital infratructure or software.</div>
             <div class="data-content-one">
-                {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "showcases" ) ) }}
+                {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "case-studies" ) ) }}
                 {{ range $paginator.Pages.ByDate.Reverse }}
                     <div class="line line-1" style="margin: 60px auto;"></div>
                     <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>

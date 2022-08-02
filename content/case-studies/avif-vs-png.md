@@ -1,7 +1,7 @@
 ---
 title: "AVIF vs. PNG"
 draft: false
-summary: "In this showcase we will look at image compression with the AVIF format. Typically when trying to optimize a website for network resource consumption and thus CO2 emission images are the lowest hanging fruit."
+summary: "In this case study we will look at image compression with the AVIF format. Typically when trying to optimize a website for network resource consumption and thus CO2 emission images are the lowest hanging fruit."
 date: 2022-07-01 08:00:00
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
@@ -9,10 +9,10 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 ---
 
 {{< rawhtml >}}
-    <img class="ui medium floated right rounded bordered image" src="/img/showcases/avif.webp">
+    <img class="ui medium floated right rounded bordered image" src="/img/case-studies/avif.webp">
 {{< /rawhtml >}}
 
-In this showcase we will look at image compression. Typically when trying to optimize a website for network resource consumption and thus CO2 emission images are the lowest hanging fruit.
+In this case study we will look at image compression. Typically when trying to optimize a website for network resource consumption and thus CO2 emission images are the lowest hanging fruit.
 
 
 Modern image formats like [AVIF](https://de.wikipedia.org/wiki/AVIF) typically achieve +50% compression ratio when compared to PNG in a similar perceived quality. <br>Try out on [Squoosh.app](https://squoosh.app) for yourself to see the potential!
