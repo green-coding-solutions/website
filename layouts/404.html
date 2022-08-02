@@ -1,0 +1,20 @@
+{{ define "site-navigation" }}
+{{/* We can override any block in the baseof file be defining it in the template */}}
+{{ partial "site-navigation.html" . }}
+{{ end }}
+{{ define "main" }}
+<section id="404" class="bg-two">
+    <div class="section-two">
+        <div class="title-two">Page not found :(</div>
+        <div class="separator">
+            <div class="line line-2"></div>
+        </div>
+        <div class="data-content-two">
+
+The page you are looking for doesn't exist or has been moved.
+        </div>
+    </div>
+</section><!-- end contact -->
+<!-- map -->
+<!-- end map -->
+{{ end }}
