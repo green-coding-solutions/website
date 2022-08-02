@@ -11,7 +11,7 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 When using software the typical unit we experience directly is often time. Software is either fast or slow,
 but we typically do not think about the carbon footprint of software.
 
-Software usees through the utilization of the underlying hardware (typically measured in Watts). These Watts have to come from somewhere and we will see that every amount of energy typically has a carbon value associated with it.
+Software uses energy through the utilization of the underlying hardware (typically measured in Watts). These Watts have to come from somewhere and we will see that every amount of energy typically has a carbon value associated with it.
 
 Also software uses energy when making network requests and also indirectly is responsible for the embodied carbon, which is the CO2 emitted when the hardware that it uses has to be initialize manufcatured.
 
