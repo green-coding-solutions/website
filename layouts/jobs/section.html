@@ -7,7 +7,7 @@
     <section id="meetups" class="bg-one"><div id="ancla1"></div>
         <div class="section-one">
             <div class="title-one">Jobs</div>
-            <div class="data-content-one">Here you find the list of our current open positions. If your profession is in a different field and you would like to work with us: send us an initiative application to <a href="mailto:jobs@green-coding.org">jobs@green-coding.org</a></div>
+            <div class="data-content-one">Our current open positions. If your profession is in a different field and you would like to work with us: send us an initiative application to <a href="mailto:jobs@green-coding.org">jobs@green-coding.org</a></div>
             <div class="data-content-one">
                 {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "jobs" ) ) }}
                 {{ range $paginator.Pages.ByDate.Reverse }}

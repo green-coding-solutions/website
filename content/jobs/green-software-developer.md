@@ -1,6 +1,6 @@
 ---
 title: "Green Software Developer"
-draft: false
+description: "Open role for Green Software Developer with 2+ years experience at Green Coding Berlin GmbH to work on sustainable software."
 ---
 
 At Green Coding Berlin we create a green software community and ecosystem in Berlin. 

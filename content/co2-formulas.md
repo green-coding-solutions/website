@@ -1,7 +1,7 @@
 ---
 title: "CO2 Formulas"
 draft: false
-summary: "Please provide a summary here - Also make measurement on our website! Apex Container"
+summary: "Formulas to convert from GB to CO2e or from kWH to CO2e etc."
 date: 2022-07-21 08:00:00
 author: "Arne Tarara"
 authorlink: "https://de.linkedin.com/in/arne-tarara"
