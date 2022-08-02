@@ -106,7 +106,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
          </div>
     </section><!-- end about -->
     <section class="single-page bg-one" style="">
-        <div class="section-two">
+        <div class="section-one">
             <div class="title-one">What do we want to find out?</div>
             <div class="separator"><div class="line line-1"></div></div>
             <div class="data-content-one">
@@ -225,7 +225,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
          </div>
     </section><!-- end about -->
     <section class="single-page bg-one" id="summary">
-        <div class="section-two">
+        <div class="section-one">
             <div class="title-one">Summary</div>
             <div class="separator"><div class="line line-1"></div></div>
             <div class="data-content-one">

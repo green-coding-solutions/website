@@ -29,7 +29,7 @@ In this detailed article we will look at the potential backlash when using polyf
     </section><!-- end about -->
     <section class="single-page bg-two">
         <div class="section-two" style="padding: 10px;">
-            <div class="data-content-one">
+            <div class="data-content-two">
                 <div class="ui segment raised">
                     <div class="header">
                         <a class="ui red ribbon label" href="#">
@@ -93,7 +93,7 @@ In this detailed article we will look at the potential backlash when using polyf
                             <i class="help icon"></i>
                             <div class="content">
                                  Never heard of the CO2 emission of network data?
-                                <div class="sub header">Read this great article on the topic: <a href="/co2-formulas/">Calculating from GB to kWh</a></div>
+                                <div class="sub header">Read this great article on the topic: <a href="/co2-formulas/" style="color: #4183c4;">Calculating from GB to kWh</a></div>
                             </div>
                         </h2>
                     </div>
@@ -291,7 +291,7 @@ In this detailed article we will look at the potential backlash when using polyf
          </div>
     </section><!-- end about -->
     <section class="single-page bg-one" id="summary">
-        <div class="section-two">
+        <div class="section-one">
             <div class="title-one">Summary</div>
             <div class="separator"><div class="line line-1"></div></div>
             <div class="data-content-one">

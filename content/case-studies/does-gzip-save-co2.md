@@ -78,7 +78,7 @@ So is it really worth it to gzip if you just care about carbon emissions? Let's 
          </div>
     </section><!-- end about -->
     <section class="single-page bg-one">
-        <div class="section-two">
+        <div class="section-one">
             <div class="title-one">What do we want to find out?</div>
             <div class="separator"><div class="line line-1"></div></div>
             <div class="data-content-one">
@@ -241,7 +241,7 @@ So is it really worth it to gzip if you just care about carbon emissions? Let's 
          </div>
     </section><!-- end about -->
     <section class="single-page bg-one" id="summary">
-        <div class="section-two">
+        <div class="section-one">
             <div class="title-one">Summary</div>
             <div class="separator"><div class="line line-1"></div></div>
             <div class="data-content-one">
