@@ -23,8 +23,6 @@ Other times it involves changes to your infrastructure, your code or your develo
 
 Nevertheless we see it as an exciting process that is for the best of all of us.
 
-Let's make software cool again!
-
 {{< rawhtml >}}
                 </div>
             </div>
