@@ -21,6 +21,9 @@ The next step is to understand the potentials for optimizations. Sometimes this 
 
 Other times it involves changes to your infrastructure, your code or your development workflows.
 
+The most important probably is to raise awareness and educate developers of energy consumption as one
+important building block to consider when design software architectures.
+
 Nevertheless we see it as an exciting process that is for the best of all of us.
 
 {{< rawhtml >}}
@@ -44,6 +47,11 @@ and are often decoupled from the pure visual time we see a software running:
 #### Boot time
 Modern software runs virtualized or containerized. These virtual machines have to be booted and the cost for this constant up-spinning and
 down-spinning is hidden from the user and often even from the developer.
+#### Infrastructure
+This point is entangled with boot time, but has enough potential on its own to deserve a separate mention.
+Modern software runs virtualized in at least a Hypervisor if not a VM or an additional container. This tech solves
+many problems in terms of wasting resources but brings challenges like overhead to the table.
+Infrastructure is often sub-optimal chosen, overprovisioned or to opaque to analyze.
 #### Background activities
 After the user interaction software has to do background jobs. Be it cronjobs, ML Training, stream processing etc.
 #### Idle time
@@ -59,6 +67,9 @@ To make all of these separate domains visible to the developer we are creating o
 of an application.
 
 See our [Github](https://github.com/green-coding-berlin) repository and our current flaghship product the [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool)
+
+Additionaly we create analysis on the overhead and potential of architecture choices like Serverless of classic virtualization or
+when throughput benefit levels up with energy overhead cost.
 
 {{< rawhtml >}}
                 </div>
