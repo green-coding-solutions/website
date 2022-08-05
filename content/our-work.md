@@ -8,7 +8,7 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-Software will always have carbon emissions. The same way that also solar power has some carbon emissions
+Software will always have carbon emissions. The same way that all technology, even solar power, has some carbon emissions
 and human life does too.
 
 However we believe that using software is the way to be more green and more sustainable and digitalizing every sector is one building block to tackle climate change.
@@ -21,10 +21,10 @@ The next step is to understand the potentials for optimizations. Sometimes this 
 
 Other times it involves changes to your infrastructure, your code or your development workflows.
 
-The most important probably is to raise awareness and educate developers of energy consumption as one
+The key step is to raise awareness and educate developers of energy consumption as one
 important building block to consider when design software architectures.
 
-Nevertheless we see it as an exciting process that is for the best of all of us.
+This will in turn increase the demand for the metrics and drive the supply by the industry players.
 
 {{< rawhtml >}}
                 </div>
@@ -63,13 +63,20 @@ is hard to estimate if scaled up.
 
 
 ### Our work
-To make all of these separate domains visible to the developer we are creating open source tools to show the energy during the complete lifecycle 
-of an application.
+To make all of these separate domains visible to the developer we are creating open source tools to make the energy visible.
 
-See our [Github](https://github.com/green-coding-berlin) repository and our current flaghship product the [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool)
+For user facing applications in the desktop, web and mobile world we are creating a tool to measure the whole application lifecycle based
+on the concept of a Standard Usage Scenario: The [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool)
 
-Additionaly we create analysis on the overhead and potential of architecture choices like Serverless of classic virtualization or
-when throughput benefit levels up with energy overhead cost.
+By pinning the code version and the usage scenario we can make different softwares comparable to each other.
+
+In cloud environments of distributed architectures the use of a benchmarking tool is very cumbersome and not really useful.
+
+Here in-line measurements that export to already existing observability solutions are needed and also look-ahead estimations that can
+drive architectural optimizations (like which service to use, or if a move to serverless is beneficial).
+
+Through case-studies we also want to highlight the overhead cost of virtualization and give metrics to make informed decisions which
+architectural model fits best in an energy aware company culture.
 
 {{< rawhtml >}}
                 </div>
