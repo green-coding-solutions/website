@@ -1,6 +1,6 @@
 ---
 title: "Energy use in the hyperscale cloud"
-draft: false
+draft: true
 ---
 
 This is a tough topic, as normal means like at home: Plugging the server into a wall meter, will not work.

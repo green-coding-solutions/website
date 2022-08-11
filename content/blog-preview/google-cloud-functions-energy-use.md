@@ -1,5 +1,7 @@
 ---
 title: "Google cloud energy use"
+draft: true
+author: "Arne Tarara"
 ---
 
 ## Question
