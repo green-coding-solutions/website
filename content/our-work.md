@@ -26,16 +26,11 @@ important building block to consider when design software architectures.
 
 This will in turn increase the demand for the metrics and drive the supply by the industry players.
 
-{{< rawhtml >}}
-                </div>
-            </div>
-    </section><!-- end about -->
-    <section class="single-page bg-two" style=""><div id="ancla1"></div>
-        <div class="section-two">
-            <div class="title-two">Software usage</div>
-            <div class="separator"><div class="line line-1"></div></div>
-            <div class="data-content-two">                
-{{< /rawhtml >}}
+
+{{< greenblock >}}
+Software Usage
+{{</ greenblock >}}
+
 In order to do compute software needs to use the underlying hardware and will thus consume energy.
 
 Energy consumption is often not straight forward. If you have CPU / GPU intensive loads like in [High Performance Computing](https://en.wikipedia.org/wiki/High-performance_computing)
@@ -78,16 +73,10 @@ drive architectural optimizations (like which service to use, or if a move to se
 Through case-studies we also want to highlight the overhead cost of virtualization and give metrics to make informed decisions which
 architectural model fits best in an energy aware company culture.
 
-{{< rawhtml >}}
-                </div>
-            </div>
-    </section><!-- end about -->
-    <section class="single-page bg-one" style=""><div id="ancla1"></div>
-        <div class="section-one">
-            <div class="title-one">Developing software</div>
-            <div class="separator"><div class="line line-1"></div></div>
-            <div class="data-content-one">                
-{{< /rawhtml >}}
+{{< whiteblock >}}
+Developing Software
+{{</ whiteblock >}}
+
 
 When developing software also VMs are constantly spun up and down. In addition to that in a typical developing process
 software runs through a Continuous Integration (CI) Pipeline and all the tests are executed in full.
@@ -113,16 +102,11 @@ Example badge: {{< rawhtml >}} <img src="https://img.shields.io/badge/Energy%20c
 Our CI Pipeline Plugins are currently in beta. If you want to join the circle of beta testers \
 please drop us a line to: [info@green-coding.org](mailto:info@green-coding.org)
 
-{{< rawhtml >}}
-                </div>
-            </div>
-    </section><!-- end about -->
-    <section class="single-page bg-two" style=""><div id="ancla1"></div>
-        <div class="section-two">
-            <div class="title-two">Network</div>
-            <div class="separator"><div class="line line-1"></div></div>
-            <div class="data-content-two">                
-{{< /rawhtml >}}
+{{< greenblock >}}
+Network
+{{</ greenblock >}}
+
+
 Network transmissions are coming more and more into the focus as one of 
 the main drivers of software carbon emissions.
 
@@ -161,16 +145,10 @@ recommendations like
 - NOT delivering content that has no strong benefit
 - Reducing update cycles and polling intervals 
 
-{{< rawhtml >}}
-                </div>
-            </div>
-    </section><!-- end about -->
-    <section class="single-page bg-one" style=""><div id="ancla1"></div>
-        <div class="section-one">
-            <div class="title-one">Embodied carbon</div>
-            <div class="separator"><div class="line line-1"></div></div>
-            <div class="data-content-one">                
-{{< /rawhtml >}}
+{{< whiteblock >}}
+Embodied carbon
+{{</ whiteblock >}}
+
 
 To run software you need hardware. That hardware has to be produced and often is the major driver of carbon emissions.
 
@@ -190,16 +168,9 @@ to the time when it is used making software better comparable.
 
 
 
-{{< rawhtml >}}
-                </div>
-            </div>
-    </section><!-- end about -->
-    <section class="single-page bg-two" style=""><div id="ancla1"></div>
-        <div class="section-two">
-            <div class="title-two">Work with us</div>
-            <div class="separator"><div class="line line-1"></div></div>
-            <div class="data-content-two">                
-{{< /rawhtml >}}
+{{< greenblock >}}
+Work with Us
+{{</ greenblock >}}
 
 If you are a developer that wants to develop sustainable software or just use our tools, a company that needs 
 consulting on their digital products or an activists group, please contact us under [info@green-coding.org](mailto:info@green-coding.org)
