@@ -2244,6 +2244,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+code {
+    background: #2a3f50;
+    color: #dee2e6;
+    padding: 3px 10px !important;
+    border-radius: 5px;
+}
 
 .gc-top-aligned {
     align-items: flex-start;

@@ -72,7 +72,7 @@ While a normal ATX connector has 24 connections the Fujitsu one sports only 16 p
 six 12 V power lines instead of the usual two.
 
 {{< rawhtml >}}
-<img src="/img/blog/dc-power-readings-prototype-workplace.webp" alt="DC Power readings prototype workplace" loading="lazy" style="max-width: 600px; width: 99%; display: inline; float: right; margin-bottom: 15px;">
+<img class="ui big floated right rounded bordered image" src="/img/blog/dc-power-readings-prototype-workplace.webp" alt="DC Power readings prototype workplace" loading="lazy">
 {{< /rawhtml >}}
 
 This posed quite a problem for using our NI-USB 6009 as this one could only 4 differential analogue inputs.
@@ -84,7 +84,7 @@ While in the forums some support to migrate that to very old Ubuntu versions was
 ## Moving to the PicoTech PicoLog HDR ADC24
 
 {{< rawhtml >}}
-<img src="/img/blog/picolog-hdr-setup.webp" alt="PicoLog HDR ADC-24 setup" loading="lazy" style="max-width: 300px; width: 99%; display: inline; float: right; margin-bottom: 15px;">
+<img class="ui medium floated right rounded bordered image" src="/img/blog/picolog-hdr-setup.webp" alt="PicoLog HDR ADC-24 setup" loading="lazy">
 {{< /rawhtml >}}
 
 In the picture on the right you see our final system. The PicoTech PicoLog HDR ADC-24 took quite a while to arrive, because the UK is not in the EU anymore and customs seem to require some registration numbers we did never hear of so far :)
@@ -106,7 +106,7 @@ Since we are experiencing different voltages on the different 12 V lanes we susp
 
 
 {{< rawhtml >}}
-<img src="/img/blog/current_resistor_bank.webp" alt="Current resistors" loading="lazy" style="max-width: 500px; width: 99%; display: inline; float: right; margin-bottom: 15px;">
+<img class="ui large floated right rounded bordered image" src="/img/blog/current_resistor_bank.webp" alt="Current resistors" loading="lazy">
 {{< /rawhtml >}}
 
 
