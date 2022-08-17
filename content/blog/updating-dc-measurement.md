@@ -41,17 +41,46 @@ As visible in the image the remaining 3 lanes are:
 - **11Vsb**: This is the Standby Power for stuff like WakeOnLan etc. and needed power to trigger PS_ON
 
 So for our case, since our PicoLog HDR ADC-24 has only 8 differential inputs we have to
-drop one of these lines.
+drop at least one of these lines.
 
 We measured the **PS_ON pin** and got a minimal reading of **~ 20 mV** out of it. This pin is only
 really needed to be connected on boot and seems to be irrelevant for the measurments.
 As well in functionality as also in the power that it consumes. 
 
-So we included the **11Vsb** and the **PWR_OK** in our measurements.
+So we could included the **11Vsb** and the **PWR_OK** in our measurements.
+
 However when looking at the screenshots of the readouts you see that they do not really contribute
 to the total power. This was expected for PWR_OK (apart from an error case maybe),
-but may not be the case for the 11Vsb. Depending on what device you have attached and how
-the mainboard wiring is done there could be a power draw on this line.
+but may not be the case for the 11Vsb. 
+
+Depending on what device you have attached and how the mainboard wiring is done there could be a power draw on this line.
+
+However in our internal measurements we have not seen any power draw over that line and since 
+it is kept on a stable voltage it clashes with the behaviour of our input channel. 
+The input channel was constantly giving out a stable reading of a negative voltage over the 
+current resistor although no current was flowing.
+
+To quickly falsify our assumption we checked with our AC power readings on a simple wall socket power meter
+and the results where better in line with what we saw when the channel was left out.
+
+We suppose this is a sampling problem with the channel as it carries no current, but still shows
+a voltage reading, which should not be the case.
+
+Therefore we opted for leaving the **11Vsb** channel out.
+
+## Updating the time measurements
+
+All analysis is now done on the System Under Test directly. That means all timestamps are
+derived from the same clocksource.
+
+Currently we use the [PicoLog 6.2.4 AppImage](https://www.picotech.com/downloads/_lightbox/picolog-6-for-linux) to get the measuremens as the Linux libraries
+for Ubuntu are broken.
+
+Running that AppImage gives us an overhead in the measurement of around 0.3 - 0.5 W.
+
+You can compare the measurements here:
+- [Measurement with PicoLog AppImage running on System Under Test](https://metrics.green-coding.org/stats.html?id=7f4e2725-d84b-4992-aeb7-5f42f797aa73)
+- [Measurement with PicoLog AppImage running on external machine](https://metrics.green-coding.org/stats.html?id=f99e563d-2c5c-453d-99fe-5ac9f6f307ac)
 
 ## Analysing the 12 V rails
 
@@ -77,13 +106,19 @@ Nevertheless this insight might pose an interesting starting point for an algori
 
 ## Summary of new setup
 
-The total energy consumed with the new setup is much closer to the values we get when summing up the RAPL components, which is most likely related to stronger variance in the old resisistors.
+The total energy consumed with the new setup is very close to the old measurement with the old resistors.
 
 Compare the readings on: 
 - [Old Resitors Measurement](https://metrics.green-coding.org/stats.html?id=f99e563d-2c5c-453d-99fe-5ac9f6f307ac)
-- [New Resitors Measurement](https://metrics.green-coding.org/stats.html?id=5eb70bc1-0d17-416a-839b-60e800a62cda)
+- [New Resitors Measurement](https://metrics.green-coding.org/stats.html?id=7f4e2725-d84b-4992-aeb7-5f42f797aa73)
 
-The next step is to falsify with the AC reading from the Blauer Engel Team we will be doing over the next weeks.
+This is because we do not look at single lanes, but average the voltages per channel and then add them up
+to get the energy over time.
+Even in an imbalanced system this should give us the total energy.
+
+However the new resistors have less variance and therefore pose a better accurarcy per channel (if interesting) and also are better in heat resistance, which will make the measurement more stable over time.
+
+The next step is to falsify with an AC reading, which we will do in conjuction with the replication of the measurements from the Blauer Engel Team over the next weeks.
 After that we will integrate the harddisk into the measurement to close the gap of uncertainty further.
 
 If you want to falsify our DC measurements or get to know how to make them work in your setup please shoot me an email to arne@green-coding.org !

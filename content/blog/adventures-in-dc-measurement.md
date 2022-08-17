@@ -64,7 +64,7 @@ In order to reproduce and falsify their (AC)-measurements this system was a need
 
 We got the [NI-USB 6009](https://www.ni.com/de-de/support/model.usb-6009.html) and started building a custom ATX connector for it.
 
-To our suprise all the ATX connetors we [got from Amazon](https://www.amazon.de/gp/product/B07RHMR9D6/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) had broken or falsly connected traces on the PCB.
+To our suprise all the ATX connectors we [got from Amazon](https://www.amazon.de/gp/product/B07RHMR9D6/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) had broken or falsly connected traces on the PCB.
 
 After trying out some different terminal boards that were finally without any faults we discovered another curiosity: The Fujitsu folks have opted to create a custom ATX connector 0_o.
 
