@@ -1,5 +1,5 @@
 ---
-title: "Reproducting the Blauer Engel für Software measurements for Okular"
+title: "Reproducing the Blauer Engel für Software measurements for Okular"
 date: 2022-09-15
 draft: false
 author: "Arne Tarara"
