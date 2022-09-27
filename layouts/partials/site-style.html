@@ -17,7 +17,7 @@
 <link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/layout.css" | minify | fingerprint).Permalink }}'>
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/image.min.css">
 
-{{ if or (eq .Page.Title "CO2 Formulas") (eq .Page.Section "case-studies")   }}
+{{ if or (eq .Page.Title "CO2 Formulas") (eq .Page.Section "case-studies") (eq .Page.Section "case-studies")   }}
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/reset.min.css">
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/site.min.css">
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/icon.min.css">
@@ -29,4 +29,9 @@
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/list.min.css">
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/header.min.css">
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/table.min.css">
+{{ end}}
+
+{{ if (eq .Page.Section "blog")   }}
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/icon.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/message.min.css">
 {{ end}}
