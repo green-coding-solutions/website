@@ -128,7 +128,14 @@ Look at https://github.com/brendangregg/msr-cloud-tools for details on which to 
 and how.
 
 
+## Beware the truthiness
 
+Cloud providers change the returned values of system calls directly in the Hypervisor.
+
+So what you are getting in return from for instance a `CPUID` syscall might not be
+what the CPU is really capable of ([Details](https://security.stackexchange.com/questions/220357/fake-output-of-cpuid-instruction) )
+
+So as so often feature probing is more helpful than settings probing.
 
 
 ## How to find out what hardware your are using
@@ -157,9 +164,11 @@ scale, it usually gives you the best information most of the time.
 ## White Hat alternative
 
 What you technically can do though is to probe your cpu for features like first 
-starting with `cat /proc/cpuinfo`, looking at the speed and flags and try to 
-derive the model from there.
-Or to run custom code and see how your processor behaves.
+starting with `cat /proc/cpuinfo` and looking only for true values. 
+Then looking at the speed and flags and try to derive the model from there.
+
+
+Or you can do feature probing to run custom code and see how your processor behaves.
 
 But is this really worth the effort? Can't we just assume a "generic" CPU and try
 to take it from there?
