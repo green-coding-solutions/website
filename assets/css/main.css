@@ -562,13 +562,13 @@ nav li a{text-decoration: none;}
 .section-one{
 	max-width: 1200px;
 	margin:auto;
-	padding: 115px 0 30px 0;
+	padding: 80px 0 30px 0;
 	overflow: auto;
 }
 .section-two{
 	max-width: 1200px;
 	margin:auto;
-    padding: 115px 0 30px 0;
+    padding: 80px 0 30px 0;
 	overflow: auto;
 }
 
@@ -633,6 +633,7 @@ nav li a{text-decoration: none;}
 }
 
 .data-content-three{
+    font-size: 18px;
     font-family: 'Titillium Web', sans-serif;
     color: #949496;
     padding: 25px 30px;
@@ -2218,7 +2219,7 @@ li {list-style: circle inside none;}
 
 .data-content-one li p {display:  inline;}
 
-.single-page .section-one, .single-page .section-two {
+.single-page .section-one, .single-page .section-two, .single-page .section-three {
     max-width:  1200px !important;
 }
 
