@@ -41,7 +41,7 @@
 		.logosection.portfolio {background: url(../img/portfolio_header_02.png) no-repeat;}
 		.logosection.services {background: url(../img/services_header_02.png) no-repeat;}
 		.logosection.contact {background: url(../img/contact_header_02.png) no-repeat;}
-		.navegation_resp {
+		.navigation_resp {
 			border-radius: 0;
 			background: url("../img/menu.png") no-repeat;
 			visibility: visible;

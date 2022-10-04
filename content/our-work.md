@@ -95,7 +95,7 @@ We develop in-line plugins for Github Actions and badges that make other people 
 
 Also we focus in the building process for static sites, which typically have a lower cost of operating but incur a build cost.
 
-Checkout out our energy badges in [Github Readmes](https://github.com/green-coding-berlin/wordpress-static) or our [Case Studies](https://www.green-coding.org/showcases/) on the topic. 
+Checkout out our energy badges in [Github Readmes](https://github.com/green-coding-berlin/wordpress-static) or our [Case Studies](https://www.green-coding.org/case-studies/) on the topic. 
 
 Example badge: {{< rawhtml >}} <img src="https://img.shields.io/badge/Energy%20cost%20for%20build-1.4%20J-orange">{{< /rawhtml >}}
 
