@@ -3,9 +3,10 @@ title: "Green Coding Meetup: The GreenOps Approach of Google Cloud"
 date: 2022-02-10 19:00:00
 publishDate: 2022-02-02
 draft: false
-meetuplink: "https://www.meetup.com/green-coding/events/283611827/"
-meetupname: "The GreenOps Approach of Google Cloud"
-meetupimg: '/img/meetups/green-ops-of-google-cloud.webp'
+eventtype: "Meetup"
+eventlink: "https://www.meetup.com/green-coding/events/283611827/"
+eventname: "The GreenOps Approach of Google Cloud"
+eventimg: '/img/meetups-and-events/green-ops-of-google-cloud.webp'
 ---
 
 

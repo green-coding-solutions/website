@@ -3,9 +3,10 @@ title: "Green Coding Meetup: What is green coding?"
 date: 2022-04-14 19:00:00
 publishDate: 2022-04-01
 draft: false
-meetuplink: "https://www.meetup.com/green-coding/events/284904138/"
-meetupname: "What is green coding?"
-meetupimg: '/img/meetups/what-is-green-coding.webp'
+eventtype: "Meetup"
+eventlink: "https://www.meetup.com/green-coding/events/284904138/"
+eventname: "What is green coding?"
+eventimg: '/img/meetups-and-events/what-is-green-coding.webp'
 ---
 
 

@@ -3,10 +3,11 @@ title: "Sustainable Software - KDE Eco [x] Green Coding Berlin"
 date: 2022-09-14 18:30:00
 publishDate: 2022-08-17
 draft: false
-meetuplink: "https://www.meetup.com/green-coding/events/287887811/"
-meetupname: "Sustainable Software - KDE Eco [x] Green Coding Berlin"
-meetupimg: "/img/meetups/meetup-kde.webp"
-meetupimg600w: "/img/meetups/meetup-kde-600w.webp"
+eventtype: "Meetup"
+eventlink: "https://www.meetup.com/green-coding/events/287887811/"
+eventname: "Sustainable Software - KDE Eco [x] Green Coding Berlin"
+eventimg: "/img/meetups-and-events/meetup-kde.webp"
+eventimg600w: "/img/meetups-and-events/meetup-kde-600w.webp"
 
 ---
 

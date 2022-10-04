@@ -3,10 +3,11 @@ title: "Green Coding Basics"
 date: 2022-05-19 19:00:00
 publishDate: 2022-05-06
 draft: false
-meetuplink: "https://www.meetup.com/green-coding/events/285739714/"
-meetupname: "Green Coding Basics - carbon savings and rebound effects for users and web devs"
-meetupimg: "/img/meetups/green-coding-basics.webp"
-meetupimg600w: "/img/meetups/green-coding-basics-600w.webp"
+eventtype: "Meetup"
+eventlink: "https://www.meetup.com/green-coding/events/285739714/"
+eventname: "Green Coding Basics - carbon savings and rebound effects for users and web devs"
+eventimg: "/img/meetups-and-events/green-coding-basics.webp"
+eventimg600w: "/img/meetups-and-events/green-coding-basics-600w.webp"
 ---
 
 We are proud to announce our first in-person Meetup where you can meet like minded green software engineers and our team.

@@ -2,9 +2,10 @@
 title: "Meetup #1 Mein Fair Mögen"
 date: 2021-11-25 19:00:00
 draft: false
-meetuplink: "https://www.meetup.com/de-DE/green-coding/events/282028361/"
-meetupname: "MeinFairmögen"
-meetupimg: '/img/meetups/meinfairmoegen.webp'
+eventtype: "Meetup"
+eventlink: "https://www.meetup.com/de-DE/green-coding/events/282028361/"
+eventname: "MeinFairmögen"
+eventimg: '/img/meetups-and-events/meinfairmoegen.webp'
 ---
 
 Money makes the world go round: Financial markets still finance an economy that is on average not fit to mitigate or even adapt to climate change. Who wants to invest for a decent pension faces difficulties to find out where the money goes in the end. Aiming for impact to make the world better, is even harder. MyFairMoney/ MeinFairMögen is starting here: presenting independent information on climate performance of financial products, helping consumers to choose more climate friendly products.

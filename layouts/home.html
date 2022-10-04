@@ -28,29 +28,29 @@
     <div id="nav-meetups"></div>
     <div class="section-two bottom-works">
         <div class="works-header">
-            <div class="title-two">Latest Meetups</div>
+            <div class="title-two">Meetups & Events</div>
             <div class="separator">
                 <div class="line line-2"></div>
             </div>
             <div class="data-content-two">
-                Browse through our latest meetups and watch recordings (if available :) )<br>
-                For a list of all our meetups see: 👉  <a href="/meetups" style="color: white; text-decoration: underline;">All our meetups</a>
+                Browse through our latest events and watch recordings (if available :) )<br>
+                For a full list: 👉  <a href="/meetups-and-events" style="color: white; text-decoration: underline;">All our Meetups & Events</a>
             </div>
         </div>
         <div id="portfolio" class="container">
             <div class="section portfoliocontent">
                 <div id="container2" class="clearfix">
                     <div class="inici"></div>
-                    {{ range $index, $element := ( first 6 ( where .Site.RegularPages "Type" "meetups" ) ) }}
+                    {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "meetups-and-events" ) ) }}
                     <div class="element talks">
                         <a href="{{.Permalink}}">
                             <div class="ch-grid">
                                 <div class="work-info"><span> {{.Title}}<br><span>Meetup.com</span></span></div>
-                                {{ if (isset .Params "meetupimg600w") }}
-                                <img srcset="{{.Params.Meetupimg}} 1x,
-                                {{.Params.Meetupimg600w}} 2x" src="{{.Params.Meetupimg}}" style="width: 300px" loading="lazy">
+                                {{ if (isset .Params "eventimg600w") }}
+                                <img srcset="{{.Params.Eventimg}} 1x,
+                                {{.Params.Eventimg600w}} 2x" src="{{.Params.Eventimg}}" style="width: 300px" loading="lazy">
                                 {{ else }}
-                                <img src="{{.Params.Meetupimg}}" style="width: 300px" loading="lazy">
+                                <img src="{{.Params.Eventimg}}" style="width: 300px" loading="lazy">
                                 {{ end }}
                             </div>
                         </a>

@@ -3,10 +3,11 @@ title: "Greening Digital - The Green Web Foundation [x] Green Coding Berlin"
 date: 2022-08-03 18:30:00
 publishDate: 2022-07-22
 draft: false
-meetuplink: "https://www.meetup.com/green-coding/events/287352713/"
-meetupname: "Greening Digital - The Green Web Foundation [x] Green Coding Berlin"
-meetupimg: "/img/meetups/greening-digital-with-tgwf.webp"
-meetupimg600w: "/img/meetups/greening-digital-with-tgwf-600w.webp"
+eventtype: "Meetup"
+eventlink: "https://www.meetup.com/green-coding/events/287352713/"
+eventname: "Greening Digital - The Green Web Foundation [x] Green Coding Berlin"
+eventimg: "/img/meetups-and-events/greening-digital-with-tgwf.webp"
+eventimg600w: "/img/meetups-and-events/greening-digital-with-tgwf-600w.webp"
 
 ---
 
