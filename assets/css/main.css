@@ -571,6 +571,12 @@ nav li a{text-decoration: none;}
     padding: 80px 0 30px 0;
 	overflow: auto;
 }
+.section-three{
+    /*max-width: 1200px;*/
+    margin:auto;
+    padding: 80px 0 30px 0;
+    overflow: auto;
+}
 
 .window{text-align: center; padding-top: 20px; padding-bottom: 110px;}
 
@@ -639,6 +645,15 @@ nav li a{text-decoration: none;}
     padding: 25px 30px;
     line-height: 28px;
     text-align: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.data-content-three > * {
+    margin: 20px;
 }
 
 .profile-title{
