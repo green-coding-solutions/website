@@ -2229,7 +2229,8 @@ a {
     color:  inherit;
 }
 
-ol li {list-style: none outside none;}
+ol li {list-style: decimal;}
+nav ol li {list-style: none outside none;}
 
 li {list-style: circle inside none;}
 
