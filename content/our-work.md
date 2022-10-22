@@ -123,8 +123,8 @@ the internet increased its adoption and became ubiquitous.
 
 However flatrates have introduced a decoupling from the nature of network transmissions not really
 having a flat carbon emission. 
-This creates a disconnectedness and misunderstandig that every use of network has typically 
-a linear increase in carbon emissions.
+This creates a disconnectedness and misunderstandig that every use of network will at some
+point lead to an increase in carbon emissions. Sometimes linearly, sometimes in stages.
 
 Since you do not see your consumption, like you for instance do for you telephone bill, you
 risk getting careless with the resource. Same as with buffet food, where leftovers are the norm.
