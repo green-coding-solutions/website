@@ -15,7 +15,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 Hyper-Threading is the branded name from Intel for a technology called Simultaneous Multi-Threading (SMT).
 
 SMT is basically active in every modern Intel or AMD CPU.
-On Linus it's status can be checked in `/sys/devices/system/cpu/smt/active` and changed
+On Linux it's status can be checked in `/sys/devices/system/cpu/smt/active` and changed
 by setting `/sys/devices/system/cpu/smt/control` to either *off* or *forceoff*.
     - off seemed to be enough in our cases. The OS might maybe turn it back on again
     - Using forceoff is safer, but needs a reboot to reactivate
