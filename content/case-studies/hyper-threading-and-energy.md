@@ -67,10 +67,10 @@ This is the result:
 <thead><tr><th title="Field #1">Threads</th>
 <th title="Field #2">HT Off - Events</th>
 <th title="Field #3">HT Off - Energy [J]</th>
-<th title="Field #4">HT off - mJ / ops</th>
+<th title="Field #4">HT off - mJ / Ops</th>
 <th title="Field #5">HT On - Events</th>
-<th title="Field #6">HT Off - Energy [J]</th>
-<th title="Field #7">HT on - mJ / ops</th>
+<th title="Field #6">HT ON - Energy [J]</th>
+<th title="Field #7">HT On - mJ / Ops</th>
 </tr></thead>
 <tbody><tr>
 <td>Idle</td>
@@ -151,7 +151,7 @@ of the chip when using 3 cores or more.
 This was not necessarily expected ... it could also have been that the chip somehow throttles the performance
 but uses a constant energy budget..
 
-The other interesting metric is the mJ / ops metric. Here we can see that Hyper-Threading 
+The other interesting metric is the mJ / Ops metric. Here we can see that Hyper-Threading 
 actually is more energy efficient per operation than running the system
 only with physical cores.
 
