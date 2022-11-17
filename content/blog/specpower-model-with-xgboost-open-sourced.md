@@ -24,3 +24,9 @@ old linear model as well as the XGBoost model.
     + However it tends to under-estimate
 - We see suprisingly no efficiency gain from applying the SPECPower BIOS settings but rather a smoothing of the curve. 
     + The reason to that is currently unknown.
+
+## Detailed Talk & Slides
+Here are the slides to our talk, where we present the works on and performance of the model 
+at the PyData Nov'22 Meetup in Berlin.
+
+[Download Slides](/slides/PyData-Talk.pdf)

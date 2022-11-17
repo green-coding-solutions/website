@@ -27,3 +27,10 @@ Energy cost estimation for cloud workloads is an emerging topic that surfaces es
 **Location:** Factory Berlin Görlitzer Park - Lohmühlenstraße 65 · Berlin, BE - The meetup is located at the CODE Event Space on the 5th floor
 
 **Contact:** If you want to shoot us some questions or infos beforehand or anything just write an email to arne@green-coding.org
+
+
+## Slide-Deck PDF
+Here are the slides to our talk, where we present the works on and performance of the model 
+at the PyData Nov'22 Meetup in Berlin.
+
+[Download Slides](/slides/PyData-Talk.pdf)
