@@ -60,8 +60,35 @@ Intel regarding TDP their definition reads a bit differently: [Intel TDP landing
 It is unclear if the definition really changed or just the wording is a bit different due 
 to a different author / department.
 
+## Comparing TDPs and summary
+
 However for both cases we can conclude that the TDP should be a proper indicator of an **average**
 maximal consumption over a longer period of time. Spikes in power consumption for short durations can however be way higher.
+
+Also TCase must be taken into account. This value is typically not given for AMD. For Intel
+CPUs this concludes that your CPU might consume more when you are below TCase and less when above.
+
+The issue outlined in the whitepaper though is that a TDP can not really used for a comparison
+between different processor models.
+The range of uncertainty where the real power consumption will lie in the end is so big
+that easily a scenario like in the White Paper can happen, where one CPU has a lower TDP
+than the other, but still shows higher average power consumption.
+
+What however has not been not been done in the White Paper is that the comparison
+does not take the different architecture, base frequency and core counts into account.
+
+Our [XGBoost model](https://github.com/green-coding-berlin/spec-power-model) for instance respects this and the estimations here look a bit different:
+
+- **AMD Opteron (TDP 95W), 2.2 GHz, 2 chips, 12 cores/chip, 16GB RAM**
+- System Peak Power estimated: 241 W
+- System Idle Power: 93 W
+
+- **Intel Xeon X5675 (TDP 115W), 3.7 GHz, 2 chips, 6 cores/chip, 16GB RAM**
+- System Peak Power estimated: 257 W
+- System Idle Power: 46 W
+
+As said before the overestimated peak power for the Intel is due to the tuning settings on Turbo Boost,
+which is not reflected in the Training data always.
 
 ## Community call
 
