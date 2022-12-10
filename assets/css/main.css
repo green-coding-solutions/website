@@ -2232,7 +2232,19 @@ a {
 ol li {list-style: decimal;}
 nav ol li {list-style: none outside none;}
 
-li {list-style: circle inside none;}
+li {list-style: square inside none;}
+
+li > ul {
+    text-indent: 20px;
+}
+
+li > ul > li {
+    list-style: disc inside none;
+}
+
+li > ul > li > ul > li {
+    list-style: circle inside none;
+}
 
 .data-content-one li p {display:  inline;}
 
@@ -2297,3 +2309,5 @@ a:hover{color:#1e70bf;text-decoration:none}
 ::-webkit-selection{background-color:#cce2ff;color:rgba(0,0,0,.87)}
 ::-moz-selection{background-color:#cce2ff;color:rgba(0,0,0,.87)}
 ::selection{background-color:#cce2ff;color:rgba(0,0,0,.87)}
+
+
