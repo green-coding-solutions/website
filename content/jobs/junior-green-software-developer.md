@@ -1,7 +1,7 @@
 ---
 title: "Junior Green Software Developer"
 description: "Open role for Junior Green Software Developer at Green Coding Berlin GmbH to work on sustainable software."
-draft: false
+draft: true
 ---
 
 At Green Coding Berlin we create a green software community and ecosystem in Berlin. 

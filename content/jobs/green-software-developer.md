@@ -61,7 +61,7 @@ This is the skillset we believe is very helpful to have:
 - Linux subsystem concepts for containerization (cgroups, namespaces, procfs, sysfs)
 - End-to-End Testing Tools (Selenium, Codeception, Playwright or similar)
 - CI-Pipelines (Github actions preferred)
-- At least around a 1-2 year experience in using one of these programming languages: Node.JS / Javascript or Python or PHP
+- At least around 2 year experience in using one of these programming languages: Node.JS / Javascript or Python or PHP
 - Basic understanding of modern computer achitectures such as microprocessor design, machine registers, asssembly representation of code, microprocessor instructions etc.
 - At least entry level experience in reading, writing and adapting C code.
 
