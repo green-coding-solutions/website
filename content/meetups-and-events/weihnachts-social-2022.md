@@ -20,7 +20,7 @@ We will reserve a table and Glühwein is on us!
 Newcomers who have never been on one of our meetups so far are very welcome. This is you chance to get to know many people from the Green Software community in a relaxes social atmosphere.
 Any technical discussions are also very welcome :)
 
-We will meet at the eastern entrance at Jägerstraße and then have a quick stroll over the Weinachtsmarkt before we sit down for drinks and chat.
+We will meet at the northern entrance at Unter den Linden in front of the ticket office and then have a quick stroll over the Weinachtsmarkt before we sit down for drinks and chat.
 
 We have reserved a table for 20 people. If the event is full please put yourself on the waitlist, so we know if we need to reserve more spaces.
 
