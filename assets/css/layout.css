@@ -83,7 +83,6 @@
 		.members-box {width: 216px;}
 		.plus-btn {width: 216px;}
 		.photo-footer {width: 216px;}
-		.who {margin: 0 22px;}
 		
 		#container2 {width: 635px;}
 		#options {}
@@ -130,7 +129,6 @@
 		.last-project-title {font-size: 90px;}
 
 		/*  TEAM  */
-		.team-title {font-size: 90px;}
 		.sides {margin: 20px 11px 100px 11px;}
 		.centre {margin: 20px 15px 100px 15px;}
 		.infomembers {font-size: 18px;}
@@ -198,7 +196,6 @@
 		.last-projects {padding-top: 20px;}
 		.profile {width: auto;margin: 50px 0;}
 		.last-project-title {font-size: 50px;padding-top: 50px;}
-		.team-title {font-size: 50px;}
 		.works-title {font-size: 50px;}
 		#banner {/*margin-top: 60px;*/}
 		.page.first {padding-top: 465px;}
@@ -334,7 +331,6 @@
 		.infomembers {font-size: 17px;}
 		.teamshow {width: 250px; margin: auto;}
 		.navigation {width: auto;}
-		.teamlist{height: 400px;}
 
 		/*  PORTFOLIO  */
 		.title.portfolio {font-size: 18px;}
@@ -395,7 +391,6 @@
 		.btn-two  {left:0px !important;}
 		.ls-responsive {left:10px !important;}
 		#services {margin-bottom: 85px;}
-		.teamlist {margin-left: 4px;}
 		
 		.anythingSlider {height: 255px !important;}
 		.section-one {padding: 115px 0 65px;}
@@ -501,7 +496,6 @@
 		.infomembers {font-size: 17px;}
 		.teamshow {width: 255px; margin: auto;}
 		.navigation {width: auto;}
-		.teamlist{height: 380px;}
 		.dir-right {  bottom: 290px;
   right: -117px;
   left: auto;}
@@ -509,7 +503,6 @@
   left: -117px;
   right: auto;}
 		.title-profile, .page h2, .works-container h2 {font-size: 50px;}
-		.team-title {font-size: 40px;}
 
 		/*  PORTFOLIO  */
 		.portfoliocontent {padding-top: 10px !important;}
