@@ -15,7 +15,7 @@ Software uses energy through the utilization of the underlying hardware (typical
 
 Also software uses energy when making network requests and also indirectly is responsible for the embodied carbon, which is the CO2 emitted when the hardware that it uses has to be initialize manufcatured.
 
-On this page we want to hightlight how to get from typical values like <strong>time</strong> or <strong>Megabytes</strong> to <strong>kWh</strong> and finally to <strong>CO2</strong>.
+On this page we want to hightlight how to get from typical values like **tim** or **Megabytes** to **kWh** and finally to **CO2**.
 
 {{< rawhtml >}}
                 </div>
@@ -26,9 +26,9 @@ On this page we want to hightlight how to get from typical values like <strong>t
             <div class="title-two">List of CO2 formulas</div>
             <div class="separator"><div class="line line-1"></div></div>
             <div class="data-content-one">                
-                <div class="ui segment" id="calculating-savings">
+                <div class="ui segment">
                     <div class="header">
-                        <a class="ui blue ribbon label" href="#">
+                        <a class="ui blue ribbon label" href="#gigabytes-to-kwh" id="gigabytes-to-kwh">
                             <h3 style="color: #fff;">Gigabytes to kwH</h3>
                         </a>
                     </div>
@@ -39,6 +39,9 @@ On this page we want to hightlight how to get from typical values like <strong>t
                     <p>Typically these approaches either follow a top down approach by looking at the electricity bill of a telecom provider and then the network transmission reporting to divide the two numbers.</p>
                     <p>Other approaches are to really trace the path of some sample packets and look at every piece of network equipment on the way and then on its power draw for the transmission only.</p>
                     <p>There are also other approaches but all have downsides and upsides. The number of <strong>0.06 kWh / GB</strong> is already a mix with the idea to get the best out of all of these approaches.</p>
+                    <p>The study linked in the Source down below also notes that through advances in efficiency the electric intesity drops by around a half every 2 years and suggests that an extrapolation for the coming years might be a valid assumption. This would bring the value in **2023** down to a **0.00375 kWH / GB**</p>
+                    <p>However this model is not without critique, as the real nature of network devices to date is that they consume 80% of their peak capacity already in idle mode. The rest is a proportional factor according to the usage of the possible bandwidth. Many models have been proposed to better attribute this reality on the real electricity cost for application that uses the network, however time-share or data-share models all have different downsides. Source: [Daniel Schien, Paul Shabajee, Chris Preist. “Rethinking Allocation in High-Baseload Systems: A Demand-Proportional Network Electricity Intensity Metric.”](https://github.com/intarchboard/e-impact-workshop-public/blob/main/papers/Schien_Rethinking-Allocation-v2.pdf)</p>
+                    <p>We deciced to use the linear approach of network transfer attribution to power consumption in our tools as it bests incentives the user to keep the network traffic to a minimum. No matter which current known calculation method is used it will be inaccurate still and none of the current methods can reliably incorporate the real costs of provisioning new hardware for bandwith increase back in time to the pool of applications that tipped the providers to increase the bandwith.</p>
                     <h3>Included Network parts</h3>
                     <p>The important point to note with this number is which parts of the network are included. In the picture on the right you see the included parts. <strong>Only the Access Network and the IP core network is included</strong>, which means the connection between datacenters and telecom providers.</p>
                     <p>Not included are the networking inside of the datacenters and also no end-user devices or their in-Home wifi. The calculation only goes to the curbside.</p>
@@ -66,7 +69,7 @@ On this page we want to hightlight how to get from typical values like <strong>t
                 <!-- end segment -->                
                 <div class="ui segment">
                     <div class="header">
-                        <a class="ui yellow ribbon label">
+                        <a class="ui yellow ribbon label" href="#from-kwh-to-co2e" id="from-kwh-to-co2e">
                             <h3 style="color: #fff;">From kWh to CO2e</h3>
                         </a>
                     </div>
@@ -100,7 +103,7 @@ On this page we want to hightlight how to get from typical values like <strong>t
                 <!-- end segment -->
                 <div class="ui segment" id="calculating-savings">
                     <div class="header">
-                        <a class="ui blue ribbon label" href="#">
+                        <a class="ui blue ribbon label" href="#from-joules-to-kwh" id="from-joules-to-kwh">
                             <h3 style="color: #fff;">From Joules to kwH</h3>
                         </a>
                     </div>
@@ -155,9 +158,9 @@ On this page we want to hightlight how to get from typical values like <strong>t
                     </div>
                 </div>
                 <!-- end segment --> 
-                <div class="ui segment" id="calculating-savings">
+                <div class="ui segment">
                     <div class="header">
-                        <a class="ui green ribbon label" href="#">
+                        <a class="ui green ribbon label" href="#from-specs-to-kwh" id="from-specs-to-kwh">
                             <h3 style="color: #fff;">From Specs to kWh</h3>
                         </a>
                     </div>
@@ -171,7 +174,7 @@ On this page we want to hightlight how to get from typical values like <strong>t
                     <p>So we can conclude that the TDP is a very rough estimate, and serves as a good upper bound. But it exaggerates the real energy by quite a bit.</p>
                 </div>
                 <!-- end segment -->              
-                <div class="ui segment" id="calculating-savings">
+                <div class="ui segment">
                     <div class="header">
                         <a class="ui green ribbon label" href="#">
                             <h3 style="color: #fff;">From Benchmarks to kWh</h3>
