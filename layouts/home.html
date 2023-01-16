@@ -26,51 +26,28 @@
         </div>
     </div>
 </section><!-- end about -->
-<section class="works-container bg-two">
-    <div id="nav-meetups"></div>
+<section id="projects" class="bg-two">
+    <div id="nav-projects"></div>
     <div class="section-two bottom-works">
-        <div class="works-header">
-            <div class="title-two">Meetups & Events</div>
-            <div class="separator">
-                <div class="line line-2"></div>
-            </div>
-            <div class="data-content-two">
-                Browse through our latest events and watch recordings (if available :) )<br>
-                For a full list: 👉 <a href="/meetups-and-events" style="color: white; text-decoration: underline;">All
-                    our Meetups & Events</a>
-            </div>
+        <div class="title-two">Our Projects</div>
+        <div class="separator">
+            <div class="line line-2"></div>
         </div>
-        <div id="portfolio" class="container">
-            <div class="section portfoliocontent">
-                <div id="container2" class="clearfix">
-                    <div class="inici"></div>
-                    {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "meetups-and-events" ) ) }}
-                    <div class="element talks">
-                        <a href="{{.Permalink}}">
-                            <div class="ch-grid">
-                                <div class="work-info"><span> {{.Title}}<br><span>Meetup.com</span></span></div>
-                                {{ if (isset .Params "eventimg600w") }}
-                                <img srcset="{{.Params.Eventimg}} 1x,
-                                {{.Params.Eventimg600w}} 2x" src="{{.Params.Eventimg}}" style="width: 300px"
-                                    loading="lazy">
-                                {{ else }}
-                                <img src="{{.Params.Eventimg}}" style="width: 300px" loading="lazy">
-                                {{ end }}
-                            </div>
-                        </a>
-                    </div>
-                    {{end}}
-                    <div class="final"></div>
-                </div>
-                <!-- Project -->
-                <div id="project-show"></div>
-                <div class="project-window">
-                    <div class="project-content"></div><!-- AJAX Dinamic Content -->
-                </div><!-- end Project -->
-            </div> <!-- #container -->
-        </div> <!-- /END ISOTOPE PORTFOLIO-->
+        <div class="data-content-two">
+            Here is a selection of our open-source projects we develop to measure and reduce the energy consumption of software:
+        </div>
+        <div id="project-items-container" class="data-content-two">
+            {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "projects" ) ) }}
+                <a class="project-item" href="{{.Permalink}}">
+                    <i class="{{ .Params.Icon }} icon"></i>
+                    <div class="project-item-title">{{ .Title }}</div>
+                </a>
+            {{end}}
+        </div>
+
     </div><!-- end portfolio -->
-</section>
+
+</section><!-- end contact -->
 <section id="team" class="bg-two">
     <div id="nav-team"></div>
     <div class="section-one">
@@ -88,7 +65,7 @@
                         <!-- THREE -->
                         <div class="members-box">
                             <img src="../img/team/arne_square.webp" loading=lazy
-                                style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
+                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
                             <div class="name-team">Arne Tarara</div>
                         </div>
                         <div class="photo-footer">
@@ -106,7 +83,7 @@
                     <div class="who">
                         <div class="members-box">
                             <img src="../img/team/dan.webp" loading=lazy
-                                style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
+                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
                             <div class="name-team">Dan Mateas</div>
                         </div>
                         <div class="photo-footer">
@@ -124,7 +101,7 @@
                     <div class="who">
                         <div class="members-box">
                             <img src="../img/team/danilo.webp" loading=lazy
-                                style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
+                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
                             <div class="name-team">Danilo Ješić</div>
                         </div>
                         <div class="photo-footer">
@@ -142,7 +119,7 @@
                     <div class="who">
                         <div class="members-box">
                             <img src="../img/team/didi.webp" loading=lazy
-                                style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
+                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
                             <div class="name-team">Didi Hoffmann</div>
                         </div>
                         <div class="photo-footer">
@@ -162,25 +139,51 @@
         </article>
     </div>
 </section><!-- end team -->
-
-
-
-<section id="contact" class="bg-two">
-    <div id="nav-contact"></div>
-    <div class="section-two">
-        <div class="title-two">Contact us</div>
-        <div class="separator">
-            <div class="line line-2"></div>
+<section class="works-container bg-two">
+    <div id="nav-meetups"></div>
+    <div class="section-two bottom-works">
+        <div class="works-header">
+            <div class="title-two">Meetups & Events</div>
+            <div class="separator">
+                <div class="line line-2"></div>
+            </div>
+            <div class="data-content-two">
+                Browse through our latest events and watch recordings (if available :) )<br>
+                For a full list: 👉 <a href="/meetups-and-events" style="color: white; text-decoration: underline;">All
+                our Meetups & Events</a>
+            </div>
         </div>
-        <div class="data-content-two">
-            If you want to work with us, use and learn about our tools, talk about green software or just want to say
-            hello.
-        </div>
-        <div class="data-content-two">
-            Drop us a line: info@green-coding.org
-        </div>
-    </div>
-</section><!-- end contact -->
+        <div id="portfolio" class="container">
+            <div class="section portfoliocontent">
+                <div id="container2" class="clearfix">
+                    <div class="inici"></div>
+                    {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "meetups-and-events" ) ) }}
+                    <div class="element talks">
+                        <a href="{{.Permalink}}">
+                            <div class="ch-grid">
+                                <div class="work-info"><span> {{.Title}}<br><span>Meetup.com</span></span></div>
+                                {{ if (isset .Params "eventimg600w") }}
+                                <img srcset="{{.Params.Eventimg}} 1x,
+                                {{.Params.Eventimg600w}} 2x" src="{{.Params.Eventimg}}" style="width: 300px"
+                                loading="lazy">
+                                {{ else }}
+                                <img src="{{.Params.Eventimg}}" style="width: 300px" loading="lazy">
+                                {{ end }}
+                            </div>
+                        </a>
+                    </div>
+                    {{end}}
+                    <div class="final"></div>
+                </div>
+                <!-- Project -->
+                <div id="project-show"></div>
+                <div class="project-window">
+                    <div class="project-content"></div><!-- AJAX Dinamic Content -->
+                </div><!-- end Project -->
+            </div> <!-- #container -->
+        </div> <!-- /END ISOTOPE PORTFOLIO-->
+    </div><!-- end portfolio -->
+</section>
 <section id="references" class="bg-one">
     <div class="section-three">
         <div class="title-one">References</div>

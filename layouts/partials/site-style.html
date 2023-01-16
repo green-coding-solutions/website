@@ -17,6 +17,11 @@
 <link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/layout.css" | minify | fingerprint).Permalink }}'>
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/image.min.css">
 
+{{ if .IsHome }}
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/icon.min.css">
+{{ end}}
+
+
 {{ if or (eq .Page.Title "CO2 Formulas") (eq .Page.Section "case-studies") (eq .Page.Section "case-studies")   }}
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/reset.min.css">
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/site.min.css">
@@ -31,8 +36,10 @@
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/table.min.css">
 {{ end}}
 
-{{ if (eq .Page.Section "blog")   }}
+{{ if or (eq .Page.Section "blog") (eq .Page.Section "projects") }}
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/icon.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/button.min.css">
+<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/label.min.css">
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/message.min.css">
 <link rel="stylesheet" type="text/css" class="ui" href="/dist/css/table.min.css">
 

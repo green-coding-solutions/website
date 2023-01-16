@@ -2264,6 +2264,11 @@ code {
     border-radius: 5px;
 }
 
+pre > code {
+    display: block;
+    padding: 20px !important;
+}
+
 .gc-top-aligned {
     align-items: flex-start;
 }
@@ -2317,3 +2322,46 @@ figure figcaption {
     margin: auto;
     margin-bottom: 20px;
 }
+
+#project-items-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+a.project-item {
+    margin-bottom: 60px;
+}
+
+a.project-item > i.icon {
+    display: block;
+    color: #f9f9f5;
+    width: 200px;
+    height: 200px;
+    border: 20px solid #f9f9f5;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    overflow:hidden;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background: teal;
+    line-height: 200px;
+    font-size: 100px;
+}
+
+.project-item-title {
+    color: #f9f9f5;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project-item:hover, .project-item > i.icon:hover {
+    color: #2a3f50 !important;
+    border-color: #2a3f50 !important;
+}
+
+
+

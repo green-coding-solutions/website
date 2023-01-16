@@ -73,6 +73,8 @@ drive architectural optimizations (like which service to use, or if a move to se
 Through case-studies we also want to highlight the overhead cost of virtualization and give metrics to make informed decisions which
 architectural model fits best in an energy aware company culture.
 
+Also check out [our projects](https://www.green-coding.org/#projects)
+
 {{< whiteblock >}}
 Developing Software
 {{</ whiteblock >}}
@@ -95,12 +97,9 @@ We develop in-line plugins for Github Actions and badges that make other people 
 
 Also we focus in the building process for static sites, which typically have a lower cost of operating but incur a build cost.
 
-Checkout out our energy badges in [Github Readmes](https://github.com/green-coding-berlin/wordpress-static) or our [Case Studies](https://www.green-coding.org/case-studies/) on the topic. 
+Checkout out our [OpenEnergyBadge project](https://www.green-coding.org/projects/open-energy-badge), our [Green Testing CI-plugins for Github](https://www.green-coding.org/projects/green-testing) or our [Case Studies](https://www.green-coding.org/case-studies/) on the topic. 
 
-Example badge: {{< rawhtml >}} <img src="https://img.shields.io/badge/Energy%20cost%20for%20build-1.4%20J-orange">{{< /rawhtml >}}
-
-Our CI Pipeline Plugins are currently in beta. If you want to join the circle of beta testers \
-please drop us a line to: [info@green-coding.org](mailto:info@green-coding.org)
+Example badge: {{< rawhtml >}} <a href="https://metrics.green-coding.org/stats.html?id=c5a8a5de-069f-4955-b499-a06e597e19c3"><img src="https://api.green-coding.org/v1/badge/single/c5a8a5de-069f-4955-b499-a06e597e19c3?metric=RAPL"></a>{{< /rawhtml >}}
 
 {{< greenblock >}}
 Network
@@ -161,11 +160,9 @@ On servers this is a differnt deal, and here it is [roughly the other way around
 We use official databases like the [NegaOctet](https://negaoctet.org/) database from France to get the embodied carbon of the underlying hardware
 and showing the cost of manufactoring.
 
-Another approach we will likely adopt in the future is the concept of "Digital Resource Primitives", which is developed by the [SDIA](https://knowledge.sdialliance.org/digital-environmental-footprint).
+Another approach we we are adopting is the concept of *Digital Resource Primitives*, which is developed by the [SDIA](https://knowledge.sdialliance.org/digital-environmental-footprint).
 
-The concept effectively coins a resource as blocked, when it is used by software and thus can attribute the carbon impact from manufacturing
-to the time when it is used making software better comparable.
-
+The concept effectively coins a resource as blocked, when it is used by software and thus can attribute the carbon impact from manufacturing to the time when it is used making software better comparable.
 
 
 {{< greenblock >}}
@@ -174,4 +171,6 @@ Work with Us
 
 If you are a developer that wants to develop sustainable software or just use our tools, a company that needs 
 consulting on their digital products or an activists group, please contact us under [info@green-coding.org](mailto:info@green-coding.org)
+
+Please also see our [Workshops and Consulting](https://www.green-coding.org/workshops-and-consulting) section.
 
