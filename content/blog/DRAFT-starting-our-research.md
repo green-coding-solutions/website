@@ -49,13 +49,13 @@ to an approach. with open research questions
 that we are currently dealing with and even some answers we have already found
 on them.
 
-- Green Coding Current Research Questions: https://www.green-coding.org/faq
-- Green Coding Documentation: https://www.green-coding.org/documentation
+- Green Coding Current Research Questions: https://www.green-coding.berlin/faq
+- Green Coding Documentation: https://www.green-coding.berlin/documentation
 
 We would like to encourage you giving this way of presenting information a try
 and give us feedback.
 
-You can reach us at research@green-coding.org
+You can reach us at research@green-coding.berlin
 
 I am working on the backend team, which caters for research of the power metrics
-and you can reach me directly via arne@green-coding.org
+and you can reach me directly via arne@green-coding.berlin

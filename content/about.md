@@ -73,7 +73,7 @@ drive architectural optimizations (like which service to use, or if a move to se
 Through case-studies we also want to highlight the overhead cost of virtualization and give metrics to make informed decisions which
 architectural model fits best in an energy aware company culture.
 
-Also check out [our projects](https://www.green-coding.org/#projects)
+Also check out [our projects](https://www.green-coding.berlin/#projects)
 
 {{< whiteblock >}}
 Developing Software
@@ -97,9 +97,9 @@ We develop in-line plugins for Github Actions and badges that make other people 
 
 Also we focus in the building process for static sites, which typically have a lower cost of operating but incur a build cost.
 
-Checkout out our [OpenEnergyBadge project](https://www.green-coding.org/projects/open-energy-badge), our [Green Testing CI-plugins for Github](https://www.green-coding.org/projects/green-testing) or our [Case Studies](https://www.green-coding.org/case-studies/) on the topic. 
+Checkout out our [OpenEnergyBadge project](https://www.green-coding.berlin/projects/open-energy-badge), our [Green Testing CI-plugins for Github](https://www.green-coding.berlin/projects/green-testing) or our [Case Studies](https://www.green-coding.berlin/case-studies/) on the topic. 
 
-Example badge: {{< rawhtml >}} <a href="https://metrics.green-coding.org/stats.html?id=c5a8a5de-069f-4955-b499-a06e597e19c3"><img src="https://api.green-coding.org/v1/badge/single/c5a8a5de-069f-4955-b499-a06e597e19c3?metric=RAPL"></a>{{< /rawhtml >}}
+Example badge: {{< rawhtml >}} <a href="https://metrics.green-coding.berlin/stats.html?id=c5a8a5de-069f-4955-b499-a06e597e19c3"><img src="https://api.green-coding.berlin/v1/badge/single/c5a8a5de-069f-4955-b499-a06e597e19c3?metric=RAPL"></a>{{< /rawhtml >}}
 
 {{< greenblock >}}
 Network
@@ -113,7 +113,7 @@ Great tools like [Websitecarbon.com](https://www.websitecarbon.com/) allow the v
 website request.
 
 Nowadays this is typically done by boiling down the complexity into one very error prone formula. See our
-article on [CO2-Formulas](https://www.green-coding.org/co2-formulas/) for more details.
+article on [CO2-Formulas](https://www.green-coding.berlin/co2-formulas/) for more details.
 
 The problematic in network emissions lies not in their existence, but in their invisibilty.
 
@@ -123,7 +123,7 @@ the internet increased its adoption and became ubiquitous.
 However flatrates have introduced a decoupling from the nature of network transmissions not really
 having a flat carbon emission. 
 This creates a disconnectedness and misunderstandig that every use of network will at some
-point lead to an increase in carbon emissions. Sometimes linearly, sometimes in stages. (See [Gigabytes to kWh](https://www.green-coding.org/co2-formulas/#gigabytes-to-kwh))
+point lead to an increase in carbon emissions. Sometimes linearly, sometimes in stages. (See [Gigabytes to kWh](https://www.green-coding.berlin/co2-formulas/#gigabytes-to-kwh))
 
 Since you do not see your consumption, like you for instance do for you telephone bill, you
 risk getting careless with the resource. Same as with buffet food, where leftovers are the norm.
@@ -132,7 +132,7 @@ The solution to this is, we believe, making this resource more visible and getti
 way of interacting with it.
 
 ### Our work
-We currently address this topic by educating developers through [Meetups](https://www.green-coding.org/meetups) and through
+We currently address this topic by educating developers through [Meetups](https://www.green-coding.berlin/meetups) and through
 talks at conferences or coding bootcamps like [WBS Coding School](https://www.wbscodingschool.com/)
 
 On the technical site we highligh the network emissions in our [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool) and show
@@ -170,7 +170,7 @@ Work with Us
 {{</ greenblock >}}
 
 If you are a developer that wants to develop sustainable software or just use our tools, a company that needs 
-consulting on their digital products or an activists group, please contact us under [info@green-coding.org](mailto:info@green-coding.org)
+consulting on their digital products or an activists group, please contact us under [info@green-coding.berlin](mailto:info@green-coding.berlin)
 
-Please also see our [Workshops and Consulting](https://www.green-coding.org/workshops-and-consulting) section.
+Please also see our [Workshops and Consulting](https://www.green-coding.berlin/workshops-and-consulting) section.
 

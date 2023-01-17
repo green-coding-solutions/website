@@ -38,7 +38,7 @@ either as a Group / NGO or as contributors.
 As soon as we have some updates on this topic we will announce it in the blog.
 
 For any feedback regarding our resources repo or if you want to supply some interesting
-links we missed please hit us up at info@green-coding.org
+links we missed please hit us up at info@green-coding.berlin
 
 As a final note I want to point out, that similar lists exist already.
 And although we believe that our list is a valuable addition and contains the most relevant resources,

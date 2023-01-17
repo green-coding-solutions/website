@@ -70,8 +70,8 @@ for Ubuntu are broken.
 Running that AppImage gives us an overhead in the measurement of around 0.3 - 0.5 W.
 
 You can compare the measurements here:
-- [Measurement with PicoLog AppImage running on System Under Test](https://metrics.green-coding.org/stats.html?id=7f4e2725-d84b-4992-aeb7-5f42f797aa73)
-- [Measurement with PicoLog AppImage running on external machine](https://metrics.green-coding.org/stats.html?id=f99e563d-2c5c-453d-99fe-5ac9f6f307ac)
+- [Measurement with PicoLog AppImage running on System Under Test](https://metrics.green-coding.berlin/stats.html?id=7f4e2725-d84b-4992-aeb7-5f42f797aa73)
+- [Measurement with PicoLog AppImage running on external machine](https://metrics.green-coding.berlin/stats.html?id=f99e563d-2c5c-453d-99fe-5ac9f6f307ac)
 
 ## Analysing the 12 V rails
 
@@ -100,8 +100,8 @@ Nevertheless this insight might pose an interesting starting point for an algori
 The total energy consumed with the new setup is very close to the old measurement with the old resistors.
 
 Compare the readings on: 
-- [Old Resitors Measurement](https://metrics.green-coding.org/stats.html?id=f99e563d-2c5c-453d-99fe-5ac9f6f307ac)
-- [New Resitors Measurement](https://metrics.green-coding.org/stats.html?id=7f4e2725-d84b-4992-aeb7-5f42f797aa73)
+- [Old Resitors Measurement](https://metrics.green-coding.berlin/stats.html?id=f99e563d-2c5c-453d-99fe-5ac9f6f307ac)
+- [New Resitors Measurement](https://metrics.green-coding.berlin/stats.html?id=7f4e2725-d84b-4992-aeb7-5f42f797aa73)
 
 This is because we do not look at single lanes, but average the voltages per channel and then add them up
 to get the energy over time.
@@ -112,5 +112,5 @@ However the new resistors have less variance and therefore pose a better accurar
 The next step is to falsify with an AC reading, which we will do in conjuction with the replication of the measurements from the Blauer Engel Team over the next weeks.
 After that we will integrate the harddisk into the measurement to close the gap of uncertainty further.
 
-If you want to falsify our DC measurements or get to know how to make them work in your setup please shoot me an email to arne@green-coding.org !
+If you want to falsify our DC measurements or get to know how to make them work in your setup please shoot me an email to arne@green-coding.berlin !
 

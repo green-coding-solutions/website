@@ -28,7 +28,7 @@ So join us and let's grow the Green Software community in Berlin!
 
 **Location:** The Meetup is inside Betahaus on the first floor. We will keep the door open, so just go up one flight.
 
-**Contact:** If you want to shoot us some questions or infos beforehand or anything just write an email to arne@green-coding.org
+**Contact:** If you want to shoot us some questions or infos beforehand or anything just write an email to arne@green-coding.berlin
 
 **Important: There will be free beer and pizzas :)**
 

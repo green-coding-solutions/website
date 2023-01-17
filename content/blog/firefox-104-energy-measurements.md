@@ -135,7 +135,7 @@ with open(args.filename) as a:
 On our **MacBook Pro Mid-2015 with an Intel Core i7-5557U @ 3.1 GHz** running Ubuntu 22.04 we executed a 
 measurement with our container based setup with the Green Metrics Tool.
 
-You can find [one sample measurement here](https://metrics.green-coding.org/stats.html?id=1102d24e-da8e-444e-ae60-a0c7b1694d90)
+You can find [one sample measurement here](https://metrics.green-coding.berlin/stats.html?id=1102d24e-da8e-444e-ae60-a0c7b1694d90)
 
 The component energy of CPU and DRAM, which is probably the most comparable, here is at
 **36.9 mWh**
