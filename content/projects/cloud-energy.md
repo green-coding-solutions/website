@@ -42,7 +42,7 @@ The model is open-source [AGPLv3 Licensed](https://github.com/green-coding-berli
 {{< /rawhtml >}}
 
 ```
-$ ./static-binary | python3 xgb.py --tdp 240 
+$ ./static-binary | python3 xgb.py --make intel -- cpu-freq 2600 --ram 7 --cpu-threads 24 
 191.939294374113
 169.99632303510703
 191.939294374113
