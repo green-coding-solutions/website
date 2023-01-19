@@ -9,7 +9,7 @@ icon: "leaf"
 Eco CI is the internal name for a project where we create small tools to make CI pipelines more transparent
 in terms of their energy usage and also develop small tools that can save energy / CO2 in the pipeline.
 
-Our current work focuses on Github Actions, one of the biggest continous integration platforms to date.
+Our current work focuses on Github Actions, one of the biggest free continous integration platforms to date.
 
 By integrating our custom Github Actions and Github Apps into your testing workflow you get an automated estimation about the 
 energy cost of the workflow run.

@@ -15,7 +15,7 @@ icon: "cloud"
 
 
 
-Since in the cloud it is often not possible to measure directly we have created a Machine Learning estimation model
+Since in the cloud it is often not possible to measure energy directly we have created a Machine Learning estimation model
 based on the data from [SPECPower](https://www.spec.org/power_ssj2008/)
 
 The setup of the model is based on a [research paper](https://interactdc.com/static/images/documents/Elsevier_Journal.pdf) from [Interact DC](https://interactdc.com/) and the University of East London.
