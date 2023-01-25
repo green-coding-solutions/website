@@ -4,12 +4,15 @@ draft: false
 noindex: true
 ---
 
-Green Coding Berlin GmbH
+**Büro**\
+Green Coding Berlin GmbH \
+Rudi-Dutschke-Straße 23 c/o [Betahaus](https://goo.gl/maps/zsrqUzxiJntgNn636)\
+D-10969 Berlin
 
-Arne Tarara
 
-Jablonskistr. 24
-
+**Rechtlicher Firmensitz**\
+Green Coding Berlin GmbH\
+Jablonskistr. 24\
 D-10405 Berlin
 
 Email: info@green-coding.berlin
