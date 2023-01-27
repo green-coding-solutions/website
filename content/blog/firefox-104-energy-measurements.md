@@ -7,6 +7,14 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 
 ---
 
+{{< infobox >}}
+    In an earlier version of the article the calculation statement contained a message about us 
+    being confused why the conversion factor is 277000000.
+    Thanks to Silas Duddeck from the Goethe University in Frankfurt who pointed out that
+    the factor should be 1J = 2,777778⋅10-7kWh = (1/3600000)kWh => 277777777
+{{< /infobox >}}
+
+
 Mozilla released a new [version 104](https://www.mozilla.org/en-US/firefox/104.0/releasenotes/) this week which sports a power measurement feature.
 
 
@@ -63,9 +71,11 @@ top right corner and then *Download* it.
 
 A script to convert this we have attached in our Github repository.
 
-Apparently we had to convert all readings in the JSON by the weird value of **277000000** and 
+~~Apparently we had to convert all readings in the JSON by the weird value of **277000000** and 
 are unsure where this value is coming from .... but at least it makes the raw values from
-the JSON to be identical with the values we see in the profiler UI.
+the JSON to be identical with the values we see in the profiler UI.~~
+
+The conversion to Joules is: *1J = 2,777778⋅10-7kWh = (1/3600000)kWh*
 
 ### Summary on the M1 Mac
 
@@ -118,7 +128,7 @@ with open(args.filename) as a:
             joule_sum = 0
             prev = 0
             for key, value in values:
-                joule = key / 277000000 # very weird value to get joule ... but this is the matching with firefox energy for my M1 Mac
+                joule = key / 277777777
                 wattage = (joule / ((value - prev)/1000))
                 #print(joule, wattage)
                 joule_sum += joule
