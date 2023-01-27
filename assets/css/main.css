@@ -2267,6 +2267,7 @@ code {
 pre > code {
     display: block;
     padding: 20px !important;
+    word-break: break-word;
 }
 
 .gc-top-aligned {
