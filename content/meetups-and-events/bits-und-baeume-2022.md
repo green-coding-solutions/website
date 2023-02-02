@@ -43,3 +43,7 @@ Integrating it in a development machine or a CI pipeline is readily possible thr
 The CCC provided a wonderful recording on the  [Bits & Bäume site](https://fahrplan22.bits-und-baeume.org/bitsundbaeume/talk/9TES88/)
 
 If this link ever becomes stale you can find the recorind also directly on [media.ccc.de](https://media.ccc.de/v/bitsundbaeume-19349-green-coding-measuring-energy-use-of-arbitrary-applications-and-software-stacks-en-#t=2886)
+
+## Slide-Deck PDF
+
+[Download Slides](/slides/bits-und-baeume.pdf)

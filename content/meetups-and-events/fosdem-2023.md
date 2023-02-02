@@ -27,5 +27,9 @@ Through the concept of usage scenarios we create an interface for developers to 
 
 We present the roadmap for this tool over the next year, which will result in a public and open database of energy information for arbitrary hardware setups, code blocks and libraries and a green standard library / green code completion.
 
+### Slide-Deck PDF
+
+[Download Slides](/slides/FOSDEM_23.pdf)
+
 
 

@@ -25,3 +25,7 @@ Michael Dietz:
 midietz@google.com
 
 Michael Dietz is a Customer Engineer at Google Cloud who works with Startups and Digital Native companies. On top he is evangelizing about Google’s sustainability strategy and shares best practices to reduce carbon footprint across EMEA.
+
+## Slide-Deck PDF
+
+[Download Slides](/slides/Google_Cloud_Developer_Day-1.pdf)
