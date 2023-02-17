@@ -47,6 +47,16 @@ also possible to get only results for part of the CI run.
         Github Marketplace
     </span>
 </a>
+<a class="ui labeled button" href="https://github.com/green-coding-berlin/green-metrics-tool/actions/runs/4192556768">
+    <div class="ui button">
+        <i class="eye icon"></i>
+    </div>
+    <span class="ui basic label">
+        Preview live on our Github Actions
+    </span>
+</a>
+
+
 {{< /rawhtml >}}
 
 --- 
