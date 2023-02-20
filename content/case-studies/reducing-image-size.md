@@ -41,6 +41,8 @@ Docker images get compressed before being uploaded, and we can replicate the com
 
 - What is the calculation for waging network transfer savings vs. build times?  
 
+TODO:
+
 ```txt
 new image firefox:
 
@@ -94,3 +96,5 @@ as there are no wheels (way in which Python packages are bundled) for Alpine,
 resulting in packages needing to be built from source and drastically increasing build times.
 
 - What are future improvements that we could do?
+
+TODO
