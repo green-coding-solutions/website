@@ -10,7 +10,7 @@ authorlink: "https://www.linkedin.com/in/djesic-613732152/"
 
 Would a smaller image size reduce the total energy required to run it?
 
-We have made images that contain an environment for running Puppeteer that we use for testing.  
+We have made images that contain an environment for running [Puppeteer](https://github.com/puppeteer/puppeteer) that we use for testing.  
 They are based of off an Ubuntu base image and include a browser and Puppeteer installed via npm.
 
 We started with the assumption that reducing the image size would require less energy  
@@ -19,7 +19,7 @@ compounding effect for successive downloads.
 
 One of the possible approaches to reducing the size of our images was to change the base image  
 away from Ubuntu and towards something that still met the requirements for our dependencies  
-but at a smaller size, causing us to consider Alpine.
+but at a smaller size, causing us to consider [Alpine](https://www.alpinelinux.org/).
 
 Because Alpine uses a different package manager `apk`, and has difference to  
 what Ubuntu's `apt` has to offer, we needed to make sure that our image is still functional.  
@@ -45,10 +45,10 @@ new image firefox:
 ```txt
  Performance counter stats for 'system wide':
 
-            811.18 Joules power/energy-pkg/                                           
-             45.60 Joules power/energy-gpu/                                           
-          2,006.65 Joules power/energy-psys/                                          
-            123.19 Joules power/energy-ram/                                           
+            811.18 Joules power/energy-pkg/ 
+             45.60 Joules power/energy-gpu/ 
+          2,006.65 Joules power/energy-psys/
+            123.19 Joules power/energy-ram/ 
 
      125.500807313 seconds time elapsed
 ```
@@ -56,12 +56,12 @@ new image firefox:
 old image firefox:
 
 ```txt
- Performance counter stats for 'system wide':                                                                                                                                            
+ Performance counter stats for 'system wide':              
 
-          1,041.44 Joules power/energy-pkg/                                           
-             60.38 Joules power/energy-gpu/                                           
-          2,518.51 Joules power/energy-psys/                                          
-            152.80 Joules power/energy-ram/                                           
+          1,041.44 Joules power/energy-pkg/ 
+             60.38 Joules power/energy-gpu/ 
+          2,518.51 Joules power/energy-psys/
+            152.80 Joules power/energy-ram/ 
 
      154.869966307 seconds time elapsed
 ```
@@ -69,12 +69,12 @@ old image firefox:
 new image chrome:
 
 ```txt
- Performance counter stats for 'system wide':                                                                                                                                            
-                                                                                                                                                                                         
-            478.01 Joules power/energy-pkg/                                           
-             39.18 Joules power/energy-gpu/                                           
-          1,427.71 Joules power/energy-psys/                                          
-             90.32 Joules power/energy-ram/                                           
+ Performance counter stats for 'system wide':              
+                 
+            478.01 Joules power/energy-pkg/ 
+             39.18 Joules power/energy-gpu/ 
+          1,427.71 Joules power/energy-psys/
+             90.32 Joules power/energy-ram/ 
 
      101.184184127 seconds time elapsed
 ```
@@ -84,10 +84,10 @@ old image chrome:
 ```txt
  Performance counter stats for 'system wide':
 
-            851.33 Joules power/energy-pkg/                                           
-             54.58 Joules power/energy-gpu/                                           
-          2,258.76 Joules power/energy-psys/                                          
-            137.30 Joules power/energy-ram/                                           
+            851.33 Joules power/energy-pkg/ 
+             54.58 Joules power/energy-gpu/ 
+          2,258.76 Joules power/energy-psys/
+            137.30 Joules power/energy-ram/ 
 
      147.018825714 seconds time elapsed
 ```
