@@ -26,6 +26,72 @@ what Ubuntu's `apt` has to offer, we needed to make sure that our image is still
 This involved a little bit of trial and error to see what dependencies are required to get  
 a browser with a GUI running from a container based off of an Alpine image.
 
+An optimization for building docker images is making sure that it is built using [buildkit](https://docs.docker.com/build/buildkit/).  
+On our machine it was enabled by default, but in case it is not the default, you can specify it as:
+
+```sh
+DOCKER_BUILDKIT=1 docker build
+```
+
+Using `perf` to run the `docker build` command, we have insight into how much energy
+the build process uses for our images, clearing the cache in between individual builds:
+
+```sh
+perf stat -a -e power/energy-pkg/,power/energy-gpu/,power/energy-psys/,power/energy-ram/ docker build -f puppeteer_firefox.Dockerfile -t new_firefox .
+```
+
+new image firefox:
+
+```txt
+ Performance counter stats for 'system wide':
+
+            811.18 Joules power/energy-pkg/                                           
+             45.60 Joules power/energy-gpu/                                           
+          2,006.65 Joules power/energy-psys/                                          
+            123.19 Joules power/energy-ram/                                           
+
+     125.500807313 seconds time elapsed
+```
+
+old image firefox:
+
+```txt
+ Performance counter stats for 'system wide':                                                                                                                                            
+
+          1,041.44 Joules power/energy-pkg/                                           
+             60.38 Joules power/energy-gpu/                                           
+          2,518.51 Joules power/energy-psys/                                          
+            152.80 Joules power/energy-ram/                                           
+
+     154.869966307 seconds time elapsed
+```
+
+new image chrome:
+
+```txt
+ Performance counter stats for 'system wide':                                                                                                                                            
+                                                                                                                                                                                         
+            478.01 Joules power/energy-pkg/                                           
+             39.18 Joules power/energy-gpu/                                           
+          1,427.71 Joules power/energy-psys/                                          
+             90.32 Joules power/energy-ram/                                           
+
+     101.184184127 seconds time elapsed
+```
+
+old image chrome:
+
+```txt
+ Performance counter stats for 'system wide':
+
+            851.33 Joules power/energy-pkg/                                           
+             54.58 Joules power/energy-gpu/                                           
+          2,258.76 Joules power/energy-psys/                                          
+            137.30 Joules power/energy-ram/                                           
+
+     147.018825714 seconds time elapsed
+```
+
 The results were similar for our two images where our efforts were focused;  
 
 - The image with Puppeteer running in Chrome was ~600MB smaller (1650MB -> 1070MB)
@@ -39,56 +105,11 @@ Docker images get compressed before being uploaded, and we can replicate the com
 - Firefox image: 347MB -> 282MB
 - Chrome image: 552MB -> 350MB
 
-- What is the calculation for waging network transfer savings vs. build times?  
+- What is the calculation for waging network transfer savings vs. build times?
 
-TODO:
+Using the formula for calculating the [CO2 cost of the network transfer](https://www.green-coding.berlin/co2-formulas/#gigabytes-to-kwh)
 
-```txt
-new image firefox:
-
- Performance counter stats for 'system wide':
-
-            811.18 Joules power/energy-pkg/                                           
-             45.60 Joules power/energy-gpu/                                           
-          2,006.65 Joules power/energy-psys/                                          
-            123.19 Joules power/energy-ram/                                           
-
-     125.500807313 seconds time elapsed
-
-old image firefox:
-
- Performance counter stats for 'system wide':                                                                                                                                            
-
-          1,041.44 Joules power/energy-pkg/                                           
-             60.38 Joules power/energy-gpu/                                           
-          2,518.51 Joules power/energy-psys/                                          
-            152.80 Joules power/energy-ram/                                           
-
-     154.869966307 seconds time elapsed
-
-
-new image chrome:
-
- Performance counter stats for 'system wide':                                                                                                                                            
-                                                                                                                                                                                         
-            478.01 Joules power/energy-pkg/                                           
-             39.18 Joules power/energy-gpu/                                           
-          1,427.71 Joules power/energy-psys/                                          
-             90.32 Joules power/energy-ram/                                           
-
-     101.184184127 seconds time elapsed
-
-old image chrome:
-
- Performance counter stats for 'system wide':
-
-            851.33 Joules power/energy-pkg/                                           
-             54.58 Joules power/energy-gpu/                                           
-          2,258.76 Joules power/energy-psys/                                          
-            137.30 Joules power/energy-ram/                                           
-
-     147.018825714 seconds time elapsed
-```
+TODO
 
 This does not however mean that Alpine is a silver bullet for slimmer images.  
 A prominent pitfall to avoid is using Alpine for Python based projects,  
