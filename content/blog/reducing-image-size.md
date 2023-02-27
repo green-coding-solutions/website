@@ -2,7 +2,7 @@
 title: "Reducing image size"
 draft: false
 summary: "What are the tradeoffs when trying to optimize image size"
-date: 2023-02-17 14:00:00
+date: 2023-02-27 10:00:00
 author: "Danilo Jesic"
 authorlink: "https://www.linkedin.com/in/djesic-613732152/"
 
@@ -10,7 +10,7 @@ authorlink: "https://www.linkedin.com/in/djesic-613732152/"
 
 Would a smaller image size reduce the total energy required to run it?
 
-We have made images that contain an environment for running [Puppeteer](https://github.com/puppeteer/puppeteer) that we use for testing.  
+We created images on [our Docker Hub](https://hub.docker.com/u/greencoding) that contain an environment for running [Puppeteer](https://github.com/puppeteer/puppeteer) that we use for testing.  
 They are based of off an Ubuntu base image and include a browser and Puppeteer installed via npm.
 
 We started with the assumption that reducing the image size would require less energy  
@@ -29,68 +29,27 @@ a browser with a GUI running from a container based off of an Alpine image.
 An optimization for building docker images is making sure that it is built using [buildkit](https://docs.docker.com/build/buildkit/).  
 On our machine it was enabled by default, but in case it is not the default, you can specify it as:
 
-```sh
+```code
 DOCKER_BUILDKIT=1 docker build
 ```
 
 Using `perf` to run the `docker build` command, we have insight into how much energy
 the build process uses for our images, clearing the cache in between individual builds:
 
-```sh
-perf stat -a -e power/energy-pkg/,power/energy-gpu/,power/energy-psys/,power/energy-ram/ docker build -f puppeteer_firefox.Dockerfile -t new_firefox .
+```code
+perf stat -a -e power/energy-pkg/,power/energy-psys/,power/energy-ram/ docker build -f puppeteer_firefox.Dockerfile -t new_firefox .
 ```
 
-new image firefox:
+And these are the build results:
 
-```txt
- Performance counter stats for 'system wide':
-
-            811.18 Joules power/energy-pkg/ 
-             45.60 Joules power/energy-gpu/ 
-          2,006.65 Joules power/energy-psys/
-            123.19 Joules power/energy-ram/ 
-
-     125.500807313 seconds time elapsed
-```
-
-old image firefox:
-
-```txt
- Performance counter stats for 'system wide':              
-
-          1,041.44 Joules power/energy-pkg/ 
-             60.38 Joules power/energy-gpu/ 
-          2,518.51 Joules power/energy-psys/
-            152.80 Joules power/energy-ram/ 
-
-     154.869966307 seconds time elapsed
-```
-
-new image chrome:
-
-```txt
- Performance counter stats for 'system wide':              
-                 
-            478.01 Joules power/energy-pkg/ 
-             39.18 Joules power/energy-gpu/ 
-          1,427.71 Joules power/energy-psys/
-             90.32 Joules power/energy-ram/ 
-
-     101.184184127 seconds time elapsed
-```
-
-old image chrome:
-
-```txt
- Performance counter stats for 'system wide':
-
-            851.33 Joules power/energy-pkg/ 
-             54.58 Joules power/energy-gpu/ 
-          2,258.76 Joules power/energy-psys/
-            137.30 Joules power/energy-ram/ 
-
-     147.018825714 seconds time elapsed
-```
+{{< table id="sample" class="bordered" data-sample=10 >}}
+|    Image    |  power-pkg | power-psys | power-ram |   time   |
+|:-----------:|:----------:|:----------:|:---------:|:--------:|
+| New Firefox |  811.18 J  | 2,006.65 J |  123.19 J | 125.50 s |
+| Old Firefox | 1,041.44 J | 2,518.51 J |  152.80 J | 154.86 s |
+|  New Chrome |  478.01 J  | 1,427.71 J |  90.32 J  | 101.18 s |
+|  Old Chrome |  851.33 J  | 2,258.76 J |  137.30 J | 147.01 s |
+{{</ table >}}
 
 The results were similar for our two images where our efforts were focused;  
 
@@ -105,17 +64,11 @@ Docker images get compressed before being uploaded, and we can replicate the com
 - Firefox image: 347MB -> 282MB
 - Chrome image: 552MB -> 350MB
 
-- What is the calculation for waging network transfer savings vs. build times?
-
-Using the formula for calculating the [CO2 cost of the network transfer](https://www.green-coding.berlin/co2-formulas/#gigabytes-to-kwh)
-
-TODO
-
 This does not however mean that Alpine is a silver bullet for slimmer images.  
 A prominent pitfall to avoid is using Alpine for Python based projects,  
 as there are no wheels (way in which Python packages are bundled) for Alpine,  
 resulting in packages needing to be built from source and drastically increasing build times.
 
-- What are future improvements that we could do?
+Considering that the build time and compressed image size are decreased, this optimization resulted in a net energy reduction. 🎉
 
-TODO
+In an future blog post, we will highlight the case when the image optimization causes an increase in build time, but a reduction in image size and do a breakdown of the energy cost of the network transfer.
