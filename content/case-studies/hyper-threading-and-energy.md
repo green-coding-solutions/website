@@ -59,90 +59,25 @@ sudo perf stat -a -e power/energy-pkg/,power/energy-ram/ sysbench --cpu-max-prim
 The command always runs for **10 s** fixed. What we modified during the runs is the **--threads** argument
 as seen in the following table.
 
-This is the result:
+### Results table
 
-{{< rawhtml >}}
+{{< table class="ui table" >}}
+|    Threads    |  HT Off - Events | HT Off - Energy [J] | HT off - mJ / Ops | HT On - Events | HT On - Energy [J] | HT On - mJ / Ops |
+|:-----------:|:----------:|:----------:|:---------:|:--------:|:--------:|:--------:|
+| Idle | 0,00 | 29,18 | - | 0,00 | 29,18 | - |
+| 1 | 11.601,00 | 106,83 | 9,21 | 11.564,00 | 107,5 | 9,30 
+| 2 | 22.922,00 | 160,40 | 7,00 | 23.049,00 | 163,92 | 7,11 
+| 3 | 22.924,00 | 161,87 | 7,06 | 29.063,00 | 183,51 | 6,31 
+| 4 | 22.900,00 | 161,58 | 7,06 | 34.895,00 | 204,22 | 5,85 
+| 5 | 22.908,00 | 162,76 | 7,10 | 34.931,00 | 199,66 | 5,72 
+| 6 | 22.902,00 | 162,16 | 7,08 | 34.972,00 | 202,81 | 5,80 
+{{</ table >}}
 
-<table class="ui sortable celled striped table">
-<thead><tr><th title="Field #1">Threads</th>
-<th title="Field #2">HT Off - Events</th>
-<th title="Field #3">HT Off - Energy [J]</th>
-<th title="Field #4">HT off - mJ / Ops</th>
-<th title="Field #5">HT On - Events</th>
-<th title="Field #6">HT ON - Energy [J]</th>
-<th title="Field #7">HT On - mJ / Ops</th>
-</tr></thead>
-<tbody><tr>
-<td>Idle</td>
-<td>0,00</td>
-<td>29,18</td>
-<td>-</td>
-<td>0,00</td>
-<td>29,18</td>
-<td>-</td>
-</tr>
-<tr>
-<td>1</td>
-<td>11.601,00</td>
-<td>106,83</td>
-<td>9,21</td>
-<td>11.564,00</td>
-<td>107,5</td>
-<td>9,30</td>
-</tr>
-<tr>
-<td>2</td>
-<td>22.922,00</td>
-<td>160,40</td>
-<td>7,00</td>
-<td>23.049,00</td>
-<td>163,92</td>
-<td>7,11</td>
-</tr>
-<tr>
-<td>3</td>
-<td>22.924,00</td>
-<td>161,87</td>
-<td>7,06</td>
-<td>29.063,00</td>
-<td>183,51</td>
-<td>6,31</td>
-</tr>
-<tr>
-<td>4</td>
-<td>22.900,00</td>
-<td>161,58</td>
-<td>7,06</td>
-<td>34.895,00</td>
-<td>204,22</td>
-<td>5,85</td>
-</tr>
-<tr>
-<td>5</td>
-<td>22.908,00</td>
-<td>162,76</td>
-<td>7,10</td>
-<td>34.931,00</td>
-<td>199,66</td>
-<td>5,72</td>
-</tr>
-<tr>
-<td>6</td>
-<td>22.902,00</td>
-<td>162,16</td>
-<td>7,08</td>
-<td>34.972,00</td>
-<td>202,81</td>
-<td>5,80</td>
-</tr>
-</tbody></table>
-{{< /rawhtml >}}
-
+### Graph
 {{< rawhtml >}}
 <img class="ui huge rounded bordered image" src="/img/blog/hyper-threading-energy-graph.webp" alt="Hyper-Threading energy graph" loading="lazy">
 {{< /rawhtml >}}
-
-
+\
 As seen in the charts and the table Hyper-Threading on our Intel CPU on the test bench
 is always able to deliver more operations per 10 seconds.
 
