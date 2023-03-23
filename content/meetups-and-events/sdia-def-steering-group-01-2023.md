@@ -4,7 +4,7 @@ date: 2023-01-19 17:00:00
 publishDate: 2023-01-27
 draft: false
 eventtype: "Conference"
-eventlink: "https://fosdem.org/2023/schedule/event/energy_green_software_engineering/"
+eventlink: ""
 eventname: "SDIA - Digital Environmental Footprint (Jan. 2023)"
 eventimg: '/img/meetups-and-events/sdia-def-2023-01.webp'
 eventimg600w: "/img/meetups-and-events/sdia-def-2023-01-600w.webp"
