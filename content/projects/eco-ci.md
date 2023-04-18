@@ -47,12 +47,20 @@ also possible to get only results for part of the CI run.
         Github Marketplace
     </span>
 </a>
-<a class="ui labeled button" href="https://github.com/green-coding-berlin/green-metrics-tool/actions/runs/4192556768">
+<a class="ui labeled button" href="https://github.com/green-coding-berlin/green-metrics-tool/actions/runs/4720202654">
     <div class="ui button">
         <i class="eye icon"></i>
     </div>
     <span class="ui basic label">
-        Preview live on our Github Actions
+        Live preview on Github Actions
+    </span>
+</a>
+<a class="ui labeled button" href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin%2Fgreen-metrics-tool&branch=dev&workflow=45267392">
+    <div class="ui button">
+        <i class="chartline icon"></i>
+    </div>
+    <span class="ui basic label">
+        Our CI Energy Cost monitoring
     </span>
 </a>
 
