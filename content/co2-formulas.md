@@ -15,7 +15,7 @@ Software uses energy through the utilization of the underlying hardware (typical
 
 Also software uses energy when making network requests and also indirectly is responsible for the embodied carbon, which is the CO2 emitted when the hardware that it uses has to be initialize manufcatured.
 
-On this page we want to hightlight how to get from typical values like **tim** or **Megabytes** to **kWh** and finally to **CO2**.
+On this page we want to hightlight how to get from typical values like **time** or **Megabytes** to **kWh** and finally to **CO2**.
 
 {{< rawhtml >}}
                 </div>
