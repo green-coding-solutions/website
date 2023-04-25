@@ -51,3 +51,8 @@ Also some "best practices" are presented but also pitfalls that come along with 
 
 Finally a summary is given which methods provide the most potential when it comes to understanding and reducing software energy consumption and why real benefits can only be achieved with "being less wasteful".
 
+
+
+## Slide-Deck PDF
+
+[Download Slides](/slides/2023_04_Green_Software_Manifesto.pdf)
