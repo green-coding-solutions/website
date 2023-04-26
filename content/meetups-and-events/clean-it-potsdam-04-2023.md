@@ -19,3 +19,6 @@ We present our open-source projects Eco CI to make energy consumption in CI/CD p
 
 Arne Tarara works for Green Coding Berlin, which is a Berlin-based software company focused on creating open-source and measurements in the domain of software energy consumption. He has been working as a software developer for the last 16 years mainly in the web domain with a strong background in analytics and linear modeling.
 
+## Slide-Deck PDF
+
+[Download Slides](/slides/2023_04_openXchange.pdf)
