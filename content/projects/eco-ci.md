@@ -23,10 +23,22 @@ We are using our work from our [Cloud Energy project](/projects/cloud-energy) to
 The result is an easily integrateable Github Action where you get the energy in Joules for the CI run. It is 
 also possible to get only results for part of the CI run.
 
+
 {{< rawhtml >}}
-<img class="ui huge center rounded bordered image" src="/img/projects/github-actions-energy.webp" alt="Github Actions energy estimation" loading="lazy">
-<br>
+<figure>
+  <img class="ui huge rounded image" src="/img/projects/github-actions-energy.webp" loading="lazy">
+  <figcaption>Github Actions energy estimation</figcaption>
+</figure>
 {{< /rawhtml >}}
+
+
+{{< rawhtml >}}
+<figure>
+  <img class="ui huge rounded image" src="/img/blog/eco-ci.webp" loading="lazy">
+  <figcaption>Eco-CI feature demo in Green Metrics Tool</figcaption>
+</figure>
+{{< /rawhtml >}}
+
 
  
 
