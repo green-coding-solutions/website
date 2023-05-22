@@ -1,6 +1,9 @@
 (function($) {
 // JavaScript Document
+
 $(document).ready(function() {
+    // remove Website carbon calculator "cleaner" statement
+    document.querySelector('#wcb_2').remove();
 
     // ----------- TEAM SOCIAL MENU ----------- //
 
@@ -143,7 +146,7 @@ $(document).ready(function() {
 		// element has gone out of viewport
 		$(this).removeClass('paraOn');
 		}
-});
+    });
 
 });// JavaScript Document
 })(jQuery);
