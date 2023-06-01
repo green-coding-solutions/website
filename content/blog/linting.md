@@ -52,4 +52,5 @@ We measured 10 runs with each linter and then compared the results.
 ## Conclusion
 
 Ruff used a lot less memory and CPU resources, half as much machine energy, and it completes the linting half a second quicker!
-Based on these results, we are planning to migrate to Ruff!
+
+These results show it's worth considering a migration to Ruff in the near future!
