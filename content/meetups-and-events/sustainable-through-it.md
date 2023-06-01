@@ -5,7 +5,7 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/de-DE/green-coding/events/282389911/"
 eventname: "Sustainable (through) IT"
-eventimg: '/img/meetups-and-events/sustainable_it.webp'
+eventimg: '/img/meetups-and-events/sustainable-it.webp'
 ---
 In his talk about "Sustainability (through) IT" Thomas will give an overview of different approaches and possibilities on how IT can reduce resource consumption and CO2 emissions by predicting and balancing supply and demand in volatile markets that usually see a lot of overproduction and resource loss.
 
