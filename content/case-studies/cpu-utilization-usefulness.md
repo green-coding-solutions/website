@@ -178,6 +178,11 @@ as the total elapsed cycles are not the maximum possible.
 If the OS uses a monotonic timer which should be at the maximum cycle amount of the CPUs then we can use the counter
 directly to reason about the CPU utilization. However this is usually not the case.
 
+
+{{< greenblock >}}
+Example
+{{< /greenblock >}}
+
 So taking a normal **Ubuntu 22.04** system on a **Fujitsu Esprimo 956** machine we conduct the following test:
 
 - Run a program that outputs a line every 10 ms to a file and sleeps in between
@@ -214,13 +219,150 @@ bite us if the CPU experiences memory congestion.
 A stalling time due to memory I/O is then falsely attributed to a non-idle state. Details are in [Brendan Gregg's Blog - CPU Utilization is Wrong](https://www.brendangregg.com/blog/2017-05-09/cpu-utilization-is-wrong.html)
 
 
+{{< whiteblock >}}
+Looking at energy in particular
+{{< /whiteblock >}}
+
+We will now look at three ways how to use utilization in a system to get some energy values per process and how they differ.
+
+## CPU utilization through Scaphandre
+
+First we use [Scaphandre](https://github.com/hubblo-org/scaphandre) to get a first glimpse on an idle system.
+
+{{< rawhtml >}}
+<figure>
+  <img class="ui huge rounded image" src="/img/case-studies/scaphandre_no_idle.webp">
+  <figcaption>Scaphandre on an idle system</figcaption>
+</figure>
+{{< /rawhtml >}}
+
+What we see is that the power that is reported by Intel RAPL, which is what [Scaphandre](https://github.com/hubblo-org/scaphandre) reads, is fully attributed
+to any process load that is found on the system.
+
+This is a bit confusing at first, as the system also has an idle load ... so, as discussed earlier, if the scheduler
+puts cores on the idle thread they still consume energy, which will be reported by RAPL, but assinging them to a very
+low load process that might not even be on the core sounds counter-intuitive.
+This is also [not documented on that form](https://hubblo-org.github.io/scaphandre-documentation/explanations/how-scaph-computes-per-process-power-consumption.html), but we assume it is a voluntary design decision. 
+It also feels like it, because otherwise [Scaphandre](https://github.com/hubblo-org/scaphandre) would have to calculate the idle load on the sytem first, but
+it starts right away with giving out numbers.
+
+Now we put some load on the system and see how [Scaphandre](https://github.com/hubblo-org/scaphandre) reports:
+
+
+{{< rawhtml >}}
+<figure>
+  <img class="ui huge rounded image" src="/img/case-studies/scaphandre_low_load.webp">
+  <figcaption>top and Scaphandre low load</figcaption>
+</figure>
+{{< /rawhtml >}}
+
+
+{{< rawhtml >}}
+<figure>
+  <img class="ui huge rounded image" src="/img/case-studies/scaphandre_high_load.webp">
+  <figcaption>top and Scaphandre high load</figcaption>
+</figure>
+{{< /rawhtml >}}
+
+
+We see that [Scaphandre](https://github.com/hubblo-org/scaphandre) reports **~ 2.2 W** when we just run the `metric-provider-binary` on the system and
+**~ 0.4 W** when the system is stressed with two other `stress` processes.
+
+
+## CPU utilization through top
+
+Now we try to re-calculate the same numbers from [Scaphandre](https://github.com/hubblo-org/scaphandre) through looking at the CPU utilization that `top` reports
+and then getting to the share of the power consumption. We will actually be using the data that you already see on
+the images above.
+
+On the stressed machine Scaphandre reports a **22.17 W** power on the CPU package and `top` shows a **3.7% utilization** one one core.
+This equals a **3.7 % / 4 = 0.925 % utilization** on the whole 4-core machine.
+If we now multiply ** 22.17 W \* 0.00925** we get **0.205 W**
+
+For the un-stressed machine where just the `metric-provider-binary` runs it follows: **2.28 W \* (0.12 / 4)** = **0.0684 W**
+
+These values are strongly different from what Scaphandre reports. Not only due to the different handling of the idle time, but 
+also the values are inverse!
+
+## Instructions through perf
+
+Let's now make another approach though not using CPU utilization, but rather by using CPU instructions, which is the
+same techique as for instance [Kepler](https://github.com/sustainable-computing-io/kepler) uses.
+
+We will be running this command to geht the instructions for the process:
+
+`sudo perf stat --timeout 10000 -e instructions /home/gc/green-metrics-tool/metric_providers/cpu/energy/RAPL/MSR/component/metric-provider-binary -i 1 > /tmp/performance.log; wc -l /tmp/performance.log`
+
+Afterwards we will check, over the same time interval, how many instructions are issued on the system as a whole:
+
+`sudo perf stat --timeout 10000 -a -e instructions /home/gc/green-metrics-tool/metric_providers/cpu/energy/RAPL/MSR/component/metric-provider-binary -i 1 > /tmp/performance.log; wc -l /tmp/performance.log`
+
+We make both calls once with `stress` running in the background and once without. All tests are repeated 10 times.
+
+Since the energy loads on the system are quite identical, we will use the same energy values as in the Scaphandre case:
+**22.17 W** for a loaded system and **2.28 W** for an unloaded system where just the `metric-provider-binary` is running.
+
+```
+Statistics for only metric-provider-binary running: 
+- 286.473.464 Instructions metric-provider-binary
+- 7199 lines written
+- 603.996.443 Total System metric-provider-binary (+/- 10%)
+- Ratio: 0.4742966077368108
+- Runtime: 10s
+
+=> 0.4742966077368108 * 2.28 = 1.0813962656399285 Joules => 1.08 J / 10 s = 0.108 W
+
+
+Statistics on stressed system:
+- 344.494.681 Instructions metric-provider-binary
+- 8541 lines written
+- 85.945.084.426 Total System (+/- 0.1%)
+- Ratio: 0.00400831162480985
+- Runtime: 10s
+
+=> 0.00400831162480985 * 22.17 = 0.08886426872203439 Joules => 0.089 J / 10 s = 0.0089 W
+```
+
+Again we see that on a stressed system the energy for the process drops. 
+This trend is in line with what [Scaphandre](https://github.com/hubblo-org/scaphandre) is reporting.
+
+However the values itself are quite different.
+
+
+
+
 {{< greenblock >}}
-How is CPU frequency and Turbo Boost set on cloud vendor machines?
+Can we somehow rescue CPU frequency?
 {{< /greenblock >}}
 
-### Settings on Amazon EC2 m5.metal (bare metal)
+What however would happen if we fix the CPU frequency, so that it is always running on the maximum frequency and do not utilize features such as *Turbo Boost*, *Hyper Threading* and not use virtualization?
 
-#### Frequency
+The latter is probably a lost cause, as in basically every cloud machine and even shared hosting systems are virtualized.
+We have here to rely on the fact that resources are not heavily oversubscribed and that hypervisors at least
+report some correct values of the CPU registers needed to derive metrics like utilzation.
+
+Because if we would have system that has a fixed CPU frequency the load-performance curve actually becomes linear:
+
+
+{{< rawhtml >}}
+<figure>
+  <img class="ui huge rounded image" src="/img/case-studies/sysbench_run_cpu_utilization.webp">
+  <figcaption>Sysbench run on different stepswith CPU utilization</figcaption>
+</figure>
+{{< /rawhtml >}}
+
+In this example we have run `sysbench --cpu-max-prime=25000 --threads=1 --time=10 --test=cpu --events=0 --rate=0` and 
+increased the rate every time in 10% increments.
+The blue curve has been done with the *schedutil* CPU frequency govenor which dynamically scales the CPU frequency.
+And the red curve has been done with the performance scaling govenor which scales the CPU frequency to a maximum as 
+soon as even a minimum amount of load happens on a core.
+
+Let's look at how different cloud vendors have this setting for CPU frequency and *Turbo Boost* set, so we can later
+use that to make some assumptions on estimations models for the cloud:
+
+## AWS EC2 m5.metal (bare metal)
+
+### Frequency
 We were running `stress-ng -c 1` on one core to trigger different frequencies.
 ```
 Every 2.0s: cat /proc/cpuinfo | grep MHz | uniq 
@@ -235,7 +377,7 @@ cpu MHz         : 2500.000
 CPU frequency is dynamic
 
 
-#### P-States
+### P-States
 ```
 ....
 core 95:
@@ -252,7 +394,7 @@ Available drivers for CPU DVFS:
 performance powersave
 ```
 
-#### CPUInfo
+### CPUInfo
 ```
 ...
 processor    : 95
@@ -271,9 +413,9 @@ cpu cores    : 24
 ...
 ```
 
-### Settings on Amazon EC2 m5.large (virtualized)
+## AWS EC2 m5.large (virtualized)
 
-#### Frequency
+### Frequency
 ```
 Every 2.0s: cat /proc/cpuinfo | grep MHz | uniq
 
@@ -284,11 +426,11 @@ cpu MHz         : 3099.774
 
 CPU frequency is dynamic
 
-#### P-states
+### P-states
 
 Reading this info is blocked by the hypervisor :(
 
-#### CPUInfo
+### CPUInfo
 ```
 ...
 processor    : 1
@@ -308,9 +450,9 @@ cpu cores    : 1
 ```
 
 
-### Github Actions (Linux)
+## Github Actions (Linux)
 
-#### Frequency
+### Frequency
 ```
 Every 2.0s: cat /proc/cpuinfo | grep MHz | uniq
 
@@ -321,7 +463,7 @@ cpu MHz         : 2793.437
 
 CPU frequency does not change.
 
-#### P-states
+### P-states
 
 ```
 core 0:
@@ -332,7 +474,7 @@ core 1:
 
 Other info is blocked by the hypervisor :(
 
-#### CPUInfo
+### CPUInfo
 ```
 ...
 processor       : 1
@@ -351,11 +493,11 @@ cpu cores       : 2
 ...
 ```
 
-### Gitlab Pipelines (Linux)
+## Gitlab Pipelines (Linux)
 
 [Source](https://gitlab.com/green-coding-berlin/system-info/-/jobs/4541289111)
 
-#### Frequency
+### Frequency
 ```
 cat /proc/cpuinfo | grep MHz
 cpu MHz        : 2249.998
@@ -365,11 +507,11 @@ cpu MHz        : 2249.998
 
 CPU frequency does not change.
 
-#### P-states
+### P-states
 
 All info is blocked by the hypervisor :(
 
-#### CPUInfo
+### CPUInfo
 ```
 ...
 processor    : 1
@@ -388,9 +530,9 @@ cpu cores    : 1
 ...
 ```
 
-### Google Cloud (N2)
+## Google Cloud (N2)
 
-#### Frequency
+### Frequency
 ```
 cat /proc/cpuinfo | grep MHz
 Every 2.0s: cat /proc/cpuinfo | grep MHz 
@@ -408,11 +550,11 @@ cpu MHz         : 2800.202
 
 CPU frequency does not change.
 
-#### P-states
+### P-states
 
 All info is blocked by the hypervisor :(
 
-#### CPUInfo
+### CPUInfo
 ```
 ...
 processor       : 7
@@ -431,9 +573,9 @@ cpu cores       : 4
 ...
 ```
 
-### Hetzner
+## Hetzner
 
-#### Frequency
+### Frequency
 ```
 cat /proc/cpuinfo | grep MHz
 Every 2.0s: cat /proc/cpuinfo | grep MHz 
@@ -444,7 +586,7 @@ cpu MHz        : 2294.606
 
 CPU frequency does not change.
 
-#### P-states
+### P-states
 
 ```
 core 0:
@@ -454,7 +596,7 @@ core 0:
 
 All other info is blocked by the hypervisor :(
 
-#### CPUInfo
+### CPUInfo
 ```
 ...
 processor    : 0
@@ -481,6 +623,10 @@ Over the course of the case study we have looked at how CPU utilization is defin
 in particular in the Linux operating systems.
 
 We have seen that CPU utilization is by far no easily reproducible nor comparable metric and also not a linear metric.
+
+Then we have looked at how energy can be split by this value and seen that it is highly tricky to use ratios for splitting.
+The approach by Scaphandre is way better, by just using the elapsed *jiffies* but seems also to be quite far off
+from a *harder* metric like Instructions.
 
 This makes CPU utilization really only helpful as an indicator internal to the same system.
 
