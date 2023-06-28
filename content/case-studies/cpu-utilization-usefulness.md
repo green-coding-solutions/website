@@ -1,7 +1,7 @@
 ---
 title: "CPU Utilization - A useful metric?"
 draft: false
-summary: "In this case study we will look at the ubiqitous metric CPU utilization and how helpful it is in evaluating
+summary: "In this case study we will look at the ubiquitous metric CPU utilization and how helpful it is in evaluating
 code performance or energy consumption"
 date: 2023-06-26 11:00:00
 author: "Arne Tarara"
@@ -21,17 +21,11 @@ most known tool to show CPU utilization..
 </figure>
 {{< /rawhtml >}}
 
-In Green Coding analysis we typically prefer to look at the energy metrics of components directly if available (for 
-instance at [Intel RAPL](/case-studies/rapl-and-sgx/)), but in very many contexts like the cloud these metrics are not available.
+When conducting Green Coding analysis, our preference typically leans towards directly examining the energy metrics of components, if available. An example of this would be Intel's RAPL, which we discuss in more detail [here](/case-studies/rapl-and-sgx/)). However, in numerous contexts such as cloud computing, these metrics are not readily accessible."
 
-Most cloud services run on Linux and cloud vendors only expose a subset of all values that a standard Linux OS typically
-logs. However CPU utilization is typically one of them.
+Cloud services predominantly operate on Linux systems. However, cloud vendors only grant access to a subset of the values typically logged by a standard Linux OS. Notably, CPU utilization is often among the metrics that are readily available.
 
-In this article we want to make a deeper dive where CPU utilization in the Linux OS is derived from and how useful it 
-is to use that metric for any energy or performance assumptions.
-
-
-
+In this article, we aim to delve deeper into how CPU utilization is calculated in the Linux OS, and explore its usefulness as a metric for making assumptions about energy consumption and performance.
 
 {{< rawhtml >}}
             </div>
@@ -60,21 +54,18 @@ What is CPU utilization
 CPU utilization is defined as the ratio of the total current utilization of a CPU over the total possible utilization
 of a CPU.
 
-The simple formula we start with is thus the following:
+Therefore, we begin with the following simple formula:
 
 `CPU % = CPU_work / CPU_total`
 
-All operating systems that we know of define the *CPU_* variables through a unit of time. It is the time the processor
+All operating systems, that we know of, define the *CPU_* variables through a unit of time. It is the time the processor
 was doing any work (aka some instructions) or being in an idle state (aka not being assigned to process).
-The concept of an idle state here is slightly different from the idle state in a processor (aka being [halted](https://en.wikipedia.org/wiki/HLT_(x86_instruction))). 
-An OS will typically also issue a [HLT](https://en.wikipedia.org/wiki/HLT_(x86_instruction)) instruction when there is no process the scheduler needs to assign 
-the processor to, but it should not be taken as guaranteed. Another wording that is often used is: "The CPU is put
-on the idle thread.". This originates from the fact that usually at least one thread must be running to keep the scheduler
-working.
+The concept of an idle state here is slightly different from the idle state in a processor (aka being [halted](https://en.wikipedia.org/wiki/HLT_(x86_instruction))).
+An OS will typically also issue a [HLT](https://en.wikipedia.org/wiki/HLT_(x86_instruction)) instruction when there is no process the scheduler needs to assign the processor to, but it should not be taken as guaranteed. Another wording that is often used is: "The CPU is put on the idle thread.". This originates from the fact that usually at least one thread must be running to keep the scheduler working.
 Also if you feed a process [NOP instructions](https://en.wikipedia.org/wiki/NOP_(code)) this would not count as idle for the operating system.
 
 Now we are looking further where Linux gets this metric from, and by looking in the [source code for top](https://gitlab.com/procps-ng/procps/-/blob/master/src/top/top.c) we find
-that the values are captured from the `procfs`. More specifically sytem wide they come from `/proc/stat`.
+that the values are captured from the `procfs`. More specifically system wide they come from `/proc/stat`.
 
 The file entry looks like this:
 ```
@@ -124,8 +115,9 @@ user   (1) Time spent in user mode.
  guest_nice (since Linux 2.6.33)
         (10) Time spent running a niced guest (virtual CPU for guest operating sys‐
         tems under the control of the Linux kernel).
-``` 
+```
 
+\
 We see now that our initial formula of `CPU % = CPU_work / CPU_total` was a bit too simple and modern
 operating systems collect more granular metrics.
 
@@ -139,7 +131,7 @@ and
 
 [Source for htop calculation](https://github.com/htop-dev/htop/blob/37d30a3a7d6c96da018c960d6b6bfe11cc718aa8/linux/Platform.c#L324)
 
-All these values in the `/proc/stat` file are of the unit *jiffies*. This means it is a proxy for the actual time 
+All these values in the `/proc/stat` file are of the unit *jiffies*. This means it is a proxy for the actual time
 spent in that state. To get exact values we would need to multiply the *jiffies* with the **USER_HZ** variable of the
 operating system.
 If we just want to get the ratio though this step can be omitted.
@@ -165,8 +157,8 @@ As Adrian Cockroft puts it in his [2007 paper - Utilization is Virtually Useless
 
 The article presents many challenges like:
 - Hypervisors not fully mapping CPU to a guest which results in incomplete data
-- Hyper-Threading which creates "slow" cores and "fast" cores with the former being strongly non-linear
-- CPU frequency changes over time making
+- Hyper-Threading which creates "slow" cores and "fast" cores with the former being strongly non-linear in performance
+- CPU frequency changes over time
 
 Especially the latter we want to look at into a bit more detail.
 
@@ -207,7 +199,7 @@ Now we introduce some load with running a `stress` process on two cores keeping 
 {{< /rawhtml >}}
 
 We see that the system wide CPU utilization climbs up to **~50%** but the ratio attributed for the process now is at
-**3-4%**. 
+**3-4%**.
 Most suprisingly: The throughput of the program has actually gone up! From **7053 lines** before to now **8301 lines**.
 
 This effect is nicely visualized here on a process level but the same issue happens with the system wide CPU utilization.
@@ -215,9 +207,8 @@ This effect is nicely visualized here on a process level but the same issue happ
 The throughput is not linear and **100%** is not double of **50%**.
 
 But even if we are in a non-virtualized, non-hyper-threaded and fixed-frequency environment CPU utilization can still
-bite us if the CPU experiences memory congestion. 
+bite us if the CPU experiences memory congestion.
 A stalling time due to memory I/O is then falsely attributed to a non-idle state. Details are in [Brendan Gregg's Blog - CPU Utilization is Wrong](https://www.brendangregg.com/blog/2017-05-09/cpu-utilization-is-wrong.html)
-
 
 {{< whiteblock >}}
 Looking at energy in particular
@@ -363,9 +354,11 @@ use that to make some assumptions on estimations models for the cloud:
 ## AWS EC2 m5.metal (bare metal)
 
 ### Frequency
+
 We were running `stress-ng -c 1` on one core to trigger different frequencies.
+
 ```
-Every 2.0s: cat /proc/cpuinfo | grep MHz | uniq 
+Every 2.0s: cat /proc/cpuinfo | grep MHz | uniq
 
 cpu MHz         : 2609.666
 cpu MHz         : 2500.000
@@ -431,6 +424,7 @@ CPU frequency is dynamic
 Reading this info is blocked by the hypervisor :(
 
 ### CPUInfo
+
 ```
 ...
 processor    : 1
@@ -469,7 +463,7 @@ CPU frequency does not change.
 core 0:
          TurboBoost (MSR):                       enabled
 core 1:
-         TurboBoost (MSR):                       enabled         
+         TurboBoost (MSR):                       enabled
 ```
 
 Other info is blocked by the hypervisor :(
@@ -535,7 +529,7 @@ cpu cores    : 1
 ### Frequency
 ```
 cat /proc/cpuinfo | grep MHz
-Every 2.0s: cat /proc/cpuinfo | grep MHz 
+Every 2.0s: cat /proc/cpuinfo | grep MHz
 
 cpu MHz         : 2800.202
 cpu MHz         : 2800.202
@@ -578,7 +572,7 @@ cpu cores       : 4
 ### Frequency
 ```
 cat /proc/cpuinfo | grep MHz
-Every 2.0s: cat /proc/cpuinfo | grep MHz 
+Every 2.0s: cat /proc/cpuinfo | grep MHz
 
 cpu MHz        : 2294.606
 
@@ -630,7 +624,7 @@ from a *harder* metric like Instructions.
 
 This makes CPU utilization really only helpful as an indicator internal to the same system.
 
-These claims are only valid for machine CPU values, the value on a per process level is typically unuasable for any 
+These claims are only valid for machine CPU values, the value on a per process level is typically unusable for any
 comparative or drill-down task.
 
 Using this metrics to do any inference of other values is only feasible with a strongly and complex non-linear model
@@ -639,5 +633,4 @@ or if the system is configured in that way that many variables are fixed (like f
 As we have seen many cloud vendors, especially CI/CD tools like **Github Actions** or **Gitlab Pipelines** use
 fixed frequency CPUs, which allow for making some reproducibility claims of the system performance and energy.
 
-As said before, these are for instance the assumptions for our [Cloud Energy model](/projects/cloud-energy/) where we estimate the power
-draw of cloud machines based on the fact that in the SPECPower data we use there the systems have typically fixed C-States  and P-States.
+As said before, these are for instance the assumptions for our [Cloud Energy model](/projects/cloud-energy/) where we estimate the power draw of cloud machines based on the fact that in the SPECPower data we use there the systems have typically fixed C-States  and P-States.
