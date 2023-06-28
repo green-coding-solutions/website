@@ -1,6 +1,6 @@
 ---
 title: "CPU Utilization - A useful metric?"
-draft: false
+draft: true
 summary: "In this case study we will look at the ubiquitous metric CPU utilization and how helpful it is in evaluating
 code performance or energy consumption"
 date: 2023-06-26 11:00:00
@@ -268,7 +268,7 @@ the images above.
 
 On the stressed machine Scaphandre reports a **22.17 W** power on the CPU package and `top` shows a **3.7% utilization** one one core.
 This equals a **3.7 % / 4 = 0.925 % utilization** on the whole 4-core machine.
-If we now multiply ** 22.17 W \* 0.00925** we get **0.205 W**
+If we now multiply **22.17 W \* 0.00925** we get **0.205 W**
 
 For the un-stressed machine where just the `metric-provider-binary` runs it follows: **2.28 W \* (0.12 / 4)** = **0.0684 W**
 
@@ -278,7 +278,7 @@ also the values are inverse!
 ## Instructions through perf
 
 Let's now make another approach though not using CPU utilization, but rather by using CPU instructions, which is the
-same techique as for instance [Kepler](https://github.com/sustainable-computing-io/kepler) uses.
+same technique as for instance [Kepler](https://github.com/sustainable-computing-io/kepler) uses.
 
 We will be running this command to geht the instructions for the process:
 
@@ -301,7 +301,7 @@ Statistics for only metric-provider-binary running:
 - Ratio: 0.4742966077368108
 - Runtime: 10s
 
-=> 0.4742966077368108 * 2.28 = 1.0813962656399285 Joules => 1.08 J / 10 s = 0.108 W
+=> 0.4742966077368108 * 2.28 W = 1.0813962656399285 Joules => 1.08 J / 10 s = 0.108 W
 
 
 Statistics on stressed system:
@@ -311,7 +311,7 @@ Statistics on stressed system:
 - Ratio: 0.00400831162480985
 - Runtime: 10s
 
-=> 0.00400831162480985 * 22.17 = 0.08886426872203439 Joules => 0.089 J / 10 s = 0.0089 W
+=> 0.00400831162480985 * 22.17 W = 0.08886426872203439 Joules => 0.089 J / 10 s = 0.0089 W
 ```
 
 Again we see that on a stressed system the energy for the process drops. 
