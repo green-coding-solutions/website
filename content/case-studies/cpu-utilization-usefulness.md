@@ -117,6 +117,7 @@ user   (1) Time spent in user mode.
         tems under the control of the Linux kernel).
 ```
 
+\
 We see now that our initial formula of `CPU % = CPU_work / CPU_total` was a bit too simple and modern
 operating systems collect more granular metrics.
 
