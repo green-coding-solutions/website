@@ -10,16 +10,19 @@ We are happy to announce a major update to our Eco-CI tool, a plugin designed to
 
 Link to Release: [Eco-CI Energy Estimation v2](https://github.com/green-coding-berlin/eco-ci-energy-estimation/releases/tag/v2)
 
-To use Eco-CI with gitlab pipelines, we provide the following template file which can be included in your gitlab-ci.yml configuration: https://github.com/green-coding-berlin/eco-ci-energy-estimation/blob/main/eco-ci-gitlab.yml
+To use Eco-CI with Gitlab pipelines, we provide the following template file which can be included in your `gitlab-ci.yml` configuration
+See here an [example configuration](https://github.com/green-coding-berlin/eco-ci-energy-estimation/blob/main/eco-ci-gitlab.yml)
 
-You can include the raw file remotely like thus:
+You can include the raw file remotely like this:
 
 ```yaml
 include:
   remote: 'https://raw.githubusercontent.com/green-coding-berlin/eco-ci-energy-estimation/main/eco-ci-gitlab.yml'
 ```
 \
-and use its functionality within jobs by calling the various scripts and exporting the eco-ci-output.txt artifact:
+and use its functionality within jobs by calling the various scripts and exporting the `eco-ci-output.txt`.
+
+Here is an example artifact for the *Ubuntu_GCC_preprocess* pipeline from a sample repository:
 
 ```yaml
 Ubuntu_GCC_preprocess:
@@ -83,7 +86,6 @@ As part of our goal to encourage green coding practices, and understand what fea
 Currently we have forked and integrated three github projects: [Django](https://github.com/green-coding-berlin/django), [Flask](https://github.com/green-coding-berlin/flask), and [curl](https://github.com/green-coding-berlin/curl), as well as one Gitlab project, [OpenMW](https://gitlab.com/green-coding-berlin/eco-ci/openmw). Our plan is to pretend that we are sustainability engineers for these projects, keep them in sync, track their carbon footprint, and see what we can improve on with this information.
 
 Doing this has already begun to generate some ideas for us, so be on the lookout for new features in the coming weeks!
-
 
 ### Bugfixes / Misc Features
 This version of Eco-CI also comes with some bugfixes/misc minor features, including:
