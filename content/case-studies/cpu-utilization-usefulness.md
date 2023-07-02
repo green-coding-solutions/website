@@ -1,13 +1,11 @@
 ---
 title: "CPU Utilization - A useful metric?"
-draft: true
+draft: false
 summary: "In this case study we will look at the ubiquitous metric CPU utilization and how helpful it is in evaluating
 code performance or energy consumption"
 date: 2023-06-26 11:00:00
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
-
----
 
 CPU utilization (or CPU %) is a ubiquitous metric and available as a first order metric in every modern OS.
 
@@ -175,34 +173,43 @@ directly to reason about the CPU utilization. However this is usually not the ca
 Example
 {{< /greenblock >}}
 
-So taking a normal **Ubuntu 22.04** system on a **Fujitsu Esprimo 956** machine we conduct the following test:
+So taking a normal **Ubuntu 22.04** system on a **Fujitsu Esprimo 956** **4-Core** machine we conduct the following test:
 
-- Run a program that outputs a line every 10 ms to a file and sleeps in between
+- Run [a simple program](https://github.com/green-coding-berlin/tools/blob/main/read_cpu.sh) that calculates CPU utilization and outputs a line every 10 ms to a file and sleeps in between
 - Check how many lines were written
 - check `top` while doing so and write down the CPU utilization of the system as well as the process
+- check the frequency of all our cores on the system
+- Repeat the test couple of times to check if values are stable
+
 
 {{< rawhtml >}}
 <figure>
-  <img class="ui rounded image" src="/img/case-studies/dynamic_cpu_utilization_low_load.webp">
+  <img class="ui huge rounded image" src="/img/case-studies/bash_script_unloaded_cpu.webp">
   <figcaption>Dynamic CPU utilization low load</figcaption>
 </figure>
 {{< /rawhtml >}}
-What we see here is that the CPU utilization for our sample process `metric-provider` when no other load on the system is running is around **12%** on a single core. This equals to about **3-4%** on the total 4-core system.
+What we see here is that the CPU utilization for our sample program, which shows up as a `bash`, when there is no other load on the 
+system clocks in at **9.6%** on a single core. This equals to **2.4%** on the total **4-core** system.
 
 Now we introduce some load with running a `stress` process on two cores keeping these cores fully busy.
 
 {{< rawhtml >}}
 <figure>
-  <img class="ui rounded image" src="/img/case-studies/dynamic_cpu_utilization_high_load.webp">
+  <img class="ui huge rounded image" src="/img/case-studies/bash_script_loaded_cpu.webp">
   <figcaption>Dynamic CPU utilization high load</figcaption>
 </figure>
 {{< /rawhtml >}}
 
 We see that the system wide CPU utilization climbs up to **~50%** but the ratio attributed for the process now is at
-**3-4%**.
-Most suprisingly: The throughput of the program has actually gone up! From **7053 lines** before to now **8301 lines**.
+**4.3%**.
 
 This effect is nicely visualized here on a process level but the same issue happens with the system wide CPU utilization.
+
+Most suprisingly: The throughput of the program has actually gone up! From **476 lines** before to now **765 lines**.
+
+This behaviour comes from the fact that the CPU cycle count goes up and the process can actually do more work in the
+same time.
+
 
 The throughput is not linear and **100%** is not double of **50%**.
 
@@ -242,7 +249,7 @@ Now we put some load on the system and see how [Scaphandre](https://github.com/h
 
 {{< rawhtml >}}
 <figure>
-  <img class="ui huge rounded image" src="/img/case-studies/scaphandre_low_load.webp">
+  <img class="ui huge rounded image" src="/img/case-studies/bash_script_unloaded_scaphandre.webp">
   <figcaption>top and Scaphandre low load</figcaption>
 </figure>
 {{< /rawhtml >}}
@@ -250,14 +257,18 @@ Now we put some load on the system and see how [Scaphandre](https://github.com/h
 
 {{< rawhtml >}}
 <figure>
-  <img class="ui huge rounded image" src="/img/case-studies/scaphandre_high_load.webp">
+  <img class="ui huge rounded image" src="/img/case-studies/bash_script_loaded_scaphandre.webp">
   <figcaption>top and Scaphandre high load</figcaption>
 </figure>
 {{< /rawhtml >}}
 
+We see again the about same utilzation values for our `bash` process, and we see that [Scaphandre](https://github.com/hubblo-org/scaphandre) 
+reports **~ 0.34 W** when we just run the `read_cpu.sh` on the system and **~ 0.43 W** when 
+the system is stressed with two other `stress` processes.
 
-We see that [Scaphandre](https://github.com/hubblo-org/scaphandre) reports **~ 2.2 W** when we just run the `metric-provider-binary` on the system and
-**~ 0.4 W** when the system is stressed with two other `stress` processes.
+Also we see that the numbers that [Scaphandre](https://github.com/hubblo-org/scaphandre) is reporting per process do not add up to the total Package Power.
+
+The power consumption of [Scaphandre](https://github.com/hubblo-org/scaphandre) itself also drops from **0.07 W** to **0.05 W**
 
 
 ## CPU utilization through top
@@ -266,14 +277,14 @@ Now we try to re-calculate the same numbers from [Scaphandre](https://github.com
 and then getting to the share of the power consumption. We will actually be using the data that you already see on
 the images above.
 
-On the stressed machine Scaphandre reports a **22.17 W** power on the CPU package and `top` shows a **3.7% utilization** one one core.
-This equals a **3.7 % / 4 = 0.925 % utilization** on the whole 4-core machine.
-If we now multiply **22.17 W \* 0.00925** we get **0.205 W**
+On the stressed machine Scaphandre reports a **24.71 W** power on the CPU package and `top` shows a **4.3% utilization** one one core.
+This equals a **4.3 % / 4 = 1.075 % utilization** on the whole 4-core machine.
+If we now multiply **24.71 W \* 0.01075** we get **0.27 W**
 
-For the un-stressed machine where just the `metric-provider-binary` runs it follows: **2.28 W \* (0.12 / 4)** = **0.0684 W**
+For the un-stressed machine where just the `read_cpu.sh` runs it follows: **1.99 W \* (0.093 / 4)** = **0.046 W**
 
-These values are strongly different from what Scaphandre reports. Not only due to the different handling of the idle time, but 
-also the values are inverse!
+These values are strongly different from what Scaphandre reports. Especially when there is a higher idle time, as it 
+is in the unloaded case, these values strongly differ.
 
 ## Instructions through perf
 
@@ -282,44 +293,85 @@ same technique as for instance [Kepler](https://github.com/sustainable-computing
 
 We will be running this command to geht the instructions for the process:
 
-`sudo perf stat --timeout 10000 -e instructions /home/gc/green-metrics-tool/metric_providers/cpu/energy/RAPL/MSR/component/metric-provider-binary -i 1 > /tmp/performance.log; wc -l /tmp/performance.log`
+`sudo perf stat --timeout 10000 instructions bash read_cpu.sh > /tmp/lines; wc -l /tmp/lines`
 
 Afterwards we will check, over the same time interval, how many instructions are issued on the system as a whole:
 
-`sudo perf stat --timeout 10000 -a -e instructions /home/gc/green-metrics-tool/metric_providers/cpu/energy/RAPL/MSR/component/metric-provider-binary -i 1 > /tmp/performance.log; wc -l /tmp/performance.log`
+`sudo perf stat --timeout 10000 -a instructions bash read_cpu.sh > /tmp/lines; wc -l /tmp/lines`
+
+In conjuction we will also check the energy of the package by issueing:
+
+`sudo perf stat --timeout 10000 -e power/energy-pkg/ bash read_cpu.sh > /tmp/lines; wc -l /tmp/lines`
 
 We make both calls once with `stress` running in the background and once without. All tests are repeated 10 times.
 
 Since the energy loads on the system are quite identical, we will use the same energy values as in the Scaphandre case:
-**22.17 W** for a loaded system and **2.28 W** for an unloaded system where just the `metric-provider-binary` is running.
+**24.71 W** for a loaded system and **1.99 W** for an unloaded system where just the `read_cpu.sh` is running.
+
+{{< rawhtml >}}
+<figure>
+  <img class="ui huge rounded image" src="/img/case-studies/bash_script_unloaded_instructions_global.webp">
+  <figcaption>bash script unloaded with perf counting globally</figcaption>
+</figure>
+{{< /rawhtml >}}
+
+
+{{< rawhtml >}}
+<figure>
+  <img class="ui huge rounded image" src="/img/case-studies/bash_script_unloaded_instructions_process.webp">
+  <figcaption>bash script unloaded with perf counting per process</figcaption>
+</figure>
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+<figure>
+  <img class="ui huge rounded image" src="/img/case-studies/bash_script_loaded_instructions_global.webp">
+  <figcaption>bash script loaded with perf counting globally</figcaption>
+</figure>
+{{< /rawhtml >}}
+
+
+{{< rawhtml >}}
+<figure>
+  <img class="ui huge rounded image" src="/img/case-studies/bash_script_loaded_instructions_process.webp">
+  <figcaption>bash script loaded with perf counting per process</figcaption>
+</figure>
+{{< /rawhtml >}}
 
 ```
-Statistics for only metric-provider-binary running: 
-- 286.473.464 Instructions metric-provider-binary
-- 7199 lines written
-- 603.996.443 Total System metric-provider-binary (+/- 10%)
-- Ratio: 0.4742966077368108
+Statistics for only read_cpu.sh running: 
+- 3748521765 Instructions read_cpu.sh (+/- 10%)
+- 3976515696 Total System read_cpu.sh (+/- 10%)
+- Ratio: 0.9426648985116944
 - Runtime: 10s
 
-=> 0.4742966077368108 * 2.28 W = 1.0813962656399285 Joules => 1.08 J / 10 s = 0.108 W
+=> 0.9426648985116944 * 1.99 W = 1.88 Joules => 1.88 J / 10 s = 0.19 W
 
 
 Statistics on stressed system:
-- 344.494.681 Instructions metric-provider-binary
-- 8541 lines written
-- 85.945.084.426 Total System (+/- 0.1%)
+- 6102070028 Instructions read_cpu.sh (+/- 0.1%)
+- 92970927100 Total System (+/- 0.1%)
 - Ratio: 0.00400831162480985
 - Runtime: 10s
 
-=> 0.00400831162480985 * 22.17 W = 0.08886426872203439 Joules => 0.089 J / 10 s = 0.0089 W
+=> 0.06563417423423758 * 24.71 W = 1.62 Joules => 1.62 J / 10 s = 0.16 W
 ```
 
-Again we see that on a stressed system the energy for the process drops. 
-This trend is in line with what [Scaphandre](https://github.com/hubblo-org/scaphandre) is reporting.
+Suprisingly we see that on an unloaded system the energy actually increases!
+The assumption made here is that the cost per instruction goes down. This is an effect that can also be seen in
+[SPECPower benchmarks](https://www.spec.org/power_ssj2008/results/res2021q3/power_ssj2008-20210630-01113.html) where the sweet-spot for a system is typically somewhere around the higher third quarter of the peak
+performance.
 
-However the values itself are quite different.
-
-
+{{< table class="ui table" >}}
+|    Methodlogy    |  load | Power [W] |
+|:-----------:|:----------:|:----------:|
+|  Scaphandre  | loaded | 0.43 |
+|  CPU%  | loaded | 0.27 | 
+|  perf loaded | loaded | 0.16 | 
+|  Scaphandre  | unloaded | 0.34 | 
+|  CPU%  | unloaded | 0.046 | 
+|  perf  | unloaded | 0.19 |
+{{</ table >}}
 
 
 {{< greenblock >}}
@@ -343,13 +395,28 @@ Because if we would have system that has a fixed CPU frequency the load-performa
 {{< /rawhtml >}}
 
 In this example we have run `sysbench --cpu-max-prime=25000 --threads=1 --time=10 --test=cpu --events=0 --rate=0` and 
-increased the rate every time in 10% increments.
+put a CPU % limiting on the process and increased that in 10% increments.
 The blue curve has been done with the *schedutil* CPU frequency govenor which dynamically scales the CPU frequency.
 And the red curve has been done with the performance scaling govenor which scales the CPU frequency to a maximum as 
 soon as even a minimum amount of load happens on a core.
 
 Let's look at how different cloud vendors have this setting for CPU frequency and *Turbo Boost* set, so we can later
 use that to make some assumptions on estimations models for the cloud:
+
+
+{{< table class="ui table" >}}
+|    Cloud    |  Frequency | Turbo Boost | Scaling Govenor |
+|:-----------:|:----------:|:----------:|:----------:|
+|  AWS EC2 m5.metal  | dynamic | enabled | performance |
+|  AWS EC2 m5.large  | dynamic | ? | ? |
+|  GITHUB ACTIONS (LINUX)  | fixed | enabled | ? |
+|  GITLAB PIPELINES (LINUX) | fixed | ? | ? |
+|  GOOGLE CLOUD (N2)  | fixed | ? | ? |
+|  Hetzner  | fixed | enabled | ? |
+
+{{</ table >}}
+
+Here are the details, feel free to scroll to the bottom for the summary :)
 
 ## AWS EC2 m5.metal (bare metal)
 
@@ -619,8 +686,8 @@ in particular in the Linux operating systems.
 We have seen that CPU utilization is by far no easily reproducible nor comparable metric and also not a linear metric.
 
 Then we have looked at how energy can be split by this value and seen that it is highly tricky to use ratios for splitting.
-The approach by Scaphandre is way better, by just using the elapsed *jiffies* but seems also to be quite far off
-from a *harder* metric like Instructions.
+The approach by Scaphandre is way better, by just using the elapsed *jiffies* but is at least of in the absolute
+value from a *harder* metric like Instructions.
 
 This makes CPU utilization really only helpful as an indicator internal to the same system.
 
@@ -634,3 +701,10 @@ As we have seen many cloud vendors, especially CI/CD tools like **Github Actions
 fixed frequency CPUs, which allow for making some reproducibility claims of the system performance and energy.
 
 As said before, these are for instance the assumptions for our [Cloud Energy model](/projects/cloud-energy/) where we estimate the power draw of cloud machines based on the fact that in the SPECPower data we use there the systems have typically fixed C-States  and P-States.
+
+In a future piece we will look at how using CPU instructions and jiffies behaves on different load types.
+
+We have here only compared a relatively small load process with a medium load system. However we assume that the ratio
+will behave very differently for highly loaded systems and a high-load process.
+
+Stay tuned!
