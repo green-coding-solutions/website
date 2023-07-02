@@ -7,6 +7,8 @@ date: 2023-06-26 11:00:00
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
 
+---
+
 CPU utilization (or CPU %) is a ubiquitous metric and available as a first order metric in every modern OS.
 
 Windows has the **Task Manager**, macOS the **Activity Monitor** and Linux has no standard, but `top` is probably the
