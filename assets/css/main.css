@@ -2326,8 +2326,10 @@ figure figcaption {
 
 #project-items-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    max-width: 800px;
+    margin:auto;
 }
 
 a.project-item {
@@ -2337,8 +2339,8 @@ a.project-item {
 a.project-item > i.icon {
     display: block;
     color: #f9f9f5;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 20px solid #f9f9f5;
     border-radius: 50%;
     font-size: 18px;
@@ -2346,11 +2348,11 @@ a.project-item > i.icon {
     overflow:hidden;
     font-weight: bold;
     margin-bottom: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
     background: #67a98b;
-    line-height: 200px;
-    font-size: 100px;
+    line-height: 150px;
+    font-size: 80px;
 }
 
 .project-item-title {
@@ -2365,4 +2367,6 @@ a.project-item > i.icon {
 }
 
 
-
+.label-margin-bottom {
+    margin-bottom: 3px !important;
+}
