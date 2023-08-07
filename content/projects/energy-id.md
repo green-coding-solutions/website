@@ -20,6 +20,12 @@ The projects aim is to get a quick idea about the "typical use case of a softwar
 
 If you want to further compare a project, monitor a project over time or even do optimizations and performance engineering do look into the capabilities of the [Green Metrics Tool](projects/green-metrics-tool/)
 
+**Important:** The absolute numbers shown here are not to be taken as ground truth of the actual carbon cost of the 
+software in the wild. These are the cost that happen on our testing machines, which are quite big bare metal servers and
+also reflect the cost of the scenario chosen by us. A different use-case might incur a vastly different carbon cost.
+
+For measurement on different machines, which are more similar to what you are running in your setup, visit our [Cluster documentation](https://docs.green-coding.berlin/docs/measuring/measurement-cluster/)
+and re-run the measurement on a machine more apt for your comparison.
 
 # Open Source Projects
 ---
@@ -42,10 +48,11 @@ If you want to further compare a project, monitor a project over time or even do
                 We look at Nextcloud in two basic scenarios:
                 <ul>
                     <li>Installation and file upload</li>
-                    <li>Talk conversation</li>
-                    <li>Collaborative Docs editing</li>
+                    <li>Install & Talk conversation</li>
+                    <li>Install & Collaborative Docs editing</li>
                 </ul>
                 All of these scenarios are accessed with Chrome and Firefox and we also look at different backends like PostgrSQL, MariaDB and SQLite.
+                Please note, that because at the moment the install is included these values are a bit elevated.
             </p>
             <div class="content">
                 See the <a href="https://github.com/green-coding-berlin/nextcloud-docker/tree/master/energy-tests">README</a> for details.
@@ -55,7 +62,7 @@ If you want to further compare a project, monitor a project over time or even do
             <h4>Links</h4>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=d98f6d14-6d19-405d-9777-5ed4a474dcf0">Example measurement</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=86383108-04a6-4b9a-9c86-923d3fc63146">Example measurement</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
@@ -63,11 +70,11 @@ If you want to further compare a project, monitor a project over time or even do
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/compare.html?ids=4e823274-9782-4ede-b0d6-4ab939a06eb6,d98f6d14-6d19-405d-9777-5ed4a474dcf0">SQLite vs PostgreSQL</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/compare.html?ids=ea9d9cbb-bc16-4639-b2ad-9a91bd726376,3141a152-5d9a-4a45-bbfd-6b639481aea2">SQLite vs PostgreSQL</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/compare.html?ids=4e823274-9782-4ede-b0d6-4ab939a06eb6,d98f6d14-6d19-405d-9777-5ed4a474dcf0">Chrome vs. Firefox</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/compare.html?ids=86383108-04a6-4b9a-9c86-923d3fc63146,ea9d9cbb-bc16-4639-b2ad-9a91bd726376">Chrome vs. Firefox</a>
             </div>
         </p>
     </div>
@@ -205,9 +212,9 @@ If you want to further compare a project, monitor a project over time or even do
         </div>
         <div class="content">
             <h4>Badges</h4>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=d98f6d14-6d19-405d-9777-5ed4a474dcf0"><img src="https://api.green-coding.berlin/v1/badge/single/d98f6d14-6d19-405d-9777-5ed4a474dcf0?metric=AC"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=d98f6d14-6d19-405d-9777-5ed4a474dcf0"><img src="https://api.green-coding.berlin/v1/badge/single/d98f6d14-6d19-405d-9777-5ed4a474dcf0?metric=RAPL"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=7d5b368c-9940-4dd1-aa80-0a94f4007709"><img src="https://api.green-coding.berlin/v1/badge/single/7d5b368c-9940-4dd1-aa80-0a94f4007709?metric=SCI"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=86383108-04a6-4b9a-9c86-923d3fc63146"><img src="https://api.green-coding.berlin/v1/badge/single/86383108-04a6-4b9a-9c86-923d3fc63146?metric=AC"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=86383108-04a6-4b9a-9c86-923d3fc63146"><img src="https://api.green-coding.berlin/v1/badge/single/86383108-04a6-4b9a-9c86-923d3fc63146?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=86383108-04a6-4b9a-9c86-923d3fc63146"><img src="https://api.green-coding.berlin/v1/badge/single/86383108-04a6-4b9a-9c86-923d3fc63146?metric=SCI"></a>
         </div>
         <a class="ui button" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/nextcloud-docker">
             <i class="external alternate icon"></i> All measurements            
@@ -221,6 +228,7 @@ If you want to further compare a project, monitor a project over time or even do
             <div class="header">Wagtail</div>
             <div class="meta">
                 CMS
+                <span class="card-details">click for details</span>                
             </div>
         </div>
         <div class="content">
