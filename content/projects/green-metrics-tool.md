@@ -1,6 +1,6 @@
 ---
 title: "Green Metrics Tool"
-date: 2023-01-16 19:00:00
+date: 2023-08-03 19:00:00
 publishDate: 2023-01-16
 draft: false
 projectimg: "/img/projects/gmt-rapl-graph.webp"
