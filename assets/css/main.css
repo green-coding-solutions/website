@@ -2339,9 +2339,9 @@ a.project-item {
 a.project-item > i.icon {
     display: block;
     color: #f9f9f5;
-    width: 150px;
-    height: 150px;
-    border: 20px solid #f9f9f5;
+    width: 180px;
+    height: 180px;
+    border: 18px solid #f9f9f5;
     border-radius: 50%;
     font-size: 18px;
     text-align: center;
@@ -2351,7 +2351,7 @@ a.project-item > i.icon {
     margin-right: 20px;
     margin-left: 20px;
     background: #67a98b;
-    line-height: 150px;
+    line-height: 143px;
     font-size: 80px;
 }
 
@@ -2369,4 +2369,10 @@ a.project-item > i.icon {
 
 .label-margin-bottom {
     margin-bottom: 3px !important;
+}
+
+.card-details {
+    float:right;
+    font-size: 14px;
+    font-style: italic;
 }

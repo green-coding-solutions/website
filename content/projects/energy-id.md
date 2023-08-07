@@ -29,300 +29,251 @@ If you want to further compare a project, monitor a project over time or even do
 
 {{< rawhtml>}}
 <div class="ui modal" id="nextcloud">
-  <div class="header">
-    Nextcloud
-  </div>
-  <div class="content">
-       <p>
-          Nextcloud is an open source modern, on-premises content collaboration platform with real-time document editing, video chat & groupware on mobile, desktop and web.
-      </p>
-    <p>
-       <h4>Scenario</h4>
-      <p>
-          We look at Nextcloud in two basic scenarios:
-         <ul>
-           <li>Installation and file upload</li>
-           <li>Talk conversation</li>
-           <li>Collaborative Docs editing</li>
-         </ul>
-         All of these scenarios are accessed with Chrome and Firefox and we also look at different backends like PostgrSQL, MariaDB and SQLite.
-      </p>
-      <div class="content">
-         See the <a href="https://github.com/green-coding-berlin/nextcloud-docker/tree/master/energy-tests">README</a> for details.
-      </div>
-    </p>
-    <p>
-       <h4>Links</h4>
-       <div class="ui label label-margin-bottom">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=d98f6d14-6d19-405d-9777-5ed4a474dcf0">Example measurement</a>
-        </div>
-       <div class="ui label label-margin-bottom">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/nextcloud-docker">All measurements</a>
-        </div>
-        <div class="ui label label-margin-bottom">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/compare.html?ids=4e823274-9782-4ede-b0d6-4ab939a06eb6,d98f6d14-6d19-405d-9777-5ed4a474dcf0">SQLite vs PostgreSQL</a>
-        </div>
-        <div class="ui label label-margin-bottom">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/compare.html?ids=4e823274-9782-4ede-b0d6-4ab939a06eb6,d98f6d14-6d19-405d-9777-5ed4a474dcf0">Chrome vs. Firefox</a>
-        </div>
-    </p>
-  </div>
-  <div class="actions">
-    <div class="ui green ok button">
-      <i class="checkmark icon"></i>
-      OK
+    <div class="header">
+        Nextcloud
     </div>
-  </div>
+    <div class="content">
+        <p>
+            Nextcloud is an open source modern, on-premises content collaboration platform with real-time document editing, video chat & groupware on mobile, desktop and web.
+        </p>
+        <p>
+            <h4>Scenario</h4>
+            <p>
+                We look at Nextcloud in two basic scenarios:
+                <ul>
+                    <li>Installation and file upload</li>
+                    <li>Talk conversation</li>
+                    <li>Collaborative Docs editing</li>
+                </ul>
+                All of these scenarios are accessed with Chrome and Firefox and we also look at different backends like PostgrSQL, MariaDB and SQLite.
+            </p>
+            <div class="content">
+                See the <a href="https://github.com/green-coding-berlin/nextcloud-docker/tree/master/energy-tests">README</a> for details.
+            </div>
+        </p>
+        <p>
+            <h4>Links</h4>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=d98f6d14-6d19-405d-9777-5ed4a474dcf0">Example measurement</a>
+            </div>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/nextcloud-docker">All measurements</a>
+            </div>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/compare.html?ids=4e823274-9782-4ede-b0d6-4ab939a06eb6,d98f6d14-6d19-405d-9777-5ed4a474dcf0">SQLite vs PostgreSQL</a>
+            </div>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/compare.html?ids=4e823274-9782-4ede-b0d6-4ab939a06eb6,d98f6d14-6d19-405d-9777-5ed4a474dcf0">Chrome vs. Firefox</a>
+            </div>
+        </p>
+    </div>
+    <div class="actions">
+        <div class="ui green ok button">
+            <i class="checkmark icon"></i>
+            OK
+        </div>
+    </div>
 </div>
-
 <div class="ui modal" id="wagtail">
-  <div class="header">
-    Wagtail
-  </div>
-  <div class="content">
-       <p>
-        Wagtail is the leading open-source Python CMS, built on the Django Web Framework.
-      </p>
-    <p>
-       <h4>Scenario</h4>
-      <p>
-          For Wagtail the lovely maintainers have create a GOLD benchmark, which utilizes the reference
-          implementation of the <a href="https://github.com/wagtail/bakerydemo">Bakery</a> and then accesses
-          different style pages with a Chrome browser like a contact form, search, homepage etc.
-      </p>
-      <div class="content">
-          See the <a href="https://github.com/green-coding-berlin/bakerydemo-gold-benchmark">README</a> for details.
-      </div>
-    </p>
-    <p>
-       <h4>Links</h4>
-       <div class="ui label label-margin-bottom">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=3799aa1d-634a-4c15-b83b-21f49daeebb1">Example measurement</a>
-        </div>
-       <div class="ui label label-margin-bottom">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/index.html?repo=bakerydemo-gold-benchmark">All measurements</a>
-        </div>
-    </p>
-  </div>
-  <div class="actions">
-    <div class="ui green ok button">
-      <i class="checkmark icon"></i>
-      OK
+    <div class="header">
+        Wagtail
     </div>
-  </div>
+    <div class="content">
+        <p>
+            Wagtail is the leading open-source Python CMS, built on the Django Web Framework.
+        </p>
+        <p>
+            <h4>Scenario</h4>
+            <p>
+                For Wagtail the lovely maintainers have create a GOLD benchmark, which utilizes the reference
+                implementation of the <a href="https://github.com/wagtail/bakerydemo">Bakery</a> and then accesses
+                different style pages with a Chrome browser like a contact form, search, homepage etc.
+            </p>
+            <div class="content">
+                See the <a href="https://github.com/green-coding-berlin/bakerydemo-gold-benchmark">README</a> for details.
+            </div>
+        </p>
+        <p>
+            <h4>Links</h4>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=3799aa1d-634a-4c15-b83b-21f49daeebb1">Example measurement</a>
+            </div>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/index.html?repo=bakerydemo-gold-benchmark">All measurements</a>
+            </div>
+        </p>
+    </div>
+    <div class="actions">
+        <div class="ui green ok button">
+            <i class="checkmark icon"></i>
+            OK
+        </div>
+    </div>
 </div>
-
-
 <div class="ui modal" id="django">
-  <div class="header">
-    Django
-  </div>
-  <div class="content">
-       <p>
-        Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It’s free and open source.
-      </p>
-    <p>
-       <h4>Scenario</h4>
-      <p>
-          For this example we are looking at the unit tests of the Django project.
-         See the <a href="https://github.com/green-coding-berlin/django">README</a> for details.
-      </p>
-    </p>
-    <p>
-       <h4>Links</h4>
-       <div class="ui label label-margin-bottom">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=9a626aa1-d906-4727-b443-65cc01d140d1">Example measurement</a>
-        </div>
-       <div class="ui label label-margin-bottom">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/django">All measurements</a>
-        </div>
-    </p>
-  </div>
-  <div class="actions">
-    <div class="ui green ok button">
-      <i class="checkmark icon"></i>
-      OK
+    <div class="header">
+        Django
     </div>
-  </div>
+    <div class="content">
+        <p>
+            Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It’s free and open source.
+        </p>
+        <p>
+            <h4>Scenario</h4>
+            <p>
+                For this example we are looking at the unit tests of the Django project.
+                See the <a href="https://github.com/green-coding-berlin/django">README</a> for details.
+            </p>
+        </p>
+        <p>
+            <h4>Links</h4>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=9a626aa1-d906-4727-b443-65cc01d140d1">Example measurement</a>
+            </div>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/django">All measurements</a>
+            </div>
+        </p>
+    </div>
+    <div class="actions">
+        <div class="ui green ok button">
+            <i class="checkmark icon"></i>
+            OK
+        </div>
+    </div>
 </div>
 
 <div class="ui modal" id="wordpress">
-  <div class="header">
-    Wordpress
-  </div>
-  <div class="content">
-       <p>
-        Wordpress is an open source blogging system built on PHP and MySQL. It is used over 43% of all sites across the web.
-      </p>
-    <p>
-       <h4>Scenario</h4>
-      <p>
-          We setup a standard installation, create 3 demo pages and then use a Chrome browser to access these pages like a normal browsing user would do.
-      </p>
-      <p>
-          See the <a href="https://github.com/green-coding-berlin/example-applications/tree/main/wordpress-official-data">README</a> for details.
-      </p>
-    </p>
-    <p>
-       <h4>Links</h4>
-       <div class="ui label label-margin-bottom">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=0d105b85-9e0a-4f78-b6a5-a80dc085b4f9">Example measurement</a>
-        </div>
-       <div class="ui label label-margin-bottom">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">All measurements</a>
-        </div>
-    </p>
-  </div>
-  <div class="actions">
-    <div class="ui green ok button">
-      <i class="checkmark icon"></i>
-      OK
+    <div class="header">
+        Wordpress
     </div>
-  </div>
+    <div class="content">
+        <p>
+            Wordpress is an open source blogging system built on PHP and MySQL. It is used over 43% of all sites across the web.
+        </p>
+        <p>
+            <h4>Scenario</h4>
+            <p>
+                We setup a standard installation, create 3 demo pages and then use a Chrome browser to access these pages like a normal browsing user would do.
+            </p>
+            <p>
+                See the <a href="https://github.com/green-coding-berlin/example-applications/tree/main/wordpress-official-data">README</a> for details.
+            </p>
+        </p>
+        <p>
+            <h4>Links</h4>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=0d105b85-9e0a-4f78-b6a5-a80dc085b4f9">Example measurement</a>
+            </div>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">All measurements</a>
+            </div>
+        </p>
+    </div>
+    <div class="actions">
+        <div class="ui green ok button">
+            <i class="checkmark icon"></i>
+            OK
+        </div>
+    </div>
 </div>
-
 {{</ rawhtml>}}
 
 
 {{< rawhtml >}}
 <div class="ui link cards">
-
-  <div class="card" id="nextcloud_card">
-    <div class="image">
-      <img src="/img/projects/nextcloud.webp">
-    </div>
-    <div class="content">
-      <div class="header">Nextcloud</div>
-      <div class="meta">
-        <a>CMS</a>
-      </div>
-    </div>
-    <div class="content">
-      <h4>Badges</h4>
-      <a href="https://metrics.green-coding.berlin/stats.html?id=d98f6d14-6d19-405d-9777-5ed4a474dcf0"><img src="https://api.green-coding.berlin/v1/badge/single/d98f6d14-6d19-405d-9777-5ed4a474dcf0?metric=AC"></a>
-      <a href="https://metrics.green-coding.berlin/stats.html?id=d98f6d14-6d19-405d-9777-5ed4a474dcf0"><img src="https://api.green-coding.berlin/v1/badge/single/d98f6d14-6d19-405d-9777-5ed4a474dcf0?metric=RAPL"></a>
-      <a href="https://metrics.green-coding.berlin/stats.html?id=7d5b368c-9940-4dd1-aa80-0a94f4007709"><img src="https://api.green-coding.berlin/v1/badge/single/7d5b368c-9940-4dd1-aa80-0a94f4007709?metric=SCI"></a>
-    </div>
-    <div class="ui button">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/nextcloud-docker">All measurements</a>
-    </div>
-
-  </div>
-
-  <div class="card" id="wagtail_card">
-    <div class="image">
-      <img src="/img/projects/wagtail.webp">
-    </div>
-    <div class="content">
-      <div class="header">Wagtail</div>
-      <div class="meta">
-        CMS
-      </div>
-    </div>
-    <div class="content">
-      <h4>Badges</h4>
-      <a href="https://metrics.green-coding.berlin/stats.html?id=3799aa1d-634a-4c15-b83b-21f49daeebb1"><img src="https://api.green-coding.berlin/v1/badge/single/3799aa1d-634a-4c15-b83b-21f49daeebb1?metric=AC"></a>
-      <a href="https://metrics.green-coding.berlin/stats.html?id=3799aa1d-634a-4c15-b83b-21f49daeebb1"><img src="https://api.green-coding.berlin/v1/badge/single/3799aa1d-634a-4c15-b83b-21f49daeebb1?metric=RAPL"></a>
-      <a href="https://metrics.green-coding.berlin/stats.html?id=3799aa1d-634a-4c15-b83b-21f49daeebb1"><img src="https://api.green-coding.berlin/v1/badge/single/3799aa1d-634a-4c15-b83b-21f49daeebb1?metric=SCI"></a>
-    </div>
-        <div class="ui button">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/index.html?repo=bakerydemo-gold-benchmark">All measurements</a>
-    </div>
-
-  </div>
-
-
-
-  <div class="card" id="django_card">
-    <div class="image">
-      <img src="/img/projects/django.webp">
-    </div>
-    <div class="content">
-      <div class="header">Django</div>
-      <div class="meta">
-        <a>CMS</a>
-      </div>
-    <div class="content">
-      <h4>Badges</h4>
-      <a href="https://metrics.green-coding.berlin/stats.html?id=9a626aa1-d906-4727-b443-65cc01d140d1"><img src="https://api.green-coding.berlin/v1/badge/single/9a626aa1-d906-4727-b443-65cc01d140d1?metric=AC"></a>
-      <a href="https://metrics.green-coding.berlin/stats.html?id=9a626aa1-d906-4727-b443-65cc01d140d1"><img src="https://api.green-coding.berlin/v1/badge/single/9a626aa1-d906-4727-b443-65cc01d140d1?metric=RAPL"></a>
-      <a href="https://metrics.green-coding.berlin/stats.html?id=9a626aa1-d906-4727-b443-65cc01d140d1"><img src="https://api.green-coding.berlin/v1/badge/single/9a626aa1-d906-4727-b443-65cc01d140d1?metric=SCI"></a>
-    </div>
+    <div class="card">
+        <div class="image nextcloud-card">
+            <img src="/img/projects/nextcloud.webp">
         </div>
-        <div class="ui button">
-          <i class="external alternate icon"></i>
-          <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/django">All measurements</a>
+        <div class="content nextcloud-card">
+            <div class="header">Nextcloud</div>
+            <div class="meta">
+                <a>CMS</a>
+                <span class="card-details">click for details</span>
+            </div>
+        </div>
+        <div class="content">
+            <h4>Badges</h4>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=d98f6d14-6d19-405d-9777-5ed4a474dcf0"><img src="https://api.green-coding.berlin/v1/badge/single/d98f6d14-6d19-405d-9777-5ed4a474dcf0?metric=AC"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=d98f6d14-6d19-405d-9777-5ed4a474dcf0"><img src="https://api.green-coding.berlin/v1/badge/single/d98f6d14-6d19-405d-9777-5ed4a474dcf0?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=7d5b368c-9940-4dd1-aa80-0a94f4007709"><img src="https://api.green-coding.berlin/v1/badge/single/7d5b368c-9940-4dd1-aa80-0a94f4007709?metric=SCI"></a>
+        </div>
+        <a class="ui button" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/nextcloud-docker">
+            <i class="external alternate icon"></i> All measurements            
+        </a>
     </div>
-
-  </div>
-
-
-  <div class="card" id="wordpress_card">
-    <div class="image">
-      <img src="/img/projects/wordpress.png">
+    <div class="card">
+        <div class="image wagtail-card">
+            <img src="/img/projects/wagtail.webp">
+        </div>
+        <div class="content wagtail-card">
+            <div class="header">Wagtail</div>
+            <div class="meta">
+                CMS
+            </div>
+        </div>
+        <div class="content">
+            <h4>Badges</h4>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=3799aa1d-634a-4c15-b83b-21f49daeebb1"><img src="https://api.green-coding.berlin/v1/badge/single/3799aa1d-634a-4c15-b83b-21f49daeebb1?metric=AC"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=3799aa1d-634a-4c15-b83b-21f49daeebb1"><img src="https://api.green-coding.berlin/v1/badge/single/3799aa1d-634a-4c15-b83b-21f49daeebb1?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=3799aa1d-634a-4c15-b83b-21f49daeebb1"><img src="https://api.green-coding.berlin/v1/badge/single/3799aa1d-634a-4c15-b83b-21f49daeebb1?metric=SCI"></a>
+        </div>
+        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?repo=bakerydemo-gold-benchmark">
+            <i class="external alternate icon"></i> All measurements
+        </a>
     </div>
-    <div class="content">
-      <div class="header">Wordpress</div>
-      <div class="meta">
-        <a>CMS</a>
-      </div>
-      <div class="content">
-        <h4>Badges</h4>
-        <a href="https://metrics.green-coding.berlin/stats.html?id=0d105b85-9e0a-4f78-b6a5-a80dc085b4f9"><img src="https://api.green-coding.berlin/v1/badge/single/0d105b85-9e0a-4f78-b6a5-a80dc085b4f9?metric=AC"></a>
-        <a href="https://metrics.green-coding.berlin/stats.html?id=0d105b85-9e0a-4f78-b6a5-a80dc085b4f9"><img src="https://api.green-coding.berlin/v1/badge/single/0d105b85-9e0a-4f78-b6a5-a80dc085b4f9?metric=RAPL"></a>
-        <a href="https://metrics.green-coding.berlin/stats.html?id=0d105b85-9e0a-4f78-b6a5-a80dc085b4f9"><img src="https://api.green-coding.berlin/v1/badge/single/0d105b85-9e0a-4f78-b6a5-a80dc085b4f9?metric=SCI"></a>
-      </div>
+    <div class="card">
+        <div class="image django-card">
+            <img src="/img/projects/django.webp">
+        </div>
+        <div class="content django-card">
+            <div class="header">Django</div>
+            <div class="meta">
+                <a>Framework</a>
+                <span class="card-details">click for details</span>
+            </div>
+        </div>
+        <div class="content">
+            <h4>Badges</h4>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=9a626aa1-d906-4727-b443-65cc01d140d1"><img src="https://api.green-coding.berlin/v1/badge/single/9a626aa1-d906-4727-b443-65cc01d140d1?metric=AC"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=9a626aa1-d906-4727-b443-65cc01d140d1"><img src="https://api.green-coding.berlin/v1/badge/single/9a626aa1-d906-4727-b443-65cc01d140d1?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=9a626aa1-d906-4727-b443-65cc01d140d1"><img src="https://api.green-coding.berlin/v1/badge/single/9a626aa1-d906-4727-b443-65cc01d140d1?metric=SCI"></a>
+        </div>
+        <a class="ui button" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/django">
+            <i class="external alternate icon"></i> All measurements
+        </a>
     </div>
-      <div class="ui button">
-        <i class="external alternate icon"></i>
-            <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">All measurements</a>
+    <div class="card">
+        <div class="image wordpress-card">
+            <img src="/img/projects/wordpress.png">
+        </div>
+        <div class="content wordpress-card">
+            <div class="header">Wordpress</div>
+            <div class="meta">
+                <a>Blog/CMS</a>
+                <span class="card-details">click for details</span>
+            </div>
+        </div>
+        <div class="content">
+            <h4>Badges</h4>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=0d105b85-9e0a-4f78-b6a5-a80dc085b4f9"><img src="https://api.green-coding.berlin/v1/badge/single/0d105b85-9e0a-4f78-b6a5-a80dc085b4f9?metric=AC"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=0d105b85-9e0a-4f78-b6a5-a80dc085b4f9"><img src="https://api.green-coding.berlin/v1/badge/single/0d105b85-9e0a-4f78-b6a5-a80dc085b4f9?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=0d105b85-9e0a-4f78-b6a5-a80dc085b4f9"><img src="https://api.green-coding.berlin/v1/badge/single/0d105b85-9e0a-4f78-b6a5-a80dc085b4f9?metric=SCI"></a>
+        </div>
+        <a class="ui button" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
+            <i class="external alternate icon"></i> All measurements
+        </a>
     </div>
-  </div>
-
-
-{{</ rawhtml >}}
-
-
-{{< rawhtml>}}
-<script>
-
-
-  $(document).ready(function() {
-    $('#nextcloud_card').click(function() {
-      $('#nextcloud').modal('show');
-    });
-  });
-  $(document).ready(function() {
-    $('#wagtail_card').click(function() {
-      $('#wagtail').modal('show');
-    });
-  });
-
- $(document).ready(function() {
-    $('#django_card').click(function() {
-      $('#django').modal('show');
-    });
-  });
-
- $(document).ready(function() {
-    $('#wordpress_card').click(function() {
-      $('#wordpress').modal('show');
-    });
-  });
-
-
-
-</script>
-</script>{{</ rawhtml>}}
+</div>
+{{</ rawhtml>}}

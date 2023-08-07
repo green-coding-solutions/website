@@ -1,7 +1,8 @@
   {{/* The following block is using minification for the assets.
 
+      <script src='{{ (resources.Get "js/jquery-1.9.0.min.js" | minify | fingerprint).Permalink }}' defer></script>
 
-      If you just want to normally include the assets, place them in
+      If you just want to normally include the js/css, place them in
       /static instead of /assets and include them as known:
 
         <script src="/js/vendor/modernizr.custom.76532.js"></script> ...
@@ -9,16 +10,21 @@
   */}}
 
 
-<script src='{{ (resources.Get "js/jquery-1.9.0.min.js" | minify | fingerprint).Permalink }}'></script>
-<script src='{{ (resources.Get "js/jquery.scrollTo-1.4.3.1-min.js" | minify | fingerprint).Permalink }}' ></script>
+<script src='{{ (resources.Get "js/jquery-1.9.0.min.js" | minify | fingerprint).Permalink }}' defer></script>
+<script src='{{ (resources.Get "js/jquery.scrollTo-1.4.3.1-min.js" | minify | fingerprint).Permalink }}' defer></script>
 <script src='{{ (resources.Get "js/modernizr.custom.76532.js" | minify | fingerprint).Permalink }}' defer></script>
 <script src='{{ (resources.Get "js/plugins.js" | minify | fingerprint).Permalink }}' defer></script>
 <script src='{{ (resources.Get "js/respond.min.js" | minify | fingerprint).Permalink }}' defer></script>
 <script src='{{ (resources.Get "js/jquery.inview.js" | minify | fingerprint).Permalink }}' defer></script>
 <script src='{{ (resources.Get "js/customScripts.js" | minify | fingerprint).Permalink }}' defer></script>
+{{ if (eq .Page.Section "projects") }}
+<script src='{{ (resources.Get "js/energy-id.js" | minify | fingerprint).Permalink }}' defer></script>
+<script src='/dist/js/modal.min.js' defer></script>
+<script src='/dist/js/dimmer.min.js' defer></script>
+<script src='/dist/js/transition.min.js' defer></script>
+<script src='/dist/js/visibility.min.js' defer></script>
+{{ end}}
 
 <script data-domain="ww.green-coding.berlin" src="https://plausible.io/js/script.js" defer></script>
 <script data-domain="proxy.green-coding.berlin" data-api="https://jolly-hill-c6f0.arne5926.workers.dev/jovvvvvse" src="https://jolly-hill-c6f0.arne5926.workers.dev/worker/script.js" defer></script>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.css">
-<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>

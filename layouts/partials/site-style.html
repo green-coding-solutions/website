@@ -15,43 +15,4 @@
 <link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/portfoliostyle.css" | minify | fingerprint).Permalink }}'>
 <link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/roll_over.css" | minify | fingerprint).Permalink }}'>
 <link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/layout.css" | minify | fingerprint).Permalink }}'>
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/image.min.css">
-
-{{ if .IsHome }}
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/icon.min.css">
-{{ end}}
-
-
-{{ if or (eq .Page.Title "CO2 Formulas") (eq .Page.Section "case-studies") (eq .Page.Section "case-studies")   }}
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/reset.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/site.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/icon.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/segment.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/message.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/label.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/button.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/statistic.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/list.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/header.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/table.min.css">
-{{ end}}
-
-{{ if or (eq .Page.Section "blog") (eq .Page.Section "projects") }}
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/icon.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/button.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/label.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/message.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/table.min.css">
-
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/segment.min.css">
-{{ end}}
-
-{{ if (eq .Page.Section "projects") }}
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/card.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/button.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/label.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/message.min.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/table.min.css">
-
-<link rel="stylesheet" type="text/css" class="ui" href="/dist/css/segment.min.css">
-{{ end}}
+<link rel="stylesheet" type="text/css" href="/dist/css/semantic_reduced.min.css">
