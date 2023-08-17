@@ -2,8 +2,6 @@
 // JavaScript Document
 
 $(document).ready(function() {
-    // remove Website carbon calculator "cleaner" statement
-    document.querySelector('#wcb_2').remove();
 
     // ----------- TEAM SOCIAL MENU ----------- //
 
