@@ -70,7 +70,7 @@ and re-run the measurement on a machine more apt for your comparison.
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/nextcloud-docker">All measurements</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/?repositories.html?uri=https://github.com/green-coding-berlin/nextcloud-docker">All measurements</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
@@ -158,7 +158,7 @@ and re-run the measurement on a machine more apt for your comparison.
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/django">All measurements</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/?repositories.html?uri=https://github.com/green-coding-berlin/django">All measurements</a>
             </div>
         </p>
     </div>
@@ -199,7 +199,7 @@ and re-run the measurement on a machine more apt for your comparison.
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">All measurements</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/?repositories.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">All measurements</a>
             </div>
         </p>
     </div>
@@ -232,7 +232,7 @@ and re-run the measurement on a machine more apt for your comparison.
             <a href="https://metrics.green-coding.berlin/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8"><img src="https://api.green-coding.berlin/v1/badge/single/b5b9a3af-9817-4379-aeeb-d57268dd61c8?metric=RAPL"></a>
             <a href="https://metrics.green-coding.berlin/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8"><img src="https://api.green-coding.berlin/v1/badge/single/b5b9a3af-9817-4379-aeeb-d57268dd61c8?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/nextcloud-docker">
+        <a class="ui button" href="https://metrics.green-coding.berlin/?repositories.html?uri=https://github.com/green-coding-berlin/nextcloud-docker">
             <i class="external alternate icon"></i> All measurements            
         </a>
     </div>
@@ -274,7 +274,7 @@ and re-run the measurement on a machine more apt for your comparison.
             <a href="https://metrics.green-coding.berlin/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a"><img src="https://api.green-coding.berlin/v1/badge/single/550d1875-1883-4d9a-8194-1fb408f7916a?metric=RAPL"></a>
             <a href="https://metrics.green-coding.berlin/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a"><img src="https://api.green-coding.berlin/v1/badge/single/550d1875-1883-4d9a-8194-1fb408f7916a?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/django">
+        <a class="ui button" href="https://metrics.green-coding.berlin/?repositories.html?uri=https://github.com/green-coding-berlin/django">
             <i class="external alternate icon"></i> All measurements
         </a>
     </div>
@@ -295,7 +295,7 @@ and re-run the measurement on a machine more apt for your comparison.
             <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=RAPL"></a>
             <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/?repo=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
+        <a class="ui button" href="https://metrics.green-coding.berlin/?repositories.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
             <i class="external alternate icon"></i> All measurements
         </a>
     </div>
