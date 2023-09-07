@@ -1,7 +1,7 @@
 ---
 title: "Inherent variability in energy testing of CI pipelines"
 date: 2023-09-03
-draft: true
+draft: false
 author: "Dan Mateas"
 authorlink: "https://www.linkedin.com/in/dan-mateas-693634105/"
 ---
@@ -26,6 +26,7 @@ First, we made a simple pipeline that should run in a relatively consistent amou
         run: |
           time sysbench --cpu-max-prime=25000 --threads=1 --time=0 --test=cpu run --events=20000 --rate=0
 ```
+
 
 We added Eco-CI into this, and measured two distinct steps: first the installation process, and then running the sysbench command. We ran this many times over a few days and looked at the energy and time used, as well as the average cpu utilization for each step. We then calculated the mean and standard deviance for these values.
 
@@ -220,6 +221,10 @@ So after gathering the data and calculating the statistics, here's the results w
 </table>
 {{< /rawhtml >}}
 
+{{< greenblock >}}
+Lots of numbers
+{{< /greenblock >}}
+
 There's a lot of numbers up there, but let's see if we can summarize some conclusions from this.
 
 Looking at the entire pipeline as one overall energy measurement, we can see that the variability (standard deviation % of energy consumed) is large and spans a wide margin:  anywhere from 4% - 16%. However when we break it down to installation / running steps, we notice a drastic split - the installation step consistently has a much wider variability (6 - 105(!!)%), while the run sysbench step has a much more narrow variability (0-9%).
@@ -234,7 +239,10 @@ We also notice that the baseline standard deviation we are calculating here seem
 
 Running these tests a few times over a few weeks, these patterns regarding CPU still held. 
 
-Conclusions:
+{{< whiteblock >}}
+Conclusions
+{{< /whiteblock >}}
+
 - Steps requiring network traffic have a much higher variability, even when though the cpu utilization and overall energy consumption is lower to the rest of the pipeline
 - Steps without network traffic are much more consistent, but the baseline variability is still very CPU - dependant. 
 - Github CPU's such as the 8370C and 8272CL have almost no variability (0-1%) in both energy and time for non-network steps (and also have amongst the lowest overall energy cost)
