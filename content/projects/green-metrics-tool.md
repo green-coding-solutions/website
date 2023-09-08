@@ -45,11 +45,26 @@ Please see all the details on Github and in the documentation.
 
 ---
 
-{{< rawhtml >}}
-<img class="ui huge rounded bordered image" src="/img/projects/gmt-screenshot-1.webp" alt="GMT Screenshot" loading="lazy" style="margin:auto;">
+## Screenshots of the Single Run View
+
+{{< rawhtml >}} 
+<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-1.webp" alt="GMT Screenshot" loading="lazy" style="margin:auto;">
 <br>
-<img class="ui huge rounded bordered image" src="/img/projects/gmt-screenshot-2.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-2.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<br>
+<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-3.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<br>
+<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-4.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
 <br>
 {{< /rawhtml >}}
+
+## Screenhots of the comparison view
+{{< rawhtml >}} 
+<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-5.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<br>
+<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-6.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<br>
+{{< /rawhtml >}}
+
 
 
