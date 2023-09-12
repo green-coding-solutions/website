@@ -14,6 +14,10 @@ As we've been testing the energy use of various CI pipelines using Eco-CI, one t
 
 Some amount of this is to be expected - using shared runners you don't have full control of your machine and don't really know what else could be running, and not all pipelines run in a fixed amount of steps. Still, this variability was higher than we expected, so we asked ourselves: what's the inherent variability that we must expect when energy testing ci pipelines? Can we find any explanation for this variability, and how to account for it when measuring CI pipelines? That's what we are exploring today.
 
+{{< whiteblock >}}
+Setup
+{{< /whiteblock >}}
+
 First, we made a simple pipeline that should run in a relatively consistent amount of time/steps. All the pipeline does is install and runs sysbench:
 
 ```yaml
@@ -26,6 +30,9 @@ First, we made a simple pipeline that should run in a relatively consistent amou
         run: |
           time sysbench --cpu-max-prime=25000 --threads=1 --time=0 --test=cpu run --events=20000 --rate=0
 ```
+{{< rawhtml >}}
+<br/>
+{{< /rawhtml >}}
 
 
 We added Eco-CI into this, and measured two distinct steps: first the installation process, and then running the sysbench command. We ran this many times over a few days and looked at the energy and time used, as well as the average cpu utilization for each step. We then calculated the mean and standard deviance for these values.
@@ -222,12 +229,12 @@ So after gathering the data and calculating the statistics, here's the results w
 {{< /rawhtml >}}
 
 {{< greenblock >}}
-Lots of numbers
+Analysis
 {{< /greenblock >}}
 
 There's a lot of numbers up there, but let's see if we can summarize some conclusions from this.
 
-Looking at the entire pipeline as one overall energy measurement, we can see that the variability (standard deviation % of energy consumed) is large and spans a wide margin:  anywhere from 4% - 16%. However when we break it down to installation / running steps, we notice a drastic split - the installation step consistently has a much wider variability (6 - 105(!!)%), while the run sysbench step has a much more narrow variability (0-9%).
+Looking at the entire pipeline as one overall energy measurement, we can see that the variability (standard deviation % of energy consumed) is large and spans a wide margin:  anywhere from **4% - 16%**. However when we break it down to installation / running steps, we notice a drastic split - the installation step consistently has a much wider variability (**6 - 105(!!)%**), while the run sysbench step has a much more narrow variability (**0-9%**).
 
 Looking through the job logs for the installation step it becomes apparent that network traffic speeds accounts for quite a bit of this variability. Jobs whose package downloads were slower (even if they're the same packages) took an expectedly longer amount of time. This explains the time variability, and corresponding energy variability we see.
 
@@ -235,7 +242,7 @@ This highlights the importance of breaking down your pipeline when making energy
 
 Looking at just the running steps, which accounts for the majority of the energy cost, we notice two things. First - the energy standard deviation % and time standard deviation % are almost identical in most cases (Gitlab's EPYC_7B12 being the odd one out, though the two numbers are still comparable). This means that we have a pattern here that the longer a job takes, we have a proportionally larger energy cost - which is what we would expect. 
 
-We also notice that the baseline standard deviation we are calculating here seems to be very CPU dependent. Certain CPU's such as the 8370C and 8272CL seem to perform more consistently than others. Their standard deviation is very low - 0-1%. 
+We also notice that the baseline standard deviation we are calculating here seems to be very CPU dependent. Certain CPU's such as the **8370C** and **8272CL** seem to perform more consistently than others. Their standard deviation is very low - **0-1%**. 
 
 Running these tests a few times over a few weeks, these patterns regarding CPU still held. 
 
@@ -244,5 +251,5 @@ Conclusions
 {{< /whiteblock >}}
 
 - Steps requiring network traffic have a much higher variability, even when though the cpu utilization and overall energy consumption is lower to the rest of the pipeline
-- Steps without network traffic are much more consistent, but the baseline variability is still very CPU - dependant. 
-- Github CPU's such as the 8370C and 8272CL have almost no variability (0-1%) in both energy and time for non-network steps (and also have amongst the lowest overall energy cost)
+- Steps **without network traffic** are much more consistent, but the baseline variability is still very CPU dependant. 
+- Github CPU's such as the **8370C** and **8272CL** have almost no variability **(0-1%)** in both energy and time for non-network steps (and also have amongst the lowest overall energy cost)
