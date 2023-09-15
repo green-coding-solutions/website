@@ -6,13 +6,33 @@ author: "Dan Mateas"
 authorlink: "https://www.linkedin.com/in/dan-mateas-693634105/"
 ---
 
-As we've been testing the energy use of various CI pipelines using Eco-CI, one thing we've noticed is that there is a large amount of variability in the results. Pipeline runs that we would expect to be more or less the same (same commit hash, running a few days in a row on the same cpu) can have wildly different results:
+As we've been testing the energy use of various CI pipelines using [Eco-CI](projects/eco-ci/), one thing we've noticed is that there is a large amount of variability in the results. Pipeline runs that we would expect to be more or less the same (same commit hash, running a few days in a row on the same cpu) can have wildly different results:
 
 {{< rawhtml >}}
-<img src="/img/blog/eco-ci-variability-1.webp" alt="Metrics Tool RAPL Reading" loading="lazy" style="max-width: 600px; width: 80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;">
+<figure>
+  <img class="ui large rounded image" src="/img/blog/eco-ci-variability-1.webp" loading="lazy">
+  <figcaption>Energy cost of a test pipeline on Github. y-axis is in mJ. Up to 30% difference.</a></figcaption>
+</figure>
+
 {{< /rawhtml >}}
 
 Some amount of this is to be expected - using shared runners you don't have full control of your machine and don't really know what else could be running, and not all pipelines run in a fixed amount of steps. Still, this variability was higher than we expected, so we asked ourselves: what's the inherent variability that we must expect when energy testing ci pipelines? Can we find any explanation for this variability, and how to account for it when measuring CI pipelines? That's what we are exploring today.
+
+{{< greenblock >}}
+What do we want to find out?
+{{< /greenblock >}}
+{{< rawhtml >}}
+                <div class="ui segment inverted" id="research-question">
+                    <h2 class="ui header">
+                        <i class="graduation cap icon"></i>
+                        <div class="content">
+                            Research question
+                            <div class="sub header">How is the energy variance in hosted pipelines (Github/Gitlab) and can we use it for energy optimizations?</div>
+                        </div>
+                    </h2>
+                </div>
+
+{{< /rawhtml >}}
 
 {{< whiteblock >}}
 Setup
@@ -30,14 +50,12 @@ First, we made a simple pipeline that should run in a relatively consistent amou
         run: |
           time sysbench --cpu-max-prime=25000 --threads=1 --time=0 --test=cpu run --events=20000 --rate=0
 ```
-{{< rawhtml >}}
-<br/>
-{{< /rawhtml >}}
 
+\
+\
+We added [Eco-CI](projects/eco-ci/) into this, and measured two distinct steps: first the installation process, and then running the sysbench command. We ran this many times over a few days and looked at the energy and time used, as well as the average cpu utilization for each step. We then calculated the mean and standard deviance for these values.
 
-We added Eco-CI into this, and measured two distinct steps: first the installation process, and then running the sysbench command. We ran this many times over a few days and looked at the energy and time used, as well as the average cpu utilization for each step. We then calculated the mean and standard deviance for these values.
-
-We also keep track which cpu each run is being done on. As a refresher, the ML model that eco-ci is based on identifies CPU model and utilization as the biggest contributing factors towards the energy use of servers. This means that comparing runs across different CPU's is unfair - one cpu model might inherently cost more energy for your run. While very interesting information in its own right, for the purposes of calculating variability we can only calculate the mean and standard deviance for each cpu seperately.
+We also keep track which cpu each run is being done on. As a refresher, the ML model that [Eco-CI](projects/eco-ci/) is based on identifies CPU model and utilization as the biggest contributing factors towards the energy use of servers. This means that comparing runs across different CPU's is unfair - one cpu model might inherently cost more energy for your run. While very interesting information in its own right, for the purposes of calculating variability we can only calculate the mean and standard deviance for each cpu seperately.
 
 We also ran this pipeline on Gitlab, and gathered the same data. Gitlab hosted runners only have one cpu, so that simplifies things a bit.
 
