@@ -1,0 +1,123 @@
+---
+title: "Why work with us"
+draft: false
+description: "Work with us to make your software stack greener"
+date: 2023-09-14 08:00:00
+author: "Arne Tarara"
+authorlink: "https://de.linkedin.com/in/arne-tarara"
+
+---
+
+You are interested in making your software more transparent regarding energy and CO2 emissions? Or you already
+have that and want to optimize and save emissions?
+
+We can help you!
+
+Our team consists of senior software performance and pipeline engineers that have since specialized in sustainable 
+software engineering.
+
+We are [regular speaker at conferences and industry symposiums](/#nav-meetups), developing 
+[open source industry advancing container native carbon measurement tools](/projects/green-metrics-tool) as well as 
+[state of the art carbon pipeline tooling](/projects/eco-ci), active advocates and consultants for energy and carbon transparency 
+through certifications like the [Blauer Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) or our [Energy-ID](/projects/energy-id) project.
+
+Some of our recent recognized works in research include 
+[tailored open source machine models for energy estimation in cloud environments](/projects/cloud-energy), published positional 
+papers and academical papers for software lifecycle assessment and software energy measurement.
+
+
+{{< greenblock >}}
+Services
+{{</ greenblock >}}
+
+{{< rawhtml >}}
+    <div class="data-content-two" style="text-align: center;">
+        <div class="profile">
+            <div class="profile-item">
+                <div class="profile-title"><span>Research &amp; Development</span></div>
+                <div class="profile-info"> 
+                    <ul>
+                        <li>Software lifecycle assesment</li>
+                        <li>software development cabon cost</li>
+                        <li>VM granular carbon monitoring</li>
+                        <li>AI optimized carbon code optimizations</li>
+                        <li>DevOps integrated code green efficiency</li>
+                        <li>Grid intensity intelligent applications</li>
+                        <li>and much more ...</li>
+                    </ul>                    
+                </div>
+            </div>        
+            <div class="profile-item">
+                <div class="profile-title"><span>Workshops & Training</span></div>
+                <div class="profile-info">
+                    <ul>
+                        <li>Sustainable Software Development</li>
+                        <li>Developer training and education</li>
+                        <li>C-Level software carbon awareness</li>
+                        <li>Perfomance engineering</li>
+                        <li>Cloud carbon efficiency</li>
+                        <li>Sustainable DevOps</li>
+                        <li>and much more ...</li>
+                    </ul>
+                </div>
+            </div>                  
+            <div class="profile-item">
+                <div class="profile-title"><span>Measurement &amp; Optimization</span></div>
+                <div class="profile-info">
+                    <ul>
+                        <li>Application carbon profiling</li>
+                        <li>Carbon optimization & saving</li>
+                        <li>Carbon reporting (GHG/ISO 14001)</li>
+                        <li>Sustainable UI / UX</li>
+                        <li>Website carbon optimization</li>
+                        <li>Website carbon certifications</li>
+                        <li>and much more ...</li>                        
+                    </ul>
+                </div>            
+            </div>
+            <div class="profile-item">
+                <div class="profile-title"><span>Consulting</span></div>
+                <div class="profile-info">
+                    <ul>
+                        <li>Software carbon strategy planning</li>
+                        <li>Cloud carbon efficient migrations</li>
+                        <li>Consultant trainings</li>
+                        <li>Green software development guidelines</li>
+                        <li>and much more ...</li>
+                    </ul>
+                </div>                                    
+            </div>
+        </div>
+    </div>
+
+{{</ rawhtml >}}
+
+{{< whiteblock >}}
+References
+{{</ whiteblock >}}
+
+{{< rawhtml >}}
+<div class="data-content-three">
+<img src="/img/references/axel-springer-logo.webp">
+<img src="/img/references/wbs-coding-school-logo.webp">
+<a href="https://sdialliance.org"><img src="/img/references/sdia-logo.webp"></a>
+<img src="/img/references/bits-und-baeume-logo.webp">
+<img src="/img/references/ironhack.webp">
+<a href="https://fosdem.org/2023/schedule/track/energy/"><img src="/img/references/fosdem-2023.webp"></a>
+<a href="https://www.arbeitsagentur.de/vor-ort/it-systemhaus/vorstellung"><img src="/img/references/ba-it-systemhaus.webp"></a>
+</div>
+
+{{</ rawhtml >}}
+
+
+{{< greenblock >}}
+Interested?
+{{</ greenblock >}}
+
+{{< rawhtml >}}
+<div class="btn-one">
+    <a href="mailto:info@green-coding.berlin"><span>Contact Us</span></a>
+</div>
+{{</ rawhtml >}}
+
+

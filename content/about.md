@@ -99,7 +99,7 @@ Also we focus in the building process for static sites, which typically have a l
 
 Checkout out our [OpenEnergyBadge project](/projects/open-energy-badge), our [Eco CI-plugins for Github](/projects/eco-ci) or our [Case Studies](/case-studies/) on the topic. 
 
-Example badge: {{< rawhtml >}} <a href="https://metrics.green-coding.berlin/stats.html?id=c5a8a5de-069f-4955-b499-a06e597e19c3"><img src="https://api.green-coding.berlin/v1/badge/single/c5a8a5de-069f-4955-b499-a06e597e19c3?metric=RAPL"></a>{{< /rawhtml >}}
+Example badge: {{< rawhtml >}} <a href="https://metrics.green-coding.berlin/stats.html?id=01e4f6e1-318f-4ecb-a19f-041439a50065"><img src="https://api.green-coding.berlin/v1/badge/single/01e4f6e1-318f-4ecb-a19f-041439a50065?metric=AC"></a>{{< /rawhtml >}}
 
 {{< greenblock >}}
 Network
@@ -166,11 +166,15 @@ The concept effectively coins a resource as blocked, when it is used by software
 
 
 {{< greenblock >}}
-Work with Us
+Interested?
 {{</ greenblock >}}
 
-If you are a developer that wants to develop sustainable software or just use our tools, a company that needs 
-consulting on their digital products or an activists group, please contact us under [info@green-coding.berlin](mailto:info@green-coding.berlin)
+{{< rawhtml >}}
+<div class="btn-one">
+    <a href="mailto:info@green-coding.berlin"><span>Contact Us</span></a>
+</div>
+<br>
+<center>Or see more examples on our <a href="/work-with-us">Work with us</a> page.</center>
+{{</ rawhtml >}}
 
-Please also see our [Workshops and Consulting](/workshops-and-consulting) section.
 

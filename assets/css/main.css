@@ -229,7 +229,12 @@ textarea {
 	height: 40px;
 }
 
-.btn-one{width: 420px;}
+.btn-one{
+    width: 80%;
+    max-width: 420px;
+    margin:auto;
+    text-align: center;
+}
 .btn-one span{
 	text-align: center;
 	display: inline-block;
@@ -243,9 +248,14 @@ textarea {
 	background: #e1716d;
 	border: solid 1px #efb2b0;
 	border-radius: 5px;
-	width: 220px;
-	float: left;
-}.btn-one span:hover{border: solid 1px #696176; background: #696176; cursor: pointer;}
+    width: 80%;
+	max-width: 220px;
+}
+.btn-one span:hover{
+    border: solid 1px #696176;
+    background: #696176;
+    cursor: pointer;
+}
 
 .btn-two{width: 1165px;}
 .btn-two span{
@@ -656,23 +666,7 @@ nav li a{text-decoration: none;}
     margin: 20px;
 }
 
-.profile-title{
-	font-family: 'Lato', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	color: #f06862;
-	text-align: center;
-	width: 210px;
-	float: left;
-} .profile-title span{font-weight: 700;}
 
-.profile-info{
-	font-family: 'Lato', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	text-align: center;
-	color: #7c8180;
-}
 
 .members-box{
 	background: #f9f9f5;
@@ -971,17 +965,7 @@ nav li a{text-decoration: none;}
 	text-align: center;
 }
 
-.pofile-item{width: 210px;float: left; margin: 0px 144px;}
-.pofile-item:first-child{width: 210px;float: left;margin: 0 0 0 10px;}
-.pofile-item:last-child{width: 210px;float: left;margin: 0 10px 0 0;}
 
-.profile-element{
-	width: 210px;
-	height: 211px;
-	float: left;
-	margin-bottom: 25px;
-	background-position: 0px 0px;
-}
 
 .element-1{background: url(../img/about_ico_01.png) no-repeat;}
 .element-2{background: url(../img/about_ico_02.png) no-repeat;}
@@ -989,9 +973,36 @@ nav li a{text-decoration: none;}
 
 /*.profile-element:hover{background-position: 0 -212px; cursor: pointer;}*/
 
-#about .profile{
-	max-width: 960px;
-	margin: auto;
+.profile{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+    gap: 100px 180px;
+    padding-bottom: 20px;
+}
+.profile-item{
+    width: 350px;
+}
+
+.profile-title{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffef57;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.profile-title span{
+    font-weight: 700;
+}
+
+.profile-info{
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    color: #fff;
 }
 
 .imagefribbies{
@@ -1833,7 +1844,6 @@ body .date{
 	font-family: 'Lato', sans-serif;
 	font-size: 12px;
 	font-weight: 700;
-	float: left;
 	text-transform: uppercase;
 	color: #fff;
 	padding: 8px 19px;
@@ -2243,16 +2253,6 @@ li > ul > li > ul > li {
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: 'Titillium Web', sans-serif !important;
-}
-
-.btn-one-center {
-    text-align: center;
-}
-.btn-one-center .btn-one {
-    width:  100%;
-}
-.btn-one-center span {
-    float: none;
 }
 
 
