@@ -59,7 +59,7 @@ We also keep track which cpu each run is being done on. As a refresher, the ML m
 
 We also ran this pipeline on Gitlab, and gathered the same data. Gitlab hosted runners only have one cpu, so that simplifies things a bit.
 
-So after gathering the data and calculating the statistics, here's the results we found, by platform/CPU:
+So after gathering the data from both [Github](https://metrics.green-coding.berlin/ci.html?repo=dan-mm/test-repo-a&branch=main&workflow=66623622) and [Gitlab](https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/ci-carbon-testing&branch=main&workflow=48163287) and calculating the statistics, here's the results we found, by platform/CPU:
 
 {{< rawhtml >}}
 <style>
@@ -89,6 +89,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <th>Time Mean</th>
       <th>Time Std. Dev (value/%)</th>
       <th>Avg. Cpu. Utilization</th>
+      <th> Count</th>
     </tr>
   </thead>
   <tbody>
@@ -100,6 +101,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>18s</td>
       <td>8s / 43%</td>
       <td>35%</td>
+      <td>75</td>
     </tr>
     <tr>
       <td>Run Step</td>
@@ -108,6 +110,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>86s</td>
       <td>4s / 4%</td>
       <td>48%</td>
+      <td>75</td>
     </tr>
     <tr>
       <td>Full Pipeline</td>
@@ -116,6 +119,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>104s</td>
       <td>9s / 9%</td>
       <td>42%</td>
+      <td>75</td>
     </tr>
     <tr>
       <td rowspan="3">Github / 8272CL</td>
@@ -125,6 +129,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>16s</td>
       <td>12s / 75%</td>
       <td>32%</td>
+      <td>81</td>
     </tr>
     <tr>
       <td>Run Step</td>
@@ -133,6 +138,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>74s</td>
       <td>1s / 1%</td>
       <td>48%</td>
+      <td>81</td>
     </tr>
     <tr>
       <td>Full Pipeline</td>
@@ -141,6 +147,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>90s</td>
       <td>12s / 13%</td>
       <td>40%</td>
+      <td>81</td>
     </tr>
     <tr>
       <td rowspan="3">Github / E5-2673v4</td>
@@ -150,6 +157,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>19s</td>
       <td>11s / 58%</td>
       <td>35%</td>
+      <td>55</td>
     </tr>
     <tr>
       <td>Run Step</td>
@@ -158,6 +166,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>85s</td>
       <td>8s / 9%</td>
       <td>48%</td>
+      <td>55</td>
     </tr>
     <tr>
       <td>Full Pipeline</td>
@@ -166,6 +175,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>104s</td>
       <td>15s / 15%</td>
       <td>42%</td>
+      <td>55</td>
     </tr>
     <tr>
       <td rowspan="3">Github / E5-2673v3</td>
@@ -175,6 +185,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>13s</td>
       <td>0s / 4%</td>
       <td>32%</td>
+      <td>10</td>
     </tr>
     <tr>
       <td>Run Step</td>
@@ -183,6 +194,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>85s</td>
       <td>3s / 4%</td>
       <td>48%</td>
+      <td>10</td>
     </tr>
     <tr>
       <td>Full Pipeline</td>
@@ -191,6 +203,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>98s</td>
       <td>4s / 4%</td>
       <td>40%</td>
+      <td>10</td>
     </tr>
     <tr>
       <td rowspan="3">Github / 8370C</td>
@@ -200,6 +213,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>16s</td>
       <td>8s / 48%</td>
       <td>32%</td>
+      <td>52</td>
     </tr>
     <tr>
       <td>Run Step</td>
@@ -208,6 +222,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>39s</td>
       <td>0s / 1%</td>
       <td>45%</td>
+      <td>52</td>
     </tr>
     <tr>
       <td>Full Pipeline</td>
@@ -216,6 +231,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>56s</td>
       <td>8s / 14%</td>
       <td>38%</td>
+      <td>52</td>
     </tr>
     <tr>
       <td rowspan="3">Gitlab / EPYC_7B12</td>
@@ -225,6 +241,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>5s</td>
       <td>3s / 51%</td>
       <td>53%</td>
+      <td>196</td>
     </tr>
     <tr>
       <td>Run Step</td>
@@ -233,6 +250,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>20s</td>
       <td>0s / 2%</td>
       <td>57%</td>
+      <td>196</td>
     </tr>
     <tr>
       <td>Full Pipeline</td>
@@ -241,6 +259,7 @@ So after gathering the data and calculating the statistics, here's the results w
       <td>25s</td>
       <td>3s / 10%</td>
       <td>55%</td>
+      <td>196</td>
     </tr>
   </tbody>
 </table>
@@ -268,6 +287,73 @@ Running these tests a few times over a few weeks, these patterns regarding CPU s
 Conclusions
 {{< /whiteblock >}}
 
-- Steps requiring network traffic have a much higher variability, even when though the cpu utilization and overall energy consumption is lower to the rest of the pipeline
-- Steps **without network traffic** are much more consistent, but the baseline variability is still very CPU dependant. 
-- Github CPU's such as the **8370C** and **8272CL** have almost no variability **(0-1%)** in both energy and time for non-network steps (and also have amongst the lowest overall energy cost)
+So what did we gather from this analysis, and how can we integrate this knowledge in our quest for energy optimizations? Generally speaking, when we analyze our pipelines over a period of time, we want to know if a change we've made has increased or decreased our energy usage. Big changes (such as ones that cause our pipelines to run twice as long) will have obvious impacts. However, if we want to optimize our pipelines without changing inherent functionality, then examinging the variability becomes important. We want to know if our small change made a real difference, and if the inherent variability is larger than the change's impact, then it becomes indistinguisable from noise.
+
+With that in mind, what we measure in our pipelines is important. Any steps that include have network traffic, will have too high of an inherent variability for us to make a meaningful analysis. These steps have variability of upwards to **40-100%**, so unless the change is drastic enough to consistently cause your pipeline use double the energy of previous runs, any practical changes will be lost amongst the noise.
+
+When we strip down to steps that are just local machine calculations , then we see the variability is much more managable. It is still very cpu dependant however. Here are the results summarized:
+
+{{< rawhtml >}}
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th>Platform/CPU</th>
+      <th>Energy Variability</th>
+      <th>Time Variability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Github / 8272CL</td>
+      <td>0%</td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Github / 8370C</td>
+      <td>0%</td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Github / 8171M</td>
+      <td>4%</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>Github / E5-2673v3</td>
+      <td>4%</td>
+      <td>4%</td>
+    </tr>
+  </tbody>
+    <tr>
+      <td>Gitlab / EPYC_7B12</td>
+      <td>7%</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>Github / E5-2673v4</td>
+      <td>9%</td>
+      <td>9%</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+{{< /rawhtml >}}
+
+So if you want to measure the impact of optimziations on your pipelines, you have to pay attention to which CPU your workflow is running on. **Github runners on 8370C and 8272CL machines are the best to examine** to accurately see what impact your pipeline changes have. Any optimization should be accurately reflected on thse machines. For any changes that cause a **4%** or less energy use impact, examining pipeline runs on other machines may lead to inaccurate conclusions.
