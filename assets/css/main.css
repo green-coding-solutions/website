@@ -462,7 +462,9 @@ nav li a{text-decoration: none;}
 	clear:both;
 }
 
-.newsletter h1{font-size: 36px; font-weight: 400; font-family: 'Lato', sans-serif; color: #fff; width: auto; line-height: 36px;}
+.newsletter h3{
+    font-size: 36px; font-weight: 400; font-family: 'Lato', sans-serif; color: #fff; width: auto; line-height: 36px;
+}
 #newsletter{
 	border: none;
 	background: #486e93;
