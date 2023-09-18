@@ -8,9 +8,7 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-You are interested in making your software more transparent regarding energy and CO2 emissions? Or you already
-have that and want to optimize and save emissions?
-
+Are you keen on enhancing the transparency of your software in terms of energy and CO2 emissions? Whether you're starting this journey or looking to further optimize and reduce emissions, we can assist!
 We can help you!
 
 Our team consists of senior software performance and pipeline engineers that have since specialized in sustainable 
@@ -38,10 +36,10 @@ Services
                 <div class="profile-info"> 
                     <ul>
                         <li>Software lifecycle assesment</li>
-                        <li>software development cabon cost</li>
+                        <li>Software development cabon cost</li>
                         <li>VM granular carbon monitoring</li>
                         <li>AI optimized carbon code optimizations</li>
-                        <li>DevOps integrated code green efficiency</li>
+                        <li>DevOps green efficiency integration</li>
                         <li>Grid intensity intelligent applications</li>
                         <li>and much more ...</li>
                     </ul>                    
