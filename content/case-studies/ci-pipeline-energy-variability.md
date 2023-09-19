@@ -357,3 +357,9 @@ When we strip down to steps that are just local machine calculations , then we s
 {{< /rawhtml >}}
 
 So if you want to measure the impact of optimziations on your pipelines, you have to pay attention to which CPU your workflow is running on. **Github runners on 8370C and 8272CL machines are the best to examine** to accurately see what impact your pipeline changes have. Any optimization should be accurately reflected on thse machines. For any changes that cause a **4%** or less energy use impact, examining pipeline runs on other machines may lead to inaccurate conclusions.
+
+Obviously this is only an observed and snapshotted result, so this might change in the future unannounced. We have scheduled
+to revisit this test in a couple of months to see if any changes happended.
+
+In the meantime we are also very happy to link out to any reproductions of this test that can falsify if you get similar 
+results to ours. 
