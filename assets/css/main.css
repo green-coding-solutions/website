@@ -980,21 +980,23 @@ nav li a{text-decoration: none;}
     justify-content: center;
     align-items: top;
     flex-wrap: wrap;
-    gap: 100px 180px;
+    gap: 50px 80px;
     padding-bottom: 20px;
 }
+
 .profile-item{
-    width: 350px;
+    width: 400px;
 }
 
 .profile-title{
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     color: #ffef57;
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
 }
+
 .profile-title span{
     font-weight: 700;
 }
@@ -1004,6 +1006,30 @@ nav li a{text-decoration: none;}
     text-align: left;
     color: #fff;
 }
+.profile-info li {
+    list-style: circle inside !important;
+}
+
+.profile-box{
+    border-radius: 40px;
+    padding: 40px;
+    background: #2b3e50; /* Dark night background */
+    border: 3px solid #fff; /* White border */
+
+}
+
+.profile-info.expandable{
+    overflow: hidden;
+    transition: height 2s;
+}
+
+.profile-info.expandable.closed{
+    height: 80px;
+}
+.profile-info.expandable.open{
+    height: 280px;
+}
+
 
 .imagefribbies{
 	width: 589px;

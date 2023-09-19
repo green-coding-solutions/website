@@ -9,7 +9,6 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 ---
 
 Are you keen on enhancing the transparency of your software in terms of energy and CO2 emissions? Whether you're starting this journey or looking to further optimize and reduce emissions, we can assist!
-We can help you!
 
 Our team consists of senior software performance and pipeline engineers that have since specialized in sustainable 
 software engineering.
@@ -21,7 +20,9 @@ through certifications like the [Blauer Engel für Software](https://www.blauer-
 
 Some of our recent recognized works in research include 
 [tailored open source machine models for energy estimation in cloud environments](/projects/cloud-energy), published positional 
-papers and academical papers for software lifecycle assessment and software energy measurement.
+papers and academical papers for software lifecycle assessment and software energy measurement, work on 
+[Software-Lifecycle-Assessment](https://publication2023.bits-und-baeume.org/#book/38) with developer tools to be released later this year and cited 
+[case studies for energy savings and optimizations](/case-studies).
 
 
 {{< greenblock >}}
@@ -31,9 +32,9 @@ Services
 {{< rawhtml >}}
     <div class="data-content-two" style="text-align: center;">
         <div class="profile">
-            <div class="profile-item">
+            <div class="profile-item profile-box">
                 <div class="profile-title"><span>Research &amp; Development</span></div>
-                <div class="profile-info"> 
+                <div class="profile-info expandable closed"> 
                     <ul>
                         <li>Software lifecycle assesment</li>
                         <li>Software development cabon cost</li>
@@ -41,27 +42,27 @@ Services
                         <li>AI optimized carbon code optimizations</li>
                         <li>DevOps green efficiency integration</li>
                         <li>Grid intensity intelligent applications</li>
-                        <li>and much more ...</li>
-                    </ul>                    
+                    </ul>
                 </div>
-            </div>        
-            <div class="profile-item">
+                <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Show more examples ...</a></p>                
+            </div>
+            <div class="profile-item profile-box">
                 <div class="profile-title"><span>Workshops & Training</span></div>
-                <div class="profile-info">
+                <div class="profile-info expandable closed">
                     <ul>
                         <li>Sustainable Software Development</li>
                         <li>Developer training and education</li>
+                        <li>Cloud carbon efficiency</li>
                         <li>C-Level software carbon awareness</li>
                         <li>Perfomance engineering</li>
-                        <li>Cloud carbon efficiency</li>
                         <li>Sustainable DevOps</li>
-                        <li>and much more ...</li>
                     </ul>
                 </div>
-            </div>                  
-            <div class="profile-item">
+                <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Show more examples ...</a></p>
+            </div>
+            <div class="profile-item profile-box">
                 <div class="profile-title"><span>Measurement &amp; Optimization</span></div>
-                <div class="profile-info">
+                <div class="profile-info expandable closed">
                     <ul>
                         <li>Application carbon profiling</li>
                         <li>Carbon optimization & saving</li>
@@ -69,21 +70,24 @@ Services
                         <li>Sustainable UI / UX</li>
                         <li>Website carbon optimization</li>
                         <li>Website carbon certifications</li>
-                        <li>and much more ...</li>                        
                     </ul>
-                </div>            
+                </div>
+                <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Show more examples ...</a></p>                
             </div>
-            <div class="profile-item">
+            <div class="profile-item profile-box">
                 <div class="profile-title"><span>Consulting</span></div>
-                <div class="profile-info">
+                <div class="profile-info expandable closed">
                     <ul>
                         <li>Software carbon strategy planning</li>
                         <li>Cloud carbon efficient migrations</li>
                         <li>Consultant trainings</li>
                         <li>Green software development guidelines</li>
-                        <li>and much more ...</li>
                     </ul>
-                </div>                                    
+                </div>
+                <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Show more examples ...</a></p>                
+            </div>
+            <div class="profile-item profile-box">
+                <div class="profile-title" style="text-align:center; margin: 0"><span>Need something else?</span></div>
             </div>
         </div>
     </div>
