@@ -233,9 +233,8 @@
 		.profile-element {margin: 15px 0 0 0;}
 		.pofile-item {margin: auto;}
 		.profile-title {width: 200px;margin-top: 24px;}
-		.profile {width: 220px; margin: 10px auto 65px; overflow: auto;}
-		.pofile-item {margin: 0 0 20px 10px;}
-		.pofile-item:first-child {margin: 0 0 20px 10px;}
+		.profile {width: 220px; margin: 10px auto 65px; }
+		.profile-info, .show-more { display: none;}
 
 	}
 
