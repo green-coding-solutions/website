@@ -88,7 +88,7 @@ Services
         </div>
         <div class="profile-item profile-box">
             <div class="profile-title" style="text-align:center; margin: 0"><span>Need something else? <br></span></div>
-            <a href="#contact-us" style="text-decoration: underline;">Let's talk!</a>
+            <a href="#services-contact-us" style="text-decoration: underline;">Let's talk!</a>
         </div>
     </div>
 </div>
