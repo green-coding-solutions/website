@@ -169,12 +169,8 @@
 
 		/*  CONTACT*/
 		.title.contact {}
-		#messageform {width: 400px;}
-		#emailform {width: 400px;}
-		#nameform {width: 400px;}
-		#formulario {width: 400px; margin: 33px 70px 0 0;}
+		#formulario {margin: 33px 70px 0 0;}
 		.titlecontact {}
-		.contactinfo {width: 250px; margin-left: 30px;}
 		.contact-title {}
 
 	}
@@ -201,7 +197,7 @@
 		.page.first {padding-top: 465px;}
 		.portfolio-btn a:hover{color: #1ddfb3; cursor: pointer;}
 		.portfolio2-btn a:hover{color: #1ddfb3; cursor: pointer;}
-		#emailform {width: 165px;margin-bottom: 15px;}
+		#emailform {margin-bottom: 15px;}
 		.pofile-item:last-child {margin: auto;}
 		
 		.img-next {
@@ -248,7 +244,7 @@
 		
 		.credits {clear: both; margin-right: 15px;}
 		
-		.contactinfo {margin-left: 0;}
+		#contactinfo {margin-left: 0;}
 		
 		
 		.anythingSlider{height: 350px !important;}
@@ -367,11 +363,9 @@
 
 		/*  CONTACT  */
 		.contactdescription {border: none; height: auto; float: inherit; padding: 0; text-align: center; color: #fff;}
-		#formulario, #messageform, #nameform {width: 400px; float: inherit; margin: auto;}
-		#nameform, #emailform, #messageform {width: 360px; float: inherit;}
 		#nameform{margin-bottom: 15px;}
 		p {margin-bottom: 15px;}
-		.contactinfo {margin-bottom: 40px; float: inherit; overflow: auto;}
+		#contactinfo {margin-bottom: 40px;}
 
 
 
@@ -533,11 +527,9 @@
 		/*  CONTACT  */
 		.title.contact {font-size: 14px;}
 		.contactdescription {border: none; height: auto; float: inherit; padding: 0; text-align: center; color: #fff; font-size: 15px;}
-		#formulario, #messageform, #nameform {width: 318px;; float: inherit; margin: auto;}
-		#nameform, #emailform, #messageform {width: 275px; float: inherit;}
 		#nameform{margin-bottom: 15px;}
 		p {margin-bottom: 15px;}
-		.contactinfo {margin-bottom: 40px; float: inherit; overflow: auto; margin-left: 0; width:320px;}
+		#contactinfo {margin-bottom: 40px; margin-left: 0;}
 		.titlecontact {margin-left: 20px;}
 		.email {margin: 20px 0px 10px 20px;}
 		.phone {margin: 20px 0px 20px 20px;}
