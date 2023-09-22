@@ -149,7 +149,7 @@ Interested?
             <div>
                 <label class="data-form" for="messagesubmit">&nbsp;</label>
                 <div id="messagesubmit-container" class="btn-one">
-                    <input id="messagesubmit" type="submit" name="submit" value="Send Mail">
+                    <input id="messagesubmit" type="submit" name="submit" value="Submit">
                 </div>    
             </div>
         </fieldset>                                
