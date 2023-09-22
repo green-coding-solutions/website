@@ -1,4 +1,4 @@
-import mailchannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
+import mailChannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
 
 export const onRequest: PagesFunction = mailChannelsPlugin({
   personalizations: [
