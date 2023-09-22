@@ -1,6 +1,6 @@
 import mailchannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
 
-export const onRequest = mailchannelsPlugin({
+export const onRequest: PagesFunction = mailChannelsPlugin({
   personalizations: [
     {
       to: [{ name: "Green Coding Berlin", email: "info@green-coding.berlin" }],
