@@ -167,12 +167,6 @@
 		.img-contact {margin-top: 55px;}
 		.progress-bar {width: 460px;}
 
-		/*  CONTACT*/
-		.title.contact {}
-		#formulario {margin: 33px 70px 0 0;}
-		.titlecontact {}
-		.contact-title {}
-
 	}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -180,9 +174,6 @@
 		
 		.pofile-item:first-child {margin-left: 0;}
 		
-		.title.contact {font-size: 22px;}
-		.contact-title {background: url(../img/contact-title_03.png) no-repeat;width: 475px;height: 45px;}
-		.services-title {background: url(../img/services-title_02.png) no-repeat;width: 475px;height: 66px;}
 		.dir-left{left: -150px; bottom: 360px;}
 		.dir-right{left: 175px; bottom: 360px;}
 		.dots {display: none;}
@@ -244,7 +235,6 @@
 		
 		.credits {clear: both; margin-right: 15px;}
 		
-		#contactinfo {margin-left: 0;}
 		
 		
 		.anythingSlider{height: 350px !important;}
@@ -361,11 +351,6 @@
 		.progress-bar {width: 330px;}
 		.info-skills {font-size: 14px;}
 
-		/*  CONTACT  */
-		.contactdescription {border: none; height: auto; float: inherit; padding: 0; text-align: center; color: #fff;}
-		#nameform{margin-bottom: 15px;}
-		p {margin-bottom: 15px;}
-		#contactinfo {margin-bottom: 40px;}
 
 
 
@@ -424,9 +409,6 @@
 		.img-contact {margin-top: 60px;}
 
 		.last-projects {padding-top: 20px;overflow: hidden;width: 320px;margin: auto;}
-		.contact-title {background: url(../img/contact-title_04.png) no-repeat;width: 320px;height: 34px;}
-		.services-title {background: url(../img/services-title_03.png) no-repeat;width: 320px;height: 49px;}
-		.pofile-item{float: inherit;margin: auto;}
 
 		/*  MACBOOK  */
 		.imagefribbies {margin: auto; float: inherit;width: 320px;height: 206px;background: url(../img/macbook-base_03.png) no-repeat}
@@ -524,17 +506,6 @@
 		.percent {}
 		.info-skills {font-size: 12px; padding-left: 15px;}
 
-		/*  CONTACT  */
-		.title.contact {font-size: 14px;}
-		.contactdescription {border: none; height: auto; float: inherit; padding: 0; text-align: center; color: #fff; font-size: 15px;}
-		#nameform{margin-bottom: 15px;}
-		p {margin-bottom: 15px;}
-		#contactinfo {margin-bottom: 40px; margin-left: 0;}
-		.titlecontact {margin-left: 20px;}
-		.email {margin: 20px 0px 10px 20px;}
-		.phone {margin: 20px 0px 20px 20px;}
-		.skype {margin: 10px 0px 0px 20px;}
-		.ls-fullwidth .ls-nav-prev, .ls-fullwidth .ls-nav-next {display: none;}
 
 	}
 

@@ -834,13 +834,12 @@ nav li a{text-decoration: none;}
     justify-content: center;
     align-items: top;
     flex-wrap: wrap;
-    gap: 50px 80px;
     padding-bottom: 20px;
     margin-top: 30px;
 }
 
 #contactinfo{
-	width: 350px;
+	width: 200px;
 	height: auto;
 	margin-bottom: 150px;
 	font-family: 'Latos', sans-serif;
@@ -850,14 +849,16 @@ nav li a{text-decoration: none;}
 	margin: 10px 0px 0px 40px;
 	margin-left: 44px;
     margin-top: 10px;
+    flex-grow: 1;
 }
 #contactinfo p{margin-top: 40px; line-height: 25px;}
 #contactinfo h2{margin-bottom: 0px; line-height: normal;}
 
 #formulario{
-	width: 520px;
+	width: 200px;
 	margin: 0px 45px 0 0;
     text-align: left;
+    flex-grow:2;
 }
 
 #formulario fieldset p{margin-bottom: 0px;}
