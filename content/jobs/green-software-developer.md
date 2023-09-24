@@ -1,6 +1,6 @@
 ---
 title: "Green Software Developer"
-description: "Open role for Green Software Developer with 2+ years experience at Green Coding Berlin GmbH to work on sustainable software."
+description: "Open role for Green Software Developer with 5+ years experience at Green Coding Berlin GmbH to work on sustainable software."
 ---
 
 At Green Coding Berlin we create a green software community and ecosystem in Berlin. 
@@ -53,17 +53,20 @@ Most of our tooling is written in script languages like Python or Node. Most of 
 
 ### Your qualification:
 
-We believe the role is best filled with 2+ years experience as a professional software developer. 
+We believe the role is best filled with 5+ years experience as a professional software developer. 
 
 This is the skillset we believe is very helpful to have:
 - Container systems (docker, podman or similar)
 - Concepts of Virtualization (VMs)
+- Basic understanding and experience with cloud infrastructure (AWS / Google Cloud / Azure / Kubernetes)
 - Linux subsystem concepts for containerization (cgroups, namespaces, procfs, sysfs)
 - End-to-End Testing Tools (Selenium, Codeception, Playwright or similar)
 - CI-Pipelines (Github actions preferred)
-- At least around 2 year experience in using one of these programming languages: Node.JS / Javascript or Python or PHP
+- At least around 3 year experience in using one of these programming languages: Node.JS / Javascript or Python or PHP
 - Basic understanding of modern computer achitectures such as microprocessor design, machine registers, asssembly representation of code, microprocessor instructions etc.
 - At least entry level experience in reading, writing and adapting C code.
+- Independently working on a project
+- Product focused development
 
 However if you are not too familiar with some of the skills mentioned before but feel confident you
 can learn them in a short time, also do not hesitate to apply.
@@ -79,6 +82,7 @@ The green software community is a very friendly and uncompetetive bunch.
 Here is a list of befriended organizations and communities we work with or contribute to:
 - [KDE Eco](https://eco.kde.org/)
 - [The Green Web Foundation](https://www.thegreenwebfoundation.org/)
+- [SDIA](https://sdialliance.org)
 - Ironhack Berlin 
 - WBS Coding School Berlin
 
