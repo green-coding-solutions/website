@@ -34,6 +34,14 @@ Detailed analytics can be done in the Green Metrics Tool dashboard. You can eith
 A full readme and documentation can be found in the GitHub repo.
 
 {{< rawhtml >}}
+<a class="ui labeled button" href="https://github.com/green-coding-berlin/hog/releases">
+    <div class="ui button">
+        <i class="arrow alternate circle down icon"></i>
+    </div>
+    <span class="ui basic label">
+        Download
+    </span>
+</a>
 <a class="ui labeled button" href="https://github.com/green-coding-berlin/hog/blob/main/README.md#the-power-hog">
     <div class="ui button">
         <i class="book icon"></i>
