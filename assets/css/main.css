@@ -860,6 +860,10 @@ nav li a{text-decoration: none;}
     text-align: left;
     flex-grow:2;
 }
+#formulario input::placeholder, #formulario textarea::placeholder {
+    color: #aea;
+}
+
 
 #formulario fieldset p{margin-bottom: 0px;}
 

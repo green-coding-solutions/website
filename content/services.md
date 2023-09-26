@@ -138,21 +138,21 @@ Interested?
         <fieldset>
             <div class="first">                    
                 <label class="data-form" for="nameform">name</label>                
-                <input type="text" name="name" id="nameform" value="insert your name" onclick="if(this.value=='insert your name') this.value=''" onblur="if(this.value=='') this.value='Name (required)'">                            
+                <input type="text" name="name" id="nameform" value="" placeholder="Your name ...">
                 <label class="data-form" for="emailform">email</label>                
-                <input type="text" name="email" id="emailform" value="insert your email" onclick="if(this.value=='insert your email') this.value=''" onblur="if(this.value=='') this.value='insert your email'">            
+                <input type="text" name="email" id="emailform" value="" placeholder="Your e-Mail ...">
             </div>            
             <div>
                 <label class="data-form" for="messageform">your message</label>
-                <textarea name="message" id="messageform" onclick="this.value=''" onblur="if(this.value=='') this.value='insert your message'">insert your message</textarea>
-            </div>                               
+                <textarea name="message" id="messageform" placeholder="Your message ..."></textarea>
+            </div>
             <div>
                 <label class="data-form" for="messagesubmit">&nbsp;</label>
                 <div id="messagesubmit-container" class="btn-one">
                     <input id="messagesubmit" type="submit" name="submit" value="Submit">
                 </div>    
             </div>
-        </fieldset>                                
+        </fieldset>
     </form>
 </div>
 {{</ rawhtml >}}
