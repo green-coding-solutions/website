@@ -30,7 +30,7 @@ Services
 {{</ greenblock >}}
 
 {{< rawhtml >}}
-<div class="data-content-two" style="text-align: center;">
+<div class="data-content-two" style="text-align: center; margin: 0;">
     <div class="profile">
         <div class="profile-item profile-box">
             <div class="profile-title"><span>Research &amp; Development</span></div>
