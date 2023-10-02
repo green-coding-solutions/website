@@ -134,7 +134,7 @@ Interested?
             <a href="mailto:info@green-coding.berlin"><div class="t-mail"></div></a>
         </div>
     </div>
-    <form id="formulario" action="/" method="post" data-static-form-name="contact">    
+    <form id="formulario" action="https://submit-form.com/M3XrdBO9" method="post" data-static-form-name="contact">    
         <fieldset>
             <div class="first">                    
                 <label class="data-form" for="nameform">name</label>                
