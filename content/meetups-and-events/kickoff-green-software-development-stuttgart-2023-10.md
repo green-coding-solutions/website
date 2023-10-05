@@ -4,8 +4,7 @@ date: 2023-10-05 18:00:00
 publishDate: 2023-10-02
 draft: false
 eventtype: "Meetup"
-eventlink: "https://www.meetup.com/green-software-development-Kickoff Green Software Development Stuttgart
- Infrastructure Meetup GfK [x] Green Coding Berlin"
+eventlink: "https://www.meetup.com/green-software-development-stuttgart/events/294435689/"
 eventimg: "/img/meetups-and-events/kickoff-green-software-development-stuttgart-2023-10-600w.webp"
 eventimg600w: '/img/meetups-and-events/kickoff-green-software-development-stuttgart-2023-10-600w.webp'
 ---
