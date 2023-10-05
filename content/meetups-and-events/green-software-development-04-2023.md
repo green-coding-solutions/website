@@ -55,4 +55,5 @@ Finally a summary is given which methods provide the most potential when it come
 
 ## Slide-Deck PDF
 
-[Download Slides](/slides/2023_10_05_Stuttgart_Green_Software_Development.pdf)
+
+[Download Slides](/slides/2023_04_Green_Software_Manifesto.pdf)

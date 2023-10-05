@@ -29,4 +29,8 @@ Präsentation Arne Tarara (Green Coding Berlin): Sustainable Software: How can w
 
 - Lockerer Austausch beim Get Together: Wer macht was mit Green Software und wer interessiert sich für was?
 
+## Slide-Deck PDF
+
+[Download Slides](/slides/2023_10_05_Stuttgart_Green_Software_Development.pdf)
+
 
