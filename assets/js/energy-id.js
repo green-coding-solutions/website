@@ -11,4 +11,13 @@ $(document).ready(function() {
     $('.wordpress-card').click(function() {
       $('#wordpress').modal('show');
     });
+    $('.mysql-card').click(function() {
+      $('#mysql').modal('show');
+    });
+    $('.mariadb-card').click(function() {
+      $('#mariadb').modal('show');
+    });
+    $('.postgresql-card').click(function() {
+      $('#postgresql').modal('show');
+    });
 });// JavaScript Document

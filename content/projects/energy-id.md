@@ -70,7 +70,7 @@ and re-run the measurement on a machine more apt for your comparison.
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/repositories.html?uri=https://github.com/green-coding-berlin/nextcloud-docker">All measurements</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/nextcloud-docker">Last 50 measurements</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
@@ -120,7 +120,7 @@ and re-run the measurement on a machine more apt for your comparison.
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/index.html?repo=bakerydemo-gold-benchmark">All measurements</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/index.html?repo=bakerydemo-gold-benchmark">Last 50 measurements</a>
             </div>
         </p>
     </div>
@@ -158,7 +158,7 @@ and re-run the measurement on a machine more apt for your comparison.
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/repositories.html?uri=https://github.com/green-coding-berlin/django">All measurements</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/django">Last 50 measurements</a>
             </div>
         </p>
     </div>
@@ -199,7 +199,127 @@ and re-run the measurement on a machine more apt for your comparison.
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/repositories.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">All measurements</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">Last 50 measurements</a>
+            </div>
+        </p>
+    </div>
+    <div class="actions">
+        <div class="ui green ok button">
+            <i class="checkmark icon"></i>
+            OK
+        </div>
+    </div>
+</div>
+<div class="ui modal" id="mariadb">
+    <div class="header">
+        MariaDB
+    </div>
+    <div class="content">
+        <p>
+            MariaDB is a relational database originally forked from the MySQL database
+        </p>
+        <p>
+            <h4>Scenario</h4>
+            <p>
+                We setup a standard installation, use <a href="https://github.com/TPC-Council/HammerDB/">HammerDB</a> and create 20 warehouses. Then a TPC-C benchmark is run.
+            </p>
+            <p>
+                See the <a href="https://github.com/green-coding-berlin/DBMS-Bench">README</a> for details.
+            </p>
+        </p>
+        <p>
+            <h4>Machine</h4>
+            <p><a href="https://docs.green-coding.berlin/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
+        </p>        
+        <p>
+            <h4>Links</h4>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac">Example measurement</a>
+            </div>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/DBMS-bench&filename=usage_scenario_maria.yml&branch=&machine_id=7">Last 50 measurements</a>
+            </div>
+        </p>
+    </div>
+    <div class="actions">
+        <div class="ui green ok button">
+            <i class="checkmark icon"></i>
+            OK
+        </div>
+    </div>
+</div>
+<div class="ui modal" id="mysql">
+    <div class="header">
+        MySQL
+    </div>
+    <div class="content">
+        <p>
+            MySQL is a relational database
+        </p>
+        <p>
+            <h4>Scenario</h4>
+            <p>
+                We setup a standard installation, use <a href="https://github.com/TPC-Council/HammerDB/">HammerDB</a> and create 20 warehouses. Then a TPC-C benchmark is run.
+            </p>
+            <p>
+                See the <a href="https://github.com/green-coding-berlin/DBMS-Bench">README</a> for details.
+            </p>
+        </p>
+        <p>
+            <h4>Machine</h4>
+            <p><a href="https://docs.green-coding.berlin/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
+        </p>        
+        <p>
+            <h4>Links</h4>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=b9fe2285-1490-426e-9540-660961341e7a">Example measurement</a>
+            </div>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/DBMS-bench&filename=usage_scenario_mysql.yml&branch=&machine_id=7">Last 50 measurements</a>
+            </div>
+        </p>
+    </div>
+    <div class="actions">
+        <div class="ui green ok button">
+            <i class="checkmark icon"></i>
+            OK
+        </div>
+    </div>
+</div>
+<div class="ui modal" id="postgresql">
+    <div class="header">
+        MariaDB
+    </div>
+    <div class="content">
+        <p>
+            PostgreSQL is a relational database.
+        </p>
+        <p>
+            <h4>Scenario</h4>
+            <p>
+                We setup a standard installation, use <a href="https://github.com/TPC-Council/HammerDB/">HammerDB</a> and create 20 warehouses. Then a TPC-C benchmark is run.
+            </p>
+            <p>
+                See the <a href="https://github.com/green-coding-berlin/DBMS-Bench">README</a> for details.
+            </p>
+        </p>
+        <p>
+            <h4>Machine</h4>
+            <p><a href="https://docs.green-coding.berlin/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
+        </p>        
+        <p>
+            <h4>Links</h4>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8">Example measurement</a>
+            </div>
+            <div class="ui label label-margin-bottom">
+                <i class="external alternate icon"></i>
+                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/DBMS-bench&filename=usage_scenario_pg.yml&branch=&machine_id=7">Last 50 measurements</a>
             </div>
         </p>
     </div>
@@ -232,8 +352,8 @@ and re-run the measurement on a machine more apt for your comparison.
             <a href="https://metrics.green-coding.berlin/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8"><img src="https://api.green-coding.berlin/v1/badge/single/b5b9a3af-9817-4379-aeeb-d57268dd61c8?metric=RAPL"></a>
             <a href="https://metrics.green-coding.berlin/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8"><img src="https://api.green-coding.berlin/v1/badge/single/b5b9a3af-9817-4379-aeeb-d57268dd61c8?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/repositories.html?uri=https://github.com/green-coding-berlin/nextcloud-docker">
-            <i class="external alternate icon"></i> All measurements            
+        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/nextcloud-docker">
+            <i class="external alternate icon"></i> Show measurements            
         </a>
     </div>
     <div class="card">
@@ -254,7 +374,91 @@ and re-run the measurement on a machine more apt for your comparison.
             <a href="https://metrics.green-coding.berlin/stats.html?id=79b0ef85-19dd-4f16-b519-48f4c92c5092"><img src="https://api.green-coding.berlin/v1/badge/single/79b0ef85-19dd-4f16-b519-48f4c92c5092?metric=SCI"></a>
         </div>
         <a class="ui button" href="https://metrics.green-coding.berlin/index.html?repo=bakerydemo-gold-benchmark">
-            <i class="external alternate icon"></i> All measurements
+            <i class="external alternate icon"></i> Show measurements
+        </a>
+    </div>    
+    <div class="card">
+        <div class="image wordpress-card">
+            <img src="/img/projects/wordpress.png">
+        </div>
+        <div class="content wordpress-card">
+            <div class="header">Wordpress</div>
+            <div class="meta">
+                <a>Blog/CMS</a>
+                <span class="card-details">click for details</span>
+            </div>
+        </div>
+        <div class="content">
+            <h4>Badges</h4>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=AC"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=SCI"></a>
+        </div>
+        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
+            <i class="external alternate icon"></i> Show measurements
+        </a>
+    </div>
+    <div class="card">
+        <div class="image mysql-card">
+            <img src="/img/projects/mysql.webp">
+        </div>
+        <div class="content mysql-card">
+            <div class="header">MySQL</div>
+            <div class="meta">
+                <a>Relational Database</a>
+                <span class="card-details">click for details</span>
+            </div>
+        </div>
+        <div class="content">
+            <h4>Badges</h4>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=8ff4c68f-afc3-4189-a3c0-c8724d09bbbc"><img src="https://api.green-coding.berlin/v1/badge/single/8ff4c68f-afc3-4189-a3c0-c8724d09bbbc?metric=AC"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=8ff4c68f-afc3-4189-a3c0-c8724d09bbbc"><img src="https://api.green-coding.berlin/v1/badge/single/8ff4c68f-afc3-4189-a3c0-c8724d09bbbc?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=8ff4c68f-afc3-4189-a3c0-c8724d09bbbc"><img src="https://api.green-coding.berlin/v1/badge/single/8ff4c68f-afc3-4189-a3c0-c8724d09bbbc?metric=SCI"></a>
+        </div>
+        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
+            <i class="external alternate icon"></i> Show measurements
+        </a>
+    </div>
+    <div class="card">
+        <div class="image postgresql-card">
+            <img src="/img/projects/postgresql.webp">
+        </div>
+        <div class="content postgresql-card">
+            <div class="header">PostgreSQL</div>
+            <div class="meta">
+                <a>Relational Database</a>
+                <span class="card-details">click for details</span>
+            </div>
+        </div>
+        <div class="content">
+            <h4>Badges</h4>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8"><img src="https://api.green-coding.berlin/v1/badge/single/6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8?metric=AC"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8"><img src="https://api.green-coding.berlin/v1/badge/single/6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8"><img src="https://api.green-coding.berlin/v1/badge/single/6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8?metric=SCI"></a>
+        </div>
+        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
+            <i class="external alternate icon"></i> Show measurements
+        </a>
+    </div>
+        <div class="card">
+        <div class="image mariadb-card">
+            <img src="/img/projects/mariadb.webp">
+        </div>
+        <div class="content mariadb-card">
+            <div class="header">PostgreSQL</div>
+            <div class="meta">
+                <a>Relational Database</a>
+                <span class="card-details">click for details</span>
+            </div>
+        </div>
+        <div class="content">
+            <h4>Badges</h4>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac"><img src="https://api.green-coding.berlin/v1/badge/single/a991cf29-3b0d-4075-aa0f-0d73ccc883ac?metric=AC"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac"><img src="https://api.green-coding.berlin/v1/badge/single/a991cf29-3b0d-4075-aa0f-0d73ccc883ac?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.berlin/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac"><img src="https://api.green-coding.berlin/v1/badge/single/a991cf29-3b0d-4075-aa0f-0d73ccc883ac?metric=SCI"></a>
+        </div>
+        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
+            <i class="external alternate icon"></i> Show measurements
         </a>
     </div>
     <div class="card">
@@ -274,29 +478,8 @@ and re-run the measurement on a machine more apt for your comparison.
             <a href="https://metrics.green-coding.berlin/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a"><img src="https://api.green-coding.berlin/v1/badge/single/550d1875-1883-4d9a-8194-1fb408f7916a?metric=RAPL"></a>
             <a href="https://metrics.green-coding.berlin/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a"><img src="https://api.green-coding.berlin/v1/badge/single/550d1875-1883-4d9a-8194-1fb408f7916a?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/repositories.html?uri=https://github.com/green-coding-berlin/django">
-            <i class="external alternate icon"></i> All measurements
-        </a>
-    </div>
-    <div class="card">
-        <div class="image wordpress-card">
-            <img src="/img/projects/wordpress.png">
-        </div>
-        <div class="content wordpress-card">
-            <div class="header">Wordpress</div>
-            <div class="meta">
-                <a>Blog/CMS</a>
-                <span class="card-details">click for details</span>
-            </div>
-        </div>
-        <div class="content">
-            <h4>Badges</h4>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=AC"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=RAPL"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=SCI"></a>
-        </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/repositories.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
-            <i class="external alternate icon"></i> All measurements
+        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/django">
+            <i class="external alternate icon"></i> Show measurements
         </a>
     </div>
 </div>
