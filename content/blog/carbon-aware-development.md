@@ -1,14 +1,14 @@
 ---
-title: "Carbon Aware Development"
-date: 2023-10-09
+title: "Carbon Aware Development - (SCLA part 2)"
+date: 2023-10-10
 draft: false
 author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
 ---
 
-While writing the [“Software Life Cycle Assessment done in the wild”](/blog/software-life-cycle-assessment/) article I needed to develop a little server that could do three simple tasks. Because the article became to long I decided to separate the methodology how to develop with environmental impact in mind into a dedicated part. Feel free to head over to the [SLCA](/blog/software-life-cycle-assessment/) article and read the first part to see why we are developing this server.
+While writing the [“Software Life Cycle Assessment done in the wild”](/blog/software-life-cycle-assessment/) article I needed to develop a little server that could do three simple tasks. Because the article became too long I decided to separate the methodology how to develop with environmental impact in mind into a dedicated part. Feel free to head over to the [SLCA](/blog/software-life-cycle-assessment/) article and read the first part to see why we are developing this server.
 
-In this article I want to introduce the new concept of Carbon Aware Development. While there is some prior work on how to measure carbon of software, we at [Green Coding Berlin have loads on the topic](https://www.green-coding.berlin/blog/), there is no coherent framework, I am aware of, that encourages developers to think about their choices in regards to carbon from the beginning. The main focus, in this article, is on the **development** phase of the Software Life Cycle Assessment with solutions for the usage phase discussed in the other article. Developing software is an iterative process. Often decisions we take very early on have major consequences later on. The most obvious being the programming language and the underlying architecture everything is based on. While many factors are taken into account early on, carbon is nearly never one.
+In this article I want to introduce the new concept of Carbon Aware Development. While there is some prior work on how to measure carbon emissions of software, we at [Green Coding Berlin have loads on the topic](https://www.green-coding.berlin/blog/), there is no usable and tool based framework, I am aware of, that encourages developers to think about their choices in regards to carbon from the beginning (However there are theoretical ones like for instance [the GREENSOFT model](https://www.umwelt-campus.de/fileadmin/Umwelt-Campus/Greensoft/The_GREENSOFT_Model_A_reference_model_fo.pdf)). The main focus, in this article, is on the **development** phase of the Software Life Cycle Assessment with solutions for the usage phase discussed in the other article. Developing software is an iterative process. Often decisions we take very early on have major consequences later on. The most obvious being the programming language and the underlying architecture everything is based on. While many factors are taken into account early on, carbon is nearly never one.
 
 > **Carbon Aware Development** is a methodology in which resource usage is seen as a first class metric in evaluating software and implementation decisions. It acknowledges that software is always in ongoing development.
 >
@@ -29,7 +29,7 @@ Like pretty much with any project we start by creating a docker file and specify
 
 For this example we use a simple setup with a [FastAPI](https://fastapi.tiangolo.com/) and a database in the background. Because I am used to [PostgreSQL](https://www.postgresql.org/) my initial setup includes this but the way we are setting this up we can easily benchmark different backends in the future.
 
-The first step is to write a bench marking script for our backend which should cover as much functionality as possible. The basic idea is to have a script you can run to see how the resource usage has changed over time. Like this you can check what impact your modifications have. The usage benchmark script should reflect the usage of the software as closely as possible. Because of how software can be measured it is not sensible to have very short benchmarks. We solve this by repeating a certain call multiple times and then divide the resource usage to get a good approximation. You can see this in the bench marking code
+The first step is to write a benchmarking script for our backend which should cover as much functionality as possible. The basic idea is to have a script you can run to see how the resource usage has changed over time. Like this you can check what impact your modifications have. The usage benchmark script should reflect the usage of the software as closely as possible. Because of how software can be measured it is not sensible to have very short benchmarks. We solve this by repeating a certain call multiple times and then divide the resource usage to get a good approximation. You can see this in the benchmarking code
 
 ```python
 def get_data(url):
@@ -38,9 +38,9 @@ def get_data(url):
         response.raise_for_status()
 ```
 
-When writing the bench marking script it is sensible to not go to crazy with the input creation as this also consumes energy and while we can split it in the end it might make the result not as accurate.
+When writing the benchmarking script it is sensible to not go to crazy with the input creation as this also consumes energy and while we can split it in the end it might make the result not as accurate.
 
-Here is the complete bench marking script:
+Here is the complete benchmarking script:
 
 ```python
 import argparse
@@ -126,11 +126,11 @@ The full code can be found on GitHub.
 
 The code does not check for valid results as the motivation is to emulate the usage of the software. In this case all inputs are fixed length. It could be that the app behaves differently according to the data size or complexity given to it. In this case it makes sense to benchmark various scenarios and then do [curve fitting](https://en.wikipedia.org/wiki/Curve_fitting) to generate a general rule based on the inputs.
 
-Now we can use the [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool) to measure each part of our application while developing and see what is using how much resources in our benchmark case.
+Now we can use the [Green Metrics Tool](https://www.green-coding.berlin/projects/green-metrics-tool/) to measure each part of our application while developing and see what is using how much resources in our benchmark case.
 
 ## Usage
 
-Developing software is dynamic process and continuous refactoring is an essential part of writing good code. While writing there are constant decisions that need to be made: what library to use, what database, how to structure endpoints. In all these decisions we should be able to see the impact. Now that we have a proper bench marking setup we can run it after every major change or play with different implementations to see which ones give you the best tradeoff between the various aspects. But now you can put resource usage as a first class citizen.
+Developing software is dynamic process and continuous refactoring is an essential part of writing good code. While writing there are constant decisions that need to be made: what library to use, what database, how to structure endpoints. In all these decisions we should be able to see the impact. Now that we have a proper benchmarking setup we can run it after every major change or play with different implementations to see which ones give you the best tradeoff between the various aspects. But now you can put resource usage as a first class citizen.
 
 When developing I like to use the [PostgreSQL](https://www.postgresql.org/) [JSON](https://www.postgresql.org/docs/9.5/functions-json.html) store as the schema changes quite often and I don’t want to refactor the table all the time. I normally refactor this later on as I assume that column based operations are faster and more energy efficient. Now I can check this with real values using the GMT compare functionality.
 
