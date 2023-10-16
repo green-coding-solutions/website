@@ -292,7 +292,7 @@ and re-run the measurement on a machine more apt for your comparison.
 </div>
 <div class="ui modal" id="postgresql">
     <div class="header">
-        MariaDB
+        PostgreSQL
     </div>
     <div class="content">
         <p>
@@ -445,7 +445,7 @@ and re-run the measurement on a machine more apt for your comparison.
             <img src="/img/projects/mariadb.webp">
         </div>
         <div class="content mariadb-card">
-            <div class="header">PostgreSQL</div>
+            <div class="header">MariaDB</div>
             <div class="meta">
                 <a>Relational Database</a>
                 <span class="card-details">click for details</span>
