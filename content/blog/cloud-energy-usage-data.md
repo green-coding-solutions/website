@@ -17,7 +17,7 @@ with special regards to migitation mechanisms provided by Intel in our article [
 No cloud provider to our knowledge provides direct energy data of the machine. The only known thing are the 
 carbon reports by hyperscalers that show you the emissions for your services. 
 
-Emissions however may vary strongly, as they have another layer of complexity on top of the electricyity:
+Emissions however may vary strongly, as they have another layer of complexity on top of the electricity:
 - PUE of the datacenter
 - Cooling
 - carbon intensity of the grid

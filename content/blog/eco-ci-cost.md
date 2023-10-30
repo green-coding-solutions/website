@@ -1,15 +1,15 @@
 ---
-title: "The cost of testing pipelines"
-date: 2023-09-03
-draft: true
+title: "The Carbon Cost of Testing Pipelines"
+date: 2023-10-30
+draft: false
 author: "Dan Mateas"
 authorlink: "https://www.linkedin.com/in/dan-mateas-693634105/"
 ---
 
 
-We've asked ourselves, what is the cost in carbon of running tests and other CI workflows, especially in some real-world scenarios? To answer this, we've forked some popular open source repositories, added eco-ci to some of their workflows, and been monitoring their energy output. We've been looking at [curl](https://github.com/curl/curl), [django](https://github.com/django/django), and [flask](https://github.com/pallets/flask) on github, and [openmw](https://gitlab.com/OpenMW/openmw) on gitlab. For each of these we been measuring the workflow responsible for building and running tests. We've monitored these repositories for about a month and a half, running daily tests. 
+The carbon costs of running software can creep up on us. Individual processes may have small footprints, but as these processes become repeatable and automated these costs compound over time. CI pipeline processes are a good example of this, as they are often run daily, on a per-commit basis, or as parts of complex matrices with a lot of repitition. This is a common and good software development practice to follow to make sure you have a healthy and maintainable codebase - but what are the carbon consequences of this action? This is the question we are exploring today. 
 
-Let's look at the results in a chart. We are specifically looking at the average energy and time of a pipeline run, and then the total energy and time taken by the pipeline over the entire testing period.
+To do this, we forked four different popular open source repositories, picked one of their testing workflows, and integrated [Eco-CI](https://github.com/green-coding-berlin/eco-ci-energy-estimation) (our GitHub/Gitlab plugin for estimating CI energy usage) to measure that workflow. We had to make some small edits to the workflows to accommodate this, for example only running jobs for Linux machines (as Eco-CI is Linux only currently), and in some cases reducing workflows with many parallel jobs to a single selected job, simply so we do not run out of minutes on our GitHub public runner. We ran these workflows once a day for the last few months to gather data. Here I have selected a period of one month to look at (from September 20th - October 20th), and gathered the data for the **total energy** used for each repository. From there I have converted the mJ used into gCO2e. Let's take a look at the data.
 
 {{< rawhtml >}}
 <style>
@@ -30,285 +30,147 @@ Let's look at the results in a chart. We are specifically looking at the average
   }
 </style>
 <table>
+  <caption><b>Estimated Energy used by forked workflows between Sept. 20 - Oct. 20:</b></caption>
   <thead>
     <tr>
-      <th>repo</th>
-      <th>cpu</th>
-      <th>avg. energy</th>
-      <th>avg. time</th>
-      <th>avg. cpu util</th>
-      <th>Total Energy</th>
-      <th>Total Time</th>
-      <th>Joules/Pipeline Second</th>
-      <th>Joules/second @100% util</th>
+      <th>Repository (link to tested workflow) </th>
+      <th>Total Energy Used (mJ)</th>
+      <th>gCO2e emitted</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/curl&branch=master&workflow=61395528">curl</a></td>
-      <td>All Cpu's</td>
-      <td>15736 J</td>
-      <td>3417 s</td>
-      <td>46%</td>
-      <td>1274626 J</td>
-      <td>276789 s</td>
-      <td>4.6 J/s</td>
-      <td>10</td>
+      <td><a href="https://github.com/green-coding-berlin/django/blob/main/.github/workflows/schedule_tests.yml">django</a></td>
+      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/django&branch=main&workflow=60545072">130,938,955</a></td>
+      <td><b>16.07</b></td>
     </tr>
     <tr>
-      <td></td>
-      <td>8370C</td>
-      <td>12347 J</td>
-      <td>3132 s</td>
-      <td>45%</td>
-      <td>283998 J</td>
-      <td>72040 s</td>
-      <td>3.9 J/s</td>
-      <td>11.5</td>
+      <td><a href="https://github.com/green-coding-berlin/curl/blob/master/.github/workflows/linux.yml">curl</a></td>
+      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/django&branch=main&workflow=60545072">922,088,200</a></td>
+      <td><b>113.21</b></td>
     </tr>
     <tr>
-      <td></td>
-      <td>8171M</td>
-      <td>16822 J</td>
-      <td>3776 s</td>
-      <td>47%</td>
-      <td>218690 J</td>
-      <td>49088 s</td>
-      <td>4.4 J/s</td>
-      <td>10.6</td>
+      <td><a href="https://github.com/green-coding-berlin/flask/blob/main/.github/workflows/tests.yaml">flask</a></td>
+      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/flask&branch=main&workflow=61371506">79,174,102</a></td>
+      <td><b>9.72</b></td>
     </tr>
     <tr>
-      <td></td>
-      <td>E5-2673v4</td>
-      <td>18237 J</td>
-      <td>3707 s</td>
-      <td>47%</td>
-      <td>328282 J</td>
-      <td>66727 s</td>
-      <td>4.9 J/s</td>
-      <td>9.5</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>E5-2673v3</td>
-      <td>25672 J</td>
-      <td>3578 s</td>
-      <td>--%</td>
-      <td>128364 J</td>
-      <td>17891 s</td>
-      <td>7.1 J/s</td>
-      <td>--</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>8272CL</td>
-      <td>14331 J</td>
-      <td>3229 s</td>
-      <td>46%</td>
-      <td>315289 J</td>
-      <td>71043 s</td>
-      <td>4.3 J/s</td>
-      <td>10.6</td>
-    </tr>
-    <tr>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/django&branch=main&workflow=60545072">django</a></td>
-      <td>All Cpu's</td>
-      <td>2051 J</td>
-      <td>383 s</td>
-      <td>62%</td>
-      <td>256473 J</td>
-      <td>47910 s</td>
-      <td>5.3 J/s</td>
-      <td>11.6</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>8370C</td>
-      <td>833 J</td>
-      <td>163 s</td>
-      <td>62%</td>
-      <td>59200 J</td>
-      <td>11596 s</td>
-      <td>5.1 J/s</td>
-      <td>12.1</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>8171M</td>
-      <td>843 J</td>
-      <td>170 s</td>
-      <td>62%</td>
-      <td>54808 J</td>
-      <td>11022 s</td>
-      <td>4.9 J/s</td>
-      <td>12.6</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>E5-2673v4</td>
-      <td>1093 J</td>
-      <td>187 s</td>
-      <td>62%</td>
-      <td>54677 J</td>
-      <td>9357 s</td>
-      <td>5.8 J/s</td>
-      <td>10.6</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>E5-2673v3</td>
-      <td>1029 J</td>
-      <td>133 s</td>
-      <td>63%</td>
-      <td>9269 J</td>
-      <td>1198 s</td>
-      <td>7.7 J/s</td>
-      <td>8.1</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>8272CL</td>
-      <td>902 J</td>
-      <td>169 s</td>
-      <td>62%</td>
-      <td>78518 J</td>
-      <td>14737 s</td>
-      <td>5.3 J/s</td>
-      <td>11.6</td>
-    </tr>
-    <tr>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/flask&branch=main&workflow=61371506">flask</a></td>
-      <td>All Cpu's (minus 8171M)</td>
-      <td>989 J</td>
-      <td>239 s</td>
-      <td>43%</td>
-      <td>129588 J</td>
-      <td>31271 s</td>
-      <td>4.1 J/s</td>
-      <td>10.4</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>8370C</td>
-      <td>248 J</td>
-      <td>71 s</td>
-      <td>42%</td>
-      <td>28571 J</td>
-      <td>8113 s</td>
-      <td>3.5 J/s</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>8171M</td>
-      <td>--</td>
-      <td>--</td>
-      <td>--%</td>
-      <td>--</td>
-      <td>--</td>
-      <td>--</td>
-      <td>--</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>E5-2673v4</td>
-      <td>408 J</td>
-      <td>91 s</td>
-      <td>44%</td>
-      <td>47782 J</td>
-      <td>10700 s</td>
-      <td>4.4 J/s</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>E5-2673v3</td>
-      <td>294 J</td>
-      <td>45 s</td>
-      <td>45%</td>
-      <td>7648 J</td>
-      <td>1163 s</td>
-      <td>6.5 J/s</td>
-      <td>6.9</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>8272CL</td>
-      <td>367 J</td>
-      <td>91 s</td>
-      <td>43%</td>
-      <td>45586 J</td>
-      <td>11295 s</td>
-      <td>4.0 J/s</td>
-      <td>10.7</td>
-    </tr>
-    <tr>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/eco-ci/openmw&branch=master&workflow=47121734">openmw</a></td>
-      <td>EPYC_7B12</td>
-      <td></td>
-      <td></td>
-      <td>%</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://gitlab.com/green-coding-berlin/eco-ci/openmw/-/blob/master/.gitlab-ci.yml">openmw</a></td>
+      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/eco-ci/openmw&branch=master&workflow=47121734">2,788,046,795</a></td>
+      <td><b>342.31</b></td>
     </tr>
   </tbody>
 </table>
+<br/>
 {{< /rawhtml >}}
 
+To go from mJ to gCO2e, we used the formulas that can be found on [this page here](https://www.green-coding.berlin/co2-formulas/). You can read more details as to the why there, but in general the conversion goes like this:
 
-Openmw data needs date splitting to get values, flask 8171M has a timeout outlier
+```
+mJ -> J -> kWH -> gCO2e
+mJ / 1000 = J
+J / 3600 / 1000 = kWh
+kWh * 442 = gCO2e
 
-One important thing to note is that for django and flask, the average energy and time numbers are less interesting than one may want. For curl and openmw, the entire pipeline runs in one job, and therefore on one cpu. But for django and flask however, the pipelines were split into different jobs which were handled by different cpus, without consistency between runs. As we know about the ML model underlying Eco-CI, and as we've talked about last time in our (article on variance)[link-to-variance], the CPU used makes a very big difference in the energy output. So looking at different jobs spread across different CPU's is comparing a bit apples to oranges.
+so:
+(mJ / 1000  / 3600 / 1000) * 442 = gCO2e
+```
 
-[image of pipeline split into jobs/cpus] [curl / django]
+Of course, these numbers are just based on the samples that we measured and ran outselves once a day. In their original repositories, these workflows ran quite a bit more often and extensively. A good example of this is the curl workflow. This is the [original workflow file](https://github.com/curl/curl/blob/master/.github/workflows/linux.yml) on curl's repository. You can see that this workflow runs 19 parallel jobs, building curl with a variety of different protocols and then running its test suite.
 
-However, there is some interesting information we can glean by looking at the total energy and time used.  Looking at the relationship between energy and time, we can for each pipeline, and even for each CPU, get a value for Joules per pipeline second spent. This is very nice actually, as it can give us an idea of what the cost is.
+{{< rawhtml >}}
+<div style="display: flex; justify-content: center;">
 
+<div style="flex: 1; margin: 10px;">
+<figure>
+    <img class="ui large image" src="/img/blog/cost_curl_multijobs_1.webp" alt="All Curl Jobs" loading="lazy">
+</figure>
 
-REAL WORLD: now that we have Watts (joules rate) - look at django/openmw FULL real world runs, and estimate a full final energy cost
+<figure>
+    <img class="ui large image" src="/img/blog/cost_curl_multijobs_2.webp" alt="All Curl Jobs" loading="lazy">
+</figure>
+</div>
 
-Django - July - 6818 seconds
-        - Seriously?
+</div>
+{{< /rawhtml >}}
 
-```python
-import requests
-from datetime import datetime, timedelta
+Since we didn't measure the full workflow, we have to make an approximation for the full workflow. It will be a back-of-the-envelope type estimate, but we can scale the number we measured up to all the jobs and runs that actually happened on the curl repository. The job we measured (libressl) takes about an hour, where the full workflow uses about 600 minutes total. Additionally, in the curl repository this workflow runs on a per-push basis. [Here you can see](https://github.com/curl/curl/actions/workflows/linux.yml?query=created%3A%3C2023-10-21&created%3A%3E2023-09-20) all the runs during the Sep.20 - Oct 20 period. Ignoring all the skipped runs, it amounts to 582 runs total. Since the energy total that we calculated was based on 31 runs, our total energy estimated would be (measured energy * 10) * (582/31) = **21254.26 gCO2e**. 
 
-repository = "django/django"
-start_time = "2023-01-01T00:00:00Z"
-end_time = "2023-08-01T00:00:00Z"
+My apologies to the maintainers of curl - I'm not trying to call you out specifically, just looking at a real-world example of the carbon cost of a complete, complex, and well-built (from an automation perspective) CI suite.
 
-workflow_endpoint = f"https://api.github.com/repos/{repository}/actions/workflows"
-response = requests.get(workflow_endpoint)
-print(response.json())
-workflows = response.json()["workflows"]
-
-total_seconds = 0
-
-for workflow in workflows:
-    workflow_id = workflow["id"]
-    pipeline_endpoint = f"https://api.github.com/repos/{repository}/actions/workflows/{workflow_id}/runs"
-    response = requests.get(pipeline_endpoint)
-    pipelines = response.json()["workflow_runs"]
-
-    for pipeline in pipelines:
-        pipeline_start_time = pipeline["created_at"]
-        pipeline_end_time = pipeline["updated_at"]
-        
-        if start_time <= pipeline_start_time <= end_time:
-            start_dt = datetime.strptime(pipeline_start_time, "%Y-%m-%dT%H:%M:%SZ")
-            end_dt = datetime.strptime(pipeline_end_time, "%Y-%m-%dT%H:%M:%SZ")
-            duration_seconds = (end_dt - start_dt).total_seconds()
-            total_seconds += duration_seconds
-
-print(f"Total seconds used: {total_seconds:.2f} seconds")
+Doing the same calculation for all the repositories measured above, we have:
+```
+curl: (113.21 * 10) * (582/31) = 21254.26 gCO2e
+django: (16.07 * 4.6) * (24/31) = 57.23 gCO2e
+flask: (9.72 * 1.2 ) * (17/ 31) = 6.40  gCO2e
+openmw: (342.31 * 1.5) * (178/31) = 2948.28 gCO2e
 ```
 
 
-- [ ] Q: To do a further breakdown, we need to subdivide the energy measurements into jobs that ran per cpu. Will this actually give us any insight?
+We have also used [this calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) to put these numbers in some real-world contexts: the amount of miles driven by an average car to also emit this amount of gas, and the amount of carbon used to charge a smartphone from empty to full, and equivalent CO2 emissions from gallons of gasoline used. This helps make these values feel more palpable. Our final estimation of the total gCO2e for each repository for their testing workflow is as follows : 
 
-Conclusions:
-On average, seems to be about ~5 Joules/s - or 1/20th of a 100W light bulb.
-Higher CPU % 
+{{< rawhtml >}}
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+<table>
+  <caption><b>Total Estimated Carbon Cost of Testing Workflow for a Month</b></caption>
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Estimated gCO2e consumed </th>
+      <th>Miles Driven by Car</th>
+      <th>Smartphones Charged to Full</th>
+      <th>Gallons of Gasoline Consumed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>django</td>
+      <td><b>57.23</b></td>
+      <td>0.147</td>
+      <td>7</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>curl</td>
+      <td><b>21,254.26</b></td>
+      <td>54.5</td>
+      <td>2.4</td>
+      <td>2,585</td>
+    </tr>
+    <tr>
+      <td>flask</td>
+      <td><b>6.40</b></td>
+      <td>0.016</td>
+      <td>0.0007</td>
+      <td>0.779</td>
+    </tr>
+    <tr>
+      <td>openmw</td>
+      <td><b>2,948.28</b></td>
+      <td>7.6</td>
+      <td>0.332</td>
+      <td>359</td>
+    </tr>
+
+  </tbody>
+</table>
+<br/>
+{{< /rawhtml >}}
+
+As we can see there's a very wide range here - and the first and immediate pattern I see is in how often these workflows are run. For django and flask - these workflows ran less than once a day. For openmw and curl, they're on a per push basis. As usual our advice is generally to run pipelines only when really needed - running test suites per pull-request as oppossed to per-push is a good start, and often achieves the same level of quality control. While we do not want people to stop testing their software, we would simply like to shed some light on the impacts, start a discussion, and hopefully make people a bit more aware and attentive as to which processes they put on an automation and why. 
