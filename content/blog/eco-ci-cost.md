@@ -9,7 +9,43 @@ authorlink: "https://www.linkedin.com/in/dan-mateas-693634105/"
 
 The carbon costs of running software can creep up on us. Individual processes may have small footprints, but as these processes become repeatable and automated these costs compound over time. CI pipeline processes are a good example of this, as they are often run daily, on a per-commit basis, or as parts of complex matrices with a lot of repitition. This is a common and good software development practice to follow to make sure you have a healthy and maintainable codebase - but what are the carbon consequences of this action? This is the question we are exploring today. 
 
-To do this, we forked four different popular open source repositories, picked one of their testing workflows, and integrated [Eco-CI](https://github.com/green-coding-berlin/eco-ci-energy-estimation) (our GitHub/Gitlab plugin for estimating CI energy usage) to measure that workflow. We had to make some small edits to the workflows to accommodate this, for example only running jobs for Linux machines (as Eco-CI is Linux only currently), and in some cases reducing workflows with many parallel jobs to a single selected job, simply so we do not run out of minutes on our GitHub public runner. We ran these workflows once a day for the last few months to gather data. Here I have selected a period of one month to look at (from September 20th - October 20th), and gathered the data for the **total energy** used for each repository. From there I have converted the mJ used into gCO2e. Let's take a look at the data.
+To do this, we forked four different popular open source repositories, picked one of their testing workflows, and integrated [Eco-CI](https://github.com/green-coding-berlin/eco-ci-energy-estimation) to measure that workflow. Eco-CI is our GitHub/Gitlab plugin which measures the CPU-utilization of a pipeline while its running, detects underlying hardware specs of the virtual machine, and based on this information estimates the energy usage of the CI job. It is easy to integrate into any linux-based CI Github/Gitlab job. Here is an example of how we implemented it into the django tests workflow:
+
+```yaml
+ javascript-tests:
+    runs-on: ubuntu-latest
+    name: JavaScript tests
+    steps:
+      - name: Eco-CI Init
+        uses: green-coding-berlin/eco-ci-energy-estimation@main
+        with:
+          task: start-measurement
+
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+          cache-dependency-path: '**/package.json'
+      - run: npm install
+      - run: npm test
+
+      - name: Eco-CI Measurement
+        uses: green-coding-berlin/eco-ci-energy-estimation@main
+        with:
+          task: get-measurement
+          label: 'npm tests'
+
+      - name: Eco-CI Results
+        uses: green-coding-berlin/eco-ci-energy-estimation@main
+        with:
+          task: display-results
+
+```
+
+We had to make a few small adjustments to some of the workflows to accommodate this, for example only running jobs for Linux machines (as Eco-CI is Linux only currently), and in some cases reducing workflows with many parallel jobs to a single selected job, simply so we do not run out of minutes on our GitHub public runner. We ran these tests workflows once a day for the last few months to gather data. Here I have selected a period of one month to look at (from September 20th - October 20th), and gathered the data for the **total energy** used for each repository. From there I have converted the mJ used into gCO2e. Let's take a look at the data.
 
 {{< rawhtml >}}
 <style>
@@ -83,11 +119,7 @@ Of course, these numbers are just based on the samples that we measured and ran 
 
 <div style="flex: 1; margin: 10px;">
 <figure>
-    <img class="ui large image" src="/img/blog/cost_curl_multijobs_1.webp" alt="All Curl Jobs" loading="lazy">
-</figure>
-
-<figure>
-    <img class="ui large image" src="/img/blog/cost_curl_multijobs_2.webp" alt="All Curl Jobs" loading="lazy">
+    <img class="ui large image" src="/img/blog/curl_cost_multijobs.webp" alt="All Curl Jobs" loading="lazy">
 </figure>
 </div>
 
@@ -150,22 +182,22 @@ We have also used [this calculator](https://www.epa.gov/energy/greenhouse-gas-eq
       <td>curl</td>
       <td><b>21,254.26</b></td>
       <td>54.5</td>
-      <td>2.4</td>
       <td>2,585</td>
+      <td>2.4</td>
     </tr>
     <tr>
       <td>flask</td>
       <td><b>6.40</b></td>
       <td>0.016</td>
-      <td>0.0007</td>
       <td>0.779</td>
+      <td>0.0007</td>
     </tr>
     <tr>
       <td>openmw</td>
       <td><b>2,948.28</b></td>
       <td>7.6</td>
-      <td>0.332</td>
       <td>359</td>
+      <td>0.332</td>
     </tr>
 
   </tbody>
