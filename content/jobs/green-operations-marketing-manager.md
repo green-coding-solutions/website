@@ -60,7 +60,6 @@ The job is possible as part-time or full-time (32 hours).
 &nbsp;
 
 ### Home-office or in office?
-### Home-office or in office?
 We are a home-office first company and the job can also be done remote.
 
 However, if you are based in Berlin we invite you to join our weekly regular office days with our team. 
