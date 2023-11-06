@@ -1,9 +1,9 @@
 ---
 title: "Green Operations and Marketing Manager"
-description: "Open role for Operations and Marketing Manager at Green Coding Berlin GmbH to work on sustainable software."
+description: "Open role for Green Operations and Marketing Manager at Green Coding Berlin GmbH to work on sustainable software."
 ---
 
-We are seeking an experienced and dynamic individual to join our organization as a Operations and Marketing Manager (OMM).
+We are seeking an experienced and dynamic individual to join our organization as a (Green) Operations and Marketing Manager (OMM).
 The OMM will be responsible for overseeing and optimizing our company's day-to-day operations, fundraising and general customer/ client outreach.
 
 At Green Coding Berlin we create a green software community and ecosystem in Berlin.
@@ -60,14 +60,12 @@ The job is possible as part-time or full-time (32 hours).
 &nbsp;
 
 ### Home-office or in office?
-We are a home-office first company, but we do not offer remote work. You have to be based in Berlin or be able to commute in.
+### Home-office or in office?
+We are a home-office first company and the job can also be done remote.
 
-The reason being that we have a strong focus on weekly in-person creative meetups, where the whole team meets and presents
-current approaches, new ideas and concepts that we all evaluate and iterate together.
+However, if you are based in Berlin we invite you to join our weekly regular office days with our team. 
 
-So expect 1-2 days in the office per week for 4-5 hours each.
-
-During the onboarding however, which can take around 1-2 months, we usually start for the first weeks with 5 office days a week and then move to the standard home-office mode asap.
+So expect 1 (optional) office day in Berlin if you live here or want / can commute in.
 
 &nbsp;
 
