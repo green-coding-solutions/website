@@ -174,7 +174,7 @@ Interested?
     <a href="mailto:info@green-coding.berlin"><span>Contact Us</span></a>
 </div>
 <br>
-<center>Or see more examples on our <a href="/work-with-us">Work with us</a> page.</center>
+<center>Or see more examples on our <a href="/services/">Services</a> page.</center>
 {{</ rawhtml >}}
 
 
