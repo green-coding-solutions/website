@@ -4,10 +4,10 @@ description: "Open role for Junior Green Software Developer at Green Coding Berl
 draft: true
 ---
 
-At Green Coding Berlin we create a green software community and ecosystem in Berlin. 
+At Green Coding Berlin we create a green software community and ecosystem in Berlin.
 
 Our goal is to shape the industry for the better in terms of using software in a sustainable way.
-We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and 
+We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and
 with strong planning to avoid rebound effects.
 
 Therefore we create tools to measure the energy use of software in CI-Build-Pipelines, VMs, Containers and User Desktop environments.
@@ -42,7 +42,7 @@ We really like this creative and architectural process and believe you will do t
 
 ### Your qualification:
 
-We believe the role is best filled with at least 6-12 months experience as a professional software developer. 
+We believe the role is best filled with at least 6-12 months experience as a professional software developer.
 
 This is the skillset we think is very helpful to have:
 - HTML
@@ -64,7 +64,7 @@ The green software community is a very friendly and uncompetetive bunch.
 Here is a list of befriended organizations and communities we work with or contribute to:
 - [KDE Eco](https://eco.kde.org/)
 - [The Green Web Foundation](https://www.thegreenwebfoundation.org/)
-- Ironhack Berlin 
+- Ironhack Berlin
 - WBS Coding School Berlin
 
 ### Working hours and pay
@@ -87,7 +87,7 @@ During the onboarding however, which can take around 1-2 months, we usually star
 &nbsp;
 
 ### How to apply
-Just shoot us an email at jobs@green-coding.berlin with a quick intro and why you would like to join our team.
+Just shoot us an email at jobs@green-coding.org with a quick intro and why you would like to join our team.
 
 Please also include a quick comment on your skills regarding the aforementioned skills.
 
