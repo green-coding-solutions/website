@@ -103,7 +103,7 @@ Unser Ziel ist es, die Branche im Hinblick auf die nachhaltige Nutzung von Softw
 
 Daher erstellen wir Tools zur Messung des Energieverbrauchs von Software in CI-Build-Pipelines, VMs, Containern und Desktop-Umgebungen. Alle unsere Software ist Freie und Open-Source-Software, die von jedermann genutzt werden kann.
 
-Unser Flaggschiff ist eine [Open-Source-Toolchain](https://github.com/green-coding-berlin/green-metrics-tool) für grüne Software, die es Ihnen ermöglicht, den Energieverbrauch beliebiger Software in typischen realen Anwendungsszenarien zu quantifizieren.
+Unser aktuelles Haupt-Produkt ist eine [Open-Source-Toolchain](https://github.com/green-coding-berlin/green-metrics-tool) für grüne Software, die es ermöglicht, den Energieverbrauch beliebiger Software in typischen realen Anwendungsszenarien zu quantifizieren um die Transparenz von Software bzgl. Ressourcenvebrauch zu ermöglichen.
 
 &nbsp;
 
@@ -117,13 +117,14 @@ Unser Flaggschiff ist eine [Open-Source-Toolchain](https://github.com/green-codi
 
 &nbsp;
 
-### Deine QUALIFIKATIONEN:
+### DEINE QUALIFIKATIONEN:
 - Nachweisbare Erfahrung in einer Führungsrolle, vorzugsweise in einer operativen und/oder Marketingposition oder in einer ähnlichen Kapazität.
 - Starkes kaufmännisches Verständnis und strategisches Denken, mit der Fähigkeit, Visionen in umsetzbare Pläne zu übersetzen.
 - Ausgezeichnete Führungs- und Managementfähigkeiten, mit nachgewiesenen Erfolgen beim Aufbau leistungsfähiger Teams.
 - Außergewöhnliche Kommunikations- und zwischenmenschliche Fähigkeiten, mit der Fähigkeit, effektiv mit Stakeholdern auf allen Ebenen zusammenzuarbeiten.
 
-Bitte beachten Sie, dass die oben genannte Liste von Verantwortlichkeiten und Qualifikationen nicht erschöpfend ist und nicht alle Punkte erforderlich sind. Die spezifischen Anforderungen und Erwartungen können je nach Art Ihrer Qualifikationen variieren.
+Bitte beachte, dass die oben genannte Liste von Verantwortlichkeiten und Qualifikationen nicht erschöpfend ist und nicht alle Punkte erforderlich sind. 
+Die spezifischen Anforderungen und Erwartungen können je nach Art Deiner Qualifikationen variieren.
 
 &nbsp;
 
@@ -146,28 +147,27 @@ Die Arbeit ist als Teilzeit oder Vollzeit möglich (32 Stunden).
 &nbsp;
 
 ### HOME-OFFICE ODER IM BÜRO?
-Wir als Unternehmen bevozugen Home-Office, bieten jedoch keine Remote-Arbeit an. Du musst in Berlin ansässig sein oder pendeln können.
+Wir sind ein Home-Office-First Team und der Job ist auch remote möglich.
 
-Der Grund dafür ist, dass wir großen Wert auf wöchentliche kreative Präsenztreffen legen, bei denen das gesamte Team zusammenkommt und aktuelle Ansätze, neue Ideen und Konzepte präsentiert, die wir alle gemeinsam bewerten und iterieren. Auch gehen wir einmal die Woche zusammen essen.
+Wenn du jedoch in Berlin wohnst, laden wir dich ein, an unseren regelmäßigen wöchentlichen Bürotagen mit unserem Team teilzunehmen.
 
-Erwarten werden also 1-2 Tage pro Woche für 4-5 Stunden im Büro in Berlin.
-
-Während der Einarbeitungsphase, die etwa 1-2 Monate dauern kann, beginnen wir jedoch in den ersten Wochen normalerweise mit 5 Bürotagen pro Woche und wechseln dann so schnell wie möglich in den Standard-Home-Office-Modus.
+Erwarte also 1 (optionalen) Bürotag in Berlin, wenn du hier wohnst oder pendeln willst/kannst.
 
 &nbsp;
 
 ### VERPFLICHTUNG ZU DIVERSITÄT UND INKLUSION
-Darüber hinaus setzen wir uns für die Förderung von Diversität und Inklusion in unserer Organisation ein. Wir glauben, dass ein vielfältiges Team eine breite Palette von Perspektiven und Ideen mit sich bringt. Wir ermutigen Personen aus verschiedenen Hintergründen aktiv, sich auf die Position zu bewerben.
+Wir setzen uns für die Förderung von Diversität und Inklusion in unserem Team ein. 
+
+Wir glauben, dass ein vielfältiges Team eine breite Palette von Perspektiven und Ideen mit sich bringt. 
+Wir ermutigen Personen aus verschiedenen Hintergründen aktiv, sich auf die Position zu bewerben.
 
 &nbsp;
 
 ### WIE SIE SICH BEWERBEN KÖNNEN
-Schicken Sie uns einfach eine E-Mail an jobs@green-coding.berlin mit einer kurzen Vorstellung und warum Sie Teil unseres Teams werden möchten.
+Schicken Sie uns einfach eine E-Mail an jobs@green-coding.berlin mit einer kurzen Vorstellung und warum Du Teil unseres Teams werden möchtest.
 
-Bitte fügen Sie auch einen kurzen Kommentar zu Ihren Fähigkeiten bezüglich der oben genannten Fähigkeiten hinzu.
+Bitte füge auch einen kurzen Kommentar zu Deinen Fähigkeiten bezüglich der oben genannten Fähigkeiten hinzu.
 
-Für uns ist auch sehr interessant, ob Sie aktuelle Erfahrungen mit nachhaltigem Software-Design haben und/oder was Ihr Interesse in diesem Bereich antreibt.
+Für uns ist auch sehr interessant, ob Du aktuelle Erfahrungen mit nachhaltigem Software-Design hast und/oder was Dein Interesse in diesem Bereich antreibt.
 
-Ein Link zu Ihrem LinkedIn-Profil ist in der Regel hilfreich.
-
-Es besteht kein Bedarf an formellen Unterlagen. Wenn Sie diese jedoch senden möchten, können Sie sie gerne beifügen.
+Ein Link zu Deinem LinkedIn-Profil ist immer hilfreich :)
