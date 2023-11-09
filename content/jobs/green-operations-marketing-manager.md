@@ -80,7 +80,7 @@ In addition, we are committed to promoting diversity and inclusion in our organi
 &nbsp;
 
 ### How to apply
-Just shoot us an email at jobs@green-coding.org with a quick intro and why you would like to join our team.
+Just shoot us an email at jobs@green-coding.berlin with a quick intro and why you would like to join our team.
 
 Please also include a quick comment on your skills regarding the aforementioned skills.
 
@@ -162,7 +162,7 @@ Darüber hinaus setzen wir uns für die Förderung von Diversität und Inklusion
 &nbsp;
 
 ### WIE SIE SICH BEWERBEN KÖNNEN
-Schicken Sie uns einfach eine E-Mail an jobs@green-coding.org mit einer kurzen Vorstellung und warum Sie Teil unseres Teams werden möchten.
+Schicken Sie uns einfach eine E-Mail an jobs@green-coding.berlin mit einer kurzen Vorstellung und warum Sie Teil unseres Teams werden möchten.
 
 Bitte fügen Sie auch einen kurzen Kommentar zu Ihren Fähigkeiten bezüglich der oben genannten Fähigkeiten hinzu.
 
