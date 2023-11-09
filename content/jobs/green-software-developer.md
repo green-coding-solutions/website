@@ -108,7 +108,7 @@ During the onboarding however, which can take around 1-2 months, we usually star
 &nbsp;
 
 ### How to apply
-Just shoot us an email at jobs@green-coding.org with a quick intro and why you would like to join our team.
+Just shoot us an email at jobs@green-coding.berlin with a quick intro and why you would like to join our team.
 
 Please also include a quick comment on your skills regarding the aforementioned skills.
 
