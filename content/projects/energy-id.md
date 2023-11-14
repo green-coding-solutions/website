@@ -120,7 +120,7 @@ and re-run the measurement on a machine more apt for your comparison.
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/index.html?repo=bakerydemo-gold-benchmark">Last 50 measurements</a>
+                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=bakerydemo-gold-benchmark">Last 50 measurements</a>
             </div>
         </p>
     </div>
