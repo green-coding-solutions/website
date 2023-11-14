@@ -79,6 +79,8 @@ also possible to get only results for part of the CI run.
 
 {{< /rawhtml >}}
 
+&nbsp;
+
 --- 
 
 ## Github Action - Eco CI Activity Checker
@@ -118,6 +120,34 @@ The Eco CI Activity checker skips the test run then and thus saves energy and CO
 </a>
 {{< /rawhtml >}}
 
+&nbsp;
+
+---
+
+## Gitlab Plugin
+
+Please for Gitlab our main central [Github repository documentation](https://github.com/green-coding-berlin/eco-ci-energy-estimation/blob/main/README.md#gitlab) which talks about the Gitlab functionality.
+
+{{< rawhtml >}} 
+<a class="ui labeled button" href="/blog/eco-ci-gitlab-release/">
+    <div class="ui button">
+        <i class="book icon"></i>
+    </div>
+    <span class="ui basic label">
+        Blog arcticle
+    </span>
+</a>
+<a class="ui labeled button" href="https://github.com/green-coding-berlin/eco-ci-energy-estimation/blob/main/README.md#gitlab">
+    <div class="ui button">
+        <i class="code branch icon"></i>
+    </div>
+    <span class="ui basic label">
+        Github Repository (for Gitlab documentation)
+    </span>
+</a>
+{{< /rawhtml >}}
+
+&nbsp;
 
 ---
 
