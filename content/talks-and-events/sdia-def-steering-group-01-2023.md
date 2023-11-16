@@ -6,8 +6,8 @@ draft: false
 eventtype: "Conference"
 eventlink: ""
 eventname: "SDIA - Digital Environmental Footprint (Jan. 2023)"
-eventimg: '/img/meetups-and-events/sdia-def-2023-01.webp'
-eventimg600w: "/img/meetups-and-events/sdia-def-2023-01-600w.webp"
+eventimg: '/img/talks-and-events/sdia-def-2023-01.webp'
+eventimg600w: "/img/talks-and-events/sdia-def-2023-01-600w.webp"
 
 ---
 

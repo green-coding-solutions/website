@@ -6,8 +6,8 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/287887811/"
 eventname: "Sustainable Software - KDE Eco [x] Green Coding Berlin"
-eventimg: "/img/meetups-and-events/meetup-kde.webp"
-eventimg600w: "/img/meetups-and-events/meetup-kde-600w.webp"
+eventimg: "/img/talks-and-events/meetup-kde.webp"
+eventimg600w: "/img/talks-and-events/meetup-kde-600w.webp"
 
 ---
 

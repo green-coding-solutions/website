@@ -6,8 +6,8 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/290173550/"
 eventname: "Weihnachtsmarkt Social for Green Software folks"
-eventimg: "/img/meetups-and-events/weihnachtsmarkt-social-2022.webp"
-eventimg600w: '/img/meetups-and-events/weihnachtsmarkt-social-2022-600w.webp'
+eventimg: "/img/talks-and-events/weihnachtsmarkt-social-2022.webp"
+eventimg600w: '/img/talks-and-events/weihnachtsmarkt-social-2022-600w.webp'
 ---
 
 The year is ending and christmas is coming!

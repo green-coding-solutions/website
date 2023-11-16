@@ -6,8 +6,8 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/293492344/"
 eventname: "Green Infrastructure Meetup GfK [x] Green Coding Berlin"
-eventimg: "/img/meetups-and-events/green-coding-infrastructure-gfk-2023-05.webp"
-eventimg600w: '/img/meetups-and-events/green-coding-infrastructure-gfk-2023-05-600w.webp'
+eventimg: "/img/talks-and-events/green-coding-infrastructure-gfk-2023-05.webp"
+eventimg600w: '/img/talks-and-events/green-coding-infrastructure-gfk-2023-05-600w.webp'
 ---
 
 Hey Green Coders!

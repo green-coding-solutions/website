@@ -5,7 +5,7 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/de-DE/green-coding/events/282895263/"
 eventname: "Green Projects: Cosmos & Sustain.All"
-eventimg: '/img/meetups-and-events/cosmos-sustainall.webp'
+eventimg: '/img/talks-and-events/cosmos-sustainall.webp'
 ---
 
 Our first GreenProjects meeting will host two awesome projects “Cosmos” and “Sustain.ALL”. These projects have set their missions to tackle specific problems to fight global warming and climate change. They will present their approach and mission to heal the world.

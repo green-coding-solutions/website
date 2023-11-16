@@ -6,8 +6,8 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/287352713/"
 eventname: "Greening Digital - The Green Web Foundation [x] Green Coding Berlin"
-eventimg: "/img/meetups-and-events/greening-digital-with-tgwf.webp"
-eventimg600w: "/img/meetups-and-events/greening-digital-with-tgwf-600w.webp"
+eventimg: "/img/talks-and-events/greening-digital-with-tgwf.webp"
+eventimg600w: "/img/talks-and-events/greening-digital-with-tgwf-600w.webp"
 
 ---
 
