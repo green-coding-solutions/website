@@ -6,7 +6,7 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/283611827/"
 eventname: "The GreenOps Approach of Google Cloud"
-eventimg: '/img/meetups-and-events/green-ops-of-google-cloud.webp'
+eventimg: '/img/talks-and-events/green-ops-of-google-cloud.webp'
 ---
 
 

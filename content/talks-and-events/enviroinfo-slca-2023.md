@@ -5,8 +5,8 @@ publishDate: 2023-10-02
 draft: false
 eventtype: "Conference"
 eventlink: "https://www.enviroinfo2023.eu/programme/schedule-overview/wednesday-schedule/#1894286d"
-eventimg: "/img/meetups-and-events/enviroinfo-slca-2023.webp"
-eventimg600w: '/img/meetups-and-events/enviroinfo-slca-2023.webp'
+eventimg: "/img/talks-and-events/enviroinfo-slca-2023.webp"
+eventimg600w: '/img/talks-and-events/enviroinfo-slca-2023.webp'
 ---
 
 We are speaking at the Enviroinfo conference in Garching (near Munich) this year. (Talk will be in German)

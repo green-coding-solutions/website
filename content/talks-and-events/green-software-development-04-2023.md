@@ -6,8 +6,8 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/de-DE/green-software-development-manifesto/events/292555622/"
 eventname: "Green Software Development Community (Apr. 2023)"
-eventimg: '/img/meetups-and-events/green-software-development-04-2023.webp'
-eventimg600w: "/img/meetups-and-events/green-software-development-04-2023-600w.webp"
+eventimg: '/img/talks-and-events/green-software-development-04-2023.webp'
+eventimg600w: "/img/talks-and-events/green-software-development-04-2023-600w.webp"
 
 ---
 

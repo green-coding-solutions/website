@@ -6,7 +6,7 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/284904138/"
 eventname: "What is green coding?"
-eventimg: '/img/meetups-and-events/what-is-green-coding.webp'
+eventimg: '/img/talks-and-events/what-is-green-coding.webp'
 ---
 
 

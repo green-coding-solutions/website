@@ -6,8 +6,8 @@ draft: false
 eventtype: "Conference"
 eventlink: "https://fosdem.org/2023/schedule/event/energy_green_software_engineering/"
 eventname: "FOSDEM 2023 - Green software engineering"
-eventimg: '/img/meetups-and-events/fosdem-2023.webp'
-eventimg600w: "/img/meetups-and-events/fosdem-2023-600w.webp"
+eventimg: '/img/talks-and-events/fosdem-2023.webp'
+eventimg600w: "/img/talks-and-events/fosdem-2023-600w.webp"
 
 ---
 

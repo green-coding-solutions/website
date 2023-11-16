@@ -6,8 +6,8 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-software-development-karlsruhe/events/291091832/"
 eventname: "GSD Meetup Karlsruhe - Open Source Tools für klimafreundliche Software"
-eventimg: '/img/meetups-and-events/gsd-meetup-karlsruhe-2023-01.webp'
-eventimg600w: "/img/meetups-and-events/gsd-meetup-karlsruhe-2023-01-600w.webp"
+eventimg: '/img/talks-and-events/gsd-meetup-karlsruhe-2023-01.webp'
+eventimg600w: "/img/talks-and-events/gsd-meetup-karlsruhe-2023-01-600w.webp"
 
 ---
 

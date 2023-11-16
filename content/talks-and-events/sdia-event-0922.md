@@ -5,8 +5,8 @@ draft: false
 eventtype: "Event"
 eventlink: "https://sdialliance.org/landing/softawere-hackathon/"
 eventname: "SDIA Berlin Community Event"
-eventimg: "/img/meetups-and-events/sdia-event-0922.webp"
-eventimg600w: '/img/meetups-and-events/sdia-event-0922-600w.webp'
+eventimg: "/img/talks-and-events/sdia-event-0922.webp"
+eventimg600w: '/img/talks-and-events/sdia-event-0922-600w.webp'
 ---
 
 We have been invited to speak and give a workshop on the topic of measuring and quantifying the energy use of software!

@@ -6,8 +6,8 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/285739714/"
 eventname: "Green Coding Basics - carbon savings and rebound effects for users and web devs"
-eventimg: "/img/meetups-and-events/green-coding-basics.webp"
-eventimg600w: "/img/meetups-and-events/green-coding-basics-600w.webp"
+eventimg: "/img/talks-and-events/green-coding-basics.webp"
+eventimg600w: "/img/talks-and-events/green-coding-basics-600w.webp"
 ---
 
 We are proud to announce our first in-person Meetup where you can meet like minded green software engineers and our team.

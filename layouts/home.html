@@ -137,24 +137,24 @@
     </div>
 </section><!-- end team -->
 <section class="works-container bg-two">
-    <div id="nav-meetups"></div>
+    <div id="nav-events"></div>
     <div class="section-two bottom-works">
         <div class="works-header">
-            <h2><div class="title-two">Meetups & Events</div></h2>
+            <h2><div class="title-two">Talks & Events</div></h2>
             <div class="separator">
                 <div class="line line-2"></div>
             </div>
             <div class="data-content-two">
                 Browse through our latest events and watch recordings (if available :) )<br>
-                For a full list: 👉 <a href="/meetups-and-events" style="color: white; text-decoration: underline;">All
-                our Meetups & Events</a>
+                For a full list: 👉 <a href="/talks-and-events" style="color: white; text-decoration: underline;">All
+                our Talks & Events</a>
             </div>
         </div>
         <div id="portfolio" class="container">
             <div class="section portfoliocontent">
                 <div id="container2" class="clearfix">
                     <div class="inici"></div>
-                    {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "meetups-and-events" ) ) }}
+                    {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "talks-and-events" ) ) }}
                     <div class="element talks">
                         <a href="{{.Permalink}}">
                             <div class="ch-grid">

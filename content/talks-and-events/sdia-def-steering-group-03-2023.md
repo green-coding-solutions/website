@@ -6,8 +6,8 @@ draft: false
 eventtype: "Conference"
 eventlink: "https://www.linkedin.com/feed/update/urn:li:activity:7043980317421895681/"
 eventname: "SDIA - Digital Environmental Footprint (Mar. 2023)"
-eventimg: '/img/meetups-and-events/sdia-def-2023-03.webp'
-eventimg600w: "/img/meetups-and-events/sdia-def-2023-03-600w.webp"
+eventimg: '/img/talks-and-events/sdia-def-2023-03.webp'
+eventimg600w: "/img/talks-and-events/sdia-def-2023-03-600w.webp"
 
 ---
 
