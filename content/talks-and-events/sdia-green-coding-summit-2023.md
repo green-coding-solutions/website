@@ -36,3 +36,9 @@ Join us in making software more sustainable!
 
 *English speaking event*
 
+
+## Slide-Deck PDF
+Here are the slides to our workshop.
+
+[Download Slides](/slides/2013_11_24_Workshop.pdf)
+
