@@ -40,5 +40,5 @@ Join us in making software more sustainable!
 ## Slide-Deck PDF
 Here are the slides to our workshop.
 
-[Download Slides](/slides/2013_11_24_Workshop.pdf)
+[Download Slides](/slides/2023_11_24_Workshop_v2.pdf)
 
