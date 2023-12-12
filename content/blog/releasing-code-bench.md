@@ -17,6 +17,7 @@ So we set out to create a repository with such code. The main aims are:
 - The code is non optimal and can be “improved”
 - The code is well tested
 - Functions run long enough to be measured
+- The code run is constant in energy consumption
 
 The aim is also to support a wide breath of problems and languages with not only including trivial problems.
 
@@ -29,6 +30,18 @@ https://github.com/green-coding-berlin/code-benchmark
 We have included a Green Metrics Tool `usage_scenario.yml` file so you can benchmark the code with the GMT. Currently the problems are all CPU bound but we will extend this to also have some memory or IO bound problems that can be optimised.
 
 Feel free to contribute and extend the problem space. PRs welcome!
+
+## Reproducibility
+
+In order to validate that some modification really changed the value the initial benchmark needs to run reportable and should minimize variations between runs. You can find the data [here](https://metrics.green-coding.berlin/compare.html?ids=a2975404-4450-48d0-a725-2bc339a43677,7eac2a19-409c-4b77-87c7-39c0da81c3c1,84f2e4c0-972c-4567-9dc6-32f99efdee46,216bac2c-0667-44e3-b59c-6b8a0bbceafc,874c183a-cd22-4836-a842-44c94156f54c,f49417a2-e475-4586-aa29-01ff885d4709,a0bd0177-8a19-4430-86d4-57fb8cbf887c,89bf5cb5-9e30-43a3-859e-fe9c489f2fa2,a4c89fff-1660-48b7-8f36-e32f01ecccbf,5ea1a73b-d69e-4eae-a848-ead2a80a570f,ce430702-36a1-4190-b98f-6813fbe171c2,4cfe7e56-20ba-4140-8383-6be863959c9a,238d5d19-ded5-4e3f-9fe2-20c56191a620,a21642e2-0d06-49f6-b212-be2ac09863a8,b001af04-9d53-40ce-b5f7-e461cbefc5f5,ad32abd2-e29c-4da8-8a4a-ec061e4e08eb,6035989e-9dee-4b22-984e-64e5457f005a,e2e4480b-bfd8-4940-a885-c33d2cf37c3c)
+
+{{< rawhtml >}}
+<figure >
+    <img class="ui huge image" src="/img/blog/benchmark_energy_time.webp" alt="Energy over time" loading="lazy">
+    <figcaption>18 runs of the benchmark code on our cluster</figcaption>
+</figure>
+{{< /rawhtml >}}
+
 
 [0] [Influence of Static Code Analysis on Energy Consumption of Software](https://www.enviroinfo2023.eu/programme/schedule-overview/friday-schedule/)
 
