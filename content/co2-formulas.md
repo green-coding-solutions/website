@@ -13,7 +13,7 @@ but we typically do not think about the carbon footprint of software.
 
 Software uses energy through the utilization of the underlying hardware (typically measured in Watts). These Watts have to come from somewhere and we will see that every amount of energy typically has a carbon value associated with it.
 
-Also software uses energy when making network requests and also indirectly is responsible for the embodied carbon, which is the CO2 emitted when the hardware that it uses has to be initialize manufcatured.
+Also software uses energy when making network requests and also indirectly is responsible for the embodied carbon, which is the CO2 emitted when the hardware that it uses has to be initially manufactured.
 
 On this page we want to hightlight how to get from typical values like **time** or **Megabytes** to **kWh** and finally to **CO2**.
 
@@ -25,7 +25,7 @@ On this page we want to hightlight how to get from typical values like **time** 
         <div class="section-two">
             <div class="title-two">List of CO2 formulas</div>
             <div class="separator"><div class="line line-1"></div></div>
-            <div class="data-content-one">                
+            <div class="data-content-one">
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui blue ribbon label" href="#gigabytes-to-kwh" id="gigabytes-to-kwh">
