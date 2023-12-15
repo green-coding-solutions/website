@@ -79,7 +79,8 @@ as seen in the following table.
 {{< /rawhtml >}}
 \
 As seen in the charts and the table Hyper-Threading on our Intel CPU on the test bench
-is always able to deliver more operations per 10 seconds.
+is always able to deliver more operations per 10 seconds, while the energy cost is not rising as quickly.
+So the result is: **Energy cost per operation drops when using Hyper-Threading while also retaining and even increasing throughput**.
 
 The energy with Hyper-Threading turned on exceeds the total amount of the non-Hyper-Threading configuration
 of the chip when using 3 cores or more.
