@@ -2425,3 +2425,7 @@ a.project-item > i.icon {
     font-size: 14px;
     font-style: italic;
 }
+
+section#references img {
+    max-width: 400px;
+}
