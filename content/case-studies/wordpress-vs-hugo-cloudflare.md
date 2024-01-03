@@ -1,5 +1,5 @@
 ---
-title: "Wordpress vs. Hugo + Cloudlfare"
+title: "Wordpress vs. Hugo + Cloudflare"
 summary: "In this case study we will look the carbon benefit of a static site compared to a Wordpress site. To get a more fair picture we will also include the HUGO build process and reason a bit about a possible hosting optimization."
 date: 2022-07-28 08:00:00
 author: "Arne Tarara"
