@@ -219,7 +219,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                     <p>An optimization for pure compute has the lowest effect here.</p>
                     <p>Also you have to take into account that a typical webserver that only serves webpages is mostly idle. Therefore typically the idle power draw is your major concern, and not so much the minimal load that your website puts onto the server.</p>
                     <p>If you have a typical web application (say a website) that has typically long patterns of idle time / time between requests, than you should go for a hosting solution that can dynamically scale to zero.</p>
-                    <p>Cloudflare for instance provides such a feature with their <a href="https://pages.cloudflare.com/">Cloudlfare Pages</a> product that also supports HUGO out of the box.</p>
+                    <p>Cloudflare for instance provides such a feature with their <a href="https://pages.cloudflare.com/">Cloudflare Pages</a> product that also supports HUGO out of the box.</p>
                 </div>
             </div>
          </div>
