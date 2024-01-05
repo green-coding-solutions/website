@@ -1,5 +1,5 @@
 ---
-title: "CPU Power Capping - Processor energy configuration series - Part 3"
+title: "CPU Power Capping - Processor energy configuration series - Part 2"
 draft: false
 date: 2023-12-30
 author: "Arne Tarara"
@@ -14,7 +14,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 
 Power Capping is feature that will artifically limit the electrically supplied power of a hardware component with the intention of making it less warm and / or using less electrical power draw.
 
-This feature has been featured in some recent publications that focus on AI trainings with the intention of getting the 
+This feature has been featured in some recent publications that focus on AI trainings on GPUs with the intention of getting the 
 energy consumption for their training down. [[1]](#sources) [[2]](#sources) [[3]](#sources)
 
 Since most compute workloads for transactional and operational work is still done on CPUs they make up a significant
@@ -22,13 +22,11 @@ amount of compute, if not the most significant compute out there.
 
 The power capping feature in CPUs is most renowned through the RAPL interface in modern Intel and AMD processors. If similar features exist in ARM etc. processors it is not know to us and not part of this article. We will focus on Intel / AMD only.
 
-When getting aware of this feature as a Green Coder what first comes to mind is: Can I use this feature to make my code greener?
+When getting aware of this feature as a Green Coder what first comes to mind is: Can I use this feature to make my code greener? Are there any negative effects from using power capping and which metric should I use to not run into rebound effects or drawbacks?
 
-But also: Are there any negative effects from using power capping and which metric should I use to not run into rebound effects or drawbacks?
-We will look through a synthetic benchmark at the **CPU energy** only at first and then also at the **energy of the total machine** and include **embodied carbon**.
+In order to answer this question we will look through a synthetic benchmark at the **CPU energy** at first and then also at the **energy of the total machine** and include **embodied carbon**.
 Afterwards we will use a real-world use-case by using a **CI/CD workload**. The unit tests from the [Django](https://github.com/green-coding-berlin/django
 ) project.
-
 
 {{< greenblock >}}
 Agenda
@@ -57,7 +55,7 @@ Agenda
                         <i class="right triangle icon"></i>
                         <div class="content">
                             <div class="header">
-                                <a href="#setup">Setting up power capping</a>
+                                <a href="#setup">Setting up power capping on Linux</a>
                             </div>
                         </div>
                     </div>
@@ -98,7 +96,7 @@ What do we want to find out?
 {{< /research_question >}}
 
 {{< greenblock >}}
-Setting up power capping
+Setting up power capping on Linux
 {{< /greenblock >}}
 
 ```bash
