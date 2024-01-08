@@ -4,6 +4,8 @@ draft: false
 date: 2023-12-30
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
+socialmedia_preview: "img/social-media-previews/cpu-power-capping.webp"
+
 ---
 
 {{< infobox >}}
