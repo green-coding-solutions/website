@@ -23,7 +23,7 @@ You will be working with our team to create tools to measure the energy use of s
 
 As a junior developer, your work will be mainly developing sample applications and creating use-cases and comparisons of how people can relate to the energy consumption of software.
 
-See examples in our [Case Studies](https://www.green-coding.berlin/case-studies), our [Example Applications](https://github.com/green-coding-berlin/example-applications) and our [Green Metrics Dashboard](https://metrics.green-coding.berlin)
+See examples in our [Case Studies](https://www.green-coding.io/case-studies), our [Example Applications](https://github.com/green-coding-berlin/example-applications) and our [Green Metrics Dashboard](https://metrics.green-coding.io)
 
 &nbsp;
 
@@ -87,7 +87,7 @@ During the onboarding however, which can take around 1-2 months, we usually star
 &nbsp;
 
 ### How to apply
-Just shoot us an email at jobs@green-coding.berlin with a quick intro and why you would like to join our team.
+Just shoot us an email at jobs@green-coding.io with a quick intro and why you would like to join our team.
 
 Please also include a quick comment on your skills regarding the aforementioned skills.
 

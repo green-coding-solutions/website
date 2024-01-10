@@ -59,7 +59,7 @@ We also keep track which cpu each run is being done on. As a refresher, the ML m
 
 We also ran this pipeline on Gitlab, and gathered the same data. Gitlab hosted runners only have one cpu, so that simplifies things a bit.
 
-So after gathering the data from both [Github](https://metrics.green-coding.berlin/ci.html?repo=dan-mm/test-repo-a&branch=main&workflow=66623622) and [Gitlab](https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/ci-carbon-testing&branch=main&workflow=48163287) and calculating the statistics, here's the results we found, by platform/CPU:
+So after gathering the data from both [Github](https://metrics.green-coding.io/ci.html?repo=dan-mm/test-repo-a&branch=main&workflow=66623622) and [Gitlab](https://metrics.green-coding.io/ci.html?repo=green-coding-berlin/ci-carbon-testing&branch=main&workflow=48163287) and calculating the statistics, here's the results we found, by platform/CPU:
 
 {{< rawhtml >}}
 <style>

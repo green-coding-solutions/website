@@ -115,4 +115,4 @@ Since Hyper-Threading is by default turned on, and also every server in the SPEC
 has it turned on we see no reason to run benchmarks that should reflect CPU capabilities with 
 Hyper-Threading turned off.
 
-Did we miss something? Please shoot us an email to [info@green-coding.berlin](mailto:info@green-coding.berlin)
+Did we miss something? Please shoot us an email to [info@green-coding.io](mailto:info@green-coding.io)

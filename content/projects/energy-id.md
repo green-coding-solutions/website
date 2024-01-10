@@ -24,7 +24,7 @@ If you want to further compare a project, monitor a project over time or even do
 software in the wild. These are the cost that happen on our testing machines and
 also reflect the cost of the scenario chosen by us. A different use-case might incur a vastly different carbon cost.
 
-For measurement on different machines, which are more similar to what you are running in your setup, visit our [Cluster documentation](https://docs.green-coding.berlin/docs/measuring/measurement-cluster/)
+For measurement on different machines, which are more similar to what you are running in your setup, visit our [Cluster documentation](https://docs.green-coding.io/docs/measuring/measurement-cluster/)
 and re-run the measurement on a machine more apt for your comparison.
 
 # Open Source Projects
@@ -60,25 +60,25 @@ and re-run the measurement on a machine more apt for your comparison.
         </p>
         <p>
             <h4>Machine</h4>
-            <p><a href="https://docs.green-coding.berlin/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
+            <p><a href="https://docs.green-coding.io/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
         </p>
         <p>
             <h4>Links</h4>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8">Example measurement</a>
+                <a class="detail" href="https://metrics.green-coding.io/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8">Example measurement</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/nextcloud-docker">Last 50 measurements</a>
+                <a class="detail" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/nextcloud-docker">Last 50 measurements</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/compare.html?ids=b7d5a32a-3516-448a-b5e5-1b1b5fa130e5,b5b9a3af-9817-4379-aeeb-d57268dd61c8">SQLite vs PostgreSQL</a>
+                <a class="detail" href="https://metrics.green-coding.io/compare.html?ids=b7d5a32a-3516-448a-b5e5-1b1b5fa130e5,b5b9a3af-9817-4379-aeeb-d57268dd61c8">SQLite vs PostgreSQL</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/compare.html?ids=a5e38c5d-dd1e-44c9-a23e-6d0346d8e37a,b5b9a3af-9817-4379-aeeb-d57268dd61c8">Chrome vs. Firefox</a>
+                <a class="detail" href="https://metrics.green-coding.io/compare.html?ids=a5e38c5d-dd1e-44c9-a23e-6d0346d8e37a,b5b9a3af-9817-4379-aeeb-d57268dd61c8">Chrome vs. Firefox</a>
             </div>
         </p>
     </div>
@@ -110,17 +110,17 @@ and re-run the measurement on a machine more apt for your comparison.
         </p>
         <p>
             <h4>Machine</h4>
-            <p><a href="https://docs.green-coding.berlin/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
+            <p><a href="https://docs.green-coding.io/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
         </p>        
         <p>
             <h4>Links</h4>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=79b0ef85-19dd-4f16-b519-48f4c92c5092">Example measurement</a>
+                <a class="detail" href="https://metrics.green-coding.io/stats.html?id=79b0ef85-19dd-4f16-b519-48f4c92c5092">Example measurement</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=bakerydemo-gold-benchmark">Last 50 measurements</a>
+                <a class="detail" href="https://metrics.green-coding.io/index.html?uri=bakerydemo-gold-benchmark">Last 50 measurements</a>
             </div>
         </p>
     </div>
@@ -148,17 +148,17 @@ and re-run the measurement on a machine more apt for your comparison.
         </p>
         <p>
             <h4>Machine</h4>
-            <p><a href="https://docs.green-coding.berlin/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
+            <p><a href="https://docs.green-coding.io/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
         </p>        
         <p>
             <h4>Links</h4>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a">Example measurement</a>
+                <a class="detail" href="https://metrics.green-coding.io/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a">Example measurement</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/django">Last 50 measurements</a>
+                <a class="detail" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/django">Last 50 measurements</a>
             </div>
         </p>
     </div>
@@ -189,17 +189,17 @@ and re-run the measurement on a machine more apt for your comparison.
         </p>
         <p>
             <h4>Machine</h4>
-            <p><a href="https://docs.green-coding.berlin/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
+            <p><a href="https://docs.green-coding.io/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
         </p>        
         <p>
             <h4>Links</h4>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa">Example measurement</a>
+                <a class="detail" href="https://metrics.green-coding.io/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa">Example measurement</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">Last 50 measurements</a>
+                <a class="detail" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">Last 50 measurements</a>
             </div>
         </p>
     </div>
@@ -229,17 +229,17 @@ and re-run the measurement on a machine more apt for your comparison.
         </p>
         <p>
             <h4>Machine</h4>
-            <p><a href="https://docs.green-coding.berlin/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
+            <p><a href="https://docs.green-coding.io/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
         </p>        
         <p>
             <h4>Links</h4>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac">Example measurement</a>
+                <a class="detail" href="https://metrics.green-coding.io/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac">Example measurement</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/DBMS-bench&filename=usage_scenario_maria.yml&branch=&machine_id=7">Last 50 measurements</a>
+                <a class="detail" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/DBMS-bench&filename=usage_scenario_maria.yml&branch=&machine_id=7">Last 50 measurements</a>
             </div>
         </p>
     </div>
@@ -269,17 +269,17 @@ and re-run the measurement on a machine more apt for your comparison.
         </p>
         <p>
             <h4>Machine</h4>
-            <p><a href="https://docs.green-coding.berlin/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
+            <p><a href="https://docs.green-coding.io/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
         </p>        
         <p>
             <h4>Links</h4>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=b9fe2285-1490-426e-9540-660961341e7a">Example measurement</a>
+                <a class="detail" href="https://metrics.green-coding.io/stats.html?id=b9fe2285-1490-426e-9540-660961341e7a">Example measurement</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/DBMS-bench&filename=usage_scenario_mysql.yml&branch=&machine_id=7">Last 50 measurements</a>
+                <a class="detail" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/DBMS-bench&filename=usage_scenario_mysql.yml&branch=&machine_id=7">Last 50 measurements</a>
             </div>
         </p>
     </div>
@@ -309,17 +309,17 @@ and re-run the measurement on a machine more apt for your comparison.
         </p>
         <p>
             <h4>Machine</h4>
-            <p><a href="https://docs.green-coding.berlin/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
+            <p><a href="https://docs.green-coding.io/docs/measuring/measurement-cluster/">Fujitsu Esprimo P956 [NOP Linux] (Blue Angel compatible)</a></p>
         </p>        
         <p>
             <h4>Links</h4>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8">Example measurement</a>
+                <a class="detail" href="https://metrics.green-coding.io/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8">Example measurement</a>
             </div>
             <div class="ui label label-margin-bottom">
                 <i class="external alternate icon"></i>
-                <a class="detail" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/DBMS-bench&filename=usage_scenario_pg.yml&branch=&machine_id=7">Last 50 measurements</a>
+                <a class="detail" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/DBMS-bench&filename=usage_scenario_pg.yml&branch=&machine_id=7">Last 50 measurements</a>
             </div>
         </p>
     </div>
@@ -348,11 +348,11 @@ and re-run the measurement on a machine more apt for your comparison.
         </div>
         <div class="content">
             <h4>Badges</h4>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8"><img src="https://api.green-coding.berlin/v1/badge/single/b5b9a3af-9817-4379-aeeb-d57268dd61c8?metric=AC"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8"><img src="https://api.green-coding.berlin/v1/badge/single/b5b9a3af-9817-4379-aeeb-d57268dd61c8?metric=RAPL"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8"><img src="https://api.green-coding.berlin/v1/badge/single/b5b9a3af-9817-4379-aeeb-d57268dd61c8?metric=SCI"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8"><img src="https://api.green-coding.io/v1/badge/single/b5b9a3af-9817-4379-aeeb-d57268dd61c8?metric=AC"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8"><img src="https://api.green-coding.io/v1/badge/single/b5b9a3af-9817-4379-aeeb-d57268dd61c8?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=b5b9a3af-9817-4379-aeeb-d57268dd61c8"><img src="https://api.green-coding.io/v1/badge/single/b5b9a3af-9817-4379-aeeb-d57268dd61c8?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/nextcloud-docker">
+        <a class="ui button" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/nextcloud-docker">
             <i class="external alternate icon"></i> Show measurements            
         </a>
     </div>
@@ -369,11 +369,11 @@ and re-run the measurement on a machine more apt for your comparison.
         </div>
         <div class="content">
             <h4>Badges</h4>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=79b0ef85-19dd-4f16-b519-48f4c92c5092"><img src="https://api.green-coding.berlin/v1/badge/single/79b0ef85-19dd-4f16-b519-48f4c92c5092?metric=AC"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=79b0ef85-19dd-4f16-b519-48f4c92c5092"><img src="https://api.green-coding.berlin/v1/badge/single/79b0ef85-19dd-4f16-b519-48f4c92c5092?metric=RAPL"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=79b0ef85-19dd-4f16-b519-48f4c92c5092"><img src="https://api.green-coding.berlin/v1/badge/single/79b0ef85-19dd-4f16-b519-48f4c92c5092?metric=SCI"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=79b0ef85-19dd-4f16-b519-48f4c92c5092"><img src="https://api.green-coding.io/v1/badge/single/79b0ef85-19dd-4f16-b519-48f4c92c5092?metric=AC"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=79b0ef85-19dd-4f16-b519-48f4c92c5092"><img src="https://api.green-coding.io/v1/badge/single/79b0ef85-19dd-4f16-b519-48f4c92c5092?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=79b0ef85-19dd-4f16-b519-48f4c92c5092"><img src="https://api.green-coding.io/v1/badge/single/79b0ef85-19dd-4f16-b519-48f4c92c5092?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?repo=bakerydemo-gold-benchmark">
+        <a class="ui button" href="https://metrics.green-coding.io/index.html?repo=bakerydemo-gold-benchmark">
             <i class="external alternate icon"></i> Show measurements
         </a>
     </div>    
@@ -390,11 +390,11 @@ and re-run the measurement on a machine more apt for your comparison.
         </div>
         <div class="content">
             <h4>Badges</h4>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=AC"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=RAPL"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.berlin/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=SCI"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.io/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=AC"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.io/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa"><img src="https://api.green-coding.io/v1/badge/single/6f2e09ea-85cd-4b77-9630-b0a70cfb4cfa?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
+        <a class="ui button" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
             <i class="external alternate icon"></i> Show measurements
         </a>
     </div>
@@ -411,11 +411,11 @@ and re-run the measurement on a machine more apt for your comparison.
         </div>
         <div class="content">
             <h4>Badges</h4>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=8ff4c68f-afc3-4189-a3c0-c8724d09bbbc"><img src="https://api.green-coding.berlin/v1/badge/single/8ff4c68f-afc3-4189-a3c0-c8724d09bbbc?metric=AC"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=8ff4c68f-afc3-4189-a3c0-c8724d09bbbc"><img src="https://api.green-coding.berlin/v1/badge/single/8ff4c68f-afc3-4189-a3c0-c8724d09bbbc?metric=RAPL"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=8ff4c68f-afc3-4189-a3c0-c8724d09bbbc"><img src="https://api.green-coding.berlin/v1/badge/single/8ff4c68f-afc3-4189-a3c0-c8724d09bbbc?metric=SCI"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=8ff4c68f-afc3-4189-a3c0-c8724d09bbbc"><img src="https://api.green-coding.io/v1/badge/single/8ff4c68f-afc3-4189-a3c0-c8724d09bbbc?metric=AC"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=8ff4c68f-afc3-4189-a3c0-c8724d09bbbc"><img src="https://api.green-coding.io/v1/badge/single/8ff4c68f-afc3-4189-a3c0-c8724d09bbbc?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=8ff4c68f-afc3-4189-a3c0-c8724d09bbbc"><img src="https://api.green-coding.io/v1/badge/single/8ff4c68f-afc3-4189-a3c0-c8724d09bbbc?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
+        <a class="ui button" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
             <i class="external alternate icon"></i> Show measurements
         </a>
     </div>
@@ -432,11 +432,11 @@ and re-run the measurement on a machine more apt for your comparison.
         </div>
         <div class="content">
             <h4>Badges</h4>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8"><img src="https://api.green-coding.berlin/v1/badge/single/6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8?metric=AC"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8"><img src="https://api.green-coding.berlin/v1/badge/single/6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8?metric=RAPL"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8"><img src="https://api.green-coding.berlin/v1/badge/single/6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8?metric=SCI"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8"><img src="https://api.green-coding.io/v1/badge/single/6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8?metric=AC"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8"><img src="https://api.green-coding.io/v1/badge/single/6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8"><img src="https://api.green-coding.io/v1/badge/single/6fffd8dc-d6e2-45d4-95c4-a0d08ebfb1e8?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
+        <a class="ui button" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
             <i class="external alternate icon"></i> Show measurements
         </a>
     </div>
@@ -453,11 +453,11 @@ and re-run the measurement on a machine more apt for your comparison.
         </div>
         <div class="content">
             <h4>Badges</h4>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac"><img src="https://api.green-coding.berlin/v1/badge/single/a991cf29-3b0d-4075-aa0f-0d73ccc883ac?metric=AC"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac"><img src="https://api.green-coding.berlin/v1/badge/single/a991cf29-3b0d-4075-aa0f-0d73ccc883ac?metric=RAPL"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac"><img src="https://api.green-coding.berlin/v1/badge/single/a991cf29-3b0d-4075-aa0f-0d73ccc883ac?metric=SCI"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac"><img src="https://api.green-coding.io/v1/badge/single/a991cf29-3b0d-4075-aa0f-0d73ccc883ac?metric=AC"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac"><img src="https://api.green-coding.io/v1/badge/single/a991cf29-3b0d-4075-aa0f-0d73ccc883ac?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=a991cf29-3b0d-4075-aa0f-0d73ccc883ac"><img src="https://api.green-coding.io/v1/badge/single/a991cf29-3b0d-4075-aa0f-0d73ccc883ac?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
+        <a class="ui button" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/example-applications&filename=wordpress-official-data/usage_scenario.yml">
             <i class="external alternate icon"></i> Show measurements
         </a>
     </div>
@@ -474,11 +474,11 @@ and re-run the measurement on a machine more apt for your comparison.
         </div>
         <div class="content">
             <h4>Badges</h4>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a"><img src="https://api.green-coding.berlin/v1/badge/single/550d1875-1883-4d9a-8194-1fb408f7916a?metric=AC"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a"><img src="https://api.green-coding.berlin/v1/badge/single/550d1875-1883-4d9a-8194-1fb408f7916a?metric=RAPL"></a>
-            <a href="https://metrics.green-coding.berlin/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a"><img src="https://api.green-coding.berlin/v1/badge/single/550d1875-1883-4d9a-8194-1fb408f7916a?metric=SCI"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a"><img src="https://api.green-coding.io/v1/badge/single/550d1875-1883-4d9a-8194-1fb408f7916a?metric=AC"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a"><img src="https://api.green-coding.io/v1/badge/single/550d1875-1883-4d9a-8194-1fb408f7916a?metric=RAPL"></a>
+            <a href="https://metrics.green-coding.io/stats.html?id=550d1875-1883-4d9a-8194-1fb408f7916a"><img src="https://api.green-coding.io/v1/badge/single/550d1875-1883-4d9a-8194-1fb408f7916a?metric=SCI"></a>
         </div>
-        <a class="ui button" href="https://metrics.green-coding.berlin/index.html?uri=https://github.com/green-coding-berlin/django">
+        <a class="ui button" href="https://metrics.green-coding.io/index.html?uri=https://github.com/green-coding-berlin/django">
             <i class="external alternate icon"></i> Show measurements
         </a>
     </div>

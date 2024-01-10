@@ -37,19 +37,19 @@ This release contains following Measurement Providers:
 
 ## API
 
-If you want to query the Open Data of our tool go to the [self-documenting API](https://api.green-coding.berlin)
+If you want to query the Open Data of our tool go to the [self-documenting API](https://api.green-coding.io)
 
 ## Measurements of the tool
 
-On our [Metrics Dashboard](https://metrics.green-coding.berlin/) you can find already some measurements we did on 
+On our [Metrics Dashboard](https://metrics.green-coding.io/) you can find already some measurements we did on 
 a copy of the [The Green Web Foundation](https://www.thegreenwebfoundation.org/) website.
 
 Here we compare the energy consumption of a Wordpress version against a static version.
-- Static: https://metrics.green-coding.berlin/stats.html?id=a57a7f97-be18-4a77-b7fe-ae0d76b5e4dd
-- Wordpress: https://metrics.green-coding.berlin/stats.html?id=619e720e-f2fc-42fa-9786-c13cb4d9fb72
+- Static: https://metrics.green-coding.io/stats.html?id=a57a7f97-be18-4a77-b7fe-ae0d76b5e4dd
+- Wordpress: https://metrics.green-coding.io/stats.html?id=619e720e-f2fc-42fa-9786-c13cb4d9fb72
 
 An example on how to recreate these dashboards and also dive into the raw data to 
-answer more detailed questions we provide [Example Jupyter Notebooks](https://metrics.green-coding.berlin/data-analysis.html)
+answer more detailed questions we provide [Example Jupyter Notebooks](https://metrics.green-coding.io/data-analysis.html)
 
 
 **Please subscribe to our Newsletter to stay tuned when we release the Documentation and subsequent versions**

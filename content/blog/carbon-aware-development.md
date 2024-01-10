@@ -8,7 +8,7 @@ authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
 
 While writing the [“Software Life Cycle Assessment done in the wild”](/blog/software-life-cycle-assessment/) article I needed to develop a little server that could do three simple tasks. Because the article became too long I decided to separate the methodology how to develop with environmental impact in mind into a dedicated part. Feel free to head over to the [SLCA](/blog/software-life-cycle-assessment/) article and read the first part to see why we are developing this server.
 
-In this article I want to introduce the new concept of Carbon Aware Development. While there is some prior work on how to measure carbon emissions of software, we at [Green Coding Berlin have loads on the topic](https://www.green-coding.berlin/blog/), there is no usable and tool based framework, I am aware of, that encourages developers to think about their choices in regards to carbon from the beginning (However there are theoretical ones like for instance [the GREENSOFT model](https://www.umwelt-campus.de/fileadmin/Umwelt-Campus/Greensoft/The_GREENSOFT_Model_A_reference_model_fo.pdf)). The main focus, in this article, is on the **development** phase of the Software Life Cycle Assessment with solutions for the usage phase discussed in the other article. Developing software is an iterative process. Often decisions we take very early on have major consequences later on. The most obvious being the programming language and the underlying architecture everything is based on. While many factors are taken into account early on, carbon is nearly never one.
+In this article I want to introduce the new concept of Carbon Aware Development. While there is some prior work on how to measure carbon emissions of software, we at [Green Coding Berlin have loads on the topic](https://www.green-coding.io/blog/), there is no usable and tool based framework, I am aware of, that encourages developers to think about their choices in regards to carbon from the beginning (However there are theoretical ones like for instance [the GREENSOFT model](https://www.umwelt-campus.de/fileadmin/Umwelt-Campus/Greensoft/The_GREENSOFT_Model_A_reference_model_fo.pdf)). The main focus, in this article, is on the **development** phase of the Software Life Cycle Assessment with solutions for the usage phase discussed in the other article. Developing software is an iterative process. Often decisions we take very early on have major consequences later on. The most obvious being the programming language and the underlying architecture everything is based on. While many factors are taken into account early on, carbon is nearly never one.
 
 > **Carbon Aware Development** is a methodology in which resource usage is seen as a first class metric in evaluating software and implementation decisions. It acknowledges that software is always in ongoing development.
 >
@@ -95,7 +95,7 @@ And then we can use create a `usage_scenario` file that exposes the various comp
 
 ```yaml
 name: Carbon Aware Development example
-author: Didi Hoffmann <didi@green-coding.berlin>
+author: Didi Hoffmann <didi@green-coding.io>
 version: 1
 description: An example how to develop a program while thinking of your environmental impact
 
@@ -126,7 +126,7 @@ The full code can be found on GitHub.
 
 The code does not check for valid results as the motivation is to emulate the usage of the software. In this case all inputs are fixed length. It could be that the app behaves differently according to the data size or complexity given to it. In this case it makes sense to benchmark various scenarios and then do [curve fitting](https://en.wikipedia.org/wiki/Curve_fitting) to generate a general rule based on the inputs.
 
-Now we can use the [Green Metrics Tool](https://www.green-coding.berlin/projects/green-metrics-tool/) to measure each part of our application while developing and see what is using how much resources in our benchmark case.
+Now we can use the [Green Metrics Tool](https://www.green-coding.io/projects/green-metrics-tool/) to measure each part of our application while developing and see what is using how much resources in our benchmark case.
 
 ## Usage
 
@@ -140,11 +140,11 @@ When developing I like to use the [PostgreSQL](https://www.postgresql.org/) [JSO
 
 You can clearly see that the column based implementation takes 1863.52 Joule and the Json store implementation uses 1999.59 Joule. Which is about 7.30% “worse”. Looking at that this is based on 1000 operations and a server normally handles millions of requests this is quite an increase in efficiency.
 
-- [Json store benchmark](https://metrics.green-coding.berlin/stats.html?id=67715c39-4134-4685-ae42-59262fe076a7)
-- [Column store benchmark](https://metrics.green-coding.berlin/stats.html?id=71353c66-6432-4bf2-b459-5b5d4ed33ed3)
-- [Comparison](https://metrics.green-coding.berlin/compare.html?ids=71353c66-6432-4bf2-b459-5b5d4ed33ed3,67715c39-4134-4685-ae42-59262fe076a7)
+- [Json store benchmark](https://metrics.green-coding.io/stats.html?id=67715c39-4134-4685-ae42-59262fe076a7)
+- [Column store benchmark](https://metrics.green-coding.io/stats.html?id=71353c66-6432-4bf2-b459-5b5d4ed33ed3)
+- [Comparison](https://metrics.green-coding.io/compare.html?ids=71353c66-6432-4bf2-b459-5b5d4ed33ed3,67715c39-4134-4685-ae42-59262fe076a7)
 
-By using the [Eco-CI](https://www.green-coding.berlin/projects/eco-ci/) you can also add this type of analytics to your normal workflow.
+By using the [Eco-CI](https://www.green-coding.io/projects/eco-ci/) you can also add this type of analytics to your normal workflow.
 
 Of course every software will behave differently depending on the system that it is run on. Some will even argue that it is not possible to get exact repeatable readings but that is not the main point here.
 

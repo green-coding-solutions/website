@@ -45,7 +45,7 @@ Let's look at the results in a chart. We are specifically looking at the average
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/curl&branch=master&workflow=61395528">curl</a></td>
+      <td><a href="https://metrics.green-coding.io/ci.html?repo=green-coding-berlin/curl&branch=master&workflow=61395528">curl</a></td>
       <td>All Cpu's</td>
       <td>15736 J</td>
       <td>3417 s</td>
@@ -111,7 +111,7 @@ Let's look at the results in a chart. We are specifically looking at the average
       <td>10.6</td>
     </tr>
     <tr>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/django&branch=main&workflow=60545072">django</a></td>
+      <td><a href="https://metrics.green-coding.io/ci.html?repo=green-coding-berlin/django&branch=main&workflow=60545072">django</a></td>
       <td>All Cpu's</td>
       <td>2051 J</td>
       <td>383 s</td>
@@ -177,7 +177,7 @@ Let's look at the results in a chart. We are specifically looking at the average
       <td>11.6</td>
     </tr>
     <tr>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/flask&branch=main&workflow=61371506">flask</a></td>
+      <td><a href="https://metrics.green-coding.io/ci.html?repo=green-coding-berlin/flask&branch=main&workflow=61371506">flask</a></td>
       <td>All Cpu's (minus 8171M)</td>
       <td>989 J</td>
       <td>239 s</td>
@@ -243,7 +243,7 @@ Let's look at the results in a chart. We are specifically looking at the average
       <td>10.7</td>
     </tr>
     <tr>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/eco-ci/openmw&branch=master&workflow=47121734">openmw</a></td>
+      <td><a href="https://metrics.green-coding.io/ci.html?repo=green-coding-berlin/eco-ci/openmw&branch=master&workflow=47121734">openmw</a></td>
       <td>EPYC_7B12</td>
       <td></td>
       <td></td>

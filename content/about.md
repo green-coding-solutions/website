@@ -99,7 +99,7 @@ Also we focus in the building process for static sites, which typically have a l
 
 Checkout out our [OpenEnergyBadge project](/projects/open-energy-badge), our [Eco CI-plugins for Github](/projects/eco-ci) or our [Case Studies](/case-studies/) on the topic. 
 
-Example badge: {{< rawhtml >}} <a href="https://metrics.green-coding.berlin/stats.html?id=01e4f6e1-318f-4ecb-a19f-041439a50065"><img src="https://api.green-coding.berlin/v1/badge/single/01e4f6e1-318f-4ecb-a19f-041439a50065?metric=AC"></a>{{< /rawhtml >}}
+Example badge: {{< rawhtml >}} <a href="https://metrics.green-coding.io/stats.html?id=01e4f6e1-318f-4ecb-a19f-041439a50065"><img src="https://api.green-coding.io/v1/badge/single/01e4f6e1-318f-4ecb-a19f-041439a50065?metric=AC"></a>{{< /rawhtml >}}
 
 {{< greenblock >}}
 Network
@@ -171,7 +171,7 @@ Interested?
 
 {{< rawhtml >}}
 <div class="btn-one">
-    <a href="mailto:info@green-coding.berlin"><span>Contact Us</span></a>
+    <a href="mailto:info@green-coding.io"><span>Contact Us</span></a>
 </div>
 <br>
 <center>Or see more examples on our <a href="/services/">Services</a> page.</center>

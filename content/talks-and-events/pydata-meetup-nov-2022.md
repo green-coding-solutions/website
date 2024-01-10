@@ -26,7 +26,7 @@ Energy cost estimation for cloud workloads is an emerging topic that surfaces es
 
 **Location:** Factory Berlin Görlitzer Park - Lohmühlenstraße 65 · Berlin, BE - The meetup is located at the CODE Event Space on the 5th floor
 
-**Contact:** If you want to shoot us some questions or infos beforehand or anything just write an email to arne@green-coding.berlin
+**Contact:** If you want to shoot us some questions or infos beforehand or anything just write an email to arne@green-coding.io
 
 
 ## Slide-Deck PDF

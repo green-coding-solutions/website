@@ -69,7 +69,7 @@ We are currently also exploring further methods to output this information to de
 
 ### Front End
 
-We have improved the front end we provide on [our website](https://metrics.green-coding.berlin/ci-index.html) where you can see the results over time of your pipelines. There is now an index page where you can see your projects, along with others that have sent us run data:
+We have improved the front end we provide on [our website](https://metrics.green-coding.io/ci-index.html) where you can see the results over time of your pipelines. There is now an index page where you can see your projects, along with others that have sent us run data:
 
 {{< rawhtml >}}
 <figure style="float: center;  margin: 10px;">

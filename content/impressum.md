@@ -15,7 +15,7 @@ Green Coding Berlin GmbH\
 Jablonskistr. 24\
 D-10405 Berlin
 
-Email: info@green-coding.berlin
+Email: info@green-coding.io
 
 Telefon: +49 (0) 160 947 930 24
 

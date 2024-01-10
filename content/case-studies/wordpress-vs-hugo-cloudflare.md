@@ -148,7 +148,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="https://metrics.green-coding.berlin/stats.html?id=ad66a391-eb61-49e0-a557-b8caf48f3aaa">Wordpress Minimal Site</a>
+                                    <a href="https://metrics.green-coding.io/stats.html?id=ad66a391-eb61-49e0-a557-b8caf48f3aaa">Wordpress Minimal Site</a>
                                     <p>Energy Measurements of web request</p>
                                 </div>
                             </div>
@@ -166,7 +166,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="https://metrics.green-coding.berlin/stats.html?id=7e2da0da-ee0e-495a-960e-1f7af014643c">HUGO Minimal Site</a>
+                                    <a href="https://metrics.green-coding.io/stats.html?id=7e2da0da-ee0e-495a-960e-1f7af014643c">HUGO Minimal Site</a>
                                     <p>Energy-Measurement of web request</p>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="https://metrics.green-coding.berlin/stats.html?id=ecae575e-8c76-44eb-a3be-db1d6c5fd331">HUGO Minimal Site</a>
+                                    <a href="https://metrics.green-coding.io/stats.html?id=ecae575e-8c76-44eb-a3be-db1d6c5fd331">HUGO Minimal Site</a>
                                     <p>Energy-Measurement of build process</p>
                                 </div>
                             </div>
@@ -235,7 +235,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                 <p>Also how the energy compares between the request to a static site and a Wordpress site.</p>
                 <p>You see that the exact path for optimizing your energy consumption for hosting depends on your load, but is always better when we look at static sites.</p>
                 <p>Further considerations might however include meta-criteria like the cost of development and maintenance, which will typically incur carbon or energy costs in the phyisical world.</p>
-                <p>If you want your specific architecture analysed or get a more detailed understanding for the optimization potential in your architecture shoot us an email at <a href="mailto:info@green-coding.berlin">info@green-coding.berlin</a></p>
+                <p>If you want your specific architecture analysed or get a more detailed understanding for the optimization potential in your architecture shoot us an email at <a href="mailto:info@green-coding.io">info@green-coding.io</a></p>
             </div>
 
 <script type="text/javascript" src="/dist/js/echarts.min.js"></script>

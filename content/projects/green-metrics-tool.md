@@ -17,7 +17,7 @@ You can either install it locally or use our demo dashboard, where we also offer
 Please see all the details on Github and in the documentation.
 
 {{< rawhtml >}} 
-<a class="ui labeled button" href="https://docs.green-coding.berlin">
+<a class="ui labeled button" href="https://docs.green-coding.io">
     <div class="ui button">
         <i class="book icon"></i>
     </div>
@@ -33,7 +33,7 @@ Please see all the details on Github and in the documentation.
         Github
     </span>
 </a>
-<a class="ui labeled button" href="https://metrics.green-coding.berlin">
+<a class="ui labeled button" href="https://metrics.green-coding.io">
     <div class="ui button">
         <i class="columns icon"></i>
     </div>
