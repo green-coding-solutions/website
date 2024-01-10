@@ -88,7 +88,7 @@
 .footer-line{
 	width: 100%;
 	height: 13px;
-	background: url("../img/footer_pattern.png") repeat-x;
+	background: url("../img/footer_pattern.webp") repeat-x;
 }
 
 .newsletter{display: inline-table; margin-top: 55px;}
@@ -173,7 +173,7 @@ textarea {
 .img-project:hover .close{display:block;}
 
 .img-prev{
-	background: url("../img/arrow_prev.png") no-repeat;
+	background: url("../img/arrow_prev.webp") no-repeat;
 	width: 66px;
 	height: 66px;
 	position: absolute;
@@ -182,7 +182,7 @@ textarea {
 	cursor: pointer;
 }
 .img-next{
-	background: url("../img/arrow_next.png") no-repeat;
+	background: url("../img/arrow_next.webp") no-repeat;
 	width: 66px;
 	height: 66px;
 	position: absolute;
@@ -347,7 +347,7 @@ nav li a{text-decoration: none;}
 	text-transform: uppercase;
 	float: left;
 	padding-top: 11px;
-    background: url(../img/logo_alt.png) no-repeat;
+    background: url(../img/logo_alt.webp) no-repeat;
     background-position-y: bottom;
     text-indent: 28px;
 } .company-name span{color: #AAA;
@@ -355,7 +355,7 @@ nav li a{text-decoration: none;}
 
 .content-logo{width: auto; height: auto;float: left;margin-top: 34px;text-decoration:none; border:0px;}
 
-.logo{background: url(../img/logo_alt.png) no-repeat; width: 26px; height: 26px; float: left; margin: 0 7px 0 0;}
+.logo{background: url(../img/logo_alt.webp) no-repeat; width: 26px; height: 26px; float: left; margin: 0 7px 0 0;}
 
 
 .menubtn{
@@ -375,8 +375,8 @@ nav li a{text-decoration: none;}
 
 /*  Last Projects Controller */
 .controller{height: 40px; width: auto; display: inline-table;}
-.prev{ background: #46b7a0; border-radius: 5px 0 0 5px; height: 40px; width: 45px; float: left; background-image: url(../img/controller_prev.png); background-repeat: no-repeat; cursor: pointer; }.prev:hover{background-image: url(../img/controller_prev_roll.png);}
-.next{ background: #46b7a0; border-radius: 0 5px 5px 0; height: 40px; width: 45px; float: left; background-image: url(../img/controller_next.png); background-repeat: no-repeat; cursor: pointer; }.next:hover{background-image: url(../img/controller_next_roll.png);}
+.prev{ background: #46b7a0; border-radius: 5px 0 0 5px; height: 40px; width: 45px; float: left; background-image: url(../img/controller_prev.webp); background-repeat: no-repeat; cursor: pointer; }.prev:hover{background-image: url(../img/controller_prev_roll.webp);}
+.next{ background: #46b7a0; border-radius: 0 5px 5px 0; height: 40px; width: 45px; float: left; background-image: url(../img/controller_next.webp); background-repeat: no-repeat; cursor: pointer; }.next:hover{background-image: url(../img/controller_next_roll.webp);}
 .bullets{ background: #46b7a0; border-left: solid 2px #a3dbd0; border-right: solid 2px #a3dbd0; height: 40px; width: auto; float: left;}
 .bullets ul{padding-top: 13px;}
 .bullets ul li{
@@ -540,9 +540,9 @@ nav li a{text-decoration: none;}
 }
 
 .sc-fb {background:url(../img/social/facebook.png);}
-.sc-tw{background: url(../img/social/twitter.png);}
+.sc-tw{background: url(../img/social/twitter.webp);}
 .sc-print{background: url(../img/social/printerest.png);}
-.sc-rss{background: url(../img/social/rss.png);}
+.sc-rss{background: url(../img/social/rss.webp);}
 .sc-glg{background: url(../img/social/google.png);}
  
 .media a{width: 39px; height: 39px; float: left; margin: 0 5px; cursor: pointer;}
@@ -550,8 +550,8 @@ nav li a{text-decoration: none;}
 .media a:first-child{margin-left: 0;}
 .media a:last-child{margin-right: 0;}
 
-.twitter{ background: url("../img/twitter.png") no-repeat;}
-.rss{background: url("../img/rss.png") no-repeat;}
+.twitter{ background: url("../img/twitter.webp") no-repeat;}
+.rss{background: url("../img/rss.webp") no-repeat;}
 .facebook{background: url("../img/facebook.png") no-repeat;}
 .pinterest{background: url("../img/pinterest.png") no-repeat;}
 
@@ -700,7 +700,7 @@ nav li a{text-decoration: none;}
 	position: absolute;
 	top: 0px;
 	padding-top: 12px;
-	background:url(../img/follow.jpg) no-repeat center 6px #fa5c5c;
+	background:url(../img/follow.webp) no-repeat center 6px #fa5c5c;
 }
 .plus-btn span{
 	display: inline-block;
@@ -741,10 +741,10 @@ nav li a{text-decoration: none;}
 	margin-bottom: 53px;
 }
 
-.ico-one{background:url(../img/ico-one.png) no-repeat;}
-.ico-two{background:url(../img/ico-two.png) no-repeat;}
-.ico-three{background:url(../img/ico-three.png) no-repeat;}
-.ico-four{background:url(../img/ico-four.png) no-repeat;}
+.ico-one{background:url(../img/ico-one.webp) no-repeat;}
+.ico-two{background:url(../img/ico-two.webp) no-repeat;}
+.ico-three{background:url(../img/ico-three.webp) no-repeat;}
+.ico-four{background:url(../img/ico-four.webp) no-repeat;}
 
 /* ------------------------ PROGRESS BAR ---------------------------*/
 
@@ -859,7 +859,7 @@ nav li a{text-decoration: none;}
 }
 
 .email{
-	background: url(../img/email.png) no-repeat;
+	background: url(../img/email.webp) no-repeat;
 	width: 64px;
 	height: 62px;
 	margin: 15px 0px 0px 35px;
@@ -983,9 +983,9 @@ nav li a{text-decoration: none;}
 
 
 
-.element-1{background: url(../img/about_ico_01.png) no-repeat;}
-.element-2{background: url(../img/about_ico_02.png) no-repeat;}
-.element-3{background: url(../img/about_ico_03.png) no-repeat;}
+.element-1{background: url(../img/about_ico_01.webp) no-repeat;}
+.element-2{background: url(../img/about_ico_02.webp) no-repeat;}
+.element-3{background: url(../img/about_ico_03.webp) no-repeat;}
 
 /*.profile-element:hover{background-position: 0 -212px; cursor: pointer;}*/
 
@@ -1614,7 +1614,7 @@ padding-bottom: 20px;
 .dir-left{
 	width: 47px;
 	height: 47px;
-	background: url(../img/direction_nav_prev.png) no-repeat;
+	background: url(../img/direction_nav_prev.webp) no-repeat;
 	cursor: pointer;
 	position: absolute;
 	bottom: 265px;
@@ -1624,7 +1624,7 @@ padding-bottom: 20px;
 .dir-right{
 	width: 47px;
 	height: 47px;
-	background: url(../img/direction_nav_next.png) no-repeat;
+	background: url(../img/direction_nav_next.webp) no-repeat;
 	cursor: pointer;
 	position: absolute;
 	bottom: 265px;
@@ -1638,7 +1638,7 @@ padding-bottom: 20px;
 .close {
 	width: 29px;
 	height: 29px;
-	background: url(../img/close.png) no-repeat;
+	background: url(../img/close.webp) no-repeat;
 	position: absolute;
 	right: 25px;
 	top: 8px;
@@ -1653,8 +1653,8 @@ padding-bottom: 20px;
 	right: -50%;
 }
 .dotsmenu2{height: 14px; width: auto; margin: auto;}
-.dotsmenu2 li.activo2{background: url(../img/dotin2.png) no-repeat;}
-.dotsmenu2 li{background: url(../img/dotout2.png) no-repeat; width: 14px; height: 14px; float: left; margin: 10px 3px;}
+.dotsmenu2 li.activo2{background: url(../img/dotin2.webp) no-repeat;}
+.dotsmenu2 li{background: url(../img/dotout2.webp) no-repeat; width: 14px; height: 14px; float: left; margin: 10px 3px;}
 .dotsmenu2 li:hover{cursor: pointer;}
 
 .project-window{
@@ -1691,7 +1691,7 @@ padding-bottom: 20px;
 .btn-prev {
 	width: auto;
 	height: 26px;
-	background: url(../img/w-prev.png) left no-repeat;
+	background: url(../img/w-prev.webp) left no-repeat;
 	cursor: pointer;
 	color: #44a390;
 	font-family: 'Lato', Arial, sans-serif;
@@ -1703,7 +1703,7 @@ padding-bottom: 20px;
 .btn-next {
 	width: auto;
 	height: 26px;
-	background: url(../img/w-next.png) right no-repeat;
+	background: url(../img/w-next.webp) right no-repeat;
 	cursor: pointer;
 	color: #44a390;
 	font-family: 'Lato', Arial, sans-serif;
@@ -1899,12 +1899,12 @@ body .date{
 
 .foliomenu .all-btn:hover{color: #ffffff;}
 
-.t-twitter {float: left;background: url(../img/t-twitter.png) no-repeat;width: 28px;height: 27px;margin: 0px 4px;}
+.t-twitter {float: left;background: url(../img/t-twitter.webp) no-repeat;width: 28px;height: 27px;margin: 0px 4px;}
 .t-fb {float: left; background: url(../img/t-fb.png) no-repeat; width: 28px; height: 27px; margin: 0px 4px;}
 .t-flickr {float: left;background: url(../img/t-flickr.png) no-repeat;width: 28px;height: 27px;margin: 0px 4px;}
-.t-mail {float: left;background: url(../img/t-mail.png) no-repeat;width: 28px;height: 27px;margin: 0px 4px;}
+.t-mail {float: left;background: url(../img/t-mail.webp) no-repeat;width: 28px;height: 27px;margin: 0px 4px;}
 .t-fb:hover, .t-twitter:hover, .t-flickr:hover, .t-mail:hover{background-position: 0 -27px; cursor: pointer;}
-.t-linkedin {float: left;background: url(../img/t-linkedin.png) no-repeat;width: 28px;height: 27px;margin: 0px 4px;}
+.t-linkedin {float: left;background: url(../img/t-linkedin.webp) no-repeat;width: 28px;height: 27px;margin: 0px 4px;}
 
 .social{width: 150px;padding-top: 20px;margin: auto;text-align: center;}
 .social.member1{margin-left: 55px;}

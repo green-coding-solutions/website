@@ -21,7 +21,7 @@
               {{ $site_title_rss := .Site.Title }}
               {{ $page_title_rss := .Page.Title }}
               {{ with  .OutputFormats.Get "rss" }}
-                  <a type="application/rss+xml" title="{{ $site_title_rss }} - {{ $page_title_rss }} Feed" href="{{.Permalink}}"><img src="/img/rss.png" height="20"> {{ $page_title_rss }}</a>&nbsp; &nbsp;
+                  <a type="application/rss+xml" title="{{ $site_title_rss }} - {{ $page_title_rss }} Feed" href="{{.Permalink}}"><img src="/img/rss.webp" height="20"> {{ $page_title_rss }}</a>&nbsp; &nbsp;
               {{ end }}
         {{ end }}
     </div>
