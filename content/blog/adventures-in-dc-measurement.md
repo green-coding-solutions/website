@@ -10,8 +10,8 @@ We finally got our DC measurement setup ready ... sadly around one month later
 than expected.
 
 If you wanna see first results go here: 
-- [Wordpress sample measurement](https://metrics.green-coding.berlin/stats.html?id=2213b2ec-f96f-4fb4-9fc9-82094bdee1bb)
-- [Stress sample measurement](https://metrics.green-coding.berlin/stats.html?id=f99e563d-2c5c-453d-99fe-5ac9f6f307ac)
+- [Wordpress sample measurement](https://metrics.green-coding.io/stats.html?id=2213b2ec-f96f-4fb4-9fc9-82094bdee1bb)
+- [Stress sample measurement](https://metrics.green-coding.io/stats.html?id=f99e563d-2c5c-453d-99fe-5ac9f6f307ac)
 
 If you wann get the details of our journey, why we are integrating it into our tool, some tech specs and the future outlook on when we have the AC measurement ready, then read on :)
 
@@ -117,7 +117,7 @@ Another issue we are currently having is that the timestamps of the measurement 
 The reason for that is that we initially configured our measurement setup to measure a windows machine, where our tools are not running atm.
 Since we are now measuring Linux only there is no reason anymore for it.
 
-We will update the measurement setup as well as the measurements on our [Metrics Dashboard](https://metrics.green-coding.berlin). Hopefully we will also receive the new C libraries from PicoTech, as the [current C libaries](https://github.com/picotech/picosdk-c-examples/tree/master/picohrdl) are broken and only the GUI is working ... :(
+We will update the measurement setup as well as the measurements on our [Metrics Dashboard](https://metrics.green-coding.io). Hopefully we will also receive the new C libraries from PicoTech, as the [current C libaries](https://github.com/picotech/picosdk-c-examples/tree/master/picohrdl) are broken and only the GUI is working ... :(
 
 ## Whats next
 

@@ -142,4 +142,4 @@ There is one installed alongside with Intel Power Gadget, but we could not find
 any documentation how to leverage that. It might be easily traceable though ...
 
 If you know of any well documented 3rd partykext or even one that comes
-with macOS please let us know: [info@green-coding.berlin](mailto:info@green-coding.berlin)
+with macOS please let us know: [info@green-coding.io](mailto:info@green-coding.io)

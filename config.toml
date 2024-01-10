@@ -1,6 +1,6 @@
-baseURL = 'https://www.green-coding.berlin/'
+baseURL = 'https://www.green-coding.io/'
 languageCode = 'de-en'
-title = 'green-coding.berlin'
+title = 'green-coding.io'
 
 paginate = 10
 paginatePath = "page"

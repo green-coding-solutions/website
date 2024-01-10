@@ -12,7 +12,7 @@ or similar, nor do they provide access to CPU internal energy data like for inst
 
 Especially for RAPL there are historical and security reasons. One of such, Platypus, we have looked into a bit more detail 
 with special regards to migitation mechanisms provided by Intel in our article [RAPL, SGX AND ENERGY FILTERING - INFLUENCES ON POWER CONSUMPTION
-](https://www.green-coding.berlin/case-studies/rapl-and-sgx/). 
+](https://www.green-coding.io/case-studies/rapl-and-sgx/). 
 
 No cloud provider to our knowledge provides direct energy data of the machine. The only known thing are the 
 carbon reports by hyperscalers that show you the emissions for your services. 
@@ -34,13 +34,13 @@ and not so quickly subject to change (Servers have 4-5 years lifetime).
 Very few vendors allow this and actually the only one we know that provides direct access to IPMI for tenants in it's
 cloud offerings is [Blockheating](https://blockheating.com/). Here you get bare metal machines with also access to IPMI.
 
-If you do not know what IPMI is and how to read the data, check out our [Metrics Provider for IPMI](https://docs.green-coding.berlin/docs/measuring/metric-providers/psu-energy-ac-ipmi-machine/) in the [Green Metrics Tool](https://www.green-coding.berlin/projects/green-metrics-tool/).
+If you do not know what IPMI is and how to read the data, check out our [Metrics Provider for IPMI](https://docs.green-coding.io/docs/measuring/metric-providers/psu-energy-ac-ipmi-machine/) in the [Green Metrics Tool](https://www.green-coding.io/projects/green-metrics-tool/).
 
 A new project by the Green Software Foundation is also focussing on making this data available for users: [Real Time Energy and Carbon Standard for Cloud Providers](https://github.com/Green-Software-Foundation/real-time-cloud)
 
 ## Using estimation models
 
-If you cannot measure you have to estimate. We have written a prior [blog article](https://www.green-coding.berlin/blog/specpower-model-with-xgboost-open-sourced/) about how this can be done with an 
+If you cannot measure you have to estimate. We have written a prior [blog article](https://www.green-coding.io/blog/specpower-model-with-xgboost-open-sourced/) about how this can be done with an 
 easy machine learning model and provided an [extensive documentation on Github](https://github.com/green-coding-berlin/spec-power-model) how to discover the needed input parameters.
 
 However sometimes you need auxillary information like more details about the hypervisor and also which machine specific registers (MSRs) are accessible

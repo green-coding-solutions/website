@@ -67,7 +67,7 @@ also possible to get only results for part of the CI run.
         Live preview on Github Actions
     </span>
 </a>
-<a class="ui labeled button" href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin%2Fgreen-metrics-tool&branch=dev&workflow=45267392">
+<a class="ui labeled button" href="https://metrics.green-coding.io/ci.html?repo=green-coding-berlin%2Fgreen-metrics-tool&branch=dev&workflow=45267392">
     <div class="ui button">
         <i class="chartline icon"></i>
     </div>

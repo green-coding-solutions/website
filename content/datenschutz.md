@@ -88,7 +88,7 @@ Jablonskistr. 24
 Telefon: 030 / 30 265 945 57
 
 
-E-Mail: arne@green-coding.berlin
+E-Mail: arne@green-coding.io
 
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.

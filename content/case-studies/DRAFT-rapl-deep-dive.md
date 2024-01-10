@@ -156,7 +156,7 @@ Timing inaccuracies can be combated by aligning MSR synchronization with code st
 A Validation of DRAM RAPL Power Measurements
 
 
-What we see so far: https://metrics.green-coding.berlin/stats.html?id=0f0e89ab-f7f5-4bf8-a6ba-40efeeca50a7
+What we see so far: https://metrics.green-coding.io/stats.html?id=0f0e89ab-f7f5-4bf8-a6ba-40efeeca50a7
 
 ## RAPL and SGX
 

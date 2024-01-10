@@ -242,7 +242,7 @@ An important question is now: How does this compare in a real-world use-case? An
 
 For this we are using our [Green Metrics Tool](/projects/green-metrics-tool/) and are measuring the unit test of the [Django](https://github.com/green-coding-berlin/django
 ) project. This is by design a **event-fixed** workload also. 
-We have put all measurements online on the [Green Metrics Tool Dashboard](https://metrics.green-coding.berlin/timeline.html?uri=https://github.com/green-coding-berlin/django&filename=usage_scenario.yml&branch=main&machine_id=6&start_date=2023-12-01&end_date=2023-12-02)
+We have put all measurements online on the [Green Metrics Tool Dashboard](https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-berlin/django&filename=usage_scenario.yml&branch=main&machine_id=6&start_date=2023-12-01&end_date=2023-12-02)
 
 {{< rawhtml >}}
 <figure>
@@ -301,7 +301,7 @@ One such extension could for instance be the cooling cost of the system that you
 We have seen that the operating point shifts more towards using less aggressive power capping the more auxillary components we integrate into our view. For the server that we are using we have reached the maximum scope, but servers that are in data centers typically also feature external cooling that must be factored in and having this running longer, because you power cap the workload might result in actually using an even less aggressive power capping than say **80%**
 
 
-Did we miss something? Or are you interested in also adding some measurements of your system? Please shoot us an email to [info@green-coding.berlin](mailto:info@green-coding.berlin)
+Did we miss something? Or are you interested in also adding some measurements of your system? Please shoot us an email to [info@green-coding.io](mailto:info@green-coding.io)
 
 ## Sources
 

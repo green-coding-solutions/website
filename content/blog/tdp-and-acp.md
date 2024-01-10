@@ -95,4 +95,4 @@ which is not reflected in the Training data always.
 If anyone out there has one of these Opteron processors running and they do support RAPL
 we would be HIGHLY interested in some measurements to see how RAPL and the official AMD measurements correlate!
 
-Please contact uns at [info@green-coding.berlin](mailto:info@green-coding.berlin)
+Please contact uns at [info@green-coding.io](mailto:info@green-coding.io)

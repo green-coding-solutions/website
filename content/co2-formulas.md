@@ -173,7 +173,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p>This gives you a first impression in which order of magnitude your expected energy value is.</p>
                     <p>Example: My <a href="https://ark.intel.com/content/www/de/de/ark/products/84993/intel-core-i75557u-processor-4m-cache-up-to-3-40-ghz.html"><strong>Intel i7-5557U</strong> has a TDP of <strong>28 W</strong></a></p>
                     <p>If I were to do a compute of 5 seconds I would expect an energy consumption of <strong>140 Ws</strong> (28 W * 5 s), aka <strong>140 J</strong>.</p>
-                    <p>If you look at our <a href="https://metrics.green-coding.berlin/stats.html?id=280ab840-a360-481f-8be7-b2712fde6281">CPU measurement</a> of a full CPU load you will see that the measured value is only <strong>~60 J</strong>.</p>
+                    <p>If you look at our <a href="https://metrics.green-coding.io/stats.html?id=280ab840-a360-481f-8be7-b2712fde6281">CPU measurement</a> of a full CPU load you will see that the measured value is only <strong>~60 J</strong>.</p>
                     <p>So we can conclude that the TDP is a very rough estimate, and serves as a good upper bound. But it exaggerates the real energy by quite a bit.</p>
                 </div>
                 <!-- end segment -->              

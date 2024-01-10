@@ -24,7 +24,7 @@ The work at Green Coding for our toolchain covers an extensive scope where you c
 
 Have a look at our Github Repository to get an overview of our tools: https://github.com/green-coding-berlin
 
-Also check out the documentation for our flagship tool to get an impression of it: https://docs.green-coding.berlin/
+Also check out the documentation for our flagship tool to get an impression of it: https://docs.green-coding.io/
 
 We also currently work on CO2 emission reporters for different CI-Pipelines as well as infrastructure tools for AWS, GCP and Azure.
 
@@ -45,8 +45,8 @@ We really like this creative and architectural process and believe you will do t
 Your concrete coding work will be mostly on Linux systems writing either Python, Javascript or C Code.
 Typically when measuring architectures, applications or software libraries this means creating a demo application with them.
 
-To get an idea how this would look like have a look at our [repository for demo applications](https://github.com/green-coding-berlin/example-applications) (mostly web applications at the moment) and our documentation on [Example applications](https://docs.green-coding.berlin/docs/prologue/example-applications/) and [containerization of applications](https://docs.green-coding.berlin/docs/measuring/containerizing-applications/).
-Also check out our [Case Studies](https://www.green-coding.berlin/case-studies), [CO2 Formulas for digital products](https://www.green-coding.berlin/co2-formulas) and our [Green Metrics Dashboard](https://metrics.green-coding.berlin) to get an idea of how the raw metrics will be presented.
+To get an idea how this would look like have a look at our [repository for demo applications](https://github.com/green-coding-berlin/example-applications) (mostly web applications at the moment) and our documentation on [Example applications](https://docs.green-coding.io/docs/prologue/example-applications/) and [containerization of applications](https://docs.green-coding.io/docs/measuring/containerizing-applications/).
+Also check out our [Case Studies](https://www.green-coding.io/case-studies), [CO2 Formulas for digital products](https://www.green-coding.io/co2-formulas) and our [Green Metrics Dashboard](https://metrics.green-coding.io) to get an idea of how the raw metrics will be presented.
 
 Most of our tooling is written in script languages like Python or Node. Most of the low-level measurement software is written in C.
 
@@ -108,7 +108,7 @@ During the onboarding however, which can take around 1-2 months, we usually star
 &nbsp;
 
 ### How to apply
-Just shoot us an email at jobs@green-coding.berlin with a quick intro and why you would like to join our team.
+Just shoot us an email at jobs@green-coding.io with a quick intro and why you would like to join our team.
 
 Please also include a quick comment on your skills regarding the aforementioned skills.
 

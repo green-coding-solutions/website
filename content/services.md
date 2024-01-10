@@ -126,12 +126,12 @@ Interested?
             Jablonskistr. 24<br>
         10405 Berlin (Germany)</p>
         <p>(+49) 160 947 930 24</p>
-        <p><a href="mailto:info@green-coding.berlin">info@green-coding.berlin</a></p>
+        <p><a href="mailto:info@green-coding.io">info@green-coding.io</a></p>
         <div class="media">
             <a href="https://www.linkedin.com/company/green-coding-berlin">
                 <div class="t-linkedin"></div>
             </a>
-            <a href="mailto:info@green-coding.berlin"><div class="t-mail"></div></a>
+            <a href="mailto:info@green-coding.io"><div class="t-mail"></div></a>
         </div>
     </div>
     <form id="formulario" action="https://submit-form.com/M3XrdBO9" method="post" data-static-form-name="contact">    
