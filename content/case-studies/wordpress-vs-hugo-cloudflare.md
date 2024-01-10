@@ -271,7 +271,10 @@ option = {
   xAxis: {
     data: categoryData
   },
-  yAxis: {},
+  yAxis: {
+    axisLabel: {show: true},
+    name: 'Unit: J',
+  },
   series: [
     {
       type: 'bar',
