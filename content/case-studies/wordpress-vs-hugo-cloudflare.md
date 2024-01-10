@@ -198,7 +198,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                         </a>
                     </div>
                     <p></p>
-                    <div id="chart"style="width: 100%; max-width: 500px; height: 300px; display: block; float:right;"></div>
+                    <div id="chart"style="width: 100%; max-width: 600px; height: 300px; display: block; float:right;"></div>
                     <p>The chart on the right side shows the relation of the HUGO build process (<strong>~1.4 J</strong>), the HUGO energy per web request (<strong>~1 J</strong>) and the energy for a web request o Wordpress (<strong>~10 J</strong>)</p>
                     <p>Since we have repeated the measurements 3 times we attached the error bars, which represent the 95% confidence interval.</p>
                     <p>The measurements are already an order of magnitude off, which is kind of what we assumed from the start. A static site is enormously more efficient, even if you also include the build process. Even for this simple setup it is around 10x.</p>
@@ -246,9 +246,9 @@ var myChart = echarts.init(chartDom);
 var option;
 
 var categoryData = [
-  'HUGO-build',
-  'HUGO-request',
-  'WP-request'
+  'Static Site\n(HUGO, build)',
+  'Static Site\n(HUGO, request)',
+  'Dynamic Site\n(Wordpress, request)'
 ];
 var errorData = [
   [0, 0.9209346288584132, 1.8923987044749198],
