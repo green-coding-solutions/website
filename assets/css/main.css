@@ -457,7 +457,6 @@ nav li a{text-decoration: none;}
 	/*margin-top: 370px;*/
 	z-index: 9998;
 	width: 100%;
-	height: 375px;
 	background: #2b3e50;
 }
 
@@ -2392,4 +2391,15 @@ a.project-item > i.icon {
     float:right;
     font-size: 14px;
     font-style: italic;
+}
+
+#footer-images {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#footer-images * {
+    padding: 0;
+    margin: 0;
 }
