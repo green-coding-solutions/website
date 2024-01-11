@@ -379,7 +379,7 @@ and re-run the measurement on a machine more apt for your comparison.
     </div>    
     <div class="card">
         <div class="image wordpress-card">
-            <img src="/img/projects/wordpress.png">
+            <img src="/img/projects/wordpress.webp">
         </div>
         <div class="content wordpress-card">
             <div class="header">Wordpress</div>
