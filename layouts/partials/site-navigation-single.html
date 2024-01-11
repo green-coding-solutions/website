@@ -1,46 +1,63 @@
+<select class="m-2 border-0" id="select-language" onchange="location = this.value;">
+  {{ $siteLanguages := .Site.Languages}}
+  {{ $pageLang := .Page.Lang}}
+  {{ range .Page.AllTranslations }}
+  {{ $translation := .}}
+  {{ range $siteLanguages }}
+  {{ if eq $translation.Lang .Lang }}
+  {{ $selected := false }}
+  {{ if eq $pageLang .Lang}}
+  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
+  {{ else }}
+  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</select>
 
 <div class="block-menu">
      <select class="navigation_resp" onchange="document.location=this.options[this.selectedIndex].value;">
-        <option value="/about/" class="second_item">About</option>
-        <option value="/services/" class="second_item">Services</option>
-        <option value="/#nav-events" class="second_item">Talks & Events</option>
-        <option value="/blog/" class="second_item">Blog</option>
-        <option value="/jobs/" class="second_item">Jobs</option>
-        <option value="/co2-formulas/" class="second_item">CO2-Formulas</option>
-        <option value="/case-studies/" class="second_item">Case Studies</option>
-        <option value="/#nav-team" class="second_item">Team</option>
+        <option value="{{ absLangURL "about" }}" class="second_item">About</option>
+        <option value="{{ absLangURL "services" }}" class="second_item">Services</option>
+        <option value="{{absLangURL "/" }}#nav-events" class="second_item">Talks & Events</option>
+        <option value="{{ absLangURL "blog" }}" class="second_item">Blog</option>
+        <option value="{{ absLangURL "jobs" }}" class="second_item">Jobs</option>
+        <option value="{{ absLangURL "co2-formulas"}}" class="second_item">CO2-Formulas</option>
+        <option value="{{ absURL "case-studies"}}" class="second_item">Case Studies</option>
+        <option value="{{ absLangURL "/" }}#nav-team" class="second_item">Team</option>
     </select>
 </div>
 <div class="menu-select">
     <nav>
         <ol class="contentMenu">
             <li>
-               <a href="/about/"><div class="menubtn">
+               <a href="{{ absLangURL "about" }}"><div class="menubtn">
                     <div class="contentbtn">about</div>
                 </div></a>
             </li>
             <li>
-               <a href="/services/"><div class="menubtn">
+               <a href="{{ absLangURL "services" }}"><div class="menubtn">
                     <div class="contentbtn">services</div>
                 </div></a>
             </li>
             <li>
-               <a href="/blog/"><div class="menubtn">
+               <a href="{{ absLangURL "blog" }}"><div class="menubtn">
                     <div class="contentbtn">blog</div>
                 </div></a>
             </li>
             <li>
-               <a href="/jobs/"><div class="menubtn">
+               <a href="{{ absLangURL "jobs" }}"><div class="menubtn">
                     <div class="contentbtn">jobs</div>
                 </div></a>
             </li>
             <li>
-               <a href="/co2-formulas/"><div class="menubtn">
+               <a href="{{ absLangURL "co2-formulas" }}"><div class="menubtn">
                     <div class="contentbtn">CO2-Formulas</div>
                 </div></a>
             </li>
             <li>
-               <a href="/case-studies/"><div class="menubtn">
+               <a href="{{ absURL "case-studies" }}"><div class="menubtn">
                     <div class="contentbtn">Case Studies</div>
                 </div></a>
             </li>

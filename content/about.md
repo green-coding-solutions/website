@@ -5,6 +5,7 @@ description: "Find out what we do at Green Coding and why the carbon impact of s
 date: 2022-07-21 08:00:00
 author: "Arne Tarara"
 authorlink: "https://de.linkedin.com/in/arne-tarara"
+translationKey: about
 
 ---
 

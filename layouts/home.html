@@ -3,6 +3,7 @@
 {{ partial "site-navigation.html" . }}
 {{ end }}
 {{ define "main" }}
+
 <section id="about" class="bg-one">
     <div id="nav-about"></div>
     <div class="section-one">
@@ -11,9 +12,9 @@
             <div class="line line-1"></div>
         </div>
         <div class="data-content-one">
-            <p>We are helping open source teams, cloud providers, datacenters, software companies and other industries to understand and optimize the carbon emissions of their software and digital infrastructure.</p>
+            <p>{{ i18n "home_teaser" }}</p>
             <div class="btn-one">
-                <a href="/services"><span>👉 See our services </span></a>
+                <a href="/services"><span>{{i18n "home_cta"}}</span></a>
             </div>
         </div>
         <div class="separator">
@@ -35,6 +36,12 @@
             We develop tools to empower developers and users to make energy and carbon concious decisions
         </div>
         <div id="project-items-container" class="data-content-two">
+            {{/*
+                In an untranslated page this call would be ... where .Site.RegularPages "Type" ...
+                But since the Site object changes depending on the current language we will get an empty folder
+                if a folder is not fully translated
+            */}}
+
             {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "projects" ) ) }}
                 <a class="project-item" href="{{.Permalink}}">
                     <i class="{{ .Params.Icon }} icon"></i>
@@ -128,7 +135,7 @@
             </div>
             <div class="data-content-two">
                 Browse through our latest events and watch recordings (if available :) )<br>
-                For a full list: 👉 <a href="/talks-and-events" style="color: white; text-decoration: underline;">All
+                For a full list: 👉 <a href="{{ absURL "talks-and-events" }}" style="color: white; text-decoration: underline;">All
                 our Talks & Events</a>
             </div>
         </div>
@@ -136,7 +143,14 @@
             <div class="section portfoliocontent">
                 <div id="container2" class="clearfix">
                     <div class="inici"></div>
-                    {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "talks-and-events" ) ) }}
+
+                    {{/*
+                        In an untranslated page this call would be ... where .Site.RegularPages "Type" ...
+                        But since the Site object changes depending on the current language we will get an empty folder
+                        if a folder is not fully translated
+
+                   */}}
+                    {{ range $index, $element := ( first 9 ( where .Sites.First.RegularPages "Type" "talks-and-events" ) ) }}
                     <div class="element talks">
                         <a href="{{.Permalink}}">
                             <div class="ch-grid">
