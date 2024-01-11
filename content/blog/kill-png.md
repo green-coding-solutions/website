@@ -43,7 +43,7 @@ Total space saved: 4.87 MB
 
 This is amazing. How much unnecessary data was transferred every time someone visited that site.
 
-So let’s try a bigger project Wordpress. This is one of the most used sites out there.
+So let’s try a bigger project [Wordpress](https://github.com/WordPress/WordPress/tree/bcb0f7467874c97a63b78d279c2ddccf9a18824a). This is one of the most used sites out there.
 
 ```
 Total original size: 13.76 MB
@@ -53,8 +53,23 @@ Total space saved: 5.08 MB
 
 Wow considering these images are probably loaded millions of times a day this would save a huge amount of data.
 
-Of course a site like Wordpress might still opt to use 30 year old technology because they want to make sure that the site is still accessible on really really old browsers. But is that really worth it? I think everyone needs to start thinking about their footprint and how to reduce it and if this means that some people might not see an image I would at least want a discussion about it.
+Of course a site like Wordpress might still opt to use 30 year old technology because they want to make sure that the site is still accessible on really really old browsers. But is that really worth it? I think everyone needs to start thinking about their footprint and how to reduce it and if this means that some people, on ancient unpatched systems, might not see an image I would at least want a discussion about it. Looking at [https://caniuse.com/webp](https://caniuse.com/webp) the webp image technology is available on 97.05% of all users. Which is already quite a lot. If you want to increase even more you can use [webp-hero](https://github.com/chase-moskal/webp-hero) which is a "browser polyfill for the webp image format" so that older browsers can render webp images. It is as easy as:
+```
+<!--[if IE]>
+<script src="https://unpkg.com/webp-hero@0.0.2/dist-cjs/polyfills.js"></script>
+<script src="https://unpkg.com/webp-hero@0.0.2/dist-cjs/webp-hero.bundle.js"></script>
+<script>
+	var webpMachine = new webpHero.WebpMachine()
+	webpMachine.polyfillDocument()
+</script>
+<![endif]-->
+```
+
+but please read the documentation for more details.
 
 In the future I would love to build a service that tells you how much data you can save by giving it a git repo. But that will be for another post.
 
 For now try it on your own repos and feel free to comment and improve the script. PRs are very welcome!
+
+Although image compression is no new technique we see an important differnce here between classical perfomance engineering techniques and the newer spin on the topic, Green Coding, which we want to push forward.
+For a normal website, even for wordpress, the transfer time is often good enough as the user does not even notice the latency on a normal connection. However we saved by just using a simple one time operation about 70% of transfer volume through the network. This means that in the near future some network switches do not have to be upgraded and we save hardware and thus CO2 for the plant. This is just a minor example of what we also consider Green Coding: Applying already known techniques for savings that are not performance critical, just to do reduce resource consumption and thus CO2 emission.
