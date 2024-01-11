@@ -21,7 +21,7 @@
               {{ $site_title_rss := .Site.Title }}
               {{ $page_title_rss := .Page.Title }}
               {{ with  .OutputFormats.Get "rss" }}
-                  <a type="application/rss+xml" title="{{ $site_title_rss }} - {{ $page_title_rss }} Feed" href="{{.Permalink}}"><img src="/img/rss.png" height="20"> {{ $page_title_rss }}</a>&nbsp; &nbsp;
+                  <a type="application/rss+xml" title="{{ $site_title_rss }} - {{ $page_title_rss }} Feed" href="{{.Permalink}}"><img src="/img/rss.webp" height="20"> {{ $page_title_rss }}</a>&nbsp; &nbsp;
               {{ end }}
         {{ end }}
     </div>
@@ -32,10 +32,12 @@
          - {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} - {{ now.Format "2006"}} {{ end }}
     </div>
 
-    <div class="data-content-three">
-         <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=www.green-coding.io"><img src="/img/gwf-badge.webp" alt="This website is hosted Green - checked by thegreenwebfoundation.org"></a>
+    <div id="footer-images" class="data-content-three">
         <div id="wcb" class="carbonbadge wcb-d"></div>
         <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=www.green-coding.io"><img src="/img/tgwf-badge.webp" alt="This website is hosted Green - checked by thegreenwebfoundation.org" width="250"></a>
+        <br>
+        <br>
     </div>
 
 </div><!-- end footer -->
