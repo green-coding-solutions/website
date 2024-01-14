@@ -63,7 +63,7 @@ Software kann so schnell sein, dass es nicht wahrnehmbar ist, ob die Nutzung 10m
 
 Um all diese getrennten Bereiche für die EntwicklerInnen sichtbar zu machen, entwickeln wir Open-Source-Tools, die den Energieverbrauch sichtbar machen.
 
-Für nutzerorientierte Anwendungen in der Desktop-, Web- und mobilen Welt entwickeln wir ein Tool zur Messung des gesamten Anwendungslebenszyklus auf der Grundlage eines eines Standardnutzungsszenarios: Das [Green Metrics Tool] (https://github.com/green-coding-services/green-metrics-tool)
+Für nutzerorientierte Anwendungen in der Desktop-, Web- und mobilen Welt entwickeln wir ein Tool zur Messung des gesamten Anwendungslebenszyklus auf der Grundlage eines eines Standardnutzungsszenarios: Das [Green Metrics Tool] (https://github.com/green-coding-berlin/green-metrics-tool)
 
 Durch die Verknüpfung von der Version des Codes und eines Nutzungsszenarios können wir verschiedene Software miteinander vergleichbar machen.
 
@@ -130,7 +130,7 @@ Die Lösung liegt unserer Meinung nach darin, diese Ressource sichtbarer zu mach
 Wir befassen uns derzeit mit diesem Thema, indem wir Entwickler durch [Meetups](/meetups-and-events/) und durch
 Vorträge auf Konferenzen oder Coding Bootcamps wie [WBS Coding School](https://www.wbscodingschool.com/)
 
-Auf der technischen Seite heben wir die Netzwerkemissionen in unserem [Green Metrics Tool](https://github.com/green-coding-services/green-metrics-tool) hervor und zeigen Empfehlungen wie:
+Auf der technischen Seite heben wir die Netzwerkemissionen in unserem [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool) hervor und zeigen Empfehlungen wie:
 
 - Verlagerung von Mobilfunk- zu Festnetzanschlüssen
 - Demand Shifting, um Netzwerkanfragen zu CO2 freundlichen Zeiten zu erledigen

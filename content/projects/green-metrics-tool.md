@@ -10,7 +10,7 @@ icon: "code"
 The Green Metrics Tool is a free open-source (FOSS) tool we designed as a concept on how we believe it can support
 developers best to measure the energy / CO2 consumption of software architectures.
 
-Our tool is open-source [AGPLv3 Licensed](https://github.com/green-coding-services/green-metrics-tool/blob/main/LICENSE)
+Our tool is open-source [AGPLv3 Licensed](https://github.com/green-coding-berlin/green-metrics-tool/blob/main/LICENSE)
 
 You can either install it locally or use our demo dashboard, where we also offer the possibilty to submit software for measuring (link below).
 
@@ -18,7 +18,7 @@ Please see all the details on Github and in the documentation.
 
 {{< button "book" "Documentation" "https://docs.green-coding.io" >}}
 
-{{< button "code branch" "Github" "https://github.com/green-coding-services/green-metrics-tool" >}}
+{{< button "code branch" "Github" "https://github.com/green-coding-berlin/green-metrics-tool" >}}
 
 {{< button "columns" "Demo Dashboard" "https://metrics.green-coding.io" >}}
 

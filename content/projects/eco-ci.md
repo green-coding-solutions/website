@@ -39,11 +39,11 @@ also possible to get only results for part of the CI run.
 </figure>
 {{< /rawhtml >}}
 
-{{< button "code branch" "Github Repository" "https://github.com/green-coding-services/eco-ci-energy-estimation" >}}
+{{< button "code branch" "Github Repository" "https://github.com/green-coding-berlin/eco-ci-energy-estimation" >}}
 
 {{< button "shopping bag" " Github Marketplace" "https://github.com/marketplace/actions/eco-ci-energy-estimation" >}}
 
-{{< button "eye" "Live preview on Github Actions" "https://github.com/green-coding-services/green-metrics-tool/actions/runs/4720202654" >}}
+{{< button "eye" "Live preview on Github Actions" "https://github.com/green-coding-berlin/green-metrics-tool/actions/runs/4720202654" >}}
 
 {{< button "chartline" "CI Energy Cost monitoring" "https://metrics.green-coding.io/ci.html?repo=green-coding-berlin%2Fgreen-metrics-tool&branch=dev&workflow=45267392" >}}
 
@@ -62,7 +62,7 @@ The Eco CI Activity checker skips the test run then and thus saves energy and CO
 
 {{< button "book" "Blog article" "/blog/eco-ci-activity-checker-released/" >}}
 
-{{< button "code branch" "Github Repository" "https://github.com/green-coding-services/eco-ci-activity-checker" >}}
+{{< button "code branch" "Github Repository" "https://github.com/green-coding-berlin/eco-ci-activity-checker" >}}
 
 {{< button "shopping bag" "Github Marketplace" "https://github.com/marketplace/actions/eco-ci-activity-checker" >}}
 
@@ -72,11 +72,11 @@ The Eco CI Activity checker skips the test run then and thus saves energy and CO
 
 ## Gitlab Plugin
 
-Please for Gitlab our main central [Github repository documentation](https://github.com/green-coding-services/eco-ci-energy-estimation/blob/main/README.md#gitlab) which talks about the Gitlab functionality.
+Please for Gitlab our main central [Github repository documentation](https://github.com/green-coding-berlin/eco-ci-energy-estimation/blob/main/README.md#gitlab) which talks about the Gitlab functionality.
 
 {{< button "book" "Blog article" "/blog/eco-ci-gitlab-release/" >}}
 
-{{< button "code branch" "Github Repository (for Gitlab documentation)" "https://github.com/green-coding-services/eco-ci-energy-estimation/blob/main/README.md#gitlab" >}}
+{{< button "code branch" "Github Repository (for Gitlab documentation)" "https://github.com/green-coding-berlin/eco-ci-energy-estimation/blob/main/README.md#gitlab" >}}
 
 &nbsp;
 

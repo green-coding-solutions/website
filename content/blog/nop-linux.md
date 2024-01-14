@@ -186,7 +186,7 @@ apt remove -y docker docker-engine docker.io containerd runc
 apt install -y ca-certificates curl gnupg lsb-release
 
 su gc << 'EOF'
-git clone https://github.com/green-coding-services/green-metrics-tool ~/green-metrics-tool
+git clone https://github.com/green-coding-berlin/green-metrics-tool ~/green-metrics-tool
 cd ~/green-metrics-tool
 git submodule update --init
 python3 -m pip install -r ~/green-metrics-tool/requirements.txt

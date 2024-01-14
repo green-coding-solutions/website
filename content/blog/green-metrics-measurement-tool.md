@@ -12,7 +12,7 @@ usage.
 The tool is fully open sourced under MIT license and can be used and copied
 by anyone for any purpose.
 
-All code is available on Github: https://github.com/green-coding-services/green-metrics-tool
+All code is available on Github: https://github.com/green-coding-berlin/green-metrics-tool
 
 &nbsp;
 ## About the tool
@@ -45,7 +45,7 @@ repository must contain a usage_scenario.json in a correct format and
 currently only supports command line applications.
 
 To test the flow of the green metric tool we provide a ready made demo software
-that you can test: [https://github.com/green-coding-services/green-metric-demo-software](Github Repository for the Demo software)
+that you can test: [https://github.com/green-coding-berlin/green-metric-demo-software](Github Repository for the Demo software)
 
 After submitting a URL your software will be tested in 5-15 minutes, depeding on
 the current queue. A link to the result page will be sent via e-mail.
@@ -59,7 +59,7 @@ go to: https://metrics.green-coding.io/
 
 ## Documentation
 The current documentation for the available fields in the prototype is found directly
-in the [https://github.com/green-coding-services/green-metric-demo-software](Github Repository for the Demo software)
+in the [https://github.com/green-coding-berlin/green-metric-demo-software](Github Repository for the Demo software)
 
 
 ## Project timeline

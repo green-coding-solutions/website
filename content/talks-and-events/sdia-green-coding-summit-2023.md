@@ -18,7 +18,7 @@ We are joining as a workshop organizer for the **Green Coding Summit** by the [S
 
 The first session will introduce hardware and software concepts to read energy data with further steps to convert it to CO2 metrics. In addition, indirect energy metrics from network and cloud services are discussed with current approaches to approximate them using linear and non-linear machine learning models.
 
-During the second session the [Green Metrics Tool](https://github.com/green-coding-services/green-metrics-tool/) and ECO-CI will be used 'hands-on' to measure container based software as well as a standard Github/Gitlab CI/CD pipeline - This will feature setting up these tools, generating measurements, comparing metrics and understanding typical caveats when conducting energy and CO2 measurements of software.
+During the second session the [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool/) and ECO-CI will be used 'hands-on' to measure container based software as well as a standard Github/Gitlab CI/CD pipeline - This will feature setting up these tools, generating measurements, comparing metrics and understanding typical caveats when conducting energy and CO2 measurements of software.
 
 ## How to join the conference and the workshop
 

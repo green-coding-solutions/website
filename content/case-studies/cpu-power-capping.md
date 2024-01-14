@@ -27,7 +27,7 @@ The power capping feature in CPUs is most renowned through the RAPL interface in
 When getting aware of this feature as a Green Coder what first comes to mind is: Can I use this feature to make my code greener? Are there any negative effects from using power capping and which metric should I use to not run into rebound effects or drawbacks?
 
 In order to answer this question we will look through a synthetic benchmark at the **CPU energy** at first and then also at the **energy of the total machine** and include **embodied carbon**.
-Afterwards we will use a real-world use-case by using a **CI/CD workload**. The unit tests from the [Django](https://github.com/green-coding-services/django
+Afterwards we will use a real-world use-case by using a **CI/CD workload**. The unit tests from the [Django](https://github.com/green-coding-berlin/django
 ) project.
 
 {{< greenblock >}}
@@ -240,9 +240,9 @@ Here we see that around **80%** there seems to be a sweet spot where the power s
 
 An important question is now: How does this compare in a real-world use-case? And how are the results to be interpreted when we do look at the whole machine and not only the CPU? What happens if we factor in embodied carbon? Will results be the same?
 
-For this we are using our [Green Metrics Tool](/projects/green-metrics-tool/) and are measuring the unit test of the [Django](https://github.com/green-coding-services/django
+For this we are using our [Green Metrics Tool](/projects/green-metrics-tool/) and are measuring the unit test of the [Django](https://github.com/green-coding-berlin/django
 ) project. This is by design a **event-fixed** workload also.
-We have put all measurements online on the [Green Metrics Tool Dashboard](https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-services/django&filename=usage_scenario.yml&branch=main&machine_id=6&start_date=2023-12-01&end_date=2023-12-02)
+We have put all measurements online on the [Green Metrics Tool Dashboard](https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-berlin/django&filename=usage_scenario.yml&branch=main&machine_id=6&start_date=2023-12-01&end_date=2023-12-02)
 
 {{< rawhtml >}}
 <figure>

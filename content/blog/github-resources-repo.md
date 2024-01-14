@@ -24,11 +24,11 @@ categorised content.
 
 The most helpful at this point are probably:
 
-- [Green Software Engineering Web](https://github.com/green-coding-services/links-documents-resources/blob/main/Links/Green-Software-Engineering-Web.md)
+- [Green Software Engineering Web](https://github.com/green-coding-berlin/links-documents-resources/blob/main/Links/Green-Software-Engineering-Web.md)
 
-- [Green Software Engineering Articles / Blogs / Personas](https://github.com/green-coding-services/links-documents-resources/blob/main/Links/Green-Software-Engineering-Personas-Organizations.md)
+- [Green Software Engineering Articles / Blogs / Personas](https://github.com/green-coding-berlin/links-documents-resources/blob/main/Links/Green-Software-Engineering-Personas-Organizations.md)
 
-- [Green Software Engineering Desktop](https://github.com/green-coding-services/links-documents-resources/blob/main/Links/Green-Software-Engineering-Desktop.md)
+- [Green Software Engineering Desktop](https://github.com/green-coding-berlin/links-documents-resources/blob/main/Links/Green-Software-Engineering-Desktop.md)
 
 The most promising link in there is probably the Green Software Foundation and
 their planned [Green Software Projects](https://greensoftware.foundation/projects)

@@ -77,7 +77,7 @@ than the other, but still shows higher average power consumption.
 What however has not been not been done in the White Paper is that the comparison
 does not take the different architecture, base frequency and core counts into account.
 
-Our [XGBoost model](https://github.com/green-coding-services/spec-power-model) for instance respects this and the estimations here look a bit different:
+Our [XGBoost model](https://github.com/green-coding-berlin/spec-power-model) for instance respects this and the estimations here look a bit different:
 
 - **AMD Opteron (TDP 95W), 2.2 GHz, 2 chips, 12 cores/chip, 16GB RAM**
 - System Peak Power estimated: 241 W

@@ -13,7 +13,7 @@ with strong planning to avoid rebound effects.
 Therefore we create tools to measure the energy use of software in CI-Build-Pipelines, VMs, Containers and User Desktop environments.
 All of our software is Free and Open-Source Software to be used by anyone.
 
-Our flagship work is an [open-source green software toolchain](https://github.com/green-coding-services/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
+Our flagship work is an [open-source green software toolchain](https://github.com/green-coding-berlin/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
 
 &nbsp;
 
@@ -23,7 +23,7 @@ You will be working with our team to create tools to measure the energy use of s
 
 As a junior developer, your work will be mainly developing sample applications and creating use-cases and comparisons of how people can relate to the energy consumption of software.
 
-See examples in our [Case Studies](https://www.green-coding.io/case-studies), our [Example Applications](https://github.com/green-coding-services/example-applications) and our [Green Metrics Dashboard](https://metrics.green-coding.io)
+See examples in our [Case Studies](https://www.green-coding.io/case-studies), our [Example Applications](https://github.com/green-coding-berlin/example-applications) and our [Green Metrics Dashboard](https://metrics.green-coding.io)
 
 &nbsp;
 

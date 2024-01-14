@@ -21,7 +21,7 @@ DVFS is available in every modern Intel or AMD CPU. the name in AMD CPUs is [Tur
 
 Turbo Boost can be checked through the linux subsystem, but also by querying the CPU registers directly.
 
-You can find a script to check if Turbo Boost is on or off on your system in our [Github Tools](https://github.com/green-coding-services/tools/blob/main/turbo_boost.sh) repository.
+You can find a script to check if Turbo Boost is on or off on your system in our [Github Tools](https://github.com/green-coding-berlin/tools/blob/main/turbo_boost.sh) repository.
 
 Turbo Boost as a feature enables the processor to overshoot it's base frequency for a certain amount of time. This enables snappy responsiveness when instantaneous load happens.
 
@@ -91,7 +91,7 @@ This is the result:
 
 An important question is however also: How does this compare in a real-world use-case? Will results be the same?
 
-We picked the Unit-Tests of the Django project (https://github.com/green-coding-services/example-applications/tree/main/django_tests)
+We picked the Unit-Tests of the Django project (https://github.com/green-coding-berlin/example-applications/tree/main/django_tests)
 and run the tests with Turbo-boost off and on.
 
 Important: If you have Turbo-Boost off and you have high loads on Hard-Disks the cut-off point when it makes sense to

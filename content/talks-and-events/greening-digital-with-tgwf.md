@@ -18,7 +18,7 @@ Chris will give a share what you need to know about how digital infrastructure i
 He will also talk about the lastest works of The Green Web Foundation and their mission to create a fossil free internet.
 
 ## Part#2 Green Coding Solutions
-In the second part of the Meetup we as Green Coding Solutions will be presenting our recent works on our Open Source Toolchain (AGPLv3) to measure the carbon impact of your Software: [The Green Metrics Tool](https://github.com/green-coding-services/green-metrics-tool)
+In the second part of the Meetup we as Green Coding Solutions will be presenting our recent works on our Open Source Toolchain (AGPLv3) to measure the carbon impact of your Software: [The Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool)
 We will also walk you through the approach to measure your infrastructure and software with our tool and how you can use it in your own project.
 
 ## Casual Pizzas & Community

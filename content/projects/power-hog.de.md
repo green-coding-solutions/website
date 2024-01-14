@@ -21,22 +21,22 @@ Der Hog besteht aus zwei Hauptteilen.
 Das Hintergrundskript, das alle Daten sammelt und sie an einen Server sendet. Dies wird `power_logger` genannt. Mehr
 Informationen können hier gefunden werden:
 
-[https://github.com/green-coding-services/hog#power-logger](https://github.com/green-coding-services/hog#power-logger)
+[https://github.com/green-coding-berlin/hog#power-logger](https://github.com/green-coding-berlin/hog#power-logger)
 
 Die App, die Ihnen erste Einblicke in die gesammelten Daten und weitere Informationen über den Hog auf Ihrem System gibt. Einzelheiten
 finden Sie hier:
 
-[https://github.com/green-coding-services/hog#the-desktop-app](https://github.com/green-coding-services/hog#the-desktop-app)
+[https://github.com/green-coding-berlin/hog#the-desktop-app](https://github.com/green-coding-berlin/hog#the-desktop-app)
 
 Detaillierte Analysen können im Dashboard des Green Metrics Tool durchgeführt werden. Sie können entweder unseren Server oder Ihren eigenen Host verwenden.
 
 Eine vollständige Readme und Dokumentation finden Sie im GitHub Repo.
 
-{{< button "arrow alternate circle down" "Download" "https://github.com/green-coding-services/hog/releases" >}}
+{{< button "arrow alternate circle down" "Download" "https://github.com/green-coding-berlin/hog/releases" >}}
 
-{{< button "book" "Dokumentation" "https://github.com/green-coding-services/hog/blob/main/README.md#the-power-hog" >}}
+{{< button "book" "Dokumentation" "https://github.com/green-coding-berlin/hog/blob/main/README.md#the-power-hog" >}}
 
-{{< button "code branch" "Github" "https://github.com/green-coding-services/hog/" >}}
+{{< button "code branch" "Github" "https://github.com/green-coding-berlin/hog/" >}}
 
 ---
 

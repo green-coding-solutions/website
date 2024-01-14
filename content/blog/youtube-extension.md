@@ -18,7 +18,7 @@ During the onboarding process at Green Coding Solutions, I was given the task of
 
 ## Installing
 
-First of all, you need to download the code at https://github.com/green-coding-services/greener-youtube
+First of all, you need to download the code at https://github.com/green-coding-berlin/greener-youtube
 
 Now open your Chrome/Brave browser, and go to chrome://extensions/
 

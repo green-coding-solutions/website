@@ -177,7 +177,7 @@ Example
 
 So taking a normal **Ubuntu 22.04** system on a **Fujitsu Esprimo 956** **4-Core** machine we conduct the following test:
 
-- Run [a simple program](https://github.com/green-coding-services/tools/blob/main/read_cpu.sh) that calculates CPU utilization and outputs a line every 10 ms to a file and sleeps in between
+- Run [a simple program](https://github.com/green-coding-berlin/tools/blob/main/read_cpu.sh) that calculates CPU utilization and outputs a line every 10 ms to a file and sleeps in between
 - Check how many lines were written
 - check `top` while doing so and write down the CPU utilization of the system as well as the process
 - check the frequency of all our cores on the system
@@ -558,7 +558,7 @@ cpu cores       : 2
 
 ## Gitlab Pipelines (Linux)
 
-[Source](https://gitlab.com/green-coding-services/system-info/-/jobs/4541289111)
+[Source](https://gitlab.com/green-coding-berlin/system-info/-/jobs/4541289111)
 
 ### Frequency
 ```

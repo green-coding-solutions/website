@@ -25,7 +25,7 @@ Currently we only include a very limited set of python functions that can be opt
 
 Find the code under:
 
-https://github.com/green-coding-services/code-benchmark
+https://github.com/green-coding-berlin/code-benchmark
 
 We have included a Green Metrics Tool `usage_scenario.yml` file so you can benchmark the code with the GMT. Currently the problems are all CPU bound but we will extend this to also have some memory or IO bound problems that can be optimised.
 

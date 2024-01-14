@@ -25,7 +25,7 @@ The server we are developing should do three simple things:
 
 Like pretty much with any project we start by creating a docker file and specifying what components we need initially. Details can be found in the GitHub repo:
 
-[https://github.com/green-coding-services/SLCA-Code](https://github.com/green-coding-services/SLCA-Code)
+[https://github.com/green-coding-berlin/SLCA-Code](https://github.com/green-coding-berlin/SLCA-Code)
 
 For this example we use a simple setup with a [FastAPI](https://fastapi.tiangolo.com/) and a database in the background. Because I am used to [PostgreSQL](https://www.postgresql.org/) my initial setup includes this but the way we are setting this up we can easily benchmark different backends in the future.
 

@@ -23,7 +23,7 @@ Mozilla released a new [version 104](https://www.mozilla.org/en-US/firefox/104.0
 {{< /rawhtml >}}
 
 This immediately sparked our interest and we wanted to give it some test run against
-a containerized browser in our [Green Metrics Tool](https://github.com/green-coding-services/green-metrics-tool).
+a containerized browser in our [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool).
 
 According to the information from Mozilla this works only for M1 Macs or on Windows 11.
 

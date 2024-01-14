@@ -139,7 +139,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="https://github.com/green-coding-services/wordpress-static">Wordpress Minimal Site</a>
+                                    <a href="https://github.com/green-coding-berlin/wordpress-static">Wordpress Minimal Site</a>
                                     <p>Github repository</p>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="https://github.com/green-coding-services/example-applications/tree/main/wordpress-vs-hugo/hugo-apache">HUGO Minimal Site</a>
+                                    <a href="https://github.com/green-coding-berlin/example-applications/tree/main/wordpress-vs-hugo/hugo-apache">HUGO Minimal Site</a>
                                     <p>Github repository</p>
                                 </div>
                             </div>

@@ -26,5 +26,5 @@ It is created automatically by our [Green Metrics Tool](/projects/green-metrics-
 The energy metrics created come in different metric types, depending on if you tested it locally on your dev system
 or on our [hosted demo instance](https://metrics.green-coding.io)  with option to submit software for measuring.
 
-See the badge in action for instance on our [documentation repository](https://github.com/green-coding-services/documentation) where you can directly see how much the building
+See the badge in action for instance on our [documentation repository](https://github.com/green-coding-berlin/documentation) where you can directly see how much the building
 costs of the static pages where.

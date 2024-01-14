@@ -8,7 +8,7 @@ icon: "cloud"
 
 
 {{< rawhtml >}}
-<img class="ui big floated right rounded bordered image" src="https://github.com/green-coding-services/spec-power-model/raw/main/img/hp_synergy_480_Gen10_Plus.png" alt="XGBoost performance" loading="lazy" style="margin:auto;">
+<img class="ui big floated right rounded bordered image" src="https://github.com/green-coding-berlin/spec-power-model/raw/main/img/hp_synergy_480_Gen10_Plus.png" alt="XGBoost performance" loading="lazy" style="margin:auto;">
 <br>
 {{</ rawhtml >}}
 
@@ -20,10 +20,10 @@ Unser Modell ermöglicht die Inline-Messung in Watt sowie die Energiebudgetierun
 
 In der Grafik rechts sehen Sie die Leistung für eine Out-of-Sample-Vorhersage. Weitere Details zu In-Sample-Vorhersagen, explorativer Datenanalyse und Anwendungsdokumentation finden Sie auf Github.
 
-Das Modell ist Open-Source und unter der [AGPLv3-Lizenz](https://github.com/green-coding-services/green-metrics-tool/blob/main/LICENSE) lizenziert.
+Das Modell ist Open-Source und unter der [AGPLv3-Lizenz](https://github.com/green-coding-berlin/green-metrics-tool/blob/main/LICENSE) lizenziert.
 
 ---
-{{< button "code branch" "Github incl. Dokumentation" "https://github.com/green-coding-services/spec-power-model" >}}
+{{< button "code branch" "Github incl. Dokumentation" "https://github.com/green-coding-berlin/spec-power-model" >}}
 
 &nbsp;
 
