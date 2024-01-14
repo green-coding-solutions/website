@@ -28,11 +28,13 @@
             <div class="data-content-one">
                 {{ .Content }}
             </div>
+            {{ if or (not (isset .Params "show_button")) (eq .Params.show_button false)  }}
             <div class="data-content-one">
                 <div class="btn-one">
                     <span><a href="{{.Params.Eventlink}}" style="text-decoration: none; color: #fff;">👉 RSVP on Event Page</a></span>
                 </div>
             </div>
+            {{ end }}
 
          </div>
     </section><!-- end about -->
