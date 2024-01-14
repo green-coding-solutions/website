@@ -1,11 +1,11 @@
 ---
-title: "Greening Digital - The Green Web Foundation [x] Green Coding Berlin"
+title: "Greening Digital - The Green Web Foundation [x] Green Coding Solutions"
 date: 2022-08-03 18:30:00
 publishDate: 2022-07-22
 draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/287352713/"
-eventname: "Greening Digital - The Green Web Foundation [x] Green Coding Berlin"
+eventname: "Greening Digital - The Green Web Foundation [x] Green Coding Solutions"
 eventimg: "/img/talks-and-events/greening-digital-with-tgwf.webp"
 eventimg600w: "/img/talks-and-events/greening-digital-with-tgwf-600w.webp"
 
@@ -17,8 +17,8 @@ We have teamed with **Chris Adams** from **The Green Web Foundation** to co-host
 Chris will give a share what you need to know about how digital infrastructure is powered, and how to make the greenest choices for powering your services.
 He will also talk about the lastest works of The Green Web Foundation and their mission to create a fossil free internet.
 
-## Part#2 Green Coding Berlin
-In the second part of the Meetup we as Green Coding Berlin will be presenting our recent works on our Open Source Toolchain (AGPLv3) to measure the carbon impact of your Software: [The Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool)
+## Part#2 Green Coding Solutions
+In the second part of the Meetup we as Green Coding Solutions will be presenting our recent works on our Open Source Toolchain (AGPLv3) to measure the carbon impact of your Software: [The Green Metrics Tool](https://github.com/green-coding-services/green-metrics-tool)
 We will also walk you through the approach to measure your infrastructure and software with our tool and how you can use it in your own project.
 
 ## Casual Pizzas & Community

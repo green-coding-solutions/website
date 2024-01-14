@@ -16,7 +16,7 @@ socialmedia_preview: "img/social-media-previews/cpu-power-capping.webp"
 
 Power Capping is feature that will artifically limit the electrically supplied power of a hardware component with the intention of making it less warm and / or using less electrical power draw.
 
-This feature has been featured in some recent publications that focus on AI trainings on GPUs with the intention of getting the 
+This feature has been featured in some recent publications that focus on AI trainings on GPUs with the intention of getting the
 energy consumption for their training down. [[1]](#sources) [[2]](#sources) [[3]](#sources)
 
 Since most compute workloads for transactional and operational work is still done on CPUs they make up a significant
@@ -27,7 +27,7 @@ The power capping feature in CPUs is most renowned through the RAPL interface in
 When getting aware of this feature as a Green Coder what first comes to mind is: Can I use this feature to make my code greener? Are there any negative effects from using power capping and which metric should I use to not run into rebound effects or drawbacks?
 
 In order to answer this question we will look through a synthetic benchmark at the **CPU energy** at first and then also at the **energy of the total machine** and include **embodied carbon**.
-Afterwards we will use a real-world use-case by using a **CI/CD workload**. The unit tests from the [Django](https://github.com/green-coding-berlin/django
+Afterwards we will use a real-world use-case by using a **CI/CD workload**. The unit tests from the [Django](https://github.com/green-coding-services/django
 ) project.
 
 {{< greenblock >}}
@@ -110,7 +110,7 @@ sudo apt install sysbench # we need this for a testing workload
 Once everything is installed you can check if the data can be read by issueing:
 ```console
 $ ls /sys/class/powercap/intel-rapl/
-enabled  intel-rapl:0  power  subsystem  uevent 
+enabled  intel-rapl:0  power  subsystem  uevent
 # There should be a directory named intel-rapl:0 which represents your one installed CPU chip
 
 $ cat /sys/class/powercap/intel-rapl/intel-rapl:0/name
@@ -145,10 +145,10 @@ Now we can modify the power capping of the system live by just writing to these 
 
 If, for example, we want to limit the power draw to **10 W** we issue:
 ```console
-$ echo "10000000" | sudo tee  /sys/class/powercap/intel-rapl/intel-rapl:0/constraint_0_power_limit_uw 
+$ echo "10000000" | sudo tee  /sys/class/powercap/intel-rapl/intel-rapl:0/constraint_0_power_limit_uw
 # Set 10 W long_term
 
-$ echo "10000000" | sudo tee  /sys/class/powercap/intel-rapl/intel-rapl:0/constraint_1_power_limit_uw 
+$ echo "10000000" | sudo tee  /sys/class/powercap/intel-rapl/intel-rapl:0/constraint_1_power_limit_uw
 # Set 10 W short_term
 ```
 
@@ -212,7 +212,7 @@ Threads fairness:
     events (avg/stddev):           2214.6250/1.32
     execution time (avg/stddev):   10.0011/0.00
 
-...    
+...
 
 ```
 
@@ -220,7 +220,7 @@ We are now trying the benchmark with factory default (long_term is capped to **3
 
 
 {{< table class="ui table" >}}
-|    Power Cap    |  Time (s)          | Events | Energy CPU Package (J) | 
+|    Power Cap    |  Time (s)          | Events | Energy CPU Package (J) |
 |:---------------:|:------------------:|:------:|:----------------------:|
 | Factory default | 8.478750 +-  0.01% | 15000  | 190.67 +-  0.19%       |
 | 100%            | 8.478520 +-  0.02% | 15000  | 190.75 +-  0.02%       |
@@ -240,9 +240,9 @@ Here we see that around **80%** there seems to be a sweet spot where the power s
 
 An important question is now: How does this compare in a real-world use-case? And how are the results to be interpreted when we do look at the whole machine and not only the CPU? What happens if we factor in embodied carbon? Will results be the same?
 
-For this we are using our [Green Metrics Tool](/projects/green-metrics-tool/) and are measuring the unit test of the [Django](https://github.com/green-coding-berlin/django
-) project. This is by design a **event-fixed** workload also. 
-We have put all measurements online on the [Green Metrics Tool Dashboard](https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-berlin/django&filename=usage_scenario.yml&branch=main&machine_id=6&start_date=2023-12-01&end_date=2023-12-02)
+For this we are using our [Green Metrics Tool](/projects/green-metrics-tool/) and are measuring the unit test of the [Django](https://github.com/green-coding-services/django
+) project. This is by design a **event-fixed** workload also.
+We have put all measurements online on the [Green Metrics Tool Dashboard](https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-services/django&filename=usage_scenario.yml&branch=main&machine_id=6&start_date=2023-12-01&end_date=2023-12-02)
 
 {{< rawhtml >}}
 <figure>
@@ -273,7 +273,7 @@ We have put all measurements online on the [Green Metrics Tool Dashboard](https:
 </figure>
 {{< /rawhtml >}}
 
-The different coloring in the charts show the different power cappings. 
+The different coloring in the charts show the different power cappings.
 - *Green* is **100%**
 - *Red* is **80%**
 - *Violet* is **60%**

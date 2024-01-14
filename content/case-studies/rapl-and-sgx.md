@@ -8,7 +8,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 
 ---
 
-RAPL stands for Running Average Power Limit. It is a power estimation feature in 
+RAPL stands for Running Average Power Limit. It is a power estimation feature in
 modern x86 CPUs from Intel and AMD.
 
 In the green software community it is extensively used in order to get accurate
@@ -32,12 +32,12 @@ coined [Platypus](https://platypusattack.com/)
 Moritz Lipp showed that it is possible to read the current executed processor instructions
 and also the memory layouts especially for data stored in the believed to be secure
 memory enclave from Intel called [SGX](https://en.wikipedia.org/wiki/Software_Guard_Extensions)
-SGX (Software Guard Extension) is a feature which allows the processor to create an 
+SGX (Software Guard Extension) is a feature which allows the processor to create an
 enclave in the memory that cannot be accessed even by code running in lower access
 rings than the current code.
 
 
-Intel has reacted directly with a [microcode update](https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/advisory-guidance/running-average-power-limit-energy-reporting.html) that results in distorting 
+Intel has reacted directly with a [microcode update](https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/advisory-guidance/running-average-power-limit-energy-reporting.html) that results in distorting
 the RAPL signal when SGX is enabled in the system.
 Alternative to that the user may also set a register in the processor to activate
 the so called *energy filtering* even when SGX is disabled.
@@ -52,7 +52,7 @@ Intel says that the actual RAPL data might be skewed by up to 50% of the origina
 {{< /rawhtml >}}
 
 
-What we have not found so far is any script or data that reproduces this behaviour 
+What we have not found so far is any script or data that reproduces this behaviour
 and shows the distortion in action.
 
 {{< rawhtml >}}
@@ -79,7 +79,7 @@ and shows the distortion in action.
 Finding an SGX enabled or energy filtering enabled machine
 {{< /greenblock >}}
 
-We first tried all the machines that we had lying around that according to Intel hat SGX 
+We first tried all the machines that we had lying around that according to Intel hat SGX
 on the chip or activateable through Intel ME:
 
 - Our Surface Book 1 and 2 have the capability according to Intel, but Microsoft custom BIOS cannot enable it:https://www.reddit.com/r/Surface/comments/7z1kmz/intel_sgx_extensions_arent_enabled_in_uefi_cant/
@@ -93,7 +93,7 @@ on the chip or activateable through Intel ME:
 
 We then resorted to going to the cloud, as there are way more CPUs availabe to us
 then we have at home.
-Sadly (at least for our case :) ) [SGX is usually always disabled in cloud environments](https://tozny.com/blog/secure-computation-cloud-sgx/). AWS even rolls it's own 
+Sadly (at least for our case :) ) [SGX is usually always disabled in cloud environments](https://tozny.com/blog/secure-computation-cloud-sgx/). AWS even rolls it's own
 enclave called [Nitro Enclaves](https://aws.amazon.com/ec2/nitro/nitro-enclaves/).
 
 However, if you rent a bare metal EC2 machine (either the .metal or the largest option)
@@ -103,22 +103,22 @@ you get access to the CPU registers and can set the energy filtering flag.
 Checking and activating energy filtering
 {{< /whiteblock >}}
 
-It is suprisingly easy to turn energy filtering on. We have put all the scripts in our [Tools repository](https://github.com/green-coding-berlin/tools).
+It is suprisingly easy to turn energy filtering on. We have put all the scripts in our [Tools repository](https://github.com/green-coding-services/tools).
 
-Here you find the [simple command line code](https://github.com/green-coding-berlin/tools/blob/main/check_energy_filtering_rapl.sh) (`sudo rdmsr -d 0xbc`) to check the register **0xbc** if energy filtering is active.
+Here you find the [simple command line code](https://github.com/green-coding-services/tools/blob/main/check_energy_filtering_rapl.sh) (`sudo rdmsr -d 0xbc`) to check the register **0xbc** if energy filtering is active.
 A *0* returned means it is off. A *1* returned means it is on.
 
 By issueing a *wrmsr* command like that: `sudo wrmsr 0xbc 1` energy filtering can be turned on.
 
-Also if you want to check if SGX is active we have copied the [C code to check for SGX](https://github.com/green-coding-berlin/tools/blob/main/test-sgx.c)
-into our repository, which is originally from [ayeks](https://github.com/green-coding-berlin/tools/blob/main/test-sgx.c).
+Also if you want to check if SGX is active we have copied the [C code to check for SGX](https://github.com/green-coding-services/tools/blob/main/test-sgx.c)
+into our repository, which is originally from [ayeks](https://github.com/green-coding-services/tools/blob/main/test-sgx.c).
 
 {{< greenblock >}}
 Results: Looking at energy filtering signal distortion
 {{< /greenblock >}}
 
 The results show our runs by checking CPU RAPL energy consumption of **Package 0** and **Package 1** (we have a two chip machine)
-on idle for **5 Minutes** with our [low overhead MSR RAPL checking reporter](https://github.com/green-coding-berlin/green-metrics-tool/tree/main/tools/metric_providers/cpu/energy/RAPL/MSR/system).
+on idle for **5 Minutes** with our [low overhead MSR RAPL checking reporter](https://github.com/green-coding-services/green-metrics-tool/tree/main/tools/metric_providers/cpu/energy/RAPL/MSR/system).
 
 {{< rawhtml >}}
 <figure>
@@ -140,7 +140,7 @@ on idle for **5 Minutes** with our [low overhead MSR RAPL checking reporter](htt
 {{< /rawhtml >}}
 
 
-Raw data: 
+Raw data:
 - [ec2_m5.metal_idle_p0_energy_filtering_off.csv](/files/ec2_m5.metal_idle_p0_energy_filtering_off.csv)
 - [ec2_m5.metal_idle_p1_energy_filtering_off.csv](/files/ec2_m5.metal_idle_p1_energy_filtering_off.csv)
 - [ec2_m5.metal_idle_p0_energy_filtering_on.csv](/files/ec2_m5.metal_idle_p0_energy_filtering_on.csv)
@@ -153,14 +153,14 @@ Summary
 
 We tested the system only on idle and as we can cleary see in the graphs the signal is (apart from three small outlier spikes) very close to the mean.
 
-The distorted signal with *energy filtering* turned on is not only extremely noise and has a very high variance, it also has suprisingly a higher 
+The distorted signal with *energy filtering* turned on is not only extremely noise and has a very high variance, it also has suprisingly a higher
 mean than the non-filtered signale.
 
 We would have expected that at least the mean over a longer period of time would stay the same ... but maybe 5 Minutes are not enough
 to get a solid average.
 
-The results are so strong in effect that even this setup, which allows only for qualitative conclusion is already sufficient to say that 
-an active *energy filtering* results in an unusable signal. Maybe even the average over a long time might not be of any use ... but this 
+The results are so strong in effect that even this setup, which allows only for qualitative conclusion is already sufficient to say that
+an active *energy filtering* results in an unusable signal. Maybe even the average over a long time might not be of any use ... but this
 needs further investigation.
 
 The take away for us is to incorporate guard clauses in all our tools to check for this feature and abort any measurements with an error if active.

@@ -10,18 +10,18 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 Are you keen on enhancing the transparency of your software in terms of energy and CO2 emissions? Whether you're starting this journey or looking to further optimize and reduce emissions, we can assist!
 
-Our team consists of senior software performance and pipeline engineers that have since specialized in sustainable 
+Our team consists of senior software performance and pipeline engineers that have since specialized in sustainable
 software engineering.
 
-We are [regular speaker at conferences and industry symposiums](/#nav-meetups), developing 
-[open source industry advancing container native carbon measurement tools](/projects/green-metrics-tool) as well as 
-[state of the art carbon pipeline tooling](/projects/eco-ci), active advocates and consultants for energy and carbon transparency 
+We are [regular speaker at conferences and industry symposiums](/#nav-meetups), developing
+[open source industry advancing container native carbon measurement tools](/projects/green-metrics-tool) as well as
+[state of the art carbon pipeline tooling](/projects/eco-ci), active advocates and consultants for energy and carbon transparency
 through certifications like the [Blauer Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) or our [Energy-ID](/projects/energy-id) project.
 
-Some of our recent recognized works in research include 
-[tailored open source machine models for energy estimation in cloud environments](/projects/cloud-energy), published positional 
-papers and academical papers for software lifecycle assessment and software energy measurement, work on 
-[Software-Lifecycle-Assessment](https://publication2023.bits-und-baeume.org/#book/38) with developer tools to be released later this year and cited 
+Some of our recent recognized works in research include
+[tailored open source machine models for energy estimation in cloud environments](/projects/cloud-energy), published positional
+papers and academical papers for software lifecycle assessment and software energy measurement, work on
+[Software-Lifecycle-Assessment](https://publication2023.bits-und-baeume.org/#book/38) with developer tools to be released later this year and cited
 [case studies for energy savings and optimizations](/case-studies).
 
 
@@ -34,7 +34,7 @@ Services
     <div class="profile">
         <div class="profile-item profile-box">
             <div class="profile-title"><span>Research &amp; Development</span></div>
-            <div class="profile-info expandable closed"> 
+            <div class="profile-info expandable closed">
                 <ul>
                     <li>Software lifecycle assesment</li>
                     <li>Software development cabon cost</li>
@@ -44,7 +44,7 @@ Services
                     <li>Grid intensity intelligent applications</li>
                 </ul>
             </div>
-            <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Show more examples ...</a></p>                
+            <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Show more examples ...</a></p>
         </div>
         <div class="profile-item profile-box">
             <div class="profile-title"><span>Workshops & Training</span></div>
@@ -72,7 +72,7 @@ Services
                     <li>Website carbon certifications</li>
                 </ul>
             </div>
-            <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Show more examples ...</a></p>                
+            <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Show more examples ...</a></p>
         </div>
         <div class="profile-item profile-box">
             <div class="profile-title"><span>Consulting</span></div>
@@ -84,7 +84,7 @@ Services
                     <li>Green software development guidelines</li>
                 </ul>
             </div>
-            <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Show more examples ...</a></p>                
+            <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Show more examples ...</a></p>
         </div>
         <div class="profile-item profile-box">
             <div class="profile-title" style="text-align:center; margin: 0"><span>Need something else? <br></span></div>
@@ -122,7 +122,7 @@ Interested?
 <div id="services-contact-us">
     <div id="contactinfo">
         <h2 class="titlecontact">Contact us</h2>
-        <p>Green Coding Berlin GmbH<br>
+        <p>Green Coding Services GmbH<br>
             Jablonskistr. 24<br>
         10405 Berlin (Germany)</p>
         <p>(+49) 160 947 930 24</p>
@@ -134,14 +134,14 @@ Interested?
             <a href="mailto:info@green-coding.io"><div class="t-mail"></div></a>
         </div>
     </div>
-    <form id="formulario" action="https://submit-form.com/M3XrdBO9" method="post" data-static-form-name="contact">    
+    <form id="formulario" action="https://submit-form.com/M3XrdBO9" method="post" data-static-form-name="contact">
         <fieldset>
-            <div class="first">                    
-                <label class="data-form" for="nameform">name</label>                
+            <div class="first">
+                <label class="data-form" for="nameform">name</label>
                 <input type="text" name="name" id="nameform" value="" placeholder="Your name ...">
-                <label class="data-form" for="emailform">email</label>                
+                <label class="data-form" for="emailform">email</label>
                 <input type="text" name="email" id="emailform" value="" placeholder="Your e-Mail ...">
-            </div>            
+            </div>
             <div>
                 <label class="data-form" for="messageform">your message</label>
                 <textarea name="message" id="messageform" placeholder="Your message ..."></textarea>
@@ -150,7 +150,7 @@ Interested?
                 <label class="data-form" for="messagesubmit">&nbsp;</label>
                 <div id="messagesubmit-container" class="btn-one">
                     <input id="messagesubmit" type="submit" name="submit" value="Submit">
-                </div>    
+                </div>
             </div>
         </fieldset>
     </form>

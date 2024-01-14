@@ -6,13 +6,13 @@ author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
 ---
 
-At Green Coding Berlin (GCB), one goal is to enable reproducible runs on our cluster. An important step towards accurate measurements was the creation of NOP Linux, our custom Linux distro that disables as many background processes as possible to avoid interruptions during measurements. Another crucial step was ensuring the reliable operation of the [PowerSpy2](https://docs.green-coding.io/docs/measuring/metric-providers/psu-energy-ac-powerspy2/), so we could measure the entire power consumption.
+At Green Coding Solutions (GCS), one goal is to enable reproducible runs on our cluster. An important step towards accurate measurements was the creation of NOP Linux, our custom Linux distro that disables as many background processes as possible to avoid interruptions during measurements. Another crucial step was ensuring the reliable operation of the [PowerSpy2](https://docs.green-coding.io/docs/measuring/metric-providers/psu-energy-ac-powerspy2/), so we could measure the entire power consumption.
 
 We wanted to create a cluster that allowed users to select the server on which they'd like to run the benchmark. Initially, we aimed for full automation and looked at the excellent tool from Canonical, [MAAS](https://maas.io/). As we use Ubuntu as our reference system, this seemed to be the logical choice. Although the tool was impressive, it required a daemon running on the machine, which created multiple interruptions during our measurements. This led us to reevaluate our tooling, and we decided to try a simpler approach using PXE. While there is a great description [1], and the general flow worked very well, we invested a significant amount of time and effort in configuring the machines correctly. Getting the entire installation flow working with reboots, different configurations like PowerSpy, and the multitude of different servers we wanted to use presented a considerable overhead. Additionally, we have our machines distributed across various data centers, and we needed to set up a complex networking layer for the DHCP discovery to work. While this was a scalable solution, it required substantial overhead that had to be maintained. Moreover, our tool develops quite rapidly, so we would have to keep updating the installation process. As a small company, this was not feasible in our scenario. Consequently, we decided to sacrifice scalability in favor of simplicity. In the meantime, we had built a complex test setup with various servers and a complicated setup that we could now disassemble. The main lesson learned for the future is to start with the simplest solution that solves the problem and continually reevaluate your assumptions and needs.
 
 We are aware that there are a multitude of configuration systems out there that don't require a client running on the machine to be configured and that automate some of the tasks we will now do manually. But we decided to keep it very simple for now and not invest more time into another solution.
 
-At Green Coding Berlin, we are committed to not only creating efficient and reproducible programming solutions but also sharing our findings and tools with the wider community. We firmly believe in the principles of open-source, the power of shared knowledge, and the benefits of collaborative development. Our aim is to create tools and systems that can be utilized by anyone, without the restrictions of proprietary licenses. We don't just want to make our solutions better - we want to make programming better, for everyone. One of the exciting initiatives that align with our philosophy is the Blue Angel for Software. We support this cause and believe that our tools and systems should be made available for such uses. By making our developments publicly available, we hope to contribute to the broader objective of creating software that is efficient, effective, and transparent.
+At Green Coding Solutions, we are committed to not only creating efficient and reproducible programming solutions but also sharing our findings and tools with the wider community. We firmly believe in the principles of open-source, the power of shared knowledge, and the benefits of collaborative development. Our aim is to create tools and systems that can be utilized by anyone, without the restrictions of proprietary licenses. We don't just want to make our solutions better - we want to make programming better, for everyone. One of the exciting initiatives that align with our philosophy is the Blue Angel for Software. We support this cause and believe that our tools and systems should be made available for such uses. By making our developments publicly available, we hope to contribute to the broader objective of creating software that is efficient, effective, and transparent.
 
 **The system we are using now**
 
@@ -23,7 +23,7 @@ As previously mentioned, the current system will not scale to accommodate thousa
 
 We have now opted for quite a simple solution. You will need a server that exposes the database externally and all results will be written to this server. We then have a `client.py` script that runs on every server that periodically queries the server for jobs and if so executes the measurement undisturbed. After a job is finished the client does some cleanup tasks and checks if there is an update for the GMT and also for the operating system. It then retries to get a job till there are no more jobs left on which the client sleeps for 5 minutes and retries. On every wake up we send a message to the server that the client is up and functional. So we can check server side that all clients are up and working.
 
-To create your own GCB cluster, you can follow these steps:
+To create your own GCS cluster, you can follow these steps:
 
 ## 1) Install Ubuntu
 
@@ -186,7 +186,7 @@ apt remove -y docker docker-engine docker.io containerd runc
 apt install -y ca-certificates curl gnupg lsb-release
 
 su gc << 'EOF'
-git clone https://github.com/green-coding-berlin/green-metrics-tool ~/green-metrics-tool
+git clone https://github.com/green-coding-services/green-metrics-tool ~/green-metrics-tool
 cd ~/green-metrics-tool
 git submodule update --init
 python3 -m pip install -r ~/green-metrics-tool/requirements.txt

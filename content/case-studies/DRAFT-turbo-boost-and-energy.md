@@ -21,7 +21,7 @@ DVFS is available in every modern Intel or AMD CPU. the name in AMD CPUs is [Tur
 
 Turbo Boost can be checked through the linux subsystem, but also by querying the CPU registers directly.
 
-You can find a script to check if Turbo Boost is on or off on your system in our [Github Tools](https://github.com/green-coding-berlin/tools/blob/main/turbo_boost.sh) repository.
+You can find a script to check if Turbo Boost is on or off on your system in our [Github Tools](https://github.com/green-coding-services/tools/blob/main/turbo_boost.sh) repository.
 
 Turbo Boost as a feature enables the processor to overshoot it's base frequency for a certain amount of time. This enables snappy responsiveness when instantaneous load happens.
 
@@ -43,7 +43,7 @@ According to `/proc/cpuinfo` this chip has 2 physical cores (found by looking at
 
 Looking at **flags** we see that **ht** is a feature, which corresponds to Hyper-Threading.
 
-In order to have a first glimpse at the energy characterisitcs of this feature we are using 
+In order to have a first glimpse at the energy characterisitcs of this feature we are using
 `sysbench`, which you can just install through **aptitude** on **Ubuntu 22.04**.
 
 The command we ran in `sysbench` is:
@@ -91,10 +91,10 @@ This is the result:
 
 An important question is however also: How does this compare in a real-world use-case? Will results be the same?
 
-We picked the Unit-Tests of the Django project (https://github.com/green-coding-berlin/example-applications/tree/main/django_tests)
+We picked the Unit-Tests of the Django project (https://github.com/green-coding-services/example-applications/tree/main/django_tests)
 and run the tests with Turbo-boost off and on.
 
-Important: If you have Turbo-Boost off and you have high loads on Hard-Disks the cut-off point when it makes sense to 
+Important: If you have Turbo-Boost off and you have high loads on Hard-Disks the cut-off point when it makes sense to
 turn on / off Turbo Boost will occur earlier.
 
 In a [Django Unit-Test run with Turbo Boost On](https://metrics.green-coding.io/stats.html?id=48bec2ad-7bb6-4278-bed9-4b4f9afa606e) we see that the CPU-Package power is at **21.3 W** and equates over
@@ -108,21 +108,21 @@ Energy cost.
 However, this is not the whole story.
 
 When looking at energy costs you always have to expand the picture as much as you can:
-- How much auxilliary devices are running that also consume power? 
+- How much auxilliary devices are running that also consume power?
     + HDDs
     + SDDs
-    + RAM 
+    + RAM
     + etc.
 
 We see that the the CPU Package power dropped from 21.3 W -> 12.87 W (39.5 % reduction), but looking at the whole machine (*psu_power_ac_powerspy2_system*)
-we see that the drop is not that significant 42.17 W -> 32.62 W (22.64 % reduction). 
-This makes perfect sense, as the CPU is only a part of the whole machine and the other components still run and are 
+we see that the drop is not that significant 42.17 W -> 32.62 W (22.64 % reduction).
+This makes perfect sense, as the CPU is only a part of the whole machine and the other components still run and are
 not affected by Turbo Boost.
 
-We see in this particular case, that the gain is still beneficial. The total energy (*psu_energy_ac_powerspy2_system*) for 
+We see in this particular case, that the gain is still beneficial. The total energy (*psu_energy_ac_powerspy2_system*) for
 the Turbo Boost Off case is still lower (7113.10 J vs. 7215.67 J)
 
-If you are however in a datacenter, where the system is maybe externally cooled AND the cooling could be turned off if the 
+If you are however in a datacenter, where the system is maybe externally cooled AND the cooling could be turned off if the
 machine can also be turned off, then you would have a case where it would make sense to have Turbo Boost turned on
 for this particular hardware setup.
 
@@ -139,7 +139,7 @@ of the chip when using 3 cores or more.
 This was not necessarily expected ... it could also have been that the chip somehow throttles the performance
 but uses a constant energy budget..
 
-The other interesting metric is the mJ / Ops metric. Here we can see that Hyper-Threading 
+The other interesting metric is the mJ / Ops metric. Here we can see that Hyper-Threading
 actually is more energy efficient per operation than running the system
 only with physical cores.
 
@@ -147,16 +147,16 @@ only with physical cores.
 ## Discussion
 The results are quite suprising as Hyper-Threading used to have a bit of a bad rep.
 
-For instance [this article from Percona](https://www.percona.com/blog/2015/01/15/hyper-threading-double-cpu-throughput/) comes to the conclusion that Hyper-Threading has rather 
+For instance [this article from Percona](https://www.percona.com/blog/2015/01/15/hyper-threading-double-cpu-throughput/) comes to the conclusion that Hyper-Threading has rather
 throttling features and typically is more suitable for low utilization workloads.
 
-Also [Hyper-Threading has potential security issues](https://www.theregister.com/2019/10/29/intel_disable_hyper_threading_linux_kernel_maintainer/) although the current state 
+Also [Hyper-Threading has potential security issues](https://www.theregister.com/2019/10/29/intel_disable_hyper_threading_linux_kernel_maintainer/) although the current state
 and if it relevant in real world setups is not quite clear to us.
 
 Another factor to keep into consideration is that Hyper-Threading by theory reduced the
 latency of your system when a task is picked up.\
 This makes perfect sense, as you introduce another scheduling layer.\
-However since a normal Linux installation is anyway not real-time workload optimized 
+However since a normal Linux installation is anyway not real-time workload optimized
 this factor might not weigh very high.
 
 All in all we are very suprised about how energy friendly the feature is and especially
@@ -164,7 +164,7 @@ for the typical server workloads that are rather multi-threaded and mostly idlin
 Since Hyper-Threading seems to have no effect on idle CPUs this seems like a perfect fit.
 
 Since Hyper-Threading is by default turned on, and also every server in the SPECPower database
-has it turned on we see no reason to run benchmarks that should reflect CPU capabilities with 
+has it turned on we see no reason to run benchmarks that should reflect CPU capabilities with
 Hyper-Threading turned off.
 
 
@@ -172,7 +172,7 @@ Hyper-Threading turned off.
 
 So what is the conclusion? Machines should be setup like this in on-premise environments.
 Then, if it is time to buy a new machine, because the current amount of machines cannot handle the amount of tasks anymore
-it should first be checked what the uptake of buying this machine is      
+it should first be checked what the uptake of buying this machine is
 
 If you can somehow quantify the time that you are loosing in energy, than make a trade-off calculation.
 

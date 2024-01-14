@@ -1,4 +1,21 @@
-- id: home_teaser
-  translation: "Wir helfen Unternehmen, Behörden und Open-Source-Gemeinschaften, die CO2-Emissionen ihrer digitalen Angebote zu verstehen und optimieren."
-- id: home_cta
-  translation: "👉 See our services"
+- id: references
+  translation: "Referenzen"
+
+- id: about
+  translation: Über
+- id: services
+  translation: Dienstleistungen
+- id: talks
+  translation: Vorträge & Veranstaltungen
+- id: blog
+  translation: Blog
+- id: jobs
+  translation: Jobs
+- id: formulas
+  translation: CO2-Formeln
+- id: studies
+  translation: Fallstudien
+- id: team
+  translation: Team
+- id: list_orgs
+  translation: "Eine sorgfältig ausgewählte Liste von Organisationen, mit denen wir zusammengearbeitet haben oder bei denen wir Vorträge gehalten haben."

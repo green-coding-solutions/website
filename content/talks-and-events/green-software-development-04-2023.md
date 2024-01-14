@@ -32,7 +32,7 @@ We're looking forward to see you there!
 - 6:30 PM | For in-person: Doors open. Grab some snacks & drinks
 - 7:00 PM | Start of Hybrid Meetup
 - 7:00 PM | Welcome & Intro
-- 7:15 PM | "Tools and Best-Practices for Sustainable Software - An overview", Arne Tarara, Lead Engineer at Green Coding Berlin
+- 7:15 PM | "Tools and Best-Practices for Sustainable Software - An overview", Arne Tarara, Lead Engineer at Green Coding Solutions
 - Afterwards: More snacks and drinks as well as plenty of time for networking with all attendees
 
 #### Talk: Tools and Best-Practices for Sustainable Software - An overview

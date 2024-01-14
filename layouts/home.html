@@ -48,78 +48,9 @@
     </div><!-- end portfolio -->
 
 </section><!-- end contact -->
-<section id="team" class="bg-two">
-    <div id="nav-team"></div>
-    <div class="section-one">
-        <h2><div class="title-one">Team</div></h2>
-        <div class="separator">
-            <div class="line line-1"></div>
-        </div>
-        <div class="data-content-one">
-        </div>
-        <article class="content-team teamshow">
-            <div class="teamlist">
-                <div class="team">
-                    <div class="who">
-                        <!-- THREE -->
-                        <div class="members-box">
-                            <img src="../img/team/arne_square.webp" loading=lazy
-                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
-                            <div class="name-team">Arne Tarara</div>
-                        </div>
-                        <div class="photo-footer">
-                            <div class="plus-btn"></div>
-                            <div class="socialicons">
-                                <a href="https://www.linkedin.com/in/arne-tarara">
-                                    <div class="t-linkedin"></div>
-                                </a>
-                                <a href="mailto:arne@green-coding.io">
-                                    <div class="t-mail"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="who">
-                        <div class="members-box">
-                            <img src="../img/team/dan.webp" loading=lazy
-                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
-                            <div class="name-team">Dan Mateas</div>
-                        </div>
-                        <div class="photo-footer">
-                            <div class="plus-btn"></div>
-                            <div class="socialicons">
-                                <a href="https://de.linkedin.com/in/dan-mateas-693634105">
-                                    <div class="t-linkedin"></div>
-                                </a>
-                                <a href="mailto:dan@green-coding.io">
-                                    <div class="t-mail"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="who">
-                        <div class="members-box">
-                            <img src="../img/team/didi.webp" loading=lazy
-                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
-                            <div class="name-team">Didi Hoffmann</div>
-                        </div>
-                        <div class="photo-footer">
-                            <div class="plus-btn"></div>
-                            <div class="socialicons">
-                                <a href="https://www.linkedin.com/in/dietgerhoffmann/">
-                                    <div class="t-linkedin"></div>
-                                </a>
-                                <a href="mailto:didi@green-coding.io">
-                                    <div class="t-mail"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </div>
-</section><!-- end team -->
+
+{{ partialCached "team.html" . }}
+
 <section class="works-container bg-two">
     <div id="nav-events"></div>
     <div class="section-two bottom-works">
@@ -130,7 +61,7 @@
             </div>
             <div class="data-content-two">
                 Browse through our latest events and watch recordings (if available :) )<br>
-                For a full list: 👉 <a href="{{ absURL "talks-and-events" }}" style="color: white; text-decoration: underline;">All
+                For a full list: 👉 <a href="{{ absLangURL "talks-and-events" }}" style="color: white; text-decoration: underline;">All
                 our Talks & Events</a>
             </div>
         </div>
@@ -172,31 +103,7 @@
         </div> <!-- /END ISOTOPE PORTFOLIO-->
     </div><!-- end portfolio -->
 </section>
-<section id="references" class="bg-one">
-    <div class="section-three">
-        <h2><div class="title-one">References</div></h2>
-        <div class="separator">
-            <div class="line line-1"></div>
-        </div>
-        <div class="data-content-three">
-            <img src="/img/references/axel-springer-logo.webp">
-            <img src="/img/references/wbs-coding-school-logo.webp">
-            <img src="/img/references/LHIND.webp">
-            <a href="https://sdialliance.org"><img src="/img/references/sdia-logo.webp"></a>
-            <img src="/img/references/bits-und-baeume-logo.webp">
-            <a href="https://www.enviroinfo2023.eu/programme/schedule-overview/wednesday-schedule/#1894286d"><img src="/img/references/enviroinfo-logo.webp"></a>
-            <img src="/img/references/ironhack.webp">
-            <a href="https://fosdem.org/2023/schedule/track/energy/"><img src="/img/references/fosdem-2023.webp"></a>
-            <a href="https://www.arbeitsagentur.de/vor-ort/it-systemhaus/vorstellung"><img src="/img/references/ba-it-systemhaus.webp"></a>
 
-        </div>
-    </div>
-    <div class="separator">
-        <div class="line line-1"></div>
-    </div>
-    <div class="data-content-three">
-        A curated list of organizations we have been working with or have been giving talks at.
-    </div>
-</section><!-- end contact -->
+{{ partialCached "references.html" . }}
 
 {{ end }}

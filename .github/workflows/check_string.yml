@@ -1,0 +1,21 @@
+name: Check for String
+
+on: [push, pull_request]
+
+jobs:
+  check_string:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Check for Deepl string
+      run: |
+        if grep -R "Deepl" . ; then
+          echo "String 'Deepl' found"
+          exit 1
+        else
+          echo "String 'Deepl' not found"
+        fi
+

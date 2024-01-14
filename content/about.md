@@ -14,8 +14,8 @@ and human life does too.
 
 However we believe that using software is the way to be more green and more sustainable and digitalizing every sector is one building block to tackle climate change.
 
-As with every technological domain measuring and understanding how much you use 
-is the most important step to approach any task. 
+As with every technological domain measuring and understanding how much you use
+is the most important step to approach any task.
 
 The next step is to understand the potentials for optimizations. Sometimes this are very low hangig fruits like
 [green hosting](https://www.thegreenwebfoundation.org/).
@@ -54,7 +54,7 @@ After the user interaction software has to do background jobs. Be it cronjobs, M
 Even in the age of virtualization machines often have significant idle times. In the user landscape this is often compensated with sleep modes. In the server
 world energy saving modes typically do not exist.
 #### Process energy
-Software can so fast that it is not perceivable if the usage was 10ms or 100ms. Nevertheless the energy difference can be enormous and 
+Software can so fast that it is not perceivable if the usage was 10ms or 100ms. Nevertheless the energy difference can be enormous and
 is hard to estimate if scaled up.
 
 
@@ -62,7 +62,7 @@ is hard to estimate if scaled up.
 To make all of these separate domains visible to the developer we are creating open source tools to make the energy visible.
 
 For user facing applications in the desktop, web and mobile world we are creating a tool to measure the whole application lifecycle based
-on the concept of a Standard Usage Scenario: The [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool)
+on the concept of a Standard Usage Scenario: The [Green Metrics Tool](https://github.com/green-coding-services/green-metrics-tool)
 
 By pinning the code version and the usage scenario we can make different softwares comparable to each other.
 
@@ -87,18 +87,18 @@ software runs through a Continuous Integration (CI) Pipeline and all the tests a
 This process is often very opaque and the true cost hidden from the developer as it takes place in the cloud or on
 specialized SAAS platforms.
 
-The understanding the cost of building software and the potential savings when batching the process or even splitting 
+The understanding the cost of building software and the potential savings when batching the process or even splitting
 the Pipeline to only execute relevant parts can be tremendous.
 
 ### Our work
-As said before: Measuring is the first key to understanding, therefore our main focus here lies in 
+As said before: Measuring is the first key to understanding, therefore our main focus here lies in
 the visiblity and education about the energy cost for developing software.
 
 We develop in-line plugins for Github Actions and badges that make other people aware how much the build costs.
 
 Also we focus in the building process for static sites, which typically have a lower cost of operating but incur a build cost.
 
-Checkout out our [OpenEnergyBadge project](/projects/open-energy-badge), our [Eco CI-plugins for Github](/projects/eco-ci) or our [Case Studies](/case-studies/) on the topic. 
+Checkout out our [OpenEnergyBadge project](/projects/open-energy-badge), our [Eco CI-plugins for Github](/projects/eco-ci) or our [Case Studies](/case-studies/) on the topic.
 
 Example badge: {{< rawhtml >}} <a href="https://metrics.green-coding.io/stats.html?id=01e4f6e1-318f-4ecb-a19f-041439a50065"><img src="https://api.green-coding.io/v1/badge/single/01e4f6e1-318f-4ecb-a19f-041439a50065?metric=AC"></a>{{< /rawhtml >}}
 
@@ -107,7 +107,7 @@ Network
 {{</ greenblock >}}
 
 
-Network transmissions are coming more and more into the focus as one of 
+Network transmissions are coming more and more into the focus as one of
 the main drivers of software carbon emissions.
 
 Great tools like [Websitecarbon.com](https://www.websitecarbon.com/) allow the visiblity of the cost for a typical
@@ -122,7 +122,7 @@ In the advent of the internet network transfer was typically metered. By introdu
 the internet increased its adoption and became ubiquitous.
 
 However flatrates have introduced a decoupling from the nature of network transmissions not really
-having a flat carbon emission. 
+having a flat carbon emission.
 This creates a disconnectedness and misunderstandig that every use of network will at some
 point lead to an increase in carbon emissions. Sometimes linearly, sometimes in stages. (See [Gigabytes to kWh](/co2-formulas/#gigabytes-to-kwh))
 
@@ -136,14 +136,14 @@ way of interacting with it.
 We currently address this topic by educating developers through [Meetups](/meetups-and-events/) and through
 talks at conferences or coding bootcamps like [WBS Coding School](https://www.wbscodingschool.com/)
 
-On the technical site we highligh the network emissions in our [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool) and show
+On the technical site we highligh the network emissions in our [Green Metrics Tool](https://github.com/green-coding-services/green-metrics-tool) and show
 recommendations like
 - Moving connection from mobile to fixed-line
 - Demand Shifting to do network requests in carbon-friendly times
 - Using compression techniques
 - Altering connection formats like HTTP -> HTTP2
 - NOT delivering content that has no strong benefit
-- Reducing update cycles and polling intervals 
+- Reducing update cycles and polling intervals
 
 {{< whiteblock >}}
 Embodied carbon

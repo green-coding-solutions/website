@@ -9,14 +9,14 @@
         {{ end }}
         {{/* We are using a hack here. Home always gets selected. This is wrong, but browser will default to apply selected only on last matched, so menu works as expected */}}
         <option value="{{ absLangURL "/" }}" class="second_item" selected>Home</option>
-        <option value="{{ absLangURL "about" }}" class="second_item" {{if eq $slug "about"}}selected{{end}}>About</option>
-        <option value="{{ absLangURL "services" }}" class="second_item"{{if eq $slug "services"}}selected{{end}}>Services</option>
-        <option value="{{ absLangURL "/" }}#nav-events" class="second_item">Talks & Events</option>
-        <option value="{{ absLangURL "blog" }}" class="second_item"{{if eq $slug "blog"}}selected{{end}}>Blog</option>
-        <option value="{{ absLangURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>Jobs</option>
-        <option value="{{ absLangURL "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>CO2-Formulas</option>
-        <option value="{{ absURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>Case Studies</option>
-        <option value="{{ absLangURL "/" }}#nav-team" class="second_item">Team</option>
+        <option value="{{ absLangURL "about" }}" class="second_item" {{if eq $slug "about"}}selected{{end}}>{{i18n "about"}}</option>
+        <option value="{{ absLangURL "services" }}" class="second_item"{{if eq $slug "services"}}selected{{end}}>{{i18n "services"}}</option>
+        <option value="{{ absLangURL "/" }}#nav-events" class="second_item">{{i18n "talks"}}</option>
+        <option value="{{ absLangURL "blog" }}" class="second_item"{{if eq $slug "blog"}}selected{{end}}>{{i18n "blog"}}</option>
+        <option value="{{ absLangURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>{{i18n "jobs"}}</option>
+        <option value="{{ absLangURL "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>{{i18n "formulas"}}</option>
+        <option value="{{ absURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "studies"}}</option>
+        <option value="{{ absLangURL "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
     </select>
 </div>
 <div class="menu-select">
@@ -24,32 +24,32 @@
         <ol class="contentMenu">
             <li>
                <a href="{{ absLangURL "about" }}"><div class="menubtn">
-                    <div class="contentbtn">about</div>
+                    <div class="contentbtn">{{i18n "about"}}</div>
                 </div></a>
             </li>
             <li>
                <a href="{{ absLangURL "services" }}"><div class="menubtn">
-                    <div class="contentbtn">Services</div>
+                    <div class="contentbtn">{{i18n "services"}}</div>
                 </div></a>
             </li>
             <li>
-               <a href="{{ absLangURL "blog" }}"><div class="menubtn">
-                    <div class="contentbtn">blog</div>
+               <a href="{{ absURL "blog" }}"><div class="menubtn">
+                    <div class="contentbtn">{{i18n "blog"}}</div>
                 </div></a>
             </li>
             <li>
-               <a href="{{ absLangURL "jobs" }}"><div class="menubtn">
-                    <div class="contentbtn">jobs</div>
+               <a href="{{ absURL "jobs" }}"><div class="menubtn">
+                    <div class="contentbtn">{{i18n "jobs"}}</div>
                 </div></a>
             </li>
             <li>
                <a href="{{ absLangURL "co2-formulas" }}"><div class="menubtn">
-                    <div class="contentbtn">CO2-Formulas</div>
+                    <div class="contentbtn">{{i18n "formulas"}}</div>
                 </div></a>
             </li>
             <li>
                <a href="{{ absURL "case-studies" }}"><div class="menubtn">
-                    <div class="contentbtn">Case Studies</div>
+                    <div class="contentbtn">{{i18n "studies"}}</div>
                 </div></a>
             </li>
             {{ if .IsTranslated }}

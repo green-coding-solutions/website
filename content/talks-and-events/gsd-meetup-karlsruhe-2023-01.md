@@ -27,7 +27,7 @@ In dem Vortrag stellt Arne einige Tools vor, welche es ermöglichen die Energie 
 
 Neben dem Betrieb der Software verbraucht die Entwicklung und insbesondere die CI/CD Pipeline Energie. Wir sehen, wie wir diese Emissionen aus der Pipeline messen und anzeigen.
 
-Arne Tarara ist passionierter Softwareentwickler und seit 16 Jahren in der Branche. Aktuell verfolgt er mit seinem Unternehmen, der Green Coding Berlin GmbH das Ziel, den Energieverbrauch von Software für Entwickler und Anwender einfach sichtbar zu machen.
+Arne Tarara ist passionierter Softwareentwickler und seit 16 Jahren in der Branche. Aktuell verfolgt er mit seinem Unternehmen, der Green Coding Solutions GmbH das Ziel, den Energieverbrauch von Software für Entwickler und Anwender einfach sichtbar zu machen.
 
 -------------------------------------------
 

@@ -23,7 +23,7 @@ very conscise and scoped functionality, but can be chained through redirecting
 their output.
 
 For the moment we are working on the documentation. If you want to have an early
-look be sure to check out the [development branch](https://github.com/green-coding-berlin/green-metrics-tool/tree/rapl-and-cgoup-reader)
+look be sure to check out the [development branch](https://github.com/green-coding-services/green-metrics-tool/tree/rapl-and-cgoup-reader)
 
 Also we have made progress on getting the prototype for the DC Measurements
 working and are now coding the Linux metrics providers to read directly from

@@ -6,7 +6,6 @@ draft: true
 icon: "history"
 ---
 
-
 Have you ever wondered if your software was not way quicker and responsive a year ago?
 
 And if you think about that, wouldn't it be interesting to see if the energy consumption has changed alongside with it?
@@ -15,11 +14,9 @@ Because you might be using the same features, but now they have become more cost
 This effect is called software bloat
 
 {{< rawhtml >}}
-<img class="ui big floated right rounded bordered image" src="https://github.com/green-coding-berlin/spec-power-model/raw/main/img/hp_synergy_480_Gen10_Plus.png" alt="XGBoost performance" loading="lazy" style="margin:auto;">
+<img class="ui big floated right rounded bordered image" src="https://github.com/green-coding-services/spec-power-model/raw/main/img/hp_synergy_480_Gen10_Plus.png" alt="XGBoost performance" loading="lazy" style="margin:auto;">
 <br>
 {{</ rawhtml >}}
-
-
 
 
 Since in the cloud it is often not possible to measure energy directly we have created a Machine Learning estimation model
@@ -33,12 +30,12 @@ params to make the model more accurate.
 In the chart on the right you can see the performance for an out-of-sample prediciton. Please find more details
 for in-sample predictions, exploratory data analysis and application documentation on Github.
 
-The model is open-source [AGPLv3 Licensed](https://github.com/green-coding-berlin/green-metrics-tool/blob/main/LICENSE)
+The model is open-source [AGPLv3 Licensed](https://github.com/green-coding-services/green-metrics-tool/blob/main/LICENSE)
 
 ---
 
-{{< rawhtml >}} 
-    <a class="ui labeled button" href="https://github.com/green-coding-berlin/spec-power-model">
+{{< rawhtml >}}
+    <a class="ui labeled button" href="https://github.com/green-coding-services/spec-power-model">
     <div class="ui button">
         <i class="code branch icon"></i>
     </div>
@@ -49,7 +46,7 @@ The model is open-source [AGPLv3 Licensed](https://github.com/green-coding-berli
 {{< /rawhtml >}}
 
 ```
-$ ./static-binary | python3 xgb.py --make intel -- cpu-freq 2600 --ram 7 --cpu-threads 24 
+$ ./static-binary | python3 xgb.py --make intel -- cpu-freq 2600 --ram 7 --cpu-threads 24
 191.939294374113
 169.99632303510703
 191.939294374113

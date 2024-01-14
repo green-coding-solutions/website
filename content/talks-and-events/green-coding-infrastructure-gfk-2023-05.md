@@ -1,11 +1,11 @@
 ---
-title: "Green Infrastructure Meetup GfK [x] Green Coding Berlin"
+title: "Green Infrastructure Meetup GfK [x] Green Coding Solutions"
 date: 2023-05-31 18:30:00
 publishDate: 2023-05-12
 draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/293492344/"
-eventname: "Green Infrastructure Meetup GfK [x] Green Coding Berlin"
+eventname: "Green Infrastructure Meetup GfK [x] Green Coding Solutions"
 eventimg: "/img/talks-and-events/green-coding-infrastructure-gfk-2023-05.webp"
 eventimg600w: '/img/talks-and-events/green-coding-infrastructure-gfk-2023-05-600w.webp'
 ---
@@ -27,7 +27,7 @@ The event is supposed to bring together like-minded professionals, developers, a
 
 Bernhard Günther (Principal Site Reliability Engineer, GfK) will give a short presentation about **Green IT and sustainability in the Cloud** to feed an emerging discussion. As the cloud gives you a lot of freedom it also forces you to take the responsibility to plan your cloud infrastructure sustainable yourself.
 
-Arne Tarara will share insights on **Understanding Software Carbon emissions**. Software uses no physical resources directly, but the underlying infrastructure. In order to help developers contribute to the worlds carbon neutral target it is key to understand where carbon emissions from software come from and how they can be identified. Arne, a software engineer from Open-Source company Green Coding Berlin, will give an overview over current models and frameworks for classifying and attributing software carbon share and current limitations with these approaches. He will present some Open-Source tools that make energy cost and carbon emissions visible for a developer to drive energy consumption and carbon emissions down.
+Arne Tarara will share insights on **Understanding Software Carbon emissions**. Software uses no physical resources directly, but the underlying infrastructure. In order to help developers contribute to the worlds carbon neutral target it is key to understand where carbon emissions from software come from and how they can be identified. Arne, a software engineer from Open-Source company Green Coding Solutions, will give an overview over current models and frameworks for classifying and attributing software carbon share and current limitations with these approaches. He will present some Open-Source tools that make energy cost and carbon emissions visible for a developer to drive energy consumption and carbon emissions down.
 
 In addition to the speakers, there will be enough time for networking and discussion among attendees. We encourage everyone to bring their own ideas and questions to share with the community.
 

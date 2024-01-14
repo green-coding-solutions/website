@@ -9,7 +9,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 Today we have big news which shine a light on what we have planned for the coming months.
 
 
-Green Coding Berlin is becoming a legal entity in form of a non-profit [Green Coding Berlin gGmbH].
+Green Coding Solutions is becoming a legal entity in form of a non-profit [Green Coding Solutions gGmbH].
 
 
 We recently joined the Green Software Foundation (https://greensoftware.foundation/) as a General Member and, apart from our meetups and the planned workshop, will be developing a metrics and certification toolchain for Green Software.

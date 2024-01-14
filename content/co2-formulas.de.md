@@ -1,21 +1,21 @@
 ---
 title: "CO2 Formulas"
 draft: false
-summary: "Formulas to convert from GB to CO2e or from kWH to CO2e etc."
+summary: "Formeln zur Umrechnung von GB in CO2e oder von kWH in CO2e usw."
 date: 2022-07-21 08:00:00
 author: "Arne Tarara"
 authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-When using software the typical unit we experience directly is often time. Software is either fast or slow,
-but we typically do not think about the carbon footprint of software.
+Bei der Verwendung von Software ist die typische Einheit, die wir direkt erleben, oft die Zeit. Software ist entweder schnell oder langsam,
+aber wir denken in der Regel nicht über den CO2-Fußabdruck von Software nach.
 
-Software uses energy through the utilization of the underlying hardware (typically measured in Watts). These Watts have to come from somewhere and we will see that every amount of energy typically has a carbon value associated with it.
+Software verbraucht Energie durch die Nutzung der zugrundeliegenden Hardware (in der Regel in Watt gemessen). Diese Watt müssen irgendwoher kommen, und wir werden sehen, dass jede Energiemenge in der Regel mit einem CO2 verbunden ist.
 
-Also software uses energy when making network requests and also indirectly is responsible for the embodied carbon, which is the CO2 emitted when the hardware that it uses has to be initially manufactured.
+Auch Software verbraucht Energie, wenn sie Netzwerkanfragen stellt, und ist indirekt für den "embodied carbon" verantwortlich, d. h. das CO2, das bei der Herstellung der von ihr verwendeten Hardware freigesetzt wird.
 
-On this page we want to hightlight how to get from typical values like **time** or **Megabytes** to **kWh** and finally to **CO2**.
+Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit** oder **Megabyte** zu **kWh** und schließlich zu **CO2** kommt.
 
 {{< rawhtml >}}
                 </div>
@@ -23,7 +23,7 @@ On this page we want to hightlight how to get from typical values like **time** 
     </section><!-- end about -->
     <section class="single-page bg-two" style=""><div id="ancla1"></div>
         <div class="section-two">
-            <div class="title-two">List of CO2 formulas</div>
+            <div class="title-two">Liste von CO2 Formeln</div>
             <div class="separator"><div class="line line-1"></div></div>
             <div class="data-content-one">
                 <div class="ui segment">
@@ -42,7 +42,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p>Other approaches are to really trace the path of some sample packets and look at every piece of network equipment on the way and then on its power draw for the transmission only.</p>
                     <p>There are also other approaches but all have downsides and upsides. The number of <strong>0.06 kWh / GB</strong> is already a mix with the idea to get the best out of all of these approaches.</p>
                     <p>The study linked in the source [1] down below also notes that through advances in efficiency the electric intesity drops by around a half every 2 years and suggests that an extrapolation for the coming years might be a valid assumption. This would bring the value in <strong>2023</strong> down to a <strong>0.00375 kWH / GB</strong></p>
-                    <p>However this model is not without critique, as the real nature of network devices to date is that they consume 80% of their peak capacity already in idle mode. The rest is a proportional factor according to the usage of the possible bandwidth. Many models have been proposed to better attribute this reality on the real electricity cost for application that uses the network, however time-share or data-share models all have different downsides [2]. 
+                    <p>However this model is not without critique, as the real nature of network devices to date is that they consume 80% of their peak capacity already in idle mode. The rest is a proportional factor according to the usage of the possible bandwidth. Many models have been proposed to better attribute this reality on the real electricity cost for application that uses the network, however time-share or data-share models all have different downsides [2].
                     <p>We deciced to use the linear approach of network transfer attribution to power consumption in our tools as it bests incentives the user to keep the network traffic to a minimum. No matter which current known calculation method is used it will be inaccurate still and none of the current methods can reliably incorporate the real costs of provisioning new hardware for bandwith increase back in time to the pool of applications that tipped the providers to increase the bandwith.</p>
                     <h3>Included Network parts</h3>
                     <p>The important point to note with this number is which parts of the network are included. In the picture on the right you see the included parts. <strong>Only the Access Network and the IP core network is included</strong>, which means the connection between datacenters and telecom providers.</p>
@@ -69,7 +69,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p>[1] <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630">Untangling the estimates</a></p>
                     <p>[2] <a href="https://github.com/intarchboard/e-impact-workshop-public/blob/main/papers/Schien_Rethinking-Allocation-v2.pdf">Daniel Schien, Paul Shabajee, Chris Preist. “Rethinking Allocation in High-Baseload Systems: A Demand-Proportional Network Electricity Intensity Metric.”</a></p>
                 </div>
-                <!-- end segment -->                
+                <!-- end segment -->
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui yellow ribbon label" href="#from-kwh-to-co2e" id="from-kwh-to-co2e">
@@ -160,7 +160,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                         </div>
                     </div>
                 </div>
-                <!-- end segment --> 
+                <!-- end segment -->
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui green ribbon label" href="#from-specs-to-kwh" id="from-specs-to-kwh">
@@ -176,7 +176,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p>If you look at our <a href="https://metrics.green-coding.io/stats.html?id=280ab840-a360-481f-8be7-b2712fde6281">CPU measurement</a> of a full CPU load you will see that the measured value is only <strong>~60 J</strong>.</p>
                     <p>So we can conclude that the TDP is a very rough estimate, and serves as a good upper bound. But it exaggerates the real energy by quite a bit.</p>
                 </div>
-                <!-- end segment -->              
+                <!-- end segment -->
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui green ribbon label" href="#">
@@ -188,5 +188,5 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p>TODO</p>
                     <p>Source: <a href="https://github.com/cloud-carbon-footprint/cloud-carbon-coefficients">David Mytton</a></p>
                 </div>
-                <!-- end segment -->          
+                <!-- end segment -->
 {{< /rawhtml >}}
