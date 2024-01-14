@@ -1,30 +1,21 @@
-<select class="m-2 border-0" id="select-language" onchange="location = this.value;">
-  {{ $siteLanguages := .Site.Languages}}
-  {{ $pageLang := .Page.Lang}}
-  {{ range .Page.AllTranslations }}
-  {{ $translation := .}}
-  {{ range $siteLanguages }}
-  {{ if eq $translation.Lang .Lang }}
-  {{ $selected := false }}
-  {{ if eq $pageLang .Lang}}
-  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
-  {{ else }}
-  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
-  {{ end }}
-  {{ end }}
-  {{ end }}
-  {{ end }}
-</select>
-
+{{ $urlParts := split .Permalink "/" }}
+{{ $slug := index $urlParts (sub (len $urlParts) 2) }}
 <div class="block-menu">
-     <select class="navigation_resp" onchange="if(this.options[this.selectedIndex].value.substr(0,2) == '/#') document.location.hash=this.options[this.selectedIndex].value; else document.location=this.options[this.selectedIndex].value;">
-        <option value="{{ absLangURL "about" }}" class="second_item">About</option>
-        <option value="{{ absLangURL "services" }}" class="second_item">Services</option>
+     <select class="navigation_resp" onchange="document.location=this.options[this.selectedIndex].value;">
+        {{ if .IsTranslated }}
+            {{ range .Translations }}
+                <option value="{{ .Permalink }}" class="second_item">Switch to {{ .Lang }}</option>
+            {{ end }}
+        {{ end }}
+        {{/* We are using a hack here. Home always gets selected. This is wrong, but browser will default to apply selected only on last matched, so menu works as expected */}}
+        <option value="{{ absLangURL "/" }}" class="second_item" selected>Home</option>
+        <option value="{{ absLangURL "about" }}" class="second_item" {{if eq $slug "about"}}selected{{end}}>About</option>
+        <option value="{{ absLangURL "services" }}" class="second_item"{{if eq $slug "services"}}selected{{end}}>Services</option>
         <option value="{{ absLangURL "/" }}#nav-events" class="second_item">Talks & Events</option>
-        <option value="{{ absLangURL "blog" }}" class="second_item">Blog</option>
-        <option value="{{ absLangURL "jobs" }}" class="second_item">Jobs</option>
-        <option value="{{ absLangURL "co2-formulas" }}" class="second_item">CO2-Formulas</option>
-        <option value="{{ absURL "case-studies" }}" class="second_item">Case Studies</option>
+        <option value="{{ absLangURL "blog" }}" class="second_item"{{if eq $slug "blog"}}selected{{end}}>Blog</option>
+        <option value="{{ absLangURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>Jobs</option>
+        <option value="{{ absLangURL "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>CO2-Formulas</option>
+        <option value="{{ absURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>Case Studies</option>
         <option value="{{ absLangURL "/" }}#nav-team" class="second_item">Team</option>
     </select>
 </div>
@@ -61,6 +52,13 @@
                     <div class="contentbtn">Case Studies</div>
                 </div></a>
             </li>
+            {{ if .IsTranslated }}
+                {{ range .Translations }}
+                    <li style="margin-left: 5px;">
+                        <a href="{{ .Permalink }}" class="ui button menubtn" style="text-transform: uppercase">{{ .Lang }}</a>
+                    </li>
+                {{ end }}
+            {{ end }}
         </ol>
     </nav>
 </div>

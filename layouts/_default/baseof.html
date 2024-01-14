@@ -43,6 +43,13 @@
       <link rel="stylesheet" href="{{.Permalink}}"  />
   {{ end }}
 
+  <link rel="alternate" hreflang="en" href="{{ .Permalink }}" />
+  {{ if .IsTranslated }}
+      {{ range .Translations }}
+          <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+      {{ end }}
+  {{ end }}
+
     {{ partial "site-style.html" . }}
 
     {{ block "favicon" . }}
