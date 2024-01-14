@@ -7,7 +7,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 
 ---
 
-We recently had a team of aspiring UX researches at Green Coding Berlin that 
+We recently had a team of aspiring UX researches at Green Coding Solutions that
 made a research project on how the Green Metrics Tool can be used.
 
 This is a guest article with their results
@@ -117,10 +117,10 @@ We try to reduce the cognitive load of choices, show the info I need to know fir
 ## 10 DEFINING THE USER
 We defined our user persona, as a 32 years guy that is starting his career as a web developer named *Joao*. *Joao* wants to be able to *reduce the damage that he does to the environment by working in tech* but feels *frustrated about not knowing which tools or methods are inside his range of action*. He heard about **Green Coding** and would like to get to know about them and *How it works* so he can be able to use the *Green Metrics Tool* and support the cause.
 
-From here, *Joao* will approach the website by the following flow: 
-1. Starting at the Homepage to get to know Green Coding and its Community and get interested in knowing about their *Green List*. 
-2. Once at the *Green List* page, *Joao* will check the *Dashboard* of the *Github Links* that have been already provided by other users and measured by **Green Coding**. This will increase his interest in getting to know about other measurements such as *Energy* and *CPU*. 
-3. He decides to get deeper and check on two different links to enable the *Comparison* page, where he can see the two links and individual measurements being compared. 
+From here, *Joao* will approach the website by the following flow:
+1. Starting at the Homepage to get to know Green Coding and its Community and get interested in knowing about their *Green List*.
+2. Once at the *Green List* page, *Joao* will check the *Dashboard* of the *Github Links* that have been already provided by other users and measured by **Green Coding**. This will increase his interest in getting to know about other measurements such as *Energy* and *CPU*.
+3. He decides to get deeper and check on two different links to enable the *Comparison* page, where he can see the two links and individual measurements being compared.
 4. That's when he decided to check on *How it works*, to be able to participate and provide a link by himself, read some information about the functionality of the Tool, and see a global picture of the issue that is being taken on.
 {{< rawhtml >}}
 <img src="/img/blog/Fig_5_User_Flow.webp" alt="User Flow" loading="lazy" style="max-width: 80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;">

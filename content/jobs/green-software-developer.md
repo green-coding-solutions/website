@@ -1,9 +1,9 @@
 ---
 title: "Green Software Developer"
-description: "Open role for Green Software Developer with 5+ years experience at Green Coding Berlin GmbH to work on sustainable software."
+description: "Open role for Green Software Developer with 5+ years experience at Green Coding Solutions GmbH to work on sustainable software."
 ---
 
-At Green Coding Berlin we create a green software community and ecosystem in Berlin.
+At Green Coding Solutions we create a green software community and ecosystem in Berlin.
 
 Our goal is to shape the industry for the better in terms of using software in a sustainable way.
 We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and with strong planning to avoid rebound effects.
@@ -32,7 +32,7 @@ We also currently work on CO2 emission reporters for different CI-Pipelines as w
 
 ### How your typical week looks like
 
-When working at Green Coding Berlin GmbH as an engineer, the work is quite different from traditional coding jobs.
+When working at Green Coding Solutions GmbH as an engineer, the work is quite different from traditional coding jobs.
 
 Working in CO2 measurement of software is currently still a very academic profession. Therefore your weekly work is typically divided into reseach (reading Computer Science papers, articles and proof-of-concept code) and writing prototypes, tests and tools.
 

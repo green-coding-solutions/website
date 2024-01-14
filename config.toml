@@ -1,11 +1,30 @@
 baseURL = 'https://www.green-coding.io/'
-languageCode = 'de-en'
 title = 'green-coding.io'
+
+defaultContentLanguageInSubdir = false
 
 paginate = 10
 paginatePath = "page"
 
 summaryLength = 30
+
+defaultContentLanguage = "en"
+[languages]
+  [languages.en]
+    disabled = false
+    languageCode = "de-EN"
+    languageDirection = 'ltr'
+    languageName = 'English'
+    weight = 1
+
+  [languages.de]
+    languageCode = "de-DE"
+    disabled = false
+    languageDirection = 'ltr'
+    languageName = 'Deutsch'
+    weight = 2
+
+
 
 # Minify removes also the "" (quotes) from the HTML tags. This breaks bing site validation and
 # also maybe some SEO features.

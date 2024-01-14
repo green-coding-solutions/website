@@ -1,5 +1,5 @@
 ---
-title: "Kickoff Green Software Development Stuttgart [x] Green Coding Berlin"
+title: "Kickoff Green Software Development Stuttgart [x] Green Coding Solutions"
 date: 2023-10-05 18:00:00
 publishDate: 2023-10-02
 draft: false
@@ -22,7 +22,7 @@ Agenda:
 
 - Begrüßung
 - Kurzvorstellung: Wer sind die Initiatoren? Was ist die Idee hinter der Meetup-Reihe?
-Präsentation Arne Tarara (Green Coding Berlin): Sustainable Software: How can we quantify and measure "green-ness" of code?
+Präsentation Arne Tarara (Green Coding Solutions): Sustainable Software: How can we quantify and measure "green-ness" of code?
 - Diskussion: Vorstellungen, Erwartungen und mögliche Beiträge der Teilnehmer. Welche Themen fändet ihr spannend?
 
 (Das kann auch als "World Cafe" stattfinden. Wir entscheiden das spontan.)

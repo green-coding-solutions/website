@@ -11,9 +11,9 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
     <img class="ui medium floated right rounded bordered image" src="/img/case-studies/wordpress-vs-cloudflare-and-hugo.webp">
 {{< /rawhtml >}}
 
-In this case study we will look the carbon benefit of a static site. 
+In this case study we will look the carbon benefit of a static site.
 
-Site generators like [HUGO](https://www.gohugo.io) are currently all the hype. The idea is to write your website in simple markdown but still benefit from nice styling and templating. 
+Site generators like [HUGO](https://www.gohugo.io) are currently all the hype. The idea is to write your website in simple markdown but still benefit from nice styling and templating.
 
 The result will be a one-time generated page which saves server compute resources, is faster to deliver and, hopefully, also save carbon emissions.
 
@@ -33,7 +33,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
     + We will spin up the basic wordpress with the same template and just make a request to the root page
 
 
-- CURL vs. Firefox 
+- CURL vs. Firefox
 - Exclude functionality for containers in measurement!
 
 
@@ -184,13 +184,13 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                 </div>
                 <div class="ui red message" id="research-question">
                     <h2 class="ui header">
-                    <i class="warning icon floated left huge colored red"></i>                        
+                    <i class="warning icon floated left huge colored red"></i>
                         <div class="content">
                             Measurements Disclaimer
                             <div class="sub header">All energy measurements and / or benchmarks on a normal operating system are by nature error prone and uncomparable. Please never compare our values with values on your system. Measurements of software can only ever be compared on the exact same system. Also measurements should never be seen as ground truth, but only as indicator of the order of magnitude.</div>
                         </div>
                     </h2>
-                </div>                
+                </div>
                 <div class="ui segment" id="measurements">
                     <div class="header">
                         <a class="ui orange ribbon label" href="#measurements">
@@ -202,7 +202,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                     <p>The chart on the right side shows the relation of the HUGO build process (<strong>~1.4 J</strong>), the HUGO energy per web request (<strong>~1 J</strong>) and the energy for a web request o Wordpress (<strong>~10 J</strong>)</p>
                     <p>Since we have repeated the measurements 3 times we attached the error bars, which represent the 95% confidence interval.</p>
                     <p>The measurements are already an order of magnitude off, which is kind of what we assumed from the start. A static site is enormously more efficient, even if you also include the build process. Even for this simple setup it is around 10x.</p>
-                    <p><strong>Note:</strong> If you want to drill down on the details of the measurement like: How long was the pre-heat time of the CPU, how long was the pre-idle time, which CPU was used, what was the measurement resolution etc. please check the details on the links in the box above.</p>                
+                    <p><strong>Note:</strong> If you want to drill down on the details of the measurement like: How long was the pre-heat time of the CPU, how long was the pre-idle time, which CPU was used, what was the measurement resolution etc. please check the details on the links in the box above.</p>
                 </div>
                 <div class="ui segment" id="hosting-and-idle">
                     <div class="header">
@@ -210,7 +210,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <h3 style="color: #fff;">Hosting and idle time</h3>
                         </a>
                     </div>
-                    <p></p>               
+                    <p></p>
                     <p>When optimizing for low carbon and low energy hosting is a very important topic.</p>
                     <p>If you were just to replace the Wordpress site with a static site but the server will continue to run in idle it might be that your total energy savings are very minimal.</p>
                     <p>If you look at the <a href="https://docs.microsoft.com/en-gb/learn/modules/sustainable-software-engineering-overview/7-energy-proportionality">simplified load to energy curve from Microsoft</a> you can see that just by having the machine in idle you are already using a significant portion of energy.</p>

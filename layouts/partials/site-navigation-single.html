@@ -1,47 +1,64 @@
+<select class="m-2 border-0" id="select-language" onchange="location = this.value;">
+  {{ $siteLanguages := .Site.Languages}}
+  {{ $pageLang := .Page.Lang}}
+  {{ range .Page.AllTranslations }}
+  {{ $translation := .}}
+  {{ range $siteLanguages }}
+  {{ if eq $translation.Lang .Lang }}
+  {{ $selected := false }}
+  {{ if eq $pageLang .Lang}}
+  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
+  {{ else }}
+  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</select>
 
 <div class="block-menu">
      <select class="navigation_resp" onchange="document.location=this.options[this.selectedIndex].value;">
-        <option value="/about/" class="second_item">About</option>
-        <option value="/services/" class="second_item">Services</option>
-        <option value="/#nav-events" class="second_item">Talks & Events</option>
-        <option value="/blog/" class="second_item">Blog</option>
-        <option value="/jobs/" class="second_item">Jobs</option>
-        <option value="/co2-formulas/" class="second_item">CO2-Formulas</option>
-        <option value="/case-studies/" class="second_item">Case Studies</option>
-        <option value="/#nav-team" class="second_item">Team</option>
+        <option value="{{ absLangURL "about" }}" class="second_item">{{i18n "about"}}</option>
+        <option value="{{ absLangURL "services" }}" class="second_item">{{i18n "services"}}</option>
+        <option value="{{absLangURL "/" }}#nav-events" class="second_item">{{i18n "talks"}}</option>
+        <option value="{{ absURL "blog" }}" class="second_item">{{i18n "blog"}}</option>
+        <option value="{{ absURL "jobs" }}" class="second_item">{{i18n "jobs"}}</option>
+        <option value="{{ absLangURL "co2-formulas"}}" class="second_item">{{i18n "formulas"}}</option>
+        <option value="{{ absURL "case-studies"}}" class="second_item">{{i18n "studies"}}</option>
+        <option value="{{ absLangURL "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
     </select>
 </div>
 <div class="menu-select">
     <nav>
         <ol class="contentMenu">
             <li>
-               <a href="/about/"><div class="menubtn">
-                    <div class="contentbtn">about</div>
+               <a href="{{ absLangURL "about" }}"><div class="menubtn">
+                    <div class="contentbtn">{{i18n "about"}}</div>
                 </div></a>
             </li>
             <li>
-               <a href="/services/"><div class="menubtn">
-                    <div class="contentbtn">services</div>
+               <a href="{{ absLangURL "services" }}"><div class="menubtn">
+                    <div class="contentbtn">{{i18n "services"}}</div>
                 </div></a>
             </li>
             <li>
-               <a href="/blog/"><div class="menubtn">
-                    <div class="contentbtn">blog</div>
+               <a href="{{ absURL "blog" }}"><div class="menubtn">
+                    <div class="contentbtn">{{i18n "blog"}}</div>
                 </div></a>
             </li>
             <li>
-               <a href="/jobs/"><div class="menubtn">
-                    <div class="contentbtn">jobs</div>
+               <a href="{{ absURL "jobs" }}"><div class="menubtn">
+                    <div class="contentbtn">{{i18n "jobs"}}</div>
                 </div></a>
             </li>
             <li>
-               <a href="/co2-formulas/"><div class="menubtn">
-                    <div class="contentbtn">CO2-Formulas</div>
+               <a href="{{ absLangURL "co2-formulas" }}"><div class="menubtn">
+                    <div class="contentbtn">{{i18n "formulas"}}</div>
                 </div></a>
             </li>
             <li>
-               <a href="/case-studies/"><div class="menubtn">
-                    <div class="contentbtn">Case Studies</div>
+               <a href="{{ absURL "case-studies" }}"><div class="menubtn">
+                    <div class="contentbtn">{{i18n "studies"}}</div>
                 </div></a>
             </li>
         </ol>

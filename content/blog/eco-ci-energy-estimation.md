@@ -56,7 +56,7 @@ Once you call the `get-measurement` task a second time, it will output the energ
 </figure>
 {{< /rawhtml >}}
 
-If you call start-measurement again, it will reset cpu utilization file. This way you can get discrete energy estimations for different sections of your workflow file. 
+If you call start-measurement again, it will reset cpu utilization file. This way you can get discrete energy estimations for different sections of your workflow file.
 
 Something to be aware of - many workflows will have different jobs. Each job spins up a different virtual machine which might be on a different phyiscal machine. This means that you need to call our action, including the initialize task, for each job.
 

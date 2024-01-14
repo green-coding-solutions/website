@@ -9,7 +9,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 We finally got our DC measurement setup ready ... sadly around one month later
 than expected.
 
-If you wanna see first results go here: 
+If you wanna see first results go here:
 - [Wordpress sample measurement](https://metrics.green-coding.io/stats.html?id=2213b2ec-f96f-4fb4-9fc9-82094bdee1bb)
 - [Stress sample measurement](https://metrics.green-coding.io/stats.html?id=f99e563d-2c5c-453d-99fe-5ac9f6f307ac)
 
@@ -17,14 +17,14 @@ If you wann get the details of our journey, why we are integrating it into our t
 
 ## Why?
 
-Current energy measurement in software that works in a small time resolution is mostly done in with 
-[RAPL](https://01.org/blogs/2014/running-average-power-limit-%E2%80%93-rapl) interfaces. 
+Current energy measurement in software that works in a small time resolution is mostly done in with
+[RAPL](https://01.org/blogs/2014/running-average-power-limit-%E2%80%93-rapl) interfaces.
 
 Typically either [directly](https://web.eece.maine.edu/~vweaver/projects/rapl/) or through tools like [Scaphandre](https://github.com/hubblo-org/scaphandre).
 
-If you want to have more direct DC power readings you can use the [Marcher system from the Texas State University](https://greensoft.cs.txstate.edu/index.php/2018/05/22/marcher-the-need-for-a-fine-grained-software-energy-efficiency-measuring-platform/) with their [Green Code](https://greencode.cs.txstate.edu/) hosted service. 
+If you want to have more direct DC power readings you can use the [Marcher system from the Texas State University](https://greensoft.cs.txstate.edu/index.php/2018/05/22/marcher-the-need-for-a-fine-grained-software-energy-efficiency-measuring-platform/) with their [Green Code](https://greencode.cs.txstate.edu/) hosted service.
 
-While this last option works generally fine especially with C code, we had some problem to get more complex PHP and Python code running. 
+While this last option works generally fine especially with C code, we had some problem to get more complex PHP and Python code running.
 You can however apply for an SSH access to get more complex code working, we did not try though.
 Also the jQuery interface is partially broken and getting a detailed power consumption is not possible anymore.
 
@@ -112,7 +112,7 @@ Since we are experiencing different voltages on the different 12 V lanes we susp
 
 The next iteration will use special current measurement resistors and also look into reducing the measurement noise a bit by evaluating a single-ended voltage measurement where we feed the analogue ground back to the PicoLog HDR ADC-24.
 
-Another issue we are currently having is that the timestamps of the measurement results are not synchronized with the clock of the reference system. In the current setup we have the software for the PicoLog running not on the System under Test (SUT) but on a separate machine. 
+Another issue we are currently having is that the timestamps of the measurement results are not synchronized with the clock of the reference system. In the current setup we have the software for the PicoLog running not on the System under Test (SUT) but on a separate machine.
 
 The reason for that is that we initially configured our measurement setup to measure a windows machine, where our tools are not running atm.
 Since we are now measuring Linux only there is no reason anymore for it.
@@ -121,11 +121,11 @@ We will update the measurement setup as well as the measurements on our [Metrics
 
 ## Whats next
 
-As soon as we have updated the measurement setup and also falsified with the [Eco KDE Team]() and their DC measurements we will build the linear model out of it and create calibration curves for our other 4 machines 
+As soon as we have updated the measurement setup and also falsified with the [Eco KDE Team]() and their DC measurements we will build the linear model out of it and create calibration curves for our other 4 machines
 we have sitting around.
 
 Also we have ordered two Dell Power Edge Server blades to falsify our measurements with the official readings from the [Spec Power Database](https://spec.org/power_ssj2008/results/)
 
-We hope to make the model robust enough so we can translate it to server environements in a similar 
+We hope to make the model robust enough so we can translate it to server environements in a similar
 fashion that is currently done for instance by [David Mytton](https://github.com/cloud-carbon-footprint/cloud-carbon-coefficients) and the [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/docs/methodology/) project.
 Only with a better time resolution and more accurate data.

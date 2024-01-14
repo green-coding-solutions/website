@@ -1,11 +1,11 @@
 ---
-title: "Cloud energy consumption - PyData Berlin [x] Green Coding Berlin"
+title: "Cloud energy consumption - PyData Berlin [x] Green Coding Solutions"
 date: 2022-11-16 19:00:00
 publishDate: 2022-11-09
 draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/289642025/"
-eventname: "Cloud energy consumption - PyData Berlin [x] Green Coding Berlin"
+eventname: "Cloud energy consumption - PyData Berlin [x] Green Coding Solutions"
 eventimg: "/img/talks-and-events/pydata-meetup-nov-2022.webp"
 eventimg600w: "/img/talks-and-events/pydata-meetup-nov-2022-600w.webp"
 
@@ -30,7 +30,7 @@ Energy cost estimation for cloud workloads is an emerging topic that surfaces es
 
 
 ## Slide-Deck PDF
-Here are the slides to our talk, where we present the works on and performance of the model 
+Here are the slides to our talk, where we present the works on and performance of the model
 at the PyData Nov'22 Meetup in Berlin.
 
 [Download Slides](/slides/PyData-Talk.pdf)

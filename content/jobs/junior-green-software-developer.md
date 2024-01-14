@@ -1,10 +1,10 @@
 ---
 title: "Junior Green Software Developer"
-description: "Open role for Junior Green Software Developer at Green Coding Berlin GmbH to work on sustainable software."
+description: "Open role for Junior Green Software Developer at Green Coding Solutions GmbH to work on sustainable software."
 draft: true
 ---
 
-At Green Coding Berlin we create a green software community and ecosystem in Berlin.
+At Green Coding Solutions we create a green software community and ecosystem in Berlin.
 
 Our goal is to shape the industry for the better in terms of using software in a sustainable way.
 We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and
@@ -29,7 +29,7 @@ See examples in our [Case Studies](https://www.green-coding.io/case-studies), ou
 
 ### How your typical week looks like
 
-When working at Green Coding Berlin GmbH as an engineer, the work is quite different from traditional coding jobs.
+When working at Green Coding Solutions GmbH as an engineer, the work is quite different from traditional coding jobs.
 
 Working in CO2 measurement of software is currently still a very academic profession. Therefore our team does a lot of research and writing prototypes, tests and tools.
 
