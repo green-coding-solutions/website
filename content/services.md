@@ -122,7 +122,7 @@ Interested?
 <div id="services-contact-us">
     <div id="contactinfo">
         <h2 class="titlecontact">Contact us</h2>
-        <p>Green Coding Services GmbH<br>
+        <p>Green Coding Solutions GmbH<br>
             Jablonskistr. 24<br>
         10405 Berlin (Germany)</p>
         <p>(+49) 160 947 930 24</p>
