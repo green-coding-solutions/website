@@ -93,7 +93,8 @@
                     <div class="final"></div>
                 </div>
                 <div class="data-content-two">
-                    👉 <a href="{{ absLangURL "talks-and-events" }}" style="color: white; text-decoration: underline;">{{ i18n "home_talks_full_list" }}</a>
+                    {{/* Use absLangURL here for a german list. But it will only work if there also articles that end in .de*/}}
+                    👉 <a href="{{ absURL "talks-and-events" }}" style="color: white; text-decoration: underline;">{{ i18n "home_talks_full_list" }}</a>
                 </div>
 
 
