@@ -2,33 +2,33 @@
 <section id="about" class="bg-one">
     <div id="nav-about"></div>
     <div class="section-one">
-        <div class="title-one">What we do</div>
+        <div class="title-one">{{ i18n "home_what_we_do" }}</div>
         <div class="separator">
             <div class="line line-1"></div>
         </div>
         <div class="data-content-one">
             <p>{{ i18n "home_teaser" }}</p>
             <div class="btn-one">
-                <a href="/services"><span>{{i18n "home_cta"}}</span></a>
+                <a href="{{ absLangURL "services" }}"><span>{{i18n "home_cta"}}</span></a>
             </div>
         </div>
         <div class="separator">
             <div class="line line-1"></div>
         </div>
         <div class="data-content-one">
-            <a href="/about">Read some details about the carbon emissions of software</a>.
+            <a href="{{ absLangURL "about" }}">{{ i18n "home_about_details" }}</a>.
         </div>
     </div>
 </section><!-- end about -->
 <section id="projects" class="bg-two">
     <div id="nav-projects"></div>
     <div class="section-two bottom-works">
-        <h1><div class="title-two">Our Projects</div></h1>
+        <h1><div class="title-two">{{ i18n "home_projects" }}</div></h1>
         <div class="separator">
             <div class="line line-2"></div>
         </div>
         <div class="data-content-two">
-            We develop tools to empower developers and users to make energy and carbon concious decisions
+            {{ i18n "home_projects_teaser" }}
         </div>
         <div id="project-items-container" class="data-content-two">
             {{/*
@@ -60,9 +60,7 @@
                 <div class="line line-2"></div>
             </div>
             <div class="data-content-two">
-                Browse through our latest events and watch recordings (if available :) )<br>
-                For a full list: 👉 <a href="{{ absLangURL "talks-and-events" }}" style="color: white; text-decoration: underline;">All
-                our Talks & Events</a>
+                {{ i18n "home_talks_teaser" }}<br>
             </div>
         </div>
         <div id="portfolio" class="container">
@@ -94,11 +92,11 @@
                     {{end}}
                     <div class="final"></div>
                 </div>
-                <!-- Project -->
-                <div id="project-show"></div>
-                <div class="project-window">
-                    <div class="project-content"></div><!-- AJAX Dinamic Content -->
-                </div><!-- end Project -->
+                <div class="data-content-two">
+                    👉 <a href="{{ absLangURL "talks-and-events" }}" style="color: white; text-decoration: underline;">{{ i18n "home_talks_full_list" }}</a>
+                </div>
+
+
             </div> <!-- #container -->
         </div> <!-- /END ISOTOPE PORTFOLIO-->
     </div><!-- end portfolio -->
