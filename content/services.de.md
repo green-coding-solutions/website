@@ -8,18 +8,18 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-Möchten Sie die Transparenz Ihrer Software in Bezug auf Energie und CO2-Emissionen verbessern? Ganz gleich, ob Sie diese Reise gerade erst beginnen oder ob Sie die Emissionen weiter optimieren und reduzieren möchten, wir können Ihnen helfen!
+Möchten Sie die Software und IT nachhaltig optimiren in Bezug auf Energie und CO2-Emissionen? Ganz gleich, ob Sie diese Transformation gerade erst beginnen oder ob Sie die Emissionen weiter optimieren und reduzieren möchten, wir können Ihnen helfen!
 
 Unser Team besteht aus erfahrenen Software-Performance- und Pipeline-Ingenieuren, die sich inzwischen auf nachhaltige Software-Entwicklung spezialisiert haben.
 
 Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien](/de/#nav-meetups), entwickeln
-(/projects/green-metrics-tool) sowie [Open-Source-Tools zur Messung von CO2 in Containern](/de/#nav-meetups) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling](/de/projects/eco-ci)
+[Projekte](/de/#projects) sowie [Open-Source-Tools zur Messung von CO2 in Containern](/de/projects/green-metrics-tool) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling](/de/projects/eco-ci)
 durch Zertifizierungen wie den [Blauen Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) oder unser Projekt [Energy-ID](/de/projects/energy-id).
 
 Einige unserer jüngsten anerkannten Arbeiten in der Forschung umfassen
 [maßgeschneiderte Open-Source-Maschinenmodelle zur Energieabschätzung in Cloud-Umgebungen](/de/projects/cloud-energy), veröffentlichte Positionspapiere
 Papiere und akademische Papiere für Software-Lebenszyklus-Bewertung und Software-Energiemessung, Arbeit an
-[Software-Lifecycle-Assessment](https://publication2023.bits-und-baeume.org/#book/38) mit Entwickler-Tools, die noch in diesem Jahr veröffentlicht werden sollen, und zitiert
+[Software-Lifecycle-Assessment](https://publication2023.bits-und-baeume.org/#book/38) mit Entwickler-Tools und zitierte
 [Fallstudien für Energieeinsparungen und -optimierungen](/case-studies).
 
 
@@ -38,8 +38,8 @@ Dienstleistungen
                     <li>CO2 der Softwareentwicklung</li>
                     <li>VM CO2 monitoring</li>
                     <li>AI-optimierter CO2 Optimierungen</li>
-                    <li>Integration der grünen Effizienz von DevOps</li>
-                    <li>Intelligente Netzintensität Anwendungen </li>
+                    <li>Integration von "green" metrics DevOps</li>
+                    <li>Carbon-Aware Software</li>
                 </ul>
             </div>
             <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Weitere Beispiele anzeigen ...</a></p>
@@ -51,9 +51,9 @@ Dienstleistungen
                     <li>Nachhaltige Software-Entwicklung</li>
                     <li>Schulung und Ausbildung von EntwicklerInnen</li>
                     <li>CO2 Cloud-Effizienz</li>
-                    <li>C-Level Schulungen in Grüne Software</li>
+                    <li>C-Level Schulungen in Nachhaltiger Software</li>
                     <li>Perfomance engineering</li>
-                    <li>Nachhaltige DevOps</li>
+                    <li>Green DevOps</li>
                 </ul>
             </div>
             <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Weitere Beispiele anzeigen ...</a></p>
@@ -63,11 +63,11 @@ Dienstleistungen
             <div class="profile-info expandable closed">
                 <ul>
                     <li>CO2-Profiling von Anwendungen</li>
-                    <li>CO2optimierung und -einsparung</li>
+                    <li>CO2-Optimierung und -einsparung</li>
                     <li>CO2 reporting (GHG/ISO 14001)</li>
-                    <li>Nachhaltige UI/UX</li>
-                    <li>CO2 optimierung von Websites</li>
-                    <li>CO2 zertifizierungen für Websites</li>
+                    <li>Green UI/UX</li>
+                    <li>CO2-Optimierung von Websites</li>
+                    <li>CO2-Zertifizierungen für Websites</li>
                 </ul>
             </div>
             <p><a class="show-more" href="" style="text-decoration: underline;" onclick="$('.profile-info.expandable.closed').removeClass('closed').addClass('open'); $('.show-more').remove(); return false;">Weitere Beispiele anzeigen ...</a></p>
@@ -125,18 +125,18 @@ Interessiert?
         <fieldset>
             <div class="first">
                 <label class="data-form" for="nameform">name</label>
-                <input type="text" name="name" id="nameform" value="" placeholder="Your name ...">
+                <input type="text" name="name" id="nameform" value="" placeholder="Ihr Name ...">
                 <label class="data-form" for="emailform">email</label>
-                <input type="text" name="email" id="emailform" value="" placeholder="Your e-Mail ...">
+                <input type="text" name="email" id="emailform" value="" placeholder="Ihre E-Mail ...">
             </div>
             <div>
-                <label class="data-form" for="messageform">your message</label>
-                <textarea name="message" id="messageform" placeholder="Your message ..."></textarea>
+                <label class="data-form" for="messageform">Ihre Nachricht</label>
+                <textarea name="message" id="messageform" placeholder="Ihre Nachricht ..."></textarea>
             </div>
             <div>
                 <label class="data-form" for="messagesubmit">&nbsp;</label>
                 <div id="messagesubmit-container" class="btn-one">
-                    <input id="messagesubmit" type="submit" name="submit" value="Submit">
+                    <input id="messagesubmit" type="submit" name="submit" value="Absenden">
                 </div>
             </div>
         </fieldset>
