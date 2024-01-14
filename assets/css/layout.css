@@ -24,12 +24,12 @@
 ================================================== */
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 1150px) {
+	@media only screen and (max-width: 1250px) {
 		.header-container {padding: 0 30px;}
 	
 	}
 	
-	@media only screen and (max-width: 959px) {
+	@media only screen and (max-width: 1050px) {
 		#ancla1,#ancla2,#ancla3,#ancla4,#ancla5,#ancla6{position: absolute; top: -100px;}
 		.menu-select{display: none;}
 		.profile1{font-size: 22px !important;}
