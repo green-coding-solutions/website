@@ -5,7 +5,7 @@ publishDate: 2024-01-14
 draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-software-development-frankfurt/events/297639022/"
-eventname: "Sustainable Software: Ansätze zum Messen der Energieeffizienz von Softwar"
+eventname: "Sustainable Software: Ansätze zum Messen der Energieeffizienz von Software"
 eventimg: "/img/talks-and-events/green-software-development-frankfurt-2023-01-18.webp"
 eventimg600w: "/img/talks-and-events/green-software-development-frankfurt-2023-01-18-2x.webp"
 ---
