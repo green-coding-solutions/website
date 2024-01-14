@@ -29,26 +29,26 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui blue ribbon label" href="#gigabytes-to-kwh" id="gigabytes-to-kwh">
-                            <h3 style="color: #fff;">Gigabytes to kwH</h3>
+                            <h3 style="color: #fff;">Gigabytes zu kwH</h3>
                         </a>
                     </div>
                     <p></p>
                     <img class="ui large floated right rounded bordered image" src="/img/co2-formulas/boundaries_network_emissions.webp">
-                    <p>When you want to quantify the cost of transferring an amount of data through the internet you would need to measure at every hop of the packet and add up cost for routers, cables, tranmission towers etc.</p>
-                    <p>Since this measurement data is not available a heuristic is used that estimates the cost of all this network equipment the data has to flow through based on the actual transferred amount of data in GB.</p>
-                    <p>When you have the value already in GB you can just convert them with a constant factor to kWh.</p>
-                    <p>As you might suggest this seemingly easy formula makes a lot of assumptions and uses a lot of averages.</p>
-                    <p>Typically these approaches either follow a top down approach by looking at the electricity bill of a telecom provider and then the network transmission reporting to divide the two numbers.</p>
-                    <p>Other approaches are to really trace the path of some sample packets and look at every piece of network equipment on the way and then on its power draw for the transmission only.</p>
-                    <p>There are also other approaches but all have downsides and upsides. The number of <strong>0.06 kWh / GB</strong> is already a mix with the idea to get the best out of all of these approaches.</p>
-                    <p>The study linked in the source [1] down below also notes that through advances in efficiency the electric intesity drops by around a half every 2 years and suggests that an extrapolation for the coming years might be a valid assumption. This would bring the value in <strong>2023</strong> down to a <strong>0.00375 kWH / GB</strong></p>
-                    <p>However this model is not without critique, as the real nature of network devices to date is that they consume 80% of their peak capacity already in idle mode. The rest is a proportional factor according to the usage of the possible bandwidth. Many models have been proposed to better attribute this reality on the real electricity cost for application that uses the network, however time-share or data-share models all have different downsides [2].
-                    <p>We deciced to use the linear approach of network transfer attribution to power consumption in our tools as it bests incentives the user to keep the network traffic to a minimum. No matter which current known calculation method is used it will be inaccurate still and none of the current methods can reliably incorporate the real costs of provisioning new hardware for bandwith increase back in time to the pool of applications that tipped the providers to increase the bandwith.</p>
-                    <h3>Included Network parts</h3>
-                    <p>The important point to note with this number is which parts of the network are included. In the picture on the right you see the included parts. <strong>Only the Access Network and the IP core network is included</strong>, which means the connection between datacenters and telecom providers.</p>
-                    <p>Not included are the networking inside of the datacenters and also no end-user devices or their in-Home wifi. The calculation only goes to the curbside.</p>
-                    <p>Also important: <strong>Only fixed line transmissions</strong> are included in this number. No mobile traffic, which is typically more energy intensive by at least the factor 2-3x.</p>
-                    <h3>Value in Gigabytes</h3>
+                    <p>Wenn Sie die Kosten für die Übertragung einer Datenmenge über das Internet beziffern wollen, müssen Sie jeden Schritt des Pakets messen und die Kosten für Router, Kabel, Sendemasten usw. addieren.</p>
+                    <p>Da diese Messdaten nicht zur Verfügung stehen, wird eine Heuristik verwendet, die die Kosten der gesamten Netzausrüstung, durch die die Daten fließen müssen, auf der Grundlage der tatsächlich übertragenen Datenmenge in GB schätzt.</p>
+                    <p>Wenn Sie den Wert bereits in GB haben, können Sie ihn einfach mit einem konstanten Faktor in kWh umrechnen.</p>
+                    <p>Diese scheinbar einfache Formel enthält jedoch eine Menge Annahmen und verwendet Durchschnittswerte.</p>
+                    <p>Typischerweise folgen diese Ansätze entweder einem Top-Down-Ansatz, bei dem die Stromrechnung eines Telekommunikationsanbieters und dann die Netzübertragungsberichte betrachtet werden, um die beiden Zahlen zu teilen.</p>
+                    <p>Andere Ansätze bestehen darin, den Weg einiger Beispiel-Pakete wirklich zu verfolgen und jedes einzelne Netzgerät auf dem Weg zu untersuchen und dann den Stromverbrauch nur für die Übertragung zu ermitteln.</p>
+                    <p>Es gibt auch andere Ansätze, aber alle haben Vor- und Nachteile.  Die Zahl <strong>0.06 kWh / GB</strong> ist bereits ein Mix, die das Beste aus all diesen Ansätzen herausholen soll.</p>
+                    <p>In der Studie, die in der unten angegebenen Quelle [1] verlinkt ist, wird auch darauf hingewiesen, dass die Stromintensität durch Fortschritte bei der Effizienz alle zwei Jahre um etwa die Hälfte sinkt, und es wird angenommen, dass eine Extrapolation für die kommenden Jahre eine gültige Annahme sein könnte. Dies bring den Wert für den Umrechnungsfaktor in <strong>2023</strong> runter auf <strong>0.00375 kWH / GB</strong></p>
+                    <p>Dieses Modell ist jedoch nicht ohne Kritik, da die meisten Netzwerkkomponente ca. 80 % ihrer maximalen Leistungsaufnahme bereits im Leerlauf verbrauchen. Der Rest ist ein proportionaler Faktor, der von der Nutzung der möglichen Bandbreite abhängt. Es gibt Ansätze um dieser Realität der tatsächlichen Stromkosten für Anwendungen, die das Netzwerk nutzen, besser abzubilden, doch haben diese sog. Time-Sharing- oder Data-Sharing-Modelle alle unterschiedliche Nachteile [2].</p>
+                    <p>Wir haben uns entschieden, in unseren Tools den linearen Ansatz der Zuordnung von Netzübertragungen zum Stromverbrauch zu verwenden. Dieser bietet für den Nutzer den besten Anreizden Netzverkehr auf ein Minimum zu beschränken. Unabhängig davon, welche der derzeit bekannten Berechnungsmethoden verwendet wird, ist sie immer noch ungenau. Keine der derzeitigen Methoden kann die tatsächlichen Kosten für die Bereitstellung neuer Hardware für die Bandbreitenerhöhung zuverlässig vorraussagen. Der zusätzliche CO2-Ausstoß fällt nämlich immer erst dann wenn neue Netzwerkkomponente hinzugefügt werden. Nicht wenn mehr Datentraffic entsteht.</p>
+                    <h3>Betrachtete Netzwerkkomponente</h3>
+                    <p>Wichtig für das Verständnis und die Vergleichbarkeit der berechenten Werte ist welche Teile des Netzwerk in die Betrachung mit einbezogen werden. In der Abbildung rechts sehen Sie die einbezogenen Komponenten. <strong>Nur das Zugangsnetz und das IP-Kernnetz sind enthalten</strong>, d.h. die Verbindung zwischen Rechenzentren und Telekommunikationsanbietern.</p>
+                    <p>Nicht enthalten sind die Teile innerhalb der Rechenzentren und auch keine Endnutzergeräte oder deren WLAN/LAN im Haus. Die Berechnung geht nur bis zur *Bordsteinkante*.</p>
+                    <p>Ebenfalls wichtig: <strong>Nur Festnetzübertragungen</strong> sind hier enthalten. Kein mobiler Datenverkehr, der in der Regel mindestens um das 2-3fache energieintensiver ist.</p>
+                    <h3>Wert in Gigabytes</h3>
                     <div class="ui mini statistics">
                         <div class="statistic">
                             <div class="value">1</div>
@@ -65,7 +65,7 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                             <div class="label">kWH</div>
                         </div>
                     </div>
-                    <p>If your value is in Megabytes the conversion factor has to be divived with <strong>1.000</strong> and will equate to <strong>0.00006 MB / kWh</strong></p>
+                    <p>Wenn Ihr Wert in Megabytes angegeben ist, muss der Umrechnungsfaktor durch folgende Zahl geteilt werden <strong>1.000</strong> und ergibt sich zu <strong>0.00006 MB / kWh</strong></p>
                     <p>[1] <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630">Untangling the estimates</a></p>
                     <p>[2] <a href="https://github.com/intarchboard/e-impact-workshop-public/blob/main/papers/Schien_Rethinking-Allocation-v2.pdf">Daniel Schien, Paul Shabajee, Chris Preist. “Rethinking Allocation in High-Baseload Systems: A Demand-Proportional Network Electricity Intensity Metric.”</a></p>
                 </div>
@@ -78,13 +78,13 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                     </div>
                     <p></p>
                     <img class="ui large floated right rounded bordered image" src="/img/co2-formulas/electricitymap_de.webp">
-                    <p>This conversion is probably the most often done and also the one with the most impact.</p>
-                    <p>By most often done we mean that companies already get the current intensity of their grid and schedule workloads accordingly.</p>
-                    <p>The current intensity of the grid can for instance be retrieved from <a href="https://app.electricitymaps.com/zone/DE">Electricitymap.com</a>. In our case in Germany the number is at the moment <strong>317 gCO2e/kWh</strong></p>
-                    <h3>Worldwide average grid carbon intensity</h3>
-                    <p>If you can choose the number for the grid where your workload is running. If your workload is distributed over mutliple countries or you don't know at all where your workload is running, then the best way is to take the global average.</p>
-                    <p>For 2021 this number is: <strong>442 gCO2e/kWh</strong></p>
-                    <p>So if we were to plug in this number into a calculation starting with kWh we get directly to gCO2e, which means gramms of CO2 equivalent. Since not every checmical process generates pure CO2 they are all converted to the equivalent climate warming potential of CO2, which results in CO2e</p>
+                    <p>Diese Umrechnung ist wahrscheinlich die relevanteste.</p>
+                    <p>Damit meinen wir, dass die Unternehmen bereits die aktuelle Intensität ihres Netzes kennen und die Arbeitsbelastung entsprechend planen wollen.</p>
+                    <p>Die aktuelle Intensität des Stromnnetztes kann z.B. über <a href="https://app.electricitymaps.com/zone/DE">Electricitymap.com</a> abgerufen werden. In unseren Fall, in Deutschland, ist der Wert <strong>317 gCO2e/kWh</strong></p>
+                    <h3>Weltweite durchschnittliche Stromnnetzintensität</h3>
+                    <p>Wenn Ihre Workload über mehrere Länder verteilt ist oder Sie überhaupt nicht wissen, wo Ihre Arbeitslast läuft, dann ist es am besten, den globalen Durchschnitt zu nehmen.</p>
+                    <p>Für 2021 ist dieser Wert: <strong>442 gCO2e/kWh</strong></p>
+                    <p>Setzt man diese Zahl in eine Berechnung ein, die mit kWh beginnt, kommt man direkt auf gCO2e, was Gramm CO2-Äquivalent bedeutet. Da nicht jeder chemische Prozess reines CO2 erzeugt, werden diese alle auf das äquivalente Klimaerwärmungspotenzial von CO2 umgerechnet, was zu CO2e führt</p>
                     <div class="ui five mini statistics">
                         <div class="statistic">
                             <div class="value">1</div>
@@ -101,20 +101,19 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                             <div class="label">gCO2e</div>
                         </div>
                     </div>
-                    <p>Source: <a href="https://ember-climate.org/insights/research/global-electricity-review-2022/">Ember Climate</a></p>
+                    <p>Quelle: <a href="https://ember-climate.org/insights/research/global-electricity-review-2022/">Ember Climate</a></p>
                 </div>
                 <!-- end segment -->
                 <div class="ui segment" id="calculating-savings">
                     <div class="header">
                         <a class="ui blue ribbon label" href="#from-joules-to-kwh" id="from-joules-to-kwh">
-                            <h3 style="color: #fff;">From Joules to kwH</h3>
+                            <h3 style="color: #fff;">Von Joules zu kwH</h3>
                         </a>
                     </div>
                     <p></p>
-                    <p>Some energy budgeting tools or internal power meters (like <strong>Intel RAPL</strong>) give you Joules as an output value.</p>
-                    <p>Measuring energy directly through an electrical circuit is usually the premium category, so this value is the best you can get.</p>
-                    <p>The actual SI-Unit value of Joules is Ws. So in order to get to kWh you have to first get to hours (60*60) and then get to *kilo*, which means to divide by a thousand</p>
-                    <h3>Joules to kWh</h3>
+                    <p>Einige Energie-Mess-Tools (wie z.B. <strong>Intel RAPL</strong>) geben *Joules* als Ausgabewert.</p>
+                    <p>Der tatsächliche SI-Einheitswert von Joule ist Ws. Um also auf kWh zu kommen, muss man zuerst auf Stunden (60*60) kommen und dann auf *Kilo*, was bedeutet, dass man durch tausend dividieren muss</p>
+                    <h3>Joules zu kWh</h3>
                     <div class="ui ten mini statistics">
                         <div class="statistic">
                             <div class="value">1</div>
@@ -123,12 +122,12 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                         <div class="statistic gc-stats-multiply"><div class="value">/</div></div>
                         <div class="statistic">
                             <div class="value">(60*60)</div>
-                            <div class="label">(to get to hours)</div>
+                            <div class="label">(um Stunden zu bekommen)</div>
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">/</div></div>
                         <div class="statistic">
                             <div class="value">(1.000)</div>
-                            <div class="label">(to get to *kilo*)</div>
+                            <div class="label">(um *kilo* zu bekommen)</div>
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">=</div></div>
                         <div class="statistic">
@@ -136,8 +135,8 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                             <div class="label">kWH</div>
                         </div>
                     </div>
-                    <p>And vice versa:</p>
-                    <h3>kWh to Joules</h3>
+                    <p>Und umgekehrt:</p>
+                    <h3>kWh zu Joules</h3>
                     <div class="ui eight mini statistics">
                         <div class="statistic">
                             <div class="value">1</div>
@@ -146,12 +145,12 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                         <div class="statistic gc-stats-multiply"><div class="value">*</div></div>
                         <div class="statistic">
                             <div class="value">(60*60)</div>
-                            <div class="label">(remove hours)</div>
+                            <div class="label">(Stunden auskürzen)</div>
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">*</div></div>
                         <div class="statistic">
                             <div class="value">(1.000)</div>
-                            <div class="label">(remove *kilo*)</div>
+                            <div class="label">(*kilo* auskürzen)</div>
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">=</div></div>
                         <div class="statistic">
@@ -164,17 +163,17 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui green ribbon label" href="#from-specs-to-kwh" id="from-specs-to-kwh">
-                            <h3 style="color: #fff;">From Specs to kWh</h3>
+                            <h3 style="color: #fff;">Von TDP zu kWh</h3>
                         </a>
                     </div>
                     <p></p>
-                    <p>If you cannot measure the Watts directly (with an external powermeter, Intel RAPL, etc.) then you can always use datasheets or benchmarks and interpolate to get to your power value.</p>
-                    <p>A naive approach to estimate the energy draw of a processor would be to use its Thermal Design Power (TDP).</p>
-                    <p>This gives you a first impression in which order of magnitude your expected energy value is.</p>
-                    <p>Example: My <a href="https://ark.intel.com/content/www/de/de/ark/products/84993/intel-core-i75557u-processor-4m-cache-up-to-3-40-ghz.html"><strong>Intel i7-5557U</strong> has a TDP of <strong>28 W</strong></a></p>
-                    <p>If I were to do a compute of 5 seconds I would expect an energy consumption of <strong>140 Ws</strong> (28 W * 5 s), aka <strong>140 J</strong>.</p>
-                    <p>If you look at our <a href="https://metrics.green-coding.io/stats.html?id=280ab840-a360-481f-8be7-b2712fde6281">CPU measurement</a> of a full CPU load you will see that the measured value is only <strong>~60 J</strong>.</p>
-                    <p>So we can conclude that the TDP is a very rough estimate, and serves as a good upper bound. But it exaggerates the real energy by quite a bit.</p>
+                    <p>Wenn Sie die Wattzahl nicht direkt messen können (mit einem externen Leistungsmesser, Intel RAPL usw.), können Sie immer Datenblätter oder Benchmarks verwenden und interpolieren, um Ihren Leistungswert zu ermitteln.</p>
+                    <p>Ein naiver Ansatz zur Schätzung des Energieverbrauchs eines Prozessors wäre die Verwendung seiner Thermal Design Power (TDP).</p>
+                    <p>Dies gibt Ihnen einen ersten Eindruck davon, in welcher Größenordnung Ihr erwarteter Energiewert liegt.</p>
+                    <p>Beispiel: Der <a href="https://ark.intel.com/content/www/de/de/ark/products/84993/intel-core-i75557u-processor-4m-cache-up-to-3-40-ghz.html"><strong>Intel i7-5557U</strong> hat einen TDP von <strong>28 W</strong></a></p>
+                    <p>Wenn wir eine Berechnung von 5 Sekunden durchführen würde, würden wir einen Energieverbrauch von  <strong>140 Ws</strong> (28 W * 5 s), aka <strong>140 J</strong> erwarten .</p>
+                    <p>Wenn man sich eine <a href="https://metrics.green-coding.io/stats.html?id=280ab840-a360-481f-8be7-b2712fde6281">CPU Messung</a> von einem vollen CPU Workload anguckt wird man sehen das der Wert jedoch real eher bei <strong>~60 J</strong> liegt .</p>
+                    <p>Daraus können wir schließen, dass die TDP eine sehr grobe Schätzung ist und als gute Obergrenze dient. Aber es überschätzt die tatsächliche Energie um einiges.</p>
                 </div>
                 <!-- end segment -->
                 <div class="ui segment">
@@ -184,9 +183,9 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                         </a>
                     </div>
                     <p></p>
-                    <p>A benchmark is another way to get from runtime to kWh.</p>
+                    <p>Ein Benchmark ist eine weitere Möglichkeit, von der Laufzeit auf kWh zu gelangen.</p>
                     <p>TODO</p>
-                    <p>Source: <a href="https://github.com/cloud-carbon-footprint/cloud-carbon-coefficients">David Mytton</a></p>
+                    <p>Quelle: <a href="https://github.com/cloud-carbon-footprint/cloud-carbon-coefficients">David Mytton</a></p>
                 </div>
                 <!-- end segment -->
 {{< /rawhtml >}}
