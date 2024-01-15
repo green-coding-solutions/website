@@ -17,7 +17,7 @@
 
 
 - id: about
-  translation: Über
+  translation: About
 - id: services
   translation: Services
 - id: talks
