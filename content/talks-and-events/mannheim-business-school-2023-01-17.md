@@ -1,5 +1,5 @@
 ---
-title: "Mannheim Business School - Green Coding Impuls Talks IIML"
+title: "Mannheim Business School - Green Coding Guest Lecture IIML"
 date: 2024-01-17 15:30:00
 publishDate: 2024-01-14
 draft: false
@@ -20,3 +20,5 @@ a study trip to hear some lectures about sustainability and sustainabile managem
 
 - Sustainability in the digital world: European perspective
 - Understanding software carbon emissions and saving potentials for management
+
+The talks are internal, but here you will find a [link to the official posting](https://www.linkedin.com/posts/mannheimbusinessschool_mannheimbusinessschool-mannheimerforlife-activity-7151223861382946816-K_lQ)
