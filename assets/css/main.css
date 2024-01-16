@@ -2403,3 +2403,7 @@ a.project-item > i.icon {
     padding: 0;
     margin: 0;
 }
+
+#references img {
+    max-width: 200px;
+}
