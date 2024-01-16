@@ -12,7 +12,7 @@ jobs:
 
     - name: Check for Deepl string
       run: |
-        if grep -R "Deepl" . ; then
+        if grep -R -i --exclude-dir=".github" "Deepl" . ; then
           echo "String 'Deepl' found"
           exit 1
         else
