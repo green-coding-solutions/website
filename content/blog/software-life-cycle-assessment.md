@@ -1,5 +1,5 @@
 ---
-title: "Software Life Cycle Assessment done in the wild - (SCLA part 1)"
+title: "Software Life Cycle Assessment done in the wild - (SLCA part 1)"
 date: 2023-10-09
 draft: false
 author: "Didi Hoffmann"
