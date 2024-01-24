@@ -32,3 +32,9 @@ Los geht es ab 18:15 Uhr. Vor und nach den beiden Talks besteht wie immer die MÃ
 - ab 20:15 Ausklang mit gegenseitigem Austausch und Diskussionen
 
 *Event in deutscher Sprache*
+
+## Slide-Deck PDF
+
+[Download Slides](/slides/2024_01_18_Green-ness_of_code.pdf)
+
+
