@@ -11,7 +11,7 @@ eventimg600w: "/img/talks-and-events/sdia-def-2023-01-600w.webp"
 
 ---
 
-We are invited to present our latest advances on the [machine learning models for cloud energy estimation](projects/cloud-energy/)
+We are invited to present our latest advances on the [machine learning models for cloud energy estimation](/projects/cloud-energy/)
 and our [Eco CI](/projects/eco-ci/) project at the [SDIA](https://sdialliance.org/) DEF Steering Group Meeting.
 
 ## Details

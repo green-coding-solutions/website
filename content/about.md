@@ -133,7 +133,7 @@ The solution to this is, we believe, making this resource more visible and getti
 way of interacting with it.
 
 ### Our work
-We currently address this topic by educating developers through [Meetups](/meetups-and-events/) and through
+We currently address this topic by educating developers through [Meetups](/talks-and-events/) and through
 talks at conferences or coding bootcamps like [WBS Coding School](https://www.wbscodingschool.com/)
 
 On the technical site we highligh the network emissions in our [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool) and show

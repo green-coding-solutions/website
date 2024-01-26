@@ -127,7 +127,7 @@ Die Lösung liegt unserer Meinung nach darin, diese Ressource sichtbarer zu mach
 
 
 ### Unsere Arbeit
-Wir befassen uns derzeit mit diesem Thema, indem wir Entwickler durch [Meetups](/meetups-and-events/) und durch
+Wir befassen uns derzeit mit diesem Thema, indem wir Entwickler durch [Meetups](/talks-and-events/) und durch
 Vorträge auf Konferenzen oder Coding Bootcamps wie [WBS Coding School](https://www.wbscodingschool.com/)
 
 Auf der technischen Seite heben wir die Netzwerkemissionen in unserem [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool) hervor und zeigen Empfehlungen wie:
