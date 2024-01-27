@@ -5,7 +5,7 @@ summary: "In this case study we will look at image compression with the AVIF for
 date: 2022-07-01 08:00:00
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
-
+prtest: Arne
 ---
 
 {{< rawhtml >}}
