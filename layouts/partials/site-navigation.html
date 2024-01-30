@@ -11,8 +11,8 @@
         <option value="{{ absLangURL "/" }}" class="second_item" selected>Home</option>
         <option value="{{ absLangURL "about" }}" class="second_item" {{if eq $slug "about"}}selected{{end}}>{{i18n "about"}}</option>
         <option value="{{ absLangURL "services" }}" class="second_item"{{if eq $slug "services"}}selected{{end}}>{{i18n "services"}}</option>
-        <option value="{{ absLangURL "overview" }}" class="second_item" {{ if eq $slug "overview"}}selected{{end}}>{{ i18n "overview" }}</a></li>
-        <option value="{{ absLangURL "consulting" }}" class="second_item"  {{ if eq $slug "consulting"}}selected{{end}}>{{ i18n "consulting" }}</a></li>
+        <option value="{{ absLangURL "overview" }}" class="second_item" {{ if eq $slug "services"}}selected{{end}}>{{ i18n "services" }}</a></li>
+        <option value="{{ absLangURL "services/consulting" }}" class="second_item"  {{ if eq $slug "consulting"}}selected{{end}}>{{ i18n "consulting" }}</a></li>
         <option value="{{ absLangURL "training-and-workshops" }}" class="second_item"  {{ if eq $slug "training-and-workshops"}}selected{{end}}>{{ i18n "training" }}</a></li>
         <option value="{{ absLangURL "development-and-integrations" }}" class="second_item"  {{ if eq $slug "development-and-integrations"}}selected{{end}}>{{ i18n "development" }}</a></li>
         <option value="{{ absLangURL "operations" }}" class="second_item"  {{ if eq $slug "sustainablity-operations"}}selected{{end}}>{{ i18n "sustainablity-operations" }}</a></li>
@@ -37,8 +37,8 @@
                     <div class="contentbtn">{{i18n "services"}}</div>
                 </a>
                 <ol class="dropdown-menu">
-                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "overview" }}">{{ i18n "overview" }}</a></li>
-                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "consulting" }}">{{ i18n "consulting" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "services" }}">{{ i18n "services" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "services/consulting" }}">{{ i18n "consulting" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "training-and-workshops" }}">{{ i18n "training" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "development-and-integrations" }}">{{ i18n "development" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "operations" }}">{{ i18n "sustainablity-operations" }}</a></li>

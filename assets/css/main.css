@@ -2461,3 +2461,10 @@ a.project-item > i.icon {
 li.dropdown-list-item {
     display: block;
 }
+
+
+
+/* Showcases  */
+.ui.items>.item>.image.middle.aligned {
+    align-self: center;
+}

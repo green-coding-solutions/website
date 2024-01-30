@@ -8,9 +8,9 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-Transforming your buisness and your IT stack to a sustainable one is no easy task. Whether you're starting this journey or looking to further optimize and reduce emissions, we can assist!
+We help you to transform your software to a sustainable product. 
 
-Our team consists of senior software performance and pipeline engineers that have since specialized in sustainable software engineering.
+Scroll down and see how we work with companies in our 5 stage approach. 
 
 We are [regular speaker at conferences and industry symposiums](/#nav-meetups), developing
 [open source industry advancing container native carbon measurement tools](/projects/green-metrics-tool) as well as
@@ -24,19 +24,185 @@ papers and academical papers for software lifecycle assessment and software ener
 [case studies for energy savings and optimizations](/case-studies).
 
 
-
-
 {{< greenblock >}}
 How we work
 {{</ greenblock >}}
 
-We usually work with clients in a five stage program. However for more advanced and specialised clients we provide the modules separately according to clients needs.
+We usually work with clients in a five module program. However for clients who are already advanced in their sustainability journey we provide the modules separately according to clients needs.
 So also only a measurement & optimize workshop to bring your developers up to code with current Green Coding techniques or carbon-optimizing your website is something we regularly do. 
 
+{{< rawhtml >}}
+<div class="ui five stackable steps">
+  <div class="step">
+    <i class="graduation icon"></i>
+    <div class="content">
+      <div class="title">Assessment & Consulting</div>
+       <div class="description">Understand how and how much CO2 your software emits</div>
+    </div>
+  </div>
+  <div class="step">
+    <i class="calculator icon"></i>
+    <div class="content">
+      <div class="title">Assess</div>
+       <div class="description">Measure, benchmark and calculate</div>
+    </div>
+  </div>
+  <div class="step">
+    <i class="edit icon"></i>
+    <div class="content">
+      <div class="title">Report</div>
+       <div class="description">Transparency & observability is <u>key</u></div>
+    </div>
+  </div>
+  <div class="step">
+    <i class="tachometer alternate icon"></i>
+    <div class="content">
+      <div class="title">Optimise</div>
+      <div class="description">Performance engineering and green coding techniques</div>
+    </div>
+  </div>
+  <div class="step">
+    <i class="robot icon"></i>
+    <div class="content">
+      <div class="title">Automate</div>
+      <div class="description">Integrate continous reporting and optimization </div>
+    </div>
+  </div>
+</div>
+{{</ rawhtml >}}
 
-
+{{< whiteblock >}}
+Details
+{{</ whiteblock >}}
 
 {{< rawhtml >}}
+
+
+
+
+
+<div class="ui segment">
+    <div class="ui items">
+      <div class="item">
+        <i class="icon massive graduation black"></i>
+        <div class="content">
+          <a class="header">Understanding & Consulting</a>
+          <div class="meta">
+            <span>Stage #1</span>
+          </div>
+          <div class="description">
+            <p></p>
+          </div>
+          <div class="extra data-content-two">
+            <p>Software emits CO2 through it's own operation, by using energy still based on fossil fuels, but also indirectly through the embodied carbon of the hardware reservation. Also modern systems run in datacenters with expensive cooling, land-use etc. </p>
+            <p>We present the methodology based on research and industry standard practices (GHG / ISO 14001) and analyse all your infrastructure and identify targets for immediate and later analysis.</p>
+            <div class="ui right floated primary button">
+              Show me details
+              <i class="right chevron icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>          
+</div>
+
+
+<div class="ui segment">
+    <div class="ui items">    
+      <div class="item">
+        <div class="content">
+          <a class="header">Assessment & Operations</a>
+          <div class="meta">
+            <span>Description</span>
+          </div>
+          <div class="description">
+            <p></p>
+          </div>
+          <div class="extra data-content-two">
+            <p>No matter you have your own software product or just want to quantify the consumption of all your operations, it is necessary to quantify the CO2 emissions in real time.</p>
+            <p>We integrate our enterprise ready measurement and reporting tools into your infrastructure and help you generate reporting ready and/or marketing ready carbon numbers.</p>
+            <div class="ui left floated primary button">
+              Show me details
+              <i class="right chevron icon"></i>
+            </div>
+          </div>
+        </div>
+        <figure class="ui large image">
+          <img class="ui huge rounded image" src="/img/case-studies/RAPL-energy-filtering-Intel.webp">
+          <figcaption>Intel energy filtering - <a href="https://www.intel.cn/content/www/cn/zh/developer/articles/technical/software-security-guidance/advisory-guidance/running-average-power-limit-energy-reporting.html">Source Intel</a></figcaption>
+        </figure>
+      </div>
+    </div>
+</div>
+
+<div class="ui segment">
+    <div class="ui items">    
+      <div class="item">
+        <figure class="ui medium image">
+          <img class="ui huge rounded image" src="/img/case-studies/RAPL-energy-filtering-Intel.webp">
+          <figcaption>Intel energy filtering - <a href="https://www.intel.cn/content/www/cn/zh/developer/articles/technical/software-security-guidance/advisory-guidance/running-average-power-limit-energy-reporting.html">Source Intel</a></figcaption>
+        </figure>
+        <div class="content">
+          <a class="header">Optimisation</a>
+          <div class="meta">
+            <span>Description</span>
+          </div>
+          <div class="description">
+            <p></p>
+          </div>
+          <div class="extra data-content-two">
+            <p>After having identifed high value targets in your software and IT stack we can help you develop low carbon versions of your product.</p>
+            <p>We present you with seasoned as well as cutting edge techniques to reduce carbon emissions of your software.</p>
+            <div class="ui right floated primary button">
+              Show me details
+              <i class="right chevron icon"></i>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+
+
+<div class="ui icon message">
+  <i class="edit icon"></i>
+  <div class="content">
+    <div class="header">Report
+    </div>
+    <p>We help you create reports (Scope 1,2, 3) for European's CSRD, GHG Protocol or ISO 14001</p>
+  </div>
+</div>
+
+<div class="ui icon message">
+  <i class="tachometer alternate icon"></i>
+  <div class="content">
+    <div class="header">Optimise
+    </div>
+    <p>In a first step we integrate modern green coding techniques like idle time reductions, UX optimizations, website carbon optimizations, time-shifiting, load-shifting, hosting changes and many more ...</p>
+    <p>In a second step identify possible opportunities for optimizations based on classical performance engineering practices, architecture optimizations or dependency optimizations</p>
+  </div>
+</div>
+
+<div class="ui icon message">
+  <i class="robot icon"></i>
+  <div class="content">
+    <div class="header">Automate
+    </div>
+    <p>Green Coding is a continuous process. After the first identification of weak spots and optimization targets we automate the reporting / transparency part through industry standard DevOps practices by integrating our specialized CI/CD pipeline tools (See for example our <a href="/projects/eco-ci/">Eco-CI products</a> for Github / Gitlab or our <a href="/projects/cloud-energy/">Cloud Energy</a> tools for arbitrary pipelines as well as our dedicated runners for enterprises).</p>
+    <p>In a second step we integrate optimizations also directly into the software build-chain through static ode optimizations and also Green AI / ML optimizations.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 <div class="data-content-two" style="text-align: center; margin: 0;">
     <div class="profile">
         <div class="profile-item profile-box">
@@ -100,116 +266,13 @@ So also only a measurement & optimize workshop to bring your developers up to co
     </div>
 </div>
 
-<div class="ui five stackable steps">
-  <div class="step">
-    <i class="graduation icon"></i>
-    <div class="content">
-      <div class="title">Understand</div>
-       <div class="description">Learn how and why software emits CO2</div>
-    </div>
-  </div>
-  <div class="step">
-    <i class="calculator icon"></i>
-    <div class="content">
-      <div class="title">Assess</div>
-       <div class="description">Measure, benchmark and calculate</div>
-    </div>
-  </div>
-  <div class="step">
-    <i class="edit icon"></i>
-    <div class="content">
-      <div class="title">Report</div>
-       <div class="description">Transparency & observability is <u>key</u></div>
-    </div>
-  </div>
-  <div class="step">
-    <i class="tachometer alternate icon"></i>
-    <div class="content">
-      <div class="title">Optimise</div>
-      <div class="description">Performance engineering and green coding techniques</div>
-    </div>
-  </div>
-  <div class="step">
-    <i class="robot icon"></i>
-    <div class="content">
-      <div class="title">Automate</div>
-      <div class="description">Integrate continous reporting and optimization </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="ui icon message">
-  <i class="graduation icon"></i>
-  <div class="content">
-    <div class="header">
-      Understand
-    </div>
-    <p>Software emits CO2 through it's own operation, by using hardware directly, but also indirectly through the embodied carbon of the hardware reservation. Also modern systems run in datacenters with cooling, land-use etc. </p>
-    <p>We present the methodology based on research and industry standard practices (GHG / ISO 14001) and analyse all your infrastructure and identify targets for immediate and later analysis.</p>
-  </div>
-</div>
-
-<div class="ui icon message">
-  <i class="calculator icon"></i>
-  <div class="content">
-    <div class="header">
-      Assess
-    </div>
-    <p>For on-premise systems we utilize direct measurement approaches through our own developed open source tools.</p>
-    <p>For cloud only solutions we create local copies or use best in class in-cloud approximation where not possible.</p>
-    <p>One unique way of our way to assess is that we use holistic software life cycle methods (See our publication) to assess</p>
-  </div>
-</div>
-
-<div class="ui icon message">
-  <i class="edit icon"></i>
-  <div class="content">
-    <div class="header">Report
-    </div>
-    <p>We help you create reports (Scope 1,2, 3) for European's CSRD, GHG Protocol or ISO 14001</p>
-  </div>
-</div>
-
-<div class="ui icon message">
-  <i class="tachometer alternate icon"></i>
-  <div class="content">
-    <div class="header">Optimise
-    </div>
-    <p>In a first step we integrate modern green coding techniques like idle time reductions, UX optimizations, website carbon optimizations, time-shifiting, load-shifting, hosting changes and many more ...</p>
-    <p>In a second step identify possible opportunities for optimizations based on classical performance engineering practices, architecture optimizations or dependency optimizations</p>
-  </div>
-</div>
-
-<div class="ui icon message">
-  <i class="robot icon"></i>
-  <div class="content">
-    <div class="header">Automate
-    </div>
-    <p>Green Coding is a continuous process. After the first identification of weak spots and optimization targets we automate the reporting / transparency part through industry standard DevOps practices by integrating our specialized CI/CD pipeline tools (See for example our <a href="/projects/eco-ci/">Eco-CI products</a> for Github / Gitlab or our <a href="/projects/cloud-energy/">Cloud Energy</a> tools for arbitrary pipelines as well as our dedicated runners for enterprises).</p>
-    <p>In a second step we integrate optimizations also directly into the software build-chain through static ode optimizations and also Green AI / ML optimizations.</p>
-  </div>
-</div>
-
 {{</ rawhtml >}}
 
 {{< whiteblock >}}
 References
 {{</ whiteblock >}}
 
-{{< rawhtml >}}
-<div class="data-content-three">
-    <img src="/img/references/axel-springer-logo.webp">
-    <img src="/img/references/wbs-coding-school-logo.webp">
-    <a href="https://sdialliance.org"><img src="/img/references/sdia-logo.webp"></a>
-    <img src="/img/references/bits-und-baeume-logo.webp">
-    <img src="/img/references/ironhack.webp">
-    <a href="https://fosdem.org/2023/schedule/track/energy/"><img src="/img/references/fosdem-2023.webp"></a>
-    <a href="https://www.arbeitsagentur.de/vor-ort/it-systemhaus/vorstellung"><img src="/img/references/ba-it-systemhaus.webp"></a>
-</div>
-
-{{</ rawhtml >}}
-
+{{< include-partial "references.html" >}}
 
 {{< greenblock >}}
 Interested?
