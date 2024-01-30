@@ -30,8 +30,23 @@
   translation: CO2-Formulas
 - id: studies
   translation: Case Studies
+- id: research
+  translation: Research
 - id: team
   translation: Team
+
+- id: overview
+  translation: Overview
+- id: consulting
+  translation: Consulting
+- id: training
+  translation: Training & Workshops
+- id: development
+  translation: Development & Intergrations
+- id: sustainablity-operations
+  translation: Software Carbon Operations
+
+
 - id: list_orgs
   translation: "A curated list of organizations we have been working with or have been giving talks at."
 

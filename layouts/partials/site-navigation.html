@@ -19,23 +19,34 @@
         <option value="{{ absLangURL "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
     </select>
 </div>
-<div class="menu-select">
+<div class="menu-select main-nav">
     <nav>
-        <ol class="contentMenu">
+        <ol class="contentMenu navbar-nav">
             <li>
                <a href="{{ absLangURL "about" }}"><div class="menubtn">
                     <div class="contentbtn">{{i18n "about"}}</div>
                 </div></a>
             </li>
-            <li>
-               <a href="{{ absLangURL "services" }}"><div class="menubtn">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{ absLangURL "services" }}"><div class="menubtn">
                     <div class="contentbtn">{{i18n "services"}}</div>
                 </div></a>
+                <ol class="dropdown-menu">
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "overview" }}">{{ i18n "overview" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "consulting" }}">{{ i18n "consulting" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "training" }}">{{ i18n "training" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "development" }}">{{ i18n "development" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absLangURL "operations" }}">{{ i18n "sustainablity-operations" }}</a></li>
+                </ol>
             </li>
-            <li>
-               <a href="{{ absURL "blog" }}"><div class="menubtn">
-                    <div class="contentbtn">{{i18n "blog"}}</div>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="{{ absLangURL "services" }}"><div class="menubtn">
+                    <div class="contentbtn">{{i18n "research"}}</div>
                 </div></a>
+                <ol class="dropdown-menu">
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absURL "blog" }}">{{i18n "blog"}}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absURL "case-studies" }}">{{i18n "studies"}}</a></li>
+                </ol>
             </li>
             <li>
                <a href="{{ absURL "jobs" }}"><div class="menubtn">
@@ -47,18 +58,18 @@
                     <div class="contentbtn">{{i18n "formulas"}}</div>
                 </div></a>
             </li>
-            <li>
-               <a href="{{ absURL "case-studies" }}"><div class="menubtn">
-                    <div class="contentbtn">{{i18n "studies"}}</div>
-                </div></a>
-            </li>
             {{ if .IsTranslated }}
                 {{ range .Translations }}
                     <li style="margin-left: 5px;">
-                        <a href="{{ .Permalink }}" class="ui button menubtn" style="text-transform: uppercase">{{ .Lang }}</a>
+                        <a href="{{ .Permalink }}" class="ui button menubtn" style="text-transform: uppercase">DE/EN</a>
                     </li>
                 {{ end }}
+            {{ else }}
+                <li style="margin-left: 5px;">
+                    <a href="#" class="ui button menubtn" style="text-transform: uppercase">EN</a>
+                </li>
             {{ end }}
+
         </ol>
     </nav>
 </div>

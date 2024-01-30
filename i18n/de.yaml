@@ -22,7 +22,7 @@
 - id: about
   translation: Über
 - id: services
-  translation: Dienstleistungen
+  translation: Leistungen
 - id: talks
   translation: Vorträge & Veranstaltungen
 - id: blog
@@ -33,8 +33,21 @@
   translation: CO2-Formeln
 - id: studies
   translation: Fallstudien
+- id: research
+  translation: Forschung
 - id: team
   translation: Team
+- id: overview
+  translation: Übersicht
+- id: consulting
+  translation: Consulting
+- id: training
+  translation: Training & Workshops
+- id: development
+  translation: Entwicklung & Intergration
+- id: sustainablity-operations
+  translation: Software CO2 Operations
+
 - id: list_orgs
   translation: "Eine ausgewählte Liste von Organisationen, mit denen wir zusammengearbeitet haben oder bei denen wir Vorträge gehalten haben."
 
