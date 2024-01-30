@@ -324,7 +324,7 @@ nav li a{text-decoration: none;}
 	font-size: 18px;
 	font-weight: 800;
 	text-transform: uppercase;
-    float: left;
+    display: inline-block;
     margin-top: 12px;
 }
 
@@ -359,10 +359,14 @@ nav li a{text-decoration: none;}
 
 
 .menubtn{
-	height: auto;
-	padding: 8px 18px;
+    display: inline-block;
+    padding: 8px 18px;
 	color: #fff;
-}.menubtn:hover{background: #59c3b3; border-radius: 3px;}
+}
+.menubtn-bg:hover {
+    background: #59c3b3;
+    border-radius: 3px;
+}
 
 .contentbtn {
 	font-size: 15px;
@@ -2454,6 +2458,6 @@ a.project-item > i.icon {
   visibility: visible;
 }
 
-.dropdown-list-item {
-    float: none !important;
+li.dropdown-list-item {
+    display: block;
 }
