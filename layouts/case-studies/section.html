@@ -1,10 +1,5 @@
-{{ define "site-navigation" }}
-   {{/* We can override any block in the baseof file be defining it in the template */}}
-  {{ partial "site-navigation-single.html" . }}
-{{ end }}
-
 {{ define "main" }}
-    <section id="meetups" class="bg-one"><div id="ancla1"></div>
+    <section class="bg-one"><div id="ancla1"></div>
         <div class="section-one">
             <div class="title-one">Case Studies</div>
             <div class="data-content-one">Here your find our list of case studies that highlight the carbon emissions of specific digital infratructure or software.</div>
@@ -17,7 +12,7 @@
                         {{ .Summary }} [...]
                     </div>
                     <br>
-                    <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time><span style="display:inline"> - by </span><a href="{{.Params.Authorlink}}" style="display:inline;">{{.Params.Author}} <img src="/img/t-linkedin.png" style="padding-left:  4px;padding-bottom: 4px; width: 16px; height: 16px;"></a>
+                    <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time><span style="display:inline"> - by </span><a href="{{.Params.Authorlink}}" style="display:inline;">{{.Params.Author}} <img src="/img/t-linkedin.webp" style="padding-left:  4px;padding-bottom: 4px; width: 16px; height: 16px;"></a>
                 {{end}}
                 {{ template "_internal/pagination.html" . }}
             </div>

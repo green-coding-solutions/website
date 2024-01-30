@@ -1,12 +1,12 @@
 ---
-title: "Software Life Cycle Assessment done in the wild - (SCLA part 1)"
+title: "Software Life Cycle Assessment done in the wild - (SLCA part 1)"
 date: 2023-10-09
 draft: false
 author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
 ---
 
-In this article I want to propose a simple way to do a Software Life Cycle Assessment for a piece of code. While explaining important concepts and tradeoffs that seem sensible for a little project. Of course things could be done differently and I am happy to discuss them in more detail as this is just a first draft of how things could be done. Please head to [https://github.com/green-coding-berlin/SLCA-Code](https://github.com/green-coding-berlin/SLCA-Code) for all source code and discussions. Please also feel free to contribute to the code through pull requests. As Green Coding Berlin we have been working on this topic for some time and a more academic discussion can be found in our chapter in the [Transparency for Software Climate Impact](https://publication2023.bits-und-baeume.org/#book/38) publication (Part of the Shaping Digital Transformation for a Sustainable Society publication).
+In this article I want to propose a simple way to do a Software Life Cycle Assessment for a piece of code. While explaining important concepts and tradeoffs that seem sensible for a little project. Of course things could be done differently and I am happy to discuss them in more detail as this is just a first draft of how things could be done. Please head to [https://github.com/green-coding-berlin/SLCA-Code](https://github.com/green-coding-berlin/SLCA-Code) for all source code and discussions. Please also feel free to contribute to the code through pull requests. As Green Coding Solutions we have been working on this topic for some time and a more academic discussion can be found in our chapter in the [Transparency for Software Climate Impact](https://publication2023.bits-und-baeume.org/#book/38) publication (Part of the Shaping Digital Transformation for a Sustainable Society publication).
 
 Software Life Cycle Assessment (SLCA) is a topic that is talked about more and more. While Life Cycle Assessment (LCA) is fairly established in the realm of physical things. There are still various discussions in the software space though. In [ISO 14040](https://en.wikipedia.org/wiki/Life-cycle_assessment) and 14044 LCA is defined as the following:
 
@@ -74,12 +74,12 @@ This is probably the phase the least information is available about when doing r
 Page 6.6
 >
 
-Personally I have to disagree. I am quite aware that my development activity produces a lot of environmental impact. Just considering the tower PC with the two screens attached and the various online services I use that I sometimes don’t power down when I go to lunch, which I use for my Linux related development. 
+Personally I have to disagree. I am quite aware that my development activity produces a lot of environmental impact. Just considering the tower PC with the two screens attached and the various online services I use that I sometimes don’t power down when I go to lunch, which I use for my Linux related development.
 Or thinking about intensive DevOps or re-optimizations of AI models, which seem to be the norm in modern software products rather than the exception. Also if you think about all the software products that never reach a relevant audience or are prototypes and never reach production this cost would be totally neglected ... the list goes on and on ...
 
-So I wanted to measure this. 
+So I wanted to measure this.
 
-Starting with the most obvious: My development machine. I was quite astonished to realise there is no out of the box solution that I can just install and get a nice summary of the energy used for various tasks over time with nice drilldown etc. So I decided to keep it simple and just assume when my work computer is on I am doing work things and that everything the computer does is related to the project I am currently working on. It is debatable that if Spotify, which is one of the biggest [energy consumers](https://github.com/jpochyla/psst), should really be counted to the development of a web project. But I am listing to music while developing so I would argue that it should count. The same goes for Slack, Mail etc. it is currently unrealistic that I can account the energy usage of each email to the various projects I am working on. So to make things simple: If the computer is on everything is counted towards the main project I am working on. We are currently specking out how this could be solved more finer grain. Unfortunately Linux doesn’t really offer any tools that support energy measurements on a per process level. There are some implementations that use cpu utilisation to split the power, but as discussed in the “[CPU UTILIZATION - A USEFUL METRIC](https://www.green-coding.berlin/case-studies/cpu-utilization-usefulness/)” article this is sometimes misleading. As also part of this work was done while travelling I developed the code on my M1 Macbook Pro. Because of this I can use the  `powermetrics` tool we use when benchmarking software on [MacOS](https://www.green-coding.berlin/blog/green-coding-on-mac/) which gives me a sort of power measurement through the energy impact value. This is a closed source implementation by Apple but some details are known and exposed in [this article by Mozilla](https://blog.mozilla.org/nnethercote/2015/08/26/what-does-the-os-x-activity-monitors-energy-impact-actually-measure/) for instance. While being far from perfect this value gives you a first impact estimate for each process.
+Starting with the most obvious: My development machine. I was quite astonished to realise there is no out of the box solution that I can just install and get a nice summary of the energy used for various tasks over time with nice drilldown etc. So I decided to keep it simple and just assume when my work computer is on I am doing work things and that everything the computer does is related to the project I am currently working on. It is debatable that if Spotify, which is one of the biggest [energy consumers](https://github.com/jpochyla/psst), should really be counted to the development of a web project. But I am listing to music while developing so I would argue that it should count. The same goes for Slack, Mail etc. it is currently unrealistic that I can account the energy usage of each email to the various projects I am working on. So to make things simple: If the computer is on everything is counted towards the main project I am working on. We are currently specking out how this could be solved more finer grain. Unfortunately Linux doesn’t really offer any tools that support energy measurements on a per process level. There are some implementations that use cpu utilisation to split the power, but as discussed in the “[CPU UTILIZATION - A USEFUL METRIC](https://www.green-coding.io/case-studies/cpu-utilization-usefulness/)” article this is sometimes misleading. As also part of this work was done while travelling I developed the code on my M1 Macbook Pro. Because of this I can use the  `powermetrics` tool we use when benchmarking software on [MacOS](https://www.green-coding.io/blog/green-coding-on-mac/) which gives me a sort of power measurement through the energy impact value. This is a closed source implementation by Apple but some details are known and exposed in [this article by Mozilla](https://blog.mozilla.org/nnethercote/2015/08/26/what-does-the-os-x-activity-monitors-energy-impact-actually-measure/) for instance. While being far from perfect this value gives you a first impact estimate for each process.
 
 I wrote this little script which saves power statistics into a file to be later consumed. I had this running as a service and then did some hand crafted `awk/sed` magic to parse the file. This is not really useful except for personal use in a more explanatory usage. But in the end I want to be able to see how much time everyone has spend on the tool so I need some sort of upload functionality. Also I would want some dynamic badge that I could add the the `README.md` so people can see the impact this software has created to date, as most software development is ongoing.
 
@@ -102,7 +102,7 @@ from queue import Queue
 from pathlib import Path
 from AppKit import NSScreen
 
-APP_NAME = "gcb_power_logger"
+APP_NAME = "gcs_power_logger"
 app_support_path = Path.home() / 'Library' / 'Application Support' / APP_NAME
 app_support_path.mkdir(parents=True, exist_ok=True)
 
@@ -218,7 +218,7 @@ The next step in Software Life Cycle Assessment is the deployment of our little 
 <img class="ui centered rounded bordered image" src="/img/blog/slca/install.avif" alt="Energy for install" loading="lazy">
 {{< /rawhtml >}}
 
-In this case **5771.57 Joule** - [Link to Detailed Measurement](https://metrics.green-coding.berlin/stats.html?id=67715c39-4134-4685-ae42-59262fe076a7)
+In this case **5771.57 Joule** - [Link to Detailed Measurement](https://metrics.green-coding.io/stats.html?id=67715c39-4134-4685-ae42-59262fe076a7)
 
 This is not taking into account adding things to a CDN or complex deployments. In this case we are just looking at a docker build and python package installs. While not perfect this is a quite good approximation.
 

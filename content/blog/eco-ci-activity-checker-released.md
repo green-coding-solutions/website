@@ -10,7 +10,7 @@ author: "Dan Mateas"
 {{< /infobox >}}
 
 
-One question we've been tinkering around with here at Green Coding Berlin is how can we make CI pipelines around the world a little bit greener. 
+One question we've been tinkering around with here at Green Coding Solutions is how can we make CI pipelines around the world a little bit greener.
 
 We have noticed the constantly rising popularity of [Github Actions](https://github.com/features/actions) and its use in various CI jobs such as automated tests. We use it ourselves for this reason in [our open-source repository](https://github.com/green-coding-berlin/green-metrics-tool/actions). One nice feature of github actions is its marketplace where you can find and use publically published "Actions" in your workflow.
 
@@ -22,7 +22,7 @@ An oft-utilized strategy for running CI pipelines, especially those that take a 
 
 [👉 Eco CI Activity Checker in the Github Marketplace](https://github.com/marketplace/actions/eco-ci-activity-checker)
 
-Here's an example of the Action in action: 
+Here's an example of the Action in action:
 ```
 jobs:
   check_commits:
@@ -58,7 +58,7 @@ Then later on in our workflow, we simply make the *main* job conditional on the 
         with:
           ref: 'dev'
           submodules: 'true'
-      
+
       - name: 'Setup, Run, and Teardown Tests'
         uses: ./.github/actions/gmt-pytest
 ```

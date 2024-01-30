@@ -1,10 +1,10 @@
 ---
 title: "Junior Green Software Developer"
-description: "Open role for Junior Green Software Developer at Green Coding Berlin GmbH to work on sustainable software."
+description: "Open role for Junior Green Software Developer at Green Coding Solutions GmbH to work on sustainable software."
 draft: true
 ---
 
-At Green Coding Berlin we create a green software community and ecosystem in Berlin.
+At Green Coding Solutions we create a green software community and ecosystem in Berlin.
 
 Our goal is to shape the industry for the better in terms of using software in a sustainable way.
 We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and
@@ -23,13 +23,13 @@ You will be working with our team to create tools to measure the energy use of s
 
 As a junior developer, your work will be mainly developing sample applications and creating use-cases and comparisons of how people can relate to the energy consumption of software.
 
-See examples in our [Case Studies](https://www.green-coding.berlin/case-studies), our [Example Applications](https://github.com/green-coding-berlin/example-applications) and our [Green Metrics Dashboard](https://metrics.green-coding.berlin)
+See examples in our [Case Studies](https://www.green-coding.io/case-studies), our [Example Applications](https://github.com/green-coding-berlin/example-applications) and our [Green Metrics Dashboard](https://metrics.green-coding.io)
 
 &nbsp;
 
 ### How your typical week looks like
 
-When working at Green Coding Berlin GmbH as an engineer, the work is quite different from traditional coding jobs.
+When working at Green Coding Solutions GmbH as an engineer, the work is quite different from traditional coding jobs.
 
 Working in CO2 measurement of software is currently still a very academic profession. Therefore our team does a lot of research and writing prototypes, tests and tools.
 
@@ -87,7 +87,7 @@ During the onboarding however, which can take around 1-2 months, we usually star
 &nbsp;
 
 ### How to apply
-Just shoot us an email at jobs@green-coding.berlin with a quick intro and why you would like to join our team.
+Just shoot us an email at jobs@green-coding.io with a quick intro and why you would like to join our team.
 
 Please also include a quick comment on your skills regarding the aforementioned skills.
 

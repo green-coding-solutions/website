@@ -1,0 +1,42 @@
+- id: home_what_we_do
+  translation: "Was wir machen"
+- id: home_teaser
+  translation: "Wir unterstützen Unternehmen, Behörden und Open-Source-Projekte dabei, die CO2-Emissionen ihrer digitalen Dienste zu analysieren und zu reduzieren, um umweltfreundlichere digitale Lösungen zu fördern."
+- id: home_cta
+  translation: "👉 Mehr Details"
+- id: home_about_details
+  translation: "Mehr erfahren über die CO2-Emissionen von Software"
+- id: home_what_we_do
+  translation: "Was wir machen"
+- id: home_projects
+  translation: "Projekte"
+- id: home_projects_teaser
+  translation: "Wir entwickeln Werkzeuge, die es Entwicklern und Anwendern ermöglichen Optimierungen zu machenum den Energieverbrauch und CO2-Emissionen zu senken"
+- id: home_talks_teaser
+  translation: "Eine Auswahl unserer letzten Events und Veranstaltungen"
+- id: home_talks_full_list
+  translation: "Alle Events und Veranstaltungen (Englisch)"
+
+
+
+- id: about
+  translation: Über
+- id: services
+  translation: Dienstleistungen
+- id: talks
+  translation: Vorträge & Veranstaltungen
+- id: blog
+  translation: Blog
+- id: jobs
+  translation: Jobs
+- id: formulas
+  translation: CO2-Formeln
+- id: studies
+  translation: Fallstudien
+- id: team
+  translation: Team
+- id: list_orgs
+  translation: "Eine ausgewählte Liste von Organisationen, mit denen wir zusammengearbeitet haben oder bei denen wir Vorträge gehalten haben."
+
+- id: references
+  translation: "Referenzen"

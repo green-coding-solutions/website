@@ -6,7 +6,7 @@ author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
 ---
 
-In the green software community we see very often that people use the [TDP of the processor](https://www.intel.com/content/www/us/en/support/articles/000055611/processors.html) 
+In the green software community we see very often that people use the [TDP of the processor](https://www.intel.com/content/www/us/en/support/articles/000055611/processors.html)
 as a metric to estimate how much energy the CPU will consume for a specific workload.
 
 For instance the [SDIA use-phase estimation model](https://docs.google.com/spreadsheets/d/1uCQVs8mVgfu6fcQLEttDgfqPzhCm1yuf19_9RUDuU6w/edit#gid=1126994188) in it's current form uses this metric.
@@ -14,12 +14,12 @@ For instance the [SDIA use-phase estimation model](https://docs.google.com/sprea
 We have been using this metric in our machine learning model, where it serves as a very
 good indicator of how much the total energy consumption of the system will be.
 
-However lately I have stumbled over a [white paper from Intel](https://www.intel.com/content/dam/doc/white-paper/resources-xeon-measuring-processor-power-paper.pdf) where they discuss 
+However lately I have stumbled over a [white paper from Intel](https://www.intel.com/content/dam/doc/white-paper/resources-xeon-measuring-processor-power-paper.pdf) where they discuss
 the TDP in quite some detail and even compare it to a metric from AMD that I was not aware
 of: The ACP.
 
 Notes summary:
-- ACP is a measure by AMD for Opteron processors that gives the average power draw 
+- ACP is a measure by AMD for Opteron processors that gives the average power draw
 for the CPU while running a defined set of benchmarks (TPC Benchmark*-C, SPECcpu*2006, SPECjbb*2005, and STREAM).
 - ACP value for Opteron processors is always lower than TDP
 - TDP definitions from AMD and Intel are actually different!
@@ -46,18 +46,18 @@ This comparison is a bit tricky, as when we look deeper into how the system is a
  - Adjacent Sector Prefetch - Disabled
  - ...
 
-So the comparisons are not really on equal terrain. However it has to be clearly noted 
-that Intel nevertheless has the better performance per watt which is probably due 
+So the comparisons are not really on equal terrain. However it has to be clearly noted
+that Intel nevertheless has the better performance per watt which is probably due
 to the more single workload focused architecture and higher base frequency.
 
-It shows though that the TDP alone might be a confusing indicator if energy is your 
+It shows though that the TDP alone might be a confusing indicator if energy is your
 concern, as it heavily depends on how the processor architecture really is, how the workload
 is and also how the CPU / system is configured.
 
 **Important note:** The White Paper is from 2011 and when looking at the current site from
 Intel regarding TDP their definition reads a bit differently: [Intel TDP landing page](https://www.intel.com/content/www/us/en/support/articles/000055611/processors.html)
 
-It is unclear if the definition really changed or just the wording is a bit different due 
+It is unclear if the definition really changed or just the wording is a bit different due
 to a different author / department.
 
 ## Comparing TDPs and summary
@@ -95,4 +95,4 @@ which is not reflected in the Training data always.
 If anyone out there has one of these Opteron processors running and they do support RAPL
 we would be HIGHLY interested in some measurements to see how RAPL and the official AMD measurements correlate!
 
-Please contact uns at [info@green-coding.berlin](mailto:info@green-coding.berlin)
+Please contact uns at [info@green-coding.io](mailto:info@green-coding.io)

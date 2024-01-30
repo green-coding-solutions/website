@@ -1,0 +1,39 @@
+- id: home_what_we_do
+  translation: "What we do"
+- id: home_teaser
+  translation: "We help companies, goverment bodies and open source communites to understand and optimize the carbon emissions of their digital services"
+- id: home_cta
+  translation: "👉 See our services"
+- id: home_about_details
+  translation: "Read some details about the carbon emissions of software"
+- id: home_projects
+  translation: "Projects"
+- id: home_projects_teaser
+  translation: "We develop tools to empower developers and users to reduce energy and carbon emissons of software"
+- id: home_talks_teaser
+  translation: "Browse through our latest events and watch recordings (if available :) )"
+- id: home_talks_full_list
+  translation: "For a full list"
+
+
+- id: about
+  translation: About
+- id: services
+  translation: Services
+- id: talks
+  translation: Talks & Events
+- id: blog
+  translation: Blog
+- id: jobs
+  translation: Jobs
+- id: formulas
+  translation: CO2-Formulas
+- id: studies
+  translation: Case Studies
+- id: team
+  translation: Team
+- id: list_orgs
+  translation: "A curated list of organizations we have been working with or have been giving talks at."
+
+- id: references
+  translation: "References"

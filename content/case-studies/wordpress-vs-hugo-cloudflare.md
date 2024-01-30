@@ -1,5 +1,5 @@
 ---
-title: "Wordpress vs. Hugo + Cloudlfare"
+title: "Wordpress vs. Hugo + Cloudflare"
 summary: "In this case study we will look the carbon benefit of a static site compared to a Wordpress site. To get a more fair picture we will also include the HUGO build process and reason a bit about a possible hosting optimization."
 date: 2022-07-28 08:00:00
 author: "Arne Tarara"
@@ -11,9 +11,9 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
     <img class="ui medium floated right rounded bordered image" src="/img/case-studies/wordpress-vs-cloudflare-and-hugo.webp">
 {{< /rawhtml >}}
 
-In this case study we will look the carbon benefit of a static site. 
+In this case study we will look the carbon benefit of a static site.
 
-Site generators like [HUGO](https://www.gohugo.io) are currently all the hype. The idea is to write your website in simple markdown but still benefit from nice styling and templating. 
+Site generators like [HUGO](https://www.gohugo.io) are currently all the hype. The idea is to write your website in simple markdown but still benefit from nice styling and templating.
 
 The result will be a one-time generated page which saves server compute resources, is faster to deliver and, hopefully, also save carbon emissions.
 
@@ -33,7 +33,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
     + We will spin up the basic wordpress with the same template and just make a request to the root page
 
 
-- CURL vs. Firefox 
+- CURL vs. Firefox
 - Exclude functionality for containers in measurement!
 
 
@@ -148,7 +148,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="https://metrics.green-coding.berlin/stats.html?id=ad66a391-eb61-49e0-a557-b8caf48f3aaa">Wordpress Minimal Site</a>
+                                    <a href="https://metrics.green-coding.io/stats.html?id=ad66a391-eb61-49e0-a557-b8caf48f3aaa">Wordpress Minimal Site</a>
                                     <p>Energy Measurements of web request</p>
                                 </div>
                             </div>
@@ -166,7 +166,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="https://metrics.green-coding.berlin/stats.html?id=7e2da0da-ee0e-495a-960e-1f7af014643c">HUGO Minimal Site</a>
+                                    <a href="https://metrics.green-coding.io/stats.html?id=7e2da0da-ee0e-495a-960e-1f7af014643c">HUGO Minimal Site</a>
                                     <p>Energy-Measurement of web request</p>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <i class="right triangle icon"></i>
                             <div class="content">
                                 <div class="header">
-                                    <a href="https://metrics.green-coding.berlin/stats.html?id=ecae575e-8c76-44eb-a3be-db1d6c5fd331">HUGO Minimal Site</a>
+                                    <a href="https://metrics.green-coding.io/stats.html?id=ecae575e-8c76-44eb-a3be-db1d6c5fd331">HUGO Minimal Site</a>
                                     <p>Energy-Measurement of build process</p>
                                 </div>
                             </div>
@@ -184,13 +184,13 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                 </div>
                 <div class="ui red message" id="research-question">
                     <h2 class="ui header">
-                    <i class="warning icon floated left huge colored red"></i>                        
+                    <i class="warning icon floated left huge colored red"></i>
                         <div class="content">
                             Measurements Disclaimer
                             <div class="sub header">All energy measurements and / or benchmarks on a normal operating system are by nature error prone and uncomparable. Please never compare our values with values on your system. Measurements of software can only ever be compared on the exact same system. Also measurements should never be seen as ground truth, but only as indicator of the order of magnitude.</div>
                         </div>
                     </h2>
-                </div>                
+                </div>
                 <div class="ui segment" id="measurements">
                     <div class="header">
                         <a class="ui orange ribbon label" href="#measurements">
@@ -198,11 +198,11 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                         </a>
                     </div>
                     <p></p>
-                    <div id="chart"style="width: 100%; max-width: 500px; height: 300px; display: block; float:right;"></div>
+                    <div id="chart"style="width: 100%; max-width: 600px; height: 300px; display: block; float:right;"></div>
                     <p>The chart on the right side shows the relation of the HUGO build process (<strong>~1.4 J</strong>), the HUGO energy per web request (<strong>~1 J</strong>) and the energy for a web request o Wordpress (<strong>~10 J</strong>)</p>
                     <p>Since we have repeated the measurements 3 times we attached the error bars, which represent the 95% confidence interval.</p>
                     <p>The measurements are already an order of magnitude off, which is kind of what we assumed from the start. A static site is enormously more efficient, even if you also include the build process. Even for this simple setup it is around 10x.</p>
-                    <p><strong>Note:</strong> If you want to drill down on the details of the measurement like: How long was the pre-heat time of the CPU, how long was the pre-idle time, which CPU was used, what was the measurement resolution etc. please check the details on the links in the box above.</p>                
+                    <p><strong>Note:</strong> If you want to drill down on the details of the measurement like: How long was the pre-heat time of the CPU, how long was the pre-idle time, which CPU was used, what was the measurement resolution etc. please check the details on the links in the box above.</p>
                 </div>
                 <div class="ui segment" id="hosting-and-idle">
                     <div class="header">
@@ -210,7 +210,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                             <h3 style="color: #fff;">Hosting and idle time</h3>
                         </a>
                     </div>
-                    <p></p>               
+                    <p></p>
                     <p>When optimizing for low carbon and low energy hosting is a very important topic.</p>
                     <p>If you were just to replace the Wordpress site with a static site but the server will continue to run in idle it might be that your total energy savings are very minimal.</p>
                     <p>If you look at the <a href="https://docs.microsoft.com/en-gb/learn/modules/sustainable-software-engineering-overview/7-energy-proportionality">simplified load to energy curve from Microsoft</a> you can see that just by having the machine in idle you are already using a significant portion of energy.</p>
@@ -219,7 +219,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                     <p>An optimization for pure compute has the lowest effect here.</p>
                     <p>Also you have to take into account that a typical webserver that only serves webpages is mostly idle. Therefore typically the idle power draw is your major concern, and not so much the minimal load that your website puts onto the server.</p>
                     <p>If you have a typical web application (say a website) that has typically long patterns of idle time / time between requests, than you should go for a hosting solution that can dynamically scale to zero.</p>
-                    <p>Cloudflare for instance provides such a feature with their <a href="https://pages.cloudflare.com/">Cloudlfare Pages</a> product that also supports HUGO out of the box.</p>
+                    <p>Cloudflare for instance provides such a feature with their <a href="https://pages.cloudflare.com/">Cloudflare Pages</a> product that also supports HUGO out of the box.</p>
                 </div>
             </div>
          </div>
@@ -235,7 +235,7 @@ Also we will talk about hosting, as we will see that just moving your site to Wo
                 <p>Also how the energy compares between the request to a static site and a Wordpress site.</p>
                 <p>You see that the exact path for optimizing your energy consumption for hosting depends on your load, but is always better when we look at static sites.</p>
                 <p>Further considerations might however include meta-criteria like the cost of development and maintenance, which will typically incur carbon or energy costs in the phyisical world.</p>
-                <p>If you want your specific architecture analysed or get a more detailed understanding for the optimization potential in your architecture shoot us an email at <a href="mailto:info@green-coding.berlin">info@green-coding.berlin</a></p>
+                <p>If you want your specific architecture analysed or get a more detailed understanding for the optimization potential in your architecture shoot us an email at <a href="mailto:info@green-coding.io">info@green-coding.io</a></p>
             </div>
 
 <script type="text/javascript" src="/dist/js/echarts.min.js"></script>
@@ -246,9 +246,9 @@ var myChart = echarts.init(chartDom);
 var option;
 
 var categoryData = [
-  'HUGO-build',
-  'HUGO-request',
-  'WP-request'
+  'Static Site\n(HUGO, build)',
+  'Static Site\n(HUGO, request)',
+  'Dynamic Site\n(Wordpress, request)'
 ];
 var errorData = [
   [0, 0.9209346288584132, 1.8923987044749198],
@@ -271,7 +271,10 @@ option = {
   xAxis: {
     data: categoryData
   },
-  yAxis: {},
+  yAxis: {
+    axisLabel: {show: true},
+    name: 'Unit: J',
+  },
   series: [
     {
       type: 'bar',

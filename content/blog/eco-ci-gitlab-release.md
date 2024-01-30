@@ -69,7 +69,7 @@ We are currently also exploring further methods to output this information to de
 
 ### Front End
 
-We have improved the front end we provide on [our website](https://metrics.green-coding.berlin/ci-index.html) where you can see the results over time of your pipelines. There is now an index page where you can see your projects, along with others that have sent us run data:
+We have improved the front end we provide on [our website](https://metrics.green-coding.io/ci-index.html) where you can see the results over time of your pipelines. There is now an index page where you can see your projects, along with others that have sent us run data:
 
 {{< rawhtml >}}
 <figure style="float: center;  margin: 10px;">
@@ -81,7 +81,7 @@ We have improved the front end we provide on [our website](https://metrics.green
 {{< rawhtml >}} The individual CI Runs pages now support GitLab projects as well and has features which we outlined in our previous <a href="/blog/gmt_v015_released/">eco-ci article</a>{{< /rawhtml >}}.
 
 ## Open Source Projects we're monitoring
-As part of our goal to encourage green coding practices, and understand what features / wishes a developer working on real-world projects with a green coding mindset would want, we decided to fork some popular open source repositories and integrate the Eco-CI into their existing workflows. This gives us insight on how easy it is to use, what features are missing, what real-world edge cases don't work, and how valuable the information we provide actually is and what we can do to improve it. 
+As part of our goal to encourage green coding practices, and understand what features / wishes a developer working on real-world projects with a green coding mindset would want, we decided to fork some popular open source repositories and integrate the Eco-CI into their existing workflows. This gives us insight on how easy it is to use, what features are missing, what real-world edge cases don't work, and how valuable the information we provide actually is and what we can do to improve it.
 
 Currently we have forked and integrated three github projects: [Django](https://github.com/green-coding-berlin/django), [Flask](https://github.com/green-coding-berlin/flask), and [curl](https://github.com/green-coding-berlin/curl), as well as one Gitlab project, [OpenMW](https://gitlab.com/green-coding-berlin/eco-ci/openmw). Our plan is to pretend that we are sustainability engineers for these projects, keep them in sync, track their carbon footprint, and see what we can improve on with this information.
 

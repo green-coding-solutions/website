@@ -13,8 +13,6 @@ icon: "cloud"
 {{</ rawhtml >}}
 
 
-
-
 Since in the cloud it is often not possible to measure energy directly we have created a Machine Learning estimation model
 based on the data from [SPECPower](https://www.spec.org/power_ssj2008/)
 
@@ -30,19 +28,12 @@ The model is open-source [AGPLv3 Licensed](https://github.com/green-coding-berli
 
 ---
 
-{{< rawhtml >}} 
-    <a class="ui labeled button" href="https://github.com/green-coding-berlin/spec-power-model">
-    <div class="ui button">
-        <i class="code branch icon"></i>
-    </div>
-    <span class="ui basic label">
-        Github incl. documentation
-    </span>
-</a>
-{{< /rawhtml >}}
+{{< button "code branch" "Github incl. documentation" "https://github.com/green-coding-berlin/spec-power-model" >}}
+
+&nbsp;
 
 ```
-$ ./static-binary | python3 xgb.py --make intel -- cpu-freq 2600 --ram 7 --cpu-threads 24 
+$ ./static-binary | python3 xgb.py --make intel -- cpu-freq 2600 --ram 7 --cpu-threads 24
 191.939294374113
 169.99632303510703
 191.939294374113

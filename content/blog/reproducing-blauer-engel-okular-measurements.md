@@ -111,8 +111,8 @@ We ran the measurement with our setup by encapsulating *xdotool* into a *docker*
 
 Okular sadly could not be boxed into a container as the UI was broken afterwards. So we resorted for having it run non containerized.
 
-- The [idle power draw](https://metrics.green-coding.berlin/stats.html?id=0356a96b-8215-403e-97ba-e4b165c7a9bd) is **16.65 W** on average 
-- The [load power draw of the Standard Usage Scenario](https://metrics.green-coding.berlin/stats.html?id=134dc16a-d6e3-4668-a9e4-b8be7dab6dcc) is **18.80 W**.
+- The [idle power draw](https://metrics.green-coding.io/stats.html?id=0356a96b-8215-403e-97ba-e4b165c7a9bd) is **16.65 W** on average 
+- The [load power draw of the Standard Usage Scenario](https://metrics.green-coding.io/stats.html?id=134dc16a-d6e3-4668-a9e4-b8be7dab6dcc) is **18.80 W**.
 
 This means we have a net power draw of **2.15 W**.
 
@@ -149,7 +149,7 @@ Apart from that we had some problems reproducing the measurements as some setup 
     + The resolution of 1 s is generally too low. One cannot tell much about typical software execution times in the millisecond range
     + The resolution if 1 W for the GUDE is also really coarse and leads to sometimes 20-25% off values at least, given that very efficienct desktop machines can have loads < 10 W.
     + Stating a measurement value of "Average electrical power draw" of 0.6 W (even assuming it was mathematically accurately derived) is really not possible to claim if the measurement device only has a 1 W resolution :)
-    + It has a delay of ~ 1 second for the measurements as seen here. We made an [example measurement](https://metrics.green-coding.berlin/stats.html?id=0f0e89ab-f7f5-4bf8-a6ba-40efeeca50a6) where we only stress one core to really identify when the GUDE starts measuring and when it ends. The problem being though that you might well be 100-200 ms off, as the GUDE not always responds in the same frequency on its polling API for the measurement data. So this increases the uncertainty even more.
+    + It has a delay of ~ 1 second for the measurements as seen here. We made an [example measurement](https://metrics.green-coding.io/stats.html?id=0f0e89ab-f7f5-4bf8-a6ba-40efeeca50a6) where we only stress one core to really identify when the GUDE starts measuring and when it ends. The problem being though that you might well be 100-200 ms off, as the GUDE not always responds in the same frequency on its polling API for the measurement data. So this increases the uncertainty even more.
 
 ## Outlook
 

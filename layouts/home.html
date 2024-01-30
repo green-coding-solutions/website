@@ -1,40 +1,42 @@
-{{ define "site-navigation" }}
-{{/* We can override any block in the baseof file be defining it in the template */}}
-{{ partial "site-navigation.html" . }}
-{{ end }}
 {{ define "main" }}
 <section id="about" class="bg-one">
     <div id="nav-about"></div>
     <div class="section-one">
-        <div class="title-one">What we do</div>
+        <div class="title-one">{{ i18n "home_what_we_do" }}</div>
         <div class="separator">
             <div class="line line-1"></div>
         </div>
         <div class="data-content-one">
-            <p>We are helping open source teams, cloud providers, datacenters, software companies and other industries to understand and optimize the carbon emissions of their software and digital infrastructure.</p>
+            <p>{{ i18n "home_teaser" }}</p>
             <div class="btn-one">
-                <a href="/services"><span>👉 See our services </span></a>
+                <a href="{{ absLangURL "services" }}"><span>{{i18n "home_cta"}}</span></a>
             </div>
         </div>
         <div class="separator">
             <div class="line line-1"></div>
         </div>
         <div class="data-content-one">
-            <a href="/about">Read some details about the carbon emissions of software</a>.
+            <a href="{{ absLangURL "about" }}">{{ i18n "home_about_details" }}</a>.
         </div>
     </div>
 </section><!-- end about -->
 <section id="projects" class="bg-two">
     <div id="nav-projects"></div>
     <div class="section-two bottom-works">
-        <h1><div class="title-two">Our Projects</div></h1>
+        <h1><div class="title-two">{{ i18n "home_projects" }}</div></h1>
         <div class="separator">
             <div class="line line-2"></div>
         </div>
         <div class="data-content-two">
-            We develop tools to empower developers and users to make energy and carbon concious decisions
+            {{ i18n "home_projects_teaser" }}
         </div>
         <div id="project-items-container" class="data-content-two">
+            {{/*
+                In an untranslated page this call would be ... where .Site.RegularPages "Type" ...
+                But since the Site object changes depending on the current language we will get an empty folder
+                if a folder is not fully translated
+            */}}
+
             {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "projects" ) ) }}
                 <a class="project-item" href="{{.Permalink}}">
                     <i class="{{ .Params.Icon }} icon"></i>
@@ -46,115 +48,33 @@
     </div><!-- end portfolio -->
 
 </section><!-- end contact -->
-<section id="team" class="bg-two">
-    <div id="nav-team"></div>
-    <div class="section-one">
-        <h2><div class="title-one">Team</div></h2>
-        <div class="separator">
-            <div class="line line-1"></div>
-        </div>
-        <div class="data-content-one">
-        </div>
-        <article class="content-team teamshow">
-            <div class="teamlist">
-                <div class="team">
-                    <div class="who">
-                        <!-- THREE -->
-                        <div class="members-box">
-                            <img src="../img/team/arne_square.webp" loading=lazy
-                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
-                            <div class="name-team">Arne Tarara</div>
-                        </div>
-                        <div class="photo-footer">
-                            <div class="plus-btn"></div>
-                            <div class="socialicons">
-                                <a href="https://www.linkedin.com/in/arne-tarara">
-                                    <div class="t-linkedin"></div>
-                                </a>
-                                <a href="mailto:arne@green-coding.berlin">
-                                    <div class="t-mail"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="who">
-                        <div class="members-box">
-                            <img src="../img/team/dan.webp" loading=lazy
-                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
-                            <div class="name-team">Dan Mateas</div>
-                        </div>
-                        <div class="photo-footer">
-                            <div class="plus-btn"></div>
-                            <div class="socialicons">
-                                <a href="https://de.linkedin.com/in/dan-mateas-693634105">
-                                    <div class="t-linkedin"></div>
-                                </a>
-                                <a href="mailto:dan@green-coding.berlin">
-                                    <div class="t-mail"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="who">
-                        <div class="members-box">
-                            <img src="../img/team/danilo.webp" loading=lazy
-                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
-                            <div class="name-team">Danilo Ješić</div>
-                        </div>
-                        <div class="photo-footer">
-                            <div class="plus-btn"></div>
-                            <div class="socialicons">
-                                <a href="https://www.linkedin.com/in/djesic-613732152/">
-                                    <div class="t-linkedin"></div>
-                                </a>
-                                <a href="mailto:danilo@green-coding.berlin">
-                                    <div class="t-mail"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="who">
-                        <div class="members-box">
-                            <img src="../img/team/didi.webp" loading=lazy
-                            style="border-radius:50%; margin:auto;display:block" width="165" height="165"></img>
-                            <div class="name-team">Didi Hoffmann</div>
-                        </div>
-                        <div class="photo-footer">
-                            <div class="plus-btn"></div>
-                            <div class="socialicons">
-                                <a href="https://www.linkedin.com/in/dietgerhoffmann/">
-                                    <div class="t-linkedin"></div>
-                                </a>
-                                <a href="mailto:didi@green-coding.berlin">
-                                    <div class="t-mail"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </div>
-</section><!-- end team -->
+
+{{ partialCached "team.html" . }}
+
 <section class="works-container bg-two">
-    <div id="nav-meetups"></div>
+    <div id="nav-events"></div>
     <div class="section-two bottom-works">
         <div class="works-header">
-            <h2><div class="title-two">Meetups & Events</div></h2>
+            <h2><div class="title-two">Talks & Events</div></h2>
             <div class="separator">
                 <div class="line line-2"></div>
             </div>
             <div class="data-content-two">
-                Browse through our latest events and watch recordings (if available :) )<br>
-                For a full list: 👉 <a href="/meetups-and-events" style="color: white; text-decoration: underline;">All
-                our Meetups & Events</a>
+                {{ i18n "home_talks_teaser" }}<br>
             </div>
         </div>
         <div id="portfolio" class="container">
             <div class="section portfoliocontent">
                 <div id="container2" class="clearfix">
                     <div class="inici"></div>
-                    {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "meetups-and-events" ) ) }}
+
+                    {{/*
+                        In an untranslated page this call would be ... where .Site.RegularPages "Type" ...
+                        But since the Site object changes depending on the current language we will get an empty folder
+                        if a folder is not fully translated
+
+                   */}}
+                    {{ range $index, $element := ( first 9 ( where .Sites.First.RegularPages "Type" "talks-and-events" ) ) }}
                     <div class="element talks">
                         <a href="{{.Permalink}}">
                             <div class="ch-grid">
@@ -172,39 +92,17 @@
                     {{end}}
                     <div class="final"></div>
                 </div>
-                <!-- Project -->
-                <div id="project-show"></div>
-                <div class="project-window">
-                    <div class="project-content"></div><!-- AJAX Dinamic Content -->
-                </div><!-- end Project -->
+                <div class="data-content-two">
+                    {{/* Use absLangURL here for a german list. But it will only work if there also articles that end in .de*/}}
+                    👉 <a href="{{ absURL "talks-and-events" }}" style="color: white; text-decoration: underline;">{{ i18n "home_talks_full_list" }}</a>
+                </div>
+
+
             </div> <!-- #container -->
         </div> <!-- /END ISOTOPE PORTFOLIO-->
     </div><!-- end portfolio -->
 </section>
-<section id="references" class="bg-one">
-    <div class="section-three">
-        <h2><div class="title-one">References</div></h2>
-        <div class="separator">
-            <div class="line line-1"></div>
-        </div>
-        <div class="data-content-three">
-            <img src="/img/references/axel-springer-logo.webp">
-            <img src="/img/references/wbs-coding-school-logo.webp">
-            <a href="https://sdialliance.org"><img src="/img/references/sdia-logo.webp"></a>
-            <img src="/img/references/bits-und-baeume-logo.webp">
-            <a href="https://www.enviroinfo2023.eu/programme/schedule-overview/wednesday-schedule/#1894286d"><img src="/img/references/enviroinfo-logo.webp"></a>
-            <img src="/img/references/ironhack.webp">
-            <a href="https://fosdem.org/2023/schedule/track/energy/"><img src="/img/references/fosdem-2023.webp"></a>
-            <a href="https://www.arbeitsagentur.de/vor-ort/it-systemhaus/vorstellung"><img src="/img/references/ba-it-systemhaus.webp"></a>
 
-        </div>
-    </div>
-    <div class="separator">
-        <div class="line line-1"></div>
-    </div>
-    <div class="data-content-three">
-        A curated list of organizations we have been working with or have been giving talks at.
-    </div>
-</section><!-- end contact -->
+{{ partialCached "references.html" . }}
 
 {{ end }}
