@@ -12,8 +12,12 @@
   translation: "Projekte"
 - id: home_projects_teaser
   translation: "Wir entwickeln Werkzeuge, die es Entwicklern und Anwendern ermöglichen Optimierungen zu machenum den Energieverbrauch und CO2-Emissionen zu senken"
-- id: home_talks_teaser
-  translation: "Eine Auswahl unserer letzten Events und Veranstaltungen"
+- id: future_home_talks_teaser
+  translation: "Zukünftige Events und Veranstaltungen"
+- id: past_home_talks_teaser
+  translation: "Vergangen Events und Veranstaltungen"
+
+
 - id: home_talks_full_list
   translation: "Alle Events und Veranstaltungen (Englisch)"
 

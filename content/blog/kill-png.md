@@ -4,7 +4,7 @@ date: 2024-01-10
 draft: false
 author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
-socialmedia_preview: "/img/blog/big_png.webp"
+socialmedia_preview: "/img/blog/social/big_png.webp"
 
 ---
 

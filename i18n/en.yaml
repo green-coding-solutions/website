@@ -10,8 +10,12 @@
   translation: "Projects"
 - id: home_projects_teaser
   translation: "We develop tools to empower developers and users to reduce energy and carbon emissons of software"
-- id: home_talks_teaser
-  translation: "Browse through our latest events and watch recordings (if available :) )"
+- id: future_home_talks_teaser
+  translation: "Future events and talks"
+- id: past_home_talks_teaser
+  translation: "Past events and recordings"
+
+
 - id: home_talks_full_list
   translation: "For a full list"
 

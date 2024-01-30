@@ -4,6 +4,7 @@ date: 2023-10-10
 draft: false
 author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
+socialmedia_preview: "/img/blog/social/slca2.webp"
 ---
 
 While writing the [“Software Life Cycle Assessment done in the wild”](/blog/software-life-cycle-assessment/) article I needed to develop a little server that could do three simple tasks. Because the article became too long I decided to separate the methodology how to develop with environmental impact in mind into a dedicated part. Feel free to head over to the [SLCA](/blog/software-life-cycle-assessment/) article and read the first part to see why we are developing this server.

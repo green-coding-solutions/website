@@ -4,6 +4,8 @@ date: 2023-06-26
 draft: false
 author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
+socialmedia_preview: "/img/blog/social/nop-linux.webp"
+
 ---
 
 At Green Coding Solutions (GCS), one goal is to enable reproducible runs on our cluster. An important step towards accurate measurements was the creation of NOP Linux, our custom Linux distro that disables as many background processes as possible to avoid interruptions during measurements. Another crucial step was ensuring the reliable operation of the [PowerSpy2](https://docs.green-coding.io/docs/measuring/metric-providers/psu-energy-ac-powerspy2/), so we could measure the entire power consumption.
