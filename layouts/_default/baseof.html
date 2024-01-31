@@ -44,7 +44,7 @@
       Important: Remember to set also the [outputs] rule in the config.toml accordingly
   */}}
   {{ with  .OutputFormats.Get "css" }}
-      <link rel="stylesheet" href="{{.Permalink}}"  />
+      <link rel="stylesheet" href="{{.RelPermalink}}"  />
   {{ end }}
 
     {{ partial "site-style.html" . }}
