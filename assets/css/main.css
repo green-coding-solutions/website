@@ -2463,8 +2463,22 @@ li.dropdown-list-item {
 }
 
 
-
 /* Showcases  */
 .ui.items>.item>.image.middle.aligned {
     align-self: center;
+}
+
+.ui.items figure img {
+    max-width: 300px;
+}
+
+.ui.items .description p {
+    font-size: 16px;
+}
+.ui.items .description.right.aligned {
+    text-align: right;
+}
+
+.ui.items .ui.button {
+    display: inline-block;
 }

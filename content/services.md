@@ -36,7 +36,7 @@ So also only a measurement & optimize workshop to bring your developers up to co
   <div class="step">
     <i class="graduation icon"></i>
     <div class="content">
-      <div class="title">Assessment & Consulting</div>
+      <div class="title">Understanding</div>
        <div class="description">Understand how and how much CO2 your software emits</div>
     </div>
   </div>
@@ -81,25 +81,28 @@ Details
 
 
 
-<div class="ui segment">
+<div class="ui raised padded red stacked segment">
     <div class="ui items">
       <div class="item">
-        <i class="icon massive graduation black"></i>
+        <div class="image middle aligned">
+            <i class="icon massive graduation black"></i>
+        </div>
         <div class="content">
-          <a class="header">Understanding & Consulting</a>
+          <h2>Understanding</h2>
           <div class="meta">
-            <span>Stage #1</span>
+            <span class="ui label">Consulting</span><span class="ui label">Workshops & Training</span>
           </div>
           <div class="description">
-            <p></p>
-          </div>
-          <div class="extra data-content-two">
             <p>Software emits CO2 through it's own operation, by using energy still based on fossil fuels, but also indirectly through the embodied carbon of the hardware reservation. Also modern systems run in datacenters with expensive cooling, land-use etc. </p>
             <p>We present the methodology based on research and industry standard practices (GHG / ISO 14001) and analyse all your infrastructure and identify targets for immediate and later analysis.</p>
-            <div class="ui right floated primary button">
-              Show me details
+            <p>Depending on your internal state of knowledge a <a href="/services/consulting">Consulting</a> or a <a href="/services/workshops-and-trainings">Workshop/Training</a> is best suitable for you at this stage.</p>
+            <br>
+          </div>
+          <div class="extra data-content-two">            
+            <a class="ui right floated primary button">
+              Show consulting offerings
               <i class="right chevron icon"></i>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -107,59 +110,69 @@ Details
 </div>
 
 
-<div class="ui segment">
+<div class="ui raised padded blue stacked segment">
     <div class="ui items">    
       <div class="item">
         <div class="content">
-          <a class="header">Assessment & Operations</a>
+          <h2>Assessment & Operations</h2>
           <div class="meta">
-            <span>Description</span>
+            <span class="ui label">Carbon profiling</span><span class="ui label">Integration</span>
           </div>
           <div class="description">
-            <p></p>
-          </div>
-          <div class="extra data-content-two">
             <p>No matter you have your own software product or just want to quantify the consumption of all your operations, it is necessary to quantify the CO2 emissions in real time.</p>
             <p>We integrate our enterprise ready measurement and reporting tools into your infrastructure and help you generate reporting ready and/or marketing ready carbon numbers.</p>
-            <div class="ui left floated primary button">
-              Show me details
+            <p>It is important to look at the whole software lifecycle and create carbon metrics for all stages. We employ our enterprise ready tooling for all these stages: Development, Testing, Runtime. For external SaaS solutions we work with academic verified estimations.</p>
+          </div>
+          <div class="extra data-content-two">            
+            <a href="#" class="ui left floated primary button">
+              Show software measurement offerings
               <i class="right chevron icon"></i>
-            </div>
+            </a>
+            <a href="#" class="ui left floated primary button">
+              Show CI/CD - SaaS measurement offerings
+              <i class="right chevron icon"></i>
+            </a>
+            <a href="#" class="ui left floated primary button">
+              Show development phase measurement offerings
+              <i class="right chevron icon"></i>
+            </a>
           </div>
         </div>
-        <figure class="ui large image">
-          <img class="ui huge rounded image" src="/img/case-studies/RAPL-energy-filtering-Intel.webp">
-          <figcaption>Intel energy filtering - <a href="https://www.intel.cn/content/www/cn/zh/developer/articles/technical/software-security-guidance/advisory-guidance/running-average-power-limit-energy-reporting.html">Source Intel</a></figcaption>
-        </figure>
+        <div class="image middle aligned">
+            <i class="icon massive blue calculator"></i>
+        </div>
       </div>
     </div>
 </div>
 
-<div class="ui segment">
+<div class="ui raised padded orange stacked segment">
     <div class="ui items">    
       <div class="item">
-        <figure class="ui medium image">
-          <img class="ui huge rounded image" src="/img/case-studies/RAPL-energy-filtering-Intel.webp">
-          <figcaption>Intel energy filtering - <a href="https://www.intel.cn/content/www/cn/zh/developer/articles/technical/software-security-guidance/advisory-guidance/running-average-power-limit-energy-reporting.html">Source Intel</a></figcaption>
-        </figure>
+        <div class="image middle aligned">
+            <i class="icon massive tachometer alternate black"></i>
+        </div>
         <div class="content">
-          <a class="header">Optimisation</a>
+          <h2>Optimisation</h2>
           <div class="meta">
-            <span>Description</span>
+            <span class="ui label">Operations</span><span class="ui label">Workshops & Trainings</span><span class="ui label">Integrations</span>
           </div>
           <div class="description">
-            <p></p>
+            <p>Driving carbon emissions down is paramount in the whole process of creating a sustainable digital product and infrastructure.</p>
+            <p>We leverage our tools to generate automated recommendations even for complex software architectures.</p>
+            <p>By suggesting tailored optimisation concepts to your company and product needs we identify and quantify carbon savings and integrate them with you.</p>
+            <p>Quick wins can often be gained with minimal effort while long-term goals can often easily attained by employing constant monitoring and constant optimizations with every software build.</p>
           </div>
           <div class="extra data-content-two">
-            <p>After having identifed high value targets in your software and IT stack we can help you develop low carbon versions of your product.</p>
-            <p>We present you with seasoned as well as cutting edge techniques to reduce carbon emissions of your software.</p>
             <div class="ui right floated primary button">
-              Show me details
+              Show tooling offering 
+              <i class="right chevron icon"></i>
+            </div>
+            <div class="ui right floated primary button">
+              Show trainings & workshops
               <i class="right chevron icon"></i>
             </div>
           </div>
-        </div>
-        
+        </div>       
       </div>
     </div>
 </div>
