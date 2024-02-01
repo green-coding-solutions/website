@@ -6,12 +6,11 @@
   translation: "👉 Mehr Details"
 - id: home_about_details
   translation: "Mehr erfahren über die CO2-Emissionen von Software"
-- id: home_what_we_do
-  translation: "Was wir machen"
 - id: home_projects
   translation: "Projekte"
 - id: home_projects_teaser
   translation: "Wir entwickeln Werkzeuge, die es Entwicklern und Anwendern ermöglichen Optimierungen zu machenum den Energieverbrauch und CO2-Emissionen zu senken"
+
 - id: future_home_talks_teaser
   translation: "Zukünftige Events und Veranstaltungen"
 - id: past_home_talks_teaser
@@ -20,7 +19,6 @@
 
 - id: home_talks_full_list
   translation: "Alle Events und Veranstaltungen (Englisch)"
-
 
 
 - id: about
@@ -41,6 +39,25 @@
   translation: Team
 - id: list_orgs
   translation: "Eine ausgewählte Liste von Organisationen, mit denen wir zusammengearbeitet haben oder bei denen wir Vorträge gehalten haben."
-
 - id: references
   translation: "Referenzen"
+
+
+- id: newsroom_welcome
+  translation: "Herzlich Willkommen im Newsroom von Green Coding Solutions. Hier bieten wir JournalistInnen, sonstigen MultiplikatorInnen und allen Interessierten Zugang zu unseren neuesten Nachrichten und Aktivitäten.  Zudem die wichtigsten Medienmaterialien zum Download, jüngste Beiträge in Publikationen sowie anstehende Events."
+- id: news
+  translation: "Aktuelle Nachrichten"
+- id: us_in_the_media
+  translation: "Wir in den Medien"
+- id: publications
+  translation: "Publikationen"
+- id: downloads
+  translation: "Downloads"
+- id: team
+  translation: "Team"
+- id: mediacontact
+  translation: "Medienkontakt"
+- id: marketing_sales
+  translation: "Marketing & Sales"
+- id: more_information
+  translation: "Mehr Informationen"

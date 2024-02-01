@@ -29,7 +29,6 @@ important building block to consider when design software architectures.
 
 This will in turn increase the demand for the metrics and drive the supply by the industry players.
 
-
 {{< greenblock >}}
 Software Usage
 {{</ greenblock >}}
@@ -52,6 +51,7 @@ Infrastructure is often sub-optimal chosen, overprovisioned or to opaque to anal
 world energy saving modes typically do not exist.
 - **Process energy**: Software can so fast that it is not perceivable if the usage was 10ms or 100ms. Nevertheless the energy difference can be enormous and
 is hard to estimate if scaled up.
+
 
 {{< separator >}}
 

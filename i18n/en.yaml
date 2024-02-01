@@ -10,6 +10,7 @@
   translation: "Projects"
 - id: home_projects_teaser
   translation: "We develop tools to empower developers and users to reduce energy and carbon emissons of software"
+
 - id: future_home_talks_teaser
   translation: "Future events and talks"
 - id: past_home_talks_teaser
@@ -38,6 +39,25 @@
   translation: Team
 - id: list_orgs
   translation: "A curated list of organizations we have been working with or have been giving talks at."
-
 - id: references
   translation: "References"
+
+
+- id: newsroom_welcome
+  translation: "Welcome to the Green Coding Solutions newsroom. Here we offer journalists, other multipliers and all interested parties access to our latest news and activities.  You can also download the most important media materials, the latest articles in publications and upcoming events."
+- id: news
+  translation: News
+- id: us_in_the_media
+  translation: "Us in the media"
+- id: publications
+  translation: "Publications"
+- id: downloads
+  translation: "Downloads"
+- id: team
+  translation: "Team"
+- id: mediacontact
+  translation: "Media Contact"
+- id: marketing_sales
+  translation: "Marketing & Sales"
+- id: more_information
+  translation: "More Information"
