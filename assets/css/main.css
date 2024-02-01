@@ -218,7 +218,7 @@ textarea {
 	margin: auto;
 	line-height: 25px;
 	text-align: center;
-	max-width: 1200px;
+	max-width: 1400px;
 }
 
 .btn-banner{
@@ -559,19 +559,19 @@ nav li a{text-decoration: none;}
 .pinterest{background: url("../img/pinterest.png") no-repeat;}
 
 .section-one{
-	max-width: 1200px;
+	max-width: 1400px;
 	margin:auto;
 	padding: 80px 0 30px 0;
 	overflow: auto;
 }
 .section-two{
-	max-width: 1200px;
+	max-width: 1400px;
 	margin:auto;
     padding: 80px 0 30px 0;
 	overflow: auto;
 }
 .section-three{
-    /*max-width: 1200px;*/
+    /*max-width: 1400px;*/
     margin:auto;
     padding: 80px 0 30px 0;
     overflow: auto;
@@ -1239,7 +1239,7 @@ h3, h3 a {
     text-decoration: none;
 }
 
-.works-header{max-width: 1200px; height: auto; margin: auto;}
+.works-header{max-width: 1400px; height: auto; margin: auto;}
 
 #freebies .titlesection {margin-bottom: 35px; font-size: 39px;}
 
@@ -1341,7 +1341,7 @@ h3, h3 a {
 }
 
 .membersteamslider{
-	max-width: 1200px;
+	max-width: 1400px;
 	height: auto;
 }
 
@@ -1433,7 +1433,7 @@ h3, h3 a {
 /* --------------------- TEAM SECTION --------------------- */
 
 #team .section {
-max-width: 1200px;
+max-width: 1400px;
 margin: auto;
 padding-bottom: 20px;
 }
@@ -1921,7 +1921,7 @@ body .date{
 
 .infobanner{
 	height: auto;
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: auto;
 	padding-top: 130px;
 }
@@ -2262,7 +2262,7 @@ li > ul > li > ul > li {
 .data-content-one li p, .data-content-two li p {display:  inline;}
 
 .single-page .section-one, .single-page .section-two, .single-page .section-three {
-    max-width:  1200px !important;
+    max-width: 1400px !important;
 }
 
 .single-page .data-content-one, .single-page .data-content-two {
