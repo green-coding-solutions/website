@@ -1,37 +1,39 @@
 {{ define "main" }}
-<section id="blog" class="bg-one"><div id="ancla1"></div>
+<section id="blog" class="single-page bg-one"><div id="ancla1"></div>
     <div class="section-one">
         <div class="title-one">Blog</div>
-        <div class="ui divided items">
-            {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "blog" ) ) }}
-            {{ range $paginator.Pages.ByDate.Reverse }}
+        <div class="data-content-one" style="text-align: left;">
+            <div class="ui divided items">
+                {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "blog" ) ) }}
+                {{ range $paginator.Pages.ByDate.Reverse }}
 
-            <div class="item">
-              <div class="image">
-                    <img src="{{.Params.socialmedia_preview}}" loading="lazy">
-              </div>
-              <div class="content">
-                <a class="header" href="{{.Permalink}}">{{.Title}}</a>
-                <div class="meta">
-                    <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time><span style="display:inline"> - by </span><a href="{{.Params.Authorlink}}" style="display:inline;">{{.Params.Author}} <img src="/img/t-linkedin.webp" style="padding-left:  4px;padding-bottom: 4px; width: 16px; height: 16px;"></a>
-                </div>
+                <div class="item">
+                  <div class="image">
+                        <img src="{{.Params.socialmedia_preview}}" loading="lazy">
+                  </div>
+                  <div class="content">
+                    <a class="header" href="{{.Permalink}}">{{.Title}}</a>
+                    <div class="meta">
+                        <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time><span style="display:inline"> - by </span><a href="{{.Params.Authorlink}}" style="display:inline;">{{.Params.Author}} <img src="/img/t-linkedin.webp" style="padding-left:  4px;padding-bottom: 4px; width: 16px; height: 16px;"></a>
+                    </div>
 
-                <div class="description">
-                    <p>{{ .Summary }} [...]</p>
+                    <div class="description">
+                        <p>{{ .Summary }} [...]</p>
+                    </div>
+                    <div class="extra">
+                        <p></p>
+                        <a class="ui right floated primary button" href="{{.Permalink}}">
+                         Read More
+                            <i class="right chevron icon"></i>
+                        </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="extra">
-                    <p></p>
-                    <a class="ui right floated primary button" href="{{.Permalink}}">
-                     Read More
-                        <i class="right chevron icon"></i>
-                    </a>
-                </div>
-              </div>
+                {{end}}
+
             </div>
-            {{end}}
-
+            {{ template "_internal/pagination.html" . }}
         </div>
-        {{ template "_internal/pagination.html" . }}
     </div>
 </section>
 {{ end }}
