@@ -55,9 +55,13 @@
             {{ if .IsTranslated }}
                 {{ range .Translations }}
                     <li style="margin-left: 5px;">
-                        <a href="{{ .Permalink }}" class="ui button menubtn" style="text-transform: uppercase">{{ .Lang }}</a>
+                        <a id="language-button" href="{{ .Permalink }}" class="ui button menubtn" style="text-transform: uppercase">DE/EN</a>
                     </li>
                 {{ end }}
+            {{ else }}
+                <li style="margin-left: 5px;">
+                    <a id="language-button" href="#" class="ui button menubtn disabled" style="text-transform: uppercase">EN</a>
+                </li>
             {{ end }}
         </ol>
     </nav>
