@@ -668,8 +668,6 @@ nav li a{text-decoration: none;}
 }
 
 
-.photo-two{background:url(../img/team/photo-team-02.jpg); background-size: 165px 165px;}
-
 .name-team{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -706,8 +704,10 @@ nav li a{text-decoration: none;}
 	position: absolute;
 	top: 0px;
 	padding-top: 12px;
-	background:url(../img/follow.webp) no-repeat center 6px #fa5c5c;
+	background: center 6px #fa5c5c;
+    line-height: 45px;
 }
+
 .plus-btn span{
 	display: inline-block;
 	font-size: 45px;
