@@ -146,6 +146,16 @@ $(document).ready(function() {
 		}
     });
 
+   // DE /EN
+    const currentURL = window.location.pathname;
+    const userLanguage = navigator.language || navigator.userLanguage;
+    if (localStorage.getItem("language_set") == null ) {
+        if (userLanguage.toLowerCase().indexOf('de') == 0 && !currentURL.startsWith("/de")) {
+            document.querySelector('#language-button:not(.disabled)').click()
+        }
+    }
+    localStorage.setItem("language_set", true);
+
 });// JavaScript Document
 })(jQuery);
 
