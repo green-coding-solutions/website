@@ -62,7 +62,7 @@
         </div>
         {{ $filteredPages := slice }}
         {{ range .Sites.First.RegularPages }}
-            {{ if and (eq .Type "talks-and-events") (eq .Params.future true) }}
+            {{ if and (eq .Type "talks-and-events") (le (sub (now.Unix) (.Date.Unix)) 0) }}
                 {{ $filteredPages = $filteredPages | append . }}
             {{ end }}
         {{ end }}
@@ -114,7 +114,7 @@
 
                    {{ $filteredPages := slice }}
                     {{ range .Sites.First.RegularPages }}
-                        {{ if and (eq .Type "talks-and-events") (or (not (isset .Params "future")) (eq .Params.future false)) }}
+                        {{ if and (eq .Type "talks-and-events") (gt (sub (now.Unix) (.Date.Unix)) 0) }}
                             {{ $filteredPages = $filteredPages | append . }}
                         {{ end }}
                     {{ end }}
