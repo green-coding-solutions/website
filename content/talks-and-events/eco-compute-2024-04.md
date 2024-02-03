@@ -1,9 +1,8 @@
 ---
 title: "EcoCompute Conference"
-date: 2024-25-04 9:00:00
+date: 2024-04-25 09:00:00
 publishDate: 2024-01-30
 draft: false
-future: true
 eventtype: "Conference"
 eventlink: "https://www.ecocompute.io/"
 eventname: "EcoCompute Conferece"
