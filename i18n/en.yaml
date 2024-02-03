@@ -37,6 +37,8 @@
   translation: Case Studies
 - id: team
   translation: Team
+- id: newsroom
+  translation: Newsroom
 - id: list_orgs
   translation: "A curated list of organizations we have been working with or have been giving talks at."
 - id: references

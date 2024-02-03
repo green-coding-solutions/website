@@ -24,7 +24,7 @@
 - id: about
   translation: Über
 - id: services
-  translation: Dienstleistungen
+  translation: Leistungen
 - id: talks
   translation: Vorträge & Veranstaltungen
 - id: blog
@@ -33,6 +33,8 @@
   translation: Jobs
 - id: formulas
   translation: CO2-Formeln
+- id: newsroom
+  translation: Newsroom
 - id: studies
   translation: Fallstudien
 - id: team
