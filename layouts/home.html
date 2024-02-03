@@ -61,7 +61,7 @@
             <h2><div class="title-two">Talks & Events</div></h2>
         </div>
         {{ $filteredPages := slice }}
-        {{ range .Site.RegularPages }}
+        {{ range .Sites.First.RegularPages }}
             {{ if and (eq .Type "talks-and-events") (eq .Params.future true) }}
                 {{ $filteredPages = $filteredPages | append . }}
             {{ end }}
@@ -107,14 +107,13 @@
                     <div class="inici"></div>
 
                     {{/*
-                        In an untranslated page this call would be ... where .Site.RegularPages "Type" ...
-                        But since the Site object changes depending on the current language we will get an empty folder
-                        if a folder is not fully translated
-
+                        In translate page this call would be ... where .Site.RegularPages "Type" ...
+                        But since the Site object changes depending on the current language we will get an empty folder if a folder is not fully translated.
+                        Accessing .Sites.First.Regularpages gives the general folder and can show even different languages in a variant
                    */}}
 
                    {{ $filteredPages := slice }}
-                    {{ range .Site.RegularPages }}
+                    {{ range .Sites.First.RegularPages }}
                         {{ if and (eq .Type "talks-and-events") (or (not (isset .Params "future")) (eq .Params.future false)) }}
                             {{ $filteredPages = $filteredPages | append . }}
                         {{ end }}
