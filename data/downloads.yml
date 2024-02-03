@@ -2,17 +2,24 @@
 # https://fomantic-ui.com/elements/icon.html
 # Be careful you can't use an icon named "info" as this is defined in the main.css to be something different
 
-- title: "Example Title 1"
-  link: "https://examplelink1.com"
-  icon: "file pdf"
-  description: "This is a description for the first item."
+- title: "Green Coding Pill Logo (transparent)"
+  link: "/files/media/green-coding-pill-transparent.png"
+  icon: "file image"
+  description: "Company logo - Pill only"
+  description_de: "Firmenlogo - Quadrat - Ohne Text"
 
-- title: "Example Title 2"
-  link: "https://examplelink2.com"
-  icon: "arrow circle down"
-  description: "This is a description for the second item."
+- title: "Green Coding Name Tag Logo (transparent)"
+  link: "/files/media/green-coding-block-logo-transparent.png"
+  icon: "file image"
+  description: "Company logo on transparent background with 'Green Coding' name tag"
+  description_de: "Firmenlogo mit Schriftzug 'Green Coding' auf transparentem Hintergrund"
 
-- title: "Example Title 3"
-  link: "https://examplelink3.com"
-  icon: "file alternate outline"
-  description: "This is a description for the third item."
+- title: "Green Coding Name Tag Logo (midnight)"
+  link: "/files/media/green-coding-block-logo.png"
+  icon: "file image"
+  description: "Company logo on blue / midnight background with 'Green Coding' name tag"
+  description_de: "Firmenlogo mit Schriftzug 'Green Coding' auf blau / midnight Hintergrund"
+
+
+# icon "arrow circle down"
+#   icon: "file alternate outline"

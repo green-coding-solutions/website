@@ -35,7 +35,21 @@
                 </div>
                 {{end}}
             </div>
-
+            <h2 class="ui dividing header">
+                {{ i18n "downloads" }}
+            </h2>
+            <div class="ui list">
+                {{ range $.Site.Data.downloads }}
+                <div class="item">
+                    <i class="{{ .icon }} icon"></i>
+                    <div class="content">
+                        <a class="header"  href="{{ .link }}" target="_blank">{{ .title }}</a>
+                        <div class="description">{{ if eq $.Lang "de"}}{{ .description }}{{else}}{{ .description_de }}{{end}}</div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <br>
             <h2 class="ui dividing header">
                 {{ i18n "us_in_the_media" }}
             </h2>
@@ -88,22 +102,6 @@
                         </div>
                     </div>
                     {{end}}
-                </div>
-
-                <h2 class="ui dividing header">
-                    {{ i18n "downloads" }}
-                </h2>
-                <div class="ui list">
-                    {{ range $.Site.Data.downloads }}
-                    <div class="item">
-                        <i class="{{ .icon }} icon"></i>
-                        <div class="content">
-                            <a class="header"  href="{{ .link }}" target="_blank">{{ .title }}</a>
-                            <div class="description">{{ .description }}</div>
-                        </div>
-                    </div>
-                    {{ end }}
-
                 </div>
             </div>
         </div>
