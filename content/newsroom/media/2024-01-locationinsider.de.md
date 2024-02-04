@@ -2,6 +2,7 @@
 title: "So Gelingt E-Commerce-Unternehmen Die Digitale Nachhaltigkeits-Transformation"
 picture: "/img/newsroom/media/locationinsider.webp"
 link: "https://locationinsider.de/so-gelingt-e-commerce-unternehmen-die-digitale-nachhaltigkeits-transformation/"
+magazine: "Locationinsider"
 date: 2024-01-31
 draft: false
 type: "media"
