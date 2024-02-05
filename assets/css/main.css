@@ -2437,13 +2437,12 @@ a.project-item > i.icon {
   padding-left: 30px;
   margin-right: 10px;
   border-bottom: 1px solid #fff;
-  border-left: 3px solid transparent;
 }
 
 .dropdown-item:hover {
-    color: #fff;
+    color: rgb(89, 195, 179);
     background: transparent;
-    border-left: 3px solid #fff;
+    border-color: rgb(89, 195, 179);
 }
 
 .dropdown-menu {
