@@ -4,6 +4,8 @@ date: 2023-10-09
 draft: false
 author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
+socialmedia_preview: "/img/blog/social/slca1.webp"
+
 ---
 
 In this article I want to propose a simple way to do a Software Life Cycle Assessment for a piece of code. While explaining important concepts and tradeoffs that seem sensible for a little project. Of course things could be done differently and I am happy to discuss them in more detail as this is just a first draft of how things could be done. Please head to [https://github.com/green-coding-berlin/SLCA-Code](https://github.com/green-coding-berlin/SLCA-Code) for all source code and discussions. Please also feel free to contribute to the code through pull requests. As Green Coding Solutions we have been working on this topic for some time and a more academic discussion can be found in our chapter in the [Transparency for Software Climate Impact](https://publication2023.bits-und-baeume.org/#book/38) publication (Part of the Shaping Digital Transformation for a Sustainable Society publication).

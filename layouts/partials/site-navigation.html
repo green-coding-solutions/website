@@ -18,7 +18,7 @@
         <option value="{{ relLangURL "operations" }}" class="second_item"  {{ if eq $slug "sustainablity-operations"}}selected{{end}}>{{ i18n "sustainablity-operations" }}</a></li>
         <option value="{{ relLangURL "/" }}#nav-events" class="second_item">{{i18n "talks"}}</option>
         <option value="{{ relLangURL "blog" }}" class="second_item"{{if eq $slug "blog"}}selected{{end}}>{{i18n "blog"}}</option>
-        <option value="{{ absURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "studies"}}</option>
+        <option value="{{ relURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "studies"}}</option>
         <option value="{{ relLangURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>{{i18n "jobs"}}</option>
         <option value="{{ relLangURL "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>{{i18n "formulas"}}</option>
         <option value="{{ relLangURL "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
@@ -49,29 +49,30 @@
                     <div class="contentbtn">{{i18n "research"}}</div>
                 </a>
                 <ol class="dropdown-menu">
-                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absURL "blog" }}">{{i18n "blog"}}</a></li>
-                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ absURL "case-studies" }}">{{i18n "studies"}}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "blog" }}">{{i18n "blog"}}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "case-studies" }}">{{i18n "studies"}}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relLangURL "jobs" }}">{{i18n "jobs"}}</a></li>
                 </ol>
             </li>
-            <li class="menubtn-bg">
-               <a class="menubtn" href="{{ absURL "jobs" }}">
-                    <div class="contentbtn">{{i18n "jobs"}}</div>
-                </a>
-            </li>
-            <li class="menubtn-bg">
-               <a class="menubtn" href="{{ relLangURL "co2-formulas" }}">
+            <li>
+               <a href="{{ relLangURL "co2-formulas" }}"><div class="menubtn">
                     <div class="contentbtn">{{i18n "formulas"}}</div>
                 </a>
+            </li>
+            <li>
+               <a href="{{ relLangURL "newsroom" }}"><div class="menubtn">
+                    <div class="contentbtn">{{i18n "newsroom"}}</div>
+                </div></a>
             </li>
             {{ if .IsTranslated }}
                 {{ range .Translations }}
                     <li style="margin-left: 5px;">
-                        <a href="{{ .Permalink }}" class="ui button menubtn" style="text-transform: uppercase">DE/EN</a>
+                        <a id="language-button" href="{{ .RelPermalink }}" class="ui button menubtn" style="text-transform: uppercase">DE/EN</a>
                     </li>
                 {{ end }}
             {{ else }}
                 <li style="margin-left: 5px;">
-                    <a href="#" class="ui button menubtn disabled" style="text-transform: uppercase">EN</a>
+                    <a id="language-button" href="#" class="ui button menubtn disabled" style="text-transform: uppercase">EN</a>
                 </li>
             {{ end }}
 
