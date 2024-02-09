@@ -3,7 +3,7 @@
 - id: home_teaser
   translation: "Wir unterstützen Unternehmen, Behörden und Open-Source-Projekte dabei, die CO2-Emissionen ihrer digitalen Dienste zu analysieren und zu reduzieren, um umweltfreundlichere digitale Lösungen zu fördern."
 - id: home_cta
-  translation: "Zu unseren Leistungen 🧩"
+  translation: "Unsere Leistungen ⇨"
 - id: home_about_details
   translation: "Mehr erfahren über die CO2-Emissionen von Software"
 - id: home_projects
@@ -48,7 +48,7 @@
 - id: newsroom_welcome
   translation: "Herzlich Willkommen im Newsroom von Green Coding Solutions. Hier bieten wir JournalistInnen, sonstigen MultiplikatorInnen und allen Interessierten Zugang zu unseren neuesten Nachrichten und Aktivitäten.  Zudem die wichtigsten Medienmaterialien zum Download, jüngste Beiträge in Publikationen sowie anstehende Events."
 - id: news
-  translation: "Aktuelle Nachrichten"
+  translation: "News & Stories"
 - id: us_in_the_media
   translation: "Wir in den Medien"
 - id: publications
