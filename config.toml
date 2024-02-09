@@ -9,6 +9,10 @@ paginatePath = "page"
 summaryLength = 30
 
 defaultContentLanguage = "en"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
 [languages]
   [languages.en]
     disabled = false

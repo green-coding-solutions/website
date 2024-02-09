@@ -70,7 +70,7 @@ Der Eco CI Activity Checker überspringt dann den Testlauf und spart so Energie 
 
 ## Gitlab Plugin
 
-Bitte beachten Sie für Gitlab unsere zentrale [Github repository Dokumentation] (https://github.com/green-coding-berlin/eco-ci-energy-estimation/blob/main/README.md#gitlab), die alles über die Gitlab-Funktionalität beinhaltet.
+Bitte beachten Sie für Gitlab unsere zentrale [Github repository Dokumentation](https://github.com/green-coding-berlin/eco-ci-energy-estimation/blob/main/README.md#gitlab), die alles über die Gitlab-Funktionalität beinhaltet.
 
 {{< button "book" "Blog arcticle" "/blog/eco-ci-gitlab-release/" >}}
 
