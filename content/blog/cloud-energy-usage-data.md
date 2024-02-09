@@ -4,6 +4,8 @@ date: 2023-08-15
 draft: false
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
+socialmedia_preview: "/img/blog/social/cloud-energy-usage-data.webp"
+
 ---
 
 Getting power usage data in cloud is a tough topic and one of the reasons projects such as [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/) exist.

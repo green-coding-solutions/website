@@ -1,4 +1,7 @@
 {{ define "main" }}
+
+{{/* img src="/img/index_background.webp" class="ui image full-width-image" alt="Green Coding Header"> */}}
+
 <section id="about" class="bg-one">
     <div id="nav-about"></div>
     <div class="section-one">
@@ -56,25 +59,68 @@
     <div class="section-two bottom-works">
         <div class="works-header">
             <h2><div class="title-two">Talks & Events</div></h2>
-            <div class="separator">
-                <div class="line line-2"></div>
-            </div>
-            <div class="data-content-two">
-                {{ i18n "home_talks_teaser" }}<br>
-            </div>
         </div>
+        {{ $filteredPages := slice }}
+        {{ range .Sites.First.RegularPages }}
+            {{ if and (eq .Type "talks-and-events") (le (sub (now.Unix) (.Date.Unix)) 0) }}
+                {{ $filteredPages = $filteredPages | append . }}
+            {{ end }}
+        {{ end }}
+
+        {{ if ne (len $filteredPages) 0 }}
+            <div id="portfolio" class="container">
+                <div class="data-content-two">
+                    <h3>{{ i18n "future_home_talks_teaser" }}</h3>
+                </div>
+                <div class="section portfoliocontent">
+                    <div id="container2" class="clearfix">
+                        <div class="inici"></div>
+                            {{ range $index, $element := first 3 $filteredPages }}
+                            <div class="element talks">
+                                <a href="{{.Permalink}}">
+                                    <div class="ch-grid">
+                                        <div class="work-info"><span> {{.Title}}<br><span>{{.Params.Eventtype}}</span></span></div>
+                                        {{ if (isset .Params "eventimg600w") }}
+                                        <img srcset="{{.Params.Eventimg}} 1x,
+                                        {{.Params.Eventimg600w}} 2x" src="{{.Params.Eventimg}}" style="width: 300px"
+                                        loading="lazy">
+                                        {{ else }}
+                                        <img src="{{.Params.Eventimg}}" style="width: 300px" loading="lazy">
+                                        {{ end }}
+                                    </div>
+                                </a>
+                            </div>
+                            {{end}}
+                        <div class="final"></div>
+                    </div>
+                </div> <!-- #container -->
+            </div> <!-- /END ISOTOPE PORTFOLIO-->
+        {{ end }}
+
         <div id="portfolio" class="container">
+            <div class="data-content-two">
+                <h3>{{ i18n "past_home_talks_teaser" }}</h3>
+            </div>
+
             <div class="section portfoliocontent">
                 <div id="container2" class="clearfix">
                     <div class="inici"></div>
 
                     {{/*
-                        In an untranslated page this call would be ... where .Site.RegularPages "Type" ...
-                        But since the Site object changes depending on the current language we will get an empty folder
-                        if a folder is not fully translated
-
+                        In translate page this call would be ... where .Site.RegularPages "Type" ...
+                        But since the Site object changes depending on the current language we will get an empty folder if a folder is not fully translated.
+                        Accessing .Sites.First.Regularpages gives the general folder and can show even different languages in a variant
                    */}}
-                    {{ range $index, $element := ( first 9 ( where .Sites.First.RegularPages "Type" "talks-and-events" ) ) }}
+
+                   {{ $filteredPages := slice }}
+                    {{ range .Sites.First.RegularPages }}
+                        {{ if and (eq .Type "talks-and-events") (gt (sub (now.Unix) (.Date.Unix)) 0) }}
+                            {{ $filteredPages = $filteredPages | append . }}
+                        {{ end }}
+                    {{ end }}
+
+
+                    {{ range $index, $element := first 6 $filteredPages }}
                     <div class="element talks">
                         <a href="{{.Permalink}}">
                             <div class="ch-grid">
@@ -100,6 +146,7 @@
 
             </div> <!-- #container -->
         </div> <!-- /END ISOTOPE PORTFOLIO-->
+
     </div><!-- end portfolio -->
 </section>
 

@@ -23,6 +23,6 @@ Das **Open Energy Badge** ist ein Projekt, bei dem wir ein neues Badge für Gith
 Sie werden automatisch von unserem [Green Metrics Tool](/de/projects/green-metrics-tool) erstellt und können frei verwendet werden.
 
 Die erstellten Energiemetriken gibt es in verschiedenen Metrik-Typen, je nachdem, ob Sie sie lokal auf Ihrem Entwicklungssystem getestet haben
-oder auf unserer [gehosteten Demo-Instanz] (https://metrics.green-coding.io) mit der Option, Software zur Messung einzureichen.
+oder auf unserer [gehosteten Demo-Instanz](https://metrics.green-coding.io) mit der Option, Software zur Messung einzureichen.
 
 Sehen Sie den Badge in Aktion, zum Beispiel, in unserem [Dokumentation Repository](https://github.com/green-coding-berlin/documentation) an, wo Sie direkt sehen können, wie hoch die Erstellungskosten der statischen Seiten waren.

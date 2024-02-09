@@ -1,0 +1,36 @@
+# The icons can be found here.
+# https://fomantic-ui.com/elements/icon.html
+# Be careful you can't use an icon named "info" as this is defined in the main.css to be something different
+
+- title: "Green Coding Pill Logo (transparent)"
+  link: "/files/newsroom/green-coding-pill-transparent.png"
+  icon: "file image"
+  description: "Company logo - Pill only"
+  description_de: "Firmenlogo - Quadrat - Ohne Text"
+
+- title: "Green Coding Name Tag Logo (transparent)"
+  link: "/files/newsroom/green-coding-block-logo-transparent.png"
+  icon: "file image"
+  description: "Company logo on transparent background with 'Green Coding' name tag"
+  description_de: "Firmenlogo mit Schriftzug 'Green Coding' auf transparentem Hintergrund"
+
+- title: "Green Coding Name Tag Logo (midnight)"
+  link: "/files/newsroom/green-coding-block-logo.png"
+  icon: "file image"
+  description: "Company logo on blue / midnight background with 'Green Coding' name tag"
+  description_de: "Firmenlogo mit Schriftzug 'Green Coding' auf blau / midnight Hintergrund"
+
+- title: "Foto Package (Solo, Founders, Team)"
+  link: "/files/newsroom/Fotos.zip"
+  icon: "file archive"
+  description: "Photo package of Didi Hoffmann, Arne Tarara, Founders, C-Level and whole team"
+  description_de: "Foto Paket mit Didi Hoffmann, Arne Tarara, Gründer, C-Level und gesamtes Team"
+
+- title: "Vita"
+  link: "/files/newsroom/vitaes.zip"
+  icon: "file archive"
+  description: "Package of vitas from Didi Hoffmann, Arne Tarara and Michelle Grüne"
+  description_de: "Paket mit Vitaes von Didi Hoffmann, Arne Tarara und Michelle Grüne"
+
+# icon "arrow circle down"
+#   icon: "file alternate outline"

@@ -4,6 +4,8 @@ date: 2023-06-27
 draft: false
 author: "Dan Mateas"
 authorlink: "https://www.linkedin.com/in/dan-mateas-693634105/"
+socialmedia_preview: "/img/blog/social/eco-ci.webp"
+
 ---
 
 We are happy to announce a major update to our Eco-CI tool, a plugin designed to estimate and reduce the energy consumption of continuous integration pipelines. Previously available exclusively for GitHub Actions, we are excited to announce the integration of Eco-CI with GitLab pipelines. We hope this will encourage Gitlab developers to measure their carbon emissions and make informed decisions regarding sustainable software processes.
