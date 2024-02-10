@@ -95,7 +95,7 @@ So now we have all the moving parts together and can craft a calculation.
 We will assume that from our 150 Mio. people (remember: 50% Desktop) around 50% will have the Zoom app installed. So we have 75 Mio. people per day.
 From these 75 Mio. people only 30% regularly clear their cookies.
 
-Just to be safe and account for recurring people and people that have more than one Zoom meeting per day we will divide this number by 100.
+Just to be safe and account for recurring people and people that have more than one Zoom meeting per day and stuff that we might have missed we will divide this number by 100.
 
 So our total actual people that will trigger this download are 0.75 Mio.
 
@@ -114,7 +114,7 @@ Of course we have made many assumptions, but contrary to the spirit of the GHG p
 
 I hope the final step of dividing everything by two orders of magnitude (/100) will bring us deep into the realm of under-estimating.
 
-But then still **137 tons of CO2** ... For an absolutely unnecessary functionality.
+But then still **13.7 tons of CO2** ... For an absolutely unnecessary functionality.
 
 Is a user nowadays really not being to click on a visible link above the fold if the download is necessary?
 
@@ -125,6 +125,6 @@ And the change would be done in less than 15 seconds and would have no implicati
 
 We hope you liked this untypical loose style of our case-study and it gave you an idea how easy some savings can be attained and also how back-of-the-envelope techniques can be employed to get an idea what the order of magnitude of the carbon defect is.
 
-The actual value might be two orders of magnitude higher, or, if we missed something major, even an order of magnitude lower. But even 13 tons of CO2 should be more than enough motivivation to put 5 seconds of work into it.
+The actual value might be two orders of magnitude higher, or, if we missed something major, even an order of magnitude lower. But even 1.3 tons of CO2 should be more than enough motivivation to put 5 seconds of work into it.
 
 Happy for your feedback! What did we miss? What would you like to add? Contact us at [info@green-coding.io](mailto:info@green-coding.io)
