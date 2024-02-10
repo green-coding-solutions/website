@@ -30,6 +30,9 @@ When I visit the site Zoom auto-downloads the Zoom client "for me". Also it dire
 - Join from your browser
 - Download Zoom
 
+{{< image "/img/case-studies/zoom-download-image.webp" "yes" >}}
+
+
 Like always I click on *Join from Your Browser*
 
 I do not know how many times I have already downloaded this god-forsaken Zoom client. But today I felt the urge to know: How much carbon does this way of implementing an unnecessary download actually cost?
@@ -44,9 +47,9 @@ What do we want to find out?
     How much carbon could be saved if Zoom would implement the download only on click?
 {{< /research_question >}}
 
-{{< greenblock >}}
+{{< whiteblock >}}
 Assumptions and back-of-the-envelope calculation
-{{< /greenblock >}}
+{{< /whiteblock >}}
 
 You might have noticed: We are not Zoom. So we do not have all the detailed internal numbers.
 
