@@ -118,7 +118,7 @@ But then still **13.7 tons of CO2** ... For an absolutely unnecessary functional
 
 Is a user nowadays really not being to click on a visible link above the fold if the download is necessary?
 
-That is ~ 14 times the flight from Berlin to New York. For ZERO functionality.
+That is ~ 11.4 times the flight from Berlin to New York. For ZERO functionality.
 
 And the change would be done in less than 15 seconds and would have no implications on UX or UI that need expensive testing.
 
