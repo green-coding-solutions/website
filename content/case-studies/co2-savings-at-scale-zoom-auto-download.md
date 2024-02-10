@@ -95,13 +95,13 @@ So now we have all the moving parts together and can craft a calculation.
 We will assume that from our 150 Mio. people (remember: 50% Desktop) around 50% will have the Zoom app installed. So we have 75 Mio. people per day.
 From these 75 Mio. people only 30% regularly clear their cookies.
 
-Just to be safe and account for recurring people and people that have more than one Zoom meeting per day we will divide this number by 10.
+Just to be safe and account for recurring people and people that have more than one Zoom meeting per day we will divide this number by 100.
 
-So our total actual people that will trigger this download are 7.5 Mio.
+So our total actual people that will trigger this download are 0.75 Mio.
 
-The final calculation will then be: 7.5 Mio * 0.0411 * 0.0028125 * 0.436 = **377 kg per Day**
+The final calculation will then be: 0.75 Mio * 0.0411 * 0.0028125 * 0.436 = **37.79 kg per Day**
 
-When we bring this number up to a year we are talking **137 tons of CO2** every year. 
+When we bring this number up to a year we are talking **13.7 tons of CO2** every year. 
 
 
 
