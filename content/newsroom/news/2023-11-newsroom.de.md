@@ -7,5 +7,5 @@ draft: false
 type: "news"
 ---
 
-Unser dedizierter Newsroom ist ab sofort online. Ältere Nachrichten finden Sie unstrukturiert im [Blog](/blog).
+Unser Newsroom ist ab sofort online. Ältere Nachrichten finden Sie unstrukturiert im [Blog](/blog).
 
