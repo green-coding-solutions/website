@@ -10,9 +10,6 @@ summaryLength = 30
 
 defaultContentLanguage = "en"
 
-[markup.goldmark.renderer]
-  unsafe = true
-
 [languages]
   [languages.en]
     disabled = false
@@ -43,3 +40,7 @@ defaultContentLanguage = "en"
   tag = ""
   group = ""
   category = ""
+
+# This will allow HTML tags inside of .md files without hacks like {{<rawhtml>}}
+[markup.goldmark.renderer]
+unsafe= true

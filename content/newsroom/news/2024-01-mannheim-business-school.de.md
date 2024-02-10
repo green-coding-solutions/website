@@ -1,18 +1,17 @@
 ---
-title: "Mannheim Business School IIM Study Trip Gastvorlesunt"
+title: "Mannheim Business School IIM Study Trip Gastvorlesung"
 picture: "/img/newsroom/news/mannheim-business-school.webp"
 link: "https://sdialliance.org/green-coding-summit/2023/#sdia-green-coding-summit-"
-date: 2023-11-23
+date: 2024-01-17
 draft: false
 type: "news"
 ---
 
-We are invited to give a guest lecture at the [Mannheim Business School](https://www.mannheim-business-school.com/de/) about Green Coding.
+Wir sind eingeladen, an der [Mannheim Business School](https://www.mannheim-business-school.com/de/), einen Gastvortrag über Green Coding zu halten.
 
-The [Indian Institute of Management](https://www.linkedin.com/company/indian-institute-of-management-lucknow/) is visiting Mannheim Business School in January for 
-a study trip to hear some lectures about sustainability and sustainabile management.
+Das [Indian Institute of Management](https://www.linkedin.com/company/indian-institute-of-management-lucknow/) besucht im Januar im Rahmen einer Studienreise die Mannheim Business School, um dort einige Vorträge über Nachhaltigkeit und nachhaltiges Management zu hören.
 
- We are delighted to have been invited to give two talks in this period:
+ Wir freuen uns, dass wir eingeladen wurden, in diesem Zeitraum zwei Vorträge zu halten:
 
-- Sustainability in the digital world: European perspective
-- Understanding software carbon emissions and saving potentials for management
+- Nachhaltigkeit in der digitalen Welt: Europäische Perspektive
+- Verständnis der Kohlenstoffemissionen von Software und Einsparungspotenziale für das Management

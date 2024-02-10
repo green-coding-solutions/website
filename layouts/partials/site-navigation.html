@@ -17,6 +17,7 @@
         <option value="{{ absLangURL "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>{{i18n "formulas"}}</option>
         <option value="{{ absURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "studies"}}</option>
         <option value="{{ absLangURL "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
+        <option value="{{ absLangURL "newsroom" }}" class="second_item">{{i18n "newsroom"}}</option>
     </select>
 </div>
 <div class="menu-select">
@@ -48,7 +49,7 @@
                 </div></a>
             </li>
             <li>
-               <a href="{{ absURL "newsroom" }}"><div class="menubtn">
+               <a href="{{ absLangURL "newsroom" }}"><div class="menubtn">
                     <div class="contentbtn">{{i18n "newsroom"}}</div>
                 </div></a>
             </li>
