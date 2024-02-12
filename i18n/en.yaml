@@ -1,9 +1,9 @@
 - id: home_what_we_do
-  translation: "What we do"
+  translation: "We make software sustainable"
 - id: home_teaser
   translation: "We help companies, goverment bodies and open source communites to understand and optimize the carbon emissions of their digital services"
 - id: home_cta
-  translation: "👉 See our services"
+  translation: "Find out how ⇨"
 - id: home_about_details
   translation: "Read some details about the carbon emissions of software"
 - id: home_projects
@@ -74,7 +74,7 @@
 - id: team
   translation: "Team"
 - id: mediacontact
-  translation: "Media Contact"
+  translation: "Press Contact"
 - id: marketing_sales
   translation: "Marketing & Sales"
 - id: more_information

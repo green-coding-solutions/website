@@ -2488,7 +2488,47 @@ li.dropdown-list-item {
 .ui.items .ui.button {
     display: inline-block;
 }
+
 .full-width-image {
     width: 100%;
     height: 600px;
     object-fit: cover; /* This will ensure the image covers the full container width without stretching */
+}
+
+.dark-sand, .stage-1-bg{
+    background: #494d5f !important;
+}
+.pink-sand, .stage-2-bg {
+    background: #8458B3 !important;
+}
+.dusty-white, .stage-3-bg{
+    background: #d0bdf4 !important;
+}
+.blue-green, .stage-4-bg{
+    background: #e5eaf5 !important;
+}
+.teeny-greeny, .stage-5-bg{
+    background: #68d388 !important;
+}
+
+.dark-sand, .stage-1-fg{
+    color: #494d5f !important;
+    border-color: #494d5f !important;
+}
+.pink-sand, .stage-2-fg {
+    color: #8458B3 !important;
+    border-color: #8458B3 !important;
+}
+.dusty-white, .stage-3-fg{
+    color: #d0bdf4 !important;
+    border-color: #d0bdf4 !important;
+}
+.blue-green, .stage-4-fg{
+    color: #e5eaf5 !important;
+    border-color: #e5eaf5 !important;
+}
+.teeny-greeny, .stage-5-fg{
+    color: #68d388 !important;
+    border-color: #68d388 !important;
+}
+
