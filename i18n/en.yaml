@@ -31,12 +31,14 @@
   translation: Blog
 - id: jobs
   translation: Jobs
-- id: formulas
+- id: co2-formulas
   translation: CO2-Formulas
-- id: studies
+- id: case-studies
   translation: Case Studies
-- id: research
-  translation: Research
+- id: more
+  translation: More
+- id: insights
+  translation: Insights
 - id: team
   translation: Team
 

@@ -2532,3 +2532,10 @@ li.dropdown-list-item {
     border-color: #68d388 !important;
 }
 
+.title.orange {color: #f2711c;}
+.title.yellow {color: #fbbd08;}
+.title.teal {color: #00b5ad;}
+.title.olive {color: #b5cc18;}
+.title.green {color: #21ba45;}
+
+.distance-top {margin-top: 10px;}

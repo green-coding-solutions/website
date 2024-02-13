@@ -3,7 +3,7 @@
 - id: home_teaser
   translation: "Wir unterstützen Unternehmen, Behörden und Open-Source-Projekte dabei, die CO2-Emissionen ihrer digitalen Dienste zu analysieren und zu reduzieren, um umweltfreundlichere digitale Lösungen zu fördern."
 - id: home_cta
-  translation: "Unsere Leistungen ⇨"
+  translation: "Mehr erfahren ⇨"
 - id: home_about_details
   translation: "Mehr erfahren über die CO2-Emissionen von Software"
 - id: home_projects
@@ -24,21 +24,23 @@
 - id: about
   translation: Über
 - id: services
-  translation: Leistungen
+  translation: Services
 - id: talks
   translation: Vorträge & Veranstaltungen
 - id: blog
   translation: Blog
 - id: jobs
   translation: Jobs
-- id: formulas
+- id: co2-formulas
   translation: CO2-Formeln
 - id: newsroom
   translation: Newsroom
-- id: studies
+- id: case-studies
   translation: Fallstudien
-- id: research
-  translation: Forschung
+- id: more
+  translation: Mehr
+- id: insights
+  translation: Insights
 - id: team
   translation: Team
 - id: overview

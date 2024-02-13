@@ -12,9 +12,24 @@ The first step in reducing your software carbon footprint is to understand where
 
 We go with clients through the journey of first understanding the background of software carbon emissions and then the accredited methodologies to report and assess software carbon emissions.
 
-{{< rawhtml >}}
+
+<h2>Software carbon strategy planning</h2>
+<h2>Cloud carbon efficient migrations</h2>
+<h2>Consultant trainings</h2>
+<h2>Green software development guideh2nes</h2>
+
+<h2>Apph2cation carbon profih2ng</h2>
+<h2>Carbon optimization & saving</h2>
+<h2>Carbon reporting (GHG/ISO 14001)</h2>
+<h2>Sustainable UI / UX</h2>
+<h2>Website carbon optimization</h2>
+<h2>Website carbon certifications</h2>
+
 
 <br>
+
+
+
 <div class="ui padded blue stacked raised segment">
     <div class="ui items">
       <div class="item">
@@ -32,7 +47,7 @@ We go with clients through the journey of first understanding the background of 
           </div>
           <div class="extra">            
             <div class="ui left floated orange button">
-              Download our sample case study
+              Download our KPI / carbon pricing sample client case
               <i class="right chevron icon"></i>
             </div>
           </div>
@@ -43,44 +58,6 @@ We go with clients through the journey of first understanding the background of 
         </figure>
       </div>
     </div>          
-</div>
-
-<div class="ui section divider"></div>
-
-<div class="ui green blue stacked raised segment">
-    <div class="ui items">    
-      <div class="item">
-        <div class="ui large image middle aligned">
-            <figure>
-              <img src="/img/case-studies/RAPL-energy-filtering-Intel.webp">
-              <figcaption>Intel energy filtering - <a href="https://www.intel.cn/content/www/cn/zh/developer/articles/technical/software-security-guidance/advisory-guidance/running-average-power-limit-energy-reporting.html">Source Intel</a></figcaption>
-            </figure>  
-        </div>
-        <div class="content">
-          <h2 class="right floated">Here we need one more ...</h2>
-          <div class="clear"></div>
-          <div class="right floated meta">
-            <span class="ui label">Migrations</span><span class="ui label">Carbon savings</span><span class="ui label">Green software techniques</span>
-          </div>
-          <div class="clear"></div>
-          <div class="description right aligned">
-            <p>I am in dire need of a good description</p>
-          </div>
-          <div class="extra data-content-two">            
-            <a href="/services/workshops-and-trainings" class="ui right floated primary button">
-              See our workshops and trainings
-              <i class="right chevron icon"></i>
-            </a>
-          </div>
-          <div class="extra data-content-two">            
-            <a href="/services/workshops-and-trainings" class="ui right floated primary button">
-              See our carbon benchmarking tools
-              <i class="right chevron icon"></i>
-            </a>
-          </div>
-        </div>        
-      </div>
-    </div>
 </div>
 
 <div class="ui section divider"></div>
@@ -102,7 +79,7 @@ We go with clients through the journey of first understanding the background of 
           </div>
           <div class="extra">            
             <div class="ui left floated orange button">
-              Download our sample case study
+              Download our ISO 14001 reporting sample client case
               <i class="right chevron icon"></i>
             </div>
           </div>
@@ -135,72 +112,23 @@ We go with clients through the journey of first understanding the background of 
           <div class="clear"></div>
           <div class="description right aligned">
             <p>Carbon savings sometimes come from classic techniques like legacy mirgrations, cloud migrations, dynamic scaling or refarctoring.</p>
-            <p>In more modern software products savongs often come through cloud optimizations like idle time optimizations, VM to function migrations or architectural changes.</p>
+            <p>In more modern software products savings often come through cloud optimizations like idle time optimizations, VM to function migrations or architectural changes.</p>
             <p>If your scaling factor is sufficient also algorithmical changes and / or runtime swap-outs have enormous benefits and can drive drown carbon emissions by 2-digit percentages.</p>
             <p>We evaluate which technique is right for you at your current company / product stage and either plan for internal trainings to leverage your existing development teams or integrate our enterprise tooling which helps you surface concrete engineering implementations that you can apply.</p>
           </div>
-          <div class="extra data-content-two">            
-            <a href="/services/workshops-and-trainings" class="ui right floated primary button">
-              See our workshops and trainings
+          <div class="extra">            
+            <div class="ui left floated orange button">
+              Download our KPI / carbon pricing case study
               <i class="right chevron icon"></i>
-            </a>
-          </div>
-          <div class="extra data-content-two">            
-            <a href="/services/workshops-and-trainings" class="ui right floated primary button">
-              See our carbon benchmarking tools
-              <i class="right chevron icon"></i>
-            </a>
+            </div>
           </div>
         </div>        
       </div>
     </div>
 </div>
 
-
-{{</ rawhtml >}}
-
 {{< greenblock >}}
 Interested?
 {{</ greenblock >}}
 
-{{< rawhtml >}}
-
-<div id="services-contact-us">
-    <div id="contactinfo">
-        <h2 class="titlecontact">Contact us</h2>
-        <p>Green Coding Solutions GmbH<br>
-            Jablonskistr. 24<br>
-        10405 Berlin (Germany)</p>
-        <p>(+49) 160 947 930 24</p>
-        <p><a href="mailto:info@green-coding.io">info@green-coding.io</a></p>
-        <div class="media">
-            <a href="https://www.linkedin.com/company/green-coding-berlin">
-                <div class="t-linkedin"></div>
-            </a>
-            <a href="mailto:info@green-coding.io"><div class="t-mail"></div></a>
-        </div>
-    </div>
-    <form id="formulario" action="https://submit-form.com/M3XrdBO9" method="post" data-static-form-name="contact">
-        <fieldset>
-            <div class="first">
-                <label class="data-form" for="nameform">name</label>
-                <input type="text" name="name" id="nameform" value="" placeholder="Your name ...">
-                <label class="data-form" for="emailform">email</label>
-                <input type="text" name="email" id="emailform" value="" placeholder="Your e-Mail ...">
-            </div>
-            <div>
-                <label class="data-form" for="messageform">your message</label>
-                <textarea name="message" id="messageform" placeholder="Your message ..."></textarea>
-            </div>
-            <div>
-                <label class="data-form" for="messagesubmit">&nbsp;</label>
-                <div id="messagesubmit-container" class="btn-one">
-                    <input id="messagesubmit" type="submit" name="submit" value="Submit">
-                </div>
-            </div>
-        </fieldset>
-    </form>
-</div>
-{{</ rawhtml >}}
-
-
+{{< contact-us >}}
