@@ -8,36 +8,39 @@ socialmedia_preview: "img/social-media-previews/zoom-auto-download-case-study.we
 
 ---
 
-A typical feedback that many people say when it comes to Green Coding is:
-- Savings are so small. They do not really matter. IT is already efficient
-- Techniques and changes are so hard to implement. We do not have the time to do it.
+Many people often critique Green Coding with two main points:
 
-Although both statements are based on daily software realities it does also very often not apply.
+- They believe the savings are insignificant, arguing that IT systems are already efficient.
+- They find the methods and modifications required for Green Coding challenging and time-consuming to implement.
 
-First we see many clients running forgotten, duplicate, over-subscribed or just outdated and ineffcient
-applications where savings can easily be in the range of hundrets of kilos of carbon.
+However, despite these views being grounded in common software development experiences, they frequently do not hold true.
+
+First we see many clients running forgotten, duplicate, over-subscribed or just outdated and inefficient
+applications where savings can easily be in the range of hundreds of kilos of carbon.
 
 Secondly techniques are not always costly if you focus on low-hanging fruits or apply them with proven
 time saving DevOps techniques and only forward looking.
 
-In this case study we want to highlight a case where we look at a mini-feature of an international renowned app, Zoom, and how a 10 seconds change can save hundrets of tons of CO2.
+In this case study we want to highlight a case in which we look at a mini-feature of an international renowned app, [Zoom](https://zoom.us/), and how a 10 seconds change can save hundreds of tons of CO2.
 
-Latetly I was again in a Zoom meeting and as I always do I just joined in the browser. I click on the link in my calendar and are brought to a Zoom page like this: https://us06web.zoom.us/j/XXXXXXXX
+Lately I in a Zoom meeting, again, and as I always do I just joined in the browser. I click on the link in my calendar and are brought to a Zoom page like this: https://us06web.zoom.us/j/XXXXXXXX
 
 The meeting link is obviously invalid for purposes of demonstration, but just try it with a link you have recently used yourself.
 
 When I visit the site Zoom auto-downloads the Zoom client "for me". Also it directly shows me afterwards two options:
+
 - Join from your browser
 - Download Zoom
 
 {{< image "/img/case-studies/zoom-download-image.webp" "yes" >}}
 
-
 Like always I click on *Join from Your Browser*
 
 I do not know how many times I have already downloaded this god-forsaken Zoom client. But today I felt the urge to know: How much carbon does this way of implementing an unnecessary download actually cost?
 
-
+-------------------------------------
+DIDI: Ist das bei allen Browsern so?
+-------------------------------------
 
 {{< greenblock >}}
 What do we want to find out?
@@ -59,7 +62,7 @@ According to [Searchlogistics](https://www.searchlogistics.com/learn/statistics/
 
 Although the [stock has dropped](https://finance.yahoo.com/quote/ZM/) quite a bit since the peak in 2021 fiscal reports show [no sign of shrinkage in the revenue](https://www.statista.com/statistics/1252725/zoom-revenue-worldwide/). Only reduced growth rates.
 
-So it is fair to assume that the number of users is probalby still usable.
+So it is fair to assume that the number of users is probably still usable.
 
 Now we need the cost of the download. This is easy to get. Just open the explorer: 41.1 MB (macOS)
 
@@ -70,11 +73,19 @@ To construct a calculation regarding CO2 we need numbers on the cost of data tra
 - Download size: 41.1 MB (0.00411 GB)
 - Daily Users: 300 Mio.
 
-Now we need some final technical assumptions: How often will this download actually be triggred?
+-------------------------------------
+DIDI: Ist Grid Intensity Weltweit. Weil Zoom wird eher in EU und USA verwendet oder?
+-------------------------------------
 
-First of all we have to exclude people that have Zoom installed as app. This will capture the browser links and handle them. Also we have to exclude mobile users, as they will not trigger this behaviour.
+Now we need some final technical assumptions: How often will this download actually be triggered?
 
-According to [Statcounter](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet) the Desktop rate is at 39.75%. I think it is fair to say that not everybody will make a Zoom meeting on mobile. But to be conservative we will assume that only 50% of all Zoom users actually use a desktop device for conferencing.
+First of all we have to exclude people that have Zoom installed as app. This will capture the browser link and handle it. Also we have to exclude mobile users, as they will not trigger this behavior.
+
+-------------------------------------
+DIDI: Warum sagst du erst die rate ist 39% und nimmst dann 50% an?
+-------------------------------------
+
+According to [Statcounter](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet) the Desktop rate is at `39.75%`. I think it is fair to say that not everybody will make a Zoom meeting on mobile. But to be conservative we will assume that only 50% of all Zoom users actually use a desktop device for conferencing.
 
 When I refresh the page the download does not trigger again. But when I close *my* browser it happens again. Zoom stores a token in the [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) of the browser.
 
@@ -88,20 +99,42 @@ According to [Stackoverflow](https://stackoverflow.com/questions/8537112/when-is
 
 So how often do people update the browser? And how often do people clear cookies?
 
+-------------------------------------
+DIDI: 30 people? ist das %
+-------------------------------------
+
+
 Most modern browsers have an update interval of 14-30 days. And according to [Clickz](https://www.clickz.com/study-consumers-delete-cookies-at-surprising-rate/84350/) and [GWI](https://blog.gwi.com/chart-of-the-day/1-in-3-are-regularly-deleting-cookies/) around 30 people delete cookies regularly (at least once a month if not weekly or daily).
 
 So now we have all the moving parts together and can craft a calculation.
 
+-------------------------------------
+DIDI: Wo kommt die 50% install rate her?
+-------------------------------------
+
+
 We will assume that from our 150 Mio. people (remember: 50% Desktop) around 50% will have the Zoom app installed. So we have 75 Mio. people per day.
 From these 75 Mio. people only 30% regularly clear their cookies.
+
+-------------------------------------
+DIDI: Welche number divided by 100? Und warum durch 100?
+-------------------------------------
+
 
 Just to be safe and account for recurring people and people that have more than one Zoom meeting per day and stuff that we might have missed we will divide this number by 100.
 
 So our total actual people that will trigger this download are 0.75 Mio.
 
+-------------------------------------
+DIDI: Hier würde ich die Formel noch mal hin machen ohne werte
+
+Downloads * Grid Intensity * Data Transfer Cost *  Download size
+-------------------------------------
+
+
 The final calculation will then be: 0.75 Mio * 0.0411 * 0.0028125 * 0.436 = **37.79 kg per Day**
 
-When we bring this number up to a year we are talking **13.7 tons of CO2** every year. 
+When we bring this number up to a year we are talking **13.7 tons of CO2** every year.
 
 
 
