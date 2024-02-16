@@ -1,5 +1,5 @@
 ---
-title: "Getting high grade cpu utilization values on MacOs"
+title: "Getting high grade cpu utilization values on MacOS"
 date: 2024-02-15
 draft: false
 author: "Didi Hoffmann"
