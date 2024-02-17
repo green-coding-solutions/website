@@ -41,6 +41,8 @@
   translation: Insights
 - id: team
   translation: Team
+- id: projects
+  translation: Projects
 
 - id: overview
   translation: Overview

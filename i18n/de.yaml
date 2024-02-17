@@ -43,6 +43,8 @@
   translation: Insights
 - id: team
   translation: Team
+- id: projects
+  translation: Projekte
 - id: overview
   translation: Übersicht
 - id: consulting
