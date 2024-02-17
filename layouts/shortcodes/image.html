@@ -2,4 +2,4 @@
 {{ $size := .Get 1 | default "medium" }}
 {{ $float := .Get 2 | default "left" }}
 
-<img class="ui {{ $size }} {{ $float }} floated rounded image" src="{{ $src }}">
+<img class="ui {{ $size }} {{ $float }} floated rounded image" src="{{ $src }}" loading="lazy">
