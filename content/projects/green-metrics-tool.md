@@ -17,14 +17,10 @@ You can either install it locally or use our demo dashboard, where we also offer
 Please see all the details on Github and in the documentation.
 
 {{< button "book" "Documentation" "https://docs.green-coding.io" >}}
-
 {{< button "code branch" "Github" "https://github.com/green-coding-berlin/green-metrics-tool" >}}
-
 {{< button "columns" "Demo Dashboard" "https://metrics.green-coding.io" >}}
-
 {{< button "eye" "Screenshots" "#screenshots" >}}
 
-{{< button "columns" "Demo Dashboard" "https://metrics.green-coding.io" >}}
 
 --- 
 
@@ -45,7 +41,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
         <div class="content">
             <div class="header center aligned">Community version</div>
             <div class="meta center aligned">free and open source</div>
-            <div class="ui divider horizontal">$0 / month</div>
+            <div class="ui divider horizontal">0 EUR / month</div>
             <div class="ui list">
                 <div class="item"><i class="icon checkmark"></i> <div class="content">
                     Fully featured local measurement
@@ -62,6 +58,9 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 <div class="item"><i class="icon checkmark"></i> <div class="content">
                     Free SaaS tier for open source communities
                 </div></div>
+                <div class="item"><i class="icon checkmark"></i> <div class="content">
+                    Github Issues community support
+                </div></div>
                 <hr>
                 <div class="item"><i class="icon times"></i> <div class="content">
                     No setup support
@@ -70,7 +69,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                     No measurement support
                 </div></div>
                 <div class="item"><i class="icon times"></i> <div class="content">
-                    No telephone support (Github Issues only)
+                    No telephone support
                 </div></div>
             </div>
         </div>
@@ -118,16 +117,16 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
             </div>
         </div>
         <div class="extra content">
-            <button class="ui button fluid blue">Get in touch</button>
+            <a class="ui button fluid blue" href="mailto:info@green-coding.io">Get in touch</a>
         </div>
     </div>
     </div>
     <div class="ui column">
     <div class="ui fluid card">
         <div class="content">
-            <a class="ui label left corner blue">
+            <span class="ui label left corner blue">
                 <i class="icon plus"></i>
-            </a>
+            </span>
             <div class="header center aligned">Enterprise</div>
             <div class="meta center aligned">Custom to your needs</div>
             <div class="ui divider horizontal">Individual pricing</div>
@@ -145,11 +144,20 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                     <b>Individual</b> setup & support
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    <b>Whitelabel</b> & <b>Dual-Licensing</b> options
+                    <b>Individual</b> support contact
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Development</b> & <b>Customization</b>
+                </div></div>                
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Custom</b> metric providers
+                </div></div>                
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Whitelabel</b> & <b>Dual-Licensing</b>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     Advanced <b>Green Coding AI</b> Optimizations
-                    <br><small>It is so advanced you cannot believe it!</small>
+                    <br><small>Code introspection & prediction</small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Support</b> the development

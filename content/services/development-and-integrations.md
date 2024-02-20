@@ -20,7 +20,7 @@ We develop [industry wide used state of the art open source software](/#projects
         <div class="content">
           <h2>Application Carbon Profiling</h2>
           <div class="meta">
-            <span class="ui label">Learning</span><span class="ui label">Methodologies</span>
+            <span class="ui label">Profiling</span><span class="ui label">Development</span><span class="ui label">Analysis</span>
           </div>
           <div class="description">
             <br>
@@ -53,7 +53,7 @@ We develop [industry wide used state of the art open source software](/#projects
         <div class="content">
           <h2>Legacy Migrations / Optimizations</h2>
           <div class="meta">
-            <span class="ui label">Learning</span><span class="ui label">Methodologies</span>
+            <span class="ui label">Migrations</span><span class="ui label">Legacy</span><span class="ui label">Optimisation</span>
           </div>
           <div class="description">
             <br>
@@ -104,8 +104,6 @@ We develop [industry wide used state of the art open source software](/#projects
       </div>
     </div>
 </div>
-
-<div class="ui section divider"></div>
 
 {{< greenblock >}}
 Interested?

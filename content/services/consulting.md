@@ -38,8 +38,8 @@ We go with clients through the journey of first understanding the background of 
           </div>
           -->
         </div>
-        <figure class="ui large image">
-            <img srcset="/img/services/understand_learn_1x.webp 1x, /img/services/understand_learn_2x.webp 2x" src="/img/services/understand_learn_1x.webp" loading="lazy">
+        <figure class="ui large image middle aligned">
+            <img srcset="/img/services/understand-learn-1x.webp 1x, /img/services/understand-learn-2x.webp 2x" src="/img/services/understand-learn-2x.webp" loading="lazy">
           <figcaption>Understand & Learn</figcaption>
         </figure>
       </div>

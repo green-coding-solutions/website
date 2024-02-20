@@ -34,41 +34,41 @@ So also only a measurement & optimize workshop to bring your developers up to co
 
 
 <div class="ui five stackable steps">
-  <div class="ui step orange segment">
+  <a class="ui step segment" href="#understand">
     <i class="graduation icon"></i>
     <div class="content">
       <div class="title">Understand</div>
        <div class="description">Understand why and how your software emits CO2</div>
     </div>
-  </div>
-  <div class="ui step yellow segment">
+  </a>
+  <a class="ui step segment" href="#assess">
     <i class="calculator icon"></i>
     <div class="content">
       <div class="title">Assess</div>
        <div class="description">Measure, benchmark and calculate</div>
     </div>
-  </div>
-  <div class="ui step teal segment">
+  </a>
+  <a class="ui step segment" href="#report">
     <i class="edit icon"></i>
     <div class="content">
       <div class="title">Report</div>
        <div class="description">Transparency & observability is <strong>key</strong></div>
     </div>
-  </div>
-  <div class="ui step olive segment">
+  </a>
+  <a class="ui step segment" href="#optimise">
     <i class="tachometer alternate icon"></i>
     <div class="content">
       <div class="title">Optimise</div>
       <div class="description">Reduce your digital carbon emissions</div>
     </div>
-  </div>
-  <div class="ui step green segment">
+  </a>
+  <a class="ui step segment" href="#automate">
     <i class="robot icon"></i>
     <div class="content">
       <div class="title">Automate</div>
       <div class="description">Integrate into DevOps and continuously optimize</div>
     </div>
-  </div>
+  </a>
 </div>
 
 {{< whiteblock >}}
@@ -80,10 +80,10 @@ Details
 
 
 
-<div class="ui raised padded orange stacked segment">
+<div id="understand" class="ui raised padded orange stacked segment">
     <div class="ui items">
       <div class="item">
-        <div class="image middle aligned">
+        <div class="ui mini image">
         </div>
         <div class="content">
           <h2>Understand</h2>
@@ -110,10 +110,10 @@ Details
 </div>
 
 
-<div class="ui raised padded yellow stacked segment">
+<div id="assess" class="ui raised padded yellow stacked segment">
     <div class="ui items">    
       <div class="item">
-        <div class="image middle aligned">
+        <div class="ui mini image">
         </div>
         <div class="content">
           <h2>Assessment & Operations</h2>
@@ -129,7 +129,7 @@ Details
               Consulting offers
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top" href="/services/software-integrations">
+          <a class="ui right floated primary button distance-top" href="/services/development-and-integrations">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
@@ -138,10 +138,10 @@ Details
     </div>
 </div>
 
-<div class="ui raised padded teal stacked segment">
+<div id="report" class="ui raised padded teal stacked segment">
     <div class="ui items">    
       <div class="item">
-        <div class="image middle aligned">
+        <div class="ui mini image">
         </div>
         <div class="content">
           <h2>Report</h2>
@@ -159,7 +159,7 @@ Details
               Consulting offers
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top" href="/services/software-integrations">
+          <a class="ui right floated primary button distance-top" href="/services/development-and-integrations">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
@@ -168,10 +168,10 @@ Details
     </div>
 </div>
 
-<div class="ui raised padded olive stacked segment">
+<div id="optimise" class="ui raised padded olive stacked segment">
     <div class="ui items">    
       <div class="item">
-        <div class="image middle aligned">
+        <div class="ui mini image">
         </div>
         <div class="content">
           <h2>Optimisation</h2>
@@ -184,7 +184,7 @@ Details
             <p>By suggesting tailored optimisation concepts to your company and product needs we identify and quantify carbon savings and integrate them with you.</p>
             <p>Quick wins can often be gained with minimal effort while long-term goals can often easily attained by employing constant monitoring and constant optimizations with every software build.</p>
           </div>
-          <a class="ui right floated primary button distance-top" href="/consulting/software-integrations">
+          <a class="ui right floated primary button distance-top" href="/consulting/development-and-integrations">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
@@ -197,10 +197,10 @@ Details
     </div>
 </div>
 
-<div class="ui raised padded green stacked segment">
+<div id="automate" class="ui raised padded green stacked segment">
     <div class="ui items">    
       <div class="item">
-        <div class="image middle aligned">
+        <div class="ui mini image">
         </div>
         <div class="content">
           <h2>Automate</h2>
