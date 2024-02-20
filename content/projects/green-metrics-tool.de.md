@@ -19,6 +19,8 @@ Bitte lesen Sie alle Details auf Github und in der Dokumentation.
 
 {{< button "code branch" "Github" "https://github.com/green-coding-berlin/green-metrics-tool" >}}
 
+{{< button "eye" "Screenshots" "#screenshots" >}}
+
 {{< button "columns" "Demo Dashboard" "https://metrics.green-coding.io" >}}
 
 ---
@@ -26,7 +28,7 @@ Bitte lesen Sie alle Details auf Github und in der Dokumentation.
 ## Screenshots der Einzelmessungen
 
 {{< rawhtml >}}
-<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-1.webp" alt="GMT Screenshot" loading="lazy" style="margin:auto;">
+<img id="screenshots" class="ui rounded bordered image" src="/img/projects/gmt-screenshot-1.webp" alt="GMT Screenshot" loading="lazy" style="margin:auto;">
 <br>
 <img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-2.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
 <br>

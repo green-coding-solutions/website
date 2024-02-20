@@ -8,9 +8,9 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-Möchten Sie die Software und IT nachhaltig optimiren in Bezug auf Energie und CO2-Emissionen? Ganz gleich, ob Sie diese Transformation gerade erst beginnen oder ob Sie die Emissionen weiter optimieren und reduzieren möchten, wir können Ihnen helfen!
+Wir helfen Ihnen bei der Umwandlung Ihrer Software in ein nachhaltiges Produkt. 
 
-Unser Team besteht aus erfahrenen Software-Performance- und Pipeline-Ingenieuren, die sich inzwischen auf nachhaltige Software-Entwicklung spezialisiert haben.
+Scrollen Sie nach unten und sehen Sie, wie wir mit Unternehmen in unserem 5-stufigen Ansatz arbeiten. 
 
 Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien](/de/#nav-meetups), entwickeln
 [Projekte](/de/#projects) sowie [Open-Source-Tools zur Messung von CO2 in Containern](/de/projects/green-metrics-tool) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling](/de/projects/eco-ci)
@@ -24,7 +24,7 @@ Papiere und akademische Papiere für Software-Lebenszyklus-Bewertung und Softwar
 
 
 {{< greenblock >}}
-Dienstleistungen
+Leistungen
 {{</ greenblock >}}
 
 {{< rawhtml >}}
