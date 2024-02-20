@@ -37,35 +37,35 @@ So also only a measurement & optimize workshop to bring your developers up to co
   <div class="ui step orange segment">
     <i class="graduation icon"></i>
     <div class="content">
-      <div class="orange title">Understand</div>
+      <div class="title">Understand</div>
        <div class="description">Understand why and how your software emits CO2</div>
     </div>
   </div>
   <div class="ui step yellow segment">
     <i class="calculator icon"></i>
     <div class="content">
-      <div class="yellow title">Assess</div>
+      <div class="title">Assess</div>
        <div class="description">Measure, benchmark and calculate</div>
     </div>
   </div>
   <div class="ui step teal segment">
     <i class="edit icon"></i>
     <div class="content">
-      <div class="teal title">Report</div>
+      <div class="title">Report</div>
        <div class="description">Transparency & observability is <strong>key</strong></div>
     </div>
   </div>
   <div class="ui step olive segment">
     <i class="tachometer alternate icon"></i>
     <div class="content">
-      <div class="olive title">Optimise</div>
+      <div class="title">Optimise</div>
       <div class="description">Reduce your digital carbon emissions</div>
     </div>
   </div>
   <div class="ui step green segment">
     <i class="robot icon"></i>
     <div class="content">
-      <div class="green title">Automate</div>
+      <div class="title">Automate</div>
       <div class="description">Integrate into DevOps and continuously optimize</div>
     </div>
   </div>
@@ -80,7 +80,7 @@ Details
 
 
 
-<div class="ui raised padded red stacked segment">
+<div class="ui raised padded orange stacked segment">
     <div class="ui items">
       <div class="item">
         <div class="image middle aligned">
@@ -110,7 +110,7 @@ Details
 </div>
 
 
-<div class="ui raised padded blue stacked segment">
+<div class="ui raised padded yellow stacked segment">
     <div class="ui items">    
       <div class="item">
         <div class="image middle aligned">
@@ -138,7 +138,7 @@ Details
     </div>
 </div>
 
-<div class="ui raised padded orange stacked segment">
+<div class="ui raised padded teal stacked segment">
     <div class="ui items">    
       <div class="item">
         <div class="image middle aligned">
@@ -168,7 +168,7 @@ Details
     </div>
 </div>
 
-<div class="ui raised padded orange stacked segment">
+<div class="ui raised padded olive stacked segment">
     <div class="ui items">    
       <div class="item">
         <div class="image middle aligned">
@@ -197,7 +197,7 @@ Details
     </div>
 </div>
 
-<div class="ui raised padded orange stacked segment">
+<div class="ui raised padded green stacked segment">
     <div class="ui items">    
       <div class="item">
         <div class="image middle aligned">
