@@ -37,315 +37,138 @@ The **community version** gives you all the functionality for measurement and be
 
 However we also offer a **hosted version** as **SaaS** which includes some premium features and a support plan. 
 
-
-### Comparison
-
-
-
-User
-can you make me the HTML and CSS for a Semantic UI pricing page with 3 items
-ChatGPT
-Sure! Below is an example of HTML and CSS code for a Semantic UI pricing page with 3 items:
-
-
-## Version #1
-
-<div class='ui container codepen-margin'>
-    <div class="ui grid">
-        <div class="five wide column">
-            <div class="ui raised segments">
-                <div class="ui center aligned secondary segment">
-                    <div class="ui statistic">
-                        <div class="value">
-                            $50
-                        </div>
-                        <div class="label">
-                            per month
-                        </div>
-                    </div>
-                </div>
-                <div class="ui center aligned segment">
-                    <p> - Premium Feature One </p>
-                </div>
-                <div class="ui center aligned segment">
-                    <p> - Another great feature </p>
-                </div>
-            </div>
-            <div class="ui green fluid button">
-                Select
-            </div>
-        </div>
-        <div class="five wide column">
-            <div class="ui raised segments">
-                <div class="ui center aligned secondary segment">
-                    <div class="ui statistic">
-                        <div class="value">
-                            $20
-                        </div>
-                        <div class="label">
-                            per month
-                        </div>
-                    </div>
-                </div>
-                <div class="ui center aligned segment">
-                    <p> - A basic feature </p>
-                </div>
-                <div class="ui center aligned segment">
-                    <p> - Look. No additional CSS or anything </p>
-                </div>
-            </div>
-            <div class="ui green fluid button">
-                Select
+<div class="ui horizontal divider header"><i class="tag icon"></i>Comparison Table</div>
+<br>
+<div class="ui three column stackable grid">
+    <div class="ui column">
+    <div class="ui fluid card">
+        <div class="content">
+            <div class="header center aligned">Community version</div>
+            <div class="meta center aligned">free and open source</div>
+            <div class="ui divider horizontal">$0 / month</div>
+            <div class="ui list">
+                <div class="item"><i class="icon checkmark"></i> <div class="content">
+                    Fully featured local measurement
+                </div></div>
+                <div class="item"><i class="icon checkmark"></i> <div class="content">
+                    All Metric Providers included
+                </div></div>
+                <div class="item"><i class="icon checkmark"></i> <div class="content">
+                    AGPLv3 licensed
+                </div></div>
+                <div class="item"><i class="icon checkmark"></i> <div class="content">
+                    Install cluster on your own
+                </div></div>
+                <div class="item"><i class="icon checkmark"></i> <div class="content">
+                    Free SaaS tier for open source communities
+                </div></div>
+                <hr>
+                <div class="item"><i class="icon times"></i> <div class="content">
+                    No setup support
+                </div></div>
+                <div class="item"><i class="icon times"></i> <div class="content">
+                    No measurement support
+                </div></div>
+                <div class="item"><i class="icon times"></i> <div class="content">
+                    No telephone support (Github Issues only)
+                </div></div>
             </div>
         </div>
-        <div class="five wide column">
-            <div class="ui raised segments">
-                <div class="ui center aligned secondary segment">
-                    <div class="ui statistic">
-                        <div class="value">
-                            $20
-                        </div>
-                        <div class="label">
-                            per month
-                        </div>
-                    </div>
-                </div>
-                <div class="ui center aligned segment">
-                    <p> - A basic feature </p>
-                </div>
-                <div class="ui center aligned segment">
-                    <p> - Look. No additional CSS or anything </p>
-                </div>
+        <div class="extra content">
+            <button class="ui button fluid grey disabled">Free (Download on Github)</button>
+        </div>
+    </div>
+    </div>
+    <div class="ui column">
+    <div class="ui card fluid raised">
+        <div class="content">
+            <div class="header center aligned">Premium</div>
+            <div class="meta center aligned">Support & maintenance.</div>
+            <div class="ui divider horizontal">200 EUR / month</div>
+            <div class="ui list">
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>All</b> Community Features
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    Hosted <b>SaaS</b> version
+                    <br><small>Serviced updates and maintenance</small>
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>10.000</b> benchmarking minutes
+                    <br><small>Additional minutes can be purchased</small>
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>120</b> days of data retention
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Basic</b> optimizations
+                    <br><small><a href="#optimizations">Screenshots</a> | Documentation</small>
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Offset contolled</b> cluster
+                    <br><small><a href="https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-berlin/measurement-control-workload&filename=usage_scenario.yml&branch=event-bound&machine_id=7">Measurements guaranteed < 1% Std.Dev</a></small>                        
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>High precision</b> measurements
+                    <br><small><a href="/blog/nop-linux/">See details (NOP Linux)</a></small>                        
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Support</b> the development
+                </div></div>
             </div>
-            <div class="ui green fluid button">
-                Select
+        </div>
+        <div class="extra content">
+            <button class="ui button fluid blue">Get in touch</button>
+        </div>
+    </div>
+    </div>
+    <div class="ui column">
+    <div class="ui fluid card">
+        <div class="content">
+            <a class="ui label left corner blue">
+                <i class="icon plus"></i>
+            </a>
+            <div class="header center aligned">Enterprise</div>
+            <div class="meta center aligned">Custom to your needs</div>
+            <div class="ui divider horizontal">Individual pricing</div>
+            <div class="ui list">
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    Includes <b>all</b> Premium features
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Unlimited</b> measurements
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Unlimited</b> data rentention
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Individual</b> setup & support
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Whitelabel</b> & <b>Dual-Licensing</b> options
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    Advanced <b>Green Coding AI</b> Optimizations
+                    <br><small>It is so advanced you cannot believe it!</small>
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Support</b> the development
+                </div></div>
             </div>
-        </div>      
+        </div>
+        <div class="extra content">
+            <a class="ui button fluid blue" href="mailto:info@green-coding.io">Get in touch</a>
+        </div>
+    </div>
     </div>
 </div>
 
+<br>
+<br>
 
-## Version #2
-
-<div class="ui four column grid container">
-    <div class="column">
-        <div class="ui raised segment">
-            <h2 class="ui header">Basic</h2>
-            <p>$10/month</p>
-            <p>5GB Storage</p>
-            <p>10 Users</p>
-            <p>Support at $10/hour</p>
-            <button class="ui primary button">Choose</button>
-        </div>
-    </div>
-    <div class="column">
-        <div class="ui raised segment">
-            <h2 class="ui header">Pro</h2>
-            <p>$20/month</p>
-            <p>10GB Storage</p>
-            <p>20 Users</p>
-            <p>Support at $5/hour</p>
-            <button class="ui primary button">Choose</button>
-        </div>
-    </div>
-    <div class="column">
-        <div class="ui raised segment">
-            <h2 class="ui header">Premium</h2>
-            <p>$30/month</p>
-            <p>20GB Storage</p>
-            <p>Unlimited Users</p>
-            <p>Free Support</p>
-            <button class="ui primary button">Choose</button>
-        </div>
-    </div>
-</div>
-
-## Version #3
-
-<div class="ui container">
-    <div class="ui header center aligned">Comparison Table</div>
-    <div class="ui cards three">
-        <div class="ui card">
-            <div class="content">
-                <div class="header center aligned">Community version</div>
-                <div class="meta center aligned">free and open source</div>
-                <div class="ui divider horizontal">$0 / month</div>
-                <div class="ui list">
-                    <div class="item"><i class="icon checkmark"></i> <div class="content">
-                        Fully featured local measurement
-                    </div></div>
-                    <div class="item"><i class="icon checkmark"></i> <div class="content">
-                        All Metric Providers included
-                    </div></div>
-                    <div class="item"><i class="icon checkmark"></i> <div class="content">
-                        AGPLv3 licensed
-                    </div></div>
-                    <div class="item"><i class="icon checkmark"></i> <div class="content">
-                        Install cluster on your own
-                    </div></div>
-                    <div class="item"><i class="icon checkmark"></i> <div class="content">
-                        Free SaaS tier for open source communities
-                    </div></div>
-                    <hr>
-                    <div class="item"><i class="icon times"></i> <div class="content">
-                        No setup support
-                    </div></div>
-                    <div class="item"><i class="icon times"></i> <div class="content">
-                        No measurement support
-                    </div></div>
-                    <div class="item"><i class="icon times"></i> <div class="content">
-                        No telephone support (Github Issues only)
-                    </div></div>
-                </div>
-            </div>
-            <div class="extra content">
-                <button class="ui button fluid grey disabled">Free (Download on Github)</button>
-            </div>
-        </div>
-        <div class="ui card raised">
-            <div class="content">
-                <div class="header center aligned">Premium</div>
-                <div class="meta center aligned">Includes Support. Excludes maintenance.</div>
-                <div class="ui divider horizontal">200 EUR / month</div>
-                <div class="ui list">
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        Includes <b>all</b> Community Features
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        Hosted <b>SaaS</b> version
-                        <br><small>Serviced updates and maintenance</small>
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>10.000</b> benchmarking minutes
-                        <br><small>Additional minutes can be purchased</small>
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>120</b> days of data retention
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>Basic</b> optimization recommendations
-                        <br><small><a href="#optimizations">Screenshots</a> | Documentation</small>
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>Offset contolled</b> cluster
-                        <br><small><a href="https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-berlin/measurement-control-workload&filename=usage_scenario.yml&branch=event-bound&machine_id=7">Measurements guaranteed < 1% Std.Dev</a></small>                        
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>High precision</b> measurements
-                        <br><small><a href="/blog/nop-linux/">See details (NOP Linux)</a></small>                        
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>Support</b> the development
-                    </div></div>
-                </div>
-            </div>
-            <div class="extra content">
-                <button class="ui button fluid blue">Order now</button>
-            </div>
-        </div>
-        <div class="ui card">
-            <div class="content">
-                <a class="ui label left corner blue">
-                    <i class="icon plus"></i>
-                </a>
-                <div class="header center aligned">Enterprise</div>
-                <div class="meta center aligned">Custom to your needs</div>
-                <div class="ui divider horizontal">from $1.000 / month</div>
-                <div class="ui list">
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        Includes <b>all</b> Premium features
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>Unlimited</b> measurements
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>Unlimited</b> data rentention
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>Individual</b> setup & support
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>Whitelabel</b> & <b>Dual-Licensing</b> options
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        Advanced <b>Green Coding AI</b> Optimizations
-                        <br><small>It is so advanced you cannot believe it!</small>
-                    </div></div>
-                    <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                        <b>Support</b> the development
-                    </div></div>
-                </div>
-            </div>
-            <div class="extra content">
-                <a class="ui button fluid blue" href="mailto:info@green-coding.io">Get in touch</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-## version #4
-<div class="ui placeholder segment">
-    <div class="ui three column stackable center aligned grid">
-        <div class="middle aligned row">
-            <div class="column">
-                <div class="ui statistic">
-                    <div class="value">
-                        0,00 €
-                    </div>
-                    <div class="label">
-                        Community <i class="users icon"></i>
-                    </div>
-                </div>
-                <div class="field">
-                    <ul>
-                        <li>List Item</li>
-                        <li>List asdasdsa</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="column">
-                <div class="ui statistic">
-                    <div class="value">
-                        250,00 €
-                    </div>
-                    <div class="label">
-                        Open Source Supporter <i class="edit icon"></i>
-                    </div>
-                </div>
-                <div class="field">
-                    <ul>
-                        <li>List Item</li>
-                        <li>List asdasdsa</li>
-                        <li>List Item</li>
-                        <li>List Item</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="column">
-                <div class="ui icon header">
-                    <i class="world icon"></i>
-                    Enterprise
-                </div>
-                <ul>
-                    <li>Custom licensing options</li>
-                    <li>White label options</li>
-                    <li>List Item</li>
-                    <li>List Item</li>
-                </ul>
-                <div class="ui primary button">
-                    Contact us
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
----
-
-## Screenshots of the Single Run View
+<br>
+<div class="ui horizontal divider header"><i class="eye icon"></i>Single Run View</div>
+<br>
 
 <div id="screenshots"></div>
 
@@ -356,7 +179,9 @@ Sure! Below is an example of HTML and CSS code for a Semantic UI pricing page wi
 
 ---
 
-## Screenhots of the comparison view
+<br>
+<div class="ui horizontal divider header"><i class="eye icon"></i>Comparison View</div>
+<br>
 
 {{< image "/img/projects/gmt-screenshot-5.webp" "rounded full-width" >}}
 {{< image "/img/projects/gmt-screenshot-6.webp" "rounded full-width" >}}
@@ -364,7 +189,9 @@ Sure! Below is an example of HTML and CSS code for a Semantic UI pricing page wi
 
 ---
 
-## Hosted Version Features (SaaS)
+<br>
+<div class="ui horizontal divider header"><i class="eye icon"></i>Hosted Version Features (SaaS)</div>
+<br>
 
 <div id="optimizations"></div>
 
