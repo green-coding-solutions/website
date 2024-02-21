@@ -4,6 +4,8 @@ date: 2023-01-15 19:00:00
 publishDate: 2023-01-15
 draft: false
 icon: "leaf"
+desc: "A tool that enables you to see the carbon emissions your company has ready for reporting. It tracks the energy consumption and embodied carbon of all your resources and calculates the carbon depending on the grid emissions"
+
 ---
 
 Eco CI is the internal name for a project where we create small tools to make CI pipelines more transparent

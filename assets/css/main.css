@@ -2352,11 +2352,12 @@ figure figcaption {
 }
 
 #project-items-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    /* display: flex; */
+    justify-content: left;
+    /* flex-wrap: wrap; */
     max-width: 800px;
     margin:auto;
+	color: #fff;
 }
 
 a.project-item {

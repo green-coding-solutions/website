@@ -23,14 +23,18 @@
         </div>
     </div>
 </section><!-- end about -->
+
+
 <section id="projects" class="bg-two">
     <div id="nav-projects"></div>
-    <div class="section-two bottom-works">
+
+    <div class="single-page section-two">
+
         <h1><div class="title-two">{{ i18n "home_projects" }}</div></h1>
         <div class="separator">
             <div class="line line-2"></div>
         </div>
-        <div class="data-content-two">
+        <div class="data-content-two" style="text-align: center">
             {{ i18n "home_projects_teaser" }}
         </div>
         <div id="project-items-container" class="data-content-two">
@@ -40,13 +44,37 @@
                 if a folder is not fully translated
             */}}
 
-            {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "projects" ) ) }}
+            <!-- {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "projects" ) ) }}
                 <a class="project-item" href="{{.Permalink}}">
                     <i class="{{ .Params.Icon }} icon"></i>
                     <div class="project-item-title">{{ .Title }}</div>
                 </a>
             {{end}}
+            <p></p> -->
+            <div class="ui relaxed items" id="carousel">
+                {{ range $index, $element := (  where .Site.RegularPages "Type" "projects" )  }}
+                <div class="item" id="item{{$index}}">
+                    <div class="ui image">
+                        <i class="{{ .Params.Icon }} huge icon"></i>
+                    </div>
+                    <div class="content" style="color: white;">
+                        <a class="header" href="{{.Permalink}}" style="color: white;" >{{ .Title }}</a>
+                        <p>{{.Params.Desc}}</p>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+
+            <div style="display: flex; justify-content: center;" id="carousel_buttons">
+                {{ range $index, $element := (  where .Site.RegularPages "Type" "projects" )  }}
+                <button class="ui circular icon button" id="button{{$index}}" >
+                    <i class="{{ .Params.Icon }} icon" ></i>
+                </button>
+                {{end}}
+            </div>
+
         </div>
+
 
     </div><!-- end portfolio -->
 

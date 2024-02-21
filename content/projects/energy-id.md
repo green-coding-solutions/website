@@ -4,6 +4,8 @@ date: 2023-08-02 10:00:00
 publishDate: 2023-08-02
 draft: false
 icon: "portrait"
+desc: "A tool that enables you to see the carbon emissions your company has ready for reporting. It tracks the energy consumption and embodied carbon of all your resources and calculates the carbon depending on the grid emissions"
+
 ---
 
 In the Energy ID project we are looking at popular open source software and benchmark their Energy, CO2 and the [Green Software Foundation's SCI](https://sci-guide.greensoftware.foundation/) metric via our [Green Metrics Tool](/projects/green-metrics-tool/)

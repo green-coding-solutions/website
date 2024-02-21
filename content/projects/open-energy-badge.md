@@ -5,6 +5,7 @@ publishDate: 2023-01-14
 draft: false
 projectimg: "/img/projects/open-energy-badge.webp"
 icon: "battery three quarters"
+desc: "A tool that enables you to see the carbon emissions your company has ready for reporting. It tracks the energy consumption and embodied carbon of all your resources and calculates the carbon depending on the grid emissions"
 
 ---
 

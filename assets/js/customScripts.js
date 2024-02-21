@@ -12,7 +12,6 @@ $(document).ready(function() {
 	$(".photo-footer").mouseleave(function() {
 			$(".plus-btn", this).stop().animate({top:0},'fast');
 	});
-	
 	// ----------- TEAM NEXT/PREV ----------- //
 
 	var current_team_page=0;
@@ -156,6 +155,48 @@ $(document).ready(function() {
     }
     localStorage.setItem("language_set", true);
 
+	// ----------------- CAROUSEL HOME ------------------ //
+
+    var totalItems = $('#carousel .item').length;
+    if (totalItems > 0){
+        var currentIndex = 0;
+        var autoSlideTimer;
+
+        function showItem() {
+          $('#carousel .item').hide();
+          $('#carousel #item' + currentIndex).fadeIn('slow');
+          updateButtonStyles(currentIndex);
+        }
+
+        function updateButtonStyles(currentIndex) {
+          $('#carousel_buttons .button').removeClass('orange');
+          $('#carousel_buttons .button').eq(currentIndex).addClass('orange');
+        }
+
+        function startAutoSlide() {
+          if(autoSlideTimer) {
+            clearInterval(autoSlideTimer);
+          }
+          autoSlideTimer = setInterval(function() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            showItem();
+          }, 3000);
+        }
+
+        $('#carousel .item').hide();
+        $('#carousel .item').first().fadeIn();
+        updateButtonStyles(0);
+        startAutoSlide();
+
+        $('#carousel_buttons .button').each(function(index) {
+          $(this).on('click', function() {
+            currentIndex = index;
+            showItem();
+            startAutoSlide();
+          });
+        });
+
+    }
 });// JavaScript Document
 })(jQuery);
 
