@@ -69,7 +69,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                     No measurement support
                 </div></div>
                 <div class="item"><i class="icon times"></i> <div class="content">
-                    No telephone support
+                    Only public git repositories
                 </div></div>
             </div>
         </div>
@@ -99,6 +99,9 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>120</b> days of data retention
                 </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Private</b> git repositories
+                </div></div>                
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Basic</b> optimizations
                     <br><small><a href="#optimizations">Screenshots</a> | Documentation</small>
