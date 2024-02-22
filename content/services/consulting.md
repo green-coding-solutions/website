@@ -29,14 +29,12 @@ We go with clients through the journey of first understanding the background of 
             <p>To implement business goals and KPIs it is key to understand where the biggest sources of carbon emissions lie (scope 3 upstream, downstream or even in scope 2) and where the biggest levers are.</p>
             <p>Our consulting offer focuses on key business goals and product needs with a focus on carbon efficiency and carbon reduction. The target is to incorporate carbon metrics into central DevOps, Engineering and also Management Dashboards to enable businesses to act effectively in reducting software carbon emissions.</p>
           </div>
-          <!-- TODO
           <div class="extra">            
-            <div class="ui left floated orange button">
-              Download our KPI / carbon pricing sample client case
+            <a class="ui orange button" href="/files/case-studies/case-study-kpi.pdf">
+              Download our KPI / carbon pricing case study
               <i class="right chevron icon"></i>
-            </div>
+            </a>
           </div>
-          -->
         </div>
         <figure class="ui large image middle aligned">
             <img srcset="/img/services/understand-learn-1x.webp 1x, /img/services/understand-learn-2x.webp 2x" src="/img/services/understand-learn-2x.webp" loading="lazy">
@@ -104,14 +102,14 @@ We go with clients through the journey of first understanding the background of 
             <p>If your scaling factor is sufficient also algorithmical changes and / or runtime swap-outs have enormous benefits and can drive drown carbon emissions by 2-digit percentages.</p>
             <p>We evaluate which technique is right for you at your current company / product stage and either plan for internal trainings to leverage your existing development teams or integrate our enterprise tooling which helps you surface concrete engineering implementations that you can apply.</p>
           </div>
-          <!-- TODO
+          <br>
           <div class="extra">            
-            <div class="ui left floated orange button">
-              Download our KPI / carbon pricing case study
+            <a class="ui right floated orange button" href="/files/case-studies/case-study-carbon-profiling.pdf">
+              Download our carbon profiling case study
               <i class="right chevron icon"></i>
-            </div>
+            </a>
           </div>
-          -->
+          <br>
         </div>        
       </div>
     </div>
