@@ -4,8 +4,8 @@ date: 2023-01-13 19:00:00
 publishDate: 2023-01-13
 draft: false
 icon: "cloud"
-desc: "A tool that enables you to see the carbon emissions your company has ready for reporting. It tracks the energy consumption and embodied carbon of all your resources and calculates the carbon depending on the grid emissions"
-
+desc: "Our Machine Learning model for energy measurement in the cloud, for both virtualized and bare metal environments. Based on SPECPower data, it enables precise inline measurements and energy budgeting."
+ordering: 3
 ---
 
 

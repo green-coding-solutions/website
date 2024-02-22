@@ -4,7 +4,8 @@ date: 2023-9-20 19:00:00
 publishDate: 2023-01-16
 draft: false
 icon: "piggy bank"
-desc: "A tool that enables you to see the carbon emissions your company has ready for reporting. It tracks the energy consumption and embodied carbon of all your resources and calculates the carbon depending on the grid emissions"
+desc: "Power Hog offers tools for monitoring computer energy consumption, focusing on process analysis, central data collection for optimization, and CO2 data submission."
+ordering: 5
 
 ---
 

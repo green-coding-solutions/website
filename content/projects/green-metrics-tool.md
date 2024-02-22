@@ -5,8 +5,8 @@ publishDate: 2023-01-16
 draft: false
 projectimg: "/img/projects/gmt-rapl-graph.webp"
 icon: "code"
-desc: "A tool that enables you to see the carbon emissions your company has ready for reporting. It tracks the energy consumption and embodied carbon of all your resources and calculates the carbon depending on the grid emissions"
-
+desc: "The Green Metrics Tool is a holistic framework to measure the energy / CO2 of your application."
+ordering: 1
 ---
 
 The Green Metrics Tool is a free open-source (FOSS) tool we designed as a concept on how we believe it can support

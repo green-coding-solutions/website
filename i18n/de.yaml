@@ -8,8 +8,6 @@
   translation: "Mehr erfahren über die CO2-Emissionen von Software"
 - id: home_projects
   translation: "Projekte"
-- id: home_projects_teaser
-  translation: "Wir entwickeln Werkzeuge, die es Entwicklern und Anwendern ermöglichen Optimierungen zu machenum den Energieverbrauch und CO2-Emissionen zu senken"
 
 - id: future_home_talks_teaser
   translation: "Zukünftige Events und Veranstaltungen"

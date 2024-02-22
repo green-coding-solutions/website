@@ -4,6 +4,8 @@ date: 2023-08-02 10:00:00
 publishDate: 2023-08-02
 draft: false
 icon: "portrait"
+desc: "Energy ID misst Open-Source-Software hinsichtlich Energie, CO2 und der SCI-Metrik der Green Software Foundation mit dem Green Metrics Tool. Es bietet eine Bewertungskarte mit Beschreibungen, Szenarien, Messungen und Badge aus dem OpenEnergyBadge-Projekt, um die Energie-/Kohlenstoffkosten typischer Softwareanwendungsfälle hervorzuheben."
+ordering: 4
 ---
 
 Im Energy-ID-Projekt untersuchen wir populäre Open-Source-Software und vergleichen ihren Energie- und CO2-Verbrauch sowie die SCI-Metrik der [Green Software Foundation](https://sci-guide.greensoftware.foundation/) mit Hilfe unseres [Green Metrics Tool](/de/projects/green-metrics-tool/)

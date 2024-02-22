@@ -27,46 +27,26 @@
 
 <section id="projects" class="bg-two">
     <div id="nav-projects"></div>
-
     <div class="single-page section-two">
 
-        <h1><div class="title-two">{{ i18n "home_projects" }}</div></h1>
-        <div class="separator">
-            <div class="line line-2"></div>
-        </div>
-        <div class="data-content-two" style="text-align: center">
-            {{ i18n "home_projects_teaser" }}
-        </div>
+        <h1><div class="title-two title-two-no-bottom-padding">{{ i18n "home_projects" }}</div></h1>
         <div id="project-items-container" class="data-content-two">
-            {{/*
-                In an untranslated page this call would be ... where .Site.RegularPages "Type" ...
-                But since the Site object changes depending on the current language we will get an empty folder
-                if a folder is not fully translated
-            */}}
-
-            <!-- {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "projects" ) ) }}
-                <a class="project-item" href="{{.Permalink}}">
-                    <i class="{{ .Params.Icon }} icon"></i>
-                    <div class="project-item-title">{{ .Title }}</div>
-                </a>
-            {{end}}
-            <p></p> -->
             <div class="ui relaxed items" id="carousel">
-                {{ range $index, $element := (  where .Site.RegularPages "Type" "projects" )  }}
+                {{ range $index, $element := sort (where .Site.RegularPages "Type" "projects") ".Params.ordering" "asc" }}
                 <div class="item" id="item{{$index}}">
                     <div class="ui image">
-                        <i class="{{ .Params.Icon }} huge icon"></i>
+                        <a href="{{.Permalink}}"><i class="{{ .Params.Icon }} huge icon project-item-white"></i></a>
                     </div>
-                    <div class="content" style="color: white;">
-                        <a class="header" href="{{.Permalink}}" style="color: white;" >{{ .Title }}</a>
-                        <p>{{.Params.Desc}}</p>
+                    <div class="content project-item-white">
+                        <a class="header project-item-white" href="{{.Permalink}}">{{ .Title }}</a>
+                        <p><a href="{{.Permalink}}" class="project-item-white">{{.Params.Desc}}</a></p>
                     </div>
                 </div>
                 {{end}}
             </div>
 
-            <div style="display: flex; justify-content: center;" id="carousel_buttons">
-                {{ range $index, $element := (  where .Site.RegularPages "Type" "projects" )  }}
+            <div id="carousel_buttons">
+                {{ range $index, $element := sort (where .Site.RegularPages "Type" "projects") ".Params.ordering" "asc" }}
                 <button class="ui circular icon button" id="button{{$index}}" >
                     <i class="{{ .Params.Icon }} icon" ></i>
                 </button>

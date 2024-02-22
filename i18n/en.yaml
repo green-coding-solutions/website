@@ -8,8 +8,6 @@
   translation: "Read some details about the carbon emissions of software"
 - id: home_projects
   translation: "Projects"
-- id: home_projects_teaser
-  translation: "We develop tools to empower developers and users to reduce energy and carbon emissons of software"
 
 - id: future_home_talks_teaser
   translation: "Future events and talks"

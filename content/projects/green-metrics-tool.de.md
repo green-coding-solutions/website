@@ -5,6 +5,8 @@ publishDate: 2023-01-16
 draft: false
 projectimg: "/img/projects/gmt-rapl-graph.webp"
 icon: "code"
+desc: "Das Green Metrics Tool ist ein ganzheitliches Framework zur Messung des Energie- / CO2-Verbrauchs Ihrer Anwendung."
+ordering: 1
 ---
 
 Das Green Metrics Tool ist ein freies Open-Source (FOSS) Tool, das wir entwickelt haben um EntwicklerInnen am besten dabei zu unterstützen, den Energie- / CO2-Verbrauch von Software-Architekturen zu messen.
