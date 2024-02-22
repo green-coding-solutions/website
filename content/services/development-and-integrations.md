@@ -30,14 +30,14 @@ We develop [industry wide used state of the art open source software](/#projects
             <p>Carbon transparent applications report this values typically as an SCI value. We have done numerous of these profilings already and also submit use-cases to the Green Software Foundation for open source tools.</p>
             <p>Application carbon profiles can be used to drive optimizations, drive team and talent engagement and for external communication like reportings and marketing.</p>
           </div>
-          <!-- TODO
+          <br>
           <div class="extra">            
-            <div class="ui left floated orange button">
-              Download our sample case study
+            <a class="ui orange button" href="/files/case-studies/case-study-carbon-profiling.pdf">
+              Download our carbon profiling case study
               <i class="right chevron icon"></i>
-            </div>
+            </a>
           </div>
-          -->
+          <br>
         </div>
         <figure class="ui large image">
             <img srcset="/img/services/integrations-profiling-1x.webp 1x, /img/services/integrations-profiling-2x.webp 2x" src="/img/services/integrations-profiling-1x.webp" loading="lazy">
