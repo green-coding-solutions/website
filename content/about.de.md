@@ -75,7 +75,7 @@ Hier werden Inline-Messungen benötigt, die in bereits existierende Beobachtungs
 
 Anhand von Fallstudien wollen wir auch die Overhead-Kosten der Virtualisierung aufzeigen und Metriken bereitstellen, um fundierte Entscheidungen zu treffen, welches Architekturmodell am besten in eine energiebewusste Unternehmenskultur passt.
 
-Sehen Sie sich auch [unsere Projekte](/de/projects)
+Sehen Sie sich auch [unsere Projekte]({{< relref path="projects" >}})
 
 {{< whiteblock >}}
 Entwicklung von Software
@@ -96,7 +96,7 @@ Wir entwickeln Inline-Plugins für Github Actions und Badges, die andere Leute d
 
 Außerdem konzentrieren wir uns auf den Aufbau von statischen Websites, die in der Regel weniger Resourcen verbrauchen, aber auch gebaut werden müssen.
 
-Schauen Sie sich unser [OpenEnergyBadge Projekt](/de/projects/open-energy-badge), unsere [Eco CI-plugins for Github](/de/projects/eco-ci) oder unsere [Case Studies](/case-studies/) zu diesem Thema an.
+Schauen Sie sich unser [OpenEnergyBadge Projekt]({{< relref path="projects/open-energy-badge" >}}), unsere [Eco CI-plugins for Github]({{< relref path="projects/eco-ci" >}}) oder unsere [Case Studies]({{< relref path="case-studies" lang="en" >}}) zu diesem Thema an.
 
 Beispiel Abzeichen: {{< rawhtml >}} <a href="https://metrics.green-coding.io/stats.html?id=01e4f6e1-318f-4ecb-a19f-041439a50065"><img src="https://api.green-coding.io/v1/badge/single/01e4f6e1-318f-4ecb-a19f-041439a50065?metric=AC"></a>{{< /rawhtml >}}
 
@@ -112,7 +112,7 @@ Großartige Tools wie [Websitecarbon.com](https://www.websitecarbon.com/) ermög
 Website-Anfrage.
 
 Heutzutage wird dies in der Regel durch das Herunterbrechen der Komplexität in eine sehr fehleranfällige Formel erreicht. Siehe unseren
-Artikel über [CO2-Formeln](/co2-formulas/) für weitere Einzelheiten.
+Artikel über [CO2-Formeln]({{< relref path="co2-formulas" >}}) für weitere Einzelheiten.
 
 Die Problematik der Netzwerkemissionen liegt nicht in ihrer Existenz, sondern in ihrer Unsichtbarkeit.
 
@@ -121,7 +121,7 @@ konnte das Internet seine Akzeptanz erhöht und wurde allgegenwärtig.
 
 Flatrates haben jedoch zu einer Abkopplung vom Netzwerkverkehr und den Emmissonen geführt.
 Dies führt zu einer Entkopplung und dem Missverständnis, dass jede Nutzung des Netzes irgendwann
-zu einem bestimmten Zeitpunkt zu einem Anstieg der Kohlenstoffemissionen führt. Manchmal linear, manchmal in Stufen. (Siehe [Gigabytes zu kWh](/de/co2-formulas/#gigabytes-to-kwh))
+zu einem bestimmten Zeitpunkt zu einem Anstieg der Kohlenstoffemissionen führt. Manchmal linear, manchmal in Stufen. (Siehe [Gigabytes zu kWh]({{< relref path="co2-formulas/#gigabytes-to-kwh" >}}))
 
 Da Sie Ihren Verbrauch nicht sehen, wie zum Beispiel bei Ihrer Telefonrechnung, gehen Sie das Risko die Resource nicht mehr zu beachten. Das Gleiche gilt für das Essen am Buffet, wo Reste die Regel sind.
 
@@ -129,7 +129,7 @@ Die Lösung liegt unserer Meinung nach darin, diese Ressource sichtbarer zu mach
 
 
 ### Unsere Arbeit
-Wir befassen uns derzeit mit diesem Thema, indem wir Entwickler durch [Meetups](/talks-and-events/) und durch
+Wir befassen uns derzeit mit diesem Thema, indem wir Entwickler durch [Meetups]({{< relref path="talks-and-events" lang="en" >}}) und durch
 Vorträge auf Konferenzen oder Coding Bootcamps wie [WBS Coding School](https://www.wbscodingschool.com/)
 
 Auf der technischen Seite heben wir die Netzwerkemissionen in unserem [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool) hervor und zeigen Empfehlungen wie:

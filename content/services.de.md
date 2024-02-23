@@ -12,15 +12,15 @@ Wir helfen Ihnen bei der Umwandlung Ihrer Software in ein nachhaltiges Produkt.
 
 Scrollen Sie nach unten und sehen Sie, wie wir mit Unternehmen in unserem 5-stufigen Ansatz arbeiten.
 
-Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien](/de/#nav-meetups), entwickeln
-[Projekte](/de/projects) sowie [Open-Source-Tools zur Messung von CO2 in Containern](/de/projects/green-metrics-tool) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling](/de/projects/eco-ci)
-durch Zertifizierungen wie den [Blauen Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) oder unser Projekt [Energy-ID](/de/projects/energy-id).
+Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien]({{< relref path="#nav-meetups" >}}), entwickeln
+[Projekte]({{< relref path="projects" >}}) sowie [Open-Source-Tools zur Messung von CO2 in Containern]({{< relref path="projects/green-metrics-tool" >}}) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling]({{< relref path="projects/eco-ci" >}})
+durch Zertifizierungen wie den [Blauen Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) oder unser Projekt [Energy-ID]({{< relref path="projects/energy-id" >}}).
 
 Einige unserer jüngsten anerkannten Arbeiten in der Forschung umfassen
-[maßgeschneiderte Open-Source-Maschinenmodelle zur Energieabschätzung in Cloud-Umgebungen](/de/projects/cloud-energy), veröffentlichte Positionspapiere
+[maßgeschneiderte Open-Source-Maschinenmodelle zur Energieabschätzung in Cloud-Umgebungen]({{< relref path="projects/cloud-energy" >}}), veröffentlichte Positionspapiere
 Papiere und akademische Papiere für Software-Lebenszyklus-Bewertung und Software-Energiemessung, Arbeit an
 [Software-Lifecycle-Assessment](https://publication2023.bits-und-baeume.org/#book/38) mit Entwickler-Tools und zitierte
-[Fallstudien für Energieeinsparungen und -optimierungen](/case-studies).
+[Fallstudien für Energieeinsparungen und -optimierungen]({{< relref path="case-studies" lang="en" >}}).
 
 
 {{< greenblock >}}

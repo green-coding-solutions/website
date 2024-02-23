@@ -15,7 +15,7 @@ Derzeit sind die drei Hauptziele:
 2) Zentrale Erfassung der Stromverbrauchsdaten, um Anwendungen/Prozesse zu identifizieren, die optimiert werden könnten, um auf breiterer Ebene Energie zu sparen.
 3) Der Nutzerin die Möglichkeit geben, die Daten an eine CO2 Datenbank zu übermitteln, damit der Energieverbrauch einem Projekt zugeordnet werden kann.
 
-Derzeit unterstützen wir nur MacOSX durch das powermetrics [[1]](/blog/power-measurement-on-macos/) Tool!
+Derzeit unterstützen wir nur MacOSX durch das powermetrics [[1]]({{< relref path="blog/power-measurement-on-macos" lang="en" >}}) Tool!
 Für die Unterstützung von Linux oder Windows ist noch mehr Arbeit nötig.
 
 Der Hog besteht aus zwei Hauptteilen.
@@ -38,7 +38,7 @@ Eine vollständige Readme und Dokumentation finden Sie im GitHub Repo.
 
 {{< button "book" "Dokumentation" "https://github.com/green-coding-solutions/hog/blob/main/README.md#the-power-hog" >}}
 
-{{< button "code branch" "Github" "https://github.com/green-coding-solutions/hog/" >}}
+{{< button "code branch" "Github" "https://github.com/green-coding-solutions/hog" >}}
 
 ---
 
