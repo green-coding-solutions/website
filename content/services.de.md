@@ -13,7 +13,7 @@ Wir helfen Ihnen bei der Umwandlung Ihrer Software in ein nachhaltiges Produkt.
 Scrollen Sie nach unten und sehen Sie, wie wir mit Unternehmen in unserem 5-stufigen Ansatz arbeiten.
 
 Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien](/de/#nav-meetups), entwickeln
-[Projekte](/de/#projects) sowie [Open-Source-Tools zur Messung von CO2 in Containern](/de/projects/green-metrics-tool) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling](/de/projects/eco-ci)
+[Projekte](/de/projects) sowie [Open-Source-Tools zur Messung von CO2 in Containern](/de/projects/green-metrics-tool) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling](/de/projects/eco-ci)
 durch Zertifizierungen wie den [Blauen Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) oder unser Projekt [Energy-ID](/de/projects/energy-id).
 
 Einige unserer jüngsten anerkannten Arbeiten in der Forschung umfassen

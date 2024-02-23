@@ -71,7 +71,7 @@ drive architectural optimizations (like which service to use, or if a move to se
 Through case-studies we also want to highlight the overhead cost of virtualization and give metrics to make informed decisions which
 architectural model fits best in an energy aware company culture.
 
-Also check out [our projects](/#projects)
+Also check out [our projects](/projects)
 
 
 {{< whiteblock >}}

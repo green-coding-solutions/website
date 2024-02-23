@@ -75,7 +75,7 @@ Hier werden Inline-Messungen benötigt, die in bereits existierende Beobachtungs
 
 Anhand von Fallstudien wollen wir auch die Overhead-Kosten der Virtualisierung aufzeigen und Metriken bereitstellen, um fundierte Entscheidungen zu treffen, welches Architekturmodell am besten in eine energiebewusste Unternehmenskultur passt.
 
-Sehen Sie sich auch [unsere Projekte](/de/#projects)
+Sehen Sie sich auch [unsere Projekte](/de/projects)
 
 {{< whiteblock >}}
 Entwicklung von Software
