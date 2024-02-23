@@ -8,7 +8,7 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-Training your developers to write more carbon efficient software or just starting out with your team and setting first impulses to start a sustainable software journey. We have you covered with a wide selection of Workshops & Trainings wich are battle tested in SMEs and Enterprise size companies. 
+Training your developers to write more carbon efficient software or just starting out with your team and setting first impulses to start a sustainable software journey. We have you covered with a wide selection of Workshops & Trainings wich are battle tested in SMEs and Enterprise size companies.
 
 <br>
 
@@ -25,11 +25,11 @@ Training your developers to write more carbon efficient software or just startin
             <p>This workshop is targeted to frontend or backend developers.</p>
             <p>It focuses on methodologies available for bare-metal architectures or on-premise hosted solutions.</p>
             <p>Goal is to containerize a company service in a reproducible container setup and measure its carbon consumption for its application case (Standard Usage Scenario).</p>
-            <p>The created model can then be used to iterate on the companies services and drive the CO2 consumption down through carbon targeted optimizations.</p>      
-            <h3>Agenda</h3>   
-            <ul>   
+            <p>The created model can then be used to iterate on the companies services and drive the CO2 consumption down through carbon targeted optimizations.</p>
+            <h3>Agenda</h3>
+            <ul>
             <li>Identifying and query different metric sources in the linux subsystem/ CPU</li>
-            <li>Using the Green Metrics Tool (https://github.com/green-coding-berlin/green-metrics-tool) and show its potentials to orchestrate a defined architecture and loading it with a standard usage scenario that reflects a company use case</li>
+            <li>Using the Green Metrics Tool (https://github.com/green-coding-solutions/green-metrics-tool) and show its potentials to orchestrate a defined architecture and loading it with a standard usage scenario that reflects a company use case</li>
             <li>Factoring in the user view of the application by creating a client side representation through a containerized browser.</li>
             <li>Crafting a dedicated energy metrics reporter with techniques to reduce measurement overheali>
             After laying out the foundation different tools are presented that may fit better to the company architecture and their design principles are outlined.</p>
@@ -42,7 +42,7 @@ Training your developers to write more carbon efficient software or just startin
           <figcaption>Measuring with Green Metrics Tool</figcaption>
         </figure>
       </div>
-    </div>          
+    </div>
 </div>
 
 <div class="ui padded blue stacked raised segment">
@@ -55,7 +55,7 @@ Training your developers to write more carbon efficient software or just startin
           </div>
           <div class="description">
             <br>
-            <p>This workshop is targeted to cloud engineers or dev teams that use cloud products on a simple customer basis.</p> 
+            <p>This workshop is targeted to cloud engineers or dev teams that use cloud products on a simple customer basis.</p>
             <p>Cloud environments pose different problems for measuring energy as most of the on-premise solutions are restricted due to security concerns.</p>
             <p>This workshop will give a detailed overview of the work by other heads in the industry on tackling the landscape of scarce energy data in the cloud and the solutions implemented.</p>
             <p>Goal is to create inline measurements tools that measure parts of the companies cloud infrastructure compute cost and report their CO2 equivalent.</p>
@@ -80,7 +80,7 @@ Training your developers to write more carbon efficient software or just startin
           <figcaption>Measuring in the Cloud</figcaption>
         </figure>
       </div>
-    </div>          
+    </div>
 </div>
 
 <div class="ui padded blue stacked raised segment">
@@ -114,7 +114,7 @@ Training your developers to write more carbon efficient software or just startin
           <figcaption>Green Web</figcaption>
         </figure>
       </div>
-    </div>          
+    </div>
 </div>
 
 <div class="ui padded blue stacked raised segment">
@@ -150,13 +150,13 @@ Training your developers to write more carbon efficient software or just startin
           <figcaption>CI / CD Carbon tooling</figcaption>
         </figure>
       </div>
-    </div>          
+    </div>
 </div>
 
 <div class="ui green blue stacked raised segment">
-    <div class="ui items">    
+    <div class="ui items">
       <div class="item">
-        <div class="ui small image middle aligned"> 
+        <div class="ui small image middle aligned">
             <i class="ui icon massive black users"></i>
         </div>
         <div class="content">
@@ -169,14 +169,14 @@ Training your developers to write more carbon efficient software or just startin
             <p>The goal of any workshop with us is to leave your team empowered and autonomous to start and continue the digital sustainability journey.</p>
           </div>
           <!-- TODO
-          <div class="extra">            
+          <div class="extra">
             <div class="ui left floated orange button">
               Download our KPI / carbon pricing case study
               <i class="right chevron icon"></i>
             </div>
           </div>
           -->
-        </div>                  
+        </div>
       </div>
     </div>
 </div>

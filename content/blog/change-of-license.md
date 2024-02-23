@@ -6,7 +6,7 @@ author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
 ---
 
-As some of you following our [Green Coding github](https://github.com/green-coding-berlin)
+As some of you following our [Green Coding github](https://github.com/green-coding-solutions)
 have maybe noticed is that we have changed the license of some of our
 repositories.
 

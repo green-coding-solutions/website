@@ -95,7 +95,7 @@ The linux measurement client is a breeze and signals looked directly accurate wi
 
 For inital testing we opted for a simple 0.5 Ohms inline shunt resistor that is measured in the differential measurement mode.
 
-The code for importing the measurements is very simple Python. If you want to have a look at it, you can find it in our [dev branch](https://github.com/green-coding-berlin/green-metrics-tool/blob/dev/tools/dc_converter.py).
+The code for importing the measurements is very simple Python. If you want to have a look at it, you can find it in our [dev branch](https://github.com/green-coding-solutions/green-metrics-tool/blob/dev/tools/dc_converter.py).
 
 
 ## Judgment of the measurement quality

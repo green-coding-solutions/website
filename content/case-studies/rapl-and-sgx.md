@@ -103,22 +103,22 @@ you get access to the CPU registers and can set the energy filtering flag.
 Checking and activating energy filtering
 {{< /whiteblock >}}
 
-It is suprisingly easy to turn energy filtering on. We have put all the scripts in our [Tools repository](https://github.com/green-coding-berlin/tools).
+It is suprisingly easy to turn energy filtering on. We have put all the scripts in our [Tools repository](https://github.com/green-coding-solutions/tools).
 
-Here you find the [simple command line code](https://github.com/green-coding-berlin/tools/blob/main/check_energy_filtering_rapl.sh) (`sudo rdmsr -d 0xbc`) to check the register **0xbc** if energy filtering is active.
+Here you find the [simple command line code](https://github.com/green-coding-solutions/tools/blob/main/check_energy_filtering_rapl.sh) (`sudo rdmsr -d 0xbc`) to check the register **0xbc** if energy filtering is active.
 A *0* returned means it is off. A *1* returned means it is on.
 
 By issueing a *wrmsr* command like that: `sudo wrmsr 0xbc 1` energy filtering can be turned on.
 
-Also if you want to check if SGX is active we have copied the [C code to check for SGX](https://github.com/green-coding-berlin/tools/blob/main/test-sgx.c)
-into our repository, which is originally from [ayeks](https://github.com/green-coding-berlin/tools/blob/main/test-sgx.c).
+Also if you want to check if SGX is active we have copied the [C code to check for SGX](https://github.com/green-coding-solutions/tools/blob/main/test-sgx.c)
+into our repository, which is originally from [ayeks](https://github.com/green-coding-solutions/tools/blob/main/test-sgx.c).
 
 {{< greenblock >}}
 Results: Looking at energy filtering signal distortion
 {{< /greenblock >}}
 
 The results show our runs by checking CPU RAPL energy consumption of **Package 0** and **Package 1** (we have a two chip machine)
-on idle for **5 Minutes** with our [low overhead MSR RAPL checking reporter](https://github.com/green-coding-berlin/green-metrics-tool/tree/main/tools/metric_providers/cpu/energy/RAPL/MSR/system).
+on idle for **5 Minutes** with our [low overhead MSR RAPL checking reporter](https://github.com/green-coding-solutions/green-metrics-tool/tree/main/tools/metric_providers/cpu/energy/RAPL/MSR/system).
 
 {{< rawhtml >}}
 <figure>
