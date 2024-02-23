@@ -50,18 +50,14 @@
                 </div>
                 {{end}}
             </div>
-
-            <div id="carousel_buttons">
-                {{ range $index, $element := sort (where .Site.RegularPages "Type" "projects") ".Params.ordering" "asc" }}
-                <button class="ui circular icon button" id="button{{$index}}" >
-                    <i class="{{ .Params.Icon }} icon" ></i>
-                </button>
-                {{end}}
-            </div>
-
         </div>
-
-
+        <div id="carousel_buttons">
+            {{ range $index, $element := sort (where .Site.RegularPages "Type" "projects") ".Params.ordering" "asc" }}
+            <button class="ui circular icon button" id="button{{$index}}" >
+                <i class="{{ .Params.Icon }} icon" ></i>
+            </button>
+            {{end}}
+        </div>
     </div><!-- end portfolio -->
 
 </section><!-- end contact -->
