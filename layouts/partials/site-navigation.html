@@ -9,27 +9,27 @@
             {{ end }}
         {{ end }}
         {{/* We are using a hack here. Home always gets selected. This is wrong, but browser will default to apply selected only on last matched, so menu works as expected */}}
-        <option value="{{ relLangURL "/" }}" class="second_item" selected>Home</option>
-        <option value="{{ relLangURL "about" }}" class="second_item" {{if eq $slug "about"}}selected{{end}}>{{i18n "about"}}</option>
-        <option value="{{ relLangURL "services" }}" class="second_item"{{if eq $slug "services"}}selected{{end}}>{{i18n "services"}}</option>
+        <option value="{{ relref . "/" }}" class="second_item" selected>Home</option>
+        <option value="{{ relref . "about" }}" class="second_item" {{if eq $slug "about"}}selected{{end}}>{{i18n "about"}}</option>
+        <option value="{{ relref . "services" }}" class="second_item"{{if eq $slug "services"}}selected{{end}}>{{i18n "services"}}</option>
         <option value="{{ relURL "services/consulting" }}" class="second_item"  {{ if eq $slug "consulting"}}selected{{end}}>{{ i18n "consulting" }}</a></li>
         <option value="{{ relURL "services/workshops-and-trainings" }}" class="second_item"  {{ if eq $slug "workshops-and-trainings"}}selected{{end}}>{{ i18n "training" }}</a></li>
         <option value="{{ relURL "services/development-and-integrations" }}" class="second_item"  {{ if eq $slug "development-and-integrations"}}selected{{end}}>{{ i18n "development" }}</a></li>
-        <option value="{{ relLangURL "/" }}#nav-events" class="second_item">{{i18n "talks"}}</option>
-        <option value="{{ relLangURL "blog" }}" class="second_item"{{if eq $slug "blog"}}selected{{end}}>{{i18n "blog"}}</option>
+        <option value="{{ relref . "/" }}#nav-events" class="second_item">{{i18n "talks"}}</option>
+        <option value="{{ relURL  "blog" }}" class="second_item"{{if eq $slug "blog"}}selected{{end}}>{{i18n "blog"}}</option>
         <option value="{{ relURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "case-studies"}}</option>
-        <option value="{{ relLangURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>{{i18n "jobs"}}</option>
-        <option value="{{ relLangURL "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>{{i18n "co2-formulas"}}</option>
-        <option value="{{ relLangURL "projects" }}" class="second_item">{{i18n "projects"}}</option>
-        <option value="{{ relLangURL "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
-        <option value="{{ relLangURL "newsroom" }}" class="second_item">{{i18n "newsroom"}}</option>
+        <option value="{{ relURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>{{i18n "jobs"}}</option>
+        <option value="{{ relref . "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>{{i18n "co2-formulas"}}</option>
+        <option value="{{ relref . "projects" }}" class="second_item">{{i18n "projects"}}</option>
+        <option value="{{ relref . "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
+        <option value="{{ relref . "newsroom" }}" class="second_item">{{i18n "newsroom"}}</option>
     </select>
 </div>
 <div class="menu-select main-nav">
     <nav>
         <ol class="contentMenu navbar-nav">
             <li class="menubtn-bg">
-               <a class="menubtn" href="{{ relLangURL "about" }}">
+               <a class="menubtn" href="{{ relref . "about" }}">
                     <div class="contentbtn">{{i18n "about"}}</div>
                 </a>
             </li>
@@ -38,7 +38,7 @@
                     <div class="contentbtn">{{i18n "services"}}</div>
                 </a>
                 <ol class="dropdown-menu">
-                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relLangURL "services" }}">{{ i18n "overview" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relref . "services" }}">{{ i18n "overview" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services/consulting" }}">{{ i18n "consulting" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services/workshops-and-trainings" }}">{{ i18n "training" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services/development-and-integrations" }}">{{ i18n "development" }}</a></li>
@@ -53,24 +53,27 @@
                        <a class="contentbtn dropdown-item" href="{{ relURL "case-studies" }}">{{i18n "case-studies"}}</a>
                     </li>
                     <li class="dropdown-list-item">
-                       <a class="contentbtn dropdown-item" href="{{ relLangURL "co2-formulas" }}">{{i18n "co2-formulas"}}</a>
+                       <a class="contentbtn dropdown-item" href="{{ relref . "co2-formulas" }}">{{i18n "co2-formulas"}}</a>
                     </li>
                     <li class="dropdown-list-item">
                        <a class="contentbtn dropdown-item" href="{{ relURL "blog" }}">{{i18n "blog"}}</a>
                     </li>
                     <li class="dropdown-list-item">
-                       <a class="contentbtn dropdown-item" href="{{ relLangURL "projects" }}">{{i18n "projects"}}</a>
+                       <a class="contentbtn dropdown-item" href="{{ relref . "/#nav-events" }}">Talks & Events</a>
+                    </li>
+                    <li class="dropdown-list-item">
+                       <a class="contentbtn dropdown-item" href="{{ relref . "projects" }}">{{i18n "projects"}}</a>
                     </li>
                 </ol>
             </li>
 {{/*            <li>
-               <a href="{{ relLangURL "jobs" }}"><div class="menubtn">
+               <a href="{{ relref . "jobs" }}"><div class="menubtn">
                     <div class="contentbtn">{{i18n "jobs"}}</div>
                 </div></a>
             </li>
 */}}
             <li>
-               <a href="{{ relLangURL "newsroom" }}"><div class="menubtn">
+               <a href="{{ relref . "newsroom" }}"><div class="menubtn">
                     <div class="contentbtn">{{i18n "newsroom"}}</div>
                 </div></a>
             </li>
