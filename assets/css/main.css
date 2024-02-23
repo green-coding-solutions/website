@@ -627,6 +627,13 @@ nav li a{text-decoration: none;}
 	padding-bottom: 45px;
     line-height:  45px;
 }
+
+.title-two-no-bottom-padding {
+    padding-bottom: 0;
+}
+
+
+
 .data-content-two{
 	font-size: 18px;
 	font-family: 'Titillium Web', sans-serif;
@@ -2352,47 +2359,26 @@ figure figcaption {
 }
 
 #project-items-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 800px;
+    /* display: flex; */
+    /* justify-content: left; */
+    /* flex-wrap: wrap; */
+    max-width: 760px;
     margin:auto;
+	color: #fff;
 }
 
-a.project-item {
-    margin-bottom: 60px;
+#carousel{
+	padding-bottom: 2px;
 }
 
-a.project-item > i.icon {
-    display: block;
-    color: #f9f9f5;
-    width: 180px;
-    height: 180px;
-    border: 18px solid #f9f9f5;
-    border-radius: 50%;
-    font-size: 18px;
-    text-align: center;
-    overflow:hidden;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    background: #67a98b;
-    line-height: 143px;
-    font-size: 80px;
+#carousel_buttons{
+	display: flex;
+	justify-content: center;
 }
 
-.project-item-title {
-    color: #f9f9f5;
-    font-weight: bold;
-    font-size: 20px;
+.project-item-white {
+    color: #fff !important;
 }
-
-.project-item:hover, .project-item > i.icon:hover {
-    color: #2a3f50 !important;
-    border-color: #2a3f50 !important;
-}
-
 
 .label-margin-bottom {
     margin-bottom: 3px !important;

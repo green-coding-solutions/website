@@ -4,7 +4,10 @@ date: 2023-01-15 19:00:00
 publishDate: 2023-01-15
 draft: false
 icon: "leaf"
+desc: Eco-CI calculates the energy consumption of your CI/CD environments, supporting GitHub and GitLab. It tracks the power usage of the runs for accurate energy management and budgeting. Key features include real-time measurements and data export, aiding in sustainable development practices"
+ordering: 2
 ---
+
 
 Eco CI is the internal name for a project where we create small tools to make CI pipelines more transparent
 in terms of their energy usage and also develop small tools that can save energy / CO2 in the pipeline.

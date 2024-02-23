@@ -19,7 +19,7 @@
         <option value="{{ relURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "studies"}}</option>
         <option value="{{ relLangURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>{{i18n "jobs"}}</option>
         <option value="{{ relLangURL "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>{{i18n "formulas"}}</option>
-        <option value="{{ relLangURL "/#projects" }}#nav-team" class="second_item">{{i18n "projects"}}</option>
+        <option value="{{ relLangURL "projects" }}" class="second_item">{{i18n "projects"}}</option>
         <option value="{{ relLangURL "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
         <option value="{{ relLangURL "newsroom" }}" class="second_item">{{i18n "newsroom"}}</option>
     </select>
@@ -58,7 +58,7 @@
                        <a class="contentbtn dropdown-item" href="{{ relURL "blog" }}">{{i18n "blog"}}</a>
                     </li>
                     <li class="dropdown-list-item">
-                       <a class="contentbtn dropdown-item" href="{{ relLangURL "/#projects" }}">{{i18n "projects"}}</a>
+                       <a class="contentbtn dropdown-item" href="{{ relLangURL "projects" }}">{{i18n "projects"}}</a>
                     </li>
                 </ol>
             </li>

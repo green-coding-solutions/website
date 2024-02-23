@@ -5,6 +5,8 @@ publishDate: 2023-01-16
 draft: false
 projectimg: "/img/projects/gmt-rapl-graph.webp"
 icon: "code"
+desc: "The Green Metrics Tool is a holistic framework to measure the energy / CO2 of your application."
+ordering: 1
 ---
 
 The Green Metrics Tool is a free open-source (FOSS) tool we designed as a concept on how we believe it can support
@@ -22,7 +24,7 @@ Please see all the details on Github and in the documentation.
 {{< button "eye" "Screenshots" "#screenshots" >}}
 
 
---- 
+---
 
 ## Community Version / Enterprise Version
 
@@ -31,7 +33,7 @@ and falsifyable.
 
 The **community version** gives you all the functionality for measurement and benchmarking with an <u>free open source AGPL-v3 license.</u>
 
-However we also offer a **hosted version** as **SaaS** which includes some premium features and a support plan. 
+However we also offer a **hosted version** as **SaaS** which includes some premium features and a support plan.
 
 <div class="ui horizontal divider header"><i class="tag icon"></i>Comparison Table</div>
 <br>
@@ -108,11 +110,11 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Offset contolled</b> cluster
-                    <br><small><a href="https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-berlin/measurement-control-workload&filename=usage_scenario.yml&branch=event-bound&machine_id=7">Measurements guaranteed < 1% Std.Dev</a></small>                        
+                    <br><small><a href="https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-berlin/measurement-control-workload&filename=usage_scenario.yml&branch=event-bound&machine_id=7">Measurements guaranteed < 1% Std.Dev</a></small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>High precision</b> measurements
-                    <br><small><a href="/blog/nop-linux/">See details (NOP Linux)</a></small>                        
+                    <br><small><a href="/blog/nop-linux/">See details (NOP Linux)</a></small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Support</b> the development
@@ -151,10 +153,10 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Development</b> & <b>Customization</b>
-                </div></div>                
+                </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Custom</b> metric providers
-                </div></div>                
+                </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Whitelabel</b> & <b>Dual-Licensing</b>
                 </div></div>
