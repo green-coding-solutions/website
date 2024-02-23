@@ -180,7 +180,7 @@ $(document).ready(function() {
           autoSlideTimer = setInterval(function() {
             currentIndex = (currentIndex + 1) % totalItems;
             showItem();
-          }, 3000);
+          }, 5000);
         }
 
         $('#carousel .item').hide();
@@ -194,6 +194,19 @@ $(document).ready(function() {
             showItem();
             startAutoSlide();
           });
+        });
+
+        $('.carousel-link .right').on('click', function() {
+            if (currentIndex == totalItems-1) return;
+            currentIndex++;
+            showItem();
+            startAutoSlide();
+        });
+        $('.carousel-link .left').on('click', function() {
+            if (currentIndex == 0) return;
+            currentIndex--;
+            showItem();
+            startAutoSlide();
         });
 
     }
