@@ -2388,6 +2388,11 @@ figure figcaption {
 	justify-content: center;
 }
 
+#carousel_buttons .icon{
+    text-indent: -1px;
+}
+
+
 .project-item-white {
     color: #fff !important;
 }
