@@ -196,6 +196,19 @@ $(document).ready(function() {
           });
         });
 
+        $('.carousel-link .right').on('click', function() {
+            if (currentIndex == totalItems-1) return;
+            currentIndex++;
+            showItem();
+            startAutoSlide();
+        });
+        $('.carousel-link .left').on('click', function() {
+            if (currentIndex == 0) return;
+            currentIndex--;
+            showItem();
+            startAutoSlide();
+        });
+
     }
 });// JavaScript Document
 })(jQuery);
