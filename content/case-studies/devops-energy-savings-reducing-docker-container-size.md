@@ -13,7 +13,7 @@ Would a smaller image size reduce the total energy required to run it? And what 
 We created images on [our Docker Hub](https://hub.docker.com/u/greencoding) that contain an environment for running [Puppeteer](https://github.com/puppeteer/puppeteer) that we use for testing.
 They are based of off an Ubuntu base image and include a browser and Puppeteer installed via npm.
 - https://hub.docker.com/u/greencoding
-- https://github.com/green-coding-berlin/example-applications/tree/main/puppeteer-firefox-chrome
+- https://github.com/green-coding-solutions/example-applications/tree/main/puppeteer-firefox-chrome
 
 We started with the assumption that reducing the image size would require less energy
 from users that download the image from Docker Hub, but also increase the build time.

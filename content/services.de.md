@@ -8,9 +8,9 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-Wir helfen Ihnen bei der Umwandlung Ihrer Software in ein nachhaltiges Produkt. 
+Wir helfen Ihnen bei der Umwandlung Ihrer Software in ein nachhaltiges Produkt.
 
-Scrollen Sie nach unten und sehen Sie, wie wir mit Unternehmen in unserem 5-stufigen Ansatz arbeiten. 
+Scrollen Sie nach unten und sehen Sie, wie wir mit Unternehmen in unserem 5-stufigen Ansatz arbeiten.
 
 Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien](/de/#nav-meetups), entwickeln
 [Projekte](/de/#projects) sowie [Open-Source-Tools zur Messung von CO2 in Containern](/de/projects/green-metrics-tool) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling](/de/projects/eco-ci)
@@ -115,7 +115,7 @@ Interessiert?
         <p>(+49) 160 947 930 24</p>
         <p><a href="mailto:info@green-coding.io">info@green-coding.io</a></p>
         <div class="media">
-            <a href="https://www.linkedin.com/company/green-coding-berlin">
+            <a href="https://www.linkedin.com/company/green-coding-solutions">
                 <div class="t-linkedin"></div>
             </a>
             <a href="mailto:info@green-coding.io"><div class="t-mail"></div></a>

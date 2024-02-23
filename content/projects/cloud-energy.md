@@ -10,7 +10,7 @@ ordering: 3
 
 
 {{< rawhtml >}}
-<img class="ui big floated right rounded bordered image" src="https://github.com/green-coding-berlin/spec-power-model/raw/main/img/hp_synergy_480_Gen10_Plus.png" alt="XGBoost performance" loading="lazy" style="margin:auto;">
+<img class="ui big floated right rounded bordered image" src="https://github.com/green-coding-solutions/spec-power-model/raw/main/img/hp_synergy_480_Gen10_Plus.png" alt="XGBoost performance" loading="lazy" style="margin:auto;">
 <br>
 {{</ rawhtml >}}
 
@@ -26,11 +26,11 @@ params to make the model more accurate.
 In the chart on the right you can see the performance for an out-of-sample prediciton. Please find more details
 for in-sample predictions, exploratory data analysis and application documentation on Github.
 
-The model is open-source [AGPLv3 Licensed](https://github.com/green-coding-berlin/green-metrics-tool/blob/main/LICENSE)
+The model is open-source [AGPLv3 Licensed](https://github.com/green-coding-solutions/green-metrics-tool/blob/main/LICENSE)
 
 ---
 
-{{< button "code branch" "Github incl. documentation" "https://github.com/green-coding-berlin/spec-power-model" >}}
+{{< button "code branch" "Github incl. documentation" "https://github.com/green-coding-solutions/spec-power-model" >}}
 
 &nbsp;
 

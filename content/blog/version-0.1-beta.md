@@ -8,7 +8,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 ---
 
 
-Today we have have released the `0.1-beta` version of our [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool/releases/tag/v0.1-beta)
+Today we have have released the `0.1-beta` version of our [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool/releases/tag/v0.1-beta)
 
 {{< rawhtml >}}
 <img src="/img/blog/green-metrics-dashboard.webp" alt="Green Metrics Dashboard" loading="lazy" style="max-width: 800px; width: 80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;">
