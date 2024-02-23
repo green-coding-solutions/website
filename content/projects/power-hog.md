@@ -17,7 +17,7 @@ Currently the three primary objectives are:
 3) Enable the user to submit the data to a carbon database so that energy usage can be accounted to a project. Coming
    in version 0.3
 
-Currently we only support MacOSX through the powermetrics [[1]](https://www.green-coding.io/blog/power-measurement-on-macos/) tool!
+Currently we only support MacOSX through the powermetrics [[1]](/blog/power-measurement-on-macos/) tool!
 More work is needed for Linux or Windows support.
 
 For running the hog on your system there are two main parts.

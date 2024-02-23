@@ -46,7 +46,7 @@ Your concrete coding work will be mostly on Linux systems writing either Python,
 Typically when measuring architectures, applications or software libraries this means creating a demo application with them.
 
 To get an idea how this would look like have a look at our [repository for demo applications](https://github.com/green-coding-solutions/example-applications) (mostly web applications at the moment) and our documentation on [Example applications](https://docs.green-coding.io/docs/prologue/example-applications/) and [containerization of applications](https://docs.green-coding.io/docs/measuring/containerizing-applications/).
-Also check out our [Case Studies](https://www.green-coding.io/case-studies), [CO2 Formulas for digital products](https://www.green-coding.io/co2-formulas) and our [Green Metrics Dashboard](https://metrics.green-coding.io) to get an idea of how the raw metrics will be presented.
+Also check out our [Case Studies](/case-studies), [CO2 Formulas for digital products](/co2-formulas) and our [Green Metrics Dashboard](https://metrics.green-coding.io) to get an idea of how the raw metrics will be presented.
 
 Most of our tooling is written in script languages like Python or Node. Most of the low-level measurement software is written in C.
 

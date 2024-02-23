@@ -11,7 +11,7 @@ authorlink: "https://www.linkedin.com/in/dan-mateas-693634105/"
     You do not know about our Eco-CI project yet? Than read up here about it: <a href="/projects/eco-ci">Eco-CI project</a>
 {{< /infobox >}}
 
-As we mentioned in a [previous blog article](https://www.green-coding.io/blog/eco-ci-activity-checker-released/), we've been thinking of ways to make CI pipelines more energy efficient. One idea we had was to give developers a tool which allows them to measure the energy used by their CI runs.
+As we mentioned in a [previous blog article](/blog/eco-ci-activity-checker-released/), we've been thinking of ways to make CI pipelines more energy efficient. One idea we had was to give developers a tool which allows them to measure the energy used by their CI runs.
 
 After all, how can people reduce their carbon emissions if they don't know how much energy they're using in the first place? With that in mind we're happy to announce a new Action which we're publishing to the Github Actions marketplace: [Eco CI Energy Estimation](https://github.com/green-coding-solutions/eco-ci-energy-estimation)
 
@@ -46,7 +46,7 @@ To begin, you must call the initialize task near the begining of your workflow. 
 The `start-measurement` task begins to measure the CPU utilization from that moment onwards and save it to a temporary file. When you call `get-measurement`, it will note the measurement and feed that, along with any auto-detected relevant CPU information, into our machine learning model. Our model then outputs the estimated Energy used in *Joules* and avg. power in *Watts* to the Github Summary.
 
 
-This estimation comes from data gathered from SPEC Power Database (hence the name). Further information about this model can be found in our [blog post about the linear regression](https://www.green-coding.io/blog/estimating-cloud-energy-linear-model-part-1/) and [blog post about the XGBoost implementation](https://www.green-coding.io/blog/specpower-model-with-xgboost-open-sourced/) powering it.
+This estimation comes from data gathered from SPEC Power Database (hence the name). Further information about this model can be found in our [blog post about the linear regression](/blog/estimating-cloud-energy-linear-model-part-1/) and [blog post about the XGBoost implementation](/blog/specpower-model-with-xgboost-open-sourced/) powering it.
 
 Once you call the `get-measurement` task a second time, it will output the energy information to Github Summary a second time - and if you haven't called `start-measurement` yet, this data will be cumulative.
 {{< rawhtml >}}
