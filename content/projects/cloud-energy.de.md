@@ -4,6 +4,8 @@ date: 2023-01-13 19:00:00
 publishDate: 2023-01-13
 draft: false
 icon: "cloud"
+desc: "Unser Machine Learning Modell für die Energiemessung in der Cloud. Sowohl virtualisert als auch auf Bare Metal. Basierend auf den SPECPower Daten ermöglicht es präzise Inline-Messungen und Energiebudgetierung."
+ordering: 3
 ---
 
 

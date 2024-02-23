@@ -8,4 +8,3 @@ type: "news"
 ---
 
 Unser Newsroom ist ab sofort online. Ältere Nachrichten finden Sie unstrukturiert im [Blog](/blog).
-

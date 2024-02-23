@@ -8,8 +8,6 @@
   translation: "Read some details about the carbon emissions of software"
 - id: home_projects
   translation: "Projects"
-- id: home_projects_teaser
-  translation: "We develop tools to empower developers and users to reduce energy and carbon emissons of software"
 
 - id: future_home_talks_teaser
   translation: "Future events and talks"
@@ -31,14 +29,34 @@
   translation: Blog
 - id: jobs
   translation: Jobs
-- id: formulas
+- id: co2-formulas
   translation: CO2-Formulas
-- id: studies
+- id: case-studies
   translation: Case Studies
+- id: more
+  translation: More
+- id: insights
+  translation: Insights
 - id: team
   translation: Team
+- id: projects
+  translation: Projects
+
+- id: overview
+  translation: Overview
+- id: consulting
+  translation: Consulting
+- id: training
+  translation: Training & Workshops
+- id: development
+  translation: Development & Intergrations
+- id: sustainablity-operations
+  translation: Software Carbon Operations
+
 - id: newsroom
   translation: Newsroom
+
+
 - id: list_orgs
   translation: "A curated list of organizations we have been working with or have been giving talks at."
 - id: references

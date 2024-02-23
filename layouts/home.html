@@ -23,30 +23,38 @@
         </div>
     </div>
 </section><!-- end about -->
+
+
 <section id="projects" class="bg-two">
     <div id="nav-projects"></div>
-    <div class="section-two bottom-works">
-        <h1><div class="title-two">{{ i18n "home_projects" }}</div></h1>
-        <div class="separator">
-            <div class="line line-2"></div>
-        </div>
-        <div class="data-content-two">
-            {{ i18n "home_projects_teaser" }}
-        </div>
-        <div id="project-items-container" class="data-content-two">
-            {{/*
-                In an untranslated page this call would be ... where .Site.RegularPages "Type" ...
-                But since the Site object changes depending on the current language we will get an empty folder
-                if a folder is not fully translated
-            */}}
+    <div class="single-page section-two">
 
-            {{ range $index, $element := ( first 9 ( where .Site.RegularPages "Type" "projects" ) ) }}
-                <a class="project-item" href="{{.Permalink}}">
-                    <i class="{{ .Params.Icon }} icon"></i>
-                    <div class="project-item-title">{{ .Title }}</div>
-                </a>
-            {{end}}
+        <h1><div class="title-two title-two-no-bottom-padding">{{ i18n "home_projects" }}</div></h1>
+        <div id="project-items-container" class="data-content-two">
+            <div class="ui relaxed items" id="carousel">
+                {{ range $index, $element := sort (where .Site.RegularPages "Type" "projects") ".Params.ordering" "asc" }}
+                <div class="item" id="item{{$index}}">
+                    <div class="ui image">
+                        <a href="{{.Permalink}}"><i class="{{ .Params.Icon }} huge icon project-item-white"></i></a>
+                    </div>
+                    <div class="content project-item-white">
+                        <a class="header project-item-white" href="{{.Permalink}}">{{ .Title }}</a>
+                        <p><a href="{{.Permalink}}" class="project-item-white">{{.Params.Desc}}</a></p>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+
+            <div id="carousel_buttons">
+                {{ range $index, $element := sort (where .Site.RegularPages "Type" "projects") ".Params.ordering" "asc" }}
+                <button class="ui circular icon button" id="button{{$index}}" >
+                    <i class="{{ .Params.Icon }} icon" ></i>
+                </button>
+                {{end}}
+            </div>
+
         </div>
+
 
     </div><!-- end portfolio -->
 

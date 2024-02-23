@@ -5,7 +5,8 @@ publishDate: 2023-01-14
 draft: false
 projectimg: "/img/projects/open-energy-badge.webp"
 icon: "battery three quarters"
-
+desc: "Das Open Energy Badge zeigt die Energie-/CO2-Kosten von GitHub-Projekttests und Aktivitäten wie API-Aufrufe. Generiert vom Green Metrics Tool, fördert es Transparenz in Softwareentwicklung."
+ordering: 7
 ---
 
 {{< rawhtml >}}

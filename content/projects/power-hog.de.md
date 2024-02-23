@@ -4,6 +4,8 @@ date: 2023-9-20 19:00:00
 publishDate: 2023-01-16
 draft: false
 icon: "piggy bank"
+desc: "Power Hog bietet Tools zur Überwachung des Computer-Energieverbrauchs, mit Fokus auf Prozessanalyse, zentraler Daten-Erfassung zur Optimierung und CO2-Datenübermittlung."
+ordering: 5
 ---
 
 Der Power Hog bietet eine Reihe von Tools, mit denen Sie den Energieverbrauch Ihres Computers überwachen können.

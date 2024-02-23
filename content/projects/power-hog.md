@@ -4,6 +4,9 @@ date: 2023-9-20 19:00:00
 publishDate: 2023-01-16
 draft: false
 icon: "piggy bank"
+desc: "Power Hog offers tools for monitoring computer energy consumption, focusing on process analysis, central data collection for optimization, and CO2 data submission."
+ordering: 5
+
 ---
 
 The Power Hog offers a suite of tools designed to track your computer's energy consumption.

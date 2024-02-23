@@ -43,4 +43,4 @@ defaultContentLanguage = "en"
 
 # This will allow HTML tags inside of .md files without hacks like {{<rawhtml>}}
 [markup.goldmark.renderer]
-unsafe= true
+  unsafe = true

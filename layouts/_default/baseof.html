@@ -43,18 +43,19 @@
       <link rel="stylesheet" href="{{.RelPermalink}}"  />
   {{ end }}
 
-  <link rel="alternate" hreflang="en" href="{{ .Permalink }}" />
+  {{/* Google suggests using absolute URLs for hreflang link tags here, so do not change! */}}
+      <link rel="alternate" hreflang="en" href="{{ .Permalink }}" />
   {{ if .IsTranslated }}
       {{ range .Translations }}
           <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
       {{ end }}
   {{ end }}
 
-    {{ partial "site-style.html" . }}
+  {{ partial "site-style.html" . }}
 
-    {{ block "favicon" . }}
+  {{ block "favicon" . }}
       {{ partialCached "site-favicon.html" . }}
-    {{ end }}
+  {{ end }}
   </head>
 
   <body>
@@ -63,7 +64,7 @@
     <![endif]-->
     <div id="header" class="parentContainer container">
         <div class="header-container">
-            <a href="{{ absLangURL "/" }}"><div class="content-logo">
+            <a href="{{ relLangURL "/" }}"><div class="content-logo">
                 <div class="company-name">green <span>coding;</span></div>
             </div></a>
             {{ block "site-navigation" . }}{{ partial "site-navigation.html" .}}{{ end }}
