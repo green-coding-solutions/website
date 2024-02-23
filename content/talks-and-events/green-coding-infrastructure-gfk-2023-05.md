@@ -36,4 +36,4 @@ We look forward to seeing you there and working together to create a more sustai
 
 ## Slide-Deck PDF
 
-[Download Slides]({{< relref path="slides/2023-05-31-GfK-Understanding-Software-Carbon-Emissions.pdf" >}})
+[Download Slides](/slides/2023-05-31-GfK-Understanding-Software-Carbon-Emissions.pdf)

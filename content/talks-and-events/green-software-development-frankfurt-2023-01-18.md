@@ -35,6 +35,6 @@ Los geht es ab 18:15 Uhr. Vor und nach den beiden Talks besteht wie immer die MÃ
 
 ## Slide-Deck PDF
 
-[Download Slides]({{< relref path="slides/2024_01_18_Green-ness_of_code.pdf" >}})
+[Download Slides](/slides/2024_01_18_Green-ness_of_code.pdf)
 
 

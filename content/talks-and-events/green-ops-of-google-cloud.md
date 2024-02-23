@@ -28,4 +28,4 @@ Michael Dietz is a Customer Engineer at Google Cloud who works with Startups and
 
 ## Slide-Deck PDF
 
-[Download Slides]({{< relref path="slides/Google_Cloud_Developer_Day-1.pdf" >}})
+[Download Slides](/slides/Google_Cloud_Developer_Day-1.pdf)

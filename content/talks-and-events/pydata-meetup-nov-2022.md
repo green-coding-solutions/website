@@ -33,4 +33,4 @@ Energy cost estimation for cloud workloads is an emerging topic that surfaces es
 Here are the slides to our talk, where we present the works on and performance of the model
 at the PyData Nov'22 Meetup in Berlin.
 
-[Download Slides]({{< relref path="slides/PyData-Talk.pdf" >}})
+[Download Slides](/slides/PyData-Talk.pdf)

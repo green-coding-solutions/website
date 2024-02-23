@@ -77,7 +77,7 @@ The Eco CI Activity checker skips the test run then and thus saves energy and CO
 
 Please for Gitlab our main central [Github repository documentation](https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab) which talks about the Gitlab functionality.
 
-{{< button "book" "Blog article" "/blog/eco-ci-gitlab-release" >}}
+{{< button "book" "Blog article" "blog/eco-ci-gitlab-release" >}}
 
 {{< button "code branch" "Github Repository (for Gitlab documentation)" "https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab" >}}
 

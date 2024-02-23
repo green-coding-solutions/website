@@ -46,4 +46,4 @@ If this link ever becomes stale you can find the recorind also directly on [medi
 
 ## Slide-Deck PDF
 
-[Download Slides]({{< relref path="slides/bits-und-baeume.pdf" >}})
+[Download Slides](/slides/bits-und-baeume.pdf)

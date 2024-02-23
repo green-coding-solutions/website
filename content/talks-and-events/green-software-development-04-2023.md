@@ -56,4 +56,4 @@ Finally a summary is given which methods provide the most potential when it come
 ## Slide-Deck PDF
 
 
-[Download Slides]({{< relref path="slides/2023_04_Green_Software_Manifesto.pdf" >}})
+[Download Slides](/slides/2023_04_Green_Software_Manifesto.pdf)

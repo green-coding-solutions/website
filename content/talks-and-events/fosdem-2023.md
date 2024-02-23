@@ -29,7 +29,7 @@ We present the roadmap for this tool over the next year, which will result in a 
 
 ### Slide-Deck PDF
 
-[Download Slides]({{< relref path="slides/FOSDEM_23.pdf" >}})
+[Download Slides](/static/slides/FOSDEM_23.pdf)
 
 
 

@@ -31,6 +31,6 @@ Präsentation Arne Tarara (Green Coding Solutions): Sustainable Software: How ca
 
 ## Slide-Deck PDF
 
-[Download Slides]({{< relref path="slides/2023_10_05_Stuttgart_Green_Software_Development.pdf" >}})
+[Download Slides](/slides/2023_10_05_Stuttgart_Green_Software_Development.pdf)
 
 
