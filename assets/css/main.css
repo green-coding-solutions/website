@@ -2362,10 +2362,22 @@ figure figcaption {
     /* display: flex; */
     /* justify-content: left; */
     /* flex-wrap: wrap; */
-    max-width: 760px;
     margin:auto;
 	color: #fff;
 }
+
+#project-items-container .content, #project-items-container .ui.image {
+    padding: 30px;
+}
+
+#project-items-container .ui.icon {
+    margin: 30px 50px;
+}
+
+#project-items-container .carousel-link {
+    color: #fff;
+}
+
 
 #carousel{
 	padding-bottom: 2px;
@@ -2375,6 +2387,11 @@ figure figcaption {
 	display: flex;
 	justify-content: center;
 }
+
+#carousel_buttons .icon{
+    text-indent: -1px;
+}
+
 
 .project-item-white {
     color: #fff !important;

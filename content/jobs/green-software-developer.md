@@ -11,7 +11,7 @@ We strongly believe in the positive impact of digitalization. But we believe it 
 Therefore we create tools to measure the energy use of software in CI-Build-Pipelines, VMs, Containers and User Desktop environments.
 All of our software is Free and Open-Source Software to be used by anyone.
 
-Our flagship work is an [open-source green software toolchain](https://github.com/green-coding-berlin/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
+Our flagship work is an [open-source green software toolchain](https://github.com/green-coding-solutions/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
 
 &nbsp;
 
@@ -22,7 +22,7 @@ This may include setting up and measuring Cloud environments, build-chains, Virt
 
 The work at Green Coding for our toolchain covers an extensive scope where you come into contact with a lot of tools that may be new to you. However, we supply an extensive onboarding and enough time to learn these tools if you are not already familiar with them.
 
-Have a look at our Github Repository to get an overview of our tools: https://github.com/green-coding-berlin
+Have a look at our Github Repository to get an overview of our tools: https://github.com/green-coding-solutions
 
 Also check out the documentation for our flagship tool to get an impression of it: https://docs.green-coding.io/
 
@@ -45,7 +45,7 @@ We really like this creative and architectural process and believe you will do t
 Your concrete coding work will be mostly on Linux systems writing either Python, Javascript or C Code.
 Typically when measuring architectures, applications or software libraries this means creating a demo application with them.
 
-To get an idea how this would look like have a look at our [repository for demo applications](https://github.com/green-coding-berlin/example-applications) (mostly web applications at the moment) and our documentation on [Example applications](https://docs.green-coding.io/docs/prologue/example-applications/) and [containerization of applications](https://docs.green-coding.io/docs/measuring/containerizing-applications/).
+To get an idea how this would look like have a look at our [repository for demo applications](https://github.com/green-coding-solutions/example-applications) (mostly web applications at the moment) and our documentation on [Example applications](https://docs.green-coding.io/docs/prologue/example-applications/) and [containerization of applications](https://docs.green-coding.io/docs/measuring/containerizing-applications/).
 Also check out our [Case Studies](https://www.green-coding.io/case-studies), [CO2 Formulas for digital products](https://www.green-coding.io/co2-formulas) and our [Green Metrics Dashboard](https://metrics.green-coding.io) to get an idea of how the raw metrics will be presented.
 
 Most of our tooling is written in script languages like Python or Node. Most of the low-level measurement software is written in C.

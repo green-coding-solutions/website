@@ -30,10 +30,15 @@
     <div class="single-page section-two">
 
         <h1><div class="title-two title-two-no-bottom-padding">{{ i18n "home_projects" }}</div></h1>
-        <div id="project-items-container" class="data-content-two">
+        <div class="separator">
+            <div class="line line-1"></div>
+        </div>
+
+        <div id="project-items-container" class="data-content-two" style="display: flex">
             <div class="ui relaxed items" id="carousel">
                 {{ range $index, $element := sort (where .Site.RegularPages "Type" "projects") ".Params.ordering" "asc" }}
                 <div class="item" id="item{{$index}}">
+                    <a class="carousel-link"><i class="ui icon huge chevron left"></i></a>
                     <div class="ui image">
                         <a href="{{.Permalink}}"><i class="{{ .Params.Icon }} huge icon project-item-white"></i></a>
                     </div>
@@ -41,23 +46,22 @@
                         <a class="header project-item-white" href="{{.Permalink}}">{{ .Title }}</a>
                         <p><a href="{{.Permalink}}" class="project-item-white">{{.Params.Desc}}</a></p>
                     </div>
+                    <a class="carousel-link"><i class="ui icon huge chevron right"></i></a>
                 </div>
                 {{end}}
             </div>
-
-            <div id="carousel_buttons">
-                {{ range $index, $element := sort (where .Site.RegularPages "Type" "projects") ".Params.ordering" "asc" }}
-                <button class="ui circular icon button" id="button{{$index}}" >
-                    <i class="{{ .Params.Icon }} icon" ></i>
-                </button>
-                {{end}}
-            </div>
-
         </div>
-
-
+        <div id="carousel_buttons">
+            {{ range $index, $element := sort (where .Site.RegularPages "Type" "projects") ".Params.ordering" "asc" }}
+            <button class="ui circular icon button" id="button{{$index}}" >
+                <i class="{{ .Params.Icon }} icon" ></i>
+            </button>
+            {{end}}
+        </div>
     </div><!-- end portfolio -->
-
+    <br>
+    <br>
+    <br>
 </section><!-- end contact -->
 
 {{ partialCached "team.html" . }}

@@ -8,7 +8,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 
 A detailed blog article is yet to come, but for everyone who follows our
 blog only and not our repositories we wanted to highlight that we open sourced
-the new XGBoost variant of the [SPECPower estimation model for cloud workloads on github](https://github.com/green-coding-berlin/spec-power-model).
+the new XGBoost variant of the [SPECPower estimation model for cloud workloads on github](https://github.com/green-coding-solutions/spec-power-model).
 
 I guess the most interesting parts are the charts, where you can see the
 SPECPower data in comparsion to the a model by the [SDIA](https://www.sdialliance.org) formula and also our

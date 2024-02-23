@@ -12,14 +12,14 @@ ordering: 1
 The Green Metrics Tool is a free open-source (FOSS) tool we designed as a concept on how we believe it can support
 developers best to measure the energy / CO2 consumption of software architectures.
 
-Our community version is open-source [AGPLv3 Licensed](https://github.com/green-coding-berlin/green-metrics-tool/blob/main/LICENSE). For different licensing option see the enterprise version below.
+Our community version is open-source [AGPLv3 Licensed](https://github.com/green-coding-solutions/green-metrics-tool/blob/main/LICENSE). For different licensing option see the enterprise version below.
 
 You can either install it locally or use our demo dashboard, where we also offer the possibilty to submit software for measuring (link below).
 
 Please see all the details on Github and in the documentation.
 
 {{< button "book" "Documentation" "https://docs.green-coding.io" >}}
-{{< button "code branch" "Github" "https://github.com/green-coding-berlin/green-metrics-tool" >}}
+{{< button "code branch" "Github" "https://github.com/green-coding-solutions/green-metrics-tool" >}}
 {{< button "columns" "Demo Dashboard" "https://metrics.green-coding.io" >}}
 {{< button "eye" "Screenshots" "#screenshots" >}}
 
@@ -76,7 +76,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
             </div>
         </div>
         <div class="extra content">
-            <button class="ui button fluid grey disabled">Free (Download on Github)</button>
+            <a class="ui button fluid grey" href='https://github.com/green-coding-solutions/green-metrics-tool'>Free (Download on Github)</a>
         </div>
     </div>
     </div>
@@ -103,14 +103,14 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Private</b> git repositories
-                </div></div>                
+                </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Basic</b> optimizations
                     <br><small><a href="#optimizations">Screenshots</a> | Documentation</small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Offset contolled</b> cluster
-                    <br><small><a href="https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-berlin/measurement-control-workload&filename=usage_scenario.yml&branch=event-bound&machine_id=7">Measurements guaranteed < 1% Std.Dev</a></small>
+                    <br><small><a href="https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-solutions/measurement-control-workload&filename=usage_scenario.yml&branch=event-bound&machine_id=7">Measurements guaranteed < 1% Std.Dev</a></small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>High precision</b> measurements

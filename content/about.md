@@ -59,7 +59,7 @@ is hard to estimate if scaled up.
 To make all of these separate domains visible to the developer we are creating open source tools to make the energy visible.
 
 For user facing applications in the desktop, web and mobile world we are creating a tool to measure the whole application lifecycle based
-on the concept of a Standard Usage Scenario: The [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool)
+on the concept of a Standard Usage Scenario: The [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool)
 
 By pinning the code version and the usage scenario we can make different softwares comparable to each other.
 
@@ -134,7 +134,7 @@ way of interacting with it.
 We currently address this topic by educating developers through [Meetups](/talks-and-events/) and through
 talks at conferences or coding bootcamps like [WBS Coding School](https://www.wbscodingschool.com/)
 
-On the technical site we highligh the network emissions in our [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool) and show
+On the technical site we highligh the network emissions in our [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool) and show
 recommendations like
 - Moving connection from mobile to fixed-line
 - Demand Shifting to do network requests in carbon-friendly times

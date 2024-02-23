@@ -7,7 +7,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 ---
 
 In my last blog post I have written about how we finally completed the DC measurement
-reporter for our [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool).
+reporter for our [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool).
 
 In the last days we have looked at reducing the variance of the ATX powerlanes
 and finding out if swapping out the resistors for more stable current measurement
