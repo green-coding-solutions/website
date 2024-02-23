@@ -180,7 +180,7 @@ $(document).ready(function() {
           autoSlideTimer = setInterval(function() {
             currentIndex = (currentIndex + 1) % totalItems;
             showItem();
-          }, 3000);
+          }, 5000);
         }
 
         $('#carousel .item').hide();
