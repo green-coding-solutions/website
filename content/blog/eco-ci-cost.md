@@ -6,10 +6,9 @@ author: "Dan Mateas"
 authorlink: "https://www.linkedin.com/in/dan-mateas-693634105/"
 ---
 
+When we first created [Eco-CI](https://github.com/green-coding-berlin/eco-ci-energy-estimation), our goal was to help developers get a more solid grasp of how their repeated processes cost energy and carbon, and be able to put some practical numbers to that concept. It is very easy to become detached to the reality of carbon emissions when there are many layers of abstraction and conversion, as is the case with CI processes. Often what we measure is the load on a machine (via cpu-utilization), and that gets converted to a number related to the energy pull of a server (that's off somewhere) in Joules, and while we can then convert that to an estimation of grams of CO2 emitted, even that doesn't feel very tangible. And the less tangible the effects of our choices are, the less likely we are to think about them and change. The goal here then is to try to solidify a connection between our CI pipeline usage and the environmental impact they have.
 
-The carbon costs of running software can creep up on us. Individual processes may have small footprints, but as these processes become repeatable and automated these costs compound over time. CI pipeline processes are a good example of this, as they are often run daily, on a per-commit basis, or as parts of complex matrices with a lot of repitition. This is a common and good software development practice to follow to make sure you have a healthy and maintainable codebase - but what are the carbon consequences of this action? This is the question we are exploring today. 
-
-To do this, we forked four different popular open source repositories, picked one of their testing workflows, and integrated [Eco-CI](https://github.com/green-coding-berlin/eco-ci-energy-estimation) to measure that workflow. Eco-CI is our GitHub/Gitlab plugin which measures the CPU-utilization of a pipeline while its running, detects underlying hardware specs of the virtual machine, and based on this information estimates the energy usage of the CI job. It is easy to integrate into any linux-based CI Github/Gitlab job. Here is an example of how we implemented it into the django tests workflow:
+To do this, we have decided to look into the testing pipelines of a few popular open source repositories. We forked the repository, picked their testing workflow, and integrated Eco-CI to measure the energy use of that pipeline. Eco-CI is our GitHub/Gitlab plugin which measures the CPU-utilization of a pipeline while its running, detects underlying hardware specs of the virtual machine, and based on this information estimates the energy usage of the CI job using an ML model trained on SPEC power data. Here is an example of how we implemented it into the django tests workflow:
 
 ```yaml
  javascript-tests:
@@ -45,9 +44,8 @@ To do this, we forked four different popular open source repositories, picked on
 
 ```
 
-We had to make a few small adjustments to some of the workflows to accommodate this, for example only running jobs for Linux machines (as Eco-CI is Linux only currently), and in some cases reducing workflows with many parallel jobs to a single selected job, simply so we do not run out of minutes on our GitHub public runner. We ran these tests workflows once a day for the last few months to gather data. Here I have selected a period of one month to look at (from September 20th - October 20th), and gathered the data for the **total energy** used for each repository. From there I have converted the mJ used into gCO2e. Let's take a look at the data.
+The repositories we chose were curl, django, and flask for github runners, and openmw for gitlab (I'm personally a big Morrowind fan). These repositories vary quite a lot in how many workflows they have and how often they run, so I expect to see quite a big difference in the carbon footprint of these various projects. We decided to just measure one job of the main testing workflow for each for each repository (as we don't want consume all of our github minutes running multiple forked respositories's entire workflow suite). We tracked this for a month, and saw the following results:
 
-{{< rawhtml >}}
 <style>
   table {
     border-collapse: collapse;
@@ -66,7 +64,7 @@ We had to make a few small adjustments to some of the workflows to accommodate t
   }
 </style>
 <table>
-  <caption><b>Estimated Energy used by forked workflows between Sept. 20 - Oct. 20:</b></caption>
+  <caption><b>Estimated Energy used by forked workflows during a month:</b></caption>
   <thead>
     <tr>
       <th>Repository (link to tested workflow) </th>
@@ -77,18 +75,18 @@ We had to make a few small adjustments to some of the workflows to accommodate t
   <tbody>
     <tr>
       <td><a href="https://github.com/green-coding-berlin/django/blob/main/.github/workflows/schedule_tests.yml">django</a></td>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/django&branch=main&workflow=60545072">130,938,955</a></td>
-      <td><b>16.07</b></td>
+      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/django&branch=main&workflow=60545072">66,182,435</a></td>
+      <td><b>8.13</b></td>
     </tr>
     <tr>
       <td><a href="https://github.com/green-coding-berlin/curl/blob/master/.github/workflows/linux.yml">curl</a></td>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/django&branch=main&workflow=60545072">922,088,200</a></td>
-      <td><b>113.21</b></td>
+      <td><a href="https://metrics.green-coding.io/ci.html?repo=green-coding-berlin/curl&branch=master&workflow=61395528">409,295,680</a></td>
+      <td><b>50.25</b></td>
     </tr>
     <tr>
       <td><a href="https://github.com/green-coding-berlin/flask/blob/main/.github/workflows/tests.yaml">flask</a></td>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/flask&branch=main&workflow=61371506">79,174,102</a></td>
-      <td><b>9.72</b></td>
+      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/flask&branch=main&workflow=61371506">51,487,945</a></td>
+      <td><b>6.32</b></td>
     </tr>
     <tr>
       <td><a href="https://gitlab.com/green-coding-berlin/eco-ci/openmw/-/blob/master/.gitlab-ci.yml">openmw</a></td>
@@ -99,8 +97,9 @@ We had to make a few small adjustments to some of the workflows to accommodate t
 </table>
 <br/>
 {{< /rawhtml >}}
+*** sub title Github: Jan 1st- Jan 31st, Gitlab: Sept 20th - Oct 20th), {{< rawhtml >}} ***
 
-To go from mJ to gCO2e, we used the formulas that can be found on [this page here](https://www.green-coding.berlin/co2-formulas/). You can read more details as to the why there, but in general the conversion goes like this:
+The above shows how much energy the measured workflows used in total over the time period we measured. So there's our first step towards figuring out what the impact is - getting an estimation of the energy used. To go then from mJ to gCO2e, we used the formulas that can be found on [this page here](https://www.green-coding.berlin/co2-formulas/). You can read more details as to the why there, but in general the conversion goes like this:
 
 ```
 mJ -> J -> kWH -> gCO2e
@@ -112,7 +111,7 @@ so:
 (mJ / 1000  / 3600 / 1000) * 442 = gCO2e
 ```
 
-Of course, these numbers are just based on the samples that we measured and ran outselves once a day. In their original repositories, these workflows ran quite a bit more often and extensively. A good example of this is the curl workflow. This is the [original workflow file](https://github.com/curl/curl/blob/master/.github/workflows/linux.yml) on curl's repository. You can see that this workflow runs 19 parallel jobs, building curl with a variety of different protocols and then running its test suite.
+Of course, these numbers are just based on the samples we ran ourselves once a day. In their original repositories, these workflows ran quite a bit more often and extensively. A good example of this is the curl workflow. This is the [original workflow file](https://github.com/curl/curl/blob/master/.github/workflows/linux.yml) on curl's repository. You can see that this workflow runs 19 parallel jobs, building curl with a variety of different protocols and then running its test suite. It would feel foolish to run all these jobs ourselves as well in an effort to try to convince people that we need to minimize CO2 runs, so we measured one job and will now extrapolate the full usage of this pipeline.
 
 {{< rawhtml >}}
 <div style="display: flex; justify-content: center;">
@@ -126,20 +125,83 @@ Of course, these numbers are just based on the samples that we measured and ran 
 </div>
 {{< /rawhtml >}}
 
-Since we didn't measure the full workflow, we have to make an approximation for the full workflow. It will be a back-of-the-envelope type estimate, but we can scale the number we measured up to all the jobs and runs that actually happened on the curl repository. The job we measured (libressl) takes about an hour, where the full workflow uses about 600 minutes total. Additionally, in the curl repository this workflow runs on a per-push basis. [Here you can see](https://github.com/curl/curl/actions/workflows/linux.yml?query=created%3A%3C2023-10-21&created%3A%3E2023-09-20) all the runs during the Sep.20 - Oct 20 period. Ignoring all the skipped runs, it amounts to 582 runs total. Since the energy total that we calculated was based on 31 runs, our total energy estimated would be (measured energy * 10) * (582/31) = **21254.26 gCO2e**. 
+This will just be a back-of-the-envelope type estimate, but the job we measured (libressl) takes about an hour, where the full workflow uses about 600 minutes total, so our measured energy use is about 1/10th of the total real usage. Additionally, in the curl repository this workflow runs on a per-push basis, whereas we measured once a day. So we need to get a number for how often this workflow ran on the curl repository. To do this, I wrote a small script to collect all the workflow runs in January that were not cancelled or skipped for each repository:
+
+```python
+import requests
+import json
+
+def fetch_workflow_runs(repo, workflow_file, token):
+    print(f"Collecting {repo}")
+    url = f"https://api.github.com/repos/{repo}/actions/runs"
+    params = {
+        "workflow_file": workflow_file,
+        "per_page": 100
+    }
+    headers = {
+        "Authorization": f"token {token}"
+    }
+    all_runs = []
+
+    while True:
+        print(".", end="", flush=True)
+        response = requests.get(url, params=params, headers=headers)
+        data = response.json()
+        runs = data['workflow_runs']
+
+        for run in runs:
+            created_at = run['created_at']
+            if created_at < '2024-01-01T00:00:00Z':
+                break
+            if created_at < '2024-02-01T00:00:00Z':
+                all_runs.append(run)
+
+        if 'next' in response.links:
+            url = response.links['next']['url']
+        else:
+            break
+
+    return all_runs
+
+repositories = [
+    {"repo": "curl/curl", "workflow_file": "linux.yml"},
+    {"repo": "django/django", "workflow_file": "schedule_tests.yml"},
+    {"repo": "pallets/flask", "workflow_file": "tests.yaml"}
+]
+
+github_token = "REDACTED"
+
+for repo_data in repositories:
+    repo = repo_data['repo']
+    workflow_file = repo_data['workflow_file']
+    runs = fetch_workflow_runs(repo, workflow_file, github_token)
+    filtered_runs = [run for run in runs if run['conclusion'] not in ['cancelled', 'skipped'] and run['path'] == f".github/workflows/{workflow_file}"]
+
+    output_all = f"{repo.replace('/', '_')}__all_runs.json"
+    with open(output_all, 'w') as f:
+        json.dump(runs, f)
+
+    output_filtered = f"{repo.replace('/', '_')}_{workflow_file.replace('.', '_')}_runs.json"
+    with open(output_filtered, 'w') as f:
+        json.dump(filtered_runs, f)
+
+    print(f"\nSaved {len(filtered_runs)} runs for {repo} ({workflow_file}) to {output_filtered}")
+
+```
+
+For curl, it amounts to XXX runs total. Since the energy total that we calculated was based on 31 runs, our total energy estimated would be (measured energy * 10) * (XXX/31) = **21254.26 gCO2e**. 
 
 My apologies to the maintainers of curl - I'm not trying to call you out specifically, just looking at a real-world example of the carbon cost of a complete, complex, and well-built (from an automation perspective) CI suite.
 
 Doing the same calculation for all the repositories measured above, we have:
 ```
-curl: (113.21 * 10) * (582/31) = 21254.26 gCO2e
-django: (16.07 * 4.6) * (24/31) = 57.23 gCO2e
-flask: (9.72 * 1.2 ) * (17/ 31) = 6.40  gCO2e
+curl: (113.21 * 10) * (XX/31) = ??? gCO2e
+django: (50.25 * 4.6) * (28/31) = 2087.80 gCO2e
+flask: (6.32 * 1.2 ) * (23/ 31) = 56.26  gCO2e
 openmw: (342.31 * 1.5) * (178/31) = 2948.28 gCO2e
 ```
 
-
-We have also used [this calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) to put these numbers in some real-world contexts: the amount of miles driven by an average car to also emit this amount of gas, and the amount of carbon used to charge a smartphone from empty to full, and equivalent CO2 emissions from gallons of gasoline used. This helps make these values feel more palpable. Our final estimation of the total gCO2e for each repository for their testing workflow is as follows : 
+Its nice to see that three of our repositories actually don't use that much energy in the end! Now for the relevant bit - trying to put this carbon emission cost into some real world context that we can actually relate to. To do this we use [this calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) to convert into some relatable contexts: the amount of miles driven by an average car to also emit this amount of gas, and the amount of carbon used to charge a smartphone from empty to full, and equivalent CO2 emissions from gallons of gasoline used. This helps make these values feel more palpable. Our final estimation of the total gCO2e for each repository for their testing workflow is as follows : 
 
 {{< rawhtml >}}
 <style>
@@ -148,7 +210,7 @@ We have also used [this calculator](https://www.epa.gov/energy/greenhouse-gas-eq
     width: 100%;
     border: 1px solid #ddd;
   }
-
+5.4
   th, td {
     text-align: left;
     padding: 8px;
@@ -173,24 +235,24 @@ We have also used [this calculator](https://www.epa.gov/energy/greenhouse-gas-eq
   <tbody>
     <tr>
       <td>django</td>
-      <td><b>57.23</b></td>
-      <td>0.147</td>
-      <td>7</td>
+      <td><b>2087.80</b></td>
+      <td>5.4</td>
+      <td>254</td>
       <td>0.006</td>
     </tr>
     <tr>
       <td>curl</td>
-      <td><b>21,254.26</b></td>
-      <td>54.5</td>
-      <td>2,585</td>
-      <td>2.4</td>
+      <td><b>???</b></td>
+      <td>???</td>
+      <td>???</td>
+      <td>???</td>
     </tr>
     <tr>
       <td>flask</td>
-      <td><b>6.40</b></td>
-      <td>0.016</td>
-      <td>0.779</td>
-      <td>0.0007</td>
+      <td><b>56.26</b></td>
+      <td>0.144</td>
+      <td>6.8</td>
+      <td>0.006</td>
     </tr>
     <tr>
       <td>openmw</td>
@@ -204,5 +266,37 @@ We have also used [this calculator](https://www.epa.gov/energy/greenhouse-gas-eq
 </table>
 <br/>
 {{< /rawhtml >}}
+```
 
-As we can see there's a very wide range here - and the first and immediate pattern I see is in how often these workflows are run. For django and flask - these workflows ran less than once a day. For openmw and curl, they're on a per push basis. As usual our advice is generally to run pipelines only when really needed - running test suites per pull-request as oppossed to per-push is a good start, and often achieves the same level of quality control. While we do not want people to stop testing their software, we would simply like to shed some light on the impacts, start a discussion, and hopefully make people a bit more aware and attentive as to which processes they put on an automation and why. 
+Still, this was only the testing workflows, and we want to highlight our point that CI processes can get a bit out of hand. So we decided to take a look at one more repository, specifically to find one that has many workflows running over many parallel jobs. We chose [moby](https://github.com/moby/moby)
+
+<picture of moby runs>
+
+Since we didn't fork and measure this repository specifically, we have to make an estimation in a different way. In december github introduced the AMD EPYC 7763 as the processor for the default machines that public workflow runs are made on. Since then all our measured runs have been on these machines. This makes estimations much easier as there is much less variance amongst machines with the same processors (see our case study about that [here](https://www.green-coding.io/case-studies/ci-pipeline-energy-variability/)). 
+
+So first, we added up the total carbon emitted by our measured repositories and divided by the number of workflow seconds each took, to get an estimation of how much one second of workflow time costs in carbon on these machines. Doing so leads to an estimated average of 3574,66 mJ/s for workflows on AMD EPYC 7763 github machines. 
+
+Then we measured up the total minutes used by all workflow runs in the moby repository in the same time period. There are 6 workflows of note: `bin-image.yml`, `buildkit.yml`, `ci.yml`, `test.yml`, `windows-2019.yml`, and `windows-2022.yml`. There was no programatic way to do this, but I went through the runs for each of these and calculated an average number of seconds each workflow took based on a small sample, including all parallel jobs (as ultimately, this is what matters). I then used a similar script as above to get the total number of runs for each of these workflows in the month of January, and got the following results:
+
+bin-image.yml - 541 runs - 1410 seconds each - 762810 total
+
+buildkit.yml - 514 runs - 6360 seconds each - 3269040 total
+
+ci.yml - 563 runs - 1860 seconds each - 1047180 total
+
+test.yml - 483 runs - 24780 seconds each - 11968740 total
+
+windows-2019.yml - 31 runs - 52920 seconds each - 1640520 total
+
+windows-2022.yml - 467 runs - 17100 seconds each - 7985700 total
+
+Adding these all together and multiplying by our mJ/s gives us an estimation of 95,350,445,093.4 mJ of energy used. Converting then to gCO2 the same way we get: 11706,92 gCO2 emitted, for the whole month by all workflows. And now to put it in some real world context:
+
+11706,92 gCO2
+30 miles driven
+1.3 gallons of gasoline consumed
+1,424 smartphones charged
+
+While these numbers aren't exactly scary, they are starting to feel tangbile. And this is one repository, working for one month - when looking at the bigger picture we start to see how this can scale up.
+
+<outro>
