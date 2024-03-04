@@ -92,13 +92,7 @@
                                 <a href="{{.Permalink}}">
                                     <div class="ch-grid">
                                         <div class="work-info"><span> {{.Title}}<br><span>{{.Params.Eventtype}}</span></span></div>
-                                        {{ if (isset .Params "eventimg600w") }}
-                                        <img srcset="{{.Params.Eventimg}} 1x,
-                                        {{.Params.Eventimg600w}} 2x" src="{{.Params.Eventimg}}" style="width: 300px"
-                                        loading="lazy">
-                                        {{ else }}
                                         <img src="{{.Params.Eventimg}}" style="width: 300px" loading="lazy">
-                                        {{ end }}
                                     </div>
                                 </a>
                             </div>
@@ -137,13 +131,7 @@
                         <a href="{{.Permalink}}">
                             <div class="ch-grid">
                                 <div class="work-info"><span> {{.Title}}<br><span>{{.Params.Eventtype}}</span></span></div>
-                                {{ if (isset .Params "eventimg600w") }}
-                                <img srcset="{{.Params.Eventimg}} 1x,
-                                {{.Params.Eventimg600w}} 2x" src="{{.Params.Eventimg}}" style="width: 300px"
-                                loading="lazy">
-                                {{ else }}
                                 <img src="{{.Params.Eventimg}}" style="width: 300px" loading="lazy">
-                                {{ end }}
                             </div>
                         </a>
                     </div>
