@@ -9,6 +9,8 @@ eventlink: "https://www.linkedin.com/events/learningsessionbeyondbuzzwords-71639
 eventname: "Beyond Buzzwords: Making Digital Sustainability a Reality"
 eventimg: "/img/talks-and-events/lfca-learning-session-2024-02-1x.webp"
 eventimg600w: "/img/talks-and-events/lfca-learning-session-2024-02-2x.webp"
+socialmedia_preview: "/img/talks-and-events/lfca-learning-session-2024-02-2x.webp"
+
 ---
 
 Many teams within our community understand the necessity of integrating their digital products into their sustainability strategies. However, in a series of recent interviews with product teams, we revealed a disconnect between awareness and action. Sounds familiar? The reasons, though straightforward, pose significant challenges:
