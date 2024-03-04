@@ -4,6 +4,7 @@ date: 2023-10-10
 draft: false
 author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
+socialmedia_preview: "/img/blog/social/slca2.webp"
 ---
 
 While writing the [“Software Life Cycle Assessment done in the wild”](/blog/software-life-cycle-assessment/) article I needed to develop a little server that could do three simple tasks. Because the article became too long I decided to separate the methodology how to develop with environmental impact in mind into a dedicated part. Feel free to head over to the [SLCA](/blog/software-life-cycle-assessment/) article and read the first part to see why we are developing this server.
@@ -25,7 +26,7 @@ The server we are developing should do three simple things:
 
 Like pretty much with any project we start by creating a docker file and specifying what components we need initially. Details can be found in the GitHub repo:
 
-[https://github.com/green-coding-berlin/SLCA-Code](https://github.com/green-coding-berlin/SLCA-Code)
+[https://github.com/green-coding-solutions/SLCA-Code](https://github.com/green-coding-solutions/SLCA-Code)
 
 For this example we use a simple setup with a [FastAPI](https://fastapi.tiangolo.com/) and a database in the background. Because I am used to [PostgreSQL](https://www.postgresql.org/) my initial setup includes this but the way we are setting this up we can easily benchmark different backends in the future.
 

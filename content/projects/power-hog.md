@@ -4,6 +4,9 @@ date: 2023-9-20 19:00:00
 publishDate: 2023-01-16
 draft: false
 icon: "piggy bank"
+desc: "Power Hog offers tools for monitoring computer energy consumption, focusing on process analysis, central data collection for optimization, and CO2 data submission."
+ordering: 5
+
 ---
 
 The Power Hog offers a suite of tools designed to track your computer's energy consumption.
@@ -22,19 +25,19 @@ For running the hog on your system there are two main parts.
 The background script that collects all the data and sends it to a server. This is called the `power_logger`. More
 information can be found here:
 
-[https://github.com/green-coding-berlin/hog#power-logger](https://github.com/green-coding-berlin/hog#power-logger)
+[https://github.com/green-coding-solutions/hog#power-logger](https://github.com/green-coding-solutions/hog#power-logger)
 
 The app that gives you first insites on the data collected and more information on the hog on your system. Details
 can be found here:
 
-[https://github.com/green-coding-berlin/hog#the-desktop-app](https://github.com/green-coding-berlin/hog#the-desktop-app)
+[https://github.com/green-coding-solutions/hog#the-desktop-app](https://github.com/green-coding-solutions/hog#the-desktop-app)
 
 Detailed analytics can be done in the Green Metrics Tool dashboard. You can either use our server or hosts you own.
 
 A full readme and documentation can be found in the GitHub repo.
 
 {{< rawhtml >}}
-<a class="ui labeled button" href="https://github.com/green-coding-berlin/hog/releases">
+<a class="ui labeled button" href="https://github.com/green-coding-solutions/hog/releases">
     <div class="ui button">
         <i class="arrow alternate circle down icon"></i>
     </div>
@@ -42,7 +45,7 @@ A full readme and documentation can be found in the GitHub repo.
         Download
     </span>
 </a>
-<a class="ui labeled button" href="https://github.com/green-coding-berlin/hog/blob/main/README.md#the-power-hog">
+<a class="ui labeled button" href="https://github.com/green-coding-solutions/hog/blob/main/README.md#the-power-hog">
     <div class="ui button">
         <i class="book icon"></i>
     </div>
@@ -50,7 +53,7 @@ A full readme and documentation can be found in the GitHub repo.
         Documentation
     </span>
 </a>
-<a class="ui labeled button" href="https://github.com/green-coding-berlin/hog/">
+<a class="ui labeled button" href="https://github.com/green-coding-solutions/hog/">
     <div class="ui button">
         <i class="code branch icon"></i>
     </div>

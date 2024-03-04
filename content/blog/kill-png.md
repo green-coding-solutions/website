@@ -4,7 +4,7 @@ date: 2024-01-10
 draft: false
 author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
-socialmedia_preview: "/img/blog/big_png.webp"
+socialmedia_preview: "/img/blog/social/big_png.webp"
 
 ---
 
@@ -18,7 +18,7 @@ But if the advantages are so obvious why are people still using 30 year old tech
 
 So I created a little script that solves this problem. It's called `png2webp`:
 
-[https://github.com/green-coding-berlin/png2webp/blob/main/png2webp.sh](https://github.com/green-coding-berlin/png2webp/blob/main/png2webp.sh)
+[https://github.com/green-coding-solutions/png2webp/blob/main/png2webp.sh](https://github.com/green-coding-solutions/png2webp/blob/main/png2webp.sh)
 
 The functionality is quite simple.
 

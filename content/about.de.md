@@ -9,13 +9,15 @@ translationKey: about
 
 ---
 
+{{< image "/img/about/world.webp" >}}
+
 Software wird immer CO2 emissionen haben. Genauso wie jede Technologie, selbst die Solarenergie, CO2 in der Herstellung produziert und das menschliche Leben auch.
 
 Wir glauben jedoch, dass die Nutzung von Software der Weg zu mehr Umweltfreundlichkeit und Nachhaltigkeit ist und dass die Digitalisierung jedes Sektors ein Baustein zur Bekämpfung des Klimawandels ist.
 
 Wie in jedem technologischen Bereich ist das Messen und Verstehen des eigenen Verbrauchs der wichtigste Schritt, um eine Aufgabe anzugehen.
 
-Der nächste Schritt besteht darin, die Optimierungspotenziale zu verstehen. Manchmal sind dies sehr einfache Sachen wie [grünes Hosting] (https://www.thegreenwebfoundation.org/).
+Der nächste Schritt besteht darin, die Optimierungspotenziale zu verstehen. Manchmal sind dies sehr einfache Sachen wie [grünes Hosting](https://www.thegreenwebfoundation.org/).
 
 In anderen Fällen geht es um Änderungen an Ihrer Infrastruktur, Ihrem Code oder Ihren Entwicklungsabläufen.
 
@@ -30,7 +32,7 @@ Software-Nutzung
 
 Um Berechnungen durchführen zu können, muss die Software die zugrunde liegende Hardware nutzen und verbraucht daher Energie.
 
-Der Energieverbrauch ist oft nicht einfach zu ermitteln. Wenn Sie CPU-/GPU-intensive Lasten haben, wie beim [High Performance Computing] (https://de.wikipedia.org/wiki/Hochleistungsrechnen)
+Der Energieverbrauch ist oft nicht einfach zu ermitteln. Wenn Sie CPU-/GPU-intensive Lasten haben, wie beim [High Performance Computing](https://de.wikipedia.org/wiki/Hochleistungsrechnen)
 oder beim Bitcoin-Mining, ist der Energieverbrauch oft identisch mit der thermischen Leistung Ihres Chips.
 
 Bei der alltäglichen Nutzung von Software ist der Fall jedoch ganz anders. Viele Faktoren tragen zu dem oft verschwenderischen Energieverbrauch von Software bei und sind oft von der reinen Zeit, in der eine Software läuft, entkoppelt:
@@ -63,7 +65,7 @@ Software kann so schnell sein, dass es nicht wahrnehmbar ist, ob die Nutzung 10m
 
 Um all diese getrennten Bereiche für die EntwicklerInnen sichtbar zu machen, entwickeln wir Open-Source-Tools, die den Energieverbrauch sichtbar machen.
 
-Für nutzerorientierte Anwendungen in der Desktop-, Web- und mobilen Welt entwickeln wir ein Tool zur Messung des gesamten Anwendungslebenszyklus auf der Grundlage eines eines Standardnutzungsszenarios: Das [Green Metrics Tool] (https://github.com/green-coding-berlin/green-metrics-tool)
+Für nutzerorientierte Anwendungen in der Desktop-, Web- und mobilen Welt entwickeln wir ein Tool zur Messung des gesamten Anwendungslebenszyklus auf der Grundlage eines eines Standardnutzungsszenarios: Das [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool)
 
 Durch die Verknüpfung von der Version des Codes und eines Nutzungsszenarios können wir verschiedene Software miteinander vergleichbar machen.
 
@@ -99,7 +101,7 @@ Schauen Sie sich unser [OpenEnergyBadge Projekt](/de/projects/open-energy-badge)
 Beispiel Abzeichen: {{< rawhtml >}} <a href="https://metrics.green-coding.io/stats.html?id=01e4f6e1-318f-4ecb-a19f-041439a50065"><img src="https://api.green-coding.io/v1/badge/single/01e4f6e1-318f-4ecb-a19f-041439a50065?metric=AC"></a>{{< /rawhtml >}}
 
 
-{{< greenblock >}}
+{{< greenblock  "/img/about/dev.webp" >}}
 Netzwerke
 {{</ greenblock >}}
 
@@ -130,7 +132,7 @@ Die Lösung liegt unserer Meinung nach darin, diese Ressource sichtbarer zu mach
 Wir befassen uns derzeit mit diesem Thema, indem wir Entwickler durch [Meetups](/talks-and-events/) und durch
 Vorträge auf Konferenzen oder Coding Bootcamps wie [WBS Coding School](https://www.wbscodingschool.com/)
 
-Auf der technischen Seite heben wir die Netzwerkemissionen in unserem [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool) hervor und zeigen Empfehlungen wie:
+Auf der technischen Seite heben wir die Netzwerkemissionen in unserem [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool) hervor und zeigen Empfehlungen wie:
 
 - Verlagerung von Mobilfunk- zu Festnetzanschlüssen
 - Demand Shifting, um Netzwerkanfragen zu CO2 freundlichen Zeiten zu erledigen
@@ -140,14 +142,16 @@ Auf der technischen Seite heben wir die Netzwerkemissionen in unserem [Green Met
 - Verringerung der Aktualisierungszyklen und Abfrageintervalle
 
 {{< whiteblock >}}
-Gebundenes CO2
+Hardware Herstellung (Embodied Carbon)
 {{</ whiteblock >}}
+
+{{< image "/img/about/carbon.webp" "medium" "right" >}}
 
 Um Software zu betreiben, braucht man Hardware. Diese Hardware muss hergestellt werden und ist oft der Hauptverursacher von CO2 emissionen.
 
-Bei Verbrauchergeräten wie Smartphones stammen typischerweise [über 90 % der gesamten CO2 emissionen aus der Herstellung] (https://greensoftware.foundation/articles/sustainable-systems-user-hardware-and-sustainability)
+Bei Verbrauchergeräten wie Smartphones stammen typischerweise [über 90 % der gesamten CO2 emissionen aus der Herstellung](https://greensoftware.foundation/articles/sustainable-systems-user-hardware-and-sustainability)
 
-Bei Servern sieht die Sache anders aus, und hier ist es [ungefähr umgekehrt] (https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r740xd.pdf) (wenn Sie mit grünem Strom betrieben werden).
+Bei Servern sieht die Sache anders aus, und hier ist es [ungefähr umgekehrt](https://i.dell.com/sites/csdocuments/CorpComm_Docs/en/carbon-footprint-poweredge-r740xd.pdf) (wenn Sie mit grünem Strom betrieben werden).
 
 
 ### Unsere Arbeit

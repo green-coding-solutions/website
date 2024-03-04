@@ -35,8 +35,10 @@
 	height: 100%;
 	z-index: 1;
 	opacity: 0;
+    display: grid;
+    align-items: center;
 }.work-info:hover{opacity: 1; cursor: pointer;}
-.work-info span{text-align: center; width: 100%; padding-top: 100px;}
+.work-info span{text-align: center; width: 100%;}
 .work-info span span{font-size: 12px; font-weight: 400; display: block; text-align: center; width: 100%; padding-top: 10px;}
 
 .ch-grid .ch-item:hover {}

@@ -4,7 +4,10 @@ date: 2023-01-15 19:00:00
 publishDate: 2023-01-15
 draft: false
 icon: "leaf"
+desc: Eco-CI calculates the energy consumption of your CI/CD environments, supporting GitHub and GitLab. It tracks the power usage of the runs for accurate energy management and budgeting. Key features include real-time measurements and data export, aiding in sustainable development practices"
+ordering: 2
 ---
+
 
 Eco CI is the internal name for a project where we create small tools to make CI pipelines more transparent
 in terms of their energy usage and also develop small tools that can save energy / CO2 in the pipeline.
@@ -39,11 +42,11 @@ also possible to get only results for part of the CI run.
 </figure>
 {{< /rawhtml >}}
 
-{{< button "code branch" "Github Repository" "https://github.com/green-coding-berlin/eco-ci-energy-estimation" >}}
+{{< button "code branch" "Github Repository" "https://github.com/green-coding-solutions/eco-ci-energy-estimation" >}}
 
 {{< button "shopping bag" " Github Marketplace" "https://github.com/marketplace/actions/eco-ci-energy-estimation" >}}
 
-{{< button "eye" "Live preview on Github Actions" "https://github.com/green-coding-berlin/green-metrics-tool/actions/runs/4720202654" >}}
+{{< button "eye" "Live preview on Github Actions" "https://github.com/green-coding-solutions/green-metrics-tool/actions/runs/4720202654" >}}
 
 {{< button "chartline" "CI Energy Cost monitoring" "https://metrics.green-coding.io/ci.html?repo=green-coding-berlin%2Fgreen-metrics-tool&branch=dev&workflow=45267392" >}}
 
@@ -62,7 +65,7 @@ The Eco CI Activity checker skips the test run then and thus saves energy and CO
 
 {{< button "book" "Blog article" "/blog/eco-ci-activity-checker-released/" >}}
 
-{{< button "code branch" "Github Repository" "https://github.com/green-coding-berlin/eco-ci-activity-checker" >}}
+{{< button "code branch" "Github Repository" "https://github.com/green-coding-solutions/eco-ci-activity-checker" >}}
 
 {{< button "shopping bag" "Github Marketplace" "https://github.com/marketplace/actions/eco-ci-activity-checker" >}}
 
@@ -72,11 +75,11 @@ The Eco CI Activity checker skips the test run then and thus saves energy and CO
 
 ## Gitlab Plugin
 
-Please for Gitlab our main central [Github repository documentation](https://github.com/green-coding-berlin/eco-ci-energy-estimation/blob/main/README.md#gitlab) which talks about the Gitlab functionality.
+Please for Gitlab our main central [Github repository documentation](https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab) which talks about the Gitlab functionality.
 
 {{< button "book" "Blog article" "/blog/eco-ci-gitlab-release/" >}}
 
-{{< button "code branch" "Github Repository (for Gitlab documentation)" "https://github.com/green-coding-berlin/eco-ci-energy-estimation/blob/main/README.md#gitlab" >}}
+{{< button "code branch" "Github Repository (for Gitlab documentation)" "https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab" >}}
 
 &nbsp;
 

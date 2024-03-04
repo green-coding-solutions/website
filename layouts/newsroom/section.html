@@ -1,0 +1,167 @@
+{{ define "main" }}
+
+<section id="newsroom" class="single-page bg-one"><div id="ancla1"></div>
+    <div class="section-one">
+        <div class="title-one">Newsroom</div>
+        <div class="data-content-one" style="text-align: left;">
+            <p>{{ i18n "newsroom_welcome" }}</p>
+            <br>
+            <h2 class="ui top attached block header">
+                {{ i18n "news" }}
+            </h2>
+            <div class="ui attached divided items segment">
+                {{ $news := first 6 (where .Site.RegularPages "Type" "news") }}
+                {{ range $news.ByDate.Reverse }}
+
+                <div class="item">
+                    <div class="ui tiny image">
+                        <img src="{{.Params.picture}}" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <a class="header" href="{{.Params.link}}">{{.Title}}</a>
+                        <div class="meta">
+                            <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+                        </div>
+
+                        <div class="description">
+                            <p>{{ .Content }}</p>
+                        </div>
+                        <div class="extra">
+                            <a class="ui right floated primary button" href="{{.Params.link}}">
+                                {{ i18n "more_information" }}<i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+            <br>
+            <h2 class="ui top attached block header">
+                {{ i18n "us_in_the_media" }}
+            </h2>
+            <div class="ui attached divided items segment">
+                {{ $media := first 6 (where .Site.RegularPages "Type" "media") }}
+                {{ range $media.ByDate.Reverse }}
+                <div class="item">
+                    <div class="ui tiny image">
+                        <img src="{{.Params.picture}}" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <a class="header" href="{{.Params.link}}">{{.Title}}</a>
+                        <p>{{.Params.Magazine}}</p>
+                        <div class="meta">
+                            <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+                        </div>
+
+                        <div class="description">
+                            <p>{{ .Content }}</p>
+                        </div>
+                        <div class="extra">
+                            <a class="ui right floated primary button" href="{{.Params.link}}">
+                                {{ i18n "more_information" }}<i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+            <br>
+            <h2 class="ui top attached block header">
+                {{ i18n "publications" }}
+            </h2>
+            <div class="ui attached divided items segment">
+                {{ $publi := first 6 (where .Site.RegularPages "Type" "publication") }}
+                {{ range $publi.ByDate.Reverse }}
+                <div class="item">
+                    <div class="content">
+                        <a class="header" href="{{.Params.link}}">{{.Title}}</a>
+                        <p>{{.Params.Magazine}}</p>
+                        <div class="meta">
+                            <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+                        </div>
+
+                        <div class="description">
+                            <p>{{ .Content }}</p>
+                        </div>
+                        <div class="extra">
+                            <a class="ui right floated primary button" href="{{.Params.link}}">
+                                {{ i18n "more_information" }}<i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+            <br>
+            <h2 class="ui top attached block header">
+                {{ i18n "downloads" }}
+            </h2>
+            <div class="ui attached divided items segment">
+                {{ range $.Site.Data.downloads }}
+                <div class="item">
+                    <i class="{{ .icon }} icon"></i>
+                    <div class="content">
+                        <a class="header"  href="{{ .link }}" target="_blank">{{ .title }}</a>
+                        <div class="description">{{ if eq $.Lang "de"}}{{ .description }}{{else}}{{ .description_de }}{{end}}</div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="team" class="single-page bg-two">
+    <div id="nav-team"></div>
+    <div class="section-one">
+        <div class="data-content-one" style="text-align: left;">
+            <h2 class="ui dividing header">
+                {{ i18n "team" }}
+            </h2>
+            <article class="content-team teamshow">
+                <div class="teamlist">
+                    <div class="team">
+                        <div class="who">
+                            <!-- THREE -->
+                            <div class="members-box">
+                                <img src="/img/team/petra.webp" loading=lazy
+                                style="border-radius:50%; margin:auto;display:block" width="165" height="165">
+                                <div class="name-team">Petra Rulsch</div>
+                                <div class="name-title">{{ i18n "mediacontact" }}</div>
+                            </div>
+                            <div class="photo-footer">
+                                <div class="socialicons">
+                                    <a href="https://www.linkedin.com/in/petrarulsch/">
+                                        <div class="t-linkedin"></div>
+                                    </a>
+                                    <a href="mailto:pr@petra-rulsch.com">
+                                        <div class="t-mail"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="who">
+                            <div class="members-box">
+                                <img src="/img/team/michelle.webp" loading=lazy style="border-radius:50%; margin:auto;display:block" width="165" height="165">
+                                <div class="name-team">Michelle Grüne</div>
+                                <div class="name-title">{{ i18n "marketing_sales" }}</div>
+                            </div>
+                            <div class="photo-footer">
+                                <div class="socialicons">
+                                    <a href="https://www.linkedin.com/in/michelle-grüne-06477411a/">
+                                        <div class="t-linkedin"></div>
+                                    </a>
+                                    <a href="mailto:michelle@green-coding.io">
+                                        <div class="t-mail"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section><!-- end team -->
+{{ end }}

@@ -29,7 +29,7 @@
 	
 	}
 	
-	@media only screen and (max-width: 1050px) {
+	@media only screen and (max-width: 959px) {
 		#ancla1,#ancla2,#ancla3,#ancla4,#ancla5,#ancla6{position: absolute; top: -100px;}
 		.menu-select{display: none;}
 		.profile1{font-size: 22px !important;}
@@ -171,6 +171,9 @@
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 		
+        #project-items-container .carousel-link {
+            display: none;
+        }
 		.pofile-item:first-child {margin-left: 0;}
 		
 		.dir-left{left: -150px; bottom: 360px;}

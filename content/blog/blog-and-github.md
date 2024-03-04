@@ -11,7 +11,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 First update comes right with this first blog-entry and is regarding our
 Github Repository.
 
-At https://github.com/green-coding-berlin you can find our code repositories
+At https://github.com/green-coding-solutions you can find our code repositories
 with all the source code that we generate in our meetups and in internal projects.
 
 Currently it only contains our website, which is made with HUGO.

@@ -5,11 +5,13 @@ publishDate: 2023-01-16
 draft: false
 projectimg: "/img/projects/gmt-rapl-graph.webp"
 icon: "code"
+desc: "Das Green Metrics Tool ist ein ganzheitliches Framework zur Messung des Energie- / CO2-Verbrauchs Ihrer Anwendung."
+ordering: 1
 ---
 
 Das Green Metrics Tool ist ein freies Open-Source (FOSS) Tool, das wir entwickelt haben um EntwicklerInnen am besten dabei zu unterstützen, den Energie- / CO2-Verbrauch von Software-Architekturen zu messen.
 
-Unser Tool ist quelloffen [AGPLv3 lizenziert](https://github.com/green-coding-berlin/green-metrics-tool/blob/main/LICENSE)
+Unser Tool ist quelloffen [AGPLv3 lizenziert](https://github.com/green-coding-solutions/green-metrics-tool/blob/main/LICENSE)
 
 Sie können es entweder lokal installieren oder unser Demo-Cluster verwenden, wo wir auch die Möglichkeit bieten, Software zur Messung einzureichen [Link](https://metrics.green-coding.io/request.html).
 
@@ -17,7 +19,9 @@ Bitte lesen Sie alle Details auf Github und in der Dokumentation.
 
 {{< button "book" "Dokumentation" "https://docs.green-coding.io" >}}
 
-{{< button "code branch" "Github" "https://github.com/green-coding-berlin/green-metrics-tool" >}}
+{{< button "code branch" "Github" "https://github.com/green-coding-solutions/green-metrics-tool" >}}
+
+{{< button "eye" "Screenshots" "#screenshots" >}}
 
 {{< button "columns" "Demo Dashboard" "https://metrics.green-coding.io" >}}
 
@@ -26,7 +30,7 @@ Bitte lesen Sie alle Details auf Github und in der Dokumentation.
 ## Screenshots der Einzelmessungen
 
 {{< rawhtml >}}
-<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-1.webp" alt="GMT Screenshot" loading="lazy" style="margin:auto;">
+<img id="screenshots" class="ui rounded bordered image" src="/img/projects/gmt-screenshot-1.webp" alt="GMT Screenshot" loading="lazy" style="margin:auto;">
 <br>
 <img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-2.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
 <br>

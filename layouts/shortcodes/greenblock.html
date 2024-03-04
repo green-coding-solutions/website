@@ -1,6 +1,9 @@
         </div>
     </div>
 </section>
+{{ with .Get 0 }}
+<img src="{{ . }}" class="ui image full-width-image" alt="Green Coding Header">
+{{ end }}
 <section class="bg-two">
     <div class="single-page section-two">
         <div class="title-two">{{.Inner}}</div>
