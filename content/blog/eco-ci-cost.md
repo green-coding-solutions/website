@@ -96,8 +96,8 @@ The repositories we chose were curl, django, and flask for github runners, and o
   </tbody>
 </table>
 <br/>
-{{< /rawhtml >}}
-*** sub title Github: Jan 1st- Jan 31st, Gitlab: Sept 20th - Oct 20th), {{< rawhtml >}} ***
+
+*** sub title Github: Jan 1st- Jan 31st, Gitlab: Sept 20th - Oct 20th),  ***
 
 The above shows how much energy the measured workflows used in total over the time period we measured. So there's our first step towards figuring out what the impact is - getting an estimation of the energy used. To go then from mJ to gCO2e, we used the formulas that can be found on [this page here](https://www.green-coding.berlin/co2-formulas/). You can read more details as to the why there, but in general the conversion goes like this:
 
@@ -113,7 +113,6 @@ so:
 
 Of course, these numbers are just based on the samples we ran ourselves once a day. In their original repositories, these workflows ran quite a bit more often and extensively. A good example of this is the curl workflow. This is the [original workflow file](https://github.com/curl/curl/blob/master/.github/workflows/linux.yml) on curl's repository. You can see that this workflow runs 19 parallel jobs, building curl with a variety of different protocols and then running its test suite. It would feel foolish to run all these jobs ourselves as well in an effort to try to convince people that we need to minimize CO2 runs, so we measured one job and will now extrapolate the full usage of this pipeline.
 
-{{< rawhtml >}}
 <div style="display: flex; justify-content: center;">
 
 <div style="flex: 1; margin: 10px;">
@@ -123,7 +122,6 @@ Of course, these numbers are just based on the samples we ran ourselves once a d
 </div>
 
 </div>
-{{< /rawhtml >}}
 
 This will just be a back-of-the-envelope type estimate, but the job we measured (libressl) takes about an hour, where the full workflow uses about 600 minutes total, so our measured energy use is about 1/10th of the total real usage. Additionally, in the curl repository this workflow runs on a per-push basis, whereas we measured once a day. So we need to get a number for how often this workflow ran on the curl repository. To do this, I wrote a small script to collect all the workflow runs in January that were not cancelled or skipped for each repository:
 
@@ -200,7 +198,6 @@ openmw: (342.31 * 1.5) * (178/31) = 2948.28 gCO2e
 
 Its nice to see that three of our repositories actually don't use that much energy in the end! Now for the relevant bit - trying to put this carbon emission cost into some real world context that we can actually relate to. To do this we use [this calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) to convert into some relatable contexts: the amount of miles driven by an average car to also emit this amount of gas, and the amount of carbon used to charge a smartphone from empty to full, and equivalent CO2 emissions from gallons of gasoline used. This helps make these values feel more palpable. Our final estimation of the total gCO2e for each repository for their testing workflow is as follows : 
 
-{{< rawhtml >}}
 <style>
   table {
     border-collapse: collapse;
@@ -258,12 +255,11 @@ Its nice to see that three of our repositories actually don't use that much ener
       <td>359</td>
       <td>0.332</td>
     </tr>
-
   </tbody>
 </table>
 <br/>
-{{< /rawhtml >}}
-```
+
+
 
 Still, this was only the testing workflows, and we want to highlight our point that CI processes can get a bit out of hand. So we decided to take a look at one more repository, specifically to find one that has many workflows running over many parallel jobs. We chose [moby](https://github.com/moby/moby)
 
