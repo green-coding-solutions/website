@@ -62,7 +62,7 @@ So it is fair to assume that the number of users is probably still usable.
 
 Now we need the cost of the download. This is easy to get. Just open the explorer: 41.1 MB (macOS)
 
-To construct a calculation regarding CO2 we need numbers on the cost of data transmission and grid intensities. You find everything on our [CO2 Formulas](/co2-formulas) page.
+To construct a calculation regarding CO2 we need numbers on the cost of data transmission and grid intensities. You find everything on our [CO2 Formulas]({{< relref path="co2-formulas" >}}) page.
 
 ### Base assumptions
 - Grid Intensity: 0.436 kgCO2/kwH (worldwide average)

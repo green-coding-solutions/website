@@ -141,10 +141,10 @@ on idle for **5 Minutes** with our [low overhead MSR RAPL checking reporter](htt
 
 
 Raw data:
-- [ec2_m5.metal_idle_p0_energy_filtering_off.csv](/files/ec2_m5.metal_idle_p0_energy_filtering_off.csv)
-- [ec2_m5.metal_idle_p1_energy_filtering_off.csv](/files/ec2_m5.metal_idle_p1_energy_filtering_off.csv)
-- [ec2_m5.metal_idle_p0_energy_filtering_on.csv](/files/ec2_m5.metal_idle_p0_energy_filtering_on.csv)
-- [ec2_m5.metal_idle_p1_energy_filtering_on.csv](/files/ec2_m5.metal_idle_p1_energy_filtering_on.csv)
+- [ec2_m5.metal_idle_p0_energy_filtering_off.csv]({{- "files/ec2_m5.metal_idle_p0_energy_filtering_off.csv" | relLangURL -}})
+- [ec2_m5.metal_idle_p1_energy_filtering_off.csv]({{- "files/ec2_m5.metal_idle_p1_energy_filtering_off.csv" | relLangURL -}})
+- [ec2_m5.metal_idle_p0_energy_filtering_on.csv]({-< "files/ec2_m5.metal_idle_p0_energy_filtering_on.csv" | relLangURL -}})
+- [ec2_m5.metal_idle_p1_energy_filtering_on.csv]({-< "files/ec2_m5.metal_idle_p1_energy_filtering_on.csv" | relLangURL -}})
 
 
 {{< whiteblock >}}

@@ -29,4 +29,4 @@ old linear model as well as the XGBoost model.
 Here are the slides to our talk, where we present the works on and performance of the model
 at the PyData Nov'22 Meetup in Berlin.
 
-[Download Slides](/slides/PyData-Talk.pdf)
+[Download Slides]({{- "slides/PyData-Talk.pdf" | absLangURL -}})

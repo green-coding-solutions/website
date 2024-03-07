@@ -21,4 +21,4 @@ Arne Tarara works for Green Coding Solutions, which is a Berlin-based software c
 
 ## Slide-Deck PDF
 
-[Download Slides](/slides/2023_04_openXchange.pdf)
+[Download Slides]({{- "slides/2023_04_openXchange.pdf" | relLangURL -}})

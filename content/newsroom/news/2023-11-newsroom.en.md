@@ -7,4 +7,4 @@ draft: false
 type: "news"
 ---
 
-Our Newsroom is online as of now. Please find older news unstructured in the [Blog](/blog).
+Our Newsroom is online as of now. Please find older news unstructured in the [Blog]({{< relref path="blog" >}}).

@@ -21,7 +21,7 @@ most known tool to show CPU utilization..
 </figure>
 {{< /rawhtml >}}
 
-When conducting Green Coding analysis, our preference typically leans towards directly examining the energy metrics of components, if available. An example of this would be Intel's RAPL, which we discuss in more detail [here](/case-studies/rapl-and-sgx/)). However, in numerous contexts such as cloud computing, these metrics are not readily accessible."
+When conducting Green Coding analysis, our preference typically leans towards directly examining the energy metrics of components, if available. An example of this would be Intel's RAPL, which we discuss in more detail [here]({{< relref path="case-studies/rapl-and-sgx" >}})). However, in numerous contexts such as cloud computing, these metrics are not readily accessible."
 
 Cloud services predominantly operate on Linux systems. However, cloud vendors only grant access to a subset of the values typically logged by a standard Linux OS. Notably, CPU utilization is often among the metrics that are readily available.
 
@@ -702,7 +702,7 @@ or if the system is configured in that way that many variables are fixed (like f
 As we have seen many cloud vendors, especially CI/CD tools like **Github Actions** or **Gitlab Pipelines** use
 fixed frequency CPUs, which allow for making some reproducibility claims of the system performance and energy.
 
-As said before, these are for instance the assumptions for our [Cloud Energy model](/projects/cloud-energy/) where we estimate the power draw of cloud machines based on the fact that in the SPECPower data we use there the systems have typically fixed C-States  and P-States.
+As said before, these are for instance the assumptions for our [Cloud Energy model]({{< relref path="projects/cloud-energy" >}}) where we estimate the power draw of cloud machines based on the fact that in the SPECPower data we use there the systems have typically fixed C-States  and P-States.
 
 In a future piece we will look at how using CPU instructions and jiffies behaves on different load types.
 

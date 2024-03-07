@@ -59,7 +59,7 @@ is hard to estimate if scaled up.
 To make all of these separate domains visible to the developer we are creating open source tools to make the energy visible.
 
 For user facing applications in the desktop, web and mobile world we are creating a tool to measure the whole application lifecycle based
-on the concept of a Standard Usage Scenario: The [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool)
+on the concept of a Standard Usage Scenario: The [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}})
 
 By pinning the code version and the usage scenario we can make different softwares comparable to each other.
 
@@ -71,7 +71,7 @@ drive architectural optimizations (like which service to use, or if a move to se
 Through case-studies we also want to highlight the overhead cost of virtualization and give metrics to make informed decisions which
 architectural model fits best in an energy aware company culture.
 
-Also check out [our projects](/#projects)
+Also check out [our projects]({{< relref path="projects" >}})
 
 
 {{< whiteblock >}}
@@ -96,7 +96,7 @@ We develop in-line plugins for Github Actions and badges that make other people 
 
 Also we focus in the building process for static sites, which typically have a lower cost of operating but incur a build cost.
 
-Checkout out our [OpenEnergyBadge project](/projects/open-energy-badge), our [Eco CI-plugins for Github](/projects/eco-ci) or our [Case Studies](/case-studies/) on the topic.
+Checkout out our [OpenEnergyBadge project]({{< relref path="projects/open-energy-badge" >}}), our [Eco CI-plugins for Github]({{< relref path="projects/eco-ci" >}}) or our [Case Studies]({{< relref path="case-studies" >}}) on the topic.
 
 Example badge: {{< rawhtml >}} <a href="https://metrics.green-coding.io/stats.html?id=01e4f6e1-318f-4ecb-a19f-041439a50065"><img src="https://api.green-coding.io/v1/badge/single/01e4f6e1-318f-4ecb-a19f-041439a50065?metric=AC"></a>{{< /rawhtml >}}
 
@@ -112,7 +112,7 @@ Great tools like [Websitecarbon.com](https://www.websitecarbon.com/) allow the v
 website request.
 
 Nowadays this is typically done by boiling down the complexity into one very error prone formula. See our
-article on [CO2-Formulas](/co2-formulas/) for more details.
+article on [CO2-Formulas]({{< relref path="co2-formulas" >}}) for more details.
 
 The problematic in network emissions lies not in their existence, but in their invisibilty.
 
@@ -122,7 +122,7 @@ the internet increased its adoption and became ubiquitous.
 However flatrates have introduced a decoupling from the nature of network transmissions not really
 having a flat carbon emission.
 This creates a disconnectedness and misunderstandig that every use of network will at some
-point lead to an increase in carbon emissions. Sometimes linearly, sometimes in stages. (See [Gigabytes to kWh](/co2-formulas/#gigabytes-to-kwh))
+point lead to an increase in carbon emissions. Sometimes linearly, sometimes in stages. (See [Gigabytes to kWh]({{< relref path="co2-formulas/#gigabytes-to-kwh" >}}))
 
 Since you do not see your consumption, like you for instance do for you telephone bill, you
 risk getting careless with the resource. Same as with buffet food, where leftovers are the norm.
@@ -131,10 +131,10 @@ The solution to this is, we believe, making this resource more visible and getti
 way of interacting with it.
 
 ### Our work
-We currently address this topic by educating developers through [Meetups](/talks-and-events/) and through
+We currently address this topic by educating developers through [Meetups]({{< relref path="talks-and-events" >}}) and through
 talks at conferences or coding bootcamps like [WBS Coding School](https://www.wbscodingschool.com/)
 
-On the technical site we highligh the network emissions in our [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool) and show
+On the technical site we highligh the network emissions in our [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}) and show
 recommendations like
 - Moving connection from mobile to fixed-line
 - Demand Shifting to do network requests in carbon-friendly times

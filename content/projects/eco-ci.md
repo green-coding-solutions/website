@@ -21,7 +21,7 @@ energy cost of the workflow run.
 
 Github Actions runs on Microsoft Azure VMs. In these VMs are direct measurement with something like RAPL is sadly not possible.
 
-We are using our work from our [Cloud Energy project](/projects/cloud-energy) to estimate the energy used by these Azure VMs.
+We are using our work from our [Cloud Energy project]({{< relref path="projects/cloud-energy" >}}) to estimate the energy used by these Azure VMs.
 
 The result is an easily integrateable Github Action where you get the energy in Joules for the CI run. It is
 also possible to get only results for part of the CI run.
@@ -63,7 +63,7 @@ was a manual run triggered just a couple minutes before the run.
 
 The Eco CI Activity checker skips the test run then and thus saves energy and CO2.
 
-{{< button "book" "Blog article" "/blog/eco-ci-activity-checker-released/" >}}
+{{< button "book" "Blog article" "/blog/eco-ci-activity-checker-released" >}}
 
 {{< button "code branch" "Github Repository" "https://github.com/green-coding-solutions/eco-ci-activity-checker" >}}
 
@@ -77,7 +77,7 @@ The Eco CI Activity checker skips the test run then and thus saves energy and CO
 
 Please for Gitlab our main central [Github repository documentation](https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab) which talks about the Gitlab functionality.
 
-{{< button "book" "Blog article" "/blog/eco-ci-gitlab-release/" >}}
+{{< button "book" "Blog article" "blog/eco-ci-gitlab-release" >}}
 
 {{< button "code branch" "Github Repository (for Gitlab documentation)" "https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab" >}}
 
@@ -92,4 +92,4 @@ A second savings can be had by re-scheuling jobs that are not time-sensitive to 
 Also hanging and idling VMs are currently tackled in on of our projects to turn them down and stop wasting idle power
 Cloud VMs.
 
-Stay tuned on our [blog](/blog) also for updates on this project!
+Stay tuned on our [blog]({{< relref path="blog" >}}) also for updates on this project!

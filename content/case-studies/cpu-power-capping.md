@@ -240,7 +240,7 @@ Here we see that around **80%** there seems to be a sweet spot where the power s
 
 An important question is now: How does this compare in a real-world use-case? And how are the results to be interpreted when we do look at the whole machine and not only the CPU? What happens if we factor in embodied carbon? Will results be the same?
 
-For this we are using our [Green Metrics Tool](/projects/green-metrics-tool/) and are measuring the unit test of the [Django](https://github.com/green-coding-solutions/django
+For this we are using our [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}) and are measuring the unit test of the [Django](https://github.com/green-coding-solutions/django
 ) project. This is by design a **event-fixed** workload also.
 We have put all measurements online on the [Green Metrics Tool Dashboard](https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-solutions/django&filename=usage_scenario.yml&branch=main&machine_id=6&start_date=2023-12-01&end_date=2023-12-02)
 

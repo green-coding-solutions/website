@@ -21,6 +21,6 @@ We are speaking at the Enviroinfo conference in Garching (near Munich) this year
 
 ## Slide-Deck PDF
 
-[Download Slides](/slides/2023_10_enviroinfo_slca.pdf)
+[Download Slides]({{- "slides/2023_10_enviroinfo_slca.pdf" | relLangURL -}})
 
 
