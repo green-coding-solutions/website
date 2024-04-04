@@ -161,7 +161,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                     <b>Whitelabel</b> & <b>Dual-Licensing</b>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    Advanced <b>Green Coding AI</b> Optimizations
+                    Advanced <b>Green Coding AI</b> Optimizations (beta)
                     <br><small>Code introspection & prediction</small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
