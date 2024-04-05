@@ -2542,3 +2542,7 @@ li.dropdown-list-item {
 .title.green {color: #21ba45;}
 
 .distance-top {margin-top: 10px;}
+
+.no-flex {
+    display: block;
+}
