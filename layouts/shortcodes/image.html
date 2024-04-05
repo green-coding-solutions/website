@@ -1,5 +1,6 @@
 {{ $src := .Get 0 }}
 {{ $size := .Get 1 | default "medium" }}
 {{ $float := .Get 2 | default "left" }}
+{{ $floated := .Get 3 | default "floated" }}
 
-<img class="ui {{ $size }} {{ $float }} floated rounded image" src="{{ $src }}" loading="lazy">
+<img class="ui {{ $size }} {{ $float }} {{ $floated}} rounded image" src="{{ $src }}">
