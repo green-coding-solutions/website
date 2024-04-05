@@ -123,7 +123,7 @@ Details
           <div class="description">
             <p>No matter if you have your own software product or just want to quantify the consumption of all your operations, it is necessary to quantify the CO2 emissions in real time.</p>
             <p>We integrate our enterprise ready measurement and reporting tools into your infrastructure and help you generate reporting ready and/or marketing ready carbon numbers.</p>
-            <p>It is important to look at the whole software lifecycle and create carbon metrics for all stages. We employ our enterprise ready tooling for all these stages: Development, Testing, Runtime. For external SaaS solutions we work with academic verified estimations.</p>
+            <p>It is important to look at the whole software lifecycle and create carbon metrics for all stages. We employ our enterprise ready tooling for all these stages: Development, Testing, Runtime. For external SaaS solutions we work with accredited databases.</p>
           </div>
           <a class="ui right floated primary button distance-top" href="/services/consulting">
               Consulting offers

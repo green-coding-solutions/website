@@ -4,7 +4,7 @@ date: 2024-04-25 09:00:00
 publishDate: 2024-01-30
 draft: false
 eventtype: "Conference"
-eventlink: "https://www.ecocompute.io/"
+eventlink: "https://www.eco-compute.io/"
 eventname: "EcoCompute Conferece"
 eventimg: "/img/talks-and-events/ecocompute_2024_04.webp"
 eventimg600w: "/img/talks-and-events/ecocompute_2024_04_1200.webp"

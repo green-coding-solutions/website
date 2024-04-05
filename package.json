@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "@cloudflare/pages-plugin-mailchannels": "^0.1.2"
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0"
   }
 }

@@ -1,6 +1,6 @@
 ---
 title: "How much energy is my server using?"
-date: 2024-02-23
+date: 2024-04-05
 draft: false
 author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
@@ -9,7 +9,8 @@ socialmedia_preview: "/img/blog/social/eco-server-energy-estimation.webp"
 
 Something we often encounter when talking to clients is that they often have no idea of how much energy the various components in their pipeline use. We have developed multiple projects like [Eco-CI]({{< relref path="projects/eco-ci" >}}) that measures the energy usage of CI/CD pipelines or [Power Hog]({{< relref path="projects/power-hog" >}}) which logs energy consumption on desktops. But to date is was not possible to see how much your servers use.
 
-In our effort to open source most of our developments we are happy to announce the public release of the [Eco-Server](https://github.com/green-coding-solutions/eco-server-energy-estimation) project and the release of the CarbonDB backend in the [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}). This is a big step for us a company as it enables us to monitor even more resources in the Software Life Cycle. To read more about Software Life Cycle Assessment please check out our articles [SLCA PART 1]({{< relref path="blog/software-life-cycle-assessment" >}}) and [SCLA PART 2]({{< relref path="blog/carbon-aware-development" >}}).
+In our effort to open source most of our developments we are happy to announce the public release of the [Eco-Server](https://github.com/green-coding-solutions/eco-server-energy-estimation) project and the release of the CarbonDB backend in the [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}). This is a big step for us a company as it enables us to monitor even more resources in the Software Life Cycle. To read more about Software Life Cycle Assessment please check out our articles [SLCA PART 1]({{< relref path="blog/software-life-cycle-assessment" >}}) and [SLCA PART 2]({{< relref path="blog/carbon-aware-development" >}}).
+
 
 ## Eco-Server
 
@@ -33,8 +34,9 @@ While knowing your energy usage is already a really nice thing to have we wanted
 
 This shows the view you will get for a machine. It shows you the sum of of all the energy the machine has used, the [CO2eq](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Carbon_dioxide_equivalent), the average [Carbon Intensity](https://en.wikipedia.org/wiki/Emission_intensity) and how many records we have used to generate these values. You can also see a list aggregated by day. We are planning on giving you detailed analytics as we already do for the Power Hog or Eco-CI. This is a really useful tool for any company that wants to record their impact.
 
-You can find the CarbonDB uploader here:
-https://github.com/green-coding-solutions/eco-server-energy-estimation/tree/main/carbondb_upload
+See an example whow the data looks on our [Green Metrics Tool Dashboard Machine](https://metrics.green-coding.io/carbondb-details.html?machine_uuid=09015ff3-8a00-47f0-906a-9360b1808d38), which is also included in Carbon DB.
+
+You can find the CarbonDB uploader on [our Github repo](https://github.com/green-coding-solutions/eco-server-energy-estimation/tree/main/carbondb_upload)
 
 It comes with an easy `install.sh` script that installs a timer that runs every 10 minutes and uploads all the values to a Green Metrics backend. You can use our hosted solution or host it yourself.
 

@@ -8,6 +8,7 @@ eventlink: "https://www.linkedin.com/posts/mannheimbusinessschool_mannheimbusine
 eventname: "Mannheim Business School - Green Coding Impuls Talks IIML"
 eventimg: "/img/talks-and-events/mannheim-business-school-2023-01-17.webp"
 eventimg600w: "/img/talks-and-events/mannheim-business-school-2023-01-17-2x.webp"
+socialmedia_preview: "/img/talks-and-events/mannheim-business-school-2023-01-17-2x.webp"
 show_button: true
 ---
 

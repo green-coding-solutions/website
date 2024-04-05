@@ -10,6 +10,9 @@ summaryLength = 30
 
 defaultContentLanguage = "en"
 
+[build]
+  writeStats = true
+
 [languages]
   [languages.en]
     disabled = false

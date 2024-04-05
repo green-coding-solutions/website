@@ -8,6 +8,8 @@ eventlink: "https://sdialliance.org/green-coding-summit/2023/"
 eventname: "SDIA Green Coding Summit 2023"
 eventimg: "/img/talks-and-events/sdia-green-coding-summit-2023.webp"
 eventimg600w: "/img/talks-and-events/sdia-green-coding-summit-2023.webp"
+socialmedia_preview: "/img/talks-and-events/sdia-green-coding-summit-2023.webp"
+
 ---
 
 Our first hands-on workshop for our community!
