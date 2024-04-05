@@ -8,11 +8,11 @@
 
 */}}
 
-<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/normalize.css" | minify | fingerprint).RelPermalink }}'>
-<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/main.css" | minify | fingerprint).RelPermalink }}'>
-<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/base.css" | minify | fingerprint).RelPermalink }}'>
-<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/skeleton.css" | minify | fingerprint).RelPermalink }}'>
-<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/portfoliostyle.css" | minify | fingerprint).RelPermalink }}'>
-<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/roll_over.css" | minify | fingerprint).RelPermalink }}'>
-<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/layout.css" | minify | fingerprint).RelPermalink }}'>
-<link rel="stylesheet" type="text/css" href="/dist/css/semantic_reduced.min.css">
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/normalize.css" | resources.PostCSS | minify | fingerprint | resources.PostProcess ).RelPermalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/main.css" | resources.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/base.css" | resources.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/skeleton.css" | resources.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/portfoliostyle.css" | resources.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/roll_over.css" | resources.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/layout.css" | resources.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
+<link rel="stylesheet" type="text/css" href="{{ (resources.Get "css/semantic_reduced.min.css" | resources.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}">
