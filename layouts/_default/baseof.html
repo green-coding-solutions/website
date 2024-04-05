@@ -39,8 +39,8 @@
 
       Important: Remember to set also the [outputs] rule in the config.toml accordingly
   */}}
-  {{ with  .OutputFormats.Get "css" }}
-      <link rel="stylesheet" href="{{.RelPermalink}}"  />
+  {{ with .OutputFormats.Get "css" }}
+      <link rel="stylesheet" href="{{ (. | resources.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink}}"  />
   {{ end }}
 
   {{/* Google suggests using absolute URLs for hreflang link tags here, so do not change! */}}
