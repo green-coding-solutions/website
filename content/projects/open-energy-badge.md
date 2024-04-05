@@ -22,7 +22,7 @@ of:
 - How much building the static website costs
 - etc.
 
-It is created automatically by our [Green Metrics Tool](/projects/green-metrics-tool) and can freely be used.
+It is created automatically by our [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}) and can freely be used.
 
 The energy metrics created come in different metric types, depending on if you tested it locally on your dev system
 or on our [hosted demo instance](https://metrics.green-coding.io)  with option to submit software for measuring.

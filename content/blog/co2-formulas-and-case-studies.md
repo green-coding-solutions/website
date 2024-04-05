@@ -11,7 +11,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 Starting this month we will be releasing articles in a regular fashion about insights
 into energy use of specifc software tools or architectures.
 
-In order to lay a foundation to follow these articles we have created at a [CO2 Formulas](/co2-formulas) 
+In order to lay a foundation to follow these articles we have created at a [CO2 Formulas]({{< relref path="co2-formulas" >}}) 
 page, where you can find all the relevant formulas how to calculate the energy
 use of software.
 Often times software can be directly instrumented and measured, but when the complexity 
@@ -30,4 +30,4 @@ For example:
 - How much more energy does Wordpress consume compared to a static site?
 - How much energy does content compression with `gzip` save?
 
-Check out our case studies to get into the details: [Case Studies](/case-studies)
+Check out our case studies to get into the details: [Case Studies]({{< relref path="case-studies" >}})

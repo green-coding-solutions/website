@@ -23,7 +23,7 @@ You will be working with our team to create tools to measure the energy use of s
 
 As a junior developer, your work will be mainly developing sample applications and creating use-cases and comparisons of how people can relate to the energy consumption of software.
 
-See examples in our [Case Studies](https://www.green-coding.io/case-studies), our [Example Applications](https://github.com/green-coding-solutions/example-applications) and our [Green Metrics Dashboard](https://metrics.green-coding.io)
+See examples in our [Case Studies]({{< relref path="case-studies" >}}), our [Example Applications](https://github.com/green-coding-solutions/example-applications) and our [Green Metrics Dashboard](https://metrics.green-coding.io)
 
 &nbsp;
 

@@ -11,8 +11,8 @@ eventimg600w: "/img/talks-and-events/sdia-def-2023-03-600w.webp"
 
 ---
 
-We are invited to present our latest advances on the [Green Metrics Tool](/projects/green-metrics-tool/) new UI
-and our [Eco CI](/projects/eco-ci/) project at the [SDIA](https://sdialliance.org/) DEF Steering Group Meeting.
+We are invited to present our latest advances on the [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}) new UI
+and our [Eco CI]({{< relref path="projects/eco-ci" >}}) project at the [SDIA](https://sdialliance.org/) DEF Steering Group Meeting.
 
 ## Details
 

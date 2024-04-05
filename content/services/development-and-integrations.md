@@ -10,7 +10,7 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 Acting and reducing digital emissions in software happens through using less software, changing and optimizing running software and bringing new analytics and reporting software in.
 
-We develop [industry wide used state of the art open source software](/#projects) and also change and optimize carbon legacy software for clients.
+We develop [industry wide used state of the art open source software]({{< relref path="projects" >}}) and also change and optimize carbon legacy software for clients.
 
 <br>
 

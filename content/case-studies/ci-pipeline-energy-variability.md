@@ -6,7 +6,7 @@ author: "Dan Mateas"
 authorlink: "https://www.linkedin.com/in/dan-mateas-693634105/"
 ---
 
-As we've been testing the energy use of various CI pipelines using [Eco-CI](/projects/eco-ci/), one thing we've noticed is that there is a large amount of variability in the results. Pipeline runs that we would expect to be more or less the same (same commit hash, running a few days in a row on the same cpu) can have wildly different results:
+As we've been testing the energy use of various CI pipelines using [Eco-CI]({{< relref path="projects/eco-ci" >}}), one thing we've noticed is that there is a large amount of variability in the results. Pipeline runs that we would expect to be more or less the same (same commit hash, running a few days in a row on the same cpu) can have wildly different results:
 
 {{< rawhtml >}}
 <figure>
@@ -53,9 +53,9 @@ First, we made a simple pipeline that should run in a relatively consistent amou
 
 \
 \
-We added [Eco-CI](/projects/eco-ci/) into this, and measured two distinct steps: first the installation process, and then running the sysbench command. We ran this many times over a few days and looked at the energy and time used, as well as the average cpu utilization for each step. We then calculated the mean and standard deviance for these values.
+We added [Eco-CI]({{< relref path="projects/eco-ci" >}}) into this, and measured two distinct steps: first the installation process, and then running the sysbench command. We ran this many times over a few days and looked at the energy and time used, as well as the average cpu utilization for each step. We then calculated the mean and standard deviance for these values.
 
-We also keep track which cpu each run is being done on. As a refresher, the ML model that [Eco-CI](/projects/eco-ci/) is based on identifies CPU model and utilization as the biggest contributing factors towards the energy use of servers. This means that comparing runs across different CPU's is unfair - one cpu model might inherently cost more energy for your run. While very interesting information in its own right, for the purposes of calculating variability we can only calculate the mean and standard deviance for each cpu seperately.
+We also keep track which cpu each run is being done on. As a refresher, the ML model that [Eco-CI]({{< relref path="projects/eco-ci" >}}) is based on identifies CPU model and utilization as the biggest contributing factors towards the energy use of servers. This means that comparing runs across different CPU's is unfair - one cpu model might inherently cost more energy for your run. While very interesting information in its own right, for the purposes of calculating variability we can only calculate the mean and standard deviance for each cpu seperately.
 
 We also ran this pipeline on Gitlab, and gathered the same data. Gitlab hosted runners only have one cpu, so that simplifies things a bit.
 

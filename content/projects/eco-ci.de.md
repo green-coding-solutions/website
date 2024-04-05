@@ -18,7 +18,7 @@ Durch die Integration unserer maßgeschneiderten Github Actions und Github Apps 
 
 Github Actions laufen auf Microsoft Azure VMs. In diesen VMs ist eine direkte Messung mit etwas wie RAPL leider nicht möglich.
 
-Wir nutzen unsere Arbeit aus dem [Cloud Energy](/de/projects/cloud-energy) Projekt, um den Energieverbrauch dieser Azure-VMs zu schätzen.
+Wir nutzen unsere Arbeit aus dem [Cloud Energy]({{< relref path="projects/cloud-energy" >}}) Projekt, um den Energieverbrauch dieser Azure-VMs zu schätzen.
 
 Das Ergebnis ist eine leicht integrierbare Github-Aktion, mit der Sie die Energie in Joule für den CI-Lauf erhalten. Es ist auch möglich, nur Ergebnisse für einen Teil des CI-Laufs zu erhalten.
 
@@ -60,7 +60,7 @@ ein paar Minuten vor dem Lauf ein manueller Lauf ausgelöst wurde.
 
 Der Eco CI Activity Checker überspringt dann den Testlauf und spart so Energie und CO2.
 
-{{< button "book" "Blog-Artikel" "/blog/eco-ci-activity-checker-released/" >}}
+{{< button "book" "Blog-Artikel" "/blog/eco-ci-activity-checker-released" >}}
 
 {{< button "code branch" "Github Repository" "https://github.com/green-coding-solutions/eco-ci-activity-checker" >}}
 
@@ -74,7 +74,7 @@ Der Eco CI Activity Checker überspringt dann den Testlauf und spart so Energie 
 
 Bitte beachten Sie für Gitlab unsere zentrale [Github repository Dokumentation](https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab), die alles über die Gitlab-Funktionalität beinhaltet.
 
-{{< button "book" "Blog arcticle" "/blog/eco-ci-gitlab-release/" >}}
+{{< button "book" "Blog arcticle" "blog/eco-ci-gitlab-release" >}}
 
 {{< button "code branch" " Github Repository (für Gitlab Dokumentation)" "https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab" >}}
 
@@ -88,4 +88,4 @@ Eine weitere Einsparung kann durch die Umplanung von Arbeit, die nicht zeitabhä
 
 Auch hängende und im Leerlauf befindliche VMs werden derzeit in einem unserer Projekte angegangen, um sie abzuschalten und die Verschwendung von Leerlaufstrom zu stoppen
 
-Schauen Sie doch auch gerne in unseren [Blog](/blog) um auf dem Laufenden zu bleiben.
+Schauen Sie doch auch gerne in unseren [Blog]({{< relref path="blog" lang="en" >}}) um auf dem Laufenden zu bleiben.
