@@ -2546,3 +2546,7 @@ li.dropdown-list-item {
 .no-flex {
     display: block;
 }
+
+.ui.three.column.grid .column{
+    width: 33%;
+}
