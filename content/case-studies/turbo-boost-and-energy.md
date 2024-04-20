@@ -36,9 +36,14 @@ The question that arises for someone who is doing research in software energy co
 
 ## Energy test
 
-Our test machine is a MacBook Pro 13" 2015 model with a Intel Core i7-5557U CPU @ 3.1 GHz.
+Our test machines are:
+- MacBook Pro 13" 2015 model with a Intel Core i7-5557U CPU @ 3.1 GHz.
+- Quanta Leopard-DDR3
+- Fujitsu TX1330 M3
 
-According to `/proc/cpuinfo` this chip has 2 physical cores (found by looking at max. **core id** number) and 4 threads
+Find details about the machines in our [cluster specification](https://docs.green-coding.io/docs/measuring/measurement-cluster/)
+
+According to `/proc/cpuinfo` the *MacBook Pro 13" 2015* for instance has a chip with 2 physical cores (found by looking at max. **core id** number) and 4 threads
 (found by looking at max. **processor** number).
 
 Looking at **flags** we see that **ht** is a feature, which corresponds to Hyper-Threading.
@@ -57,17 +62,16 @@ sleep 180
 perf stat -a -e power/energy-pkg/ sysbench --cpu-max-prime=10000 --threads=48 --test=cpu --events=300000 --time=0 run
 ```
 
-The command always runs for **10 s** fixed. What we modified during the runs is the **--threads** argument
-as seen in the following table.
+The command always calculates **300,000 Events** fixed with no time limit.
 
 This is the result:
 
 {{< table class="ui table" >}}
-|    Turbo Boost On/Off  |  Blockheating (Time) | Blockheating (Energy) | MacBook Pro 13" (Time) |  MacBook Pro 13" (Energy) | Fujitsu TX1330 (Time) | Fujitsu TX1330 (Energy) |
+|    Turbo Boost On/Off  |  Quanta Leopard-DDR3 (Time) | Quanta Leopard-DDR3 (Energy) | MacBook Pro 13" (Time) |  MacBook Pro 13" (Energy) | Fujitsu TX1330 M3 (Time) | Fujitsu TX1330 M3 (Energy) |
 |:-----------:|:----------:|:----------:|:---------:|:---------:|:---------:|:---------:|
-| On | 10,13 s | 1635,11 J | 93,477 s | 1482,08 J | 68,1 s | 958,66 J |
-| On | 10,13 s | 1636,11 J | 93,87 s | 1476,85 J | 68,34 s | 964,73 J |
-| On | 10,14 s | 1640,56 J | 93,48 s | 1484,34 J | 68,36 s | 967,26 J |
+| Of | 10,13 s | 1635,11 J | 93,477 s | 1482,08 J | 68,1 s | 958,66 J |
+| Of | 10,13 s | 1636,11 J | 93,87 s | 1476,85 J | 68,34 s | 964,73 J |
+| Of | 10,14 s | 1640,56 J | 93,48 s | 1484,34 J | 68,36 s | 967,26 J |
 | **AVG** | **10,13 s** | **1637,26 J** | **93,609 s** | **1481,09 J** | **68,26 s** | **963,55 J** |
 | **STDDEV** | **0,0058** | **2,9013** | **0,226** | **3,8419** | **0,1447** | **4,4198** |
 | **STDDEV %** | **0,057** | **0,1772** | **0,2415** | **0,2594** | **0,2119** | **0,4587** |
@@ -84,10 +88,12 @@ This is the result:
 | **Increase / Decrease** | **86,48 %** | **106,59 %** | **92,6 %** | **120,31 %** | **71,94 %** | **136,47 %** |
 
 
-
-
 {{</ table >}}
 
+**Result**: We see that the decrease in time sometimes does not outweigh the increase in energy. Especially for the 
+MacBook machine this is very prononounced.
+
+**Real world case**
 
 An important question is however also: How does this compare in a real-world use-case? Will results be the same?
 
@@ -105,6 +111,9 @@ the runtime of **218 s** to an energy budget of **2805.90 J**.
 
 So even in this real-world scenarios we see here that Turbo-Boost is a detremential feature when looking at the CPU
 Energy cost.
+
+## Discussion
+
 However, this is not the whole story.
 
 When looking at energy costs you always have to expand the picture as much as you can:
@@ -128,59 +137,11 @@ for this particular hardware setup.
 
 So you always have to make the scope as wide as you reasonably can and include all parts you use energy for.
 
-A
-
-
-As seen in the charts and the table Hyper-Threading on our Intel CPU on the test bench
-is always able to deliver more operations per 10 seconds.
-
-The energy with Hyper-Threading turned on exceeds the total amount of the non-Hyper-Threading configuration
-of the chip when using 3 cores or more.
-This was not necessarily expected ... it could also have been that the chip somehow throttles the performance
-but uses a constant energy budget..
-
-The other interesting metric is the mJ / Ops metric. Here we can see that Hyper-Threading
-actually is more energy efficient per operation than running the system
-only with physical cores.
-
-
-## Discussion
-The results are quite suprising as Hyper-Threading used to have a bit of a bad rep.
-
-For instance [this article from Percona](https://www.percona.com/blog/2015/01/15/hyper-threading-double-cpu-throughput/) comes to the conclusion that Hyper-Threading has rather
-throttling features and typically is more suitable for low utilization workloads.
-
-Also [Hyper-Threading has potential security issues](https://www.theregister.com/2019/10/29/intel_disable_hyper_threading_linux_kernel_maintainer/) although the current state
-and if it relevant in real world setups is not quite clear to us.
-
-Another factor to keep into consideration is that Hyper-Threading by theory reduced the
-latency of your system when a task is picked up.\
-This makes perfect sense, as you introduce another scheduling layer.\
-However since a normal Linux installation is anyway not real-time workload optimized
-this factor might not weigh very high.
-
-All in all we are very suprised about how energy friendly the feature is and especially
-for the typical server workloads that are rather multi-threaded and mostly idling.
-Since Hyper-Threading seems to have no effect on idle CPUs this seems like a perfect fit.
-
-Since Hyper-Threading is by default turned on, and also every server in the SPECPower database
-has it turned on we see no reason to run benchmarks that should reflect CPU capabilities with
-Hyper-Threading turned off.
-
-
-
-
-So what is the conclusion? Machines should be setup like this in on-premise environments.
-Then, if it is time to buy a new machine, because the current amount of machines cannot handle the amount of tasks anymore
-it should first be checked what the uptake of buying this machine is
+What is the conclusion now? 
 
 If you can somehow quantify the time that you are loosing in energy, than make a trade-off calculation.
 
-If you would be buing new machines, then trade-off.
-
 If you typically have long idle or even shutdown periods in between and there is no good reason why
 the calculation should be faster (which is often the case for many tasks in a system) -> off
-
-
 
 Did we miss something? Please shoot us an email to [info@green-coding.io](mailto:info@green-coding.io)
