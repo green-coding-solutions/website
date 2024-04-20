@@ -1,5 +1,5 @@
 ---
-title: "CPU Power Capping - Processor energy configuration series - Part 2"
+title: "CPU Power Capping - Processor energy configuration series - Part 3"
 draft: false
 date: 2023-12-30
 author: "Arne Tarara"
