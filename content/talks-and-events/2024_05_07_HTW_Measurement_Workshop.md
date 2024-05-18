@@ -1,7 +1,7 @@
 ---
 title: "Measurement Workshop - HTW Berlin (May 2024)"
-date: 2023-05-07 11:30:00
-publishDate: 2023-05-18
+date: 2024-05-07 11:30:00
+publishDate: 2024-05-18
 draft: false
 eventtype: "Workshop"
 eventlink: "https://www.htw-berlin.de/hochschule/personen/person/?eid=11866"
