@@ -29,7 +29,7 @@ Though many caveats exist in this claim like:
 
 However, not close to **7 years later** and many Python versions and also implementations later we thought it is due for a re-visit of the paper.
 
-Since in the paper [Python 3.6 was used](https://github.com/greensoftwarelab/Energy-Languages/blob/master/Python/binary-trees/Makefile) we will look at newer version like Python 3.9, Python 3.12, Mojo, RustPython and also PyPy 3.7 if Python has advanced either in the CPython reference implementation of if also different interpreters might ease the inefficiency a bit.
+Since in the paper [Python 3.6 was used](https://github.com/greensoftwarelab/Energy-Languages/blob/master/Python/binary-trees/Makefile) we will look at newer version like Python 3.9, Python 3.12, Mojo, RustPython and also PyPy 3.10 if Python has advanced either in the CPython reference implementation of if also different interpreters might ease the inefficiency a bit.
 
 {{< greenblock >}}
 Agenda
@@ -113,7 +113,6 @@ The [Green Metrics Tool](https://www.green-coding.io/projects/green-metrics-tool
 - [Python 3.12 Dockerfile](https://github.com/green-coding-solutions/python-benchmarks/blob/main/python/Dockerfile-3-12)
 - [Mojo Dockerfile](https://github.com/green-coding-solutions/python-benchmarks/blob/main/python/Dockerfile-Mojo)
 - [PyPy 3.10](https://github.com/green-coding-solutions/python-benchmarks/blob/main/python/Dockerfile-pypy)
-- [RustPython Dockerfile](https://github.com/green-coding-solutions/python-benchmarks/blob/main/python/Dockerfile-RustPython)
 - [C Dockerfile](https://github.com/green-coding-solutions/python-benchmarks/blob/main/c/Dockerfile)
 
 We just boot the container, execute the CLI command and let the Green Metrics Tool do it's automated measurement magic. Find an example [usage_scenario for Python 3.6 here](https://github.com/green-coding-solutions/python-benchmarks/blob/main/usage_scenario_py3.6.yml).
@@ -170,10 +169,10 @@ Results
 {{< table class="ui table" >}}
 | Language                    | Benchmark | vs. C [CPU Energy]   | vs. C [Machine Energy]
 |:---------------------------:|:---:|:---:|:---:|
-| PyPy 3.7    | binary-trees | 5x | 7x |
-| PyPy 3.7  | fannkuch-redux | 21x | 25x |
-| PyPy 3.7           | fasta | 22x | 18x |
-| **PyPy 3.7**         | **TOTAL** | **18x** | **21x** |
+| PyPy 3.10    | binary-trees | 5x | 7x |
+| PyPy 3.10  | fannkuch-redux | 21x | 25x |
+| PyPy 3.10           | fasta | 22x | 18x |
+| **PyPy 3.10**         | **TOTAL** | **18x** | **21x** |
 {{</ table >}}
 
 
@@ -210,6 +209,18 @@ Results
 
 What stands out with these results is that we cannot exactly reproduce the 75x difference between Python and C. Our data only shows a 60x difference.
 
+These are the best python versions in descending order:
+
+{{< table class="ui table" >}}
+| Language                    | Overhead vs. C [Machine Energy]
+|:---------------------------:|:---:|:---:|:---:|
+| PyPy 3.10    | 21x |
+| Python 3.12  | 48x |
+| Mojo           |  56x |
+| Python 3.6  | 58x |
+| Python 3.9  | 61x |
+{{</ table >}}
+
 The reason for that is most likely that we use newer and different hardware. However what should be expected is that we at least have a similar offset for the singular tests,
 which is also not the case.
 
@@ -224,7 +235,7 @@ So not only are the values off, also the tendency swaps direction for the *fasta
 We have no explanation for that at the moment.
 
 For the *TOTAL* value of all these three tests combined at least there is an uncertainty what the authors here accumulated exactly. 
-Specificalla if it is just the average of the ratios (60+66+34/3) or if it is the sum of the total energies and then the ratio (which is what the Green Metrics Tool does).
+Specifically if it is just the average of the ratios (60+66+34/3) or if it is the sum of the total energies and then the ratio (which is what the Green Metrics Tool does).
 
 In any case, it would not explain the differences in the singular tests, so we did not investiage here any further.
 
@@ -244,7 +255,7 @@ It will just wrap the Python code and import it as a module and then run it with
 Summary and further considerations
 {{< /greenblock >}}
 
-In this case study we have looked at Python and how it compares to C in a nostalgic look back on the original test setup from [Greenlab] and their paper [Energy Efficiency across Programming Languages](https://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf).
+In this case study we have looked at Python and how it compares to C in a nostalgic look back on the original test setup from [Greenlab](https://greenlab.di.uminho.pt) and their paper [Energy Efficiency across Programming Languages](https://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf).
 
 We have seen that Python has improved quite a bit (~18%) and different interpreters can remedy the slowness problem of the language quite a bit (PyPy).
 
