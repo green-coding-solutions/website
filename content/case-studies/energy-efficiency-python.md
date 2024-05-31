@@ -1,7 +1,7 @@
 ---
 title: "Energy Efficiency of programming languages - Revisiting Python in 2024"
 draft: false
-date: 2024-05-08
+date: 2024-05-31
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
 socialmedia_preview: "img/social-media-previews/case-study-python-energy-efficiency-2024.webp"
