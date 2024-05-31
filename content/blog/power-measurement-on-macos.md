@@ -11,7 +11,7 @@ a workshop on measuring the energy digital products.
 
 We presented approchaes where you measure the energy either with tool like [Scaphandre](https://github.com/hubblo-org/scaphandre) or
 the [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool) as well as approaches for restricted environments like the cloud.
-Here the [SDIA DEF Model](https://knowledge.sdialliance.org/digital-environmental-footprint) and our [SPECPower linear model](https://github.com/green-coding-solutions/spec-power-model) where presented.
+Here the [SDIA DEF Model](https://knowledge.sdialliance.org/digital-environmental-footprint) and our [Cloud Energy ML Model](https://github.com/green-coding-solutions/cloud-energy) where presented.
 
 What the two former tools have in common though is that they are designed to work
 exclusively on Linux.

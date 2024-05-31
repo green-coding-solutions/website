@@ -125,6 +125,9 @@ systemctl disable --now dpkg-db-backup.timer
 systemctl disable --now e2scrub_all.timer
 systemctl disable --now fstrim.timer
 systemctl disable --now motd-news.timer
+systemctl disable --now e2scrub_reap.service
+systemctl disable --now tinyproxy.service
+
 
 # these following timers might be missing on newer ubuntus
 systemctl disable --now systemd-tmpfiles-clean.timer
@@ -133,6 +136,9 @@ systemctl disable --now logrotate.timer
 systemctl disable --now ua-timer.timer
 systemctl disable --now man-db.timer
 systemctl disable --now systemd-tmpfiles-clean.timer
+
+systemctl disable --now sysstat-collect.timer
+systemctl disable --now sysstat-summary.timer
 
 systemctl disable --now systemd-journal-flush.service
 systemctl disable --now systemd-timesyncd.service

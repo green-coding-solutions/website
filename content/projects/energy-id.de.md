@@ -29,4 +29,4 @@ Für Messungen auf anderen Rechnern, die Ihrem Setup ähnlicher sind, besuchen S
 
 # Open Source Projects
 ---
-{{< include-file "content/projects/energy-id-projects.html" >}}
+{{< include-file "content/energy-id-projects.html" >}}

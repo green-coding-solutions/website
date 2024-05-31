@@ -43,7 +43,7 @@ A new project by the Green Software Foundation is also focussing on making this 
 ## Using estimation models
 
 If you cannot measure you have to estimate. We have written a prior [blog article]({{< relref path="blog/specpower-model-with-xgboost-open-sourced" >}}) about how this can be done with an
-easy machine learning model and provided an [extensive documentation on Github](https://github.com/green-coding-solutions/spec-power-model) how to discover the needed input parameters.
+easy machine learning model and provided an [extensive documentation on Github](https://github.com/green-coding-solutions/cloud-energy) how to discover the needed input parameters.
 
 However sometimes you need auxillary information like more details about the hypervisor and also which machine specific registers (MSRs) are accessible
 on the machine as you might want to leverage some MSRs to provide more information about the machine.
