@@ -1,11 +1,34 @@
-baseURL = 'https://www.green-coding.berlin/'
-languageCode = 'de-en'
-title = 'green-coding.berlin'
+baseURL = 'https://www.green-coding.io/'
+title = 'green-coding.io'
+
+defaultContentLanguageInSubdir = false
 
 paginate = 10
 paginatePath = "page"
 
 summaryLength = 30
+
+defaultContentLanguage = "en"
+
+[build]
+  writeStats = true
+
+[languages]
+  [languages.en]
+    disabled = false
+    languageCode = "de-EN"
+    languageDirection = 'ltr'
+    languageName = 'English'
+    weight = 1
+
+  [languages.de]
+    languageCode = "de-DE"
+    disabled = false
+    languageDirection = 'ltr'
+    languageName = 'Deutsch'
+    weight = 2
+
+
 
 # Minify removes also the "" (quotes) from the HTML tags. This breaks bing site validation and
 # also maybe some SEO features.
@@ -20,3 +43,7 @@ summaryLength = 30
   tag = ""
   group = ""
   category = ""
+
+# This will allow HTML tags inside of .md files without hacks like {{<rawhtml>}}
+[markup.goldmark.renderer]
+  unsafe = true

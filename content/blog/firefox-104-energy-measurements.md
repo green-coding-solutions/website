@@ -8,7 +8,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 ---
 
 {{< infobox >}}
-    In an earlier version of the article the calculation statement contained a message about us 
+    In an earlier version of the article the calculation statement contained a message about us
     being confused why the conversion factor is 277000000.
     Thanks to Silas Duddeck from the Goethe University in Frankfurt who pointed out that
     the factor should be 1J = 2,777778⋅10-7kWh = (1/3600000)kWh => 277777777
@@ -22,13 +22,13 @@ Mozilla released a new [version 104](https://www.mozilla.org/en-US/firefox/104.0
 <img src="/img/blog/firefox_power_display_official.webp" alt="Firefox 104 power profiler in action" loading="lazy" style="max-width: 600px; width: 80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;">
 {{< /rawhtml >}}
 
-This immediately sparked our interest and we wanted to give it some test run against 
-a containerized browser in our [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool).
+This immediately sparked our interest and we wanted to give it some test run against
+a containerized browser in our [Green Metrics Tool](https://github.com/green-coding-solutions/green-metrics-tool).
 
 According to the information from Mozilla this works only for M1 Macs or on Windows 11.
 
-Since our Green Metrics Tool runs on Linux only we could not really make comparisons 
-on one machine, but we could give it a first look none the less and look into some 
+Since our Green Metrics Tool runs on Linux only we could not really make comparisons
+on one machine, but we could give it a first look none the less and look into some
 details where the values are coming from.
 
 ## Research Questions
@@ -51,7 +51,7 @@ Tab where you can inspect the whole performance analysis.
 
 Only the ones labeled *Process Power* are relevant for the Power output total.
 
-Firefox actually splits the power per process, which is quite unusual for the RAPL readings we 
+Firefox actually splits the power per process, which is quite unusual for the RAPL readings we
 have come accross so far, but more on that later, when we look at the source code.
 
 The spikes for visiting the Umweltbundesamt.de homepage where at the typical spots
@@ -62,16 +62,16 @@ and did not exceed **4 W** in our case.
 {{< /rawhtml >}}
 
 
-In order to get an energy value we somehow have to sum up these values though with their 
+In order to get an energy value we somehow have to sum up these values though with their
 respective time measurement interval.
 Sampling time we defined was **10 ms**.
 
-The profiler is able to export a **JSON Dump** if you click on *Upload local profile* in the 
+The profiler is able to export a **JSON Dump** if you click on *Upload local profile* in the
 top right corner and then *Download* it.
 
 A script to convert this we have attached in our Github repository.
 
-~~Apparently we had to convert all readings in the JSON by the weird value of **277000000** and 
+~~Apparently we had to convert all readings in the JSON by the weird value of **277000000** and
 are unsure where this value is coming from .... but at least it makes the raw values from
 the JSON to be identical with the values we see in the profiler UI.~~
 
@@ -92,7 +92,7 @@ and then waiting 2 seconds did incur an energy cost of around **2mWh**.
 Although we also had two very unusal measurements of **~40 mWh** that we were not able to
 reproduce later the measurements seemed generally very stable.
 
-We repeated 10 measurements in total. Since it was just a first look and measurements 
+We repeated 10 measurements in total. Since it was just a first look and measurements
 where started and stopped manually we opted for not reporting Std.Dev. etc, as the manual
 handling has probably more influence here anyway ...
 
@@ -142,23 +142,23 @@ with open(args.filename) as a:
 
 ## Comparison on MacBook Pro 2015
 
-On our **MacBook Pro Mid-2015 with an Intel Core i7-5557U @ 3.1 GHz** running Ubuntu 22.04 we executed a 
+On our **MacBook Pro Mid-2015 with an Intel Core i7-5557U @ 3.1 GHz** running Ubuntu 22.04 we executed a
 measurement with our container based setup with the Green Metrics Tool.
 
-You can find [one sample measurement here](https://metrics.green-coding.berlin/stats.html?id=1102d24e-da8e-444e-ae60-a0c7b1694d90)
+You can find [one sample measurement here](https://metrics.green-coding.io/stats.html?id=1102d24e-da8e-444e-ae60-a0c7b1694d90)
 
 The component energy of CPU and DRAM, which is probably the most comparable, here is at
 **36.9 mWh**
 
 It is important to note that this is not the energy per process, but the energy for the whole system.
 
-Measurements between machines are anyway not comparable that easily, as they will have 
+Measurements between machines are anyway not comparable that easily, as they will have
 non linear load curves that you would have to account for.
 
 
 ### Takeaway
 
-So the takeaway and also what we wanted to find out as a research question from the start 
+So the takeaway and also what we wanted to find out as a research question from the start
 is that the M1 power measurements in Firefox seem to produce a value that looks very
 interesting and deserves further inspection.
 
@@ -170,12 +170,12 @@ increase the reproducability greatly
 
 ## Further plans
 
-We were very suprised that the XNU kernel in macOS supplies a feature that can really 
+We were very suprised that the XNU kernel in macOS supplies a feature that can really
 deliver the energy per task.
 
 This is what was the most interesting for us.
 
-If you look into the current source tree of Firefox stable it is visiibe that the 
+If you look into the current source tree of Firefox stable it is visiibe that the
 [code to instrument the measurement on macOS](https://hg.mozilla.org/integration/autoland/diff/f33bef1f7d560e494bab0599e2022a3ea53902f9/tools/profiler/core/PowerCounters-mac.cpp) is not too complex.
 
 However finding relevant documentation posed a problem at the time of writing this article.

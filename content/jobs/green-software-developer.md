@@ -1,9 +1,9 @@
 ---
 title: "Green Software Developer"
-description: "Open role for Green Software Developer with 5+ years experience at Green Coding Berlin GmbH to work on sustainable software."
+description: "Open role for Green Software Developer with 5+ years experience at Green Coding Solutions GmbH to work on sustainable software."
 ---
 
-At Green Coding Berlin we create a green software community and ecosystem in Berlin. 
+At Green Coding Solutions we create a green software community and ecosystem in Berlin.
 
 Our goal is to shape the industry for the better in terms of using software in a sustainable way.
 We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and with strong planning to avoid rebound effects.
@@ -11,7 +11,7 @@ We strongly believe in the positive impact of digitalization. But we believe it 
 Therefore we create tools to measure the energy use of software in CI-Build-Pipelines, VMs, Containers and User Desktop environments.
 All of our software is Free and Open-Source Software to be used by anyone.
 
-Our flagship work is an [open-source green software toolchain](https://github.com/green-coding-berlin/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
+Our flagship work is an [open-source green software toolchain](https://github.com/green-coding-solutions/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
 
 &nbsp;
 
@@ -22,9 +22,9 @@ This may include setting up and measuring Cloud environments, build-chains, Virt
 
 The work at Green Coding for our toolchain covers an extensive scope where you come into contact with a lot of tools that may be new to you. However, we supply an extensive onboarding and enough time to learn these tools if you are not already familiar with them.
 
-Have a look at our Github Repository to get an overview of our tools: https://github.com/green-coding-berlin 
+Have a look at our Github Repository to get an overview of our tools: https://github.com/green-coding-solutions
 
-Also check out the documentation for our flagship tool to get an impression of it: https://docs.green-coding.berlin/
+Also check out the documentation for our flagship tool to get an impression of it: https://docs.green-coding.io/
 
 We also currently work on CO2 emission reporters for different CI-Pipelines as well as infrastructure tools for AWS, GCP and Azure.
 
@@ -32,7 +32,7 @@ We also currently work on CO2 emission reporters for different CI-Pipelines as w
 
 ### How your typical week looks like
 
-When working at Green Coding Berlin GmbH as an engineer, the work is quite different from traditional coding jobs.
+When working at Green Coding Solutions GmbH as an engineer, the work is quite different from traditional coding jobs.
 
 Working in CO2 measurement of software is currently still a very academic profession. Therefore your weekly work is typically divided into reseach (reading Computer Science papers, articles and proof-of-concept code) and writing prototypes, tests and tools.
 
@@ -42,18 +42,18 @@ In order to foster this process we typically meet mutiple times per week with th
 
 We really like this creative and architectural process and believe you will do too :)
 
-Your concrete coding work will be mostly on Linux systems writing either Python, Javascript or C Code. 
+Your concrete coding work will be mostly on Linux systems writing either Python, Javascript or C Code.
 Typically when measuring architectures, applications or software libraries this means creating a demo application with them.
 
-To get an idea how this would look like have a look at our [repository for demo applications](https://github.com/green-coding-berlin/example-applications) (mostly web applications at the moment) and our documentation on [Example applications](https://docs.green-coding.berlin/docs/prologue/example-applications/) and [containerization of applications](https://docs.green-coding.berlin/docs/measuring/containerizing-applications/).
-Also check out our [Case Studies](https://www.green-coding.berlin/case-studies), [CO2 Formulas for digital products](https://www.green-coding.berlin/co2-formulas) and our [Green Metrics Dashboard](https://metrics.green-coding.berlin) to get an idea of how the raw metrics will be presented.
+To get an idea how this would look like have a look at our [repository for demo applications](https://github.com/green-coding-solutions/example-applications) (mostly web applications at the moment) and our documentation on [Example applications](https://docs.green-coding.io/docs/prologue/example-applications/) and [containerization of applications](https://docs.green-coding.io/docs/measuring/containerizing-applications/).
+Also check out our [Case Studies]({{< relref path="case-studies" >}}), [CO2 Formulas for digital products]({{< relref path="co2-formulas" >}}) and our [Green Metrics Dashboard](https://metrics.green-coding.io) to get an idea of how the raw metrics will be presented.
 
 Most of our tooling is written in script languages like Python or Node. Most of the low-level measurement software is written in C.
 
 
 ### Your qualification:
 
-We believe the role is best filled with 5+ years experience as a professional software developer. 
+We believe the role is best filled with 5+ years experience as a professional software developer.
 
 This is the skillset we believe is very helpful to have:
 - Container systems (docker, podman or similar)
@@ -83,7 +83,7 @@ Here is a list of befriended organizations and communities we work with or contr
 - [KDE Eco](https://eco.kde.org/)
 - [The Green Web Foundation](https://www.thegreenwebfoundation.org/)
 - [SDIA](https://sdialliance.org)
-- Ironhack Berlin 
+- Ironhack Berlin
 - WBS Coding School Berlin
 
 ### Working hours and pay
@@ -108,9 +108,9 @@ During the onboarding however, which can take around 1-2 months, we usually star
 &nbsp;
 
 ### How to apply
-Just shoot us an email at jobs@green-coding.berlin with a quick intro and why you would like to join our team.
+Just shoot us an email at jobs@green-coding.io with a quick intro and why you would like to join our team.
 
-Please also include a quick comment on your skills regarding the aformetioned skills.
+Please also include a quick comment on your skills regarding the aforementioned skills.
 
 Also very interesting for us is if you have any current experience with sustainable software design and / or what drives your interest in the field.
 

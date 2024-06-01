@@ -13,7 +13,7 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
     
     We will be in contact with you shortly
 \
-[👉 Go back to home page](/)
+[👉 Go back to home page]({{< relref path="" >}})
 
 {{< rawhtml >}}
 

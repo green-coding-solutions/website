@@ -1,0 +1,80 @@
+- id: home_what_we_do
+  translation: "Wir machen Software nachhaltig"
+- id: home_teaser
+  translation: "Wir unterstützen Unternehmen, Behörden und Open-Source-Projekte dabei, die CO2-Emissionen ihrer digitalen Dienste zu analysieren und zu reduzieren, um umweltfreundlichere digitale Lösungen zu fördern."
+- id: home_cta
+  translation: "Mehr erfahren ⇨"
+- id: home_about_details
+  translation: "Mehr erfahren über die CO2-Emissionen von Software"
+- id: home_projects
+  translation: "Projekte"
+
+- id: future_home_talks_teaser
+  translation: "Zukünftige Events und Veranstaltungen"
+- id: past_home_talks_teaser
+  translation: "Vergangen Events und Veranstaltungen"
+
+
+- id: home_talks_full_list
+  translation: "Alle Events und Veranstaltungen (Englisch)"
+
+
+- id: about
+  translation: Über
+- id: services
+  translation: Services
+- id: talks
+  translation: Vorträge & Veranstaltungen
+- id: blog
+  translation: Blog
+- id: jobs
+  translation: Jobs
+- id: co2-formulas
+  translation: CO2-Formeln
+- id: newsroom
+  translation: Newsroom
+- id: case-studies
+  translation: Fallstudien
+- id: more
+  translation: Mehr
+- id: insights
+  translation: Insights
+- id: team
+  translation: Team
+- id: projects
+  translation: Projekte
+- id: overview
+  translation: Übersicht
+- id: consulting
+  translation: Consulting
+- id: training
+  translation: Training & Workshops
+- id: development
+  translation: Entwicklung & Intergration
+- id: sustainablity-operations
+  translation: Software CO2 Operations
+
+- id: list_orgs
+  translation: "Eine ausgewählte Liste von Organisationen, mit denen wir zusammengearbeitet haben oder bei denen wir Vorträge gehalten haben."
+- id: references
+  translation: "Referenzen"
+
+
+- id: newsroom_welcome
+  translation: "Herzlich Willkommen im Newsroom von Green Coding Solutions. Hier bieten wir JournalistInnen, sonstigen MultiplikatorInnen und allen Interessierten Zugang zu unseren neuesten Nachrichten und Aktivitäten.  Zudem die wichtigsten Medienmaterialien zum Download, jüngste Beiträge in Publikationen sowie anstehende Events."
+- id: news
+  translation: "News & Stories"
+- id: us_in_the_media
+  translation: "Wir in den Medien"
+- id: publications
+  translation: "Publikationen"
+- id: downloads
+  translation: "Downloads"
+- id: team
+  translation: "Team"
+- id: mediacontact
+  translation: "Medienkontakt"
+- id: marketing_sales
+  translation: "Marketing & Sales"
+- id: more_information
+  translation: "Mehr Informationen"

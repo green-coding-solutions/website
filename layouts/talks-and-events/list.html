@@ -1,0 +1,43 @@
+{{ define "main" }}
+    <section id="talks" class="bg-one"><div id="ancla1"></div>
+        <div class="section-one">
+            <div class="title-one">Talks & Events</div>
+            <div class="data-content-one" style="text-align: left;">
+                <div class="ui divided items">
+                    {{ $paginator := (.Paginate ( where .Site.RegularPages "Type" "talks-and-events" ) ) }}
+                    {{ range $paginator.Pages.ByDate.Reverse }}
+
+                    <div class="item">
+                      <div class="image">
+                        {{ if (isset .Params "eventimg600w") }}
+                            <img srcset="{{.Params.Eventimg}} 1x, {{.Params.Eventimg600w}} 2x" src="{{.Params.Eventimg}}" loading="lazy">
+                        {{ else }}
+                            <img src="{{.Params.Eventimg}}" loading="lazy">
+                        {{ end }}
+                      </div>
+                      <div class="content">
+                        <a class="header" href="{{.Permalink}}">{{.Title}}</a>
+                        <div class="meta">
+                            <span>Event Date: {{ .Date.Format "2.1.2006 at 15:04" }}</span>
+                        </div>
+
+                        <div class="description">
+                            <p>{{ .Summary }} [...]</p>
+                        </div>
+                        <div class="extra">
+                            <p></p>
+                            <a class="ui right floated primary button" href="{{.Permalink}}">
+                             More Information
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                    {{end}}
+
+                </div>
+                {{ template "_internal/pagination.html" . }}
+            </div>
+        </div>
+    </section>
+{{ end }}

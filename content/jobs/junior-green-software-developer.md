@@ -1,19 +1,19 @@
 ---
 title: "Junior Green Software Developer"
-description: "Open role for Junior Green Software Developer at Green Coding Berlin GmbH to work on sustainable software."
+description: "Open role for Junior Green Software Developer at Green Coding Solutions GmbH to work on sustainable software."
 draft: true
 ---
 
-At Green Coding Berlin we create a green software community and ecosystem in Berlin. 
+At Green Coding Solutions we create a green software community and ecosystem in Berlin.
 
 Our goal is to shape the industry for the better in terms of using software in a sustainable way.
-We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and 
+We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and
 with strong planning to avoid rebound effects.
 
 Therefore we create tools to measure the energy use of software in CI-Build-Pipelines, VMs, Containers and User Desktop environments.
 All of our software is Free and Open-Source Software to be used by anyone.
 
-Our flagship work is an [open-source green software toolchain](https://github.com/green-coding-berlin/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
+Our flagship work is an [open-source green software toolchain](https://github.com/green-coding-solutions/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
 
 &nbsp;
 
@@ -23,13 +23,13 @@ You will be working with our team to create tools to measure the energy use of s
 
 As a junior developer, your work will be mainly developing sample applications and creating use-cases and comparisons of how people can relate to the energy consumption of software.
 
-See examples in our [Case Studies](https://www.green-coding.berlin/case-studies), our [Example Applications](https://github.com/green-coding-berlin/example-applications) and our [Green Metrics Dashboard](https://metrics.green-coding.berlin)
+See examples in our [Case Studies]({{< relref path="case-studies" >}}), our [Example Applications](https://github.com/green-coding-solutions/example-applications) and our [Green Metrics Dashboard](https://metrics.green-coding.io)
 
 &nbsp;
 
 ### How your typical week looks like
 
-When working at Green Coding Berlin GmbH as an engineer, the work is quite different from traditional coding jobs.
+When working at Green Coding Solutions GmbH as an engineer, the work is quite different from traditional coding jobs.
 
 Working in CO2 measurement of software is currently still a very academic profession. Therefore our team does a lot of research and writing prototypes, tests and tools.
 
@@ -42,7 +42,7 @@ We really like this creative and architectural process and believe you will do t
 
 ### Your qualification:
 
-We believe the role is best filled with at least 6-12 months experience as a professional software developer. 
+We believe the role is best filled with at least 6-12 months experience as a professional software developer.
 
 This is the skillset we think is very helpful to have:
 - HTML
@@ -64,7 +64,7 @@ The green software community is a very friendly and uncompetetive bunch.
 Here is a list of befriended organizations and communities we work with or contribute to:
 - [KDE Eco](https://eco.kde.org/)
 - [The Green Web Foundation](https://www.thegreenwebfoundation.org/)
-- Ironhack Berlin 
+- Ironhack Berlin
 - WBS Coding School Berlin
 
 ### Working hours and pay
@@ -87,9 +87,9 @@ During the onboarding however, which can take around 1-2 months, we usually star
 &nbsp;
 
 ### How to apply
-Just shoot us an email at jobs@green-coding.berlin with a quick intro and why you would like to join our team.
+Just shoot us an email at jobs@green-coding.io with a quick intro and why you would like to join our team.
 
-Please also include a quick comment on your skills regarding the aformetioned skills.
+Please also include a quick comment on your skills regarding the aforementioned skills.
 
 Also very interesting for us is if you have any current experience with sustainable software design and / or what drives your interest in the field.
 

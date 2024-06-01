@@ -4,18 +4,20 @@ date: 2023-08-15
 draft: false
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
+socialmedia_preview: "/img/blog/social/cloud-energy-usage-data.webp"
+
 ---
 
 Getting power usage data in cloud is a tough topic and one of the reasons projects such as [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/) exist.
 Typically cloud vendors, especially hyperscalers, do neither supply energy consumption data of the whole machine from PDUs
 or similar, nor do they provide access to CPU internal energy data like for instance RAPL.
 
-Especially for RAPL there are historical and security reasons. One of such, Platypus, we have looked into a bit more detail 
+Especially for RAPL there are historical and security reasons. One of such, Platypus, we have looked into a bit more detail
 with special regards to migitation mechanisms provided by Intel in our article [RAPL, SGX AND ENERGY FILTERING - INFLUENCES ON POWER CONSUMPTION
-](https://www.green-coding.berlin/case-studies/rapl-and-sgx/). 
+]({{< relref path="case-studies/rapl-and-sgx" >}}).
 
-No cloud provider to our knowledge provides direct energy data of the machine. The only known thing are the 
-carbon reports by hyperscalers that show you the emissions for your services. 
+No cloud provider to our knowledge provides direct energy data of the machine. The only known thing are the
+carbon reports by hyperscalers that show you the emissions for your services.
 
 Emissions however may vary strongly, as they have another layer of complexity on top of the electricity:
 - PUE of the datacenter
@@ -34,14 +36,14 @@ and not so quickly subject to change (Servers have 4-5 years lifetime).
 Very few vendors allow this and actually the only one we know that provides direct access to IPMI for tenants in it's
 cloud offerings is [Blockheating](https://blockheating.com/). Here you get bare metal machines with also access to IPMI.
 
-If you do not know what IPMI is and how to read the data, check out our [Metrics Provider for IPMI](https://docs.green-coding.berlin/docs/measuring/metric-providers/psu-energy-ac-ipmi-machine/) in the [Green Metrics Tool](https://www.green-coding.berlin/projects/green-metrics-tool/).
+If you do not know what IPMI is and how to read the data, check out our [Metrics Provider for IPMI](https://docs.green-coding.io/docs/measuring/metric-providers/psu-energy-ac-ipmi-machine/) in the [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}).
 
 A new project by the Green Software Foundation is also focussing on making this data available for users: [Real Time Energy and Carbon Standard for Cloud Providers](https://github.com/Green-Software-Foundation/real-time-cloud)
 
 ## Using estimation models
 
-If you cannot measure you have to estimate. We have written a prior [blog article](https://www.green-coding.berlin/blog/specpower-model-with-xgboost-open-sourced/) about how this can be done with an 
-easy machine learning model and provided an [extensive documentation on Github](https://github.com/green-coding-berlin/spec-power-model) how to discover the needed input parameters.
+If you cannot measure you have to estimate. We have written a prior [blog article]({{< relref path="blog/specpower-model-with-xgboost-open-sourced" >}}) about how this can be done with an
+easy machine learning model and provided an [extensive documentation on Github](https://github.com/green-coding-solutions/cloud-energy) how to discover the needed input parameters.
 
 However sometimes you need auxillary information like more details about the hypervisor and also which machine specific registers (MSRs) are accessible
 on the machine as you might want to leverage some MSRs to provide more information about the machine.
@@ -50,9 +52,9 @@ A project that tries to leverage information here is [MSR Cloud Tools](https://g
 
 ## How to find out what hardware your are using
 
-We ordered it from "easiest" to "hardest". Altough writing an email might not really 
+We ordered it from "easiest" to "hardest". Altough writing an email might not really
 scale, it usually gives you the best information most of the time.
-- First find out the hypervisor you are on. This usually helps with narrowing down later: 
+- First find out the hypervisor you are on. This usually helps with narrowing down later:
     + Through clocksource: `cat /sys/devices/system/clocksource/clocksource0/current_clocksource` or `cat /sys/bus/clocksource/devices/clocksource0/current_clocksource`
     + Or through 3rd party tool: `sudo apt-get install virt-what -y && sudo virt-what`
 - Reading the docs from your provider and "knowing" which model you are on
@@ -71,7 +73,7 @@ scale, it usually gives you the best information most of the time.
 
 ## Checking MSRs directly
 
-First you should check which hypervisor you are on to get a broad idea what to expect. Hyper-V, XEN etc. typically 
+First you should check which hypervisor you are on to get a broad idea what to expect. Hyper-V, XEN etc. typically
 block similar registers by default, so this should be the starting point.
 
 The easisest way to do this is to read from `dmidecode` or use the tool `virt-what`.
@@ -106,7 +108,7 @@ do
 done
 ```
 
-In the following you find the compiled list of the hypervisors and the readable registers we found in Github Shared runners, 
+In the following you find the compiled list of the hypervisors and the readable registers we found in Github Shared runners,
 AWS and Hetzner.
 
 ## Github Shared Runner (Linux free)
@@ -236,7 +238,7 @@ $ sudo dmidecode | grep -i -e manufacturer -e product -e vendor
 $ sudo virt-what
     xen
     xen-hvm
-    aws    
+    aws
 
 ```
 
@@ -304,7 +306,7 @@ xen-hvm
 
 Reading RAPL register:
 ```$ sudo modprobe msr && sudo rdmsr -d 0x611
-0 
+0
 ```
 This indicates RAPL is blocked.
 
@@ -943,7 +945,7 @@ Overprovisioning means that the vCPU you are having is not actually assigned to 
 This is very important as even if you have the possibility of deriving any energy metric it might be that you are mal-
 attributing due to over-provisioning.
 
-An example would be: A 12 thread machine, which would normally be able to have 12 vCPUs hosts actually 
+An example would be: A 12 thread machine, which would normally be able to have 12 vCPUs hosts actually
 24 clients. Every vCPU is here assigned to two clients in parallel.
 
 One way to check that for instance is to look at the **steal** time of the CPU.
@@ -966,8 +968,8 @@ any values that you get in a VM in the cloud.
 
 ## White Hat alternative
 
-What you technically can do though is to probe your cpu for features like first 
-starting with `cat /proc/cpuinfo` and looking only for true values. 
+What you technically can do though is to probe your cpu for features like first
+starting with `cat /proc/cpuinfo` and looking only for true values.
 Then looking at the speed and flags and try to derive the model from there.
 
 
@@ -976,7 +978,7 @@ Or you can do feature probing to run custom code and see how your processor beha
 But is this really worth the effort? Can't we just assume a "generic" CPU and try
 to take it from there?
 
-To our knowledge no. Machines may vary drastically in energy consumption given 
+To our knowledge no. Machines may vary drastically in energy consumption given
 you change the underlying hardware.
 We are easily talking numbers that are 2x bigger or smaller JUST for the CPU.
 
@@ -998,7 +1000,7 @@ On heroku dynos the `/sys` and `/dev` filesystem is severley limited.
 
 MSRs are not forwarded and you cannot even tell which machine you are on.
 
-Also cgroups information is not forwarded, so you cannot really tell how much CPU 
+Also cgroups information is not forwarded, so you cannot really tell how much CPU
 time you have been using.
 
 Only `/proc/stat` is available with the information for all CPUs. In our test it was 7 CPUs.
@@ -1008,7 +1010,7 @@ as it is always installed with a random user.
 However if the user is always the same as during the install process it might just work ....
 Neverthelesse the MSRs are not accessible.
 
-So the only hope really lies in the fact that during installtime of the buildpack we can 
+So the only hope really lies in the fact that during installtime of the buildpack we can
 read more stuff than we can when entering the dyno.
 
 This is to be done in a future post.

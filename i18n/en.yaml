@@ -1,0 +1,83 @@
+- id: home_what_we_do
+  translation: "We make software sustainable"
+- id: home_teaser
+  translation: "We help companies, goverment bodies and open source communites to understand and optimize the carbon emissions of their digital services"
+- id: home_cta
+  translation: "Find out how ⇨"
+- id: home_about_details
+  translation: "Read some details about the carbon emissions of software"
+- id: home_projects
+  translation: "Projects"
+
+- id: future_home_talks_teaser
+  translation: "Future events and talks"
+- id: past_home_talks_teaser
+  translation: "Past events and recordings"
+
+
+- id: home_talks_full_list
+  translation: "For a full list"
+
+
+- id: about
+  translation: About
+- id: services
+  translation: Services
+- id: talks
+  translation: Talks & Events
+- id: blog
+  translation: Blog
+- id: jobs
+  translation: Jobs
+- id: co2-formulas
+  translation: CO2-Formulas
+- id: case-studies
+  translation: Case Studies
+- id: more
+  translation: More
+- id: insights
+  translation: Insights
+- id: team
+  translation: Team
+- id: projects
+  translation: Projects
+
+- id: overview
+  translation: Overview
+- id: consulting
+  translation: Consulting
+- id: training
+  translation: Training & Workshops
+- id: development
+  translation: Development & Intergrations
+- id: sustainablity-operations
+  translation: Software Carbon Operations
+
+- id: newsroom
+  translation: Newsroom
+
+
+- id: list_orgs
+  translation: "A curated list of organizations we have been working with or have been giving talks at."
+- id: references
+  translation: "References"
+
+
+- id: newsroom_welcome
+  translation: "Welcome to the Green Coding Solutions newsroom. Here we offer journalists, other multipliers and all interested parties access to our latest news and activities.  You can also download the most important media materials, the latest articles in publications and upcoming events."
+- id: news
+  translation: News
+- id: us_in_the_media
+  translation: "Us in the media"
+- id: publications
+  translation: "Publications"
+- id: downloads
+  translation: "Downloads"
+- id: team
+  translation: "Team"
+- id: mediacontact
+  translation: "Press Contact"
+- id: marketing_sales
+  translation: "Marketing & Sales"
+- id: more_information
+  translation: "More Information"

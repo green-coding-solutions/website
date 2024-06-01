@@ -21,7 +21,7 @@ most known tool to show CPU utilization..
 </figure>
 {{< /rawhtml >}}
 
-When conducting Green Coding analysis, our preference typically leans towards directly examining the energy metrics of components, if available. An example of this would be Intel's RAPL, which we discuss in more detail [here](/case-studies/rapl-and-sgx/)). However, in numerous contexts such as cloud computing, these metrics are not readily accessible."
+When conducting Green Coding analysis, our preference typically leans towards directly examining the energy metrics of components, if available. An example of this would be Intel's RAPL, which we discuss in more detail [here]({{< relref path="case-studies/rapl-and-sgx" >}})). However, in numerous contexts such as cloud computing, these metrics are not readily accessible."
 
 Cloud services predominantly operate on Linux systems. However, cloud vendors only grant access to a subset of the values typically logged by a standard Linux OS. Notably, CPU utilization is often among the metrics that are readily available.
 
@@ -177,7 +177,7 @@ Example
 
 So taking a normal **Ubuntu 22.04** system on a **Fujitsu Esprimo 956** **4-Core** machine we conduct the following test:
 
-- Run [a simple program](https://github.com/green-coding-berlin/tools/blob/main/read_cpu.sh) that calculates CPU utilization and outputs a line every 10 ms to a file and sleeps in between
+- Run [a simple program](https://github.com/green-coding-solutions/tools/blob/main/read_cpu.sh) that calculates CPU utilization and outputs a line every 10 ms to a file and sleeps in between
 - Check how many lines were written
 - check `top` while doing so and write down the CPU utilization of the system as well as the process
 - check the frequency of all our cores on the system
@@ -190,7 +190,7 @@ So taking a normal **Ubuntu 22.04** system on a **Fujitsu Esprimo 956** **4-Core
   <figcaption>Dynamic CPU utilization low load</figcaption>
 </figure>
 {{< /rawhtml >}}
-What we see here is that the CPU utilization for our sample program, which shows up as a `bash`, when there is no other load on the 
+What we see here is that the CPU utilization for our sample program, which shows up as a `bash`, when there is no other load on the
 system clocks in at **9.6%** on a single core. This equals to **2.4%** on the total **4-core** system.
 
 Now we introduce some load with running a `stress` process on two cores keeping these cores fully busy.
@@ -242,7 +242,7 @@ to any process load that is found on the system.
 This is a bit confusing at first, as the system also has an idle load ... so, as discussed earlier, if the scheduler
 puts cores on the idle thread they still consume energy, which will be reported by RAPL, but assinging them to a very
 low load process that might not even be on the core sounds counter-intuitive.
-This is also [not documented on that form](https://hubblo-org.github.io/scaphandre-documentation/explanations/how-scaph-computes-per-process-power-consumption.html), but we assume it is a voluntary design decision. 
+This is also [not documented on that form](https://hubblo-org.github.io/scaphandre-documentation/explanations/how-scaph-computes-per-process-power-consumption.html), but we assume it is a voluntary design decision.
 It also feels like it, because otherwise [Scaphandre](https://github.com/hubblo-org/scaphandre) would have to calculate the idle load on the sytem first, but
 it starts right away with giving out numbers.
 
@@ -264,8 +264,8 @@ Now we put some load on the system and see how [Scaphandre](https://github.com/h
 </figure>
 {{< /rawhtml >}}
 
-We see again the about same utilzation values for our `bash` process, and we see that [Scaphandre](https://github.com/hubblo-org/scaphandre) 
-reports **~ 0.34 W** when we just run the `read_cpu.sh` on the system and **~ 0.43 W** when 
+We see again the about same utilzation values for our `bash` process, and we see that [Scaphandre](https://github.com/hubblo-org/scaphandre)
+reports **~ 0.34 W** when we just run the `read_cpu.sh` on the system and **~ 0.43 W** when
 the system is stressed with two other `stress` processes.
 
 Also we see that the numbers that [Scaphandre](https://github.com/hubblo-org/scaphandre) is reporting per process do not add up to the total Package Power.
@@ -285,7 +285,7 @@ If we now multiply **24.71 W \* 0.01075** we get **0.27 W**
 
 For the un-stressed machine where just the `read_cpu.sh` runs it follows: **1.99 W \* (0.093 / 4)** = **0.046 W**
 
-These values are strongly different from what Scaphandre reports. Especially when there is a higher idle time, as it 
+These values are strongly different from what Scaphandre reports. Especially when there is a higher idle time, as it
 is in the unloaded case, these values strongly differ.
 
 ## Instructions through perf
@@ -341,7 +341,7 @@ Since the energy loads on the system are quite identical, we will use the same e
 {{< /rawhtml >}}
 
 ```
-Statistics for only read_cpu.sh running: 
+Statistics for only read_cpu.sh running:
 - 3748521765 Instructions read_cpu.sh (+/- 10%)
 - 3976515696 Total System read_cpu.sh (+/- 10%)
 - Ratio: 0.9426648985116944
@@ -368,10 +368,10 @@ performance.
 |    Methodlogy    |  load | Power [W] |
 |:-----------:|:----------:|:----------:|
 |  Scaphandre  | loaded | 0.43 |
-|  CPU%  | loaded | 0.27 | 
-|  perf loaded | loaded | 0.16 | 
-|  Scaphandre  | unloaded | 0.34 | 
-|  CPU%  | unloaded | 0.046 | 
+|  CPU%  | loaded | 0.27 |
+|  perf loaded | loaded | 0.16 |
+|  Scaphandre  | unloaded | 0.34 |
+|  CPU%  | unloaded | 0.046 |
 |  perf  | unloaded | 0.19 |
 {{</ table >}}
 
@@ -396,10 +396,10 @@ Because if we would have system that has a fixed CPU frequency the load-performa
 </figure>
 {{< /rawhtml >}}
 
-In this example we have run `sysbench --cpu-max-prime=25000 --threads=1 --time=10 --test=cpu --events=0 --rate=0` and 
+In this example we have run `sysbench --cpu-max-prime=25000 --threads=1 --time=10 --test=cpu --events=0 --rate=0` and
 put a CPU % limiting on the process and increased that in 10% increments.
 The blue curve has been done with the *schedutil* CPU frequency govenor which dynamically scales the CPU frequency.
-And the red curve has been done with the performance scaling govenor which scales the CPU frequency to a maximum as 
+And the red curve has been done with the performance scaling govenor which scales the CPU frequency to a maximum as
 soon as even a minimum amount of load happens on a core.
 
 Let's look at how different cloud vendors have this setting for CPU frequency and *Turbo Boost* set, so we can later
@@ -558,7 +558,7 @@ cpu cores       : 2
 
 ## Gitlab Pipelines (Linux)
 
-[Source](https://gitlab.com/green-coding-berlin/system-info/-/jobs/4541289111)
+[Source](https://gitlab.com/green-coding-solutions/system-info/-/jobs/4541289111)
 
 ### Frequency
 ```
@@ -702,7 +702,7 @@ or if the system is configured in that way that many variables are fixed (like f
 As we have seen many cloud vendors, especially CI/CD tools like **Github Actions** or **Gitlab Pipelines** use
 fixed frequency CPUs, which allow for making some reproducibility claims of the system performance and energy.
 
-As said before, these are for instance the assumptions for our [Cloud Energy model](/projects/cloud-energy/) where we estimate the power draw of cloud machines based on the fact that in the SPECPower data we use there the systems have typically fixed C-States  and P-States.
+As said before, these are for instance the assumptions for our [Cloud Energy model]({{< relref path="projects/cloud-energy" >}}) where we estimate the power draw of cloud machines based on the fact that in the SPECPower data we use there the systems have typically fixed C-States  and P-States.
 
 In a future piece we will look at how using CPU instructions and jiffies behaves on different load types.
 

@@ -12,7 +12,6 @@ $(document).ready(function() {
 	$(".photo-footer").mouseleave(function() {
 			$(".plus-btn", this).stop().animate({top:0},'fast');
 	});
-	
 	// ----------- TEAM NEXT/PREV ----------- //
 
 	var current_team_page=0;
@@ -28,70 +27,6 @@ $(document).ready(function() {
 			$(".jump"+(current_team_page-1)).click();
 		}
 	});
-    var teams = $('.team div.who');
-    var total_team_members = 0
-    var dotsul = '';
-    teams.each(function (index) {
-        total_team_members++;
-        if (index===0){dotsul = '<ul class="dotsmenu">';}
-        dotsul += '<li class="dots jump' + index + '" id="' + index + '"></li>';
-        if (index===teams.length-1) {
-            dotsul += '</ul>';
-            $('.team').after(dotsul);
-        }
-    });
-
-
-	// ----------- TEAM DOTS ----------- //
-
-	$(".dots").click(function() {
-			$(".teamshow").stop().animate({scrollLeft:pos[$(this).attr('id')]},'slow');
-			$('.activo').removeClass('activo');
-			$(this).addClass('activo');
-			current_team_page=parseInt($(this).attr('id'),10);
-
-            if(current_team_page===0) {
-                $('.dir-left').addClass('disable');
-            } else {
-                $('.dir-left').removeClass('disable');
-            }
-
-			if( (current_team_page+1) < needed_pages_for_teammembers){
-                $('.dir-right').removeClass('disable-2');
-            } else{
-                $('.dir-right').addClass('disable-2');
-            }
-	});
-
-	var res= null;
-	var teammembers_per_page= null;
-    var needed_pages_for_teammembers = null;
-	var pos= null;
-	var old= null;
-	recalcul();
-
-
-    function team_on_resize() {
-        recalcul();
-        if(old!==teammembers_per_page){
-            $(".jump0").click();
-        }
-    }
-	function recalcul(){
-		res=$(window).width();
-		if (res > 959) {
-            teammembers_per_page=4; pos=[0,900,1800];
-        } else if (res > 767) {
-            teammembers_per_page=3; pos=[0,780,1555];
-        } else {
-            teammembers_per_page=1; pos=[0, 302, 604, 903, 1204, 1507, 1782, 2085, 2385];
-        }
-        needed_pages_for_teammembers = Math.ceil(total_team_members / teammembers_per_page)
-	}
-
-    $(window).bind("resize", team_on_resize);
-
-    $(".jump0").click(); // initialize
 
 	// ----------------- EASING ANCHORS ------------------ //
 
@@ -146,6 +81,71 @@ $(document).ready(function() {
 		}
     });
 
+   // DE /EN
+    const currentURL = window.location.pathname;
+    const userLanguage = navigator.language || navigator.userLanguage;
+    if (localStorage.getItem("language_set") == null ) {
+        if (userLanguage.toLowerCase().indexOf('de') == 0 && !currentURL.startsWith("/de")) {
+            document.querySelector('#language-button:not(.disabled)').click()
+        }
+    }
+    localStorage.setItem("language_set", true);
+
+	// ----------------- CAROUSEL HOME ------------------ //
+
+    var totalItems = $('#carousel .item').length;
+    if (totalItems > 0){
+        var currentIndex = 0;
+        var autoSlideTimer;
+
+        function showItem() {
+          $('#carousel .item').hide();
+          $('#carousel #item' + currentIndex).fadeIn('slow');
+          updateButtonStyles(currentIndex);
+        }
+
+        function updateButtonStyles(currentIndex) {
+          $('#carousel_buttons .button').removeClass('orange');
+          $('#carousel_buttons .button').eq(currentIndex).addClass('orange');
+        }
+
+        function startAutoSlide() {
+          if(autoSlideTimer) {
+            clearInterval(autoSlideTimer);
+          }
+          autoSlideTimer = setInterval(function() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            showItem();
+          }, 5000);
+        }
+
+        $('#carousel .item').hide();
+        $('#carousel .item').first().fadeIn();
+        updateButtonStyles(0);
+        startAutoSlide();
+
+        $('#carousel_buttons .button').each(function(index) {
+          $(this).on('click', function() {
+            currentIndex = index;
+            showItem();
+            startAutoSlide();
+          });
+        });
+
+        $('.carousel-link .right').on('click', function() {
+            if (currentIndex == totalItems-1) return;
+            currentIndex++;
+            showItem();
+            startAutoSlide();
+        });
+        $('.carousel-link .left').on('click', function() {
+            if (currentIndex == 0) return;
+            currentIndex--;
+            showItem();
+            startAutoSlide();
+        });
+
+    }
 });// JavaScript Document
 })(jQuery);
 

@@ -16,14 +16,14 @@ Intel RAPL readings.
 {{< /rawhtml >}}
 
 You can see the full details of our demo runs with the static version of the
-Green Website Foundation Page in our [Green Metrics Tool Measurements Overview](https://metrics.green-coding.berlin/index.html)
+Green Website Foundation Page in our [Green Metrics Tool Measurements Overview](https://metrics.green-coding.io/index.html)
 
 All metrics providers are made in a UNIX-style philosphy, which means they provide
 very conscise and scoped functionality, but can be chained through redirecting
 their output.
 
 For the moment we are working on the documentation. If you want to have an early
-look be sure to check out the [development branch](https://github.com/green-coding-berlin/green-metrics-tool/tree/rapl-and-cgoup-reader)
+look be sure to check out the [development branch](https://github.com/green-coding-solutions/green-metrics-tool/tree/rapl-and-cgoup-reader)
 
 Also we have made progress on getting the prototype for the DC Measurements
 working and are now coding the Linux metrics providers to read directly from
