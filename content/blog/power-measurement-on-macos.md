@@ -19,7 +19,7 @@ Reason for that being is that the RAPL interfaces are nicely integrated into the
 linux kernel and readily readable from a virtual file endpoint.
 
 The downside of it is, that it requires root to read this data on Linux.
-This is also why the [Firefox 104 energy measurement](http://localhost:1313/blog/firefox-104-energy-measurements/) only works either on
+This is also why the [Firefox 104 energy measurement](/blog/firefox-104-energy-measurements/) only works either on
 Windows or on a Mac M1, because here these interfaces are available in userland.
 
 In the workshop we saw many participants with exclusively MacBooks either running
