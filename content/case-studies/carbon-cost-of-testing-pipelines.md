@@ -1,6 +1,6 @@
 ---
 title: "The Carbon Cost of Testing Pipelines"
-date: 2024-06-01 00:00:00
+date: 2024-06-07 00:00:00
 draft: false
 author: "Dan Mateas"
 authorlink: "https://www.linkedin.com/in/dan-mateas-693634105/"
@@ -69,50 +69,38 @@ The repositories we chose were [curl](https://github.com/curl/curl), [django](ht
   <thead>
     <tr>
       <th>Repository (link to tested workflow) </th>
-      <th>Total Energy Used (mJ)</th>
+      <th>Total Energy Used (kWh)</th>
       <th>gCO2e emitted</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="https://github.com/green-coding-berlin/curl/blob/master/.github/workflows/linux.yml">curl</a></td>
-      <td><a href="https://metrics.green-coding.io/ci.html?repo=green-coding-berlin/curl&branch=master&workflow=61395528">409,295,680</a></td>
+      <td><a href="https://metrics.green-coding.io/ci.html?repo=green-coding-berlin/curl&branch=master&workflow=61395528">0.114</a></td>
       <td><b>50.25</b></td>
     <tr>
       <td><a href="https://github.com/green-coding-berlin/django/blob/main/.github/workflows/schedule_tests.yml">django</a></td>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/django&branch=main&workflow=60545072">66,182,435</a></td>
+      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/django&branch=main&workflow=60545072">0.018</a></td>
       <td><b>8.13</b></td>
     </tr>
     </tr>
     <tr>
       <td><a href="https://github.com/green-coding-berlin/flask/blob/main/.github/workflows/tests.yaml">flask</a></td>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/flask&branch=main&workflow=61371506">51,487,945</a></td>
+      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/flask&branch=main&workflow=61371506">0.014</a></td>
       <td><b>6.32</b></td>
     </tr>
     <tr>
       <td><a href="https://gitlab.com/green-coding-berlin/eco-ci/openmw/-/blob/master/.gitlab-ci.yml">openmw</a></td>
-      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/eco-ci/openmw&branch=master&workflow=47121734">2,788,046,795</a></td>
+      <td><a href="https://metrics.green-coding.berlin/ci.html?repo=green-coding-berlin/eco-ci/openmw&branch=master&workflow=47121734">0.774</a></td>
       <td><b>342.31</b></td>
     </tr>
   </tbody>
 </table>
-<br/>
+<center><b>Github: Jan 1st- Jan 31st, Gitlab: Sept 20th - Oct 20th)</b></center>
 
 
-
-### Github: Jan 1st- Jan 31st, Gitlab: Sept 20th - Oct 20th)
-
-The above shows how much energy the measured workflows used in total over the time period we measured. So there's our first step towards figuring out what the impact is - getting an estimation of the energy used. To go then from mJ to gCO2e, we used the formulas that can be found on [this page here](https://www.green-coding.berlin/co2-formulas/). You can read more details as to the why there, but in general the conversion goes like this:
-
-```
-mJ -> J -> kWH -> gCO2e
-mJ / 1000 = J
-J / 3600 / 1000 = kWh
-kWh * 442 = gCO2e
-
-so:
-(mJ / 1000  / 3600 / 1000) * 442 = gCO2e
-```
+\
+The above shows how much energy the measured workflows used in total over the time period we measured. So there's our first step towards figuring out what the impact is - getting an estimation of the energy used. To go then from mJ to gCO2e, we used the formulas that can be found on [this page here](https://www.green-coding.berlin/co2-formulas/) - We used the carbon grid intensity of **442 gCO2/kWh** at the time of writing. 
 
 Of course, these numbers are just based on the samples we ran ourselves once a day. In their original repositories, these workflows ran quite a bit more often and extensively. A good example of this is the curl workflow. This is the [original workflow file](https://github.com/curl/curl/blob/master/.github/workflows/linux.yml) on curl's repository. You can see that this workflow runs 19 parallel jobs, building curl with a variety of different protocols and then running its test suite. It would feel foolish to run all these jobs ourselves as well in an effort to try to convince people that we need to minimize CO2 runs, so we measured one job and will now extrapolate the full usage of this pipeline.
 
@@ -186,20 +174,22 @@ for repo_data in repositories:
 
 
 ```
-
+\
 For curl, it amounts to 421 runs total. Since the carbon total that we calculated was based on 31 runs, our total energy estimated would be (measured carbon * 10) * (421/31) = **15374.64 gCO2e**. 
 
 My apologies to the maintainers of curl - I'm not trying to call you out specifically, just looking at a real-world example of the carbon cost of a complete, complex, and well-built (from an automation perspective) CI suite.
 
 Doing the same calculation for all the repositories measured above, we have:
 ```
-curl: (50.25 * 10) * (421/31) = 6824.27 gCO2e
+curl: (50.25 * 10) * (421/31) = 6,824.27 gCO2e
 django: (8.13 * 4.6) * (28/31) = 337.78 gCO2e
 flask: (6.32 * 1.2 ) * (23/ 31) = 56.26  gCO2e
-openmw: (342.31 * 1.5) * (178/31) = 2948.28 gCO2e
+openmw: (342.31 * 1.5) * (178/31) = 2,948.28 gCO2e
 ```
 
-Its nice to see that three of our repositories actually don't use that much energy in the end! Now for the relevant bit - trying to put this carbon emission cost into some real world context that we can actually relate to. To do this we use [this calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) to convert into some relatable contexts: the amount of miles driven by an average car to also emit this amount of gas, and the amount of carbon used to charge a smartphone from empty to full, and equivalent CO2 emissions from gallons of gasoline used. This helps make these values feel more palpable. Our final estimation of the total gCO2e for each repository for their testing workflow is as follows : 
+Its nice to see that two of our repositories actually don't use that much energy in the end! But digging a bit deeper we found out that most of Django's CI is actually not happening on Github but rather on [DjangoCI](https://djangoci.com/).
+\
+Now for the relevant bit - trying to put this carbon emission cost into some real world context that we can actually relate to. To do this we use [this calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) to convert into some relatable contexts: the amount of miles driven by an average car to also emit this amount of gas, and the amount of carbon used to charge a smartphone from empty to full, and equivalent CO2 emissions from gallons of gasoline used. This helps make these values feel more palpable. Our final estimation of the total gCO2e for each repository for their testing workflow is as follows : 
 
 <style>
   table {
@@ -232,7 +222,7 @@ Its nice to see that three of our repositories actually don't use that much ener
   <tbody>
     <tr>
       <td>curl</td>
-      <td><b>6824.27</b></td>
+      <td><b>6,824.27</b></td>
       <td>17.5</td>
       <td>830</td>
       <td>0.768</td>
@@ -266,29 +256,35 @@ Its nice to see that three of our repositories actually don't use that much ener
 
 Still, this was only the testing workflows, and we want to highlight our point that CI processes can get a bit out of hand. So we decided to take a look at one more repository, specifically to find one that has many workflows running over many parallel jobs. We chose [moby](https://github.com/moby/moby)
 
-Since we didn't fork and measure this repository specifically, we have to make an estimation in a different way. In december github introduced the AMD EPYC 7763 as the processor for the default machines that public workflow runs are made on. Since then all our measured runs have been on these machines. This makes estimations much easier as there is much less variance amongst machines with the same processors (see our case study about that [here](https://www.green-coding.io/case-studies/ci-pipeline-energy-variability/)). 
+Since we didn't fork and measure this repository specifically, we have to make an estimation in a different way. In december GitHub introduced the **AMD EPYC 7763** as the processor for the default machines that public workflow runs are made on. Since then all our measured runs have been on these machines. This makes estimations much easier as there is much less variance amongst machines with the same processors (see our case study about that [here](https://www.green-coding.io/case-studies/ci-pipeline-energy-variability/)). 
 
-So first, we added up the total carbon emitted by our measured repositories and divided by the number of workflow seconds each took, to get an estimation of how much one second of workflow time costs in carbon on these machines. Doing so leads to an estimated average of 3574,66 mJ/s for workflows on AMD EPYC 7763 github machines. 
+So first, we added up the total carbon emitted by our measured repositories and divided by the number of workflow seconds each took, to get an estimation of how much one second of workflow time costs in carbon on these machines. Doing so leads to an estimated average of **3.57 W** for workflows on AMD EPYC 7763 github machines. 
 
 Then we measured up the total minutes used by all workflow runs in the moby repository in the same time period. There are 6 workflows of note: `bin-image.yml`, `buildkit.yml`, `ci.yml`, `test.yml`, `windows-2019.yml`, and `windows-2022.yml`. I went through the runs for each of these workflows and calculated an average number of seconds each workflow took based on a sample, including all parallel jobs (as ultimately, this is what matters). I then used a similar script as above to get the total number of runs for each of these workflows in the month of January, and got the following results:
 
-bin-image.yml - 541 runs - 1410 seconds each - 762810 total
+{{< table class="ui table" >}}
+| Workflow                    | Runs | Seconds each | Seconds total | Energy Total (kWh) | gCO2e
+|:---------------------------:|:---:|:---:|:---:|:---:|:---:|
+| buildkit.yml    | 514    | 6,360| 3,269,040 | 3.24 | 1,432.08 |
+| bin-image.yml | 541    | 1,410  | 762,810 | 0.76 | 335.92 |
+| ci.yml | 563  | 1,860    | 1,047,180 | 1.04 | 459,86 |
+| test.yml | 483  | 24,780  | 11,968,740  | 11.87 | 5,246.54 |
+| windows|2019.yml | 31    | 52,920  | 1,640,520 | 1.63 | 724.88 |
+| windows|2022.yml | 467   | 17,100  | 7,985,700  | 7.92 | 3,500.64 |
+| **TOTAL** | - | - | - | **26.46**  | **11,699.90** |
+{{</ table >}}
 
-buildkit.yml - 514 runs - 6360 seconds each - 3269040 total
 
-ci.yml - 563 runs - 1860 seconds each - 1047180 total
+So the total for a single month would be **11,699.90 kgCO2** And now to put it in some real world context:
 
-test.yml - 483 runs - 24780 seconds each - 11968740 total
+- 30 miles driven
+- 1.3 gallons of gasoline consumed
+- 1,424 smartphones charged
 
-windows-2019.yml - 31 runs - 52920 seconds each - 1640520 total
+While these numbers aren't exactly scary, they are starting to feel tangible. And this is one repository, working for one month - when looking at the bigger picture we start to see how this can scale up. 
 
-windows-2022.yml - 467 runs - 17100 seconds each - 7985700 total
+## Follow up
 
-Adding these all together and multiplying by our mJ/s gives us an estimation of 95,350,445,093.4 mJ of energy used. Converting then to gCO2 the same way as above we get: 11706,92 gCO2 emitted, for entire whole month by all workflows. And now to put it in some real world context:
+Github is due to release some new ARM runners soon which will bring more efficiency to the whole CI/CD space. We are excited and create a follow up piece on that.
 
-11706,92 gCO2
-30 miles driven
-1.3 gallons of gasoline consumed
-1,424 smartphones charged
-
-While these numbers aren't exactly scary, they are starting to feel tangible. And this is one repository, working for one month - when looking at the bigger picture we start to see how this can scale up. <outro - more here>
+In the meantime: Did you find this case study interesting? Let us know by making a post on LinkedIn and tagging us or by sending us an email to [info@green-coding.io](mailto:info@green-coding.io)
