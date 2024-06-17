@@ -58,7 +58,7 @@
 
 
 - id: list_orgs
-  translation: "A curated list of organizations we have been working with or have been giving talks at."
+  translation: "A curated list of organizations we have been working with."
 - id: references
   translation: "References"
 
