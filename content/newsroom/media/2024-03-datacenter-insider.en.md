@@ -2,6 +2,7 @@
 title: "Datacenter-Insider Article - Green coding means transformation to sustainability"
 picture: "/img/newsroom/media/datacenter-insider.webp"
 link: "https://www.datacenter-insider.de/green-coding-bedeutet-transformation-zur-nachhaltigkeit-a-4138db6c9b131a69b8c951082f76efa7/"
+magazine: "Datacenter-Insider.de"
 date: 2024-03-05
 draft: false
 type: "media"
