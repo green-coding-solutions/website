@@ -63,6 +63,10 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 <div class="item"><i class="icon checkmark"></i> <div class="content">
                     Github Issues community support
                 </div></div>
+                <div class="item"><i class="icon checkmark"></i> <div class="content">
+                    Basic optimizations
+                    <br><small>Example & resource based</small>                                        
+                </div></div>
                 <hr>
                 <div class="item"><i class="icon times"></i> <div class="content">
                     No setup support
@@ -105,8 +109,9 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                     <b>Private</b> git repositories
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    <b>Basic</b> optimizations
-                    <br><small><a href="#optimizations">Screenshots</a> | Documentation</small>
+                    <b>Advanced</b> optimizations
+                    <br><small>Algorithmical & resource based</small>                    
+                    <br><small>- <a href="#optimizations">Screenshots</a></small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Offset contolled</b> cluster
