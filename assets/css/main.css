@@ -2420,6 +2420,7 @@ figure figcaption {
 
 #references img {
     max-width: 200px;
+    max-height: 80px;
 }
 
 /* Dropdown navigation from eco-compute.io */
