@@ -89,7 +89,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
         <div class="content">
             <div class="header center aligned">Premium</div>
             <div class="meta center aligned">Support & maintenance.</div>
-            <div class="ui divider horizontal">200 EUR / month</div>
+            <div class="ui divider horizontal">250 EUR / month</div>
             <div class="ui list">
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>All</b> Community Features
@@ -116,6 +116,10 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Offset contolled</b> cluster
                     <br><small><a href="https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-solutions/measurement-control-workload&filename=usage_scenario.yml&branch=event-bound&machine_id=7">Measurements guaranteed < 1% Std.Dev</a></small>
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Blauer Engel</b> für Software
+                    <br><small>Report & Audit Dokument Download</small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>High precision</b> measurements
@@ -168,9 +172,6 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     Advanced <b>Green Coding AI</b> Optimizations (beta)
                     <br><small>Code introspection & prediction</small>
-                </div></div>
-                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    <b>Support</b> the development
                 </div></div>
             </div>
         </div>
