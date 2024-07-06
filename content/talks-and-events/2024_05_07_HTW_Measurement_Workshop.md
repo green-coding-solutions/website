@@ -7,7 +7,7 @@ eventtype: "Workshop"
 eventlink: "https://www.htw-berlin.de/hochschule/personen/person/?eid=11866"
 eventname: "Measurement Workshop - HTW Berlin (May 2024)"
 eventimg: '/img/talks-and-events/2024_05_07_HTW_Measurement_Workshop.webp'
-eventimg600w: "/img/talks-and-events/2024_05_07_HTW_Measurement_Workshop_1200.webp"
+eventimg2x: "/img/talks-and-events/2024_05_07_HTW_Measurement_Workshop_1200.webp"
 show_button: false
 
 ---

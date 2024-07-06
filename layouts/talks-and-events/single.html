@@ -8,9 +8,9 @@
             <div class="data-content-three no-flex">
                 <h1><b>{{ .Params.Eventname }}</b></h1>
                 <!-- <img src="{{.Params.Eventimg}}" style="width: 100%; max-width: 300px;"> -->
-                {{ if (isset .Params "eventimg600w") }}
+                {{ if (isset .Params "eventimg2x") }}
                     <img srcset="{{.Params.Eventimg}} 480w,
-                    {{.Params.Eventimg600w}} 800w"
+                    {{.Params.Eventimg2x}} 800w"
                     src="{{.Params.Eventimg}}"
                     style="width: 80%; max-width: 600px"
                     loading="lazy" >

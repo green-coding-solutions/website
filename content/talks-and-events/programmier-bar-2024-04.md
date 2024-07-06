@@ -7,7 +7,7 @@ eventtype: "Meetup"
 eventlink: "https://www.meetup.com/programmierbar/events/299628823/"
 eventname: "Green IT - programmier.bar"
 eventimg: "/img/talks-and-events/2024_04_04_programmier_bar.webp"
-eventimg600w: "/img/talks-and-events/2024_04_04_programmier_bar_1200.webp"
+eventimg2x: "/img/talks-and-events/2024_04_04_programmier_bar_1200.webp"
 socialmedia_preview: "/img/talks-and-events/2024_04_04_programmier_bar_1200.webp"
 
 ---

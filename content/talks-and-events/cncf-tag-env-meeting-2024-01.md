@@ -8,7 +8,7 @@ eventlink: "https://www.youtube.com/watch?v=-L4nVqM4SM0"
 # Alternative Link: https://lfca.earth/event/3cefe1da-16f3-4747-a841-5e7ff9f812ec/join/
 eventname: "CNCF TAG ENV Meeting - Green Metrics Tool"
 eventimg: "/img/talks-and-events/cncf-tag-env-meeting-2024-01-1x.webp"
-eventimg600w: "/img/talks-and-events/cncf-tag-env-meeting-2024-01-2x.webp"
+eventimg2x: "/img/talks-and-events/cncf-tag-env-meeting-2024-01-2x.webp"
 socialmedia_preview: "/img/talks-and-events/cncf-tag-env-meeting-2024-01-2x.webp"
 
 ---

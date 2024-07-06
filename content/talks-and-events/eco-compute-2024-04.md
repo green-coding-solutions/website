@@ -7,7 +7,7 @@ eventtype: "Conference"
 eventlink: "https://www.eco-compute.io/"
 eventname: "EcoCompute Conferece"
 eventimg: "/img/talks-and-events/ecocompute_2024_04.webp"
-eventimg600w: "/img/talks-and-events/ecocompute_2024_04_1200.webp"
+eventimg2x: "/img/talks-and-events/ecocompute_2024_04_1200.webp"
 ---
 
 EcoCompute aims to address the current issue of energy and resource consumption of digital infrastructures with a new approach:

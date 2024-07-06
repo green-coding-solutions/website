@@ -8,7 +8,7 @@ eventlink: "https://www.linkedin.com/events/learningsessionbeyondbuzzwords-71639
 # Alternative Link: https://lfca.earth/event/3cefe1da-16f3-4747-a841-5e7ff9f812ec/join/
 eventname: "Beyond Buzzwords: Making Digital Sustainability a Reality"
 eventimg: "/img/talks-and-events/lfca-learning-session-2024-02-1x.webp"
-eventimg600w: "/img/talks-and-events/lfca-learning-session-2024-02-2x.webp"
+eventimg2x: "/img/talks-and-events/lfca-learning-session-2024-02-2x.webp"
 socialmedia_preview: "/img/talks-and-events/lfca-learning-session-2024-02-2x.webp"
 
 ---

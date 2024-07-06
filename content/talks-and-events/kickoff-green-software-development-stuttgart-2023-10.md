@@ -6,7 +6,7 @@ draft: false
 eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-software-development-stuttgart/events/294435689/"
 eventimg: "/img/talks-and-events/kickoff-green-software-development-stuttgart-2023-10-600w.webp"
-eventimg600w: '/img/talks-and-events/kickoff-green-software-development-stuttgart-2023-10-600w.webp'
+eventimg2x: '/img/talks-and-events/kickoff-green-software-development-stuttgart-2023-10-600w.webp'
 ---
 
 We are invited to speak at the *Kickoff Green Software Development Stuttgart*. (Talk will be in German)

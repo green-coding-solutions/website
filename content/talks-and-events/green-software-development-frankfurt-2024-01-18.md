@@ -7,7 +7,7 @@ eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-software-development-frankfurt/events/297639022/"
 eventname: "Sustainable Software: Ansätze zum Messen der Energieeffizienz von Software"
 eventimg: "/img/talks-and-events/green-software-development-frankfurt-2024-01-18.webp"
-eventimg600w: "/img/talks-and-events/green-software-development-frankfurt-2024-01-18-2x.webp"
+eventimg2x: "/img/talks-and-events/green-software-development-frankfurt-2024-01-18-2x.webp"
 ---
 
 We are invited to be speaker at the [Green Software Development Meetup Frankfurt](https://www.meetup.com/green-software-development-frankfurt/) this time hosted by 
