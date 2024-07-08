@@ -9,8 +9,8 @@
 
                     <div class="item">
                       <div class="image">
-                        {{ if (isset .Params "eventimg600w") }}
-                            <img srcset="{{.Params.Eventimg}} 1x, {{.Params.Eventimg600w}} 2x" src="{{.Params.Eventimg}}" loading="lazy">
+                        {{ if (isset .Params "eventimgex") }}
+                            <img srcset="{{.Params.Eventimg}} 1x, {{.Params.Eventimgex}} 2x" src="{{.Params.Eventimg}}" loading="lazy">
                         {{ else }}
                             <img src="{{.Params.Eventimg}}" loading="lazy">
                         {{ end }}

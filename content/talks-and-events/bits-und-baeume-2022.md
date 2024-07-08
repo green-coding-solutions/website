@@ -6,7 +6,7 @@ eventtype: "Conference"
 eventlink: "https://fahrplan22.bits-und-baeume.org/bitsundbaeume/talk/9TES88/"
 eventname: "Bits & Bäume Conference Berlin"
 eventimg: "/img/talks-and-events/bits-und-baeume-2022.webp"
-eventimg600w: '/img/talks-and-events/bits-und-baeume-2022-600w.webp'
+eventimg2x: '/img/talks-and-events/bits-und-baeume-2022-600w.webp'
 ---
 
 We have been invited to speak at the Bits & Bäume conference about our Green Metrics 

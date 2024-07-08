@@ -7,7 +7,7 @@ eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/289642025/"
 eventname: "Cloud energy consumption - PyData Berlin [x] Green Coding Solutions"
 eventimg: "/img/talks-and-events/pydata-meetup-nov-2022.webp"
-eventimg600w: "/img/talks-and-events/pydata-meetup-nov-2022-600w.webp"
+eventimg2x: "/img/talks-and-events/pydata-meetup-nov-2022-600w.webp"
 
 ---
 

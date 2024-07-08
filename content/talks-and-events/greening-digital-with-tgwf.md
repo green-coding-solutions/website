@@ -7,7 +7,7 @@ eventtype: "Meetup"
 eventlink: "https://www.meetup.com/green-coding/events/287352713/"
 eventname: "Greening Digital - The Green Web Foundation [x] Green Coding Solutions"
 eventimg: "/img/talks-and-events/greening-digital-with-tgwf.webp"
-eventimg600w: "/img/talks-and-events/greening-digital-with-tgwf-600w.webp"
+eventimg2x: "/img/talks-and-events/greening-digital-with-tgwf-600w.webp"
 
 ---
 

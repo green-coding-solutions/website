@@ -7,7 +7,7 @@ eventtype: "Event"
 eventlink: "https://www.meetup.com/clean-it-group-potsdam/events/292574446/"
 eventname: "Clean IT Gruppe Potsdam (Apr. 2023)"
 eventimg: '/img/talks-and-events/clean-it-potsdam-04-2023.webp'
-eventimg600w: "/img/talks-and-events/clean-it-potsdam-04-2023-600w.webp"
+eventimg2x: "/img/talks-and-events/clean-it-potsdam-04-2023-600w.webp"
 
 ---
 

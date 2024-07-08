@@ -6,7 +6,7 @@ draft: false
 eventtype: "Conference"
 eventlink: "https://www.enviroinfo2023.eu/programme/schedule-overview/wednesday-schedule/#1894286d"
 eventimg: "/img/talks-and-events/enviroinfo-slca-2023.webp"
-eventimg600w: '/img/talks-and-events/enviroinfo-slca-2023.webp'
+eventimg2x: '/img/talks-and-events/enviroinfo-slca-2023.webp'
 socialmedia_preview: '/img/talks-and-events/enviroinfo-slca-2023.webp'
 
 ---
