@@ -158,7 +158,7 @@ On servers this is a differnt deal, and here it is [roughly the other way around
 ) (if you are not running on carbon free electricty).
 
 ### Our work
-We use official databases like the [NegaOctet](https://negaoctet.org/) database from France to get the embodied carbon of the underlying hardware
+We use official databases like the [NegaOctet](https://negaoctet.org/) and [Resilio](https://www.resilio.tech) from France / Switzerland to get the embodied carbon of the underlying hardware
 and showing the cost of manufactoring.
 
 Another approach we we are adopting is the concept of *Digital Resource Primitives*, which is developed by the [SDIA](https://knowledge.sdialliance.org/digital-environmental-footprint).
