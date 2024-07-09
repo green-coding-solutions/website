@@ -1,5 +1,5 @@
 ---
-title: "Development and evaluation of a reference measurement model for assessing the resource and energy efficiency of software products and components—Green Software Measurement Model (GSMM"
+title: "Development and evaluation of a reference measurement model for assessing the resource and energy efficiency of software products and components—Green Software Measurement Model (GSMM)"
 link: "https://doi.org/10.1016/j.future.2024.01.033"
 date: 2024-02-28
 draft: false
