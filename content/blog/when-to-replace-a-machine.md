@@ -36,7 +36,7 @@ Because of the grid intensity we also ask for the start date so we can get the c
 
 {{< image "/img/blog/hardware-replace-overview.webp" "huge" >}}
 
-You can head to [hardware-checker.green-coding.io](hardware-checker.green-coding.io) to see the project. We added some example data initially so that you can start playing around instantly.
+You can head to [hardware-checker.green-coding.io](https://hardware-checker.green-coding.io) to see the project. We added some example data initially so that you can start playing around instantly.
 
 In this example you can see that it makes sense to replace the machine, which takes half of the energy, in 2032 so after 12 years. This is while assuming constant utilization which is normally not the case as modern CPUs are faster at handling the same computation. Feel free to play around with the values and see how the curve changes. Some learning I had while looking at the data is that it makes a huge difference where I place the machines. Also that utilization is key. Just having the machine run idle is a really bad idea.
 
