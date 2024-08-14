@@ -7,4 +7,4 @@ draft: false
 type: "news"
 ---
 
-Our pitch @ WSA Awards for Green Coding Solutions and the Green Metrics Tool.
+Unser Pitch bei den WSA Awards für Green Coding Solutions und das Green Metrics Tool.
