@@ -57,7 +57,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                         <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
                         <div class="statistic">
                             <div class="value">0.0028125</div>
-                            <div class="label">GB / kWh</div>
+                            <div class="label">kWh / GB</div>
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">=</div></div>
                         <div class="statistic">
