@@ -42,8 +42,8 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p>Other approaches are to really trace the path of some sample packets and look at every piece of network equipment on the way and then on its power draw for the transmission only.</p>
                     <p>There are also other approaches but all have downsides and upsides. The number of <strong>0.06 kWh / GB</strong> is already a mix with the idea to get the best out of all of these approaches.</p>
                     <p>The study linked in the source [1] down below also notes that through advances in efficiency the electric intesity drops by around a half every 2 years and suggests that an extrapolation for the coming years might be a valid assumption. This would bring the value in <strong>2024</strong> down to a <strong>~0.002652 kWH / GB</strong> (<i>0.06 / (2**(9/2))</i>)</p>
-                    <p>However this model is not without critique, as the real nature of network devices to date is that they consume 80% of their peak capacity already in idle mode. The rest is a proportional factor according to the usage of the possible bandwidth. Many models have been proposed to better attribute this reality on the real electricity cost for application that uses the network, however time-share or data-share models all have different downsides [2]. 
-                    <p>We deciced to use the linear approach of network transfer attribution to power consumption in our tools as it bests incentives the user to keep the network traffic to a minimum. No matter which current known calculation method is used it will be inaccurate still and none of the current methods can reliably incorporate the real costs of provisioning new hardware for bandwith increase back in time to the pool of applications that tipped the providers to increase the bandwith.</p>
+                    <p>However this model is not without critique, as the real nature of network devices to date is that they consume 80% of their peak capacity already in idle mode. The rest is a proportional factor according to the usage of the possible bandwidth. Many models have been proposed to better attribute this reality on the real electricity cost for application that uses the network, however time-share or data-share models all have different downsides [2][3].</p>
+                    <p>We deciced to use the linear approach of network transfer attribution to power consumption in our tools as it bests incentives the user to keep the network traffic to a minimum. No matter which current known calculation method is used it will be inaccurate still and none of the current methods can reliably incorporate the real costs of provisioning new hardware for bandwith increase back in time to the pool of applications that tipped the providers to increase the bandwith. This we have also discussed with one of the paper authors on GitHub [4]</p>
                     <h3>Included Network parts</h3>
                     <p>The important point to note with this number is which parts of the network are included. In the picture on the right you see the included parts. <strong>Only the Access Network and the IP core network is included</strong>, which means the connection between datacenters and telecom providers.</p>
                     <p>Not included are the networking inside of the datacenters and also no end-user devices or their in-Home wifi. The calculation only goes to the curbside.</p>
@@ -57,7 +57,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                         <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
                         <div class="statistic">
                             <div class="value">0.0028125</div>
-                            <div class="label">GB / kWh</div>
+                            <div class="label">kWh / GB</div>
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">=</div></div>
                         <div class="statistic">
@@ -66,8 +66,13 @@ On this page we want to hightlight how to get from typical values like **time** 
                         </div>
                     </div>
                     <p>If your value is in Megabytes the conversion factor has to be divived with <strong>1.000</strong> and will equate to <strong>0.0000028125 MB / kWh</strong></p>
+                    <h3>Alternative numbers</h3>
+                    <p>Recently also a very detailed study from <a href="https://resilio.tech">Resilio</a> for the French Government produced some different numbers which are even about one order of magnitude lower. Since they have been using the accredited methodology from ADEME it might make sense to use these numbers in France specifically if not the EU. [5]</p>
                     <p>[1] <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630">Untangling the estimates</a></p>
                     <p>[2] <a href="https://github.com/intarchboard/e-impact-workshop-public/blob/main/papers/Schien_Rethinking-Allocation-v2.pdf">Daniel Schien, Paul Shabajee, Chris Preist. “Rethinking Allocation in High-Baseload Systems: A Demand-Proportional Network Electricity Intensity Metric.”</a></p>
+                    <p>[3] <a href="https://onlinelibrary.wiley.com/doi/10.1111/jiec.13512">Network energy use not directly proportional to data volume: The power model approach for more reliable network energy consumption calculations</p>
+                    <p>[4] <a href="https://github.com/green-coding-solutions/green-metrics-tool/issues/707">GitHub Discussion on whether incentivized approaches make still sense for attribution of network traffic data.</p>
+                    <p>[5] <a href="https://librairie.ademe.fr/7111-evaluation-of-the-environmental-footprint-of-internet-service-provisioning-in-france.html">Evaluation of the environmental footprint of internet service provisioning in France</a></p>
                 </div>
                 <!-- end segment -->                
                 <div class="ui segment">
