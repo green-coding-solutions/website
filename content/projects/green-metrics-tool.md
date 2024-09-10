@@ -67,6 +67,10 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                     Basic optimizations
                     <br><small>Example & resource based</small>                                        
                 </div></div>
+                <div class="item"><i class="icon times"></i> <div class="content">
+                    Limited access to hosted SaaS version
+                    <br><small>30 Min. per measurement / Limited machines</small>                                        
+                </div></div>
                 <hr>
                 <div class="item"><i class="icon times"></i> <div class="content">
                     No setup support
@@ -99,8 +103,9 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                     <br><small>Serviced updates and maintenance</small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    <b>10.000</b> benchmarking minutes
-                    <br><small>Additional minutes can be purchased</small>
+                    <b>10.000</b> benchmarking minutes                    
+                    <br><small>Up to <b>5 hours</b> per single measurement</small>
+                    <br><small>(Additional minutes can be purchased)</small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>120</b> days of data retention
@@ -117,6 +122,11 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                     <b>Offset contolled</b> cluster
                     <br><small><a href="https://metrics.green-coding.io/timeline.html?uri=https://github.com/green-coding-solutions/measurement-control-workload&filename=usage_scenario.yml&branch=event-bound&machine_id=7">Measurements guaranteed < 1% Std.Dev</a></small>
                 </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>6+</b> different measurement machines
+                    <br><small>Including GUI / k3s / systemd applications</small>
+                    <br><small><a href="https://docs.green-coding.io/docs/measuring/measurement-cluster/">See all available machines</a></small>                                        
+                </div></div>                
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Blauer Engel</b> für Software
                     <br><small>Report & Audit Dokument Download</small>
@@ -152,6 +162,9 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                     <b>Unlimited</b> measurements
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>24h+</b> duration for single measurements
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Unlimited</b> data rentention
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
@@ -165,6 +178,12 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Custom</b> metric providers
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Authentication</b> and <b>ACL</b> for users
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Self-hosted</b> or <b>private isolated SaaS</b>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Whitelabel</b> & <b>Dual-Licensing</b>
