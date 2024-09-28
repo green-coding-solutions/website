@@ -92,68 +92,89 @@ touch meta-data
 
 ## 2) Install NOP Linux
 
-You can now ssh into the machine and start configuring. This is mainly done by copy pasting scripts manually. As we don't install machines that often this is totally ok for now. Please note that all these commands need to be run as root. So you ssh into the machine with the `gc` user and then need to become root by using `sudo su`
+You can now ssh into the machine and start configuring. This is mainly done by copy pasting scripts manually. As we don't install machines that often this is totally ok for now. Please note that most of these commands need to be run as root.
 
 ```bash
 #!/bin/bash
 set -euox pipefail
 
+# this is a patch. Firefox seems to have a trick to remove read-only filesystem. We need to unmount that first
+sudo umount /var/snap/firefox/common/host-hunspell || true
+
+# remov all snaps first as they mount read only filesystem that only snap itself can find and unmount
+for i in {1..3}; do # we do this three times as packages depends on one another
+    for snap_pkg in $(snap list | awk 'NR>1 {print $1}'); do sudo snap remove --purge "$snap_pkg"; done
+done
+
+
 # Remove all the packages we don't need
-apt purge -y --purge snapd cloud-guest-utils cloud-init apport apport-symptoms cryptsetup cryptsetup-bin cryptsetup-initramfs curl gdisk lxd-installer mdadm open-iscsi snapd squashfs-tools ssh-import-id wget xauth unattended-upgrades update-notifier-common python3-update-manager unattended-upgrades needrestart command-not-found cron lxd-agent-loader modemmanager motd-news-config pastebinit packagekit
-systemctl daemon-reload
-apt autoremove -y --purge
+sudo apt purge -y --purge snapd cloud-guest-utils cloud-init apport apport-symptoms cryptsetup cryptsetup-bin cryptsetup-initramfs curl gdisk lxd-installer mdadm open-iscsi snapd squashfs-tools ssh-import-id wget xauth unattended-upgrades update-notifier-common python3-update-manager unattended-upgrades needrestart command-not-found cron lxd-agent-loader modemmanager motd-news-config pastebinit packagekit
+sudo systemctl daemon-reload
+sudo apt autoremove -y --purge
 
 # Get newest versions of everything
-apt update
+sudo apt update
 
-apt install psmisc -y
+sudo apt install psmisc -y
 
 # on some versions killall might be missing. Please insta
-killall unattended-upgrade-shutdown
+sudo killall unattended-upgrade-shutdown
 
-apt upgrade -y
+sudo apt upgrade -y
 
 # These are packages that are installed through the update
-apt remove -y --purge networkd-dispatcher multipath-tools
+sudo apt remove -y --purge networkd-dispatcher multipath-tools
 
-apt autoremove -y --purge
+sudo apt autoremove -y --purge
+
+# These are user running services
+systemctl --user disable --now snap.firmware-updater.firmware-notifier.timer
+systemctl --user disable --now launchpadlib-cache-clean.timer
+systemctl --user disable --now snap.snapd-desktop-integration.snapd-desktop-integration.service
+
 
 # Disable services that might do things
-systemctl disable --now apt-daily-upgrade.timer
-systemctl disable --now apt-daily.timer
-systemctl disable --now dpkg-db-backup.timer
-systemctl disable --now e2scrub_all.timer
-systemctl disable --now fstrim.timer
-systemctl disable --now motd-news.timer
-systemctl disable --now e2scrub_reap.service
-systemctl disable --now tinyproxy.service
+sudo systemctl disable --now apt-daily-upgrade.timer
+sudo systemctl disable --now apt-daily.timer
+sudo systemctl disable --now dpkg-db-backup.timer
+sudo systemctl disable --now e2scrub_all.timer
+sudo systemctl disable --now fstrim.timer
+sudo systemctl disable --now motd-news.timer
+sudo systemctl disable --now e2scrub_reap.service
+sudo systemctl disable --now tinyproxy.service
+sudo systemctl disable --now  anacron.timer
 
 
 # these following timers might be missing on newer ubuntus
-systemctl disable --now systemd-tmpfiles-clean.timer
-systemctl disable --now fwupd-refresh.timer
-systemctl disable --now logrotate.timer
-systemctl disable --now ua-timer.timer
-systemctl disable --now man-db.timer
-systemctl disable --now systemd-tmpfiles-clean.timer
+sudo systemctl disable --now systemd-tmpfiles-clean.timer
+sudo systemctl disable --now fwupd-refresh.timer
+sudo systemctl disable --now logrotate.timer
+sudo systemctl disable --now ua-timer.timer
+sudo systemctl disable --now man-db.timer
 
-systemctl disable --now sysstat-collect.timer
-systemctl disable --now sysstat-summary.timer
+sudo systemctl disable --now sysstat-collect.timer
+sudo systemctl disable --now sysstat-summary.timer
 
-systemctl disable --now systemd-journal-flush.service
-systemctl disable --now systemd-timesyncd.service
+sudo systemctl disable --now systemd-journal-flush.service
+sudo systemctl disable --now systemd-timesyncd.service
 
-systemctl disable --now systemd-fsckd.socket
-systemctl disable --now systemd-initctl.socket
+sudo systemctl disable --now systemd-fsckd.socket
+sudo systemctl disable --now systemd-initctl.socket
 
-systemctl disable --now cryptsetup.target
+sudo systemctl disable --now cryptsetup.target
+
+sudo systemctl disable --now power-profiles-daemon.service
+sudo systemctl disable --now thermald.service
+sudo systemctl disable --now anacron.service
+
+
 
 # Packages to install for editing and later bluetooth. some of us prefer nano, some vim :)
-apt install -y vim nano bluez
+sudo apt install -y vim nano bluez
 
 # Setup networking
-NET_NAME=$(networkctl list "en*" --no-legend | cut -f 4 -d " ")
-cat <<EOT > /etc/systemd/network/en.network
+NET_NAME=$(sudo networkctl list "en*" --no-legend | cut -f 4 -d " ")
+cat <<EOT | sudo tee /etc/systemd/network/en.network
 [Match]
 Name=$NET_NAME
 
@@ -162,20 +183,25 @@ DHCP=ipv4
 EOT
 
 # Disable the kernel watchdogs
-echo 0 > /proc/sys/kernel/soft_watchdog
-echo 0 > /proc/sys/kernel/nmi_watchdog
-echo 0 > /proc/sys/kernel/watchdog
-echo 0 > /proc/sys/kernel/watchdog_thresh
+echo 0 | sudo tee /proc/sys/kernel/soft_watchdog
+echo 0 | sudo tee /proc/sys/kernel/nmi_watchdog
+echo 0 | sudo tee /proc/sys/kernel/watchdog
+echo 0 | sudo tee /proc/sys/kernel/watchdog_thresh
 
 # Removes the large header when logging in
-rm /etc/update-motd.d/*
+sudo rm /etc/update-motd.d/*
 
 # Remove all cron files. Cron shouldn't be running anyway but just to be safe
-rm /etc/cron.d/*
-rm /etc/cron.daily/*
+sudo rm /etc/cron.d/*
+sudo rm /etc/cron.daily/*
 
-apt autoremove -y --purge
+sudo apt autoremove -y --purge
 
+# List all timers and services to validate we have nothing left
+sudo systemctl list timers
+systemctl --user list-timers
+
+echo "All done. Please reboot system!"
 ```
 
 Now you should have a machine that only runs a minimal amount of services and hence should not create a significant amount of interrupts that disturb measurements. We can measure this by starting NOP Linux in an virtual machine and checking CPU statistics.
