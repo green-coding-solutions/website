@@ -192,16 +192,25 @@ echo 0 | sudo tee /proc/sys/kernel/watchdog_thresh
 sudo rm /etc/update-motd.d/*
 
 # Remove all cron files. Cron shouldn't be running anyway but just to be safe
-sudo rm /etc/cron.d/*
-sudo rm /etc/cron.daily/*
+rm -R /etc/cron*
 
 sudo apt autoremove -y --purge
+
+# Desktop systems have NetworkManager. Here we want to disable the periodic check to Host: connectivity-check.ubuntu.com.
+if [ -f "/etc/NetworkManager/NetworkManager.conf" ]; then
+    echo "[connectivity]" >> /etc/NetworkManager/NetworkManager.conf
+    echo "uri=" >> /etc/NetworkManager/NetworkManager.conf
+    echo "interval=0" >> /etc/NetworkManager/NetworkManager.conf
+else
+    echo "NetworkManager configuration file seems not to exist. Probably non desktop system"
+fi
 
 # List all timers and services to validate we have nothing left
 sudo systemctl list timers
 systemctl --user list-timers
 
 echo "All done. Please reboot system!"
+
 ```
 
 Now you should have a machine that only runs a minimal amount of services and hence should not create a significant amount of interrupts that disturb measurements. We can measure this by starting NOP Linux in an virtual machine and checking CPU statistics.
