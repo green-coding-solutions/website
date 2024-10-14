@@ -3,8 +3,8 @@ title = 'green-coding.io'
 
 defaultContentLanguageInSubdir = false
 
-paginate = 10
-paginatePath = "page"
+pagination.pagerSize = 10
+pagination.path = "page"
 
 summaryLength = 30
 

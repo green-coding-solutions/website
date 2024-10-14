@@ -1,6 +1,6 @@
 ---
 title: "Power Hog"
-date: 2023-9-20 19:00:00
+date: 2023-09-20 19:00:00
 publishDate: 2023-01-16
 draft: false
 icon: "piggy bank"
