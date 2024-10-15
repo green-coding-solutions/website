@@ -17,6 +17,15 @@ Digital emissions are now as high as those of all air traffic. That's why the Bl
 
 With us - Green Coding Solutions - at your side, you can now embark on the path to Blue Angel certification and make your software product a pioneer of sustainable digitalization.
 
+## What exactly is the Blue Angel for resource and energy-efficient software products?
+
+The Blue Angel for resource and energy-efficient software products is an environmental label awarded by the Federal Ministry for the Environment, Nature Conservation and Nuclear Safety (BMUV) to environmentally friendly products and services.
+
+The UZ-215 seal, which is relevant for software, was developed by the Federal Environment Agency in cooperation with the Öko-Institut e.V. and the Environmental Campus Birkenfeld.
+
+An application for the label is made via RAL gGmbH and requires both a formal application including an energy measurement and a review by an auditor. We at Green Coding Solutions are both an official auditor and also offer energy measurements as a service.
+
+
 ### 🌍 Why should you apply for the Blue Angel?
 1. **Making sustainability visible**\
 The Blue Angel identifies software that uses hardware resources particularly sparingly and indicates its energy consumption. This means that your software is more transparent and environmentally friendly than the competition and makes a valuable contribution to conserving resources.

@@ -17,6 +17,14 @@ Digitale Emissionen sind mittlerweile so hoch wie die des gesamten Flugverkehrs.
 
 Mit uns – Green Coding Solutions – an deiner Seite kannst du ab sofort den Weg zur Zertifizierung für den Blauen Engel beschreiten und dein Softwareprodukt zum Vorreiter nachhaltiger Digitalisierung machen.
 
+## Was genau ist der Blaue Engel für Ressourcen- und energieeffiziente Softwareprodukte?
+
+Der Blaue Engel für Ressourcen- und energieeffiziente Softwareprodukte ist ein Umweltzeichen des Bundesministeriums für Umwelt, Naturschutz und nukleare Sicherheit (BMUV) mit dem umweltschonende Produkte und Dienstleistungen ausgezeichnet werden.
+
+Das für Software relevante Siegel UZ-215 wurde vom Umweltbundesamt in Zusammenarbeit mit dem Öko-Institut e.V. und dem Umweltcampus Birkenfeld entwickelt.
+
+Eine Beantratung des Labels geht über die RAL gGmbH und erfordert sowohl einen formalen Antrag inkl. einer Energie-Messung als auch eine Prüfung durch einen Auditor. Wir als Green Coding Solutions sind sowohl offizieller Auditor und bieten ebenfalls Energie-Messungen als Dienstleistung an.
+
 ### 🌍 Warum solltest du den Blauen Engel beantragen?
 1. **Nachhaltigkeit sichtbar machen**\
 Der Blaue Engel kennzeichnet Software, die besonders sparsam mit Hardware-Ressourcen umgeht und ihren Energieverbrauch ausweist. Dies bedeutet, dass deine Software transparenter und umweltfreundlicher ist als die Konkurrenz und einen wertvollen Beitrag zur Ressourcenschonung leistet.
