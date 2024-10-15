@@ -13,7 +13,7 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 #### Now with Green Coding Solutions at your side! 🌱
 
 💻 Software is the heart of the digital world, but did you know that it also contributes significantly to resource and energy consumption? 
-Digital emissions are now as high as those of all air traffic. That's why the Blue Angel certifies resource- and energy-efficient software products to make sustainable solutions visible. 
+Digital emissions are now as high as those of all air traffic combined. That's why the Blue Angel certifies resource- and energy-efficient software products to make sustainable solutions visible. 
 
 With us - Green Coding Solutions - at your side, you can now embark on the path to Blue Angel certification and make your software product a pioneer of sustainable digitalization.
 
@@ -21,7 +21,7 @@ With us - Green Coding Solutions - at your side, you can now embark on the path 
 
 The Blue Angel for resource and energy-efficient software products is an environmental label awarded by the Federal Ministry for the Environment, Nature Conservation and Nuclear Safety (BMUV) to environmentally friendly products and services.
 
-The UZ-215 seal, which is relevant for software, was developed by the Federal Environment Agency in cooperation with the Öko-Institut e.V. and the Environmental Campus Birkenfeld.
+The UZ-215 label, which is relevant for software, was developed by the Federal Environment Agency (UBA) in cooperation with the Öko-Institut e.V. and the Umweltcampus Birkenfeld.
 
 An application for the label is made via RAL gGmbH and requires both a formal application including an energy measurement and a review by an auditor. We at Green Coding Solutions are both an official auditor and also offer energy measurements as a service.
 
