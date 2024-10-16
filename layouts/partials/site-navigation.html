@@ -15,6 +15,7 @@
         <option value="{{ relURL "services/consulting" }}" class="second_item"  {{ if eq $slug "consulting"}}selected{{end}}>{{ i18n "consulting" }}</a></li>
         <option value="{{ relURL "services/workshops-and-trainings" }}" class="second_item"  {{ if eq $slug "workshops-and-trainings"}}selected{{end}}>{{ i18n "training" }}</a></li>
         <option value="{{ relURL "services/development-and-integrations" }}" class="second_item"  {{ if eq $slug "development-and-integrations"}}selected{{end}}>{{ i18n "development" }}</a></li>
+        <option value="{{ relURL "services/blauer-engel" }}" class="second_item"  {{ if eq $slug "blauer-engel"}}selected{{end}}>{{ i18n "blauer-engel" }}</a></li>
         <option value="{{ relref . "/" }}#nav-events" class="second_item">{{i18n "talks"}}</option>
         <option value="{{ relURL  "blog" }}" class="second_item"{{if eq $slug "blog"}}selected{{end}}>{{i18n "blog"}}</option>
         <option value="{{ relURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "case-studies"}}</option>
@@ -42,6 +43,7 @@
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services/consulting" }}">{{ i18n "consulting" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services/workshops-and-trainings" }}">{{ i18n "training" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services/development-and-integrations" }}">{{ i18n "development" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services/blauer-engel" }}">{{ i18n "blauer-engel" }}</a></li>
                 </ol>
             </li>
             <li class="dropdown menubtn-bg">

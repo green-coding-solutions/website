@@ -8,4 +8,4 @@ Since all files from the /static directory are passed through to the resulting /
 we would have the raw AND minified files in the resulting static page.
 
 Therefore we use the assets folder, as none of these files will be automatically inlcuded in /public
-albeit we process them
+albeit we process them.
