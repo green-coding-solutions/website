@@ -23,7 +23,7 @@ Der Blaue Engel für Ressourcen- und energieeffiziente Softwareprodukte ist ein 
 
 Das für Software relevante Siegel UZ-215 wurde vom Umweltbundesamt in Zusammenarbeit mit dem Öko-Institut e.V. und dem Umweltcampus Birkenfeld entwickelt.
 
-Eine Beantratung des Labels geht über die RAL gGmbH und erfordert sowohl einen formalen Antrag inkl. einer Energie-Messung als auch eine Prüfung durch einen Auditor. Wir als Green Coding Solutions sind sowohl offizieller Auditor und bieten ebenfalls Energie-Messungen als Dienstleistung an.
+Eine Beantratung des Labels geht über die RAL gGmbH und erfordert sowohl einen formalen Antrag inkl. einer Energie-Messung als auch eine Prüfung durch einen Auditor. 
 
 ### 🌍 Warum solltest du den Blauen Engel beantragen?
 1. **Nachhaltigkeit sichtbar machen**\
@@ -35,7 +35,7 @@ Deine Software sorgt dafür, dass Hardware länger genutzt werden kann, anstatt 
 4. **Wiederverwendbarkeit**\
 Der Blaue Engel für Ressourcen- und energieeffiziente Softwareprodukte fordert, dass deine Software die Nutzerdaten in ein Standard-Format exportieren kann, sowie der Code entweder Open-Source ist oder zum Vertriebsende der Software offengelegt wird. Weiterhin werden Anforderungen an die Dokumentation und Modularität der Software gestellt. 
 5. **Unabhängig geprüft und zertifiziert**\
-Der Blaue Engel erfordert besondere Fachkompetenz, sodass ein zusätzlicher Auditor und ein anspruchsvoller Messaufbau notwendig sind. Wir als Green Coding Solutions können dich entweder als Auditor oder als Messlabor unterstützen. Unsere Aufgabe ist es, sicherzustellen, dass deine Software die strengen Anforderungen des Blauen Engels erfüllt.
+Der Blaue Engel erfordert besondere Fachkompetenz, sodass ein zusätzlicher Auditor und ein anspruchsvoller Messaufbau notwendig sind. Wir als Green Coding Solutions können dich entweder als Auditor oder als Messlabor unterstützen. Als Messlabor ist es unsere Aufgabe ist es, sicherzustellen, dass deine Software die strengen Anforderungen des Blauen Engels erfüllt. Als Auditor prüfen wir den Antrag auf Korrektheit und validieren alle eingereichten Dokumente. Wichtig hierbei ist das der Blaue Engel eine Unabhängigkeit dieser zwei Rollen fordert und wir nur als Auditor **oder** als Messlabor agieren können.
 
 
 <figure>
@@ -55,7 +55,7 @@ Wir bei Green Coding Solutions haben es uns zur Aufgabe gemacht, Software effizi
 
 Der Blaue Engel für Ressourcen- und energieeffiziente Softwareprodukte stellt umfangreiche Anforderung an den Mess- und Dokumentations-prozess. Mit unserem [Green Metrics Tool](/projects/green-metrics-tool) bieten wir eine fertige Software-Lösung inkl. der Mess-Infrastruktur um die Beantragung des Blauen Engel so einfach wie möglich zu machen. Details und Preise findest du auf der [Green Metrics Tool Produktseite](/projects/green-metrics-tool). Der Output sind fertige Antragsformulare auf welchen lediglich noch Unternehmens-Details und deine Unterschrift ergänzt werden müssen.
 
-💬 Du hast die Vision – wir haben das Know-how. Vom ersten Audit bis zur erfolgreichen Zertifizierung stehen wir an deiner Seite und bieten dir umfassende Unterstützung. Wir übernehmen die Energie- und Ressourcenauswertung und sorgen dafür, dass dein Softwareprodukt alle Kriterien des Blauen Engels erfüllt.
+💬 Du hast die Vision – wir haben das Know-how. Vom Konzept über die Messung bis zur Erstellung aller Antragsunterlagen stehen wir an deiner Seite und bieten dir umfassende Unterstützung. Wir übernehmen die Energie- und Ressourcenauswertung und sorgen dafür, dass dein Softwareprodukt alle Kriterien des Blauen Engels erfüllt.
 
 <b><center>🎯 Starte jetzt mit uns in eine nachhaltige Zukunft!</center></b>
 

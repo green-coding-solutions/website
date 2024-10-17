@@ -23,8 +23,7 @@ The Blue Angel for resource and energy-efficient software products is an environ
 
 The UZ-215 label, which is relevant for software, was developed by the Federal Environment Agency (UBA) in cooperation with the Öko-Institut e.V. and the Umweltcampus Birkenfeld.
 
-An application for the label is made via RAL gGmbH and requires both a formal application including an energy measurement and a review by an auditor. We at Green Coding Solutions are both an official auditor and also offer energy measurements as a service.
-
+An application for the label is made via RAL gGmbH and requires both a formal application including an energy measurement and a review by an auditor. 
 
 ### 🌍 Why should you apply for the Blue Angel?
 1. **Making sustainability visible**\
@@ -36,8 +35,7 @@ Your software ensures that hardware can be used for longer instead of being repl
 4. **Reusability**\
 The Blue Angel for resource- and energy-efficient software products requires that your software can export user data in a standard format and that the code is either open source or disclosed at the end of the software's distribution. Requirements are also placed on the documentation and modularity of the software. 
 5. **Independently tested and certified**\
-The Blue Angel requires special expertise, so an additional auditor and a sophisticated measurement setup are necessary. We at Green Coding Solutions can support you either as an auditor or as a measurement laboratory. Our job is to ensure that your software meets the strict requirements of the Blue Angel.
-
+The Blue Angel requires special expertise, so an additional auditor and a sophisticated measurement setup are necessary. We at Green Coding Solutions can support you either as an auditor or as a measurement laboratory. Our job is to ensure that your software meets the strict requirements of the Blue Angel. As a measurement laboratory, it is our job to ensure that your software meets the strict requirements of the Blue Angel. As an auditor, we check the application for correctness and validate all submitted documents. It is important to note that the Blue Angel requires these two roles to be independent and that we can only act as an auditor **or** as a measurement laboratory.
 
 <figure>
   <img class="ui massive middle rounded bordered image" src="/img/blue-angel/blue-angel-advantages.webp" style="margin: auto">
@@ -57,7 +55,7 @@ At Green Coding Solutions, we have made it our mission to make software more eff
 
 The Blue Angel for resource- and energy-efficient software products places extensive demands on the measurement and documentation process. With our [Green Metrics Tool](/projects/green-metrics-tool) we offer a ready-to-use software solution including the measurement infrastructure to make applying for the Blue Angel as easy as possible. Details and prices can be found on the [Green Metrics Tool product page](/projects/green-metrics-tool). The output are ready-made application forms on which only company details and your signature need to be added.
 
-💬 You have the vision - we have the know-how. From the first audit to successful certification, we are at your side and offer you comprehensive support. We take care of the energy and resource evaluation and ensure that your software product meets all Blue Angel criteria.
+💬 You have the vision - we have the know-how. From the concept and measurement to the preparation of all application documents, we are at your side and offer you comprehensive support. We take care of the energy and resource evaluation and ensure that your software product meets all Blue Angel criteria.
 
 <b><center>🎯 Start a sustainable future with us now!</center></b>
 
