@@ -19,9 +19,9 @@ With us - Green Coding Solutions - at your side, you can now embark on the path 
 
 ## What exactly is the Blue Angel for resource and energy-efficient software products?
 
-The Blue Angel for resource and energy-efficient software products is an environmental label awarded by the Federal Ministry for the Environment, Nature Conservation and Nuclear Safety (BMUV) to environmentally friendly products and services.
+The [Blue Angel for resource and energy-efficient software products](https://www.blauer-engel.de/uz215) is an environmental label awarded by the [Federal Ministry for the Environment, Nature Conservation and Nuclear Safety (BMUV)](https://www.bmuv.de/) to environmentally friendly products and services.
 
-The UZ-215 label, which is relevant for software, was developed by the Federal Environment Agency (UBA) in cooperation with the Öko-Institut e.V. and the Umweltcampus Birkenfeld.
+The UZ-215 label, which is relevant for software, was developed by the [Federal Environment Agency (UBA)](https://www.umweltbundesamt.de) in cooperation with the [Öko-Institut e.V.](https://www.oeko.de) and the [Umweltcampus Birkenfeld](https://www.umwelt-campus.de/).
 
 An application for the label is made via RAL gGmbH and requires both a formal application including an energy measurement and a review by an auditor. We at Green Coding Solutions are both an official auditor and also offer energy measurements as a service.
 
