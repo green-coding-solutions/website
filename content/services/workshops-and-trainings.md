@@ -137,7 +137,7 @@ Training your developers to write more carbon efficient software or just startin
                 <li>Connecting the reported metrics with CO2 values to generate a carbon cost profile.</li>
                 <li>Measuring different other repositories from open source project to quantify own cost of testing in comparison to landscape out there
 </li>
-                <li>Integrating <a href="/projects/eco-ci">Eco-CI</a> tooling to get live energy cost</li>
+                <li>Integrating <a href="/products/eco-ci">Eco-CI</a> tooling to get live energy cost</li>
                 <li>Using a custom Github runner on a bare metal machine to get more granular energy metrics for the CI Pipeline</li>
                 <li>Understanding and reporting monthly carbon emissions through CarbonDB</li>
                 <li>Identifiying optimization potentials and reductions for carbon in pipeline</li>

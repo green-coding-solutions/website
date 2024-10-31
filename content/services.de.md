@@ -180,7 +180,7 @@ Details
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top"href="/projects/green-metrics-tool">
+          <a class="ui right floated primary button distance-top"href="/products/green-metrics-tool">
               Green Metrics Tool
               <i class="right chevron icon"></i>
           </a>
@@ -200,14 +200,14 @@ Details
             <span class="ui label">Operations</span><span class="ui label">Tools</span><span class="ui label">Integrations</span>
           </div>
           <div class="description">
-            <p>Nachhaltige Software ist ein kontinuierlicher Prozess. Nach der ersten Identifizierung von Schwachstellen und Optimierungszielen automatisieren wir den Reporting-/Transparenzteil durch DevOps-Praktiken nach Industriestandards, indem wir unsere spezialisierten CI/CD-Pipeline-Tools integrieren (siehe zum Beispiel unsere <a href="/projects/eco-ci/">Eco-CI Produkte</a> für Github / Gitlab oder unsere <a href="/projects/cloud-energy/">Cloud Energy</a> tools für beliebige Pipelines sowie unsere speziellen CI/CD-Dedicated-Services für Unternehmen).</p>
+            <p>Nachhaltige Software ist ein kontinuierlicher Prozess. Nach der ersten Identifizierung von Schwachstellen und Optimierungszielen automatisieren wir den Reporting-/Transparenzteil durch DevOps-Praktiken nach Industriestandards, indem wir unsere spezialisierten CI/CD-Pipeline-Tools integrieren (siehe zum Beispiel unsere <a href="/products/eco-ci/">Eco-CI Produkte</a> für Github / Gitlab oder unsere <a href="/products/cloud-energy/">Cloud Energy</a> tools für beliebige Pipelines sowie unsere speziellen CI/CD-Dedicated-Services für Unternehmen).</p>
             <p>In einem zweiten Schritt integrieren wir Optimierungen auch direkt in die Software-Build-Chain durch statische Ode-Optimierungen und auch Green AI / ML-Optimierungen.</p>
           </div>
           <a class="ui right floated primary button distance-top" href="/services/software-integrations">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top" href="/projects/eco-ci">
+          <a class="ui right floated primary button distance-top" href="/products/eco-ci">
               Eco-CI
               <i class="right chevron icon"></i>
           </a>

@@ -188,7 +188,7 @@ Details
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top"href="/projects/green-metrics-tool">
+          <a class="ui right floated primary button distance-top"href="/products/green-metrics-tool">
               Green Metrics Tool
               <i class="right chevron icon"></i>
           </a>
@@ -208,14 +208,14 @@ Details
             <span class="ui label">Operations</span><span class="ui label">Tools</span><span class="ui label">Integrations</span>
           </div>
           <div class="description">
-            <p>Sustainable software is a continuous process. After the first identification of weak spots and optimization targets we automate the reporting / transparency part through industry standard DevOps practices by integrating our specialized CI/CD pipeline tools (See for example our <a href="/projects/eco-ci/">Eco-CI products</a> for Github / Gitlab or our <a href="/projects/cloud-energy/">Cloud Energy</a> tools for arbitrary pipelines as well as our dedicated runners for enterprises).</p>
+            <p>Sustainable software is a continuous process. After the first identification of weak spots and optimization targets we automate the reporting / transparency part through industry standard DevOps practices by integrating our specialized CI/CD pipeline tools (See for example our <a href="/products/eco-ci/">Eco-CI products</a> for Github / Gitlab or our <a href="/products/cloud-energy/">Cloud Energy</a> tools for arbitrary pipelines as well as our dedicated runners for enterprises).</p>
             <p>In a second step we integrate optimizations also directly into the software build-chain through static ode optimizations and also Green AI / ML optimizations.</p>
           </div>
           <a class="ui right floated primary button distance-top" href="/services/software-integrations">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top" href="/projects/eco-ci">
+          <a class="ui right floated primary button distance-top" href="/products/eco-ci">
               Eco-CI
               <i class="right chevron icon"></i>
           </a>

@@ -8,7 +8,7 @@ authorlink: "https://www.linkedin.com/in/dan-mateas-693634105/"
 ---
 
 {{< infobox >}}
-    You do not know about our Eco-CI project yet? Than read up here about it: <a href="/projects/eco-ci">Eco-CI project</a>
+    You do not know about our Eco-CI project yet? Than read up here about it: <a href="/products/eco-ci">Eco-CI project</a>
 {{< /infobox >}}
 
 As we mentioned in a [previous blog article]({{< relref path="blog/eco-ci-activity-checker-released" >}}), we've been thinking of ways to make CI pipelines more energy efficient. One idea we had was to give developers a tool which allows them to measure the energy used by their CI runs.

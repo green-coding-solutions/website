@@ -106,7 +106,7 @@ We used the same benchmarks as in the original paper: [The Computer Language Ben
 
 Since the [archived repository on Gitlab](https://salsa.debian.org/benchmarksgame-team/archive-alioth-benchmarksgame) contains mutliple submitted variants we resorted to using the originally selected benchmarks by the study authors in their [Github repository](https://github.com/greensoftwarelab/Energy-Languages)
 
-The [Green Metrics Tool](https://www.green-coding.io/projects/green-metrics-tool/) makes it very easy to consume these benchmarks directly. We only added a container which contained the necessary Python version:
+The [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}}) makes it very easy to consume these benchmarks directly. We only added a container which contained the necessary Python version:
 
 - [Python3.6 Dockerfile](https://github.com/green-coding-solutions/python-benchmarks/blob/main/python/Dockerfile-3-6)
 - [Python3.9 Dockerfile](https://github.com/green-coding-solutions/python-benchmarks/blob/main/python/Dockerfile-3-9)
@@ -120,7 +120,7 @@ We just boot the container, execute the CLI command and let the Green Metrics To
 
 During the run we are mainly looking at the CPU energy and the total machine energy. In the original paper they only looked at the CPU energy.
 
-**Pro Tip**: If you do not know what the Green Metrics Tool is: It is our all-in-one open source professional software benchmarking and optimization solution. [Find infos here](https://www.green-coding.io/projects/green-metrics-tool/)
+**Pro Tip**: If you do not know what the Green Metrics Tool is: It is our all-in-one open source professional software benchmarking and optimization solution. [Find infos here]({{< relref path="products/green-metrics-tool" >}})
 
 {{< whiteblock >}}
 Results
