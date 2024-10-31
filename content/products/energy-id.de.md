@@ -8,7 +8,7 @@ desc: "Energy ID misst Open-Source-Software hinsichtlich Energie, CO2 und der SC
 ordering: 4
 ---
 
-Im Energy-ID-Projekt untersuchen wir populäre Open-Source-Software und vergleichen ihren Energie- und CO2-Verbrauch sowie die SCI-Metrik der [Green Software Foundation](https://sci-guide.greensoftware.foundation/) mit Hilfe unseres [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}})
+Im Energy-ID-Projekt untersuchen wir populäre Open-Source-Software und vergleichen ihren Energie- und CO2-Verbrauch sowie die SCI-Metrik der [Green Software Foundation](https://sci-guide.greensoftware.foundation/) mit Hilfe unseres [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}})
 
 Energy ID erstellt eine *Scorekarte* mit einer:
 
@@ -17,11 +17,11 @@ Energy ID erstellt eine *Scorekarte* mit einer:
 - Detaillierten Links zur Messung
 - Badges
 
-Die Badges können in Github-Projekten oder ähnlichem verwendet werden und basieren auf unserem [OpenEnergyBadge]({{< relref path="projects/open-energy-badge" >}}) Projekt.
+Die Badges können in Github-Projekten oder ähnlichem verwendet werden und basieren auf unserem [OpenEnergyBadge]({{< relref path="products/open-energy-badge" >}}) Projekt.
 
 Das Projekt zielt darauf ab, einen schnellen Überblick über den "typischen Anwendungsfall einer Software" zu bekommen und wie viel Energie-/CO2 dabei anfallen würde.
 
-Wenn Sie ein Projekt weitergehend vergleichen, über einen längeren Zeitraum überwachen oder sogar Optimierungen und Performance-Engineering durchführen möchten, sollten Sie sich die Möglichkeiten des [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}) ansehen.
+Wenn Sie ein Projekt weitergehend vergleichen, über einen längeren Zeitraum überwachen oder sogar Optimierungen und Performance-Engineering durchführen möchten, sollten Sie sich die Möglichkeiten des [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}}) ansehen.
 
 **Wichtig:** Die hier angegebenen absoluten Zahlen sind nicht als Grundlage für des tatsächlichen CO2 Ausstoß zu sehen. Es handelt sich um den Verbrauch der auf unseren Testmaschinen entstehen und spielgt under gewähltes Szenario wieder. Ein anderer Anwendungsfall könnte ganz andere Werte verursachen.
 

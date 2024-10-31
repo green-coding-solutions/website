@@ -1,5 +1,5 @@
 <div class="ui relaxed divided items">
-    {{ range $index, $element := sort (where .Site.RegularPages "Type" "projects") ".Params.ordering" "asc" }}
+    {{ range $index, $element := sort (where .Site.RegularPages "Type" "products") ".Params.ordering" "asc" }}
     <div class="item" id="item{{$index}}">
         <div class="ui image">
             <i class="{{ .Params.Icon }} huge black icon"></i>

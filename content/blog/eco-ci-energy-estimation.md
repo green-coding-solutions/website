@@ -15,7 +15,7 @@ As we mentioned in a [previous blog article]({{< relref path="blog/eco-ci-activi
 
 After all, how can people reduce their carbon emissions if they don't know how much energy they're using in the first place? With that in mind we're happy to announce a new Action which we're publishing to the Github Actions marketplace: [Eco CI Energy Estimation](https://github.com/green-coding-solutions/eco-ci-energy-estimation)
 
-This action measures the CPU used by the machine running your github VM and then uses our [Cloud energy]({{< relref path="projects/cloud-energy" >}}) model to estimate the energy used by whichever sections of your workflow file you wish to measure. It is designed to be easily integrated into any workflow file you may already have with just a couple of calls. Let's run through how to set up and use it.
+This action measures the CPU used by the machine running your github VM and then uses our [Cloud energy]({{< relref path="products/cloud-energy" >}}) model to estimate the energy used by whichever sections of your workflow file you wish to measure. It is designed to be easily integrated into any workflow file you may already have with just a couple of calls. Let's run through how to set up and use it.
 
 The action has three *tasks* it can be invoked with: `initialize`, `start-measurement`, and `get-measurement`:
 ```

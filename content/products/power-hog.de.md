@@ -45,10 +45,10 @@ Eine vollständige Readme und Dokumentation finden Sie im GitHub Repo.
 ## Screenshots
 
 {{< rawhtml >}}
-<img class="ui rounded bordered image" src="/img/projects/hog-power-logger.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
+<img class="ui rounded bordered image" src="/img/products/hog-power-logger.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
 <br>
-<img class="ui rounded bordered image" src="/img/projects/hog-mac-app.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
+<img class="ui rounded bordered image" src="/img/products/hog-mac-app.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
 <br>
-<img class="ui rounded bordered image" src="/img/projects/hog-website.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
+<img class="ui rounded bordered image" src="/img/products/hog-website.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
 <br>
 {{< /rawhtml >}}

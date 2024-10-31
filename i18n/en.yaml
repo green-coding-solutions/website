@@ -6,8 +6,8 @@
   translation: "Find out how ⇨"
 - id: home_about_details
   translation: "Read some details about the carbon emissions of software"
-- id: home_projects
-  translation: "Projects"
+- id: home_products
+  translation: "Products"
 
 - id: future_home_talks_teaser
   translation: "Future events and talks"
@@ -39,8 +39,8 @@
   translation: Insights
 - id: team
   translation: Team
-- id: projects
-  translation: Projects
+- id: products
+  translation: Products
 
 - id: overview
   translation: Overview

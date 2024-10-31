@@ -18,13 +18,13 @@ Durch die Integration unserer maßgeschneiderten Github Actions und Github Apps 
 
 Github Actions laufen auf Microsoft Azure VMs. In diesen VMs ist eine direkte Messung mit etwas wie RAPL leider nicht möglich.
 
-Wir nutzen unsere Arbeit aus dem [Cloud Energy]({{< relref path="projects/cloud-energy" >}}) Projekt, um den Energieverbrauch dieser Azure-VMs zu schätzen.
+Wir nutzen unsere Arbeit aus dem [Cloud Energy]({{< relref path="products/cloud-energy" >}}) Projekt, um den Energieverbrauch dieser Azure-VMs zu schätzen.
 
 Das Ergebnis ist eine leicht integrierbare Github-Aktion, mit der Sie die Energie in Joule für den CI-Lauf erhalten. Es ist auch möglich, nur Ergebnisse für einen Teil des CI-Laufs zu erhalten.
 
 {{< rawhtml >}}
 <figure>
-  <img class="ui huge rounded image" src="/img/projects/github-actions-energy.webp" loading="lazy">
+  <img class="ui huge rounded image" src="/img/products/github-actions-energy.webp" loading="lazy">
   <figcaption>Github Aktionen Energieabschätzung</figcaption>
 </figure>
 {{< /rawhtml >}}

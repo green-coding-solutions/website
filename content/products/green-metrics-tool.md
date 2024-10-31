@@ -3,7 +3,7 @@ title: "Green Metrics Tool"
 date: 2023-08-03 19:00:00
 publishDate: 2023-01-16
 draft: false
-projectimg: "/img/projects/gmt-rapl-graph.webp"
+projectimg: "/img/products/gmt-rapl-graph.webp"
 icon: "code"
 desc: "The Green Metrics Tool is a holistic framework to measure the energy / CO2 of your application."
 ordering: 1
@@ -210,10 +210,10 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
 
 <div id="screenshots"></div>
 
-{{< image "/img/projects/gmt-screenshot-1.webp" "rounded full-width" >}}
-{{< image "/img/projects/gmt-screenshot-2.webp" "rounded full-width" >}}
-{{< image "/img/projects/gmt-screenshot-3.webp" "rounded full-width" >}}
-{{< image "/img/projects/gmt-screenshot-4.webp" "rounded full-width" >}}
+{{< image "/img/products/gmt-screenshot-1.webp" "rounded full-width" >}}
+{{< image "/img/products/gmt-screenshot-2.webp" "rounded full-width" >}}
+{{< image "/img/products/gmt-screenshot-3.webp" "rounded full-width" >}}
+{{< image "/img/products/gmt-screenshot-4.webp" "rounded full-width" >}}
 
 ---
 
@@ -221,8 +221,8 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
 <div class="ui horizontal divider header"><i class="eye icon"></i>Comparison View</div>
 <br>
 
-{{< image "/img/projects/gmt-screenshot-5.webp" "rounded full-width" >}}
-{{< image "/img/projects/gmt-screenshot-6.webp" "rounded full-width" >}}
+{{< image "/img/products/gmt-screenshot-5.webp" "rounded full-width" >}}
+{{< image "/img/products/gmt-screenshot-6.webp" "rounded full-width" >}}
 <br>
 
 ---
@@ -233,4 +233,4 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
 
 <div id="optimizations"></div>
 
-{{< image "/img/projects/gmt-optimizations.webp" "rounded huge" >}}
+{{< image "/img/products/gmt-optimizations.webp" "rounded huge" >}}

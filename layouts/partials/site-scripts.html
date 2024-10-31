@@ -17,7 +17,7 @@
 <script src='{{ (resources.Get "js/respond.min.js" | minify | fingerprint).RelPermalink }}' defer></script>
 <script src='{{ (resources.Get "js/jquery.inview.js" | minify | fingerprint).RelPermalink }}' defer></script>
 <script src='{{ (resources.Get "js/customScripts.js" | minify | fingerprint).RelPermalink }}' defer></script>
-{{ if (eq .Page.Section "projects") }}
+{{ if (eq .Page.Section "products") }}
 <script src='{{ (resources.Get "js/energy-id.js" | minify | fingerprint).RelPermalink }}' defer></script>
 <script src='/dist/js/modal.min.js' defer></script>
 <script src='/dist/js/dimmer.min.js' defer></script>

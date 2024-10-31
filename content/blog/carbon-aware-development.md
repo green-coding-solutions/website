@@ -127,7 +127,7 @@ The full code can be found on GitHub.
 
 The code does not check for valid results as the motivation is to emulate the usage of the software. In this case all inputs are fixed length. It could be that the app behaves differently according to the data size or complexity given to it. In this case it makes sense to benchmark various scenarios and then do [curve fitting](https://en.wikipedia.org/wiki/Curve_fitting) to generate a general rule based on the inputs.
 
-Now we can use the [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}) to measure each part of our application while developing and see what is using how much resources in our benchmark case.
+Now we can use the [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}}) to measure each part of our application while developing and see what is using how much resources in our benchmark case.
 
 ## Usage
 
@@ -145,7 +145,7 @@ You can clearly see that the column based implementation takes 1863.52 Joule and
 - [Column store benchmark](https://metrics.green-coding.io/stats.html?id=71353c66-6432-4bf2-b459-5b5d4ed33ed3)
 - [Comparison](https://metrics.green-coding.io/compare.html?ids=71353c66-6432-4bf2-b459-5b5d4ed33ed3,67715c39-4134-4685-ae42-59262fe076a7)
 
-By using the [Eco-CI]({{< relref path="projects/eco-ci" >}}) you can also add this type of analytics to your normal workflow.
+By using the [Eco-CI]({{< relref path="products/eco-ci" >}}) you can also add this type of analytics to your normal workflow.
 
 Of course every software will behave differently depending on the system that it is run on. Some will even argue that it is not possible to get exact repeatable readings but that is not the main point here.
 

@@ -1,13 +1,13 @@
 - id: home_what_we_do
   translation: "Wir machen Software nachhaltig"
 - id: home_teaser
-  translation: "Wir unterstützen Unternehmen, Behörden und Open-Source-Projekte dabei, die CO2-Emissionen ihrer digitalen Dienste zu analysieren und zu reduzieren, um umweltfreundlichere digitale Lösungen zu fördern."
+  translation: "Wir unterstützen Unternehmen, Behörden und Open-Source-Communites dabei, die CO2-Emissionen ihrer digitalen Dienste zu analysieren und zu reduzieren, um umweltfreundlichere digitale Lösungen zu fördern."
 - id: home_cta
   translation: "Mehr erfahren ⇨"
 - id: home_about_details
   translation: "Mehr erfahren über die CO2-Emissionen von Software"
-- id: home_projects
-  translation: "Projekte"
+- id: home_products
+  translation: "Produkte"
 
 - id: future_home_talks_teaser
   translation: "Zukünftige Events und Veranstaltungen"
@@ -41,8 +41,8 @@
   translation: Insights
 - id: team
   translation: Team
-- id: projects
-  translation: Projekte
+- id: products
+  translation: Produkte
 - id: overview
   translation: Übersicht
 - id: consulting
