@@ -3,7 +3,7 @@ title: "Green Metrics Tool"
 date: 2023-08-03 19:00:00
 publishDate: 2023-01-16
 draft: false
-projectimg: "/img/projects/gmt-rapl-graph.webp"
+projectimg: "/img/products/gmt-rapl-graph.webp"
 icon: "code"
 desc: "Das Green Metrics Tool ist ein ganzheitliches Framework zur Messung des Energie- / CO2-Verbrauchs Ihrer Anwendung."
 ordering: 1
@@ -30,20 +30,20 @@ Bitte lesen Sie alle Details auf Github und in der Dokumentation.
 ## Screenshots der Einzelmessungen
 
 {{< rawhtml >}}
-<img id="screenshots" class="ui rounded bordered image" src="/img/projects/gmt-screenshot-1.webp" alt="GMT Screenshot" loading="lazy" style="margin:auto;">
+<img id="screenshots" class="ui rounded bordered image" src="/img/products/gmt-screenshot-1.webp" alt="GMT Screenshot" loading="lazy" style="margin:auto;">
 <br>
-<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-2.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<img class="ui rounded bordered image" src="/img/products/gmt-screenshot-2.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
 <br>
-<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-3.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<img class="ui rounded bordered image" src="/img/products/gmt-screenshot-3.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
 <br>
-<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-4.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<img class="ui rounded bordered image" src="/img/products/gmt-screenshot-4.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
 <br>
 {{< /rawhtml >}}
 
 ## Screenshots der Vergleichsansicht
 {{< rawhtml >}}
-<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-5.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<img class="ui rounded bordered image" src="/img/products/gmt-screenshot-5.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
 <br>
-<img class="ui rounded bordered image" src="/img/projects/gmt-screenshot-6.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<img class="ui rounded bordered image" src="/img/products/gmt-screenshot-6.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
 <br>
 {{< /rawhtml >}}

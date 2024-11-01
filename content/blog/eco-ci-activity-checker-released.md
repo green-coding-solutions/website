@@ -6,7 +6,7 @@ author: "Dan Mateas"
 ---
 
 {{< infobox >}}
-    You do not know about our Eco-CI project yet? Than read up here about it: <a href="/projects/eco-ci">Eco-CI project</a>
+    You do not know about our Eco-CI project yet? Than read up here about it: <a href="/products/eco-ci">Eco-CI project</a>
 {{< /infobox >}}
 
 

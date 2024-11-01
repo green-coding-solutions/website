@@ -59,7 +59,7 @@ is hard to estimate if scaled up.
 To make all of these separate domains visible to the developer we are creating open source tools to make the energy visible.
 
 For user facing applications in the desktop, web and mobile world we are creating a tool to measure the whole application lifecycle based
-on the concept of a Standard Usage Scenario: The [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}})
+on the concept of a Standard Usage Scenario: The [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}})
 
 By pinning the code version and the usage scenario we can make different softwares comparable to each other.
 
@@ -71,7 +71,7 @@ drive architectural optimizations (like which service to use, or if a move to se
 Through case-studies we also want to highlight the overhead cost of virtualization and give metrics to make informed decisions which
 architectural model fits best in an energy aware company culture.
 
-Also check out [our projects]({{< relref path="projects" >}})
+Also check out [our projects]({{< relref path="products" >}})
 
 
 {{< whiteblock >}}
@@ -96,7 +96,7 @@ We develop in-line plugins for Github Actions and badges that make other people 
 
 Also we focus in the building process for static sites, which typically have a lower cost of operating but incur a build cost.
 
-Checkout out our [OpenEnergyBadge project]({{< relref path="projects/open-energy-badge" >}}), our [Eco CI-plugins for Github]({{< relref path="projects/eco-ci" >}}) or our [Case Studies]({{< relref path="case-studies" >}}) on the topic.
+Checkout out our [OpenEnergyBadge project]({{< relref path="products/open-energy-badge" >}}), our [Eco CI-plugins for Github]({{< relref path="products/eco-ci" >}}) or our [Case Studies]({{< relref path="case-studies" >}}) on the topic.
 
 Example badge: {{< rawhtml >}} <a href="https://metrics.green-coding.io/stats.html?id=01e4f6e1-318f-4ecb-a19f-041439a50065"><img src="https://api.green-coding.io/v1/badge/single/01e4f6e1-318f-4ecb-a19f-041439a50065?metric=AC"></a>{{< /rawhtml >}}
 
@@ -134,7 +134,7 @@ way of interacting with it.
 We currently address this topic by educating developers through [Meetups]({{< relref path="talks-and-events" >}}) and through
 talks at conferences or coding bootcamps like [WBS Coding School](https://www.wbscodingschool.com/)
 
-On the technical site we highligh the network emissions in our [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}) and show
+On the technical site we highlight the network emissions in our [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}}) and show
 recommendations like
 - Moving connection from mobile to fixed-line
 - Demand Shifting to do network requests in carbon-friendly times

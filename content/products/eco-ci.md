@@ -21,7 +21,7 @@ energy cost of the workflow run.
 
 Github Actions runs on Microsoft Azure VMs. In these VMs are direct measurement with something like RAPL is sadly not possible.
 
-We are using our work from our [Cloud Energy project]({{< relref path="projects/cloud-energy" >}}) to estimate the energy used by these Azure VMs.
+We are using our work from our [Cloud Energy project]({{< relref path="products/cloud-energy" >}}) to estimate the energy used by these Azure VMs.
 
 The result is an easily integrateable Github Action where you get the energy in Joules for the CI run. It is
 also possible to get only results for part of the CI run.
@@ -29,7 +29,7 @@ also possible to get only results for part of the CI run.
 
 {{< rawhtml >}}
 <figure>
-  <img class="ui huge rounded image" src="/img/projects/github-actions-energy.webp" loading="lazy">
+  <img class="ui huge rounded image" src="/img/products/github-actions-energy.webp" loading="lazy">
   <figcaption>Github Actions energy estimation</figcaption>
 </figure>
 {{< /rawhtml >}}

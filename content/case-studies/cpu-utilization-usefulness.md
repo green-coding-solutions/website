@@ -702,7 +702,7 @@ or if the system is configured in that way that many variables are fixed (like f
 As we have seen many cloud vendors, especially CI/CD tools like **Github Actions** or **Gitlab Pipelines** use
 fixed frequency CPUs, which allow for making some reproducibility claims of the system performance and energy.
 
-As said before, these are for instance the assumptions for our [Cloud Energy model]({{< relref path="projects/cloud-energy" >}}) where we estimate the power draw of cloud machines based on the fact that in the SPECPower data we use there the systems have typically fixed C-States  and P-States.
+As said before, these are for instance the assumptions for our [Cloud Energy model]({{< relref path="products/cloud-energy" >}}) where we estimate the power draw of cloud machines based on the fact that in the SPECPower data we use there the systems have typically fixed C-States  and P-States.
 
 In a future piece we will look at how using CPU instructions and jiffies behaves on different load types.
 

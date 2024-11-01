@@ -16,12 +16,19 @@
         <option value="{{ relURL "services/workshops-and-trainings" }}" class="second_item"  {{ if eq $slug "workshops-and-trainings"}}selected{{end}}>{{ i18n "training" }}</a></li>
         <option value="{{ relURL "services/development-and-integrations" }}" class="second_item"  {{ if eq $slug "development-and-integrations"}}selected{{end}}>{{ i18n "development" }}</a></li>
         <option value="{{ relURL "services/blauer-engel" }}" class="second_item"  {{ if eq $slug "blauer-engel"}}selected{{end}}>{{ i18n "blauer-engel" }}</a></li>
+        <option value="{{ relref . "products" }}" class="second_item"{{if eq $slug "products"}}selected{{end}}>{{i18n "products"}}</option>
+        <option value="{{ relURL "products/green-metrics-tool" }}" class="second_item"  {{ if eq $slug "green-metrics-tool"}}selected{{end}}>Green Metrics Tool</a></li>
+        <option value="{{ relURL "products/eco-ci" }}" class="second_item"  {{ if eq $slug "eco-ci"}}selected{{end}}>Eco-CI</a></li>
+        <option value="{{ relURL "products/energy-id" }}" class="second_item"  {{ if eq $slug "energy-id"}}selected{{end}}>Energy-ID</a></li>
+        <option value="{{ relURL "products/power-hog" }}" class="second_item"  {{ if eq $slug "power-hog"}}selected{{end}}>Power HOG</a></li>
+        <option value="{{ relURL "products/carbonDB" }}" class="second_item"  {{ if eq $slug "carbonDB"}}selected{{end}}>CarbonDB</a></li>
+        <option value="{{ relURL "products/open-energy-badge" }}" class="second_item"  {{ if eq $slug "open-energy-badge"}}selected{{end}}>Open-Energy-Badge</a></li>
+
         <option value="{{ relref . "/" }}#nav-events" class="second_item">{{i18n "talks"}}</option>
         <option value="{{ relURL  "blog" }}" class="second_item"{{if eq $slug "blog"}}selected{{end}}>{{i18n "blog"}}</option>
         <option value="{{ relURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "case-studies"}}</option>
         <option value="{{ relURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>{{i18n "jobs"}}</option>
         <option value="{{ relref . "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>{{i18n "co2-formulas"}}</option>
-        <option value="{{ relref . "projects" }}" class="second_item">{{i18n "projects"}}</option>
         <option value="{{ relref . "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
         <option value="{{ relref . "newsroom" }}" class="second_item">{{i18n "newsroom"}}</option>
     </select>
@@ -33,6 +40,21 @@
                <a class="menubtn" href="{{ relref . "about" }}">
                     <div class="contentbtn">{{i18n "about"}}</div>
                 </a>
+            </li>
+            <li class="dropdown menubtn-bg">
+                <a class="nav-link dropdown-toggle menubtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    <div class="contentbtn">{{i18n "products"}}</div>
+                </a>
+                <ol class="dropdown-menu">
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relref . "products" }}">{{ i18n "overview" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products/green-metrics-tool" }}">Green Metrics Tool</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products/eco-ci" }}">Eco-CI</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products/cloud-energy" }}">Cloud Energy</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products/energy-id" }}">Energy-ID</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products/power-hog" }}">Power HOG</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products/carbonDB" }}">CarbonDB</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products/open-energy-badge" }}">Open-Energy-Badge</a></li>
+                </ol>
             </li>
             <li class="dropdown menubtn-bg">
                 <a class="nav-link dropdown-toggle menubtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
@@ -62,9 +84,6 @@
                     </li>
                     <li class="dropdown-list-item">
                        <a class="contentbtn dropdown-item" href="{{ relref . "/#nav-events" }}">Talks & Events</a>
-                    </li>
-                    <li class="dropdown-list-item">
-                       <a class="contentbtn dropdown-item" href="{{ relref . "projects" }}">{{i18n "projects"}}</a>
                     </li>
                 </ol>
             </li>

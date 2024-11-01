@@ -13,9 +13,9 @@ We have written a long [case study]({{< relref path="case-studies/cpu-utilizatio
 Long story short: <u>not really</u>. It used to be a good metrics before cpus would scale dynamically, you had on type of cpu and not multiple performance/ energy cores that each do their own thing and things were a lot simpler. But in modern computers the utilization is somehow interesting but not really much worth in terms of an exact metric.
 
 It seems to be though the thing a lot of people have agreed on that is safe sharing especially in shared cloud environments.
-So we developed an XGBoost model named [Cloud Energy]({{< relref path="projects/cloud-energy" >}}) to estimate the energy impact certain code has depending on the cpu utilization.
+So we developed an XGBoost model named [Cloud Energy]({{< relref path="products/cloud-energy" >}}) to estimate the energy impact certain code has depending on the cpu utilization.
 
-Now we also want to support macOS and so to run the models in the [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}) we also needed a way to access the cpu utilization under Mac. This seems quite straight forward if you search the internet for a little while. You can use the `host_statistics` [[0]](https://developer.apple.com/documentation/kernel/1502546-host_statistics) call which will populate a struct `host_cpu_load_info_data_t` which will return the values for `CPU_STATE_USER`, `CPU_STATE_SYSTEM`, `CPU_STATE_IDLE` and `CPU_STATE_NICE` which you can then use to calculate the current cpu load. A short code example can look as such:
+Now we also want to support macOS and so to run the models in the [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}}) we also needed a way to access the cpu utilization under Mac. This seems quite straight forward if you search the internet for a little while. You can use the `host_statistics` [[0]](https://developer.apple.com/documentation/kernel/1502546-host_statistics) call which will populate a struct `host_cpu_load_info_data_t` which will return the values for `CPU_STATE_USER`, `CPU_STATE_SYSTEM`, `CPU_STATE_IDLE` and `CPU_STATE_NICE` which you can then use to calculate the current cpu load. A short code example can look as such:
 
 ```C
 unsigned int msleep_time = 1000

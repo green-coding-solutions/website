@@ -1,0 +1,17 @@
+<div id="project-items-container" class="ui relaxed divided items">
+    {{ range $index, $element := sort (where .Site.RegularPages "Type" "products") ".Params.ordering" "asc" }}
+    <div class="item" id="item{{$index}}" style="align-items: center;  justify-content: center;">
+        <a href="{{.Permalink}}" class="project-item wrapped"><i class="{{ .Params.Icon }} huge icon project-item-white"></i></a>
+        <div class="content">
+            <div class="header" >{{ .Title }}</div>
+            <p>{{.Params.Desc}}</p>
+            <div class="extra">
+                <a class="ui right floated primary button" href="{{.Permalink}}">
+                    {{i18n "home_cta"}}
+                </a>
+            </div>
+        </div>
+    </div>
+    {{end}}
+</div>
+

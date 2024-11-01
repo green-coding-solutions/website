@@ -11,11 +11,11 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 Wir helfen Ihnen bei der Transformatiin Ihrer Software zu einem nachhaltigen Produkt.
 
 Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien]({{< relref path="#nav-meetups" >}}), entwickeln
-[Projekte]({{< relref path="projects" >}}) sowie [Open-Source-Tools zur Messung von CO2 in Containern]({{< relref path="projects/green-metrics-tool" >}}) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling]({{< relref path="projects/eco-ci" >}})
-durch Zertifizierungen wie den [Blauen Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) oder unser Projekt [Energy-ID]({{< relref path="projects/energy-id" >}}).
+[Projekte]({{< relref path="products" >}}) sowie [Open-Source-Tools zur Messung von CO2 in Containern]({{< relref path="products/green-metrics-tool" >}}) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling]({{< relref path="products/eco-ci" >}})
+durch Zertifizierungen wie den [Blauen Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) oder unser Projekt [Energy-ID]({{< relref path="products/energy-id" >}}).
 
 Einige unserer jüngsten anerkannten Arbeiten in der Forschung umfassen
-[maßgeschneiderte Open-Source-Maschinenmodelle zur Energieabschätzung in Cloud-Umgebungen]({{< relref path="projects/cloud-energy" >}}), veröffentlichte Positionspapiere, akademische Paper für Software-Lebenszyklus-Bewertung und Software-Energiemessung, Arbeit an
+[maßgeschneiderte Open-Source-Maschinenmodelle zur Energieabschätzung in Cloud-Umgebungen]({{< relref path="products/cloud-energy" >}}), veröffentlichte Positionspapiere, akademische Paper für Software-Lebenszyklus-Bewertung und Software-Energiemessung, Arbeit an
 [Software-Lifecycle-Assessment](https://publication2023.bits-und-baeume.org/#book/38) mit Entwickler-Tools und zitierte
 [Fallstudien für Energieeinsparungen und -optimierungen]({{< relref path="case-studies" lang="en" >}}).
 
@@ -180,7 +180,7 @@ Details
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top"href="/projects/green-metrics-tool">
+          <a class="ui right floated primary button distance-top"href="/products/green-metrics-tool">
               Green Metrics Tool
               <i class="right chevron icon"></i>
           </a>
@@ -200,14 +200,14 @@ Details
             <span class="ui label">Operations</span><span class="ui label">Tools</span><span class="ui label">Integrations</span>
           </div>
           <div class="description">
-            <p>Nachhaltige Software ist ein kontinuierlicher Prozess. Nach der ersten Identifizierung von Schwachstellen und Optimierungszielen automatisieren wir den Reporting-/Transparenzteil durch DevOps-Praktiken nach Industriestandards, indem wir unsere spezialisierten CI/CD-Pipeline-Tools integrieren (siehe zum Beispiel unsere <a href="/projects/eco-ci/">Eco-CI Produkte</a> für Github / Gitlab oder unsere <a href="/projects/cloud-energy/">Cloud Energy</a> tools für beliebige Pipelines sowie unsere speziellen CI/CD-Dedicated-Services für Unternehmen).</p>
+            <p>Nachhaltige Software ist ein kontinuierlicher Prozess. Nach der ersten Identifizierung von Schwachstellen und Optimierungszielen automatisieren wir den Reporting-/Transparenzteil durch DevOps-Praktiken nach Industriestandards, indem wir unsere spezialisierten CI/CD-Pipeline-Tools integrieren (siehe zum Beispiel unsere <a href="/products/eco-ci/">Eco-CI Produkte</a> für Github / Gitlab oder unsere <a href="/products/cloud-energy/">Cloud Energy</a> tools für beliebige Pipelines sowie unsere speziellen CI/CD-Dedicated-Services für Unternehmen).</p>
             <p>In einem zweiten Schritt integrieren wir Optimierungen auch direkt in die Software-Build-Chain durch statische Ode-Optimierungen und auch Green AI / ML-Optimierungen.</p>
           </div>
           <a class="ui right floated primary button distance-top" href="/services/software-integrations">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top" href="/projects/eco-ci">
+          <a class="ui right floated primary button distance-top" href="/products/eco-ci">
               Eco-CI
               <i class="right chevron icon"></i>
           </a>

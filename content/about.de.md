@@ -65,7 +65,7 @@ Software kann so schnell sein, dass es nicht wahrnehmbar ist, ob die Nutzung 10m
 
 Um all diese getrennten Bereiche für die EntwicklerInnen sichtbar zu machen, entwickeln wir Open-Source-Tools, die den Energieverbrauch sichtbar machen.
 
-Für nutzerorientierte Anwendungen in der Desktop-, Web- und mobilen Welt entwickeln wir ein Tool zur Messung des gesamten Anwendungslebenszyklus auf der Grundlage eines eines Standardnutzungsszenarios: Das [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}})
+Für nutzerorientierte Anwendungen in der Desktop-, Web- und mobilen Welt entwickeln wir ein Tool zur Messung des gesamten Anwendungslebenszyklus auf der Grundlage eines eines Standardnutzungsszenarios: Das [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}})
 
 Durch die Verknüpfung von der Version des Codes und eines Nutzungsszenarios können wir verschiedene Software miteinander vergleichbar machen.
 
@@ -75,7 +75,7 @@ Hier werden Inline-Messungen benötigt, die in bereits existierende Beobachtungs
 
 Anhand von Fallstudien wollen wir auch die Overhead-Kosten der Virtualisierung aufzeigen und Metriken bereitstellen, um fundierte Entscheidungen zu treffen, welches Architekturmodell am besten in eine energiebewusste Unternehmenskultur passt.
 
-Sehen Sie sich auch [unsere Projekte]({{< relref path="projects" >}})
+Sehen Sie sich auch [unsere Projekte]({{< relref path="products" >}})
 
 {{< whiteblock >}}
 Entwicklung von Software
@@ -96,7 +96,7 @@ Wir entwickeln Inline-Plugins für Github Actions und Badges, die andere Leute d
 
 Außerdem konzentrieren wir uns auf den Aufbau von statischen Websites, die in der Regel weniger Resourcen verbrauchen, aber auch gebaut werden müssen.
 
-Schauen Sie sich unser [OpenEnergyBadge Projekt]({{< relref path="projects/open-energy-badge" >}}), unsere [Eco CI-plugins for Github]({{< relref path="projects/eco-ci" >}}) oder unsere [Case Studies]({{< relref path="case-studies" lang="en" >}}) zu diesem Thema an.
+Schauen Sie sich unser [OpenEnergyBadge Projekt]({{< relref path="products/open-energy-badge" >}}), unsere [Eco CI-plugins for Github]({{< relref path="products/eco-ci" >}}) oder unsere [Case Studies]({{< relref path="case-studies" lang="en" >}}) zu diesem Thema an.
 
 Beispiel Abzeichen: {{< rawhtml >}} <a href="https://metrics.green-coding.io/stats.html?id=01e4f6e1-318f-4ecb-a19f-041439a50065"><img src="https://api.green-coding.io/v1/badge/single/01e4f6e1-318f-4ecb-a19f-041439a50065?metric=AC"></a>{{< /rawhtml >}}
 
@@ -132,7 +132,7 @@ Die Lösung liegt unserer Meinung nach darin, diese Ressource sichtbarer zu mach
 Wir befassen uns derzeit mit diesem Thema, indem wir Entwickler durch [Meetups]({{< relref path="talks-and-events" lang="en" >}}) und durch
 Vorträge auf Konferenzen oder Coding Bootcamps wie [WBS Coding School](https://www.wbscodingschool.com/)
 
-Auf der technischen Seite heben wir die Netzwerkemissionen in unserem [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}}) hervor und zeigen Empfehlungen wie:
+Auf der technischen Seite heben wir die Netzwerkemissionen in unserem [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}}) hervor und zeigen Empfehlungen wie:
 
 - Verlagerung von Mobilfunk- zu Festnetzanschlüssen
 - Demand Shifting, um Netzwerkanfragen zu CO2 freundlichen Zeiten zu erledigen

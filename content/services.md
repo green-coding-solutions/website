@@ -13,12 +13,12 @@ We help you to transform your software to a sustainable product.
 Scroll down and see how we work with companies in our 5 stage approach. 
 
 We are [regular speaker at conferences and industry symposiums]({{< relref path="#nav-meetups" >}}), developing
-[open source industry advancing container native carbon measurement tools]({{< relref path="projects/green-metrics-tool" >}}) as well as
-[state of the art carbon pipeline tooling]({{< relref path="projects/eco-ci" >}}), active advocates and consultants for energy and carbon transparency
-through certifications like the [Blauer Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) or our [Energy-ID]({{< relref path="projects/energy-id" >}}) project.
+[open source industry advancing container native carbon measurement tools]({{< relref path="products/green-metrics-tool" >}}) as well as
+[state of the art carbon pipeline tooling]({{< relref path="products/eco-ci" >}}), active advocates and consultants for energy and carbon transparency
+through certifications like the [Blauer Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) or our [Energy-ID]({{< relref path="products/energy-id" >}}) project.
 
 Some of our recent recognized works in research include
-[tailored open source machine models for energy estimation in cloud environments]({{< relref path="projects/cloud-energy" >}}), published positional
+[tailored open source machine models for energy estimation in cloud environments]({{< relref path="products/cloud-energy" >}}), published positional
 papers and academical papers for software lifecycle assessment and software energy measurement, work on
 [Software-Lifecycle-Assessment](https://publication2023.bits-und-baeume.org/#book/38) with developer tools to be released later this year and cited
 [case studies for energy savings and optimizations]({{< relref path="case-studies" >}}).
@@ -188,7 +188,7 @@ Details
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top"href="/projects/green-metrics-tool">
+          <a class="ui right floated primary button distance-top"href="/products/green-metrics-tool">
               Green Metrics Tool
               <i class="right chevron icon"></i>
           </a>
@@ -208,14 +208,14 @@ Details
             <span class="ui label">Operations</span><span class="ui label">Tools</span><span class="ui label">Integrations</span>
           </div>
           <div class="description">
-            <p>Sustainable software is a continuous process. After the first identification of weak spots and optimization targets we automate the reporting / transparency part through industry standard DevOps practices by integrating our specialized CI/CD pipeline tools (See for example our <a href="/projects/eco-ci/">Eco-CI products</a> for Github / Gitlab or our <a href="/projects/cloud-energy/">Cloud Energy</a> tools for arbitrary pipelines as well as our dedicated runners for enterprises).</p>
+            <p>Sustainable software is a continuous process. After the first identification of weak spots and optimization targets we automate the reporting / transparency part through industry standard DevOps practices by integrating our specialized CI/CD pipeline tools (See for example our <a href="/products/eco-ci/">Eco-CI products</a> for Github / Gitlab or our <a href="/products/cloud-energy/">Cloud Energy</a> tools for arbitrary pipelines as well as our dedicated runners for enterprises).</p>
             <p>In a second step we integrate optimizations also directly into the software build-chain through static ode optimizations and also Green AI / ML optimizations.</p>
           </div>
           <a class="ui right floated primary button distance-top" href="/services/software-integrations">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top" href="/projects/eco-ci">
+          <a class="ui right floated primary button distance-top" href="/products/eco-ci">
               Eco-CI
               <i class="right chevron icon"></i>
           </a>

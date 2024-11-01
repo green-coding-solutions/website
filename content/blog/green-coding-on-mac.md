@@ -7,7 +7,7 @@ authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
 
 # Green Coding on Mac
 
-When we started with the [Green Metrics Tool (GMT)]({{< relref path="projects/green-metrics-tool" >}}) we set out to develop tooling to enable developers, decision makers and the wider public to measure and see the impact software is having on the environment. 
+When we started with the [Green Metrics Tool (GMT)]({{< relref path="products/green-metrics-tool" >}}) we set out to develop tooling to enable developers, decision makers and the wider public to measure and see the impact software is having on the environment. 
 
 This has lead us to develop great software but till today this was limited to Linux machines exclusively. As discussed in my previous blog article [Containers on macOS for the Green Metrics Tool]({{< relref path="blog/containers-on-macos-for-gmt" >}}) its pretty much impossible to get reliable measurements because of the way docker works on macOS. In this respect we will run into the same problems when porting to Windows at some stage. So we ware limited to Linux machines to get good results and hence this is what we focused on at the beginning. 
 

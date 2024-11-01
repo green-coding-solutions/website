@@ -26,4 +26,4 @@ In the presentation we go over all the feature that the Green Metrics Tool provi
 - Optimizations
 - and much more
 
-Find the Youtube Video under the link below. Also if you want to see all features and a live demo of the tool go to our [Green Metrics Tool project]({{<relref "projects/green-metrics-tool" >}}) page.
+Find the Youtube Video under the link below. Also if you want to see all features and a live demo of the tool go to our [Green Metrics Tool project]({{<relref path="products/green-metrics-tool" >}}) page.

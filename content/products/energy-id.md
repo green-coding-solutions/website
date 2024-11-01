@@ -8,7 +8,7 @@ desc: "Energy ID benchmarks open source software for energy, CO2, and Green Soft
 ordering: 4
 ---
 
-In the Energy ID project we are looking at popular open source software and benchmark their Energy, CO2 and the [Green Software Foundation's SCI](https://sci-guide.greensoftware.foundation/) metric via our [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}})
+In the Energy ID project we are looking at popular open source software and benchmark their Energy, CO2 and the [Green Software Foundation's SCI](https://sci-guide.greensoftware.foundation/) metric via our [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}})
 
 Energy ID creates a *score card* with a:
 - description
@@ -16,11 +16,11 @@ Energy ID creates a *score card* with a:
 - detailed measurement links
 - badges
 
-The badges can be used in Github projects or similar and are based on our [OpenEnergyBadge]({{< relref path="projects/open-energy-badge" >}}) project.
+The badges can be used in Github projects or similar and are based on our [OpenEnergyBadge]({{< relref path="products/open-energy-badge" >}}) project.
 
 The projects aim is to get a quick idea about the "typical use case of a software" and how much this would accrue in terms of energy / carbon cost.
 
-If you want to further compare a project, monitor a project over time or even do optimizations and performance engineering do look into the capabilities of the [Green Metrics Tool]({{< relref path="projects/green-metrics-tool" >}})
+If you want to further compare a project, monitor a project over time or even do optimizations and performance engineering do look into the capabilities of the [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}})
 
 **Important:** The absolute numbers shown here are not to be taken as ground truth of the actual carbon cost of the
 software in the wild. These are the cost that happen on our testing machines and
