@@ -2551,3 +2551,61 @@ li.dropdown-list-item {
 .ui.three.column.grid .column{
     width: 33%;
 }
+
+
+a.project-item.wrapped {
+    border: 10px solid #3d936f;
+    border-radius: 50%;
+}
+
+
+a.project-item > i.icon {
+    display: block;
+    color: #f9f9f5;
+    width: 140px;
+    height: 140px;
+    border: 15px solid #f9f9f5;
+    border-radius: 50%;
+    font-size: 3.5em !important;
+    text-align: center;
+    overflow:hidden;
+    font-weight: bold;
+    background: #67a98b;
+    line-height: 108px;
+    font-size: 80px;
+    margin: 0;
+}
+
+
+.section-one > .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-one > .item > .title-one {
+    padding: 0;
+}
+
+
+a.project-item-small.wrapped {
+    border: 5px solid #3d936f;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+a.project-item-small > i.icon {
+    display: block;
+    color: #f9f9f5;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f9f9f5;
+    border-radius: 50%;
+    font-size: 1.5em !important;
+    text-align: center;
+    overflow:hidden;
+    font-weight: bold;
+    background: #67a98b;
+    line-height: 40px;
+    margin: 0;
+}

@@ -39,9 +39,7 @@
                 {{ range $index, $element := sort (where .Site.RegularPages "Type" "products") ".Params.ordering" "asc" }}
                 <div class="item" id="item{{$index}}">
                     <a class="carousel-link"><i class="ui icon huge chevron left"></i></a>
-                    <div class="ui image">
-                        <a href="{{.Permalink}}"><i class="{{ .Params.Icon }} huge icon project-item-white"></i></a>
-                    </div>
+                    <a href="{{.Permalink}}" class="project-item"><i class="{{ .Params.Icon }} huge icon project-item-white"></i></a>
                     <div class="content project-item-white">
                         <a class="header project-item-white" href="{{.Permalink}}">{{ .Title }}</a>
                         <p><a href="{{.Permalink}}" class="project-item-white">{{.Params.Desc}}</a></p>

@@ -1,7 +1,14 @@
 {{ define "main" }}
     <section class="single-page bg-one"><div id="ancla1"></div>
         <div class="section-one">
-            <div class="title-one">{{.Params.Title}}</div>
+            {{ if .Params.Icon }}
+                <div class="item" style="display: flex; align-items: center;  justify-content: center;">
+                    <a href="#" class="project-item-small wrapped "><i class="{{ .Params.Icon }} huge icon project-item-white"></i></a>
+                    <div class="title-one">{{.Params.Title}}</div>
+                </div>
+            {{ else }}
+                <div class="title-one">{{.Params.Title}}</div>
+            {{ end }}
             <div class="data-content-one">
                 {{ .Content }}
             </div>
