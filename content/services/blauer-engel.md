@@ -1,5 +1,5 @@
 ---
-title: "Blauer Engel - Software Label"
+title: "Blue Angel - Software Label"
 draft: false
 summary: "Formulas to convert from GB to CO2e or from kWH to CO2e etc."
 date: 2022-07-21 08:00:00
