@@ -25,6 +25,8 @@ Das für Software relevante Siegel UZ-215 wurde vom [Umweltbundesamt](https://ww
 
 Eine Beantratung des Labels geht über die RAL gGmbH und erfordert sowohl einen formalen Antrag inkl. einer Energie-Messung als auch eine Prüfung durch einen Auditor. 
 
+Die Vergabekriterien für den Blauen Engel für Software finden sich hier: [Vergabekriterien Blauer Engel DE UZ-215](https://www.blauer-engel.de/de/zertifizierung/vergabekriterien#UZ215-2020)
+
 ### Warum solltest du den Blauen Engel beantragen?
 1. **Nachhaltigkeit sichtbar machen**\
 Der Blaue Engel kennzeichnet Software, die besonders sparsam mit Hardware-Ressourcen umgeht und ihren Energieverbrauch ausweist. Dies bedeutet, dass deine Software transparenter und umweltfreundlicher ist als die Konkurrenz und einen wertvollen Beitrag zur Ressourcenschonung leistet.

@@ -25,6 +25,8 @@ The UZ-215 label, which is relevant for software, was developed by the [Federal 
 
 An application for the label is made via RAL gGmbH and requires both a formal application including an energy measurement and a review by an auditor. 
 
+The award criteria for the Blue Angel for software can be found here: [award criteria Blue Angel DE UZ-215](https://www.blauer-engel.de/de/zertifizierung/vergabekriterien#UZ215-2020)
+
 ### Why should you apply for the Blue Angel?
 1. **Making sustainability visible**\
 The Blue Angel identifies software that uses hardware resources particularly sparingly and indicates its energy consumption. This means that your software is more transparent and environmentally friendly than the competition and makes a valuable contribution to conserving resources.
