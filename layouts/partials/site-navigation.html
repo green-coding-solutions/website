@@ -23,7 +23,6 @@
         <option value="{{ relURL "products/power-hog" }}" class="second_item"  {{ if eq $slug "power-hog"}}selected{{end}}>Power HOG</a></li>
         <option value="{{ relURL "products/carbonDB" }}" class="second_item"  {{ if eq $slug "carbonDB"}}selected{{end}}>CarbonDB</a></li>
         <option value="{{ relURL "products/open-energy-badge" }}" class="second_item"  {{ if eq $slug "open-energy-badge"}}selected{{end}}>Open-Energy-Badge</a></li>
-
         <option value="{{ relref . "/" }}#nav-events" class="second_item">{{i18n "talks"}}</option>
         <option value="{{ relURL  "blog" }}" class="second_item"{{if eq $slug "blog"}}selected{{end}}>{{i18n "blog"}}</option>
         <option value="{{ relURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "case-studies"}}</option>
