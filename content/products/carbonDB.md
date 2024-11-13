@@ -50,6 +50,9 @@ CarbonDB is an essential tool for businesses seeking to navigate the complexitie
             <div class="ui divider horizontal">-</div>
             <div class="ui list">
                 <div class="item"><i class="icon checkmark"></i> <div class="content">
+                    Aggregates data from PowerHOG, Eco-CI and GMT
+                </div></div>
+                <div class="item"><i class="icon checkmark"></i> <div class="content">
                     Only possible to view aggregated data
                 </div></div>
                 <div class="item"><i class="icon checkmark"></i> <div class="content">
@@ -59,6 +62,9 @@ CarbonDB is an essential tool for businesses seeking to navigate the complexitie
                 <hr>
                 <div class="item"><i class="icon times"></i> <div class="content">
                     No setup support
+                </div></div>
+                <div class="item"><i class="icon times"></i> <div class="content">
+                    Not possible to add data
                 </div></div>
                 <div class="item"><i class="icon times"></i> <div class="content">
                     No measurement support
@@ -86,6 +92,12 @@ CarbonDB is an essential tool for businesses seeking to navigate the complexitie
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Unlimited</b> data retention
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Custom</b> data add via POST API
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Custom</b> agents running on VMs that send carbon data
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Detailed</b> evaluation of carbon data per project and service
