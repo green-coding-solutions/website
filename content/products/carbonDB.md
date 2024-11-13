@@ -35,6 +35,121 @@ Its features include are:
 
 CarbonDB is an essential tool for businesses seeking to navigate the complexities of energy and carbon management in compliance with new European reporting guidelines. By offering a comprehensive, easy-to-use platform for tracking and reporting carbon usage, CarbonDB not only aids in regulatory compliance but also supports companies in their journey towards sustainability and reduced environmental impact.
 
+
+---
+
+## Community Version / Enterprise Version
+
+<div class="ui horizontal divider header"><i class="tag icon"></i>Comparison Table</div>
+<br>
+<div class="ui three column stackable grid">
+    <div class="ui column">
+    <div class="ui fluid card">
+        <div class="content">
+            <div class="header center aligned">Community version</div>
+            <div class="ui divider horizontal">-</div>
+            <div class="ui list">
+                <div class="item"><i class="icon checkmark"></i> <div class="content">
+                    Only possible to view aggregated data
+                </div></div>
+                <div class="item"><i class="icon checkmark"></i> <div class="content">
+                    Only accessible on free tier SaaS
+                    <br><small><a href="https://metrics.green-coding.io/carbondb.html">Preview</a></small>                                        
+                </div></div>
+                <hr>
+                <div class="item"><i class="icon times"></i> <div class="content">
+                    No setup support
+                </div></div>
+                <div class="item"><i class="icon times"></i> <div class="content">
+                    No measurement support
+                </div></div>
+                <div class="item"><i class="icon times"></i> <div class="content">
+                    No data retention
+                </div></div>
+            </div>
+        </div>
+        <div class="extra content">
+            <a class="ui button fluid grey" href='https://github.com/green-coding-solutions/green-metrics-tool'>Free (Download on Github)</a>
+        </div>
+    </div>
+    </div>
+    <div class="ui column">
+    <div class="ui card fluid raised">
+        <div class="content">
+            <div class="header center aligned">Premium</div>
+            <div class="meta center aligned">Support & maintenance.</div>
+            <div class="ui divider horizontal">100 EUR / 10.000 Data points / month</div>
+            <div class="ui list">
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    Hosted API <b>SaaS</b> version
+                    <br><small>Serviced updates and maintenance</small>
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Unlimited</b> data retention
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Detailed</b> evaluation of carbon data per project and service
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>API</b> access to proces data in backend
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Support</b> the development
+                </div></div>
+            </div>
+        </div>
+        <div class="extra content">
+            <a class="ui button fluid blue" href="mailto:info@green-coding.io">Get in touch</a>
+        </div>
+    </div>
+    </div>
+    <div class="ui column">
+    <div class="ui fluid card">
+        <div class="content">
+            <span class="ui label left corner blue">
+                <i class="icon plus"></i>
+            </span>
+            <div class="header center aligned">Enterprise</div>
+            <div class="meta center aligned">Custom to your needs</div>
+            <div class="ui divider horizontal">Individual pricing</div>
+            <div class="ui list">
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    Includes <b>all</b> Premium features
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Individual</b> setup & support
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Individual</b> support contact
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Development</b> & <b>Customization</b>
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Custom</b> integrations
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Authentication</b> and <b>ACL</b> for users
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Self-hosted</b> or <b>private isolated API</b>
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Whitelabel</b> & <b>Dual-Licensing</b>
+                </div></div>
+            </div>
+        </div>
+        <div class="extra content">
+            <a class="ui button fluid blue" href="mailto:info@green-coding.io">Get in touch</a>
+        </div>
+    </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+
 <br>
 <div class="ui horizontal divider header"><i class="eye icon"></i>Screenshots</div>
 <br>
