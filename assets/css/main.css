@@ -2613,3 +2613,8 @@ a.project-item-small > i.icon {
 #carousel a.project-item{
     margin: auto
 }
+
+
+.data-content-one .ui.labeled.button {
+    margin-bottom: 10px;
+}
