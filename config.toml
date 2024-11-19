@@ -10,6 +10,8 @@ summaryLength = 30
 
 defaultContentLanguage = "en"
 
+buildFuture = true
+
 [build]
   writeStats = true
 
