@@ -1,7 +1,7 @@
 ---
 title: "Blauer Engel für Ressourcen- und energieeffiziente Softwareprodukte - Green Metrics Tool"
 date: 2024-11-05
-draft: false
+draft: true
 author: "Arne Tarara"
 authorlink: "https://www.linkedin.com/in/arne-tarara"
 socialmedia_preview: "/img/blog/blue_angel_certification.webp"
