@@ -21,7 +21,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                 </div>
             </div>
     </section><!-- end about -->
-    <section class="single-page bg-two" style=""><div id="ancla1"></div>
+    <section class="single-page bg-two">
         <div class="section-two">
             <div class="title-two">List of CO2 formulas</div>
             <div class="separator"><div class="line line-1"></div></div>

@@ -30,7 +30,6 @@
 	}
 	
 	@media only screen and (max-width: 959px) {
-		#ancla1,#ancla2,#ancla3,#ancla4,#ancla5,#ancla6{position: absolute; top: -100px;}
 		.menu-select{display: none;}
 		.profile1{font-size: 22px !important;}
 		.title-1 {font-size: 22px;}

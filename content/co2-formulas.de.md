@@ -21,7 +21,7 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                 </div>
             </div>
     </section><!-- end about -->
-    <section class="single-page bg-two" style=""><div id="ancla1"></div>
+    <section class="single-page bg-two">
         <div class="section-two">
             <div class="title-two">Liste von CO2 Formeln</div>
             <div class="separator"><div class="line line-1"></div></div>
