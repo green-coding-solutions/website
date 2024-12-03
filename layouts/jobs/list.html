@@ -9,7 +9,7 @@
                     <div class="line line-1" style="margin: 60px auto;"></div>
                     <h2><a href="{{.Permalink}}">Role: {{.Params.Title}}</a></h2>
                     <div>
-                        {{ .Summary }} [...]
+                        {{ .Summary | plainify }} [...]
                     </div>
                     <time>Position currently open</time>
 
