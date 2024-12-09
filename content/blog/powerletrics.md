@@ -18,7 +18,8 @@ You can see all the details and documentation here:
 
 [https://github.com/green-kernel/powerletrics](https://github.com/green-kernel/powerletrics)
 
-![How it looks](https://raw.githubusercontent.com/green-kernel/powerletrics/refs/heads/main/Screenshot.png "PowerLetrics in action")
+{{< image "https://raw.githubusercontent.com/green-kernel/powerletrics/refs/heads/main/Screenshot.png" "huge" "left" " " >}}
+
 
 ## Install
 
@@ -43,6 +44,6 @@ And yes we also have a little server you can start with
 ```bash
 powerletrics -s
 ```
+This will show you detailed analytics of the last 5 minutes.
 
-![How the HTML server looks](https://raw.githubusercontent.com/green-kernel/powerletrics/refs/heads/main/Screenshot_Server.png "PowerLetrics bundled HTML server")
-
+{{< image "https://raw.githubusercontent.com/green-kernel/powerletrics/refs/heads/main/Screenshot_Server.png" "huge" "left" " " >}}
