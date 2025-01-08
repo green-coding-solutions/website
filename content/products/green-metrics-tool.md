@@ -129,7 +129,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 </div></div>                
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Blauer Engel</b> für Software
-                    <br><small>Report & Audit Dokument Download</small>
+                    <br><small>Report & Audit Dokument Generator (Paid addon)</small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>High precision</b> measurements
