@@ -7,9 +7,11 @@ authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
 socialmedia_preview: "/img/blog/social/ai_measure.webp"
 ---
 
-The cost of AI is all over the news and people are quite worried. We wrote a paper for the [HotCarbon 24](https://hotcarbon.org/2024) workshop in which we measured loads of models and managed to create a system that saves considerable amounts of resources in the interference stage [🖹](https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final109.pdf). The question keeps coming up how we can measure AI model interference properly so I decided to write a litte blog post describing the steps.
+
+The environmental cost of AI is all over the news and people are quite worried. Measuring AI models provides a great opportunity to steer a company’s internal rollout of new AI features in a more sustainable way. With one of our clients, for instance, we collected the 50 most typical queries used in the organization and had three different models process these tasks. We then compared both their effectiveness and their efficiency to uncover which one was not only more accurate but also consumed fewer resources. We also wrote a paper for the [HotCarbon 24](https://hotcarbon.org/2024) workshop in which we measured loads of models and managed to create a system that saves considerable amounts of resources in the inference stage [🖹](https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final109.pdf)In this post, we present a simplified version of that case study, highlighting how innovating sustainably can save on AI interaction time and potentially reduce costs. Below, we’ll walk through the key steps and show how straightforward it can be to start benchmarking AI models for energy consumption.
 
 The Green Metrics Tool is a great tool to do this. This is a quick description on how this can be done. All the code can be found in our examples GitHub repo https://github.com/green-coding-solutions/example-applications/tree/main/ai-bench
+
 
 For simplicity we use [ollama](https://ollama.com/) which is a great wrapper around loads of different [models](https://ollama.com/search). This enables you to use a simple program to query a model without having to go through the tedious setup if you want to use a model from [huggingface](https://huggingface.co/). The great news is there is also an ollama [docker container](https://hub.docker.com/r/ollama/ollama) which does even more of the heavy lifting for you. So now benchmarking a/ or multiple models becomes really easy.
 
@@ -68,7 +70,7 @@ And that is pretty much it. Those are the components you will need to benchmark 
 
 {{< image "/img/blog/ai_bench.webp" "massive" "centered" "fluid">}}
 
-You can easily see that tinylama uses considerable less energy for only 10 prompts.
+You can easily see that tinylama uses considerable less energy for 10 prompts. You can find the prompts in the repo. These are nothing specific but just some standard things you would ask an LLM to do. Nothing to complex though.
 
 ## Making even easier
 
@@ -85,3 +87,9 @@ The `prompts.txt` is a simple text file with each line being one prompt. This wi
 ## Cluster
 
 You can also our AI Benchmark machine in our cluster which has a state of the art graphics card installed with all the detailed metric providers so you get exact results.
+
+## Next steps
+
+AI rollouts should always be accompanied by sustainability measurements to understand the ecological but also cost direction of the project. While small AI endeavour might not have significant negative impact it can quickly balloon up and incur significant costs and emissions. Having a sustainability measurement in place already in the design and selection phase provides relevant support.
+
+Contact us to learn more how to steer your AI implementation sustainably [info@green-coding.io](mailto:info@green-coding.io)
