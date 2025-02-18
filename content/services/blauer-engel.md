@@ -60,13 +60,7 @@ The Blue Angel for resource- and energy-efficient software products places exten
 
 💬 You have the vision - we have the know-how. From the concept and measurement to the preparation of all application documents, we are at your side and offer you comprehensive support. We take care of the energy and resource evaluation and ensure that your software product meets all Blue Angel criteria.
 
-## Want to see some details? Read our case study with Nextcloud GmbH
-
-<center><a class="ui orange button" href="/files/case-studies/case-study-nextcloud-blue-angel.pdf"><i class="right chevron icon"></i> Download our Blue Angel certification case study <i class="left chevron icon"></i></a></center>
-
-<br>
-
-<b>🎯 Start a sustainable future with us now!</b>
+<b><center>🎯 Start a sustainable future with us now!</center></b>
 
 
 🔧 Your advantage: The market position of your software is strengthened. With the Blue Angel as your flagship, you show your customers and partners that you are taking responsibility and at the same time raising the efficiency of your software to the next level.

@@ -58,14 +58,7 @@ Der Blaue Engel für Ressourcen- und energieeffiziente Softwareprodukte stellt u
 
 💬 Du hast die Vision – wir haben das Know-how. Vom Konzept über die Messung bis zur Erstellung aller Antragsunterlagen stehen wir an deiner Seite und bieten dir umfassende Unterstützung. Wir übernehmen die Energie- und Ressourcenauswertung und sorgen dafür, dass dein Softwareprodukt alle Kriterien des Blauen Engels erfüllt.
 
-## Möchten Sie mehr Details erfahren? Lesen Sie unsere Fallstudie mit der Nextcloud GmbH
-
-<center><a class="ui orange button" href="/files/case-studies/case-study-nextcloud-blue-angel.pdf"><i class="right chevron icon"></i> Downloade unsere Blauer Engel Case Study <i class="left chevron icon"></i></a></center>
-
-<br>
-
-
-<b>🎯 Starte jetzt mit uns in eine nachhaltige Zukunft!</b>
+<b><center>🎯 Starte jetzt mit uns in eine nachhaltige Zukunft!</center></b>
 
 
 🔧 Dein Vorteil: Die Marktposition deiner Software wird gestärkt. Mit dem Blauen Engel als Aushängeschild zeigst du deinen Kunden und Partnern, dass du Verantwortung übernimmst und gleichzeitig die Effizienz deiner Software auf das nächste Level hebst.
