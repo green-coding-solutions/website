@@ -275,7 +275,7 @@ Then we measured up the total minutes used by all workflow runs in the moby repo
 {{</ table >}}
 
 
-So the total for a single month would be **11,699.90 kgCO2** And now to put it in some real world context:
+So the total for a single month would be **11,699.90 gCO2** And now to put it in some real world context:
 
 - 30 miles driven
 - 1.3 gallons of gasoline consumed
