@@ -347,16 +347,17 @@ nav li a{text-decoration: none;}
 	text-transform: uppercase;
 	float: left;
 	padding-top: 11px;
+    padding-bottom: 8px;
     background: url(../img/logo_alt.webp) no-repeat;
-    background-position-y: bottom;
-    text-indent: 28px;
-} .company-name span{color: #AAA;
+    background-position: 0 8px;
+    background-size: 24px 24px;
+    text-indent: 30px;
+}
+.company-name span{
+    color: #AAA;
 }
 
 .content-logo{width: auto; height: auto;float: left;margin-top: 34px;text-decoration:none; border:0px;}
-
-.logo{background: url(../img/logo_alt.webp) no-repeat; width: 26px; height: 26px; float: left; margin: 0 7px 0 0;}
-
 
 .menubtn{
     display: inline-block;
