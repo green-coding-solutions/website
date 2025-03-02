@@ -12,29 +12,16 @@ ordering: 5
 The Power Hog offers a suite of tools designed to track your computer's energy consumption.
 Currently the three primary objectives are:
 
-1) Allow the user to analyze which processes uses how much energy and how this relates to the system.
+1) Allow the user to analyze which processes uses how much energy and carbon and how this relates to the system.
 2) Collect power usage data centrally to identify apps/ processes that could be optimized to save energy on a wider scale.
-3) Enable the user to submit the data to a carbon database so that energy usage can be accounted to a project. Coming
-   in version 0.3
+3) Enable the user to submit the data to a carbon database so that energy usage can be accounted to a project (See [CarbonDB](/products/carbondb))
 
-Currently we only support MacOSX through the powermetrics [[1]]({{< relref path="blog/power-measurement-on-macos" >}}) tool!
-More work is needed for Linux or Windows support.
-
-For running the hog on your system there are two main parts.
-
-The background script that collects all the data and sends it to a server. This is called the `power_logger`. More
-information can be found here:
-
-[https://github.com/green-coding-solutions/hog#power-logger](https://github.com/green-coding-solutions/hog#power-logger)
-
-The app that gives you first insites on the data collected and more information on the hog on your system. Details
-can be found here:
-
-[https://github.com/green-coding-solutions/hog#the-desktop-app](https://github.com/green-coding-solutions/hog#the-desktop-app)
-
-Detailed analytics can be done in the Green Metrics Tool dashboard. You can either use our server or hosts you own.
+Currently we only support *macOS* through the *powermetrics* [[1]]({{< relref path="blog/power-measurement-on-macos" >}}) tool! 
 
 A full readme and documentation can be found in the GitHub repo.
+
+- **We are actively looking for beta testers for our Windows and Linux clients - Please reach out!**
+
 
 {{< rawhtml >}}
 <a class="ui labeled button" href="https://github.com/green-coding-solutions/hog/releases">
@@ -67,11 +54,12 @@ A full readme and documentation can be found in the GitHub repo.
 
 ## Screenshots
 
-{{< rawhtml >}}
+<img class="ui large rounded bordered image" src="/img/products/hog-mac-app.webp" alt="HOG Screenshot" srcset="/img/products/hog-mac-app.webp 1x, /img/products/hog-mac-app@2x.webp"  loading="lazy" style="margin:auto;">
+<br>
+<br>
+<img class="ui large rounded bordered image" src="/img/products/hog-embodied-carbon.webp" alt="HOG Screenshot" srcset="/img/products/hog-embodied-carbon.webp 1x, /img/products/hog-embodied-carbon@2x.webp"  loading="lazy" style="margin:auto;">
+<br>
+<img class="ui huge rounded bordered image" src="/img/products/hog-website.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
+<br>
 <img class="ui rounded bordered image" src="/img/products/hog-power-logger.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
 <br>
-<img class="ui rounded bordered image" src="/img/products/hog-mac-app.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
-<br>
-<img class="ui rounded bordered image" src="/img/products/hog-website.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
-<br>
-{{< /rawhtml >}}
