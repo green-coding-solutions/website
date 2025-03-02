@@ -61,14 +61,12 @@ We go with clients through the journey of first understanding the background of 
             <p>In order to leverage the ISO 14001 a supporting framework, the GHG protocol is needed, which supplies the necessary boundaries and attributional methods to quantify a software product.</p>
             <p>For non-reporting use, but rather internal operations we bring the SCI standard into your team and show <a href="https://greensoftware.foundation/articles/use-case-automated-sci-measurements-with-green-metrics-tool">how a software can be quantified and assessed with this methodology</a></p>
           </div>
-          <!-- TODO
           <div class="extra">            
-            <div class="ui left floated orange button">
-              Download our ISO 14001 reporting sample client case
+            <a class="ui orange button" href="https://www.dena.de/infocenter/green-coding-mit-stromsparender-software-zu-einer-nachhaltigeren-digitalisierung">
+              Download our impact report for the German energy agency (dena)
               <i class="right chevron icon"></i>
-            </div>
+            </a>
           </div>
-          -->
         </div>
         <figure class="ui large image">
             <img srcset="/img/services/ghg_iso_1x.webp 1x, /img/services/ghg_iso_2x.webp 2x" src="/img/services/ghg_iso_1x.webp" loading="lazy">
