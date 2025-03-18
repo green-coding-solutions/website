@@ -69,7 +69,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 </div></div>
                 <div class="item"><i class="icon times"></i> <div class="content">
                     Limited access to hosted SaaS version
-                    <br><small>30 Min. per measurement / Limited machines</small>                                        
+                    <br><small>5 measurements per month / 30 Min. per measurement / Limited machines</small>                                        
                 </div></div>
                 <hr>
                 <div class="item"><i class="icon times"></i> <div class="content">
