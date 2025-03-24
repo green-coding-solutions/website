@@ -3,7 +3,7 @@ title: "CarbonDB"
 date: 2024-02-20 19:00:00
 publishDate: 2024-02-20
 draft: false
-icon: "journal whills"
+icon: "balance scale"
 desc: "CarbonDB streamlines energy and carbon data management for businesses, aiding compliance with European guidelines and promoting sustainability. It offers centralized data handling, real-time carbon conversion, and supports informed sustainability strategies."
 ordering: 6
 ---
