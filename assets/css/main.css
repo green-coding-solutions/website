@@ -2619,3 +2619,13 @@ a.project-item-small > i.icon {
 .data-content-one .ui.labeled.button {
     margin-bottom: 10px;
 }
+
+
+.product-icon {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product-icon a, .product-icon div {
+    margin-bottom: 10px;
+}
