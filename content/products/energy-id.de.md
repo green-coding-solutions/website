@@ -30,3 +30,5 @@ Für Messungen auf anderen Rechnern, die Ihrem Setup ähnlicher sind, besuchen S
 # Open Source Projects
 ---
 {{< include-file "content/energy-id-projects.html" >}}
+
+<div class="clear"></div>

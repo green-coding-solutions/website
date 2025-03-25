@@ -47,3 +47,5 @@ Bitte lesen Sie alle Details auf Github und in der Dokumentation.
 <img class="ui rounded bordered image" src="/img/products/gmt-screenshot-6.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
 <br>
 {{< /rawhtml >}}
+
+<div class="clear"></div>

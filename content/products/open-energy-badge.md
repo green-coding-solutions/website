@@ -29,3 +29,5 @@ or on our [hosted demo instance](https://metrics.green-coding.io)  with option t
 
 See the badge in action for instance on our [documentation repository](https://github.com/green-coding-solutions/documentation) where you can directly see how much the building
 costs of the static pages where.
+
+<div class="clear"></div>

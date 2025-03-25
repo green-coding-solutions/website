@@ -52,3 +52,5 @@ Eine vollständige Readme und Dokumentation finden Sie im GitHub Repo.
 <img class="ui rounded bordered image" src="/img/products/hog-website.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
 <br>
 {{< /rawhtml >}}
+
+<div class="clear"></div>

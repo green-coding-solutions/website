@@ -89,3 +89,5 @@ Eine weitere Einsparung kann durch die Umplanung von Arbeit, die nicht zeitabhä
 Auch hängende und im Leerlauf befindliche VMs werden derzeit in einem unserer Projekte angegangen, um sie abzuschalten und die Verschwendung von Leerlaufstrom zu stoppen
 
 Schauen Sie doch auch gerne in unseren [Blog]({{< relref path="blog" lang="en" >}}) um auf dem Laufenden zu bleiben.
+
+<div class="clear"></div>

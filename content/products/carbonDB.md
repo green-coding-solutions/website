@@ -167,3 +167,5 @@ CarbonDB is an essential tool for businesses seeking to navigate the complexitie
 <br>
 
 <img src="/img/products/carbondb_dashboard_1x.webp" srcset="/img/products/carbondb_dashboard_2x.webp 2x, /img/products/carbondb_dashboard_1x.webp 1x" alt="CarbonDB screenshots">
+
+<div class="clear"></div>

@@ -62,4 +62,5 @@ $ ./static-binary | python3 xgb.py --make intel -- cpu-freq 2600 --ram 7 --cpu-t
 
 ---
 
+<div class="clear"></div>
 

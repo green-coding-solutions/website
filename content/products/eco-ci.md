@@ -222,3 +222,5 @@ The Eco CI Activity checker skips the test run then and thus saves energy and CO
 &nbsp;
 
 ---
+
+<div class="clear"></div>

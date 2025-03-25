@@ -234,3 +234,5 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
 <div id="optimizations"></div>
 
 {{< image "/img/products/gmt-optimizations.webp" "rounded huge" >}}
+
+<div class="clear"></div>

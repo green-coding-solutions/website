@@ -27,3 +27,5 @@ Die erstellten Energiemetriken gibt es in verschiedenen Metrik-Typen, je nachdem
 oder auf unserer [gehosteten Demo-Instanz](https://metrics.green-coding.io) mit der Option, Software zur Messung einzureichen.
 
 Sehen Sie den Badge in Aktion, zum Beispiel, in unserem [Dokumentation Repository](https://github.com/green-coding-solutions/documentation) an, wo Sie direkt sehen können, wie hoch die Erstellungskosten der statischen Seiten waren.
+
+<div class="clear"></div>

@@ -34,3 +34,5 @@ Zu den Funktionen gehören:
 - **Verbessertes Unternehmensimage**: Ein Engagement für Umweltverantwortung verbessert das Image eines Unternehmens bei Verbrauchern, Investoren und Regulierungsbehörden.
 
 CarbonDB ist ein unverzichtbares Werkzeug für Unternehmen, die die Komplexität des Energie- und Kohlenstoffmanagements im Einklang mit den neuen europäischen Berichtsrichtlinien navigieren möchten. Durch die Bereitstellung einer umfassenden, benutzerfreundlichen Plattform für die Verfolgung und Berichterstattung des Kohlenstoffverbrauchs unterstützt CarbonDB nicht nur bei der Einhaltung von Vorschriften, sondern fördert auch Unternehmen auf ihrem Weg zur Nachhaltigkeit und zur Reduzierung ihrer Umweltauswirkungen.
+
+<div class="clear"></div>

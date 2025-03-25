@@ -32,3 +32,5 @@ and re-run the measurement on a machine more apt for your comparison.
 # Open Source Projects
 ---
 {{< include-file "content/energy-id-projects.html" >}}
+
+<div class="clear"></div>

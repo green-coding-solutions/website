@@ -63,3 +63,5 @@ A full readme and documentation can be found in the GitHub repo.
 <br>
 <img class="ui rounded bordered image" src="/img/products/hog-power-logger.avif" alt="HOG Screenshot" loading="lazy" style="margin:auto;">
 <br>
+
+<div class="clear"></div>
