@@ -4,7 +4,7 @@ date: 2023-01-15 19:00:00
 publishDate: 2023-01-15
 draft: false
 icon: "leaf"
-desc: "Eco-CI berechnet den Energieverbrauch Ihrer CI/CD-Umgebungen und unterstützt GitHub sowie GitLab. Es verfolgt den Energieverbrauch der Durchläufe für ein genaues Energiemanagement und Budgetierung. Zu den Schlüsselfunktionen gehören Echtzeitmessungen und Datenexport, die nachhaltige Entwicklungspraktiken ermöglichen."
+desc: "Eco CI berechnet den Energieverbrauch Ihrer CI/CD-Umgebungen und unterstützt GitHub sowie GitLab. Es verfolgt den Energieverbrauch der Durchläufe für ein genaues Energiemanagement und Budgetierung. Zu den Schlüsselfunktionen gehören Echtzeitmessungen und Datenexport, die nachhaltige Entwicklungspraktiken ermöglichen."
 ordering: 2
 ---
 
@@ -33,7 +33,7 @@ Das Ergebnis ist eine leicht integrierbare Github-Aktion, mit der Sie die Energi
 {{< rawhtml >}}
 <figure>
   <img class="ui huge rounded image" src="/img/blog/eco-ci.webp" loading="lazy">
-  <figcaption>Demo der Eco-CI-Funktion im Green Metrics Tool</figcaption>
+  <figcaption>Demo der Eco CI-Funktion im Green Metrics Tool</figcaption>
 </figure>
 {{< /rawhtml >}}
 
@@ -82,7 +82,7 @@ Bitte beachten Sie für Gitlab unsere zentrale [Github repository Dokumentation]
 
 ---
 
-## Wie geht es mit dem Eco-CI-Projekt weiter?
+## Wie geht es mit dem Eco CI-Projekt weiter?
 
 Eine weitere Einsparung kann durch die Umplanung von Arbeit, die nicht zeitabhängig ist, auf Zeiten wo das Stromnetzes "grüner" ist erzielt werden. Dies ist eine geplante Funktion, die bald als separate Aktion entwickelt wird.
 

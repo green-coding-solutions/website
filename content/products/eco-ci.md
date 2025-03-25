@@ -4,7 +4,7 @@ date: 2023-01-15 19:00:00
 publishDate: 2023-01-15
 draft: false
 icon: "leaf"
-desc: Eco-CI calculates the energy consumption of your CI/CD environments, supporting GitHub and GitLab. It tracks the power usage of the runs for accurate energy management and budgeting. Key features include real-time measurements and data export, aiding in sustainable development practices"
+desc: Eco CI calculates the energy consumption of your CI/CD environments, supporting GitHub and GitLab. It tracks the power usage of the runs for accurate energy management and budgeting. Key features include real-time measurements and data export, aiding in sustainable development practices"
 ordering: 2
 ---
 
@@ -180,7 +180,7 @@ However the accompanying **API & Dashboard** we offer as **SaaS** which includes
 {{< rawhtml >}}
 <figure>
   <img class="ui huge rounded image" src="/img/products/gh_actions_pr.webp" loading="lazy">
-  <figcaption>Eco-CI PR data display</figcaption>
+  <figcaption>Eco CI PR data display</figcaption>
 </figure>
 {{< /rawhtml >}}
 
@@ -196,7 +196,7 @@ However the accompanying **API & Dashboard** we offer as **SaaS** which includes
 {{< rawhtml >}}
 <figure>
   <img class="ui huge rounded image" src="/img/blog/eco-ci.webp" loading="lazy">
-  <figcaption>Eco-CI feature demo in Green Metrics Tool</figcaption>
+  <figcaption>Eco CI feature demo in Green Metrics Tool</figcaption>
 </figure>
 {{< /rawhtml >}}
 

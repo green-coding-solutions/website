@@ -9,8 +9,7 @@ desc: "The Green Metrics Tool is a holistic framework to measure the energy / CO
 ordering: 1
 ---
 
-The Green Metrics Tool is a free open-source (FOSS) tool we designed as a concept on how we believe it can support
-developers best to measure the energy / CO2 consumption of software architectures.
+The Green Metrics Tool is a free open-source (FOSS) tool we designed to enable developers best to measure the energy / CO2 consumption of software architectures.
 
 Our community version is open-source [AGPLv3 Licensed](https://github.com/green-coding-solutions/green-metrics-tool/blob/main/LICENSE). For different licensing option see the enterprise version below.
 
@@ -228,7 +227,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
 ---
 
 <br>
-<div class="ui horizontal divider header"><i class="eye icon"></i>Hosted Version Features (SaaS)</div>
+<div class="ui horizontal divider header"><i class="eye icon"></i>Enterprise / SaaS</div>
 <br>
 
 <div id="optimizations"></div>
