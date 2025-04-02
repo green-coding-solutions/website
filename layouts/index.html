@@ -51,7 +51,7 @@
         </div>
         <div id="carousel_buttons">
             {{ range $index, $element := sort (where .Site.RegularPages "Type" "products") ".Params.ordering" "asc" }}
-            <button class="ui circular icon button" id="button{{$index}}" >
+            <button class="ui circular icon button" id="button{{$index}}" aria-label="{{ .Title }}">
                 <i class="{{ .Params.Icon }} icon" ></i>
             </button>
             {{end}}
