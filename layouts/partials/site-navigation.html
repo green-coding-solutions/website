@@ -1,7 +1,7 @@
 {{ $urlParts := split .Permalink "/" }}
 {{ $slug := index $urlParts (sub (len $urlParts) 2) }}
 <div class="block-menu">
-     <select class="navigation_resp" onchange="document.location=this.options[this.selectedIndex].value;">
+     <select class="navigation_resp" onchange="document.location=this.options[this.selectedIndex].value;" aria-label="Navigation">
         {{ if .IsTranslated }}
             {{ range .Translations }}
                 <option value="{{ .Permalink }}" class="second_item">Switch to {{ .Lang }}</option>
@@ -37,12 +37,12 @@
     <nav>
         <ol class="contentMenu navbar-nav">
             <li class="menubtn-bg">
-               <a class="menubtn" href="{{ relref . "about" }}">
+               <a class="menubtn" href="{{ relref . "about" }}" aria-label="{{i18n "about"}}">
                     <div class="contentbtn">{{i18n "about"}}</div>
                 </a>
             </li>
             <li class="dropdown menubtn-bg">
-                <a class="nav-link dropdown-toggle menubtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                <a class="nav-link dropdown-toggle menubtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="{{i18n "products"}} dropdown">
                     <div class="contentbtn">{{i18n "products"}}</div>
                 </a>
                 <ol class="dropdown-menu">
@@ -57,7 +57,7 @@
                 </ol>
             </li>
             <li class="dropdown menubtn-bg">
-                <a class="nav-link dropdown-toggle menubtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                <a class="nav-link dropdown-toggle menubtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="{{i18n "services"}} dropdown">
                     <div class="contentbtn">{{i18n "services"}}</div>
                 </a>
                 <ol class="dropdown-menu">
@@ -69,7 +69,7 @@
                 </ol>
             </li>
             <li class="dropdown menubtn-bg">
-               <a class="nav-link dropdown-toggle menubtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+               <a class="nav-link dropdown-toggle menubtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="{{i18n "insights"}} dropdown">
                     <div class="contentbtn">{{i18n "insights"}}</div>
                 </a>
                 <ol class="dropdown-menu">
@@ -88,21 +88,19 @@
                 </ol>
             </li>
 {{/*            <li>
-               <a href="{{ relref . "jobs" }}"><div class="menubtn">
+               <a href="{{ relref . "jobs" }}" aria-label="{{i18n "jobs"}}"><div class="menubtn">
                     <div class="contentbtn">{{i18n "jobs"}}</div>
                 </div></a>
             </li>
 */}}
             <li>
-               <a href="{{ relref . "newsroom" }}"><div class="menubtn">
+               <a href="{{ relref . "newsroom" }}" aria-label="{{i18n "newsroom"}}"><div class="menubtn">
                     <div class="contentbtn">{{i18n "newsroom"}}</div>
                 </div></a>
             </li>
             <li>
-                <a href="https://github.com/green-coding-solutions">
-                    <div class="">
-                     <div class="contentbtn"><i class="large github icon"></i></div>
-                    </div>
+                <a href="https://github.com/green-coding-solutions" aria-label="GitHub">
+                    <div class="contentbtn"><i class="large github icon"></i></div>
                 </a>
              </li>
 
@@ -111,12 +109,12 @@
             {{ if .IsTranslated }}
                 {{ range .Translations }}
                     <li style="margin-left: 5px;">
-                        <a id="language-button" href="{{ .RelPermalink }}" class="ui button menubtn" style="text-transform: uppercase">DE/EN</a>
+                        <a id="language-button" href="{{ .RelPermalink }}" class="ui button menubtn" style="text-transform: uppercase" aria-label="Change language">DE/EN</a>
                     </li>
                 {{ end }}
             {{ else }}
                 <li style="margin-left: 5px;">
-                    <a id="language-button" href="#" class="ui button menubtn disabled" style="text-transform: uppercase">EN</a>
+                    <a id="language-button" href="#" class="ui button menubtn disabled" style="text-transform: uppercase" aria-label="Change language">EN</a>
                 </li>
             {{ end }}
 
