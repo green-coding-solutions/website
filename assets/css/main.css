@@ -612,7 +612,7 @@ nav li a{text-decoration: none;}
 	font-size: 18px;
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 400;
-	color: #949496;
+	color: #676767;
 	padding: 25px 30px;
 	line-height: 28px;
 	text-align: center;
@@ -648,7 +648,7 @@ nav li a{text-decoration: none;}
 .data-content-three{
     font-size: 18px;
     font-family: 'Titillium Web', sans-serif;
-    color: #949496;
+    color: #676767;
     padding: 25px 30px;
     line-height: 28px;
     text-align: center;
@@ -2322,7 +2322,7 @@ pre > code {
 .section-two h4 { color: #fff; }
 
 .section-two a { color: #ffef57; }
-a, .section-two .segment a {color:#4183c4;text-decoration:none}
+a, .section-two .segment a {color:#2471be;text-decoration:none}
 
 .section-two .segment h2,
 .section-two .segment h3,
