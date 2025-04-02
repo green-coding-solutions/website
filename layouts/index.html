@@ -39,7 +39,7 @@
                 {{ range $index, $element := sort (where .Site.RegularPages "Type" "products") ".Params.ordering" "asc" }}
                 <div class="item" id="item{{$index}}">
                     <a class="carousel-link"><i class="ui icon huge chevron left"></i></a>
-                    <a href="{{.Permalink}}" class="project-item"><i class="{{ .Params.Icon }} huge icon project-item-white"></i></a>
+                    <a href="{{.Permalink}}" class="project-item" aria-label="{{ .Title }}"><i class="{{ .Params.Icon }} huge icon project-item-white"></i></a>
                     <div class="content project-item-white">
                         <a class="header project-item-white" href="{{.Permalink}}">{{ .Title }}</a>
                         <p><a href="{{.Permalink}}" class="project-item-white">{{.Params.Desc}}</a></p>
@@ -51,7 +51,7 @@
         </div>
         <div id="carousel_buttons">
             {{ range $index, $element := sort (where .Site.RegularPages "Type" "products") ".Params.ordering" "asc" }}
-            <button class="ui circular icon button" id="button{{$index}}" >
+            <button class="ui circular icon button" id="button{{$index}}" aria-label="{{ .Title }}">
                 <i class="{{ .Params.Icon }} icon" ></i>
             </button>
             {{end}}
@@ -90,7 +90,7 @@
                                 <a href="{{.Permalink}}">
                                     <div class="ch-grid">
                                         <div class="work-info"><span> {{.Title}}<br><span>{{.Params.Eventtype}}</span></span></div>
-                                        <img src="{{.Params.Eventimg}}" style="width: 300px" loading="lazy">
+                                        <img src="{{.Params.Eventimg}}" style="width: 300px" loading="lazy" alt="{{.Title}} event image">
                                     </div>
                                 </a>
                             </div>
