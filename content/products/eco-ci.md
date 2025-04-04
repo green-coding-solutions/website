@@ -108,13 +108,13 @@ However the accompanying **API & Dashboard** we offer as **SaaS** which includes
                     <b>Unlimited</b> data retention
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    <b>Custom</b> GitHub / GitLab runners support
+                    <b>Custom</b> GitHub / GitLab runners power profile support
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    <b>Jenkins / CircleCI</b> preview (beta)
+                    <b>Jenkins / CircleCI</b> integration support
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    <b>CarbonDB</b> integration
+                    <b>Backfilling</b> of missing carbon intensity values
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Support</b> the development
