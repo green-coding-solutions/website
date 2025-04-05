@@ -48,24 +48,6 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p>The important point to note with this number is which parts of the network are included. In the picture on the right you see the included parts. <strong>Only the Access Network and the IP core network is included</strong>, which means the connection between datacenters and telecom providers.</p>
                     <p>Not included are the networking inside of the datacenters and also no end-user devices or their in-Home wifi. The calculation only goes to the curbside.</p>
                     <p>Also important: <strong>Only fixed line transmissions</strong> are included in this number. No mobile traffic, which is typically more energy intensive by at least the factor 2-3x.</p>
-                    <h3>Value in Gigabytes</h3>
-                    <div class="ui mini statistics">
-                        <div class="statistic">
-                            <div class="value">1</div>
-                            <div class="label">Gigabytes</div>
-                        </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
-                        <div class="statistic">
-                            <div class="value">0.0028125</div>
-                            <div class="label">kWh / GB</div>
-                        </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">=</div></div>
-                        <div class="statistic">
-                            <div class="value">0.0028125</div>
-                            <div class="label">kWH</div>
-                        </div>
-                    </div>
-                    <p>If your value is in Megabytes the conversion factor has to be divived with <strong>1.000</strong> and will equate to <strong>0.0000028125 MB / kWh</strong></p>
                     <h3>Alternative numbers</h3>
                     <p>Recently also a very detailed study from <a href="https://resilio.tech">Resilio</a> for the French Government produced some different numbers which are even about one order of magnitude lower. Since they have been using the accredited methodology from ADEME it might make sense to use these numbers in France specifically if not the EU. [5]</p>
                     <p>[1] <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630">Untangling the estimates</a></p>
