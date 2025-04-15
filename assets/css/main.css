@@ -362,8 +362,17 @@ nav li a{text-decoration: none;}
 .menubtn{
     display: inline-block;
     padding: 8px 18px;
-	color: #fff;
+    color: #fff;
 }
+
+@media (max-width: 1300px) {
+    .menubtn{
+        padding: 8px 4px;
+    }
+
+}
+
+
 .menubtn-bg:hover {
     background: #59c3b3;
     border-radius: 3px;
