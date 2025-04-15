@@ -3,24 +3,22 @@ title: "Green Software Developer"
 description: "Open role for Green Software Developer with 5+ years experience at Green Coding Solutions GmbH to work on sustainable software."
 ---
 
-At Green Coding Solutions we create a green software community and ecosystem in Berlin.
+At Green Coding Solutions, we support companies and NGOs on their journey toward more sustainable software practices.
 
-Our goal is to shape the industry for the better in terms of using software in a sustainable way.
-We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and with strong planning to avoid rebound effects.
+We aim to make the tech industry more mindful of how software is built and used—focusing on sustainability every step of the way. We believe digitalization can have a positive impact, but only if it’s done responsibly, with awareness of energy use and thoughtful planning to avoid rebound effects.
 
-Therefore we create tools to measure the energy use of software in CI-Build-Pipelines, VMs, Containers and User Desktop environments.
-All of our core software is Free and Open-Source to be used by anyone.
+To help with that, we build tools that measure the energy consumption of software—whether it’s running in CI build pipelines, virtual machines, containers, or user desktops.
 
-Our flagship work is an [open-source green software toolchain](https://github.com/green-coding-solutions/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
+Our flagship project is an [open-source green software toolchain](https://github.com/green-coding-solutions/green-metrics-tool) that lets you quantify the energy consumption of arbitrary software in typical real world usage scenarios.
 
 &nbsp;
 
 ### What you will be working on:
 You will be working with our team to create tools to measure the energy use of software and (drumroll please) actually MEASURE software :)
 
-This may include setting up and measuring Bare Metal systems, AI models, Cloud environments, build-chains, CI/CD pipelines, Virtual Machines and more.
+This may include setting up and measuring bare metal systems, AI models, cloud environments, build-chains, CI/CD pipelines, virtual machines and more.
 
-The work at Green Coding for our toolchain covers an extensive scope where you come into contact with a lot of tools that may be new to you. However, we supply an extensive onboarding and enough time to learn these tools if you are not already familiar with them.
+Working on our toolchain at Green Coding covers a wide range of topics and technologies—you’ll likely encounter tools that are new to you. But don’t worry: we provide thorough onboarding and give you plenty of time to get up to speed, even if you haven’t used these tools before.
 
 Have a look at our GitHub Repository to get an overview of our tools: https://github.com/green-coding-solutions
 
@@ -30,11 +28,7 @@ Also check out the documentation for our flagship tool to get an impression of i
 
 ### How your typical week looks like
 
-When working at Green Coding Solutions GmbH as an engineer, the work is quite different from traditional coding jobs.
-
-Accurate energy measurements of software is still a hard engineering problem and thus your work entails not only plain writing code according to a specification.
-
-Many already established measurement solutions do not work in Cloud environment and usually we have to find ways how to still get the best possible data.
+When working at Green Coding Solutions GmbH as an engineer, the work is quite different from traditional coding jobs. Accurately measuring the energy consumption of software is still a challenging engineering problem. That means your work will go beyond just writing code to a specification—it also involves creative problem-solving and critical thinking. Many existing measurement solutions don’t work well in cloud or virtualised environments, so we often need to find creative ways to still gather the best possible data.
 
 Some typical work items are:
 - Architecture planning for benchmarking software
@@ -44,13 +38,13 @@ Some typical work items are:
 - creating algorithms and / or heuristics to reflect energy usage of hardware components
 - contributing to other open source projects
 
-We really like this creative and architectural process and believe you will do too :)
+We really like this creative and architectural process and hope you will do too :)
 
 Your concrete coding work will be mostly on Linux systems writing either Python, Javascript or C Code.
 Typically when measuring architectures, applications or software libraries this means creating a demo application with them.
 
 To get an idea how this would look like have a look at our [repository for demo applications](https://github.com/green-coding-solutions/example-applications) (mostly web applications at the moment) and our documentation on [Example applications](https://docs.green-coding.io/docs/prologue/example-applications/) and [containerization of applications](https://docs.green-coding.io/docs/measuring/containerizing-applications/).
-Also check out our [Case Studies]({{< relref path="case-studies" >}}), [CO2 Formulas for digital products]({{< relref path="co2-formulas" >}}) and our [Green Metrics Dashboard](https://metrics.green-coding.io) to get an idea of how the raw metrics will be presented.
+Also check out our [Case Studies](), [CO2 Formulas for digital products]() and our [Green Metrics Dashboard](https://metrics.green-coding.io) to get an idea of how the raw metrics will be presented.
 
 Most of our tooling is written in script languages like Python or Node. Most of the low-level measurement software is written in C.
 
