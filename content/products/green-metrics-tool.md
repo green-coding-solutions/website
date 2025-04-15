@@ -64,11 +64,14 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 </div></div>
                 <div class="item"><i class="icon checkmark"></i> <div class="content">
                     Basic optimizations
-                    <br><small>Example & resource based</small>                                        
+                    <br><small>Example & resource based</small>
                 </div></div>
                 <div class="item"><i class="icon times"></i> <div class="content">
                     Limited access to hosted SaaS version
                     <br><small>5 measurements per month / 30 Min. per measurement / Limited machines</small>                                        
+                </div></div>
+                <div class="item"><i class="icon times"></i> <div class="content">
+                    No GPU support on hosted SaaS version
                 </div></div>
                 <hr>
                 <div class="item"><i class="icon times"></i> <div class="content">
@@ -107,6 +110,10 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                     <br><small>(Additional minutes can be purchased)</small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>GPU</b> support
+                    <br><small>To benchmark LLMs or other AI/ML jobs</small>
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>120</b> days of data retention
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
@@ -114,7 +121,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Advanced</b> optimizations
-                    <br><small>Algorithmical & resource based</small>                    
+                    <br><small>Algorithmical & resource based</small>
                     <br><small>- <a href="#optimizations">Screenshots</a></small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
