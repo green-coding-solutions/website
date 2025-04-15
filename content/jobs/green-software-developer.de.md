@@ -88,7 +88,7 @@ Hier ist eine Liste befreundeter Organisationen und Communities, mit denen wir z
 
 Die Stelle ist in Teilzeit oder Vollzeit möglich.
 
-Bitte gib in deiner E-Mail deine Gehaltsvorstellung und Ihre Teilzeit-/Vollzeitpräferenz an.
+Bitte gib in deiner E-Mail deine Gehaltsvorstellung und deine Teilzeit-/Vollzeitpräferenz an.
 
 
 ### Homeoffice oder Büroarbeit?
@@ -98,7 +98,7 @@ Wir bieten ausschließlich Homeoffice an und haben kein festes Büro. Wir treffe
 Es wird kein fester Zeitaufwand erwartet, aber ein Aufenthalt in Berlin sollte auf Anfrage bis zu mindestens drei Tage pro Monat möglich sein.
 
 
-### So bewerben Sie sich
+### So bewirbst Du dich
 Schreiben Sie uns einfach eine E-Mail an jobs@green-coding.io mit einer kurzen Vorstellung und einer Begründung, warum Du unserem Team beitreten möchten.
 
 Bitte füge auch einen kurzen Kommentar zu den oben genannten Fähigkeiten bei.
