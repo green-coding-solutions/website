@@ -8,6 +8,10 @@ socialmedia_preview: "/img/blog/social/nop-linux.webp"
 
 ---
 
+{{< infobox >}}
+    This blog article is not updated anymore. Please find the newest way to configure NOP Linux in <a href="https://docs.green-coding.io/docs/cluster/nop-linux/">our documentation</a>.
+{{< /infobox >}}
+
 At Green Coding Solutions (GCS), one goal is to enable reproducible runs on our cluster. An important step towards accurate measurements was the creation of NOP Linux, our custom Linux distro that disables as many background processes as possible to avoid interruptions during measurements. Another crucial step was ensuring the reliable operation of the [PowerSpy2](https://docs.green-coding.io/docs/measuring/metric-providers/psu-energy-ac-powerspy2/), so we could measure the entire power consumption.
 
 We wanted to create a cluster that allowed users to select the server on which they'd like to run the benchmark. Initially, we aimed for full automation and looked at the excellent tool from Canonical, [MAAS](https://maas.io/). As we use Ubuntu as our reference system, this seemed to be the logical choice. Although the tool was impressive, it required a daemon running on the machine, which created multiple interruptions during our measurements. This led us to reevaluate our tooling, and we decided to try a simpler approach using PXE. While there is a great description [1], and the general flow worked very well, we invested a significant amount of time and effort in configuring the machines correctly. Getting the entire installation flow working with reboots, different configurations like PowerSpy, and the multitude of different servers we wanted to use presented a considerable overhead. Additionally, we have our machines distributed across various data centers, and we needed to set up a complex networking layer for the DHCP discovery to work. While this was a scalable solution, it required substantial overhead that had to be maintained. Moreover, our tool develops quite rapidly, so we would have to keep updating the installation process. As a small company, this was not feasible in our scenario. Consequently, we decided to sacrifice scalability in favor of simplicity. In the meantime, we had built a complex test setup with various servers and a complicated setup that we could now disassemble. The main lesson learned for the future is to start with the simplest solution that solves the problem and continually reevaluate your assumptions and needs.
@@ -91,6 +95,10 @@ touch meta-data
 ](https://ubuntu.com/server/docs/install/autoinstall-quickstart). We then put the iso on a usb stick and boot the machine by hand. As we have physical access this is ok for now. In this example the password is ubuntu. Obviously change this in your case. Once the install has finished you can pull the usb stick and reboot.
 
 ## 2) Install NOP Linux
+
+{{< infobox >}}
+    This blog article is not updated anymore. Please find the newest way to configure NOP Linux in <a href="https://docs.green-coding.io/docs/cluster/nop-linux/">our documentation</a>.
+{{< /infobox >}}
 
 You can now ssh into the machine and start configuring. This is mainly done by copy pasting scripts manually. As we don't install machines that often this is totally ok for now. Please note that most of these commands need to be run as root.
 
