@@ -18,7 +18,7 @@ Du entwickelst gemeinsam mit unserem Team Tools zur Messung des Energieverbrauch
 
 Dazu gehören unter anderem die Einrichtung und Messung von Bare-Metal-Systemen, KI-Modellen, Cloud-Umgebungen, Build-Chains, CI/CD-Pipelines, virtuellen Maschinen und mehr.
 
-Die Arbeit an unserer Toolchain bei Green Coding deckt ein breites Spektrum an Themen und Technologien ab – Du wirst wahrscheinlich auf Tools stoßen, die Dir neu sind. Aber keine Sorge: Wir bieten Ihnen eine umfassende Einarbeitung und geben Dir ausreichend Zeit, sich einzuarbeiten, auch wenn Du diese Tools noch nicht kennen solltest.
+Die Arbeit an unserer Toolchain bei Green Coding deckt ein breites Spektrum an Themen und Technologien ab – Du wirst wahrscheinlich auf Tools stoßen, die Dir neu sind. Aber keine Sorge: Wir bieten dir eine umfassende Einarbeitung und geben Dir ausreichend Zeit, sich einzuarbeiten, auch wenn Du diese Tools noch nicht kennen solltest.
 
 In unserem GitHub-Repository erhältst du einen Überblick über unsere Tools: https://github.com/green-coding-solutions
 
@@ -67,8 +67,8 @@ Wir sind überzeugt, dass diese Position am besten mit mindestens 5 Jahren Erfah
 
 #### Nicht-technische Fähigkeiten:
 - Fließende Deutschkenntnisse: C2 oder Muttersprachler
-- Bereitschaft und Bereitschaft, Vorträge über grüne Software
-– Fähigkeit und Bereitschaft, ausführliche Blogartikel über grüne Software zu schreiben
+- Bereitschaft und Lust Vorträge über Green Software zu halten
+– Bereitschaft und Lust ausführliche Blogartikel über grüne Software zu schreiben
 – (Optional): Erfahrung in der Erstellung und Veröffentlichung wissenschaftlicher Arbeiten zum Thema grüne Software
 
 Wenn Du mit einigen der oben genannten Fähigkeiten noch nicht vertraut bist, aber zuversichtlich bist, diese in kurzer Zeit erlernen zu können, bewerben dich unbedingt trotzdem!
@@ -93,17 +93,17 @@ Bitte gib in deiner E-Mail deine Gehaltsvorstellung und deine Teilzeit-/Vollzeit
 
 ### Homeoffice oder Büroarbeit?
 
-Wir bieten ausschließlich Homeoffice an und haben kein festes Büro. Wir treffen uns jedoch regelmäßig in Berlin und haben auch Kundentermine vor Ort in Berlin, an denen Sie teilnehmen können.
+Wir bieten ausschließlich Homeoffice an und haben kein festes Büro. Wir treffen uns jedoch regelmäßig in Berlin und haben auch Kundentermine vor Ort in Berlin.
 
 Es wird kein fester Zeitaufwand erwartet, aber ein Aufenthalt in Berlin sollte auf Anfrage bis zu mindestens drei Tage pro Monat möglich sein.
 
 
 ### So bewirbst Du dich
-Schreiben Sie uns einfach eine E-Mail an jobs@green-coding.io mit einer kurzen Vorstellung und einer Begründung, warum Du unserem Team beitreten möchten.
+Schreib uns uns einfach eine E-Mail an jobs@green-coding.io mit einer kurzen Vorstellung und einer Begründung, warum Du unserem Team beitreten möchten.
 
 Bitte füge auch einen kurzen Kommentar zu den oben genannten Fähigkeiten bei.
 
-Außerdem ist es für uns sehr interessant, wenn Du bereits Erfahrung mit nachhaltigem Softwaredesign haben und/oder wissen, was Dein Interesse an diesem Bereich weckt.
+Außerdem ist es für uns sehr interessant, wenn Du bereits Erfahrung mit nachhaltigem Softwaredesign haben und/oder weisst, was Dein Interesse an diesem Bereich weckt.
 
 Ein Link zu deinem LinkedIn- und GitHub-Profil ist in der Regel hilfreich.
 
