@@ -88,7 +88,7 @@ Hier ist eine Liste befreundeter Organisationen und Communities, mit denen wir z
 
 Die Stelle ist in Teilzeit oder Vollzeit möglich.
 
-Unsere Gehaltsvorstellung ist zwischen 60k - 100k EUR. Je nachdem ob du bei uns Teilzeit oder Vollzeit anfangen willst und welche Qualifikationen du schon mitbringst.
+Unsere Gehaltsvorstellung ist zwischen 70k - 100k EUR für eine Vollzeit-Stelle. Abhängig davon welche Qualifikationen du schon mitbringst.
 
 Bitte gib in deiner E-Mail deine Gehaltsvorstellung und deine Teilzeit-/Vollzeitpräferenz an.
 
