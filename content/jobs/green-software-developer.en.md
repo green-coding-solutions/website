@@ -91,6 +91,8 @@ Here is a list of befriended organizations and communities we work with or contr
 
 The job is possible as part-time or full-time.
 
+Our salary range is between 60k - 100k EUR depending on if you want to join part-time or full-time and also what your qualification is.
+
 Please include your expected salary and part-time/full-time preference in your email.
 
 &nbsp;
