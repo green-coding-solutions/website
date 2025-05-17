@@ -1,5 +1,5 @@
 ---
-title: "Green Software Developer"
+title: "Green Software Developer (permanent / freelance)"
 description: "Open role for Green Software Developer with 5+ years experience at Green Coding Solutions GmbH to work on sustainable software."
 ---
 
@@ -89,11 +89,11 @@ Here is a list of befriended organizations and communities we work with or contr
 
 ### Working hours and pay
 
-The job is possible as part-time or full-time.
+The job is possible as part-time or full-time as well as freelance.
 
 Our salary range is between 70k - 100k EUR for a full-time equivalent depending on the qualification you already bring in.
 
-Please include your expected salary and part-time/full-time preference in your email.
+Please include your expected salary and part-time/full-time preference in your email as well as your possible starting date to work with us.
 
 &nbsp;
 

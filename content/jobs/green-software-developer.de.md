@@ -1,5 +1,5 @@
 ---
-title: "Green Software Developer"
+title: "Green Software Developer (permanent / freelance)"
 description: "Offene Stelle für einen Green Software Developer mit über 5 Jahren Erfahrung bei der Green Coding Solutions GmbH zur Arbeit an nachhaltiger Software."
 ---
 
@@ -86,11 +86,13 @@ Hier ist eine Liste befreundeter Organisationen und Communities, mit denen wir z
 
 ### Arbeitszeiten und Vergütung
 
-Die Stelle ist in Teilzeit oder Vollzeit möglich.
+Die Stelle ist sowohl in Teilzeit oder Vollzeit möglich als auch als Freelance.
 
 Unsere Gehaltsvorstellung ist zwischen 70k - 100k EUR für eine Vollzeit-Stelle. Abhängig davon welche Qualifikationen du schon mitbringst.
 
-Bitte gib in deiner E-Mail deine Gehaltsvorstellung und deine Teilzeit-/Vollzeitpräferenz an.
+If you are interested in working with us as a freelancer, please send us a quote with your hourly rate and minimum order quantity.
+
+Bitte gib in deiner E-Mail deine Gehaltsvorstellung und deine Teilzeit-/Vollzeitpräferenz an und ab wann du verfügbar bist.
 
 
 ### Homeoffice oder Büroarbeit?
