@@ -1,26 +1,47 @@
 ---
-title: "Measuring AI with the GMT"
-date: 2025-01-24
+title: "Why measuring AI matters"
+date: 2025-05-23
 draft: false
 author: "Didi Hoffmann"
 authorlink: "https://www.linkedin.com/in/dietgerhoffmann/"
 socialmedia_preview: "/img/blog/social/ai_measure.webp"
 ---
 
+## Why measuring AI matters
 
-The environmental cost of AI is all over the news and people are quite worried. Measuring AI models provides a great opportunity to steer a company’s internal rollout of new AI features in a more sustainable way. With one of our clients, for instance, we collected the 50 most typical queries used in the organization and had three different models process these tasks. We then compared both their effectiveness and their efficiency to uncover which one was not only more accurate but also consumed fewer resources. We also wrote a paper for the [HotCarbon 24](https://hotcarbon.org/2024) [🖹](https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final109.pdf) workshop in which we measured loads of models and managed to create a system that saves considerable amounts of resources in the inference stage In this post, we present a simplified version of that case study, highlighting how innovating sustainably can save on AI interaction time and potentially reduce costs. Below, we’ll walk through the key steps and show how straightforward it can be to start benchmarking AI models for energy consumption.
+<table><tr><td>
 
-The Green Metrics Tool is a great tool to do this. This is a quick description on how this can be done. All the code can be found in our examples GitHub repo https://github.com/green-coding-solutions/example-applications/tree/main/ai-model
+**TL;DR**
 
-For simplicity we use [ollama](https://ollama.com/) which is a great wrapper around loads of different [models](https://ollama.com/search). This enables you to use a simple program to query a model without having to go through the tedious setup if you want to use a model from [huggingface](https://huggingface.co/). The great news is there is also an ollama [docker container](https://hub.docker.com/r/ollama/ollama) which does even more of the heavy lifting for you. So now benchmarking a/ or multiple models becomes really easy.
+<ul>
+  <li>Avoid high energy costs and emissions by comparing models before rolling them out at scale.</li>
+  <li>Learn how to benchmark AI models for energy use using simple tools like Ollama and the Green Metrics Tool.</li>
+  <li>Follow a real-world case study where smarter model selection led to resource savings.</li>
+  <li>Get a ready-to-use setup for measuring inference performance on your own GPU or with our hosted cluster.</li>
+</ul>
 
-If you want data that is somewhat realistic I would recommend that you use a gpu to do most of the calculations. You can find the documentation on how to setup your system [here](https://hub.docker.com/r/ollama/ollama).
+</td></tr></table>
 
-Now the last thing we need to do is create a `usage_scenario.yml` file that puts all the moving parts together.
+
+
+The environmental cost of AI is all over the news, which has caused some concern especially as companies rushing to deploy LLM-powered features often overlook the energy impact of inference. In this regard, measuring AI models provides a great opportunity to steer a company’s internal rollout of new AI features toward a lower cost while ensuring better performance.
+
+## How we helped a client cut costs by choosing the right model
+
+For instance, with one of our clients, we sought to compare the efficiency and effectiveness of three different models to ascertain which model was not only more accurate but also consumed fewer resources.  We did this by collecting the 50 most typical queries used in the organisation and had these three different models process these tasks. We wrote a paper for the [HotCarbon 24](https://hotcarbon.org/2024) [workshop](https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final109.pdf) in which we measured various models and created a system that saves considerable amounts of resources in the inference stage.
+
+How did we do this? In this post, we will give you a simplified version of that case study and walk you through the key steps and show how straightforward it can be to start benchmarking AI models for energy consumption. This is a great example of how innovating sustainably can help you save on AI interaction time while potentially reducing costs. 
+
+## Tools you will need to start benchmarking
+
+* First, the **Green Metrics Tool** is a great tool to do this. All the code can be found in our our examples GitHub repo [here](https://github.com/green-coding-solutions/example-applications/tree/main/ai-model)
+* Second, **[ollama](https://ollama.com/)** which is a great wrapper around loads of different [models](https://ollama.com/search). It allows you to use a simple program to query a model without having to go through the tedious setup if you want to use a model from [huggingface](https://huggingface.co/). What is even better is that there is also an ollama [docker container](https://hub.docker.com/r/ollama/ollama) that does even more of the heavy lifting for you.
+* Third, we would recommend that you use a **gpu** to do most of the inferencing for more realistic data. You can setup your system using this documentation [here](https://hub.docker.com/r/ollama/ollama)
+* Fourth, you need to create a **`usage_scenario.yml`** file that puts all the moving parts together.
 
 ## Example
 
-For this example I wanted to see how much resources gemma3-1b uses. Of course you can benchmark as many models as you want with this approach. So your `usage_scenario.yml` might looks something like this
+For this example I wanted to see how much resources gemma3-1b uses. Of course you can benchmark as many models as you want with this approach. So your [`usage_scenario.yml`](https://docs.green-coding.io/docs/measuring/usage-scenario/) might look something like this.
 
 ```
 ---
@@ -63,10 +84,10 @@ flow:
 
 Some things to note:
 
-- You will need to supply the `--gpus=all` as a docker run arg so the docker container can access the GPU.
-- We first do a simple warmup prompt. This is because the model needs to be loaded into memory on the first run. So we warm up all the caches before firing away.
-- In this example we only used one prompt to test the models. For a good comparison they obviously need to be the same for each model. Also adding more prompts makes sense.
-- We don't check for correct answers in this case. This is quite hard to do and would be to much for this blog article. Also this is not really the case we are trying to make. There are loads of benchmarks for correctness out there.
+* You will need to supply the `--gpus=all` as a docker run arg so the docker container can access the GPU.
+* We first do a simple warmup prompt. This is because the model needs to be loaded into memory on the first run. So we warm up all the caches before firing away.
+* In this example we only used one prompt to test the models. For a good comparison, they obviously need to be the same for each model. Also adding more prompts makes sense.
+* We don't check for correct answers in this case. This is quite hard to do and would be too much for this blog article. Also this is not really the case we are trying to make. There are loads of benchmarks for correctness out there.
 
 And that is pretty much it. Those are the components you will need to benchmark a model or create something so that you can compare `n` models. The results can then be seen in the Green Metrics Tool frontend.
 
@@ -76,10 +97,10 @@ https://metrics.green-coding.io/stats.html?id=99e1c669-0d29-4d9f-a7e8-22e637dde4
 
 ## Cluster
 
-You can also our AI Benchmark machine in our cluster which has a state of the art graphics card installed with all the detailed metric providers so you get exact results. You can find the documentation here: https://docs.green-coding.io/docs/measuring/measurement-cluster/
+You can also use our AI Benchmark machine in our cluster which has a GTX 1080 8 GB installed with all the detailed metric providers so you get exact results. You can find the documentation [here](https://docs.green-coding.io/docs/measuring/measurement-cluster/)
 
 ## Next steps
 
-AI rollouts should always be accompanied by sustainability measurements to understand the ecological but also cost direction of the project. While small AI endeavour might not have significant negative impact it can quickly balloon up and incur significant costs and emissions. Having a sustainability measurement in place already in the design and selection phase provides relevant support.
+AI rollouts should always be accompanied by sustainability measurements to understand the ecological but also cost impact of the project. While small AI endeavours might not have a significant negative impact, they can quickly scale and lead to significant costs and emissions. Building in sustainable measurements early during the design and model selection phase helps you make more sustainable and responsible choices.
 
 Contact us to learn more how to steer your AI implementation sustainably [info@green-coding.io](mailto:info@green-coding.io)
