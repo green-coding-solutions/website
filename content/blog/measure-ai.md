@@ -9,9 +9,9 @@ socialmedia_preview: "/img/blog/social/ai_measure.webp"
 
 ## Why measuring AI matters
 
-<table><tr><td>
 
-**TL;DR**
+{{< infobox >}}
+<b>TL;DR</b>
 
 <ul>
   <li>Avoid high energy costs and emissions by comparing models before rolling them out at scale.</li>
@@ -20,8 +20,7 @@ socialmedia_preview: "/img/blog/social/ai_measure.webp"
   <li>Get a ready-to-use setup for measuring inference performance on your own GPU or with our hosted cluster.</li>
 </ul>
 
-</td></tr></table>
-
+{{< /infobox >}}
 
 
 The environmental cost of AI is all over the news, which has caused some concern especially as companies rushing to deploy LLM-powered features often overlook the energy impact of inference. In this regard, measuring AI models provides a great opportunity to steer a company’s internal rollout of new AI features toward a lower cost while ensuring better performance.
