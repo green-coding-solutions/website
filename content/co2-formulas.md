@@ -41,7 +41,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p>Typically these approaches either follow a top down approach by looking at the electricity bill of a telecom provider and then the network transmission reporting to divide the two numbers.</p>
                     <p>Other approaches are to really trace the path of some sample packets and look at every piece of network equipment on the way and then on its power draw for the transmission only.</p>
                     <p>There are also other approaches but all have downsides and upsides. The number of <strong>0.06 kWh / GB</strong> is already a mix with the idea to get the best out of all of these approaches.</p>
-                    <p>The study linked in the source [1] down below also notes that through advances in efficiency the electric intesity drops by around a half every 2 years and suggests that an extrapolation for the coming years might be a valid assumption. This would bring the value in <strong>2024</strong> down to a <strong>~0.002652 kWH / GB</strong> (<i>0.06 / (2**(9/2))</i>)</p>
+                    <p>The study linked in the source [1] down below also notes that through advances in efficiency the electric intesity drops since 2015 by around a half every 2 years and suggests that an extrapolation for the coming years might be a valid assumption. This would bring the value in <strong>2025</strong> down to a <strong>~0.001875 kWH / GB</strong> <!-- 0.06 / (2^(9/2)) --></p>
                     <p>However this model is not without critique, as the real nature of network devices to date is that they consume 80% of their peak capacity already in idle mode. The rest is a proportional factor according to the usage of the possible bandwidth. Many models have been proposed to better attribute this reality on the real electricity cost for application that uses the network, however time-share or data-share models all have different downsides [2][3].</p>
                     <p>We deciced to use the linear approach of network transfer attribution to power consumption in our tools as it bests incentives the user to keep the network traffic to a minimum. No matter which current known calculation method is used it will be inaccurate still and none of the current methods can reliably incorporate the real costs of provisioning new hardware for bandwith increase back in time to the pool of applications that tipped the providers to increase the bandwith. This we have also discussed with one of the paper authors on GitHub [4]</p>
                     <h3>Included Network parts</h3>
@@ -52,8 +52,8 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p>Recently also a very detailed study from <a href="https://resilio.tech">Resilio</a> for the French Government produced some different numbers which are even about one order of magnitude lower. Since they have been using the accredited methodology from ADEME it might make sense to use these numbers in France specifically if not the EU. [5]</p>
                     <p>[1] <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630">Untangling the estimates</a></p>
                     <p>[2] <a href="https://github.com/intarchboard/e-impact-workshop-public/blob/main/papers/Schien_Rethinking-Allocation-v2.pdf">Daniel Schien, Paul Shabajee, Chris Preist. “Rethinking Allocation in High-Baseload Systems: A Demand-Proportional Network Electricity Intensity Metric.”</a></p>
-                    <p>[3] <a href="https://onlinelibrary.wiley.com/doi/10.1111/jiec.13512">Network energy use not directly proportional to data volume: The power model approach for more reliable network energy consumption calculations</p>
-                    <p>[4] <a href="https://github.com/green-coding-solutions/green-metrics-tool/issues/707">GitHub Discussion on whether incentivized approaches make still sense for attribution of network traffic data.</p>
+                    <p>[3] <a href="https://onlinelibrary.wiley.com/doi/10.1111/jiec.13512">Network energy use not directly proportional to data volume: The power model approach for more reliable network energy consumption calculations</a></p>
+                    <p>[4] <a href="https://github.com/green-coding-solutions/green-metrics-tool/issues/707">GitHub Discussion on whether incentivized approaches make still sense for attribution of network traffic data.</a></p>
                     <p>[5] <a href="https://librairie.ademe.fr/7111-evaluation-of-the-environmental-footprint-of-internet-service-provisioning-in-france.html">Evaluation of the environmental footprint of internet service provisioning in France</a></p>
                 </div>
                 <!-- end segment -->                
@@ -67,10 +67,10 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <img class="ui large floated right rounded bordered image" src="/img/co2-formulas/electricitymap_de.webp">
                     <p>This conversion is probably the most often done and also the one with the most impact.</p>
                     <p>By most often done we mean that companies already get the current intensity of their grid and schedule workloads accordingly.</p>
-                    <p>The current intensity of the grid can for instance be retrieved from <a href="https://app.electricitymaps.com/zone/DE">Electricitymap.com</a>. In our case in Germany the number is at the moment <strong>317 gCO2e/kWh</strong></p>
+                    <p>The current intensity of the grid can for instance be retrieved from <a href="https://app.electricitymaps.com/zone/DE">Electricitymap.com</a>. In our case in Germany the number is at the moment <strong>334 gCO2e/kWh</strong> (2024 average) [6]</p>
                     <h3>Worldwide average grid carbon intensity</h3>
                     <p>If your workload is distributed over multiple countries or you don't know at all where your workload is running, then the best way is to take the global average.</p>
-                    <p>For 2022 this number is: <strong>436 gCO2e/kWh</strong> (No numbers for 2023 have been released as of writing on 10.02.2024)</p>
+                    <p>For 2024 this number is: <strong>473 gCO2e/kWh</strong> [7]</p>
                     <p>So if we were to plug in this number into a calculation starting with kWh we get directly to gCO2e, which means gramms of CO2 equivalent. Since not every checmical process generates pure CO2 they are all converted to the equivalent climate warming potential of CO2, which results in CO2e</p>
                     <div class="ui five mini statistics">
                         <div class="statistic">
@@ -88,7 +88,8 @@ On this page we want to hightlight how to get from typical values like **time** 
                             <div class="label">gCO2e</div>
                         </div>
                     </div>
-                    <p>Source: <a href="https://ember-climate.org/insights/research/global-electricity-review-2023/">Ember Climate</a></p>
+                    <p>[6] <a href="https://app.electricitymaps.com/zone/DE/all/yearly">Electricitymaps Germany carbon intensity yearly</a></p>
+                    <p>[7] <a href="https://ember-energy.org/app/uploads/2025/04/Report-Global-Electricity-Review-2025.pdf">Ember Global Electricity Review 2025</a></p>
                 </div>
                 <!-- end segment -->
                 <div class="ui segment" id="calculating-savings">
