@@ -6,8 +6,14 @@
   translation: "Find out how ⇨"
 - id: home_about_details
   translation: "Read some details about the carbon emissions of software"
-- id: home_products
-  translation: "Products"
+- id: home_solutions
+  translation: "Solutions"
+
+- id: home_research
+  translation: "Research"
+
+- id: home_conference
+  translation: "Conference"
 
 - id: future_home_talks_teaser
   translation: "Future events and talks"
@@ -16,7 +22,19 @@
 
 
 - id: home_talks_full_list
-  translation: "For a full list"
+  translation: "All events"
+
+- id: home_research_teaser
+  translation: "We work with organizations, universities and government bodies as <br>research partners to advance the field of sustainable software<br>-</br>For a greener digital future"
+
+- id: research_dbu
+  translation: "Database for green software dependencies"
+- id: research_dena
+  translation: "Green Coding as driver for energy saving digitalisation"
+- id: research_green_screen_coalition
+  translation: "Developing Linux kernel level energy models"
+- id: research_hotcarbon
+  translation: "AI / LLM energy reduction via classifier pre-selection"
 
 
 - id: about
@@ -64,6 +82,9 @@
 - id: references
   translation: "References"
 
+- id: home_conference_teaser
+  translation: "We organize the biggest **sustainablity conference** for **software** in Europe <br> which brings together software developers, hardware designer and data center professionals<br> in order to create a sustainable digital future"
+
 
 - id: newsroom_welcome
   translation: "Welcome to the Green Coding Solutions newsroom. Here we offer journalists, other multipliers and all interested parties access to our latest news and activities.  You can also download the most important media materials, the latest articles in publications and upcoming events."
@@ -83,3 +104,9 @@
   translation: "Marketing & Sales"
 - id: more_information
   translation: "More Information"
+
+- id: find_out_more
+  translation: Find out more
+
+- id: see_all
+  translation: See all

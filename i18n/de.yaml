@@ -6,8 +6,14 @@
   translation: "Mehr erfahren ⇨"
 - id: home_about_details
   translation: "Mehr erfahren über die CO2-Emissionen von Software"
-- id: home_products
-  translation: "Produkte"
+- id: home_solutions
+  translation: "Lösungen"
+
+- id: home_research
+  translation: "Forschung"
+
+- id: home_conference
+  translation: "Konferenz"
 
 - id: future_home_talks_teaser
   translation: "Zukünftige Events und Veranstaltungen"
@@ -16,7 +22,19 @@
 
 
 - id: home_talks_full_list
-  translation: "Alle Events und Veranstaltungen (Englisch)"
+  translation: "Alle Events"
+
+- id: home_research_teaser
+  translation: "Wir arbeiten mit Organisationen, Universitäten und Regierungsstellen als Forschungspartner zusammen, um den Bereich nachhaltiger Software voranzutreiben<br>–<br>Für eine grünere digitale Zukunft"
+
+- id: research_dbu
+  translation: "Datenbank für green software dependencies"
+- id: research_dena
+  translation: "Green Coding für energie- sparende Digitalisierung"
+- id: research_green_screen_coalition
+  translation: "Linux-Kernel Energiemodelle"
+- id: research_hotcarbon
+  translation: "KI / LLM Energiereduktion durch Classifier"
 
 
 - id: about
@@ -62,6 +80,9 @@
   translation: "Referenzen"
 
 
+- id: home_conference_teaser
+  translation: "Wir organisieren die größte **Nachhaltigkeits-Konferenz** für **Software** in Europa <br> und bringen Softwareentwickler, Hardwaredesigner und Rechenzentrumsexperten zusammen,<br> um eine nachhaltige digitale Zukunft zu schaffen"
+
 - id: newsroom_welcome
   translation: "Herzlich Willkommen im Newsroom von Green Coding Solutions. Hier bieten wir JournalistInnen, sonstigen MultiplikatorInnen und allen Interessierten Zugang zu unseren neuesten Nachrichten und Aktivitäten.  Zudem die wichtigsten Medienmaterialien zum Download, jüngste Beiträge in Publikationen sowie anstehende Events."
 - id: news
@@ -80,3 +101,9 @@
   translation: "Marketing & Sales"
 - id: more_information
   translation: "Mehr Informationen"
+
+- id: find_out_more
+  translation: Mehr erfahren
+
+- id: see_all
+  translation: Alle anzeigen

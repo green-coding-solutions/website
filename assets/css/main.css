@@ -439,7 +439,6 @@ nav li a{text-decoration: none;}
 
 #team{
 	width: 100%;
-	background: #fff;
 }
 
 #portfolio{
@@ -704,6 +703,8 @@ nav li a{text-decoration: none;}
 	color: #2c3e50;
 	text-align: center;
 	padding: 10px 0 20px 0;
+    width: 80%;
+    margin: auto;
 }
 .photo-footer{
 	border-radius: 0 0 8px 8px;
@@ -714,11 +715,11 @@ nav li a{text-decoration: none;}
 	position: relative;
 }.photo-footer:hover{cursor: pointer;}
 
-.plus-btn{
+.plus-btn, .orange-plus-btn{
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 23px;
-	font-weight: 700;
+	font-size: 21px;
+	font-weight: 500;
 	color: #f3f3f3;
 	width: 250px;
 	height: 67px;
@@ -729,7 +730,11 @@ nav li a{text-decoration: none;}
     line-height: 45px;
 }
 
-.plus-btn span{
+.orange-plus-btn {
+    background: center 6px #f79c00;
+}
+
+.plus-btn span, .orange-plus-btn span{
 	display: inline-block;
 	font-size: 45px;
 	font-weight: 800;
@@ -1823,6 +1828,10 @@ padding-bottom: 20px;
   margin: 0 9px 28px;
 }
 
+.element.talks img {
+  box-shadow: 0 0 5px rgb(0 0 0 / 37%);
+}
+
 .element.all{}
 .element.design{}
 .element.motion {}
@@ -2366,6 +2375,10 @@ figure img {
 figure figcaption {
     margin: auto;
     margin-bottom: 20px;
+}
+
+#conference {
+    text-align: center;
 }
 
 #project-items-container {
