@@ -1,6 +1,6 @@
 ---
 title: "Improving Carbon Emissions of Federated Large Language Model Inference through Classification of Task-Specificity"
-link: "https://hotcarbon.org/program"
+link: "https://hotcarbon.org/2024#online-program"
 date: 2024-07-29
 draft: false
 type: "publication"
