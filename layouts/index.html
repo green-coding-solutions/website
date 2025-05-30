@@ -29,7 +29,7 @@
     <div id="nav-projects"></div>
     <div class="single-page section-two">
 
-        <h1><div class="title-two title-two-no-bottom-padding">{{ i18n "home_products" }}</div></h1>
+        <h1><div class="title-two title-two-no-bottom-padding">{{ i18n "home_solutions" }}</div></h1>
         <div class="separator">
             <div class="line line-1"></div>
         </div>
@@ -62,13 +62,109 @@
     <br>
 </section><!-- end contact -->
 
-{{ partialCached "team.html" . }}
+<section id="conference" class="bg-one">
+    <div id="nav-conference"></div>
+    <div class="section-one">
 
-<section class="works-container bg-two">
+        <h1><div class="title-one title-one-no-bottom-padding">{{ i18n "home_conference" }}</div></h1>
+        <div class="separator">
+            <div class="line line-1"></div>
+        </div>
+
+        <div class="data-content-one">
+            <img src="/img/eco-compute-logo.webp" style="width: 600px;"loading="lazy" alt="ecoCompute conference logo">
+            <br>
+            <br>
+
+            <div class="line line-1"></div>
+            <br>
+
+            <p>{{ i18n "home_conference_teaser"  | markdownify }}</p>
+            <br>
+            <div class="btn-one">
+                <a href="https://www.eco-compute.io"><span>{{i18n "find_out_more"}}</span></a>
+            </div>
+
+        </div>
+    </div><!-- end portfolio -->
+    <br>
+    <br>
+    <br>
+</section><!-- end contact -->
+
+
+<section id="conference" class="bg-two">
+    <div id="nav-conference"></div>
+    <div class="section-two">
+
+        <h1><div class="title-two title-two-no-bottom-padding">{{ i18n "home_research" }}</div></h1>
+        <div class="separator">
+            <div class="line line-1"></div>
+        </div>
+
+        <div class="data-content-two">
+            <p>{{ i18n "home_research_teaser"  | markdownify }}</p>
+            <br>
+            <div class="teamlist">
+                <div class="team">
+                    <div class="who">
+                        <div class="members-box">
+                            <img src="/img/newsroom/news/dbu.webp" loading="lazy" style="border-radius:50%; margin:auto;display:block" width="165" height="165" alt="DBU logo">
+                            <div class="name-team">Research Grant</div>
+                            <div class="name-title">{{ i18n "research_dbu" }}<br>-<br><small>Deutsche Bundesstiftung Umwelt</small></div>
+                        </div>
+                        <div class="photo-footer">
+                            <a href="https://hotcarbon.org/2024#online-program"><div class="orange-plus-btn" style="top: 0px;">Details</div></a>
+                        </div>
+                    </div>
+                    <div class="who">
+                        <div class="members-box">
+                            <img src="/img/newsroom/news/dena.webp" loading="lazy" style="border-radius:50%; margin:auto;display:block" width="165" height="165" alt="dena logo">
+                            <div class="name-team">Trend Study</div>
+                            <div class="name-title">{{ i18n "research_dena" }}<br>-<br><small>dena (Deutsche Energie Agentur)</small></div>
+                        </div>
+                        <div class="photo-footer">
+                            <a href="https://www.dena.de/infocenter/green-coding-mit-stromsparender-software-zu-einer-nachhaltigeren-digitalisierung"><div class="orange-plus-btn" style="top: 0px;">Details</div></a>
+                        </div>
+                    </div>
+                    <div class="who">
+                        <div class="members-box">
+                            <img src="/img/newsroom/news/green-screen-coalition.webp" loading="lazy" style="border-radius:50%; margin:auto;display:block" width="165" height="165" alt="green screen coalition logo">
+                            <div class="name-team">Research Project</div>
+                            <div class="name-title">{{ i18n "research_green_screen_coalition" }}<br>-<br><small>green screen coaliation</small></div>
+                        </div>
+                        <div class="photo-footer">
+                            <a href="https://greenscreen.network/en/blog/announcing-the-new-catalyst-fund-awardees/"><div class="orange-plus-btn" style="top: 0px;">Details</div></a>
+                        </div>
+                    </div>
+                    <div class="who">
+                        <div class="members-box">
+                            <img src="/img/newsroom/news/hotcarbon.webp" loading="lazy" style="border-radius:50%; margin:auto;display:block" width="165" height="165" alt="hotcarbon logo">
+                            <div class="name-team">Academic Paper</div>
+                            <div class="name-title">{{ i18n "research_hotcarbon" }}<br>-<br><small>HotCarbon conference</small></div>
+                        </div>
+                        <div class="photo-footer">
+                            <a href="https://hotcarbon.org/2024#online-program"><div class="orange-plus-btn" style="top: 0px;">Details</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="btn-one">
+                <a href="{{ relref . "newsroom" }}"><span>{{i18n "see_all"}}</span></a>
+            </div>
+        </div>
+    </div><!-- end portfolio -->
+    <br>
+</section><!-- end contact -->
+
+
+
+<section class="works-container bg-one">
     <div id="nav-events"></div>
-    <div class="section-two bottom-works">
+    <div class="section-one bottom-works">
         <div class="works-header">
-            <h2><div class="title-two">Talks & Events</div></h2>
+            <h2><div class="title-one">Talks & Events</div></h2>
         </div>
         {{ $filteredPages := slice }}
         {{ range .Sites.Default.RegularPages }}
@@ -79,7 +175,7 @@
 
         {{ if ne (len $filteredPages) 0 }}
             <div id="portfolio" class="container">
-                <div class="data-content-two">
+                <div class="data-content-one">
                     <h3>{{ i18n "future_home_talks_teaser" }}</h3>
                 </div>
                 <div class="section portfoliocontent">
@@ -102,7 +198,7 @@
         {{ end }}
 
         <div id="portfolio" class="container">
-            <div class="data-content-two">
+            <div class="data-content-one">
                 <h3>{{ i18n "past_home_talks_teaser" }}</h3>
             </div>
 
@@ -136,17 +232,19 @@
                     {{end}}
                     <div class="final"></div>
                 </div>
-                <div class="data-content-two">
-                    {{/* Use absLangURL here for a german list. But it will only work if there also articles that end in .de*/}}
-                    👉 <a href="{{ absURL "talks-and-events" }}" style="color: white; text-decoration: underline;">{{ i18n "home_talks_full_list" }}</a>
+                {{/* Use absLangURL here for a german list. But it will only work if there also articles that end in .de*/}}
+                <br>
+                <div class="btn-one">
+                    <a href="{{ absURL "talks-and-events" }}"><span>{{ i18n "home_talks_full_list" }}</span></a>
                 </div>
-
-
             </div> <!-- #container -->
         </div> <!-- /END ISOTOPE PORTFOLIO-->
 
     </div><!-- end portfolio -->
 </section>
+
+
+{{ partialCached "team.html" . }}
 
 {{ partialCached "references.html" . }}
 
