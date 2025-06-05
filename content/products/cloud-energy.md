@@ -15,13 +15,15 @@ ordering: 3
 {{</ rawhtml >}}
 
 
-Since in the cloud it is often not possible to measure energy directly we have created a Machine Learning estimation model
+Since in restricted environments like containers or VMs (typically found in the cloud) it is often not possible to measure energy directly we have created a Machine Learning estimation model
 based on the data from [SPECPower](https://www.spec.org/power_ssj2008/)
 
 The setup of the model is based on a [research paper](https://interactdc.com/static/images/documents/Elsevier_Journal.pdf) from [Interact DC](https://interactdc.com/) and the University of East London.
 
 Our model allows for inline measuring in Watts as well as energy budgeting in Joules with many optional input
 params to make the model more accurate.
+It also works in non-virtualized or non-containerized environments and you can also use it alongside already available
+energy measurements and tune its power model output in these cases.
 
 In the chart on the right you can see the performance for an out-of-sample prediciton. Please find more details
 for in-sample predictions, exploratory data analysis and application documentation on Github.
