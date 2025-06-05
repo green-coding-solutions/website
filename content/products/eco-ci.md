@@ -12,19 +12,22 @@ ordering: 2
 Eco CI is all about understanding energy and carbon emissions of CI/CD pipelines and making this data actionable for 
 reduction.
 
-Our current work focuses on Github Actions and GitLab Pipelines, the biggest free continous integration platforms to date.
+In some environments where CI/CD pipelines run (GitHub or GitLab SaaS products for instance) direct measurement or energy
+ with something like RAPL or IPMI is sadly not possible.
 
-By integrating our custom Github Actions / GitLab Plugins into your testing workflow you get an automated estimation about the
-energy cost of the workflow run.
+Eco CI uses our work from our [Cloud Energy project]({{< relref path="products/cloud-energy" >}}) to estimate the energy used.
 
-Github Actions runs on Microsoft Azure VMs. In these VMs are direct measurement with something like RAPL is sadly not possible.
+It was originally desgined  for Github Actions and GitLab Pipelines, but has seen been made modular to work with any CI/CD
+system that accepts script based plugins (Jenkins, Teamcity, plain local usage etc.).
 
-We are using our work from our [Cloud Energy project]({{< relref path="products/cloud-energy" >}}) to estimate the energy used by these Azure VMs.
-
-The result is an easily integrateable Github Action where you get the energy in Joules for the CI run. It is
+If you are on GitHub or GitLab though you can directly integrate our ready made plug-in into your testing workflow you get an automated estimation about the
+energy cost of the workflow run. The result is an easily integrateable Github Action where you get the energy in Joules for the CI run. It is
 also possible to get only results for part of the CI run.
 
-The same logic applies for GitLab, which uses docker internally, but still uses shared ressources.
+The same logic applies for GitLab or other virtualized / containerized systems.
+
+When using it in other local CI/CD systems that are not virtualized it works in a similar way and will output energy
+and carbon values of the whole system.
 
 {{< button "code branch" "Github Repository" "https://github.com/green-coding-solutions/eco-ci-energy-estimation" >}}
 
