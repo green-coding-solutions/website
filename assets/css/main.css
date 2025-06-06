@@ -2441,9 +2441,36 @@ figure figcaption {
     margin: 0;
 }
 
+#references .section-three {
+    overflow: hidden;
+}
+
 #references img {
-    max-width: 200px;
-    max-height: 80px;
+    max-height: 50px;
+    filter: grayscale(100%);
+    margin-left: 8rem;
+}
+
+#references .data-content-three.marquee-container {
+    flex-wrap: nowrap;
+    animation: scroll-left 6s linear infinite;
+    width: 200%;
+}
+
+.marquee-content {
+    display: flex;
+    width: 50%; /* Each set takes half the track */
+    padding-left: 300px;
+}
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* Dropdown navigation from eco-compute.io */
