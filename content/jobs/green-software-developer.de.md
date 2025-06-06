@@ -27,7 +27,7 @@ Schau dir auch die Dokumentation zu unserem Flagship-Tool an, um dir einen Eindr
 
 ### So sieht dein typischer Arbeitsalltag aus
 
-Als Ingenieur bei der Green Coding Solutions GmbH unterscheidet sich die Arbeit deutlich von herkömmlichen Programmieraufgaben. Die genaue Messung des Energieverbrauchs von Software ist nach wie vor eine anspruchsvolle technische Herausforderung. Deine Arbeit geht also über das bloße Schreiben von Code nach Spezifikation hinaus – sie erfordert auch kreative Problemlösung und kritisches Denken. Viele bestehende Messlösungen funktionieren in Cloud- oder virtualisierten Umgebungen nicht optimal, daher müssen wir oft kreative Wege finden, um dennoch die bestmöglichen Daten zu erfassen.
+Als IngenieurIn bei der Green Coding Solutions GmbH unterscheidet sich die Arbeit deutlich von herkömmlichen Programmieraufgaben. Die genaue Messung des Energieverbrauchs von Software ist nach wie vor eine anspruchsvolle technische Herausforderung. Deine Arbeit geht also über das bloße Schreiben von Code nach Spezifikation hinaus – sie erfordert auch kreative Problemlösung und kritisches Denken. Viele bestehende Messlösungen funktionieren in Cloud- oder virtualisierten Umgebungen nicht optimal, daher müssen wir oft kreative Wege finden, um dennoch die bestmöglichen Daten zu erfassen.
 
 Typische Aufgaben sind:
 - Architekturplanung für Benchmarking-Software
