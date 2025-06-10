@@ -1,75 +1,81 @@
 ---
-title: "Blue Angel - Software Label"
+title: "Blue Angel - Software Label Services"
 draft: false
 summary: "The Blue Angel for Software with the Green Metrics Tool"
-date: 2024-10-30 08:00:00
-author: "Arne Tarara"
-authorlink: "https://de.linkedin.com/in/arne-tarara"
+date: 2025-06-10 08:00:00
+author: "Jennifer Dhanaraj"
+authorlink: "https://www.linkedin.com/in/jenndhanaraj/"
 
 ---
 
+## What Does the Certification Process Involve?
 
-## The Blue Angel for resource- and energy-efficient software products
-#### Now with Green Coding Solutions at your side! 🌱
+The path to certification is very formalized and involves handing in the following documents:
 
-Software is the heart of the digital world, but did you know that it also contributes significantly to resource and energy consumption? 
-Digital emissions are now as high as those of all air traffic combined. That's why the Blue Angel certifies resource- and energy-efficient software products to make sustainable solutions visible. 
+- Annex 1 - Overview of software product and applicant 
+- Annex 2 - Measurement results of performance and energy metrics
+- Annex 3 - Measurement data series and thorough description of measurement setup and configurations
+- Annex 4 - Statement about used data formats in your software
+- Annex 5 - Statement about API documentations, source code and licenses of your software
+- Annex 6 - Statement about freedom from advertising, deinstallation and continuity of your software
+- Annex 7 - The public downloadable document giving an overview over minimal system requirements, measurement setup and measurement results
 
-With us - Green Coding Solutions - at your side, you can now embark on the path to Blue Angel certification and make your software product a pioneer of sustainable digitalization.
+This rigorous but transparent process ensures that certified software truly meets environmental and quality standards—backed by government-recognized oversight. 
 
-## What exactly is the Blue Angel for resource and energy-efficient software products?
-
-The [Blue Angel for resource and energy-efficient software products](https://www.blauer-engel.de/uz215) is an environmental label awarded by the [Federal Ministry for the Environment, Nature Conservation and Nuclear Safety (BMUV)](https://www.bmuv.de/) to environmentally friendly products and services.
-
-The UZ-215 label, which is relevant for software, was developed by the [Federal Environment Agency (UBA)](https://www.umweltbundesamt.de) in cooperation with the [Öko-Institut e.V.](https://www.oeko.de) and the [Umweltcampus Birkenfeld](https://www.umwelt-campus.de/).
-
-An application for the label is made via RAL gGmbH and requires both a formal application including an energy measurement and a review by an auditor. 
-
-The award criteria for the Blue Angel for software can be found here: [award criteria Blue Angel DE UZ-215](https://www.blauer-engel.de/de/zertifizierung/vergabekriterien#UZ215-2020)
-
-### Why should you apply for the Blue Angel?
-1. **Making sustainability visible**\
-The Blue Angel identifies software that uses hardware resources particularly sparingly and indicates its energy consumption. This means that your software is more transparent and environmentally friendly than the competition and makes a valuable contribution to conserving resources.
-2. **Transparency that creates trust**\
-With the Blue Angel on board, you create clarity. Your application must be measurable - this makes your path to sustainability comprehensible for everyone and proves your efforts to be environmentally friendly. You will not only be perceived by your users as efficient, but also as responsible.
-3. **Extend the service life of hardware**\
-Your software ensures that hardware can be used for longer instead of being replaced prematurely - a win-win situation: resources are conserved and electronic waste is reduced. Your software stays on course for the future - with foresight.
-4. **Reusability**\
-The Blue Angel for resource- and energy-efficient software products requires that your software can export user data in a standard format and that the code is either open source or disclosed at the end of the software's distribution. Requirements are also placed on the documentation and modularity of the software. 
-5. **Independently tested and certified**\
-
-The Blue Angel requires special expertise, so an additional auditor and a sophisticated measurement setup are necessary. We at Green Coding Solutions can support you either as an auditor or as a measurement laboratory. Our job is to ensure that your software meets the strict requirements of the Blue Angel. As a measurement laboratory, it is our job to ensure that your software meets the strict requirements of the Blue Angel. As an auditor, we check the application for correctness and validate all submitted documents. It is important to note that the Blue Angel requires these two roles to be independent and that we can only act as an auditor **or** as a measurement laboratory.
-
-<figure>
-  <img class="ui massive middle rounded bordered image" src="/img/blue-angel/blue-angel-advantages.webp" style="margin: auto">
-  <figcaption>Blue Angel for software - UZ-215 - Benefits for your software</figcaption>
-</figure>
-
-### What makes the Blue Angel so unique for software?
-- Focus on efficiency: Your software is audited with regard to its energy and resource consumption. With this certification, you can clearly demonstrate that your software works in such a way that it can also run on older hardware resources and can continue to be used even after the end of software distribution.
-
-- Trust through transparency: All relevant information about the energy and resource efficiency of your software is made publicly available. Openness creates trust - among customers, partners and users.
-
-- Less is more: Efficient software means fewer resources are wasted and no unnecessary hardware upgrades are required. Fewer upgrades = lower costs = more environmental awareness.
+{{< greenblock >}}
+How can we help you
+{{</ greenblock >}}
 
 
-### Why Green Coding Solutions is your perfect partner:
-At Green Coding Solutions, we have made it our mission to make software more efficient and sustainable. As a measurement laboratory and official auditor, we guide you step by step through the Blue Angel certification process.
+The most work in the certification process lies in the proper setup and procurement of the compliant benchmarking infrastructure including making reproducible measurements and representativ usage scenarios (Nutzungs-Szenarien [DE]).
+ 
+### Streamlined application process
+ 
+With the [Green Metrics Tool](/products/green-metrics-tool), also [certified under the Blue Angel](https://www.blauer-engel.de/de/produkte/green-metrics-tool), we have created an open source solution that streamlines this process. Additionally we offer our server infrastructure as a Software as a Service including a paid add-on to the open source tool that can specifcally make Blue Angel compatible exports.
 
-The Blue Angel for resource- and energy-efficient software products places extensive demands on the measurement and documentation process. With our [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}}) we offer a ready-to-use software solution including the measurement infrastructure to make applying for the Blue Angel as easy as possible. Details and prices can be found on the [Green Metrics Tool Product Page]({{< relref path="products/green-metrics-tool" >}}). The output are ready-made application forms on which only company details and your signature need to be added.
+Our tools auto-generate the application annexes. It also seamlessly imports measurement data from the Green Metrics Tool into the official application template. Built-in text suggestions and templates drastically reduce effort for companies so you can focus on sustainable product design and we work on making your sustainability efforts visible.
 
-💬 You have the vision - we have the know-how. From the concept and measurement to the preparation of all application documents, we are at your side and offer you comprehensive support. We take care of the energy and resource evaluation and ensure that your software product meets all Blue Angel criteria.
+### Automated, reliable and audit-read
 
-<b><center>🎯 Start a sustainable future with us now!</center></b>
+One core intention of the Blue Angel is to motivate and empower companies to learn about their software energy consumption. The Green Metrics Tool takes an extra step here and tracks your performance and sustainability over time. More importantly, it is a detailed analysis tool that helps to detect energy inefficiencies and provides detailed recommendations to decrease unnecessary emissions. Our tool also ensures every software update automatically triggers performance and energy-efficiency tests so that companies are aware of energy consumption of new feature updates.
+
+This tracking over time also enables you easliy extend and renew your certification after one year with new and updated energy values (Required by the Blue Angel Award criteria).
+ 
+### Automated, reliable and audit-ready
+The tests are run on our cluster systems, which ensure a stable documented testing environment. It is also compatible with a wide range of applications including Linux, Windows, Mobile and even AI applications.
+
+### Transparent and compliant
+Benchmark against industry standards using your own existing units and export reports directly from our interactive dashboard, such that they are ready for submission.
+
+### Try before you commit
+We know we are making big claims, but we will leave it to you to truly understand the magic of our tool and how we can help you simplify the process. You can use our free open-source version to explore our capabilities.
+
+<br>
+<div class="btn-one">
+    <a href="/products/green-metrics-tool"><span>Explore Green Metrics Tool</span></a>
+</div>
+
+{{< whiteblock >}}
+
+Dedicated team
+{{</ whiteblock >}}
+
+<img class="ui center " src="/img/blog/blue_angel_certification.webp" alt="Blue Angel - We are certified" loading="lazy" style="
+    width: 601px;
+    float: right;
+    margin-left: 30px;
+">
+
+One of Green Coding Solutions’ objectives is to reduce energy emissions in software and we believe that the first step in doing so is to measuring and quantifying these emissions in the first place. 
+
+We ourselves have been certified with the Blue Angel software so we know how rigorous and time-consuming the process can be. Our tools help you ensure that the certification is simple, accurate and efficient.
 
 
-🔧 Your advantage: The market position of your software is strengthened. With the Blue Angel as your flagship, you show your customers and partners that you are taking responsibility and at the same time raising the efficiency of your software to the next level.
-
-📅 Now is the perfect time: you can now apply for the Blue Angel for resource- and energy-efficient software. Let's shape the path to a more sustainable software world together.  
-
+We have a dedicated team that believes that the Blue Angel Certification process is a key step to realising our vision for a more responsible ICT industry. What we can offer you outside of the free version is a dedicated team that understands the process inside and out and is committed to automating the process as much as possible for you.
 
 {{< greenblock >}}
 Interested?
 {{</ greenblock >}}
 
 {{< contact-us >}}
+

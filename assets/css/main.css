@@ -249,7 +249,6 @@ textarea {
 	border: solid 1px #efb2b0;
 	border-radius: 5px;
     width: 80%;
-	max-width: 220px;
 }
 .btn-one span:hover, .btn-one input[type="submit"]:hover{
     border: solid 1px #696176;
@@ -2338,6 +2337,10 @@ pre > code {
 .section-two h2,
 .section-two h3,
 .section-two h4 { color: #fff; }
+
+h3.yellow-color {
+    color: #ffef57;
+}
 
 .section-two a { color: #ffef57; }
 a, .section-two .segment a {color:#2471be;text-decoration:none}

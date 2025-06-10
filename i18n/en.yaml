@@ -70,8 +70,6 @@
   translation: Development & Intergrations
 - id: sustainablity-operations
   translation: Software Carbon Operations
-- id: blauer-engel
-  translation: Blue Angel (Software Certification)
 
 - id: newsroom
   translation: Newsroom
@@ -104,6 +102,9 @@
   translation: "Marketing & Sales"
 - id: more_information
   translation: "More Information"
+
+- id: blue-angel
+  translation: "Blue Angel (Software Label)"
 
 - id: find_out_more
   translation: Find out more

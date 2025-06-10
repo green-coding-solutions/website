@@ -71,8 +71,6 @@
   translation: Entwicklung & Intergration
 - id: sustainablity-operations
   translation: Software CO2 Operations
-- id: blauer-engel
-  translation: Blauer Engel (Software Label)
 
 - id: list_orgs
   translation: "Eine ausgewählte Liste von Organisationen, mit denen wir zusammengearbeitet haben."
@@ -101,6 +99,9 @@
   translation: "Marketing & Sales"
 - id: more_information
   translation: "Mehr Informationen"
+
+- id: blue-angel
+  translation: "Blauer Engel (Software Label)"
 
 - id: find_out_more
   translation: Mehr erfahren
