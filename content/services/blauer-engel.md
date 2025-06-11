@@ -22,6 +22,8 @@ The path to certification is very formalized and involves handing in the followi
 
 This rigorous but transparent process ensures that certified software truly meets environmental and quality standards—backed by government-recognized oversight. 
 
+After additional examination by an auditor, the documents are submitted to RAL gGmbH, which issues the certificate at the end.
+
 {{< greenblock >}}
 How can we help you
 {{</ greenblock >}}
@@ -42,7 +44,7 @@ One core intention of the Blue Angel is to motivate and empower companies to lea
 This tracking over time also enables you easliy extend and renew your certification after one year with new and updated energy values (Required by the Blue Angel Award criteria).
  
 ### Automated, reliable and audit-ready
-The tests are run on our cluster systems, which ensure a stable documented testing environment. It is also compatible with a wide range of applications including Linux, Windows, Mobile and even AI applications.
+The tests are run on our cluster systems, which ensure a stable documented testing environment. It is also compatible with a wide range of applications including and operating systems like Linux, Windows, Desktop apps, CLI apps, web apps and even AI applications and many more.
 
 ### Transparent and compliant
 Benchmark against industry standards using your own existing units and export reports directly from our interactive dashboard, such that they are ready for submission.
@@ -71,7 +73,7 @@ One of Green Coding Solutions’ objectives is to reduce energy emissions in sof
 We ourselves have been certified with the Blue Angel software so we know how rigorous and time-consuming the process can be. Our tools help you ensure that the certification is simple, accurate and efficient.
 
 
-We have a dedicated team that believes that the Blue Angel Certification process is a key step to realising our vision for a more responsible ICT industry. What we can offer you outside of the free version is a dedicated team that understands the process inside and out and is committed to automating the process as much as possible for you.
+We have a dedicated team that believes that the Blue Angel Certification process is a key step to realising our vision for a more responsible ICT industry.
 
 {{< greenblock >}}
 Interested?

@@ -10,7 +10,7 @@ authorlink: "https://www.linkedin.com/in/jenndhanaraj/"
 
 # Show your commitment to sustainability
 
-The Blue Angel for Software ecolabel is more than a label. Given that the Information and Communications (ICT) sector is responsible for 1.8 – 3.8% of global energy emissions [1].This is about the same as the whole aviation industry.\
+The Blue Angel for Software ecolabel is more than a label. Given that the Information and Communications (ICT) sector is responsible for 1.8 – 3.8% of global carbon emissions [1].This is about the same as the whole aviation industry.\
 \
 It is important for companies that are aligned with sustainability goals to clearly demonstrate their commitment to developing software that is not just innovative – but responsible.\
 In this regard, the Blue Angel for Software ensures that your sustainability efforts are visible, verifiable and impactful.
@@ -24,9 +24,9 @@ Benefits for companies
 
 Many companies still lack tools to measure or communicate the environmental impact of their digital products, given that energy emissions often remain invisible. The Blue Angel for Software requires companies to measure and quantify your software’s energy consumption as well as transparently document your use of hardware resources.
 
-### Shines a spotlight on your values to consumers
+### Shines a spotlight on your values to customers
 
-Consumers are becoming more values-conscious and are now demanding concrete evidence, amidst widespread greenwashing, of corporate climate action and are thoroughly scrutinising product lifecycles. Transparent and trustworthy sustainability claims are essential to winning over these sustainability-conscious consumers. Given that the Blue Angel label is Germany’s most renowned ecolabel, which is also recognised worldwide, the Blue Angel for Software Label, immediately lets your potential clients know that you are intentionally designing and developing your product meets high environmental standards, verified through independent, government-backed certification.
+Customers are becoming more values-conscious and are now demanding concrete evidence, amidst widespread greenwashing, of corporate climate action and are thoroughly scrutinising product lifecycles. Transparent and trustworthy sustainability claims are essential to winning over these sustainability-conscious consumers. Given that the Blue Angel label is Germany’s most renowned ecolabel, which is also recognised worldwide, the Blue Angel for Software Label, immediately lets your potential clients know that you are intentionally designing and developing your product meets high environmental standards, verified through independent, government-backed certification.
 
 ### Strengthen your brand from the inside
 
@@ -39,9 +39,9 @@ Certification process
 
 
 The primary objective is to reduce environmental burden by making energy and resource consumption transparent and accountable. The Blue Angel label for software signals:
-- Reduced hardware usage
+- Longer hardware usage
 - Energy efficiency
-- Long-lasting usability
+- Long-lasting usability through standard exports
 - Respect for user autonomy
 
 This label fosters a holistic view of software sustainability.
@@ -84,6 +84,6 @@ Let us tell you how we can help
 <br>
 
 <div class="btn-one">
-    <a href="/services/blauer-engel"><span>Get certified now</span></a>
+    <a href="/services/blauer-engel"><span>Get to know the certification</span></a>
 </div>
 
