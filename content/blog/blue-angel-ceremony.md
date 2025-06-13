@@ -6,12 +6,16 @@ author: Jennifer Dhanaraj
 
 # Green Metrics Tool has been certified with the Blue Angel for Software Label
 
-Big news: Our Green Metrics Tool just received the Blue Angel ecolabel for software! 
+Big news: Our Green Metrics Tool just now also physically received the Blue Angel ecolabel for software after getting certified in 2024! 
 That makes us one of just three software products in Germany to get this recognition — alongside Nextcloud Server and KDE's Okular.
+
+<img class="ui large floated right rounded bordered image" src="/img/blog/csm_250611_green_it_fachtagung_lp_1200_55393f48f2.jpg" alt="Green Coding Solutions recieving Blue Angel for Software award" loading="lazy">
 
 The award was announced at a special event hosted by the German Federal Ministry for the Environment and the German Environment Agency, focused on _“Open Source and Blue Angel Software – A Sustainable Concept.”_ It brought together leaders from the public and private sectors, all talking about one thing: how we can make software more sustainable, transparent, and independent.
 
 We’re proud to be part of the first wave setting this standard.
+
+<img class="ui large floated right rounded bordered image" src="/img/blog/arne-stage-bmukn.webp" alt="Arne Tarara giving a talk" loading="lazy">
 
 ---
 
@@ -25,7 +29,7 @@ That’s why being one of the first tools to receive the Blue Angel for Software
 
 ## So, what is the Blue Angel for Software?
 
-If you’re not familiar with it yet, the **Blue Angel** is Germany’s oldest and most trusted ecolabel. It’s usually seen on things like paper or electronics — but now, for the first time, it’s being awarded to **software**.
+If you’re not familiar with it yet, the Blue Angel is Germany’s oldest and most trusted ecolabel. It’s usually seen on things like paper or electronics — but now, for the first time, it’s being awarded to software.
 
 And that makes sense, because the ICT sector is responsible for somewhere between **1.8% and 3.8% of global carbon emissions** — about the same as the aviation industry. Yep, code really does have a carbon footprint.
 
@@ -45,8 +49,8 @@ More and more companies are setting climate goals — but when it comes to digit
 
 Here’s how it can help you:
 
-- Build trust with customers who are tired of greenwashing  
-- Attract talent** (especially younger workers who want to work for mission-driven companies)  
+- **Build trust** with customers who are tired of greenwashing  
+- **Attract talent** (especially younger workers who want to work for mission-driven companies)  
 - Align your tech and sustainability teams around something concrete  
 - Show you're serious about responsible innovation — not just saying the right things  
 
@@ -60,7 +64,8 @@ The award ceremony itself was a great reminder that we’re not alone in this. I
 
 We’re hopeful that more and more companies will go for this label, and we’d love to see this become the norm, not the exception.
 
-And if you’re interested in getting certified yourself? We’ve been through the process and are happy to help however we can.
+And if you’re interested in getting certified yourself? We’ve been through the process and are happy to help however we can. Find out more about [our services here](/services/blauer-engel/)
+
 
 Because in the end, **sustainable software isn't just the future — it's already happening**.  
 And yep, we still stand by it: **good code is green code**.
