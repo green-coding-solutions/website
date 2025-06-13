@@ -15,8 +15,6 @@ The award was announced at a special event hosted by the German Federal Ministry
 
 We’re proud to be part of the first wave setting this standard.
 
-<img class="ui large floated right rounded bordered image" src="/img/blog/arne-stage-bmukn.webp" alt="Arne Tarara giving a talk" loading="lazy">
-
 ---
 
 ## Why we wanted to be one of the first
@@ -43,7 +41,7 @@ The Blue Angel for Software makes that impact **visible and measurable**. To get
 
 ---
 
-## Why this matters for your company too ##
+## Why this matters for your company too
 
 More and more companies are setting climate goals — but when it comes to digital products, many don’t yet have a clear way to measure or communicate their impact. The Blue Angel for Software helps change that.
 
@@ -58,7 +56,9 @@ And since it’s backed by the German government, the Blue Angel isn’t just an
 
 ---
 
-## A step in the right direction ##
+## A step in the right direction
+
+<img class="ui large floated right rounded bordered image" src="/img/blog/arne-stage-bmukn.webp" alt="Arne Tarara giving a talk" loading="lazy">
 
 The award ceremony itself was a great reminder that we’re not alone in this. It was inspiring to hear from others who are also thinking critically about how we build software — and how we can make it better.
 
