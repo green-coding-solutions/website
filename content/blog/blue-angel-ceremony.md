@@ -2,6 +2,8 @@
 title: We Got the Blue Angel for Software 
 date: 2025-06-13
 author: Jennifer Dhanaraj
+socialmedia_preview: "/img/newsroom/news/blue_angel.webp"
+
 ---
 
 # Green Metrics Tool has been certified with the Blue Angel for Software Label
