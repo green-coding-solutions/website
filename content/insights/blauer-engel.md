@@ -33,6 +33,12 @@ Customers are becoming more values-conscious and are now demanding concrete evid
 Sustainability isn’t just a consumer concern. It’s becoming a priority for employees, too. A 2023 Deloitte survey found that nearly 2 in 3 millennials and Gen Z workers [2] consider a company’s environmental impact when choosing where to work. Certifications like the Blue Angel for Software give your team a clear signal that your company backs its values with action. Internally, it can also foster stronger alignment across departments from engineering to marketing around measurable sustainability goals.
 
 
+<br>
+<div class="btn-one">
+    <a href="/files/case-studies/case-study-nextcloud-blue-angel.pdf"><span>Discover Nextcloud Case Study</span></a>
+</div>
+
+
 {{< whiteblock >}}
 Certification process
 {{< /whiteblock >}}

@@ -31,6 +31,12 @@ Kunden werden wertebewusster und verlangen angesichts des weit verbreiteten Gree
 
 Nachhaltigkeit ist nicht nur ein Anliegen der Verbraucher. Es wird auch für Mitarbeiter eine Priorität. Eine 2023 Deloitte-Umfrage ergab, dass fast 2 von 3 Millennials und Gen Z -Arbeitnehmern [2] die Umweltauswirkungen eines Unternehmens bei der Auswahl der Arbeit in Betracht ziehen. Zertifizierungen wie der Blue Angel for Software geben Ihrem Team ein klares Signal dafür, dass Ihr Unternehmen seine Werte mit Aktionen unterstützt. Intern kann es auch eine stärkere Ausrichtung über Abteilungen von Ingenieurwesen bis hin zum Marketing über messbare Nachhaltigkeitsziele fördern.
 
+<br>
+<div class="btn-one">
+    <a href="/files/case-studies/case-study-nextcloud-blue-angel.pdf"><span>Nextcloud Case Study entdecken</span></a>
+</div>
+
+
 
 {{< whiteblock >}}
 Zertifizierungsprozess
