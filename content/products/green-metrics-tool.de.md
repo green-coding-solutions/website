@@ -27,25 +27,63 @@ Bitte lesen Sie alle Details auf Github und in der Dokumentation.
 
 ---
 
-## Screenshots der Einzelmessungen
 
-{{< rawhtml >}}
-<img id="screenshots" class="ui rounded bordered image" src="/img/products/gmt-screenshot-1.webp" alt="GMT Screenshot" loading="lazy" style="margin:auto;">
-<br>
-<img class="ui rounded bordered image" src="/img/products/gmt-screenshot-2.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
-<br>
-<img class="ui rounded bordered image" src="/img/products/gmt-screenshot-3.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
-<br>
-<img class="ui rounded bordered image" src="/img/products/gmt-screenshot-4.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
-<br>
-{{< /rawhtml >}}
 
-## Screenshots der Vergleichsansicht
-{{< rawhtml >}}
-<img class="ui rounded bordered image" src="/img/products/gmt-screenshot-5.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+## Community Version / Enterprise Version
+
+Wir glauben an Open Source und daran, dass für die Unterstützung nachhaltiger Software die Messwerkzeuge frei zugänglich
+und falsifizierbar sein müssen.
+
+Die **Community Version** bietet alle Funktionen für Messungen und Benchmarking mit einer <u>kostenlosen Open Source AGPL-v3 Lizenz.</u>
+
+Wir bieten jedoch auch eine **gehostete Version** als **SaaS** an, die einige Premium-Funktionen und einen Support-Plan enthält.
+
+{{< include-partial "gmt-pricing-table.html" >}}
+
+---
+
+<center>
+
+## Blue Angel Certification
+
+
+<p>Our Tool is Blue Angel for Software certified!</p>
+<img class="ui rounded image" src="/img/products/GMT_and_BE@1x.webp" srcset="/img/products/GMT_and_BE@2x.webp 2x, /img/products/GMT_and_BE@1x.webp 1x" width=450>
 <br>
-<img class="ui rounded bordered image" src="/img/products/gmt-screenshot-6.webp" alt="GMT screenshot" loading="lazy"style="margin:auto;">
+<a class="ui orange button" href="{{< relref path="insights/blauer-engel" >}}"><i class="right chevron icon"></i> Find out more details.</a>
+</center>
 <br>
-{{< /rawhtml >}}
+
+
+<br>
+<div class="ui horizontal divider header"><i class="eye icon"></i>Single Run View</div>
+<br>
+
+<div id="screenshots"></div>
+
+{{< image "/img/products/gmt-screenshot-1.webp" "rounded full-width" >}}
+{{< image "/img/products/gmt-screenshot-2.webp" "rounded full-width" >}}
+{{< image "/img/products/gmt-screenshot-3.webp" "rounded full-width" >}}
+{{< image "/img/products/gmt-screenshot-4.webp" "rounded full-width" >}}
+
+---
+
+<br>
+<div class="ui horizontal divider header"><i class="eye icon"></i>Comparison View</div>
+<br>
+
+{{< image "/img/products/gmt-screenshot-5.webp" "rounded full-width" >}}
+{{< image "/img/products/gmt-screenshot-6.webp" "rounded full-width" >}}
+<br>
+
+---
+
+<br>
+<div class="ui horizontal divider header"><i class="eye icon"></i>Enterprise / SaaS</div>
+<br>
+
+<div id="optimizations"></div>
+
+{{< image "/img/products/gmt-optimizations.webp" "rounded huge" >}}
 
 <div class="clear"></div>
