@@ -16,7 +16,7 @@ Intel RAPL readings.
 {{< /rawhtml >}}
 
 You can see the full details of our demo runs with the static version of the
-Green Website Foundation Page in our [Green Metrics Tool Measurements Overview](https://metrics.green-coding.io/index.html)
+Green Web Foundation Page in our [Green Metrics Tool Repositories Overview](https://metrics.green-coding.io/runs.html&show=repositories)
 
 All metrics providers are made in a UNIX-style philosphy, which means they provide
 very conscise and scoped functionality, but can be chained through redirecting
