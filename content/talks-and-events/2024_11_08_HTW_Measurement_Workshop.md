@@ -26,8 +26,3 @@ Thanks again to [Prof. Dr. Volker Wohlgemuth](https://www.htw-berlin.de/hochschu
 Small marketing pitch: In case you are also interested to have a workshop or some training for you team contact us. We are open for hire!
 
 See some details about our workshops here: [Workshops & Trainings](https://www.green-coding.io/services/workshops-and-trainings/)
-
-
-## Slide-Deck PDF
-
-[Download Slides](/slides/2025_07_09_Blauer_Engel_Green_Coding_Meetup_small-compressed.pdf)

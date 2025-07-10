@@ -53,3 +53,6 @@ This talk explores two key approaches:
 We’ll demonstrate how these patterns can be implemented using Azure and Kubernetes, including how to “shed” load, dynamically limit scaling based on CO₂ intensity, and source reliable energy predictions, which will all be illustrated through live demos.
 
 
+## Slide-Deck PDF
+
+[Download Slides](/slides/2025_07_09_Blauer_Engel_Green_Coding_Meetup_small-compressed.pdf)
