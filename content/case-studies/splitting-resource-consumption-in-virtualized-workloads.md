@@ -133,7 +133,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.  12443.8 avail Mem
 ```
 
 Noticable is the kernel worker *kworker/u16:0+events_unbound* and also quite high consuming *gnome-shell* process.
-For the latter the browser is doing some rendering via the CPU and this is quite expensive. If you do rendering on the GPU this will not be present.
+For the latter the browser is doing some rendering via the CPU (seen bc the command string contains some `llvmpipe` part) and this is quite expensive. If you do rendering on the GPU this will not be present.
 
 
 ### Using VMs
