@@ -366,7 +366,7 @@ nav li a{text-decoration: none;}
 
 @media (max-width: 1300px) {
     .menubtn{
-        padding: 8px 4px;
+        padding: 8px 8px;
     }
 
 }
