@@ -33,21 +33,27 @@ On this page we want to hightlight how to get from typical values like **time** 
                         </a>
                     </div>
                     <p></p>
-                    <img class="ui large floated right rounded bordered image" src="/img/co2-formulas/boundaries_network_emissions.webp">
+                    
                     <p>When you want to quantify the cost of transferring an amount of data through the internet you would need to measure at every hop of the packet and add up cost for routers, cables, tranmission towers etc.</p>
                     <p>Since this measurement data is not available a heuristic is used that estimates the cost of all this network equipment the data has to flow through based on the actual transferred amount of data in GB.</p>
                     <p>When you have the value already in GB you can just convert them with a constant factor to kWh.</p>
                     <p>As you might suggest this seemingly easy formula makes a lot of assumptions and uses a lot of averages.</p>
                     <p>Typically these approaches either follow a top down approach by looking at the electricity bill of a telecom provider and then the network transmission reporting to divide the two numbers.</p>
                     <p>Other approaches are to really trace the path of some sample packets and look at every piece of network equipment on the way and then on its power draw for the transmission only.</p>
-                    <p>There are also other approaches but all have downsides and upsides. The number of <strong>0.06 kWh / GB</strong> is already a mix with the idea to get the best out of all of these approaches.</p>
-                    <p>The study linked in the source [1] down below also notes that through advances in efficiency the electric intesity drops since 2015 by around a half every 2 years and suggests that an extrapolation for the coming years might be a valid assumption. This would bring the value in <strong>2025</strong> down to a <strong>~0.001875 kWH / GB</strong> <!-- 0.06 / (2^(9/2)) --></p>
-                    <p>However this model is not without critique, as the real nature of network devices to date is that they consume 80% of their peak capacity already in idle mode. The rest is a proportional factor according to the usage of the possible bandwidth. Many models have been proposed to better attribute this reality on the real electricity cost for application that uses the network, however time-share or data-share models all have different downsides [2][3].</p>
-                    <p>We deciced to use the linear approach of network transfer attribution to power consumption in our tools as it bests incentives the user to keep the network traffic to a minimum. No matter which current known calculation method is used it will be inaccurate still and none of the current methods can reliably incorporate the real costs of provisioning new hardware for bandwith increase back in time to the pool of applications that tipped the providers to increase the bandwith. This we have also discussed with one of the paper authors on GitHub [4]</p>
+                    <p>There are also other approaches but all have downsides and upsides. We are using the *Energy Intensity Model* which is described in [0] - See a more detailed discussion about this in <a href="{{ relURL "blog/network-carbon-emissions-in-green-software" }}">Network carbon emissions in green software - how to quantify and keep actionable</a></p>
+                    <p>[0] <a href="https://vs.inf.ethz.ch/publ/papers/Coroama2021_InternetEnergy.pdf">Coroama, V. (2021) - Investigating the inconsistencies among energy and energy intensity estimates of the internet - Swiss Federal Office of Energy SFOE</a></p>             
                     <h3>Included Network parts</h3>
-                    <p>The important point to note with this number is which parts of the network are included. In the picture on the right you see the included parts. <strong>Only the Access Network and the IP core network is included</strong>, which means the connection between datacenters and telecom providers.</p>
-                    <p>Not included are the networking inside of the datacenters and also no end-user devices or their in-Home wifi. The calculation only goes to the curbside.</p>
-                    <p>Also important: <strong>Only fixed line transmissions</strong> are included in this number. No mobile traffic, which is typically more energy intensive by at least the factor 2-3x.</p>
+                    <img class="ui large floated right rounded bordered image" src="/img/blog/boundaries_network_emissions_coroma.webp">
+                    <p>The important point to note with this number is which parts of the network are included. In the picture on the right you see that for the model we favor we recommend to select WAN+FAN+RAN. A good weighting of FAN and RAN could be that FAN makes up about 10% of the connection types
+while FAN makes up 90%. (Keep in mind that mobile connections that come via WLAN are still considered FAN).</p>       
+                    <h3>Usable Number</h3>
+                    <div class="ui four mini statistics">
+                        <div class="statistic">
+                            <div class="value">0.04106063</div>
+                            <div class="label">kWh/GB</div>
+                        </div>
+                        Given the assumtions from the included network parts above and using [0]
+                    </div>
                     <h3>Alternative numbers</h3>
                     <p>Recently also a very detailed study from <a href="https://resilio.tech">Resilio</a> for the French Government produced some different numbers which are even about one order of magnitude lower. Since they have been using the accredited methodology from ADEME it might make sense to use these numbers in France specifically if not the EU. [5]</p>
                     <p>[1] <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630">Untangling the estimates</a></p>
