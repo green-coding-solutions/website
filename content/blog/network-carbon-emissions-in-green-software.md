@@ -1,22 +1,19 @@
 ---
-title: "Network Carbon Emissions in Green Software - How to quantify and keep actionable"
-date: 2025-07-28
+title: "How to Measure and Act on Network Carbon Emissions in Green Software"
+date: 2025-08-05
 author: "Arne Tarara & David Kopp"
 authorlink: "https://www.linkedin.com/in/arne-tarara/"
 ---
 
-Green Software is all about making software emit less carbon emissions. Most parts of that can be directly quantified
-as the compute, storage, memory etc. are physically accessible.
+We have gotten pretty good at measuring the emissions from things like computing, storage and memory usage, because the hardware is right in front of us. But when it comes to network traffic, things get murky.
 
-A big unknown and supposedly big contributor to carbon emissions of IT however is the network traffic.
-Since we built the internet to be hyper decentralised and routing packages in the internet is a beast of it's own no
-one can guarantee you if a package from Berlin to Amsterdam will go more or lest directly or take a detour via Belgium, 
-or even through Poland and Denmark.
+## So what is the carbon footprint of sending a cat meme? ##
 
-Also you do not know which hardware is used along the way to repeat the signal and route it accordingly.
+The internet is a tangled web of cables, routers, and towers and your data might take a wildly unpredictable route from Berlin to Amsterdam (via Belgium, Poland or Denmark). 
 
-Academia has looked at this problem in the past through different approaches and this blog article shall analyse
-which of these models is most useful for Green Software Practicioners.
+Basically, we often can’t know the exact path or what networking hardware is used along the way, which makes it difficult to know how much energy is really being used. Academia has looked at this problem in the past through different approaches and this blog article shall analyse which of these models is most useful for Green Software Practicioners. 
+
+We’ll compare two main methodologies (energy intensity vs. power-based models), discuss which data inputs make sense in 2025, consider system boundaries (which parts of the network to include), and address whether metrics like the Software Carbon Intensity (SCI) score should incorporate network emissions.
 
 Ready for a ride? Let's dive in! (we tried out a new short and bullet point format which we believe is nice to read. leave us your feedback how you like it via [mailto:arne@green-coding.io](arne@green-coding.io))
 
@@ -26,9 +23,8 @@ Ready for a ride? Let's dive in! (we tried out a new short and bullet point form
 
 Yes, because:
 
-- Network data transfers are relevant and account for approximately 23% of GHG emissions in the ICT sector.  
-  *(Source: Green IT Association 2025 – [https://t.ly/greeniteco.IENM2025](https://t.ly/greeniteco.IENM2025))*
-- It is important to make the impact of network data transfers visible.
+- Network data transfers should be measured and made visible because omitting them would ignore roughly 23% of the GHG emissions caused by the ICT sector. *(Source: Green IT Association 2025 – [https://t.ly/greeniteco.IENM2025](https://t.ly/greeniteco.IENM2025))*
+- It is important to make the impact of network data transfers visible so that we know how to steer the ship. 
 
 <br>
 
@@ -36,8 +32,10 @@ Yes, because:
 
 Two main methodologies are used to estimate network emissions:
 
-- **Energy Intensity Model**
-- **Power Model**
+- **Energy Intensity Model**: Estimates emissions based on data valume using factors like kilowatt-hours per gigabyte (kWh/GB)
+- **Power Model**: Acconts for the constant energy use of network hardware over time, even when idle, making them less tied to data valume.
+
+Now we will break down how each model works, including their pros and cons, and see which one offers more actionable insights greener software. 
 
 <br><br>
 
@@ -48,24 +46,33 @@ Two main methodologies are used to estimate network emissions:
 - Based on the volume of data transferred (e.g., kWh/GB or total kWh)
 - Allows allocation of emissions based on the amount of data consumed
 
+So if that cat meme we have been dying to send is 1MB and the network intensity is 5Wh/GB, sending 1,000 memes would cost about 5Wh. The factor can include just operational energy (e.g. routers, switches, towers) or also embodied infrastructure energy (depending on the scope), and can be converted to CO₂ using a grid emissions factor (global or region-specific).
+
 <br>
 
 **Strengths:**
 
-- Can be used for attributional reasoning
-  - e.g., within an organization: "Department X is responsible for Y% of network emissions"
-- Enables identification of main drivers
-- Strongly incentivizes data volume reduction, which is beneficial even without precise quantification:
-  - **Direct:** Less data processing required
+- **Clear attribution**
+  - e.g., within an organization: "Team A’s cat meme uploads used 500 GB last month = X kWh and Y kg CO₂," helping teams see who's using the most bandwidth and why
+
+- **Simple and Actionable**: Just data x factor. Once you know that more **memes = more emissions**, it becomes obvious where to cut waste (like oversized images or uncompressed videos).
+  
+- **Enables  teams to spot the "big offenders"**: By measuring impact per GB, it helps teams identify the real data hogs like an autoplaying cat video feed so they know where to optimise (e.g., compress, cache, or cut).
+
+**Efficiency Wins**:
+
+  - **Direct:** Sending less data means less energy spent on servers and devices.
   - **Indirect:**
-    - Less load during peak times of the network infrastructure ensures that further expansion of the network infrastructure is slowed down (good in terms of operational and embodied emissions)
-    - Avoiding bloatware leads to longer end user device lifespan
+    - Cutting back during peak times eases network load and delay the need for expanding network capacity (like new routers, base stations) thereby avoiding additional operational and embodied emissions from that infrastructure in the future.
+
 
 <br>
 
-**Problems:**
+**Challenges:**
 
 - Network infrastructure energy use does not scale proportionally with data volume
+ - e.g., This means that Internet hardware (routers, towers) stay powered on even when no cat memes are being sent. So sending one extra meme at midnight might use almost no extra energy, while sending it during peak hours could strain the network and trigger more energy use. The "per GB" model does not capture this non-linearity.
+   
 - Global average values ignore context:
   - Physical distance between client and server
   - Geographic location (and local grid CO₂ intensity)
@@ -73,57 +80,79 @@ Two main methodologies are used to estimate network emissions:
 
 <br>
 
-**Consequences:**
+### **Limitations of the Energy Intensity Model**
 
-- Not suitable for detailed analysis
-  - Creates misleading impression that more data always equals more energy
-- Not usable for consequential reasoning
-  - Example: halving the data would misleadingly suggest halved emissions
-- Only reliable if total data volume and infrastructure energy consumption are known
+- **Misleading for Change**:  
+  If your app compresses memes, the model might claim “50% less energy!” But unless the underlying hardware powers down, the real savings are much smaller. It also assumes doubling meme traffic doubles emissions, which isn’t true when networks are under capacity.
 
-<br>
+- **Accuracy Depends on Data**:  
+  Without knowing total network energy and traffic, the numbers are just rough guesses. If some parts of the system (like mobile towers) are left out, emissions are underestimated.
 
-**References:**
+> **Bottom line**: The “energy per meme” model is great for spotting waste and driving better behaviour — but it’s a rough yardstick, not an exact science.
 
-- Seeliger et al. (2024)  
-- Guennebaud & Bugeau (2024)
+---
 
-<br><br>
+### **Power Model (Time-Dependent / Load-Based)**
 
-### Power Model
+Unlike the energy intensity model, the **power model** focuses on how long network devices are running and how much load they handle — not just how much data is transferred.
 
-**Description:**
+For example:  
+Your router uses energy just to stay on (even when no cat memes are being sent). That’s **idle power**. When you send memes, it draws more power depending on **how much data** and **for how long**.
 
-- Recognizes that energy consumption is time-dependent and occurs even when idle
-- Assumes high base-load consumption in distribution networks
-- Total energy = fixed idle load + variable load proportional to data
+- Sending one cat meme quickly may use more power for a short time.  
+- Sending it slowly may use less power over a longer period.  
+> Total energy might be similar — what matters is **power × time**, not just bytes.
 
-<br>
+To apply this model, you need data on device energy at rest and under load — something researchers are now starting to measure.
 
-**Strengths:**
+---
 
-- More accurately reflects current real-world conditions
-- Enables analysis of short-term energy impacts when content is transmitted to end-users
+### **Strengths of the Power Model**
 
-<br>
+- **Matches How Networks Actually Work**:  
+  Captures the fact that **a lot of energy is spent just keeping the network running**, even when no memes are being sent.  
+  This means it can more **accurately estimate the energy impact** of a data transfer — especially short bursts.  
+  > Example: One small meme may have near-zero incremental energy if the network is already running.
 
-**Problems:**
+- **Enables Operational Insights**:  
+  Helps answer real-world scaling questions like:  
+  _“What happens if 100,000 users send memes at once?”_  
+  Useful during traffic spikes, rollouts, livestreams, etc.
 
-- Actual network usage duration can only be captured in production, not in isolated lab environments
-- Sensitive to the power ratings of network equipment, which must be accurate
+- **Reflects Current Network Design**:  
+  Networks are designed for **peak load**, staying powered on constantly.  
+  The power model separates **fixed baseline energy** from **variable traffic-driven energy**, encouraging smarter management (e.g., sleep modes).
 
-<br>
+> **Summary**:  
+> Power models offer a **more accurate, real-time picture** of network energy. They show the **nonlinear relationship** between data and emissions, challenging the “more bytes = more energy” logic.
 
-**References:**
+---
 
-- Seeliger et al. (2024)  
-- Mytton, Lundén & Malmodin (2024)
+### **Challenges of the Power Model**
+
+- **Harder to Build**:  
+  Needs detailed energy data (idle vs. load) for network hardware, which is often proprietary or unavailable.  
+  Calibration with real-world measurements is required.
+
+- **Timing Matters**:  
+  This model cares about **how long data occupies the network**.  
+  But replicating real-world usage (like idle traffic or mobile sync) is tough in lab settings.
+
+- **Sensitive to Assumptions**:  
+  Overestimating or underestimating device power (e.g., assuming 200W when it’s 150W) can skew results.  
+  As hardware evolves (e.g., 5G rollout), models need **constant updates**.
+
+> **In short**:  
+> Power models are **more precise** but also **more complex**.  
+> As **David Mytton et al. (2024)** show, they can correct major mistakes in simpler models — but only if you're willing to put in the work.
+
 
 
 <br><br>
 
 
 ## Which energy intensity values should be used in 2025?
+Even within the energy intensity approach, the assumed factor (Wh per GB) can vary wildly. Different tools and studies in 2025 quote very different numbers for network energy per data, depending on scope and methodology. Let’s compare a few notable ones:
 
 ### Tool Comparison
 
@@ -136,93 +165,170 @@ Two main methodologies are used to estimate network emissions:
 | **GreenFrame**        | 11               |                                                                                                                               | [GreenFrame README](https://github.com/marmelab/greenframe-cli/blob/main/src/model/README.md) |
 | **Greenspector Studio** | ?              | Uses proprietary model based on multiple parameters                                                                           |  [Greenspector's Methodology](https://greenspector.com/wp-content/uploads/2025/05/Methodology_Greenspector_full_EN-Version-202405.pdf)                                                                         |
 
-### Study-Based Estimates
+### Why do Network Energy Estimates vary so much? ###
 
-**Aslan et al. (2018):**
+Estimates range from under **2 Wh/GB** to over **70 Wh/GB** — that’s a **40× difference**! Why? It depends on what’s included in the calculation:
 
-- **System boundary**: core and fixed-line networks (but likely only WAN according to Coroamă)
-- **Trend**: Energy intensity halves every ~2 years
-    - 2015: 0.06 kWh/GB → extrapolated 2025: ~0.001875 kWh/GB
-- Large discrepancy when compared with overall WAN energy estimates using Cisco data
-- **Limitations:**
-  - Does not include access networks (FAN, RAN)
-  - Coroamă (2021): bottom-up models often underestimate due to system complexity
+- **System boundaries vary**: Some models only include core networks, while others factor in access networks, end-user devices, and even manufacturing.
 
-**Coroamă (2021):**
+### Low estimates (e.g. GMT ~1.9 Wh/GB):
+- Based on highly efficient core network scenarios.
+- Inspired by studies like **Aslan et al.** on fixed-line networks.
+- **Operational-only**: does not include end-user energy or embodied emissions.
+- Considered **conservative (low)**.
 
-- **System boundary** includes WAN + FAN + RAN
-- 2020 values:
-  - WAN: 0.02 kWh/GB  
-  - FAN: 0.07 kWh/GB  
-  - RAN: 0.2 kWh/GB
-- Reduction trends (yearly energy intensity reduction factor):
-  - WAN: 0.8  
-  - FAN: 0.85  
-  - RAN: 0.8
-- Extrapolated 2025 values:
-  - WAN: 0.0065536 kWh/GB 
-  - FAN: 0.031059372 kWh/GB 
-  - RAN: 0.065536 kWh/GB 
+### High estimates (e.g. CO2.js at 72 Wh/GB, Cardamon at 59 Wh/GB):
+- Include **everything**: core + access networks, end-user devices, and embodied carbon (e.g. emissions from manufacturing hardware).
+- Designed to capture the **full lifecycle impact**.
+- Considered **intentionally overestimated**.
 
-## Which network segments should be included?
+### Mid-range tools (e.g. GreenFrame):
+- Include some components beyond the core (like access networks).
+- Strike a **balance** between minimal and full coverage.
 
-<img class="ui huge rounded bordered image" src="/img/blog/boundaries_network_emissions_coroma.webp">
+---
 
-Studies define different system boundaries. Coroamă (2021) includes:
+## Research-Based Estimates
 
-- **WAN (Wide Area Network)**: includes core and metro
-- **FAN (Fixed Access Network)**: includes DSLAM, CPE (modems, routers)
-- **RAN (Radio Access Network)**: mobile networks
+### Aslan et al. (2018):
+- Found very low energy use (~0.007 kWh per GB in 2020) for moving data through the core Internet.
+- Did not include mobile networks, home routers or Wi-Fi.
+- Useful for **best-case scenarios**, but **hugely underestimates** total Internet energy use — by 5 to 25×.
 
-**Important notes:**
+### Coroamă (2021):
+- Broke down the Internet into:
+  - **WAN (core backbone)**: very efficient
+  - **FAN (home routers/local networks)**: medium use
+  - **RAN (mobile networks)**: most energy-hungry
+- Sending 1 GB over mobile can use **30× more energy** than over fiber.
+- Predicted **mobile data** will remain most energy-intensive by 2025.
 
-- CPE energy use can exceed WAN energy use
-- RAN is significantly more energy-intensive per GB than WAN
+### Guennebaud & Bugeau (2024):
+- Warned against relying on “average energy per GB”.
+- Argued we need more **context** — like **when** and **how** data is sent — for accuracy.
 
-**GMT capabilities:**
+### Mytton, Lundén & Malmodin (2024):
+- Studied real mobile network data.
+- Found networks consume energy just to **stay on**, even when idle.
+- Data reduction doesn’t always mean energy reduction — especially short-term.
 
-- GMT can measure backend and frontend systems (e.g., via headless browser)
-- However, including all segments for purely backend systems (e.g., DC-to-DC transfers) would exaggerate network share
+### Seeliger et al. (2024):
+- Wrote a guide on measuring emissions from **video streaming**.
+- Likely offers tips on when to use different energy models.
 
-**Example calculation (1 GB data transfer, 2020, Coroamă coefficients):**
+---
 
-- **Only WAN:** 0.02 kWh  
-- **WAN + 50% FAN + 50% RAN:** 0.02 + 0.07/2 + 0.2/2 = 0.155 kWh  
-  → 7.75× higher  
-- **Mobile-only usage:** 0.02 + 0.2 = 0.22 kWh → 11× higher
+## Which Network Segments Should Be Included?
 
-## Should the SCI score include network emissions?
+When calculating network emissions for your software, define your system boundary. Here's a breakdown:
 
-Modern software carbon emissions measurement tools often use the SCI by the Green Software Foundation.
+- **WAN (Wide Area Network)**: Core of the internet — long-distance links and routers. Low and decreasing energy per GB. Some tools only include WAN.
+- **FAN (Fixed Access Network)**: "Last mile" to users — local ISPs, fiber/cable, Wi-Fi routers.
+- **RAN (Radio Access Network)**: Mobile networks — **most energy-hungry**. Should be included for mobile-first apps.
 
-It is thus to be reasoned wether network carbon emissions should be included in the SCI or not.
+### Important Notes:
+- **CPE energy use can exceed WAN energy use**.
+- **RAN is 10–30× more energy-intensive per GB** than WAN.
 
-**SCI Spec Quote:**
+### GMT Capabilities:
+- Measures **backend and frontend systems** (e.g., headless browser).
+- For **backend-only** activity (e.g., data center to data center), including user networks **overstates emissions**.
 
-> The calculation of SCI shall include all supporting infrastructure and systems that significantly contribute to the software’s operation.
+### Example Calculation (1 GB transfer, Coroamă, 2020):
+- Only WAN: `0.02 kWh`
+- WAN + 50% FAN + 50% RAN: `0.155 kWh` → **7.75× higher**
+- Mobile-only usage: `0.22 kWh` → **11× higher**
 
-**Pro:**
+---
 
-- Network usage can be significant → inclusion is justifiable
+## So What Segments Should You Include?
 
-**Contra:**
+Include the segments that significantly contribute to your software’s operation.
 
-- The kWh/GB method isn't valid for consequential reasoning
-  - An application version change affecting only data volume may misleadingly reduce the SCI score → could wrongly imply a reduction in carbon footprint
+- If mobile-first: include **RAN + FAN**
+- If enterprise on wired networks: **FAN only**
+- Always include **WAN**
 
-**Verdict:**
-We think the network emissions calculated via the kWh/GB method should **not** be included in the SCI score.
+The **Green Software Foundation's SCI** standard says to include **any infrastructure that meaningfully supports your software**.
+
+In GMT, we assume:
+- **90% fixed (FAN)**, **10% mobile (RAN)**
+- Always include **WAN**
+
+**Reminder**: Wi-Fi is part of **FAN**, not RAN (So even if users are on phones, they are often using fixed-line networks when on Wi-Fi).
+
+But if you're measuring backend-only activity—like server-to-server transfers in a data center—then including access networks (FAN/RAN) would overestimate emissions. Context matters. Define your boundary based on how your software is actually used.
 
 
+---
 
-## Conclusion for Green Software Practicioners
+## Use Case: Cutting Carbon from Cat Videos
 
-We believe that the *Energy Intensity Model* is the most helpful when making network carbon emissions visible and
-keeping them actionable to make software greener.
+A streaming platform notices heavy mobile viewing of HD cat videos. They want to reduce network emissions.
 
-A possible setup for a measurement tool, that we for instance used in the [Green Metrics Tool](https://www.green-coding.io/products/green-metrics-tool/)
-is that we selected the scope to contain WAN+RAN+FAN and assumed that FAN makes up about 10% of the connection types
-while FAN makes up 90%. (Keep in mind that mobile connections that come via WLAN are still considered FAN).
+### Step 1: Measure
+- 1 hr at 1080p = ~3 GB
+- `3 GB × 50 Wh/GB = 150 Wh = 75g CO₂`
+
+### Step 2: Act
+- Lower quality to 720p (~1.8 GB/hr)
+- `1.8 GB × 50 Wh/GB = 90 Wh = 45g CO₂`
+- **40% energy savings**
+
+### Step 3: Reality Check (Power Model)
+- Network gear stays on regardless of data size.
+- One user switching has little effect.
+- But **millions** switching = **fewer upgrades**, less energy.
+
+### Step 4: Results
+- **35% lower data per user**
+- **Fewer network peaks**
+- **ISP defers hardware upgrade** → less embodied carbon
+
+**Takeaway**:  
+- **Energy Intensity model**: fast insights, actionability  
+- **Power Model**: realistic scale-aware checks
+
+---
+
+## Should Network Emissions Count Toward SCI?
+
+### Pro (Include):
+- Network is a major emissions source in some apps.
+- Avoids blind spots and burden shifting.
+- Aligns with SCI's principles.
+
+### Con (Exclude or Treat Carefully):
+- **Simplistic methods distort** outcomes.
+- Might incentivize data savings that **don’t cut real emissions**.
+- Unfair comparisons: Wi-Fi vs. mobile.
+- Hard to verify: ISP data is opaque.
+
+### Verdict:
+Don't include **network emissions** (via kWh/GB) in the **SCI score** as it is too simplistic and can give a false sense of precision, mislead optimisation efforts, and make scores hard to compare.
+Use them as a **separate diagnostic** for awareness and improvement.
+
+---
+
+## Conclusion & Recommendations for Practitioners
+
+### Why Energy Intensity (kWh/GB) Works Well:
+- **Simple**: Just multiply your data volume.
+- **Tool-friendly**: Easy to add to dashboards or pipelines.
+- **Concrete**: “This stream = 90g CO₂” → motivates teams
+
+### Why Power Model is Valuable (but Complex):
+- **More accurate**, but:
+  - Requires **hardware data**
+  - Non-linear: network stays “on”
+  - Best for **deep research or ISPs**
+
+### Bottom Line:
+Use **Energy Intensity (kWh/GB)** as a **starting point** to raise awareness, prioritize efficiency, and track progress.
+Use the **Power Model** if you’re doing advanced research or want to model real-world network behavior more precisely.
+
+Think of energy intensity as a compass — not a precise GPS, but enough to steer in the right direction.
+
 
 ---
 
