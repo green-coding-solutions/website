@@ -1,0 +1,11 @@
+/* fix multi-line list items don't maintain proper indentation */
+ul li {
+    margin-left: 0 !important;
+    padding-left: 1em !important;
+    text-indent: -1em !important;
+}
+
+/* Add padding to table rows*/
+tr td {
+  padding: 5px 0;
+}
