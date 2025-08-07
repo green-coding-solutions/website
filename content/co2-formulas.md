@@ -29,40 +29,33 @@ On this page we want to hightlight how to get from typical values like **time** 
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui blue ribbon label" href="#gigabytes-to-kwh" id="gigabytes-to-kwh">
-                            <h3 style="color: #fff;">Gigabytes to kwH</h3>
+                            <h3 style="color: #fff;">Gigabytes to kWh</h3>
                         </a>
                     </div>
                     <p></p>
-                    
-                    <p>When you want to quantify the cost of transferring an amount of data through the internet you would need to measure at every hop of the packet and add up cost for routers, cables, tranmission towers etc.</p>
+
+                    <p>When you want to quantify the cost of transferring an amount of data through the internet you would need to measure at every hop of the packet and add up cost for routers, cables, transmission towers etc.</p>
                     <p>Since this measurement data is not available a heuristic is used that estimates the cost of all this network equipment the data has to flow through based on the actual transferred amount of data in GB.</p>
                     <p>When you have the value already in GB you can just convert them with a constant factor to kWh.</p>
                     <p>As you might suggest this seemingly easy formula makes a lot of assumptions and uses a lot of averages.</p>
                     <p>Typically these approaches either follow a top down approach by looking at the electricity bill of a telecom provider and then the network transmission reporting to divide the two numbers.</p>
                     <p>Other approaches are to really trace the path of some sample packets and look at every piece of network equipment on the way and then on its power draw for the transmission only.</p>
-                    <p>There are also other approaches but all have downsides and upsides. We are using the *Energy Intensity Model* which is described in [0] - See a more detailed discussion about this in <a href="{{ relURL "blog/network-carbon-emissions-in-green-software" }}">Network carbon emissions in green software - how to quantify and keep actionable</a></p>
-                    <p>[0] <a href="https://vs.inf.ethz.ch/publ/papers/Coroama2021_InternetEnergy.pdf">Coroama, V. (2021) - Investigating the inconsistencies among energy and energy intensity estimates of the internet - Swiss Federal Office of Energy SFOE</a></p>             
+                    <p>There are also other approaches but all have downsides and upsides. We are using the <em>Energy Intensity Model</em> which is described in [0] - See a more detailed discussion about this on our blog: <a href="/blog/network-carbon-emissions-in-green-software/">How to Measure and Act on Network Carbon Emissions in Green Software</a>
+</p>
+                    <p>[0] <a href="https://vs.inf.ethz.ch/publ/papers/Coroama2021_InternetEnergy.pdf">Coroama, V. (2021) - Investigating the inconsistencies among energy and energy intensity estimates of the internet - Swiss Federal Office of Energy SFOE</a></p>
                     <h3>Included Network parts</h3>
                     <img class="ui large floated right rounded bordered image" src="/img/blog/boundaries_network_emissions_coroma.webp">
-                    <p>The important point to note with this number is which parts of the network are included. In the picture on the right you see that for the model we favor we recommend to select WAN+FAN+RAN. A good weighting of FAN and RAN could be that FAN makes up about 10% of the connection types
-while FAN makes up 90%. (Keep in mind that mobile connections that come via WLAN are still considered FAN).</p>       
+                    <p>The important point to note with this number is which parts of the network are included. In the picture on the right you see that for the model we favor we recommend to select WAN+FAN+RAN. A good weighting of FAN and RAN could be that RAN makes up about 10% of the connection types while FAN makes up 90%. (Keep in mind that mobile connections that come via WLAN are still considered FAN)</p>
                     <h3>Usable Number</h3>
                     <div class="ui four mini statistics">
                         <div class="statistic">
                             <div class="value">0.04106063</div>
                             <div class="label">kWh/GB</div>
                         </div>
-                        Given the assumtions from the included network parts above and using [0]
+                        <p>Given the assumptions from the included network parts above <br> and using extrapolated values from [0] for the year 2025.</p>
                     </div>
-                    <h3>Alternative numbers</h3>
-                    <p>Recently also a very detailed study from <a href="https://resilio.tech">Resilio</a> for the French Government produced some different numbers which are even about one order of magnitude lower. Since they have been using the accredited methodology from ADEME it might make sense to use these numbers in France specifically if not the EU. [5]</p>
-                    <p>[1] <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630">Untangling the estimates</a></p>
-                    <p>[2] <a href="https://github.com/intarchboard/e-impact-workshop-public/blob/main/papers/Schien_Rethinking-Allocation-v2.pdf">Daniel Schien, Paul Shabajee, Chris Preist. “Rethinking Allocation in High-Baseload Systems: A Demand-Proportional Network Electricity Intensity Metric.”</a></p>
-                    <p>[3] <a href="https://onlinelibrary.wiley.com/doi/10.1111/jiec.13512">Network energy use not directly proportional to data volume: The power model approach for more reliable network energy consumption calculations</a></p>
-                    <p>[4] <a href="https://github.com/green-coding-solutions/green-metrics-tool/issues/707">GitHub Discussion on whether incentivized approaches make still sense for attribution of network traffic data.</a></p>
-                    <p>[5] <a href="https://librairie.ademe.fr/7111-evaluation-of-the-environmental-footprint-of-internet-service-provisioning-in-france.html">Evaluation of the environmental footprint of internet service provisioning in France</a></p>
                 </div>
-                <!-- end segment -->                
+                <!-- end segment -->
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui yellow ribbon label" href="#from-kwh-to-co2e" id="from-kwh-to-co2e">
@@ -101,7 +94,7 @@ while FAN makes up 90%. (Keep in mind that mobile connections that come via WLAN
                 <div class="ui segment" id="calculating-savings">
                     <div class="header">
                         <a class="ui blue ribbon label" href="#from-joules-to-kwh" id="from-joules-to-kwh">
-                            <h3 style="color: #fff;">From Joules to kwH</h3>
+                            <h3 style="color: #fff;">From Joules to kWh</h3>
                         </a>
                     </div>
                     <p></p>
