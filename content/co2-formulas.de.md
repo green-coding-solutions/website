@@ -33,57 +33,43 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                         </a>
                     </div>
                     <p></p>
-                    <img class="ui large floated right rounded bordered image" src="/img/co2-formulas/boundaries_network_emissions.webp">
+
                     <p>Wenn Sie die Kosten für die Übertragung einer Datenmenge über das Internet beziffern wollen, müssen Sie jeden Schritt des Pakets messen und die Kosten für Router, Kabel, Sendemasten usw. addieren.</p>
                     <p>Da diese Messdaten nicht zur Verfügung stehen, wird eine Heuristik verwendet, die die Kosten der gesamten Netzausrüstung, durch die die Daten fließen müssen, auf der Grundlage der tatsächlich übertragenen Datenmenge in GB schätzt.</p>
                     <p>Wenn Sie den Wert bereits in GB haben, können Sie ihn einfach mit einem konstanten Faktor in kWh umrechnen.</p>
-                    <p>Diese scheinbar einfache Formel enthält jedoch eine Menge Annahmen und verwendet Durchschnittswerte.</p>
+                    <p>Wie Sie vermuten können, macht diese scheinbar einfache Formel viele Annahmen und verwendet viele Durchschnittswerte.</p>
                     <p>Typischerweise folgen diese Ansätze entweder einem Top-Down-Ansatz, bei dem die Stromrechnung eines Telekommunikationsanbieters und dann die Netzübertragungsberichte betrachtet werden, um die beiden Zahlen zu teilen.</p>
                     <p>Andere Ansätze bestehen darin, den Weg einiger Beispiel-Pakete wirklich zu verfolgen und jedes einzelne Netzgerät auf dem Weg zu untersuchen und dann den Stromverbrauch nur für die Übertragung zu ermitteln.</p>
-                    <p>Es gibt auch andere Ansätze, aber alle haben Vor- und Nachteile.  Die Zahl <strong>0.06 kWh / GB</strong> ist bereits ein Mix, die das Beste aus all diesen Ansätzen herausholen soll.</p>
-                    <p>In der Studie, die in der unten angegebenen Quelle [1] verlinkt ist, wird auch darauf hingewiesen, dass die Stromintensität durch Fortschritte bei der Effizienz alle zwei Jahre um etwa die Hälfte sinkt, und es wird angenommen, dass eine Extrapolation für die kommenden Jahre eine gültige Annahme sein könnte. Dies bring den Wert für den Umrechnungsfaktor in <strong>2023</strong> runter auf <strong>0.00375 kWH / GB</strong></p>
-                    <p>Dieses Modell ist jedoch nicht ohne Kritik, da die meisten Netzwerkkomponente ca. 80 % ihrer maximalen Leistungsaufnahme bereits im Leerlauf verbrauchen. Der Rest ist ein proportionaler Faktor, der von der Nutzung der möglichen Bandbreite abhängt. Es gibt Ansätze um dieser Realität der tatsächlichen Stromkosten für Anwendungen, die das Netzwerk nutzen, besser abzubilden, doch haben diese sog. Time-Sharing- oder Data-Sharing-Modelle alle unterschiedliche Nachteile [2].</p>
-                    <p>Wir haben uns entschieden, in unseren Tools den linearen Ansatz der Zuordnung von Netzübertragungen zum Stromverbrauch zu verwenden. Dieser bietet für den Nutzer den besten Anreizden Netzverkehr auf ein Minimum zu beschränken. Unabhängig davon, welche der derzeit bekannten Berechnungsmethoden verwendet wird, ist sie immer noch ungenau. Keine der derzeitigen Methoden kann die tatsächlichen Kosten für die Bereitstellung neuer Hardware für die Bandbreitenerhöhung zuverlässig vorraussagen. Der zusätzliche CO2-Ausstoß fällt nämlich immer erst dann wenn neue Netzwerkkomponente hinzugefügt werden. Nicht wenn mehr Datentraffic entsteht.</p>
+                    <p>Es gibt auch andere Ansätze, aber alle haben Vor- und Nachteile. Wir verwenden das <em>Energy Intensity Model</em>, das in [0] beschrieben wird - Siehe eine detailliertere Diskussion darüber in unserem Blog: <a href="/blog/network-carbon-emissions-in-green-software/">How to Measure and Act on Network Carbon Emissions in Green Software</a>
+</p>
+                    <p>[0] <a href="https://vs.inf.ethz.ch/publ/papers/Coroama2021_InternetEnergy.pdf">Coroama, V. (2021) - Investigating the inconsistencies among energy and energy intensity estimates of the internet - Swiss Federal Office of Energy SFOE</a></p>
                     <h3>Betrachtete Netzwerkkomponente</h3>
-                    <p>Wichtig für das Verständnis und die Vergleichbarkeit der berechenten Werte ist welche Teile des Netzwerk in die Betrachung mit einbezogen werden. In der Abbildung rechts sehen Sie die einbezogenen Komponenten. <strong>Nur das Zugangsnetz und das IP-Kernnetz sind enthalten</strong>, d.h. die Verbindung zwischen Rechenzentren und Telekommunikationsanbietern.</p>
-                    <p>Nicht enthalten sind die Teile innerhalb der Rechenzentren und auch keine Endnutzergeräte oder deren WLAN/LAN im Haus. Die Berechnung geht nur bis zur *Bordsteinkante*.</p>
-                    <p>Ebenfalls wichtig: <strong>Nur Festnetzübertragungen</strong> sind hier enthalten. Kein mobiler Datenverkehr, der in der Regel mindestens um das 2-3fache energieintensiver ist.</p>
-                    <h3>Wert in Gigabytes</h3>
-                    <div class="ui mini statistics">
+                    <img class="ui large floated right rounded bordered image" src="/img/blog/boundaries_network_emissions_coroma.webp">
+                    <p>Der wichtige Punkt bei dieser Zahl ist, welche Teile des Netzwerks enthalten sind. In dem Bild rechts sehen Sie, dass wir für das von uns favorisierte Modell empfehlen, WAN+FAN+RAN zu wählen. Eine gute Gewichtung von FAN und RAN könnte sein, dass RAN etwa 10% der Verbindungstypen ausmacht, während FAN 90% ausmacht. (Beachten Sie, dass mobile Verbindungen, die über WLAN kommen, immer noch als FAN betrachtet werden)</p>
+                    <h3>Verwendbarer Wert</h3>
+                    <div class="ui four mini statistics">
                         <div class="statistic">
-                            <div class="value">1</div>
-                            <div class="label">Gigabytes</div>
+                            <div class="value">0.04106063</div>
+                            <div class="label">kWh/GB</div>
                         </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
-                        <div class="statistic">
-                            <div class="value">0.06</div>
-                            <div class="label">GB / kWh</div>
-                        </div>
-                        <div class="statistic gc-stats-multiply"><div class="value">=</div></div>
-                        <div class="statistic">
-                            <div class="value">0.06</div>
-                            <div class="label">kWH</div>
-                        </div>
+                        <p>Basierend auf den Annahmen der oben eingeschlossenen Netzwerkteile <br> und unter Verwendung extrapolierter Werte aus [0] für das Jahr 2025.</p>
                     </div>
-                    <p>Wenn Ihr Wert in Megabytes angegeben ist, muss der Umrechnungsfaktor durch folgende Zahl geteilt werden <strong>1.000</strong> und ergibt sich zu <strong>0.00006 MB / kWh</strong></p>
-                    <p>[1] <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630">Untangling the estimates</a></p>
-                    <p>[2] <a href="https://github.com/intarchboard/e-impact-workshop-public/blob/main/papers/Schien_Rethinking-Allocation-v2.pdf">Daniel Schien, Paul Shabajee, Chris Preist. “Rethinking Allocation in High-Baseload Systems: A Demand-Proportional Network Electricity Intensity Metric.”</a></p>
                 </div>
                 <!-- end segment -->
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui yellow ribbon label" href="#from-kwh-to-co2e" id="from-kwh-to-co2e">
-                            <h3 style="color: #fff;">From kWh to CO2e</h3>
+                            <h3 style="color: #fff;">Von kWh zu CO2e</h3>
                         </a>
                     </div>
                     <p></p>
                     <img class="ui large floated right rounded bordered image" src="/img/co2-formulas/electricitymap_de.webp">
                     <p>Diese Umrechnung ist wahrscheinlich die relevanteste.</p>
                     <p>Damit meinen wir, dass die Unternehmen bereits die aktuelle Intensität ihres Netzes kennen und die Arbeitsbelastung entsprechend planen wollen.</p>
-                    <p>Die aktuelle Intensität des Stromnnetztes kann z.B. über <a href="https://app.electricitymaps.com/zone/DE">Electricitymap.com</a> abgerufen werden. In unseren Fall, in Deutschland, ist der Wert <strong>317 gCO2e/kWh</strong></p>
+                    <p>Die aktuelle Intensität des Stromnetzes kann z.B. über <a href="https://app.electricitymaps.com/zone/DE">Electricitymap.com</a> abgerufen werden. In unserem Fall, in Deutschland, ist der Wert im Moment <strong>334 gCO2e/kWh</strong> (2024 Durchschnitt) [6]</p>
                     <h3>Weltweite durchschnittliche Stromnnetzintensität</h3>
                     <p>Wenn Ihre Workload über mehrere Länder verteilt ist oder Sie überhaupt nicht wissen, wo Ihre Arbeitslast läuft, dann ist es am besten, den globalen Durchschnitt zu nehmen.</p>
-                    <p>Für 2021 ist dieser Wert: <strong>442 gCO2e/kWh</strong></p>
+                    <p>Für 2024 ist dieser Wert: <strong>473 gCO2e/kWh</strong> [7]</p>
                     <p>Setzt man diese Zahl in eine Berechnung ein, die mit kWh beginnt, kommt man direkt auf gCO2e, was Gramm CO2-Äquivalent bedeutet. Da nicht jeder chemische Prozess reines CO2 erzeugt, werden diese alle auf das äquivalente Klimaerwärmungspotenzial von CO2 umgerechnet, was zu CO2e führt</p>
                     <div class="ui five mini statistics">
                         <div class="statistic">
@@ -92,16 +78,17 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
                         <div class="statistic">
-                            <div class="value">442</div>
+                            <div class="value">436</div>
                             <div class="label">gCO2e/kWh</div>
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">=</div></div>
                         <div class="statistic">
-                            <div class="value">442</div>
+                            <div class="value">436</div>
                             <div class="label">gCO2e</div>
                         </div>
                     </div>
-                    <p>Quelle: <a href="https://ember-climate.org/insights/research/global-electricity-review-2022/">Ember Climate</a></p>
+                    <p>[6] <a href="https://app.electricitymaps.com/zone/DE/all/yearly">Electricitymaps Germany carbon intensity yearly</a></p>
+                    <p>[7] <a href="https://ember-energy.org/app/uploads/2025/04/Report-Global-Electricity-Review-2025.pdf">Ember Global Electricity Review 2025</a></p>
                 </div>
                 <!-- end segment -->
                 <div class="ui segment" id="calculating-savings">
@@ -163,7 +150,7 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui green ribbon label" href="#from-specs-to-kwh" id="from-specs-to-kwh">
-                            <h3 style="color: #fff;">Von TDP zu kWh</h3>
+                            <h3 style="color: #fff;">Von Specs zu kWh</h3>
                         </a>
                     </div>
                     <p></p>
@@ -179,7 +166,7 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                 <div class="ui segment">
                     <div class="header">
                         <a class="ui green ribbon label" href="#">
-                            <h3 style="color: #fff;">From Benchmarks to kWh</h3>
+                            <h3 style="color: #fff;">Von Benchmarks zu kWh</h3>
                         </a>
                     </div>
                     <p></p>
