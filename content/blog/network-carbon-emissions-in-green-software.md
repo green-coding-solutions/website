@@ -20,6 +20,10 @@ Ready for a ride? Let's dive in! (We tried out a new short and bullet point form
 
 ---
 
+{{< greenblock >}}
+Preface
+{{</ greenblock >}}
+
 ## Should tools display network emissions at all?
 
 Yes, because:
@@ -27,7 +31,6 @@ Yes, because:
 - Network data transfers should be measured and made visible because omitting them would ignore roughly 23% of the GHG emissions caused by the ICT sector. (Source: Green IT Association 2025)
 - It is important to make the impact of network data transfers visible so that we know how to steer the ship.
 
-<br>
 
 ## Which Calculation Methodologies Are Available?
 
@@ -40,7 +43,9 @@ Now we will break down how each model works, including their pros and cons, and 
 
 <br>
 
-### Energy Intensity Model
+{{< whiteblock >}}
+Energy Intensity Model
+{{</ whiteblock >}}
 
 This approach is based on the volume of data transferred, such as kilowatt-hours per gigabyte (kWh/GB) or total kilowatt-hours (kWh), and allows for the allocation of emissions according to the amount of data consumed.
 
@@ -80,9 +85,9 @@ So if that cat meme we have been dying to send is 1MB and the network intensity 
 > **Bottom line**:  
 > A useful **starting point** for action — not a precise measurement tool.
 
-<br>
-
-### Power Model (Time-Dependent / Load-Based)
+{{< greenblock >}}
+Power Model (Time-Dependent / Load-Based)
+{{</ greenblock >}}
 
 Unlike the energy intensity model, the **power model** focuses on how long network devices are running and how much load they handle — not just how much data is transferred.
 
@@ -132,17 +137,21 @@ To apply this model, you need data on device energy at rest and under load — s
 - **Tooling Complexity**  
   Too intricate for routine use in developer tools, CI pipelines, or product-level carbon reporting.
 
-> **Summary**:  
-> Power models offer a **more accurate, real-time picture** of network energy. They show the **nonlinear relationship** between data and emissions, challenging the “more bytes = more energy” logic.
-> However they are also **more complex**.  
-> As **David Mytton et al. (2024)** show, they can correct major mistakes in simpler models — but only if you're willing to put in the work.
+--- 
 
-> **Bottom line:**
-> The power model offers high fidelity but is best suited for researchers or network operators, not day-to-day software teams.
+ **Summary**:  
+ Power models offer a **more accurate, real-time picture** of network energy. They show the **nonlinear relationship** between data and emissions, challenging the “more bytes = more energy” logic.
+ However they are also **more complex**.  
 
-<br><br>
+ As **David Mytton et al. (2024)** show, they can correct major mistakes in simpler models — but only if you're willing to put in the work.
 
-## Which energy intensity values should be used in 2025?
+ **Bottom line:**
+ The power model offers high fidelity but is best suited for researchers or network operators, not day-to-day software teams.
+
+
+{{< whiteblock >}}
+Which energy intensity values should be used in 2025?
+{{</ whiteblock >}}
 
 Even within the energy intensity approach, the assumed factor (Wh per GB) can vary wildly. Different tools and studies quote very different numbers for network energy per data, depending on scope and methodology. Let’s compare a few notable ones:
 
@@ -253,9 +262,9 @@ In GMT, we assume:
 
 But if you're measuring backend-only activity—like server-to-server transfers in a data center—then including access networks (FAN/RAN) would overestimate emissions. Context matters. Define your boundary based on how your software is actually used.
 
-<br>
-
-## Use Case: Cutting Carbon from Cat Videos
+{{< greenblock >}}
+Use Case: Cutting Carbon from Cat Videos
+{{</ greenblock >}}
 
 A streaming platform notices heavy mobile viewing of HD cat videos. They want to reduce network emissions.
 
@@ -282,14 +291,18 @@ A streaming platform notices heavy mobile viewing of HD cat videos. They want to
 - **Fewer network peaks**
 - **ISP defers hardware upgrade** → less embodied carbon
 
-> **Takeaway**:
->
-> - **Energy Intensity model**: fast insights, actionability
-> - **Power Model**: realistic scale-aware checks
 
-<br>
+--- 
 
-## Should Network Emissions Count Toward SCI?
+ **Takeaway**:
+
+- **Energy Intensity model**: fast insights, actionability
+- **Power Model**: realistic scale-aware checks
+
+
+{{< whiteblock >}}
+Should Network Emissions Count Toward SCI?
+{{</ whiteblock >}}
 
 GMT can calculate the SCI score for a given use case scenario.  
 Should estimated network impacts be included in the SCI score?
@@ -312,9 +325,9 @@ Should estimated network impacts be included in the SCI score?
 Don't include **network emissions** (via kWh/GB) in the **SCI score** as it is too simplistic and can give a false sense of precision, mislead optimisation efforts, and make scores hard to compare.
 Use them as a **separate diagnostic** for awareness and improvement.
 
-<br>
-
-## Conclusion & Recommendations for Practitioners
+{{< greenblock >}}
+Conclusion & Recommendations for Practitioners
+{{</ greenblock >}}
 
 ### Why Energy Intensity (kWh/GB) Works Well
 
