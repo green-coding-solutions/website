@@ -49,7 +49,7 @@ Energy Intensity Model
 
 This approach is based on the volume of data transferred, such as kilowatt-hours per gigabyte (kWh/GB) or total kilowatt-hours (kWh), and allows for the allocation of emissions according to the amount of data consumed.
 
-So if that cat meme we have been dying to send is 1MB and the network intensity is 5Wh/GB, sending 1,000 memes would cost about 5Wh. The factor can include just operational energy (e.g. routers, switches, towers) or also embodied infrastructure energy (depending on the scope), and can be converted to CO₂ using a grid emissions factor (global or region-specific).
+So if that cat meme we have been dying to send is 1MB and the network intensity is 5 Wh/GB, sending 1,000 memes would cost about 5 Wh. The factor can include just operational energy (e.g. routers, switches, towers) or also embodied infrastructure energy (depending on the scope), and can be converted to CO₂ using a grid emissions factor (global or region-specific).
 
 **Strengths:**
 
@@ -78,12 +78,14 @@ So if that cat meme we have been dying to send is 1MB and the network intensity 
 - **Accuracy Depends on Data**  
   Without knowing total network energy and traffic, the numbers are just rough guesses. If some parts of the system (like mobile towers) are left out, emissions are underestimated.
 
-> **Summary**:  
-> The “energy per meme” model is **easy to use** and **great for quick insights**. It helps teams cut waste and track emissions by linking data volume to energy use.  
-> But it **oversimplifies reality**, ignoring how networks actually consume energy.
+---
 
-> **Bottom line**:  
-> A useful **starting point** for action — not a precise measurement tool.
+**Summary**:  
+The “energy per meme” model is **easy to use** and **great for quick insights**. It helps teams cut waste and track emissions by linking data volume to energy use.  
+But it **oversimplifies reality**, ignoring how networks actually consume energy.
+
+**Bottom line**:  
+A useful **starting point** for action — not a precise measurement tool.
 
 {{< greenblock >}}
 Power Model (Time-Dependent / Load-Based)
@@ -137,34 +139,34 @@ To apply this model, you need data on device energy at rest and under load — s
 - **Tooling Complexity**  
   Too intricate for routine use in developer tools, CI pipelines, or product-level carbon reporting.
 
---- 
+---
 
- **Summary**:  
- Power models offer a **more accurate, real-time picture** of network energy. They show the **nonlinear relationship** between data and emissions, challenging the “more bytes = more energy” logic.
- However they are also **more complex**.  
+**Summary**:  
+Power models offer a **more accurate, real-time picture** of network energy. They show the **nonlinear relationship** between data and emissions, challenging the “more bytes = more energy” logic.
+However they are also **more complex**.  
 
- As **David Mytton et al. (2024)** show, they can correct major mistakes in simpler models — but only if you're willing to put in the work.
+As **David Mytton et al. (2024)** show, they can correct major mistakes in simpler models — but only if you're willing to put in the work.
 
- **Bottom line:**
- The power model offers high fidelity but is best suited for researchers or network operators, not day-to-day software teams.
+**Bottom line:**
+The power model offers high fidelity but is best suited for researchers or network operators, not day-to-day software teams.
 
 
 {{< whiteblock >}}
-Which energy intensity values should be used in 2025?
+Which energy intensity values should be used?
 {{</ whiteblock >}}
 
 Even within the energy intensity approach, the assumed factor (Wh per GB) can vary wildly. Different tools and studies quote very different numbers for network energy per data, depending on scope and methodology. Let’s compare a few notable ones:
 
 ### Tool Comparison
 
-| **Tool**                | **Constant (Wh/GB)** | **Comments**                                                                                       | **Source**                                                                                                                            |
-|-------------------------|----------------------|----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| ----------------------- | ------------------   | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------                                                           |
-| **GMT (current)**       | 1.875                | Extrapolated from Aslan et al. (2018), using 0.06 kWh/GB for 2015                                  |                                                                                                                                       |
-| **SWDM v4 (CO2.js)**    | 72                   | Includes operational and embodied emissions<br>End-user devices: 161, Network: 72, Data center: 67 | [Sustainable Web Design](https://sustainablewebdesign.org/estimating-digital-emissions/)                                              |
-| **Cardamon**            | 59                   |                                                                                                    | [Cardamon GitHub](https://github.com/Root-Branch/cardamon-web-model)                                                                  |
-| **GreenFrame**          | 11                   |                                                                                                    | [GreenFrame README](https://github.com/marmelab/greenframe-cli/blob/main/src/model/README.md)                                         |
-| **Greenspector Studio** | ?                    | Uses proprietary model based on multiple parameters                                                | [Greenspector's Methodology](https://greenspector.com/wp-content/uploads/2025/05/Methodology_Greenspector_full_EN-Version-202405.pdf) |
+| **Tool**                | **Constant (Wh/GB)** | **Comments**                                                                                                                                                                       | **Source**                                                                                                                            |
+|-------------------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------- | ------------------   | --------------------------------------------------------------------------------------------------                                                                                 | ---------------------------------------------------------------------------                                                           |
+| **GMT**                 | 1.875                | Extrapolated from Aslan et al. (2018), using 0.06 kWh/GB for 2015.<br>For updated value see <a href="https://www.green-coding.io/co2-formulas/#gigabytes-to-kwh">CO2 Formulas</a>. |                                                                                                                                       |
+| **SWDM v4 (CO2.js)**    | 72                   | Includes operational and embodied emissions<br>End-user devices: 161, Network: 72, Data center: 67                                                                                 | [Sustainable Web Design](https://sustainablewebdesign.org/estimating-digital-emissions/)                                              |
+| **Cardamon**            | 59                   |                                                                                                                                                                                    | [Cardamon GitHub](https://github.com/Root-Branch/cardamon-web-model)                                                                  |
+| **GreenFrame**          | 11                   |                                                                                                                                                                                    | [GreenFrame README](https://github.com/marmelab/greenframe-cli/blob/main/src/model/README.md)                                         |
+| **Greenspector Studio** | ?                    | Uses proprietary model based on multiple parameters                                                                                                                                | [Greenspector's Methodology](https://greenspector.com/wp-content/uploads/2025/05/Methodology_Greenspector_full_EN-Version-202405.pdf) |
 
 #### Why do Network Energy Estimates vary so much?
 
@@ -187,7 +189,7 @@ Estimates range from under **2 Wh/GB** to over **70 Wh/GB** — that’s a **40�
 
 **Aslan et al. (2018):**
 
-- Found relative low energy use (0.06 kWh per GB in 2015) for moving data through the core Internet.
+- Found relative low energy use (`0.06 kWh/GB` for 2015) for moving data through the core Internet.
 - Rule: the electricity intensity of network transfer decreases by half approximately every two years.
 - Did not include mobile networks, home routers or Wi-Fi.
 - Useful for **best-case scenarios**, but **hugely underestimates** total Internet energy use — by 5 to 25×.
@@ -195,9 +197,9 @@ Estimates range from under **2 Wh/GB** to over **70 Wh/GB** — that’s a **40�
 **Coroamă (2021):**
 
 - Broke down the Internet into:
-  - **WAN (core backbone)**: very efficient (0.02 kWh/GB for 2020)
-  - **FAN (home routers/local networks)**: medium use (0.07 kWh/GB)
-  - **RAN (mobile networks)**: most energy-hungry (0.2 kWh/GB)
+  - **WAN (core backbone)**: very efficient (`0.02 kWh/GB` for 2020)
+  - **FAN (home routers/local networks)**: medium use (`0.07 kWh/GB`)
+  - **RAN (mobile networks)**: most energy-hungry (`0.2 kWh/GB`)
 - Sending 1 GB over mobile can use **30× more energy** than over fiber.
 - Predicted **mobile data** will remain most energy-intensive by 2025.
 
