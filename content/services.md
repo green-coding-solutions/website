@@ -12,7 +12,7 @@ We help you to transform your software to a sustainable product.
 
 Scroll down and see how we work with companies in our 5 stage approach. 
 
-We are [regular speaker at conferences and industry symposiums]({{< relref path="#nav-meetups" >}}), developing
+We are [regular speaker at conferences and industry symposiums]({{< relref path="/#nav-meetups" >}}), developing
 [open source industry advancing container native carbon measurement tools]({{< relref path="products/green-metrics-tool" >}}) as well as
 [state of the art carbon pipeline tooling]({{< relref path="products/eco-ci" >}}), active advocates and consultants for energy and carbon transparency
 through certifications like the [Blauer Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) or our [Energy-ID]({{< relref path="products/energy-id" >}}) project.
@@ -91,16 +91,16 @@ Details
             <i class="icon graduation"></i><span class="ui label">Consulting</span><span class="ui label">Workshops & Training</span>
           </div>
           <div class="description">
-            <p>Software emits CO2 through it's own operation, by using energy still based on fossil fuels, but also indirectly through the embodied carbon of the hardware reservation. Also modern systems run in datacenters with expensive cooling, land-use etc. - See a deeper dive into the topic in our <a href="/about">About</a> section</p>
+            <p>Software emits CO2 through it's own operation, by using energy still based on fossil fuels, but also indirectly through the embodied carbon of the hardware reservation. Also modern systems run in datacenters with expensive cooling, land-use etc. - See a deeper dive into the topic in our <a href="{{< relRef "about" >}}">About</a> section</p>
             <p>We use the methodologies based on research and industry standard practices (GHG Protocol / ISO 14001 / Green Software Foundation) and analyse all your infrastructure and identify targets for immediate and later analysis.</p>
-            <p>Depending on your internal state of knowledge a <a href="/services/consulting">Consulting</a> or a <a href="/services/workshops-and-trainings">Workshop/Training</a> is best suitable for you at this stage.</p>
+            <p>Depending on your internal state of knowledge a <a href="{{< relRef "services/consulting" >}}">Consulting</a> or a <a href="{{< relRef "services/workshops-and-trainings" >}}">Workshop/Training</a> is best suitable for you at this stage.</p>
             <br>
           </div>
-            <a class="ui right floated primary button distance-top" href="/services/consulting">
+            <a class="ui right floated primary button distance-top" href="{{< relRef "services/consulting" >}}">
               Consulting offers
               <i class="right chevron icon"></i>
             </a>
-            <a class="ui right floated primary button distance-top" href="/services/workshops-and-trainings">
+            <a class="ui right floated primary button distance-top" href="{{< relRef "services/workshops-and-trainings" >}}">
               Workshops & Trainings
               <i class="right chevron icon"></i>
             </a>
@@ -125,11 +125,11 @@ Details
             <p>We integrate our enterprise ready measurement and reporting tools into your infrastructure and help you generate reporting ready and/or marketing ready carbon numbers.</p>
             <p>It is important to look at the whole software lifecycle and create carbon metrics for all stages. We employ our enterprise ready tooling for all these stages: Development, Testing, Runtime. For external SaaS solutions we work with accredited databases.</p>
           </div>
-          <a class="ui right floated primary button distance-top" href="/services/consulting">
+          <a class="ui right floated primary button distance-top" href="{{< relRef "services/consulting" >}}">
               Consulting offers
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top" href="/services/development-and-integrations">
+          <a class="ui right floated primary button distance-top" href="{{< relRef "services/development-and-integrations" >}}">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
@@ -155,11 +155,11 @@ Details
             <p>We help you create reports (Scope 1,2, 3) for European's CSRD, GHG Protocol, Green Software Foundation SCI, ISO 14001 and many more.</p>
             <p>Depending on the size of your company it is helpful to first create reportings with internally used accounting tools and switch to real-time reportings and software integrations later.</p>
           </div>
-          <a class="ui right floated primary button distance-top" href="/services/consulting">
+          <a class="ui right floated primary button distance-top" href="{{< relRef "services/consulting" >}}">
               Consulting offers
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top" href="/services/development-and-integrations">
+          <a class="ui right floated primary button distance-top" href="{{< relRef "services/development-and-integrations" >}}">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
@@ -184,11 +184,11 @@ Details
             <p>By suggesting tailored optimisation concepts to your company and product needs we identify and quantify carbon savings and integrate them with you.</p>
             <p>Quick wins can often be gained with minimal effort while long-term goals can often easily attained by employing constant monitoring and constant optimizations with every software build.</p>
           </div>
-          <a class="ui right floated primary button distance-top" href="/consulting/development-and-integrations">
+          <a class="ui right floated primary button distance-top" href="{{< relRef "services/development-and-integrations" >}}">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top"href="/products/green-metrics-tool">
+          <a class="ui right floated primary button distance-top"href="{{< relRef "products/green-metrics-tool" >}}">
               Green Metrics Tool
               <i class="right chevron icon"></i>
           </a>
@@ -208,14 +208,14 @@ Details
             <span class="ui label">Operations</span><span class="ui label">Tools</span><span class="ui label">Integrations</span>
           </div>
           <div class="description">
-            <p>Sustainable software is a continuous process. After the first identification of weak spots and optimization targets we automate the reporting / transparency part through industry standard DevOps practices by integrating our specialized CI/CD pipeline tools (See for example our <a href="/products/eco-ci/">Eco-CI products</a> for Github / Gitlab or our <a href="/products/cloud-energy/">Cloud Energy</a> tools for arbitrary pipelines as well as our dedicated runners for enterprises).</p>
+            <p>Sustainable software is a continuous process. After the first identification of weak spots and optimization targets we automate the reporting / transparency part through industry standard DevOps practices by integrating our specialized CI/CD pipeline tools (See for example our <a href="{{< relRef "products/eco-ci/" >}}">Eco-CI products</a> for Github / Gitlab or our <a href="{{< relRef "products/cloud-energy/" >}}">Cloud Energy</a> tools for arbitrary pipelines as well as our dedicated runners for enterprises).</p>
             <p>In a second step we integrate optimizations also directly into the software build-chain through static ode optimizations and also Green AI / ML optimizations.</p>
           </div>
-          <a class="ui right floated primary button distance-top" href="/services/software-integrations">
+          <a class="ui right floated primary button distance-top" href="{{< relRef "services/development-and-integrations" >}}">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
-          <a class="ui right floated primary button distance-top" href="/products/eco-ci">
+          <a class="ui right floated primary button distance-top" href="{{< relRef "products/eco-ci" >}}">
               Eco-CI
               <i class="right chevron icon"></i>
           </a>
