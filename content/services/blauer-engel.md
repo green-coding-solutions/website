@@ -1,5 +1,5 @@
 ---
-title: "Blue Angel - Software Label Services"
+title: "Blue Angel for Software- Certificate Services"
 draft: false
 summary: "The Blue Angel for Software with the Green Metrics Tool"
 date: 2025-06-10 08:00:00

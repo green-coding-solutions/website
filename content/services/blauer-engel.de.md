@@ -1,7 +1,7 @@
 ---
-title: "Blue Angel - Software Label Services"
+title: "Blauer Engel für Software - Zertifikat Dienstleistungen"
 draft: false
-summary: "The Blue Angel for Software with the Green Metrics Tool"
+summary: "Der Blaue Engel für Software mit dem Green Metrics Tool"
 date: 2025-06-10 08:00:00
 author: "Jennifer Dhanaraj"
 authorlink: "https://www.linkedin.com/in/jenndhanaraj/"
@@ -12,13 +12,13 @@ authorlink: "https://www.linkedin.com/in/jenndhanaraj/"
 
 Der Zertifizierungsprozess ist streng formalisiert und umfasst die Einreichung folgender Dokumente:
 
-– Anlage 1 – Übersicht über das Softwareprodukt und den Antragsteller
-– Anlage 2 – Messergebnisse zu Leistungs- und Energiekennzahlen
-– Anlage 3 – Messdatenreihen und ausführliche Beschreibung des Messaufbaus und der Konfigurationen
-– Anlage 4 – Erklärung zu den in der Software verwendeten Datenformaten
-– Anlage 5 – Erklärung zu API-Dokumentationen, Quellcode und Lizenzen der Software
-– Anlage 6 – Erklärung zur Werbefreiheit, Deinstallation und Kontinuität der Software
-– Anlage 7 – Das öffentlich herunterladbare Dokument mit einer Übersicht über die Mindestsystemanforderungen, den Messaufbau und die Messergebnisse
+- Anlage 1 – Übersicht über das Softwareprodukt und den Antragsteller
+- Anlage 2 – Messergebnisse zu Leistungs- und Energiekennzahlen
+- Anlage 3 – Messdatenreihen und ausführliche Beschreibung des Messaufbaus und der Konfigurationen
+- Anlage 4 – Erklärung zu den in der Software verwendeten Datenformaten
+- Anlage 5 – Erklärung zu API-Dokumentationen, Quellcode und Lizenzen der Software
+- Anlage 6 – Erklärung zur Werbefreiheit, Deinstallation und Kontinuität der Software
+- Anlage 7 – Das öffentlich herunterladbare Dokument mit einer Übersicht über die Mindestsystemanforderungen, den Messaufbau und die Messergebnisse
 
 Dieser strenge, aber transparente Prozess stellt sicher, dass zertifizierte Software die Umwelt- und Qualitätsstandards tatsächlich erfüllt – unterstützt durch eine staatlich anerkannte Aufsicht.
 
@@ -32,15 +32,15 @@ Der größte Aufwand im Zertifizierungsprozess liegt in der ordnungsgemäßen Ei
 
 ### Optimierter Antragsprozess
 
-Mit dem [Green Metrics Tool](/products/green-metrics-tool), ebenfalls [mit dem Blauen Engel zertifiziert](https://www.blauer-engel.de/de/produkte/green-metrics-tool), haben wir eine Open-Source-Lösung entwickelt, die diesen Prozess vereinfacht. Zusätzlich bieten wir unsere Serverinfrastruktur als Software-as-a-Service an, einschließlich eines kostenpflichtigen Add-ons zum Open-Source-Tool, das speziell Blauer-Engel-kompatible Exporte ermöglicht.
+Mit dem [Green Metrics Tool](/products/green-metrics-tool), ebenfalls [mit dem Blauen Engel für Software zertifiziert](https://www.blauer-engel.de/de/produkte/green-metrics-tool), haben wir eine Open-Source-Lösung entwickelt, die diesen Prozess vereinfacht. Zusätzlich bieten wir unsere Serverinfrastruktur als Software-as-a-Service an, einschließlich eines kostenpflichtigen Add-ons zum Open-Source-Tool, das speziell Blauer-Engel-kompatible Exporte ermöglicht.
 
 Unsere Tools generieren automatisch die Antragsanhänge. Außerdem werden die Messdaten aus dem Green Metrics Tool nahtlos in die offizielle Antragsvorlage importiert. Integrierte Textvorschläge und Vorlagen reduzieren den Aufwand für Unternehmen drastisch. So können Sie sich auf nachhaltiges Produktdesign konzentrieren. Wir sorgen dafür, dass Ihre Nachhaltigkeitsbemühungen sichtbar werden.
 
 ### Automatisiert, zuverlässig und auditsicher
 
-Ein zentrales Anliegen des Blauen Engels ist es, Unternehmen zu motivieren und zu befähigen, den Energieverbrauch ihrer Software zu verstehen. Das Green Metrics Tool geht hier einen Schritt weiter und verfolgt die Leistung und Nachhaltigkeit im Zeitverlauf. Besonders wichtig: Es handelt sich um ein detailliertes Analysetool, das hilft, Energieineffizienzen zu erkennen und detaillierte Empfehlungen zur Reduzierung unnötiger Emissionen liefert. Unser Tool stellt außerdem sicher, dass jedes Software-Update automatisch Leistungs- und Energieeffizienztests auslöst, sodass Unternehmen über den Energieverbrauch neuer Funktionsupdates informiert sind.
+Ein zentrales Anliegen des Blauen Engels für Software ist es, Unternehmen zu motivieren und zu befähigen, den Energieverbrauch ihrer Software zu verstehen. Das Green Metrics Tool geht hier einen Schritt weiter und verfolgt die Leistung und Nachhaltigkeit im Zeitverlauf. **Besonders wichtig**: Es handelt sich um ein detailliertes Analysetool, das hilft, Energieineffizienzen zu erkennen und detaillierte Empfehlungen zur Reduzierung unnötiger Emissionen liefert. Unser Tool stellt außerdem sicher, dass jedes Software-Update automatisch Leistungs- und Energieeffizienztests auslöst, sodass Unternehmen über den Energieverbrauch neuer Funktionsupdates informiert sind und diese auch programmatisch sichergstellt werden können durch sog. *Green Gates*.
 
-Dieses Tracking ermöglicht außerdem die einfache Verlängerung und Erneuerung Ihrer Zertifizierung nach einem Jahr mit neuen und aktualisierten Energiewerten (erforderlich gemäß den Kriterien des Blauen Engels).
+Diese kontinuierliche Messung ermöglicht außerdem die einfache Verlängerung und Erneuerung Ihrer Zertifizierung nach einem Jahr mit neuen und aktualisierten Energiewerten (erforderlich gemäß den Kriterien des Blauen Engels).
 
 ### Automatisiert, zuverlässig und auditsicher
 Die Tests werden auf unseren Clustersystemen durchgeführt, die eine stabile und dokumentierte Testumgebung gewährleisten. Es ist außerdem mit einer Vielzahl von Anwendungen und Betriebssystemen kompatibel, darunter Linux, Windows, Desktopanwendungen, CLI-Anwendungen, Web-Anwendungen und sogar KI-Anwendungen uvm.
