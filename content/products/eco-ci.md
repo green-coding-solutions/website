@@ -33,9 +33,9 @@ and carbon values of the whole system.
 
 {{< button "shopping bag" " Github Marketplace" "https://github.com/marketplace/actions/eco-ci-energy-estimation" >}}
 
-{{< button "eye" "Live preview on Github Actions" "https://github.com/green-coding-solutions/green-metrics-tool/actions/runs/4720202654" >}}
+{{< button "eye" "Live preview on Github Actions" "https://github.com/green-coding-solutions/green-metrics-tool/pull/1233#issuecomment-2993393021" >}}
 
-{{< button "chartline" "CI Energy Cost monitoring" "https://metrics.green-coding.io/ci.html?repo=green-coding-berlin%2Fgreen-metrics-tool&branch=dev&workflow=45267392" >}}
+{{< button "chartline" "CI Energy Cost monitoring" "https://metrics.green-coding.io/ci.html?repo=green-coding-solutions/green-metrics-tool&branch=main&workflow=45267393&start_date=2025-05-01&end_date=2025-09-12" >}}
 
 {{< button "book" "Blog article" "/blog/eco-ci-gitlab-release" >}}
 

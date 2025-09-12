@@ -42,9 +42,13 @@ Das Ergebnis ist eine leicht integrierbare Github-Aktion, mit der Sie die Energi
 
 {{< button "shopping bag" "Github-Marktplatz" "https://github.com/marketplace/actions/eco-ci-energy-estimation" >}}
 
-{{< button "eye" "Live-Vorschau" "https://github.com/green-coding-solutions/green-metrics-tool/actions/runs/4720202654" >}}
+{{< button "eye" "Live-Vorschau" "https://github.com/green-coding-solutions/green-metrics-tool/pull/1233#issuecomment-2993393021" >}}
 
-{{< button "chartline" "CI Energiekostenüberwachung" "https://metrics.green-coding.io/ci.html?repo=green-coding-berlin%2Fgreen-metrics-tool&branch=dev&workflow=45267392" >}}
+{{< button "chartline" "CI Energiekostenüberwachung" "https://metrics.green-coding.io/ci.html?repo=green-coding-solutions/green-metrics-tool&branch=main&workflow=45267393&start_date=2025-05-01&end_date=2025-09-12" >}}
+
+{{< button "book" "Blog Artikel" "/blog/eco-ci-gitlab-release" >}}
+
+{{< button "code branch" "Github Repository (für Gitlab Dokumentation)" "https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab" >}}
 
 
 &nbsp;
