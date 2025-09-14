@@ -28,7 +28,7 @@
         <option value="{{ relURL  "blog" }}" class="second_item"{{if eq $slug "blog"}}selected{{end}}>{{i18n "blog"}}</option>
         <option value="{{ relURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "case-studies"}}</option>
         <option value="{{ relURL "insights/blauer-engel" }}" class="second_item"{{if eq $slug "blauer-engel"}}selected{{end}}>{{i18n "blue-angel"}}</option>
-        <option value="{{ relURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>{{i18n "jobs"}}</option>
+{{/*         <option value="{{ relURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>{{i18n "jobs"}}</option> */}}
         <option value="{{ relref . "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>{{i18n "co2-formulas"}}</option>
         <option value="{{ relref . "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
         <option value="{{ relref . "newsroom" }}" class="second_item">{{i18n "newsroom"}}</option>
@@ -91,12 +91,12 @@
                     </li>
                 </ol>
             </li>
-            <li>
+{{/*            <li>
                <a href="{{ relURL "jobs" }}" aria-label="{{i18n "jobs"}}"><div class="menubtn">
                     <div class="contentbtn">{{i18n "jobs"}}</div>
                 </div></a>
             </li>
-
+*/}}
             <li>
                <a href="{{ relref . "newsroom" }}" aria-label="{{i18n "newsroom"}}"><div class="menubtn">
                     <div class="contentbtn">{{i18n "newsroom"}}</div>

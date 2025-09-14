@@ -1,6 +1,7 @@
 ---
 title: "Green Software Developer (permanent / freelance)"
 description: "Open role for Green Software Developer with 5+ years experience at Green Coding Solutions GmbH to work on sustainable software."
+draft: true
 ---
 
 At Green Coding Solutions, we support companies and NGOs on their journey toward more sustainable software practices.
