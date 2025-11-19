@@ -17,10 +17,11 @@ You can either install it locally or use our demo dashboard, where we also offer
 
 Please see all the details on Github and in the documentation.
 
+### Links
+
 {{< button "book" "Documentation" "https://docs.green-coding.io" >}}
 {{< button "code branch" "Github" "https://github.com/green-coding-solutions/green-metrics-tool" >}}
 {{< button "columns" "Demo Dashboard" "https://metrics.green-coding.io" >}}
-{{< button "eye" "Screenshots" "#screenshots" >}}
 
 
 ---

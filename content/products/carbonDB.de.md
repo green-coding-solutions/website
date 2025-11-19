@@ -26,7 +26,7 @@ Zu den Funktionen gehören:
 - **Datengetriebene Entscheidungen**: Mit umfassenden Einblicken in Energie- und Kohlenstoffverbrauch können Unternehmen Bereiche zur Verbesserung identifizieren, ihre Umweltauswirkungen reduzieren und Nachhaltigkeitsziele erreichen.
 - **Feingliedrigkeit**: Mit der Energiezuweisung auf der Ebene von Maschine, Projekt, Unternehmen und Tags ist eine detaillierte Sicht auf die Institution möglich.
 
-### Schlüsselvorteile
+### Vorteile
 
 - **Vereinfachtes Berichtswesen**: CarbonDB vereinfacht den komplexen Prozess der Sammlung, Umwandlung und Berichterstattung von Energie- und Kohlenstoffdaten und macht die Einhaltung von Berichtsrichtlinien unkompliziert.
 - **Verbesserte Nachhaltigkeit**: Durch die Bereitstellung genauer Daten zu Kohlenstoffemissionen hilft CarbonDB Unternehmen, effektivere Nachhaltigkeitsstrategien umzusetzen.
@@ -34,5 +34,10 @@ Zu den Funktionen gehören:
 - **Verbessertes Unternehmensimage**: Ein Engagement für Umweltverantwortung verbessert das Image eines Unternehmens bei Verbrauchern, Investoren und Regulierungsbehörden.
 
 CarbonDB ist ein unverzichtbares Werkzeug für Unternehmen, die die Komplexität des Energie- und Kohlenstoffmanagements im Einklang mit den neuen europäischen Berichtsrichtlinien navigieren möchten. Durch die Bereitstellung einer umfassenden, benutzerfreundlichen Plattform für die Verfolgung und Berichterstattung des Kohlenstoffverbrauchs unterstützt CarbonDB nicht nur bei der Einhaltung von Vorschriften, sondern fördert auch Unternehmen auf ihrem Weg zur Nachhaltigkeit und zur Reduzierung ihrer Umweltauswirkungen.
+
+### Links
+{{< button "code branch" "Github" "https://github.com/green-coding-solutions/green-metrics-tool" >}}
+{{< button "columns" "Demo Dashboard" "https://metrics.green-coding.io/carbondb.html" >}}
+
 
 <div class="clear"></div>

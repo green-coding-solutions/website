@@ -29,6 +29,8 @@ The same logic applies for GitLab or other virtualized / containerized systems.
 When using it in other local CI/CD systems that are not virtualized it works in a similar way and will output energy
 and carbon values of the whole system.
 
+### Links
+
 {{< button "code branch" "Github Repository" "https://github.com/green-coding-solutions/eco-ci-energy-estimation" >}}
 
 {{< button "shopping bag" " Github Marketplace" "https://github.com/marketplace/actions/eco-ci-energy-estimation" >}}

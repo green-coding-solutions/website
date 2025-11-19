@@ -35,6 +35,10 @@ Its features include are:
 
 CarbonDB is an essential tool for businesses seeking to navigate the complexities of energy and carbon management in compliance with new European reporting guidelines. By offering a comprehensive, easy-to-use platform for tracking and reporting carbon usage, CarbonDB not only aids in regulatory compliance but also supports companies in their journey towards sustainability and reduced environmental impact.
 
+### Links
+{{< button "code branch" "Github" "https://github.com/green-coding-solutions/green-metrics-tool" >}}
+{{< button "columns" "Demo Dashboard" "https://metrics.green-coding.io/carbondb.html" >}}
+
 
 ---
 
@@ -166,7 +170,7 @@ CarbonDB is an essential tool for businesses seeking to navigate the complexitie
 
 
 <br>
-<div class="ui horizontal divider header"><i class="eye icon"></i>Screenshots</div>
+<div id="screenshots" class="ui horizontal divider header"><i class="eye icon"></i>Screenshots</div>
 <br>
 
 <img src="/img/products/carbondb_dashboard_1x.webp" srcset="/img/products/carbondb_dashboard_2x.webp 2x, /img/products/carbondb_dashboard_1x.webp 1x" alt="CarbonDB screenshots">

@@ -11,18 +11,16 @@ ordering: 1
 
 Das Green Metrics Tool ist ein freies Open-Source (FOSS) Tool, das wir entwickelt haben um EntwicklerInnen am besten dabei zu unterstützen, den Energie- / CO2-Verbrauch von Software-Architekturen zu messen.
 
-Unser Tool ist quelloffen [AGPLv3 lizenziert](https://github.com/green-coding-solutions/green-metrics-tool/blob/main/LICENSE)
+Unser Tool ist Open Source [AGPLv3 lizenziert](https://github.com/green-coding-solutions/green-metrics-tool/blob/main/LICENSE)
 
-Sie können es entweder lokal installieren oder unser Demo-Cluster verwenden, wo wir auch die Möglichkeit bieten, Software zur Messung einzureichen [Link](https://metrics.green-coding.io/request.html).
+Man kann es entweder lokal installieren oder unser Demo-Cluster verwenden, wo es auch die Möglichkeit gibt, Software zur Messung einzureichen [Link](https://metrics.green-coding.io/request.html).
 
-Bitte lesen Sie alle Details auf Github und in der Dokumentation.
+Alle Details auf Github und in der Dokumentation.
+
+### Links
 
 {{< button "book" "Dokumentation" "https://docs.green-coding.io" >}}
-
 {{< button "code branch" "Github" "https://github.com/green-coding-solutions/green-metrics-tool" >}}
-
-{{< button "eye" "Screenshots" "#screenshots" >}}
-
 {{< button "columns" "Demo Dashboard" "https://metrics.green-coding.io" >}}
 
 ---
@@ -44,10 +42,10 @@ Wir bieten jedoch auch eine **gehostete Version** als **SaaS** an, die einige Pr
 
 <center>
 
-## Blue Angel Certification
+## Blue Angel Zertifizierung
 
 
-<p>Our Tool is Blue Angel for Software certified!</p>
+<p>Unser Tool ist Blauer Engel für Software zertifiziert!</p>
 <img class="ui rounded image" src="/img/products/GMT_and_BE@1x.webp" srcset="/img/products/GMT_and_BE@2x.webp 2x, /img/products/GMT_and_BE@1x.webp 1x" width=450>
 <br>
 <a class="ui orange button" href="{{< relref path="insights/blauer-engel" >}}"><i class="right chevron icon"></i> Find out more details.</a>
@@ -56,7 +54,7 @@ Wir bieten jedoch auch eine **gehostete Version** als **SaaS** an, die einige Pr
 
 
 <br>
-<div class="ui horizontal divider header"><i class="eye icon"></i>Single Run View</div>
+<div class="ui horizontal divider header"><i class="eye icon"></i>Ansicht Einzelmessung</div>
 <br>
 
 <div id="screenshots"></div>
@@ -69,7 +67,7 @@ Wir bieten jedoch auch eine **gehostete Version** als **SaaS** an, die einige Pr
 ---
 
 <br>
-<div class="ui horizontal divider header"><i class="eye icon"></i>Comparison View</div>
+<div class="ui horizontal divider header"><i class="eye icon"></i>Ansicht Messungs-Vergleich</div>
 <br>
 
 {{< image "/img/products/gmt-screenshot-5.webp" "rounded full-width" >}}
