@@ -38,7 +38,7 @@ Training your developers to write more carbon efficient software or just startin
           </div>
         </div>
         <figure class="ui large image middle aligned">
-            <img srcset="/img/services/workshops-measuring.webp 1x, /img/services/workshops-measuring-2x.webp 2x" src="/img/services/workshops-measuring-2x.webp" loading="lazy">
+            <img srcset="/img/services/workshops-measuring-1x.webp 1x, /img/services/workshops-measuring-2x.webp 2x" src="/img/services/workshops-measuring-2x.webp" loading="lazy">
           <figcaption>Measuring with Green Metrics Tool</figcaption>
         </figure>
       </div>
@@ -76,7 +76,7 @@ Training your developers to write more carbon efficient software or just startin
           </div>
         </div>
         <figure class="ui large image middle aligned">
-            <img srcset="/img/services/workshops-cloud.webp 1x, /img/services/workshops-cloud-2x.webp 2x" src="/img/services/workshops-cloud-2x.webp" loading="lazy">
+            <img srcset="/img/services/workshops-cloud-1x.webp 1x, /img/services/workshops-cloud-2x.webp 2x" src="/img/services/workshops-cloud-2x.webp" loading="lazy">
           <figcaption>Measuring in the Cloud</figcaption>
         </figure>
       </div>
@@ -146,7 +146,7 @@ Training your developers to write more carbon efficient software or just startin
           </div>
         </div>
         <figure class="ui large image middle aligned">
-            <img srcset="/img/services/workshops-ci-cd.webp 1x, /img/services/workshops-ci-cd-2x.webp 2x" src="/img/services/workshops-ci-cd-2x.webp" loading="lazy">
+            <img srcset="/img/services/workshops-ci-cd-1x.webp 1x, /img/services/workshops-ci-cd-2x.webp 2x" src="/img/services/workshops-ci-cd-2x.webp" loading="lazy">
           <figcaption>CI / CD Carbon tooling</figcaption>
         </figure>
       </div>
