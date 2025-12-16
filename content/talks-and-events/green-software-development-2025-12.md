@@ -1,6 +1,6 @@
 ---
 title: "Green Software Development Community (Dec. 2025)"
-date: 2025-12-16 18:30:00
+date: 2025-12-16 18:30:00+01:00
 publishDate: 2025-12-16
 draft: false
 eventtype: "Meetup"
