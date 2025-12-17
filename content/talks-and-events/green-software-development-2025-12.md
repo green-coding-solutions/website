@@ -33,3 +33,8 @@ The evening will cover the Blue Angel in detail and provide initial case studies
 - 6:00 PM Doors open & Networking
 - 6:30 PM Presentation with a short break
 - 9:00 PM End & Networking
+
+## Slide-Deck PDF
+
+[Download Slides](/slides/2025_12_16_Blauer_Engel_GSD_Meetup.pdf)
+
