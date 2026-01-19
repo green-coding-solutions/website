@@ -10,13 +10,13 @@
         {{ end }}
         {{/* We are using a hack here. Home always gets selected. This is wrong, but browser will default to apply selected only on last matched, so menu works as expected */}}
         <option value="{{ relref . "/" }}" class="second_item" selected>Home</option>
-        <option value="{{ relref . "about" }}" class="second_item" {{if eq $slug "about"}}selected{{end}}>{{i18n "about"}}</option>
-        <option value="{{ relref . "services" }}" class="second_item"{{if eq $slug "services"}}selected{{end}}>{{i18n "services"}}</option>
+        <option value="{{ relURL "about" }}" class="second_item" {{if eq $slug "about"}}selected{{end}}>{{i18n "about"}}</option>
+        <option value="{{ relURL "services" }}" class="second_item"{{if eq $slug "services"}}selected{{end}}>{{i18n "services"}}</option>
         <option value="{{ relURL "services/consulting" }}" class="second_item"  {{ if eq $slug "consulting"}}selected{{end}}>{{ i18n "consulting" }}</a></li>
         <option value="{{ relURL "services/workshops-and-trainings" }}" class="second_item"  {{ if eq $slug "workshops-and-trainings"}}selected{{end}}>{{ i18n "training" }}</a></li>
         <option value="{{ relURL "services/development-and-integrations" }}" class="second_item"  {{ if eq $slug "development-and-integrations"}}selected{{end}}>{{ i18n "development" }}</a></li>
         <option value="{{ relURL "services/blauer-engel" }}" class="second_item"  {{ if eq $slug "blauer-engel"}}selected{{end}}>{{ i18n "blue-angel" }}</a></li>
-        <option value="{{ relref . "products" }}" class="second_item"{{if eq $slug "products"}}selected{{end}}>{{i18n "products"}}</option>
+        <option value="{{ relURL "products" }}" class="second_item"{{if eq $slug "products"}}selected{{end}}>{{i18n "products"}}</option>
         <option value="{{ relURL "products/green-metrics-tool" }}" class="second_item"  {{ if eq $slug "green-metrics-tool"}}selected{{end}}>Green Metrics Tool</a></li>
         <option value="{{ relURL "products/eco-ci" }}" class="second_item"  {{ if eq $slug "eco-ci"}}selected{{end}}>Eco CI</a></li>
         <option value="{{ relURL "products/cloud-energy" }}" class="second_item"  {{ if eq $slug "cloud-energy"}}selected{{end}}>Cloud Energy</a></li>
@@ -29,8 +29,8 @@
         <option value="{{ relURL "case-studies" }}" class="second_item"{{if eq $slug "case-studies"}}selected{{end}}>{{i18n "case-studies"}}</option>
         <option value="{{ relURL "insights/blauer-engel" }}" class="second_item"{{if eq $slug "blauer-engel"}}selected{{end}}>{{i18n "blue-angel"}}</option>
 {{/*         <option value="{{ relURL "jobs" }}" class="second_item"{{if eq $slug "jobs"}}selected{{end}}>{{i18n "jobs"}}</option> */}}
-        <option value="{{ relref . "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>{{i18n "co2-formulas"}}</option>
-        <option value="{{ relref . "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
+        <option value="{{ relURL "co2-formulas" }}" class="second_item"{{if eq $slug "co2-formulas"}}selected{{end}}>{{i18n "co2-formulas"}}</option>
+        <option value="{{ relURL "/" }}#nav-team" class="second_item">{{i18n "team"}}</option>
         <option value="{{ relURL "newsroom" }}" class="second_item">{{i18n "newsroom"}}</option>
     </select>
 </div>
@@ -38,7 +38,7 @@
     <nav>
         <ol class="contentMenu navbar-nav">
             <li class="menubtn-bg">
-               <a class="menubtn" href="{{ relref . "about" }}" aria-label="{{i18n "about"}}">
+               <a class="menubtn" href="{{ relURL "about" }}" aria-label="{{i18n "about"}}">
                     <div class="contentbtn">{{i18n "about"}}</div>
                 </a>
             </li>
@@ -47,7 +47,7 @@
                     <div class="contentbtn">{{i18n "products"}}</div>
                 </a>
                 <ol class="dropdown-menu">
-                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relref . "products" }}">{{ i18n "overview" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products" }}">{{ i18n "overview" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products/green-metrics-tool" }}">Green Metrics Tool</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products/eco-ci" }}">Eco CI</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "products/cloud-energy" }}">Cloud Energy</a></li>
@@ -62,7 +62,7 @@
                     <div class="contentbtn">{{i18n "services"}}</div>
                 </a>
                 <ol class="dropdown-menu">
-                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relref . "services" }}">{{ i18n "overview" }}</a></li>
+                  <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services" }}">{{ i18n "overview" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services/consulting" }}">{{ i18n "consulting" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services/workshops-and-trainings" }}">{{ i18n "training" }}</a></li>
                   <li class="dropdown-list-item"><a class="contentbtn dropdown-item" href="{{ relURL "services/development-and-integrations" }}">{{ i18n "development" }}</a></li>
@@ -78,7 +78,7 @@
                        <a class="contentbtn dropdown-item" href="{{ relURL "case-studies" }}">{{i18n "case-studies"}}</a>
                     </li>
                     <li class="dropdown-list-item">
-                       <a class="contentbtn dropdown-item" href="{{ relref . "co2-formulas" }}">{{i18n "co2-formulas"}}</a>
+                       <a class="contentbtn dropdown-item" href="{{ relURL "co2-formulas" }}">{{i18n "co2-formulas"}}</a>
                     </li>
                     <li class="dropdown-list-item">
                        <a class="contentbtn dropdown-item" href="{{ relURL "blog" }}">{{i18n "blog"}}</a>

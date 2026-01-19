@@ -1,11 +1,8 @@
 ---
 title: "Wir sind Teil eines DBU-geförderten Projekts!"
 date: 2025-09-17
-draft: false
-author: "Arne Tarara"
-authorlink: "https://www.linkedin.com/in/arne-tarara"
 picture: "/img/newsroom/news/caso.webp"
-link: "/de/newsroom/news/2025-09-dbu-funded-project/"
+link: "https://greencoding.f2.htw-berlin.de/projekte/caso-entwicklung-von-technologien-zur-co2-und-energieeinsparung-bei-der-softwareentwicklung/"
 type: "news"
 ---
 
