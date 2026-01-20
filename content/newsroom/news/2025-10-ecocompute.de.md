@@ -7,6 +7,6 @@ draft: false
 type: "news"
 ---
 
-Das finale Programm von ecoCompute 2025, der größten Green Tech-Konferenz zu nachhaltiger Hardware und Software, ist jetzt online.
+Das finale Programm der ecoCompute 2025, der größten Green-Tech-Konferenz zu nachhaltiger Hardware und Software, ist jetzt online.
 
-Der Ticketverkauf läuft bis zum 12.11.2025. Sichern Sie sich Ihr Ticket und erleben Sie herausragende Redner, spannende Vorträge, interaktive Workshops und Networking – alles, um digitale Nachhaltigkeit aktiv voranzubringen.
+Der Ticketverkauf läuft bis zum 12.11.2025. Sichert euch euer Ticket und erlebt herausragende Redner, spannende Vorträge, interaktive Workshops und Networking – alles, um digitale Nachhaltigkeit aktiv voranzubringen.
