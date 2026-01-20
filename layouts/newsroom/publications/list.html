@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<section id="newsroom" class="single-page bg-one">
+    <div class="section-one">
+        <div class="title-one">Newsroom - {{ i18n "publications" }}</div>
+        <div class="data-content-one" style="text-align: left;">
+            <h2 class="ui top attached block header">
+                {{ i18n "publications" }}
+            </h2>
+            <div class="ui attached divided items segment">
+                {{ $publi := where .Site.RegularPages "Type" "publication" }}
+                {{ range $publi.ByDate.Reverse }}
+                <div class="item">
+                    <div class="content">
+                        <a class="header" href="{{.Params.link}}">{{.Title}}</a>
+                        <p>{{.Params.Magazine}}</p>
+                        <div class="meta">
+                            <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+                        </div>
+
+                        <div class="description">
+                            <p>{{ .Content }}</p>
+                        </div>
+                        <div class="extra">
+                            <a class="ui right floated primary button" href="{{.Params.link}}">
+                                {{ i18n "more_information" }}<i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+                <hr>
+                <div class="ui right aligned">
+                    <a class="ui right aligned button" href="{{ relLangURL "newsroom/publications" }}">
+                        {{ i18n "see_all" }}<i class="right chevron icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

@@ -2654,3 +2654,7 @@ a.project-item-small > i.icon {
 .product-icon a, .product-icon div {
     margin-bottom: 10px;
 }
+
+.ui.right.aligned {
+    text-align: right;
+}
