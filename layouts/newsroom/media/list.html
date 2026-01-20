@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<section id="newsroom" class="single-page bg-one">
+    <div class="section-one">
+        <div class="title-one">Newsroom - {{ i18n "us_in_the_media" }}</div>
+        <div class="data-content-one" style="text-align: left;">
+            <h2 class="ui top attached block header">
+                {{ i18n "us_in_the_media" }}
+            </h2>
+            <div class="ui attached divided items segment">
+                {{ $media := where .Site.RegularPages "Type" "media" }}
+                {{ range $media.ByDate.Reverse }}
+
+                <div class="item">
+                    <div class="ui tiny image">
+                        <img src="{{.Params.picture}}" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <a class="header" href="{{.Params.link}}">{{.Title}}</a>
+                        <div class="meta">
+                            <time style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+                        </div>
+
+                        <div class="description">
+                            <p>{{ .Content }}</p>
+                        </div>
+                        <div class="extra">
+                            <a class="ui right floated primary button" href="{{.Params.link}}">
+                                {{ i18n "more_information" }}<i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
