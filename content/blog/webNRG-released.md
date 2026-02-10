@@ -134,6 +134,8 @@ Further insights on the data set:
 - **Across all sites, the average consumption hovered around 4.6 watts**
 - **What we realised was that size and energy hardly correlate**
   + The correlation between page weight and rendering energy came in at **0.49**, which is weak enough to show that one cannot reliably predict the other. A heavy site may be energy-thrifty; a light site may quietly hammer the CPU.
+- Changes over time matter! In our data set pages constantly change. Some get better, but most get worse. The wildest one is [ZDF.de](https://www.zdf.de), which
+had a very bad day on [Nov 2nd 2025 and clocked in at 35 MB Download size with 9.16 W rendering power](https://metrics.green-coding.io/stats.html?id=69b62408-939b-4669-abbd-2ab7957ccecd)!!!
 
 If you thought a smaller page was automatically greener, think again – with some help from webNRG to quantify your claims.
 
