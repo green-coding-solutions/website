@@ -9,7 +9,11 @@
 
                 <div class="item">
                   <div class="image">
-                        <img src="{{.Params.socialmedia_preview}}" loading="lazy">
+                        {{ if .Params.image }}
+                            <img src="{{ .Params.image }}" loading="lazy">
+                        {{ else if .Params.socialmedia_preview }}
+                            <img src="{{ .Params.socialmedia_preview }}" loading="lazy">
+                        {{ end }}
                   </div>
                   <div class="content">
                     <a class="header" href="{{.Permalink}}">{{.Title}}</a>
