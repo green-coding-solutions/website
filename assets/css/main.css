@@ -2406,7 +2406,8 @@ figure figcaption {
 
 
 #carousel{
-	padding-bottom: 2px;
+        padding-bottom: 2px;
+        min-height: 300px;
 }
 
 #carousel_buttons{
