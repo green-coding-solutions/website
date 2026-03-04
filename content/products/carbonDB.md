@@ -54,27 +54,26 @@ CarbonDB is an essential tool for businesses seeking to navigate the complexitie
             <div class="ui divider horizontal">-</div>
             <div class="ui list">
                 <div class="item"><i class="icon checkmark"></i> <div class="content">
-                    Aggregates data from PowerHOG, Eco-CI and GMT
+                    Aggregates data from PowerHOG, Eco CI and GMT
+                </div></div>
+                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
+                    <b>Custom</b> data add via JSON API
                 </div></div>
                 <div class="item"><i class="icon checkmark"></i> <div class="content">
-                    Only possible to view aggregated data
-                </div></div>
-                <div class="item"><i class="icon checkmark"></i> <div class="content">
-                    Only accessible on free tier SaaS
-                    <br><small><a href="https://metrics.green-coding.io/carbondb.html">Preview</a></small>                                        
+                    Only self-hosted
                 </div></div>
                 <hr>
                 <div class="item"><i class="icon times"></i> <div class="content">
                     No setup support
                 </div></div>
                 <div class="item"><i class="icon times"></i> <div class="content">
-                    Not possible to add data
-                </div></div>
-                <div class="item"><i class="icon times"></i> <div class="content">
                     No measurement support
                 </div></div>
                 <div class="item"><i class="icon times"></i> <div class="content">
-                    No data retention
+                    No automated data backups
+                </div></div>
+                <div class="item"><i class="icon times"></i> <div class="content">
+                    No automated backfilling of carbon intensity data
                 </div></div>
             </div>
         </div>
@@ -95,10 +94,7 @@ CarbonDB is an essential tool for businesses seeking to navigate the complexitie
                     <br><small>Serviced updates and maintenance</small>
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    <b>Unlimited</b> data retention
-                </div></div>
-                <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    <b>Custom</b> data add via POST API
+                    <b>Unlimited</b> data retention with backups
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Custom</b> agents running on VMs that send carbon data
