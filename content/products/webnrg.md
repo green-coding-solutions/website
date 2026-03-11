@@ -12,6 +12,13 @@ webNRG is a free, open-source tool that measures the energy consumption and carb
 
 The tool combines both into a single score, graded from **A+ to F** using a Nutri-score-style system, making results instantly understandable for developers and non-engineers alike.
 
+{{< rawhtml >}}
+<figure>
+    <img class="ui centered huge image" src="/img/products/webNRG-sample-site.webp" alt="Green-Coding.io webNRG summary" loading="lazy">
+    <figcaption><a href="https://website-tester.green-coding.io/details.html?page=https%3A%2F%2Fwww.green-coding.io">green-coding.io webNRG⚡️ Summary</a></figcaption>
+</figure>
+{{< /rawhtml >}}
+
 One of the key insights from building webNRG: a page that transfers 35× more data than another can still consume the same rendering energy. Network size and power consumption are only weakly correlated (0.49), which is why measuring both separately matters.
 
 ### How it works
