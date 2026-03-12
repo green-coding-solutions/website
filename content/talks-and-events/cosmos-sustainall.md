@@ -22,7 +22,7 @@ Afterwards we will have time to discuss the problem further and to brainstorm so
 
 #### Cosmos community
 
-https://www.cosmos.community
+http://web.archive.org/web/20230330082739/https://www.cosmos.community/
 
 Cosmos is a community for sharing things with all the people you trust - friends, friends of friends, neighbours, groups and everyone else.
 

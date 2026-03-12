@@ -34,7 +34,7 @@ and not so quickly subject to change (Servers have 4-5 years lifetime).
 ## Getting energy data directly
 
 Very few vendors allow this and actually the only one we know that provides direct access to IPMI for tenants in it's
-cloud offerings is [Blockheating](https://blockheating.com/). Here you get bare metal machines with also access to IPMI.
+cloud offerings was [Blockheating](http://web.archive.org/web/20230624233405/https://blockheating.com/). Here you get bare metal machines with also access to IPMI.
 
 If you do not know what IPMI is and how to read the data, check out our [Metrics Provider for IPMI](https://docs.green-coding.io/docs/measuring/metric-providers/psu-energy-ac-ipmi-machine/) in the [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}}).
 
