@@ -103,7 +103,7 @@ CarbonDB ist ein unverzichtbares Werkzeug für Unternehmen, die die Komplexität
                     <b>Detailed</b> evaluation of carbon data per project and service
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
-                    <b>API</b> access to proces data in backend
+                    <b>API</b> access to process data in backend
                 </div></div>
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     <b>Backfilling</b> of missing carbon intensity values
