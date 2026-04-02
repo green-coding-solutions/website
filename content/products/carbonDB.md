@@ -87,7 +87,7 @@ CarbonDB is an essential tool for businesses seeking to navigate the complexitie
         <div class="content">
             <div class="header center aligned">Premium</div>
             <div class="meta center aligned">Support & maintenance.</div>
-            <div class="ui divider horizontal">100 EUR / 10.000 Data points / month</div>
+            <div class="ui divider horizontal">100 EUR / 10.000.000 Data points / month</div>
             <div class="ui list">
                 <div class="item"><i class="icon checkmark blue"></i> <div class="content">
                     Hosted API <b>SaaS</b> version
