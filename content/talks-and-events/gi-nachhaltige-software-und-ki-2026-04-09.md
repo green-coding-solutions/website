@@ -29,3 +29,6 @@ das wollen wir mit dieser Online-Veranstaltung zeigen und gemeinsam diskutieren.
 Registration is free on the event page.
 
 The event will take place online via Zoom.
+
+# Slides
+[⬇️ Download PDF Slides](/slides/2026_04_09_GI-compressed.pdf)
