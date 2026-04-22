@@ -34,7 +34,7 @@ While knowing your energy usage is already a really nice thing to have we wanted
 
 This shows the view you will get for a machine. It shows you the sum of of all the energy the machine has used, the [CO2eq](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Carbon_dioxide_equivalent), the average [Carbon Intensity](https://en.wikipedia.org/wiki/Emission_intensity) and how many records we have used to generate these values. You can also see a list aggregated by day. We are planning on giving you detailed analytics as we already do for the Power Hog or Eco-CI. This is a really useful tool for any company that wants to record their impact.
 
-See an example whow the data looks on our [Green Metrics Tool Dashboard Machine](https://metrics.green-coding.io/carbondb-details.html?machine_uuid=09015ff3-8a00-47f0-906a-9360b1808d38), which is also included in Carbon DB.
+See an example whow the data looks on our [Green Metrics Tool Dashboard Machine](https://metrics.green-coding.io/carbondb.html), which is also included in Carbon DB.
 
 You can find the CarbonDB uploader on [our Github repo](https://github.com/green-coding-solutions/eco-server-energy-estimation/tree/main/carbondb_upload)
 

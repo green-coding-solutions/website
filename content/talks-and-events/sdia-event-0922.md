@@ -17,9 +17,9 @@ This is the appetizer text:
 
 > Arne will be presenting tooling for developers to measure energy-use & emissions.
 > At our community event in Berlin, Arne will be presenting the open-source tooling that his team is building for developers to understand the energy-use of their applications. It is aimed at measuring the energy use during the execution of standard-usage scenarios (as required by the German Blue Angel certification), but can be used to get a good understanding of any running application.
-> It’s based on the RAPL interface and is under heavy development. Green Coding Solutions is also actively contributing to the Life Cycle Assessment methodology that is under development at the SDIA for digital resources (https://sdia.io/def-summary)
+> It’s based on the RAPL interface and is under heavy development. Green Coding Solutions is also actively contributing to the Life Cycle Assessment methodology that is under development at the SDIA for digital resources (https://sdia.io/)
 
 #### Update: Recording
 
-The SDIA provided a wonderful recording on their [SDIA Knowledge Base](https://knowledge.sdialliance.org/community-events/23-09-2022-berlin/recordings)
+The SDIA provided a wonderful recording on their [SDIA Knowledge Base](https://knowledge.sdialliance.org/5abc10a0d0aa41cc99fd60548611bc1e)
 

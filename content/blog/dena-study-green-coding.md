@@ -19,6 +19,6 @@ Als Experten für nachhaltige Softwareentwicklung sehen wir die immense Bedeutun
 
 Nachhaltigkeit ist kein isoliertes Thema, sondern erfordert gemeinsame Anstrengungen und Kooperationen. Deshalb freuen wir uns auf die Zusammenarbeit mit Deutsche Energie-Agentur GmbH (dena) . ✨
 
-Außerdem vielen Dank an unser Konsortium [Hochschule für Technik und Wirtschaft Berlin](https://www.htw-berlin.de/), [SYNGENIO AG](https://syngenio.com/), [bluehands GmbH & Co.mmunication KG](https://www.bluehands.de/), [envite consulting](https://www.envite.de/), [DVC - Digital Venture Consultants](https://www.dvc.ventures/), [oktobit](https://oktobit.de/) und [metafinanz Informationssysteme GmbH](https://metafinanz.de/) 🍀
+Außerdem vielen Dank an unser Konsortium [Hochschule für Technik und Wirtschaft Berlin](https://www.htw-berlin.de/), [SYNGENIO AG](https://syngenio.com/), [bluehands GmbH & Co.mmunication KG](https://www.bluehands.de/), [envite consulting](https://www.envite.de/), [DVC - Digital Venture Consultants](https://dvc.ventures/), [oktobit](https://oktobit.de/) und [metafinanz Informationssysteme GmbH](https://metafinanz.de/) 🍀
 
 
