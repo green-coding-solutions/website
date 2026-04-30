@@ -33,7 +33,6 @@ On this page we want to hightlight how to get from typical values like **time** 
                         </a>
                     </div>
                     <p></p>
-
                     <p>When you want to quantify the cost of transferring an amount of data through the internet you would need to measure at every hop of the packet and add up cost for routers, cables, transmission towers etc.</p>
                     <p>Since this measurement data is not available a heuristic is used that estimates the cost of all this network equipment the data has to flow through based on the actual transferred amount of data in GB.</p>
                     <p>When you have the value already in GB you can just convert them with a constant factor to kWh.</p>
@@ -41,7 +40,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p>Typically these approaches either follow a top down approach by looking at the electricity bill of a telecom provider and then the network transmission reporting to divide the two numbers.</p>
                     <p>Other approaches are to really trace the path of some sample packets and look at every piece of network equipment on the way and then on its power draw for the transmission only.</p>
                     <p>There are also other approaches but all have downsides and upsides. We are using the <em>Energy Intensity Model</em> which is described in [0] - See a more detailed discussion about this on our blog: <a href="/blog/network-carbon-emissions-in-green-software/">How to Measure and Act on Network Carbon Emissions in Green Software</a>
-</p>
+                    </p>
                     <p>[0] <a href="https://vs.inf.ethz.ch/publ/papers/Coroama2021_InternetEnergy.pdf">Coroama, V. (2021) - Investigating the inconsistencies among energy and energy intensity estimates of the internet - Swiss Federal Office of Energy SFOE</a></p>
                     <h3>Included Network parts</h3>
                     <img class="ui large floated right rounded bordered image" src="/img/blog/boundaries_network_emissions_coroma.webp">
@@ -54,6 +53,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                         </div>
                         <p>Given the assumptions from the included network parts above <br> and using extrapolated values from [0] for the year 2025.</p>
                     </div>
+                    <small>Additional Note: Another quite valuable source with similar numbers but splitting only in fixed and mobile access is the <a href="https://methodology.scope3.com/data_transfer#power-usage-and-embodied-emissions-by-bandwidth-conventional-model">Summary from Scope 3</a></small>
                 </div>
                 <!-- end segment -->
                 <div class="ui segment">
