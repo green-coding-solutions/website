@@ -66,10 +66,10 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                     <img class="ui large floated right rounded bordered image" src="/img/co2-formulas/electricitymap_de.webp">
                     <p>Diese Umrechnung ist wahrscheinlich die relevanteste.</p>
                     <p>Damit meinen wir, dass die Unternehmen bereits die aktuelle Intensität ihres Netzes kennen und die Arbeitsbelastung entsprechend planen wollen.</p>
-                    <p>Die aktuelle Intensität des Stromnetzes kann z.B. über <a href="https://app.electricitymaps.com/zone/DE">Electricitymap.com</a> abgerufen werden. In unserem Fall, in Deutschland, ist der Wert im Moment <strong>334 gCO2e/kWh</strong> (2024 Durchschnitt) [6]</p>
+                    <p>Die aktuelle Intensität des Stromnetzes kann z.B. über <a href="https://ember-energy.org/data/electricity-data-explorer/?data=co2_intensity&fuel=total&entity=Germany">Ember</a> abgerufen werden. In unserem Fall, in Deutschland, ist der Wert im Moment <strong>330 gCO2e/kWh</strong> (2025 Durchschnitt)</p>
                     <h3>Weltweite durchschnittliche Stromnnetzintensität</h3>
                     <p>Wenn Ihre Workload über mehrere Länder verteilt ist oder Sie überhaupt nicht wissen, wo Ihre Arbeitslast läuft, dann ist es am besten, den globalen Durchschnitt zu nehmen.</p>
-                    <p>Für 2024 ist dieser Wert: <strong>473 gCO2e/kWh</strong> [7]</p>
+                    <p>Für 2025 ist dieser Wert <a href="https://ember-energy.org/data/electricity-data-explorer/?data=co2_intensity&fuel=total">laut Ember</a>: <strong>458 gCO2e/kWh</strong></p>
                     <p>Setzt man diese Zahl in eine Berechnung ein, die mit kWh beginnt, kommt man direkt auf gCO2e, was Gramm CO2-Äquivalent bedeutet. Da nicht jeder chemische Prozess reines CO2 erzeugt, werden diese alle auf das äquivalente Klimaerwärmungspotenzial von CO2 umgerechnet, was zu CO2e führt</p>
                     <div class="ui five mini statistics">
                         <div class="statistic">
@@ -78,17 +78,15 @@ Auf dieser Seite wollen wir beleuchten, wie man von typischen Werten wie **Zeit*
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
                         <div class="statistic">
-                            <div class="value">436</div>
+                            <div class="value">458</div>
                             <div class="label">gCO2e/kWh</div>
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">=</div></div>
                         <div class="statistic">
-                            <div class="value">436</div>
+                            <div class="value">458</div>
                             <div class="label">gCO2e</div>
                         </div>
                     </div>
-                    <p>[6] <a href="https://app.electricitymaps.com/zone/DE/all/yearly">Electricitymaps Germany carbon intensity yearly</a></p>
-                    <p>[7] <a href="https://ember-energy.org/app/uploads/2025/04/Report-Global-Electricity-Review-2025.pdf">Ember Global Electricity Review 2025</a></p>
                 </div>
                 <!-- end segment -->
                 <div class="ui segment" id="calculating-savings">

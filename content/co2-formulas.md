@@ -66,10 +66,10 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <img class="ui large floated right rounded bordered image" src="/img/co2-formulas/electricitymap_de.webp">
                     <p>This conversion is probably the most often done and also the one with the most impact.</p>
                     <p>By most often done we mean that companies already get the current intensity of their grid and schedule workloads accordingly.</p>
-                    <p>The current intensity of the grid can for instance be retrieved from <a href="https://app.electricitymaps.com/zone/DE">Electricitymap.com</a>. In our case in Germany the number is at the moment <strong>334 gCO2e/kWh</strong> (2024 average) [6]</p>
+                    <p>The current intensity of the grid can for instance be retrieved from <a href="https://ember-energy.org/data/electricity-data-explorer/?data=co2_intensity&fuel=total&entity=Germany">Ember</a>. In our case in Germany the number is at the moment <strong>330 gCO2e/kWh</strong> (2025 average)</p>
                     <h3>Worldwide average grid carbon intensity</h3>
                     <p>If your workload is distributed over multiple countries or you don't know at all where your workload is running, then the best way is to take the global average.</p>
-                    <p>For 2024 this number is: <strong>473 gCO2e/kWh</strong> [7]</p>
+                    <p>For 2025 this number <a href="https://ember-energy.org/data/electricity-data-explorer/?data=co2_intensity&fuel=total">according to Ember</a> is: <strong>458 gCO2e/kWh</strong></p>
                     <p>So if we were to plug in this number into a calculation starting with kWh we get directly to gCO2e, which means gramms of CO2 equivalent. Since not every checmical process generates pure CO2 they are all converted to the equivalent climate warming potential of CO2, which results in CO2e</p>
                     <div class="ui five mini statistics">
                         <div class="statistic">
@@ -78,17 +78,15 @@ On this page we want to hightlight how to get from typical values like **time** 
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">x</div></div>
                         <div class="statistic">
-                            <div class="value">436</div>
+                            <div class="value">458</div>
                             <div class="label">gCO2e/kWh</div>
                         </div>
                         <div class="statistic gc-stats-multiply"><div class="value">=</div></div>
                         <div class="statistic">
-                            <div class="value">436</div>
+                            <div class="value">458</div>
                             <div class="label">gCO2e</div>
                         </div>
                     </div>
-                    <p>[6] <a href="https://app.electricitymaps.com/zone/DE/all/yearly">Electricitymaps Germany carbon intensity yearly</a></p>
-                    <p>[7] <a href="https://ember-energy.org/app/uploads/2025/04/Report-Global-Electricity-Review-2025.pdf">Ember Global Electricity Review 2025</a></p>
                 </div>
                 <!-- end segment -->
                 <div class="ui segment" id="calculating-savings">
@@ -100,7 +98,7 @@ On this page we want to hightlight how to get from typical values like **time** 
                     <p></p>
                     <p>Some energy budgeting tools or internal power meters (like <strong>Intel RAPL</strong>) give you *Joules* as an output value.</p>
                     <p>The actual SI-Unit value of Joules is Ws. So in order to get to kWh you have to first get to hours (60*60) and then get to *kilo*, which means to divide by a thousand</p>
-                    <h3>Joules zu kWh</h3>
+                    <h3>Joules to kWh</h3>
                     <div class="ui ten mini statistics">
                         <div class="statistic">
                             <div class="value">1</div>
