@@ -23,6 +23,10 @@ One of the most frequent questions we get when people see a Green Metrics Tool m
 
 Up to now, our UI mostly answered this with a single number derived from a single grid mix. We wanted to give users a way to see the full picture at a glance. With this feature we are introducing a new view to the Green Metrics Tool: the **Yearly Run Simulation**.
 
+{{< infobox >}}
+See it live <a href="https://metrics.green-coding.io/simulation-yearly.html?id=1ce318fd-804c-456e-bd57-2cb9f1ca525d" target="_blank">👉 here</a> for a Wordpress workload.
+{{< /infobox >}}
+
 {{< image "/img/blog/total.webp" "huge" "center" "none" >}}
 
 
