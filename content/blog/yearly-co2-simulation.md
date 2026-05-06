@@ -8,7 +8,18 @@ socialmedia_preview: "/img/blog/social/yearly.webp"
 
 ---
 
-One of the most frequent questions we get when people see a Green Metrics Tool measurement for the first time is some variant of: *"OK, but what does this actually mean in CO2?"* Answering that honestly is harder than it looks. A run measured in our lab tells you how many Joules a piece of software consumed on a specific machine — but the carbon footprint of those Joules depends entirely on where and when the electricity was produced. A workload that emits a few grams of CO2 in Sweden can emit ten times as much in Poland, India or the United Arab Emirates.
+{{< infobox >}}
+<b>TL;DR</b>
+
+<ul>
+  <li>The Green Metrics Tool now has a <b>Yearly Run Simulation</b> view that projects any run's measured energy against the average yearly carbon intensity of every Electricity Maps grid zone, for 2021 – 2025.</li>
+  <li>Pick a year, energy metric, phase and number of runs — get a sortable table of estimated emissions per zone, plus renewable and carbon-free energy share.</li>
+  <li>Pin zones side-by-side to compare regions and years at a glance, instead of relying on a single, falsely precise CO2 number.</li>
+</ul>
+
+{{< /infobox >}}
+
+One of the most frequent questions we get when people see a Green Metrics Tool measurement for the first time is some variant of: *"OK, but what does this actually mean in CO2?"* Answering that honestly is harder than it looks. A run measured in our lab tells you how many Joules a piece of software consumed on a specific machine — but the carbon footprint of those Joules depends entirely on where and when the electricity was produced. A workload that emits a few grams of CO2 in Sweden can emit ten times as much in Poland, India or the United Arab Emirates. For this simulation, we don’t take embodied emissions into account, although these are still really important.
 
 Up to now, our UI mostly answered this with a single number derived from a single grid mix. We wanted to give users a way to see the full picture at a glance. With this feature we are introducing a new view to the Green Metrics Tool: the **Yearly Run Simulation**.
 
@@ -63,7 +74,7 @@ This also slots neatly into the methodology we sketched in [Carbon Aware Develop
 
 ## Data, attribution and caveats
 
-All grid data comes from the wonderful folks at [Electricity Maps](https://www.electricitymaps.com/), distributed via the [`co2.js`](https://github.com/thegreenwebfoundation/co2.js/tree/main/src/data/electricity-maps) project from The Green Web Foundation. We bundle the yearly aggregates directly with the frontend so the simulation works without any external API calls and stays usable in air-gapped or offline deployments.
+All grid data comes from the wonderful folks at [Electricity Maps](https://www.electricitymaps.com/), distributed via the [`co2.js`](https://github.com/thegreenwebfoundation/co2.js/tree/main/src/data/electricity-maps) project from [The Green Web Foundation](https://www.thegreenwebfoundation.org/). A great thank you goes out for helping with this data. We bundle the yearly aggregates directly with the frontend so the simulation works without any external API calls and stays usable in air-gapped or offline deployments.
 
 A few caveats worth keeping in mind:
 
