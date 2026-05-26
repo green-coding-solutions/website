@@ -33,7 +33,7 @@ See the comparison in action here, where we compare the influence of [changing t
 {{< /rawhtml >}}
 
 
-Also our Eco-CI Tooling has been greatly upgraded and allows now for drilldown towards different CPUs, Labels and timeframes. Check out our [Eco-CI feature demo](https://metrics.green-coding.io/ci.html?repo=green-coding-berlin%2Fgreen-metrics-tool&branch=dev&workflow=55778655).
+Also our Eco-CI Tooling has been greatly upgraded and allows now for drilldown towards different CPUs, Labels and timeframes. Check out our [Eco-CI feature demo](https://metrics.green-coding.io/ci.html?repo=green-coding-solutions/green-metrics-tool&branch=main&workflow=45267393&start_date=2026-05-19&end_date=2026-05-26).
 
 {{< rawhtml >}}
 <figure>
