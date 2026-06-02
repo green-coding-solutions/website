@@ -1,0 +1,96 @@
+{{ define "head_extra" }}
+<link rel="stylesheet" href="/products/energy-id/css/main.css">
+<link rel="stylesheet" href="/products/energy-id/css/index.css">
+{{ end }}
+
+{{ define "main" }}
+<section class="single-page bg-one">
+  <div class="section-one">
+    <div class="item product-icon">
+      <a class="project-item-small wrapped"><i class="portrait huge icon project-item-white"></i></a>
+      <div class="title-one">{{.Params.Title}}</div>
+    </div>
+    <div class="data-content-one">
+
+      <div id="energy-id-preamble">
+        {{ .Content }}
+      </div>
+
+      <div class="clear"></div>
+
+      <h2>Software Database</h3>
+      <hr>
+
+      <div id="hero-filter">
+        <span class="ui olive label hero-filter-label">
+          <i class="tag icon"></i><span id="hero-category-name"></span>
+        </span>
+        <a href="./" class="hero-filter-clear">
+          <i class="times icon"></i> Clear filter
+        </a>
+      </div>
+
+      <div id="loader-wrapper">
+        <div class="ui active centered inline large loader"></div>
+        <p class="loader-text">Loading software products&hellip;</p>
+      </div>
+
+      <div id="error-message" class="ui icon error message">
+        <i class="exclamation triangle icon"></i>
+        <div class="content">
+          <div class="header">Could not load data</div>
+          <p id="error-detail">An error occurred while fetching software products from the API.</p>
+        </div>
+      </div>
+
+      <div id="main-grid">
+
+        <div class="ui fluid icon input search-wrapper">
+          <input id="search-input" type="text" placeholder="Search by name or category…">
+          <i class="search icon"></i>
+        </div>
+
+        <div class="ui stackable grid">
+
+          <div class="twelve wide computer sixteen wide mobile column cards-column">
+            <div id="empty-message" class="ui icon info message">
+              <i class="info circle icon"></i>
+              <div class="content">
+                <div class="header">No software products found</div>
+                <p>The API returned an empty list.</p>
+              </div>
+            </div>
+            <div id="cards-grid" class="ui four stackable cards"></div>
+            <div id="no-results"><i class="search icon"></i> No matching software products.</div>
+            <div id="pagination-wrapper"></div>
+          </div>
+
+          <div class="four wide computer sixteen wide mobile column">
+            <div id="sidebar-loader">
+              <div class="ui active centered inline small loader"></div>
+            </div>
+            <div id="category-sidebar">
+              <h4 class="ui dividing header sidebar-heading">
+                <i class="tag green icon"></i> Categories
+              </h4>
+              <div id="category-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4>Credit / Funding</h4>
+      <div>
+          <p>The Energy-ID Database frontend as well as supplementatry tools that have led to the creation of the
+          database which was funded by the Deutsche Bundesstiftung Umwelt (DBU) under the number <a href="https://www.dbu.de/projektdatenbank/39703-01/">DBU Project 39703/01</a></p>.
+          <p>After the creation of the Energy-ID Database also contributions from volunteers, own work without funding and other prior resarch work have been added to the dabase and go beyond the scope of the research project.</p>
+          <p><img src="/img/funding/dbu_sponsor_badge.webp"></p>
+          <p>We are super grateful for this funding and are blessed to have been granted the opportunity to create this data repository for the greater software community!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="/products/energy-id/js/main.js"></script>
+<script src="/products/energy-id/js/index.js"></script>
+{{ end }}

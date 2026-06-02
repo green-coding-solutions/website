@@ -4,19 +4,15 @@ date: 2023-08-02 10:00:00
 publishDate: 2023-08-02
 draft: false
 icon: "portrait"
+layout: "energy-id"
 desc: "Energy ID benchmarks open source software for energy, CO2, and Green Software Foundation's SCI metrics using the Green Metrics Tool. It offers a scorecard with descriptions, scenarios, measurements, and badges from the OpenEnergyBadge project, aiming to highlight the energy/carbon cost of typical software use cases."
 ordering: 4
 ---
 
-In the Energy ID project we are looking at popular open source software and benchmark their Energy, CO2 and the [Green Software Foundation's SCI](https://sci-guide.greensoftware.foundation/) metric via our [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}})
+Energy ID is a database of benchmarked software. Here we are looking at popular open source software, CLI tooling, and also programming
+language constructs and primitives and benchmark their Energy, CO2 and the [Green Software Foundation's SCI](https://sci-guide.greensoftware.foundation/) metric via our [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}})
 
-Energy ID creates a *score card* with a:
-- description
-- benchmarking- / usage-scenario
-- detailed measurement links
-- badges
-
-The badges can be used in Github projects or similar and are based on our [OpenEnergyBadge]({{< relref path="products/open-energy-badge" >}}) project.
+Energy ID lists software by so called *Tasks*.
 
 The projects aim is to get a quick idea about the "typical use case of a software" and how much this would accrue in terms of energy / carbon cost.
 
@@ -26,11 +22,4 @@ If you want to further compare a project, monitor a project over time or even do
 software in the wild. These are the cost that happen on our testing machines and
 also reflect the cost of the scenario chosen by us. A different use-case might incur a vastly different carbon cost.
 
-For measurement on different machines, which are more similar to what you are running in your setup, visit our [Cluster documentation](https://docs.green-coding.io/docs/measuring/measurement-cluster/)
-and re-run the measurement on a machine more apt for your comparison.
-
-# Open Source Projects
----
-{{< include-file "content/energy-id-projects.html" >}}
-
-<div class="clear"></div>
+For measurement on different machines, which are more similar to what you are running in your setup, visit our [Cluster documentation](https://docs.green-coding.io/docs/measuring/measurement-cluster/) and re-run the measurement on a machine more apt for your comparison.

@@ -1,0 +1,104 @@
+/* ── Layout ─────────────────────────────────────── */
+.main.container { padding-top: 2em; }
+#content        { display: none; }
+.back-nav       { margin-bottom: 1.5em; }
+
+/* ── Software name heading ──────────────────────── */
+.sw-page-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2C654F;
+  margin: 0 0 1.25rem 0;
+}
+
+/* ── Task cards ─────────────────────────────────── */
+.task-card { margin-bottom: 1.25rem !important; }
+
+.task-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2C654F;
+  margin: 0 0 0.6rem 0;
+}
+
+.task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  font-size: 0.82rem;
+  color: #6C7E91;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid #D3E8DC;
+}
+.task-meta span { white-space: nowrap; }
+.task-meta i    { opacity: 0.65; margin-right: 0.2rem; }
+
+/* ── Task metrics ───────────────────────────────── */
+.task-metrics { margin-bottom: 0.9rem; }
+
+/* ── Task action links ──────────────────────────── */
+.task-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+/* ── Similar tasks ──────────────────────────────── */
+.comparable-section {
+  margin-top: 1.1rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed #79BA96;
+}
+
+.comparable-heading {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #6C7E91;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+}
+
+.comparable-item {
+  border: 1px solid #D3E8DC;
+  border-radius: 4px;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.45rem;
+  background: #f5f7f6;
+}
+
+.comparable-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.84rem;
+  margin-bottom: 0.45rem;
+}
+
+.comparable-sw-name   { font-weight: 700; color: #2C654F; }
+.comparable-sep       { color: #D3DAE2; }
+.comparable-task-name { color: #1C252E; }
+
+.comparable-machine {
+  margin-left: auto;
+  color: #6C7E91;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.comparable-link       { color: #2C654F; opacity: 0.7; font-size: 0.85rem; }
+.comparable-link:hover { opacity: 1; }
+
+.comparable-metrics { font-size: 0.92em; }
+
+.comparable-loading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: #D3DAE2;
+  padding: 0.25rem 0;
+}
