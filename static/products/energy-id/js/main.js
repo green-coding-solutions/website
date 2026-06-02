@@ -2,9 +2,12 @@ const API_BASE = 'https://api.green-coding.io';
 const GMT_BASE = 'https://metrics.green-coding.io';
 
 function escHtml(str) {
-  const el = document.createElement('span');
-  el.textContent = str || '';
-  return el.innerHTML;
+   return String(str ?? '')
+     .replace(/&/g, '&amp;')
+     .replace(/</g, '&lt;')
+     .replace(/>/g, '&gt;')
+     .replace(/"/g, '&quot;')
+     .replace(/'/g, '&`#39`;');
 }
 
 function show(id) {
