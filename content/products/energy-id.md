@@ -1,7 +1,7 @@
 ---
 title: "Energy ID"
-date: 2023-08-02 10:00:00
-publishDate: 2023-08-02
+date: 2026-04-01 10:00:00
+publishDate: 2026-04-01
 draft: false
 icon: "portrait"
 layout: "energy-id"
