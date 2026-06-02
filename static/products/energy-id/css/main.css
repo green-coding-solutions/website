@@ -1,0 +1,49 @@
+/* ── Base ──────────────────────────────────────── */
+body { background-color: #f5f7f6; }
+
+.hero-title-link,
+.hero-title-link:hover { color: inherit; text-decoration: none; }
+
+.hero.segment {
+  background: linear-gradient(135deg, #1C252E 0%, #2A3744 100%);
+  border-radius: 0 !important;
+  border: none !important;
+  margin-bottom: 0 !important;
+}
+.hero.segment h1,
+.hero.segment p           { color: #D3E8DC !important; }
+.hero.segment .sub.header { color: #79BA96 !important; }
+
+.main.container { padding-bottom: 3em; }
+.footer.segment { margin-top: 3em !important; background: #D3E8DC; }
+
+/* ── Loading / error ───────────────────────────── */
+#loader-wrapper { padding: 3em 0; text-align: center; }
+#error-message  { display: none; }
+.loader-text    { margin-top: 1.5em; color: #6C7E91; }
+
+/* ── Badge pills ───────────────────────────────── */
+.badge-row       { display: flex; align-items: center; margin-bottom: 4px; font-size: 0.78em; line-height: 1; }
+.badge-label,
+.badge-value     { display: inline-flex; align-items: center; height: 20px; padding: 0 8px; white-space: nowrap; }
+.badge-label     { background: #2C654F; color: #D3E8DC; border-radius: 4px 0 0 4px; font-weight: 600; gap: 4px; }
+.badge-dot       { width: 7px; height: 7px; border-radius: 50%; background: #79BA96; flex-shrink: 0; }
+.badge-value     { background: #449977; color: #fff; border-radius: 0 4px 4px 0; min-width: 80px; justify-content: center; }
+.badge-value small { margin-left: 3px; opacity: 0.8; font-size: 0.9em; }
+
+.badge-row.metric-power   .badge-dot { background: #f0c040; }
+.badge-row.metric-energy  .badge-dot { background: #79BA96; }
+.badge-row.metric-net     .badge-dot { background: #40b0f0; }
+.badge-row.metric-sci     .badge-dot { background: #f08040; }
+.badge-row.metric-generic .badge-dot { background: #a080c0; }
+.badge-row.metric-time    .badge-dot { background: #60c8e0; }
+.badge-row.metric-machine .badge-dot { background: #449977; }
+
+/* ── Shared card elements ──────────────────────── */
+.metrics-content    { padding-top: 0.5em; }
+.metrics-content h5 { margin: 0 0 0.5em 0; color: #6C7E91; font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.05em; }
+.phase-tag          { display: inline-block; margin-top: 0.35em; padding: 2px 8px; background: #D3E8DC; border-radius: 3px; font-size: 0.78em; color: #2C654F; font-weight: 700; font-family: monospace; }
+.card-meta          { margin-top: 0.4em; }
+.card-date          { margin-top: 0.25em; font-size: 0.78em; color: #6C7E91; }
+.var-tags           { margin-top: 0.3em; }
+.no-metrics-label   { color: #6C7E91; font-size: 0.82em; }

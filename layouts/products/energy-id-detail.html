@@ -1,0 +1,38 @@
+{{ define "head_extra" }}
+<link rel="stylesheet" href="/products/energy-id/css/main.css">
+<link rel="stylesheet" href="/products/energy-id/css/detail.css">
+{{ end }}
+
+{{ define "main" }}
+<section class="single-page bg-one">
+  <div class="section-one">
+    <div class="data-content-one">
+
+      <div class="back-nav">
+        <a href="../" class="ui basic small button"><i class="arrow left icon"></i> Back to overview</a>
+      </div>
+
+      <div id="loader-wrapper">
+        <div class="ui active centered inline large loader"></div>
+        <p class="loader-text">Loading tasks&hellip;</p>
+      </div>
+
+      <div id="error-message" class="ui icon error message">
+        <i class="exclamation triangle icon"></i>
+        <div class="content">
+          <div class="header">Could not load tasks</div>
+          <p id="error-detail">An error occurred while fetching data from the API.</p>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="tasks-container"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="/products/energy-id/js/main.js"></script>
+<script src="/products/energy-id/js/detail.js"></script>
+{{ end }}
