@@ -1,4 +1,4 @@
-const API_BASE = 'http://api.green-coding.internal:9142';
+const API_BASE = 'https://api.green-coding.io';
 const GMT_BASE = 'https://metrics.green-coding.io';
 
 function escHtml(str) {
