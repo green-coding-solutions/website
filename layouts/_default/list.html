@@ -1,0 +1,19 @@
+{{ define "main" }}
+    <section id="blog" class="bg-one">
+        <div style="display:block; height: 100px;"></div>
+        <div class="section-one">
+            <div class="title-one">{{ .Title }}</div>
+            <div class="data-content-one">
+                {{ with .Content }}{{ . }}{{ end }}
+                {{ range .Pages.ByTitle }}
+                    <div class="line line-1" style="margin: 25px auto;"></div>
+                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <div>
+                        {{ .Summary | plainify }} [...]
+                    </div>
+                    <br>
+                {{ end }}
+            </div>
+         </div>
+    </section><!-- end list -->
+{{ end }}

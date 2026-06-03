@@ -18,16 +18,16 @@ buildFuture = true
 [languages]
   [languages.en]
     disabled = false
-    languageCode = "de-EN"
-    languageDirection = 'ltr'
-    languageName = 'English'
+    locale = "de-EN"
+    direction = 'ltr'
+    label = 'English'
     weight = 1
 
   [languages.de]
-    languageCode = "de-DE"
+    locale = "de-DE"
     disabled = false
-    languageDirection = 'ltr'
-    languageName = 'Deutsch'
+    direction = 'ltr'
+    label = 'Deutsch'
     weight = 2
 
 

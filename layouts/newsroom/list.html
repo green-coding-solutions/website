@@ -115,7 +115,7 @@
                 {{ i18n "downloads" }}
             </h2>
             <div class="ui attached divided items segment">
-                {{ range $.Site.Data.downloads }}
+                {{ range hugo.Data.downloads }}
                 <div class="item">
                     <i class="{{ .icon }} icon"></i>
                     <div class="content">
