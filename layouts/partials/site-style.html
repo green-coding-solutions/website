@@ -15,5 +15,6 @@
 <link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/portfoliostyle.css" | css.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
 <link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/roll_over.css" | css.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
 <link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/layout.css" | css.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
-<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/semantic_reduced.min.css" | css.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
+{{/* Do not postCSS and do not minify the semantic as it will remove some (unused) styles */}}
+<link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/semantic_reduced.min.css" | fingerprint | resources.PostProcess).RelPermalink }}'>
 <link rel="stylesheet" type="text/css" href='{{ (resources.Get "css/custom.css" | css.PostCSS | minify | fingerprint | resources.PostProcess).RelPermalink }}'>
