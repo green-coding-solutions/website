@@ -8,7 +8,7 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-Wir helfen Ihnen bei der Transformatiin Ihrer Software zu einem nachhaltigen Produkt.
+Wir helfen Ihnen bei der Transformation Ihrer Software zu einem nachhaltigen Produkt.
 
 Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien]({{< relref path="#nav-meetups" >}}), entwickeln
 [Projekte]({{< relref path="products" >}}) sowie [Open-Source-Tools zur Messung von CO2 in Containern]({{< relref path="products/green-metrics-tool" >}}) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling]({{< relref path="products/eco-ci" >}})
