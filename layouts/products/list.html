@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <section class="single-page bg-one">
+        <div class="section-one">
+            {{ if .Params.Icon }}
+                <div class="item product-icon">
+                    <a class="project-item-small wrapped "><i class="{{ .Params.Icon }} huge icon project-item-white"></i></a>
+                    <div class="title-one">{{.Params.Title}}</div>
+                </div>
+            {{ else }}
+                <div class="title-one">{{.Params.Title}}</div>
+            {{ end }}
+            <div class="data-content-one">
+                {{ .Content }}
+            </div>
+         </div>
+    </section><!-- end about -->
+
+{{ end }}
