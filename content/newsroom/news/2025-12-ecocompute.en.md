@@ -12,4 +12,4 @@ everyone who could not attend.
 
 For everyone else: Thank you all for being part of this wonderful iteration of ecoCompute ❤️
 
-You can find the slides on the [conference website schedule](https://www.eco-compute.io/2025/schedule)
+You can find the slides on the [conference website schedule](https://www.eco-compute.io/schedule/2025/)

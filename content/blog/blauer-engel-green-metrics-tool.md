@@ -46,7 +46,7 @@ Zu den wichtigsten Funktionen des Green Metrics Tool gehören:
 
 Die Zertifizierung bestätigt, dass das Green Metrics Tool nicht nur die Bemühungen um Nachhaltigkeit unterstützt, sondern auch umweltfreundliche Designprinzipien verkörpert.
 
-Weitere Informationen über das Green Metrics Tool finden Sie auf der Produktseite des Tools: [Green Metrics Tool Produktseite](/prudcts/green-metrics-tool/)
+Weitere Informationen über das Green Metrics Tool finden Sie auf der Produktseite des Tools: [Green Metrics Tool Produktseite](/products/green-metrics-tool/)
 
 
 ## Warum ressourcen- und energieeffiziente Software wichtig ist
@@ -99,7 +99,7 @@ Key features of the Green Metrics Tool include:
 
 The certification validates that the Green Metrics Tool not only supports sustainability efforts but also embodies eco-friendly design principles.
 
-Please find some more details about the Green Metrics Tool on it's product page: [Green Metrics Tool product page](/prudcts/green-metrics-tool/)
+Please find some more details about the Green Metrics Tool on it's product page: [Green Metrics Tool product page](/products/green-metrics-tool/)
 
 
 ## Why Resource- and Energy-Efficient Software Matters

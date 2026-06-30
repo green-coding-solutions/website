@@ -176,7 +176,7 @@ Details
             <p>Indem wir maßgeschneiderte Optimierungskonzepte für Ihr Unternehmen und Ihre Produktanforderungen vorschlagen, identifizieren und quantifizieren wir die Emissionseinsparungen und integrieren die Optimierungen mit Ihnen.</p>
             <p>Quick Wins können oft mit minimalem Aufwand erzielt werden, während langfristige Ziele durch ständige Überwachung und ständige Optimierungen bei jeder Softwareerstellung leicht erreicht werden können.</p>
           </div>
-          <a class="ui right floated primary button distance-top" href="/consulting/development-and-integrations">
+          <a class="ui right floated primary button distance-top" href="/services/development-and-integrations">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>
@@ -203,7 +203,7 @@ Details
             <p>Nachhaltige Software ist ein kontinuierlicher Prozess. Nach der ersten Identifizierung von Schwachstellen und Optimierungszielen automatisieren wir den Reporting-/Transparenzteil durch DevOps-Praktiken nach Industriestandards, indem wir unsere spezialisierten CI/CD-Pipeline-Tools integrieren (siehe zum Beispiel unsere <a href="/products/eco-ci/">Eco-CI Produkte</a> für Github / Gitlab oder unsere <a href="/products/cloud-energy/">Cloud Energy</a> tools für beliebige Pipelines sowie unsere speziellen CI/CD-Dedicated-Services für Unternehmen).</p>
             <p>In einem zweiten Schritt integrieren wir Optimierungen auch direkt in die Software-Build-Chain durch statische Ode-Optimierungen und auch Green AI / ML-Optimierungen.</p>
           </div>
-          <a class="ui right floated primary button distance-top" href="/services/software-integrations">
+          <a class="ui right floated primary button distance-top" href="/services/development-and-integrations">
               Software Integrations
               <i class="right chevron icon"></i>
           </a>

@@ -11,4 +11,4 @@ ecoCompute 2025 war ein voller Erfolg! Wir haben ein Video mit den Highlights ve
 
 An alle anderen: Vielen Dank, dass ihr Teil dieser großartigen ecoCompute-Konferenz wart! ❤️
 
-Die Präsentationsfolien findet ihr im [Konferenzprogramm](https://www.eco-compute.io/2025/schedule)
+Die Präsentationsfolien findet ihr im [Konferenzprogramm](https://www.eco-compute.io/schedule/2025/)
