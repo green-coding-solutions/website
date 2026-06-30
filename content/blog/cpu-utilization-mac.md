@@ -66,10 +66,10 @@ This works and gives you realistic values. You can check this quite quickly with
 If you reduce the time to under 500 ms, that the script should wait till it loops, you start getting `0` values as `host_statistics` returns the same data. It is not exactly 500 ms and it varies on machines but around that time it starts returning the same values.
 
 Apple is notoriously bad at documenting their software but it looks like the kernel just updates the data every *n* ticks. Which makes sense from a performance perspective. Normally you wouldn't need a higher resolution. We looked how other tools implement getting cpu data and even `psutil` [[1]](https://pypi.org/project/psutil/) has the same problem. You can see the details in the
-[bug report](https://github.com/giampaolo/psutil/issues/2368) that we filed. 
+[bug report](https://github.com/giampaolo/psutil/issues/2368) that we filed.
 
 Doing more research there is actually some caching int the [`host.c`](https://gitea.com/matteyeux/darwin-xnu/src/branch/master/osfmk/kern/host.c#L342) file that caches the results but I didn't do a deep dive why the statistics are not updated.
-While the implications are minor we didn't want to ship code that would not perform with a high resolution on MacOS. After some searching around we found that [htop](https://github.com/htop-dev/htop) uses the `host_processor_info`[[2]](https://developer.apple.com/documentation/kernel/1502854-host_processor_info) kernel call which internally uses the `processor_info`[[3]](https://opensource.apple.com/source/xnu/xnu-792/osfmk/mach/processor_info.h.auto.html) call which also gives you the cpu load statistics on a per processor basis. And this gives a far higher resolution. So we can rewrite the code to look like:
+While the implications are minor we didn't want to ship code that would not perform with a high resolution on MacOS. After some searching around we found that [htop](https://github.com/htop-dev/htop) uses the `host_processor_info`[[2]](https://developer.apple.com/documentation/kernel/1502854-host_processor_info) kernel call which internally uses the `processor_info` call which also gives you the cpu load statistics on a per processor basis. And this gives a far higher resolution. So we can rewrite the code to look like:
 
 ```C
 void loop_utilization(unsigned int msleep_time) {

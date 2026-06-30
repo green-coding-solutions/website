@@ -11,13 +11,13 @@ socialmedia_preview: "/img/social-media-previews/blue_angel_certification_300.we
 *Please find the english version below*
 
 
-Wir freuen uns, dass unser Green Metrics Tool nun mit dem renommierten **Blauer Engel** für Ressourcen- und Energieeffiziente Softwareprodukte ausgezeichnet wurde. 
+Wir freuen uns, dass unser Green Metrics Tool nun mit dem renommierten **Blauer Engel** für Ressourcen- und Energieeffiziente Softwareprodukte ausgezeichnet wurde.
 
 Diese Zertifizierung unterstreicht unser Engagement für Nachhaltigkeit und Innovation in der Softwareentwicklung.
 
 ### Was ist die Blauer Engel Zertifizierung?
-Der Blaue Engel ist das offizielle deutsche Umweltzeichen, das seit 1978 vergeben wird. 
-Es legt strenge Standards für Produkte und Dienstleistungen fest und fördert umweltfreundliche Praktiken. 
+Der Blaue Engel ist das offizielle deutsche Umweltzeichen, das seit 1978 vergeben wird.
+Es legt strenge Standards für Produkte und Dienstleistungen fest und fördert umweltfreundliche Praktiken.
 Für Software stellen die Richtlinien DE UZ-215 sicher, dass zertifizierte Produkte:
 
 - Energie- und Datensparsam sind
@@ -35,7 +35,7 @@ Weitere Informationen über die Zertifizierung und den Zertifizierungsprozess fi
 
 
 ### Über das Green Metrics Tool
-Unser Green Metrics Tool wurde entwickelt, um Organisationen verwertbare Einblicke in ihre Umweltauswirkungen zu ermöglichen. 
+Unser Green Metrics Tool wurde entwickelt, um Organisationen verwertbare Einblicke in ihre Umweltauswirkungen zu ermöglichen.
 Durch die Analyse des Ressourcenverbrauchs, des Energieverbrauchs und des CO2-Fußabdrucks hilft das Tool Unternehmen, datengestützte Entscheidungen zu treffen, um ihren ökologischen Fußabdruck zu verringern.
 
 Zu den wichtigsten Funktionen des Green Metrics Tool gehören:
@@ -46,12 +46,12 @@ Zu den wichtigsten Funktionen des Green Metrics Tool gehören:
 
 Die Zertifizierung bestätigt, dass das Green Metrics Tool nicht nur die Bemühungen um Nachhaltigkeit unterstützt, sondern auch umweltfreundliche Designprinzipien verkörpert.
 
-Weitere Informationen über das Green Metrics Tool finden Sie auf der Produktseite des Tools: [Green Metrics Tool Produktseite](/prudcts/green-metrics-tool/)
+Weitere Informationen über das Green Metrics Tool finden Sie auf der Produktseite des Tools: [Green Metrics Tool Produktseite](/products/green-metrics-tool/)
 
 
 ## Warum ressourcen- und energieeffiziente Software wichtig ist
 
-Der Energieverbrauch und die Kohlendioxidemissionen des globalen IT-Sektors steigen rapide an, so dass die Effizienz von Software ein wichtiger Teil der Lösung ist. 
+Der Energieverbrauch und die Kohlendioxidemissionen des globalen IT-Sektors steigen rapide an, so dass die Effizienz von Software ein wichtiger Teil der Lösung ist.
 
 Nachhaltige Software, wie das Green Metrics Tool, hilft dabei:
 - Senkung des Energieverbrauchs für Software
@@ -68,15 +68,15 @@ Die Förderung einer breiteren Akzeptanz umweltfreundlicher Praktiken in der Tec
 
 
 
---- 
+---
 
 *English version of the blog article*
 
-We are thrilled to announce that our Green Metrics Tool has now been certified with the prestigious **Blauer Engel** certification for resource- and energy-efficient software (DE UZ-215). 
+We are thrilled to announce that our Green Metrics Tool has now been certified with the prestigious **Blauer Engel** certification for resource- and energy-efficient software (DE UZ-215).
 This certification underscores our commitment to sustainability and innovation in software development.
 
 ### What is the Blauer Engel Certification?
-The Blauer Engel (Blue Angel) is Germany's official environmental label, established in 1978. 
+The Blauer Engel (Blue Angel) is Germany's official environmental label, established in 1978.
 It sets standards for products and services, promoting environmentally friendly practices. For software, the DE UZ-215 guidelines ensure that certified products:
 
 - are energy and data efficient
@@ -88,7 +88,7 @@ Achieving this certification means that a product meets the requirements for sus
 Please find some more details about the certification and it's process in our [Services page for the Blue Angel](/services/blauer-engel/)
 
 ### About the Green Metrics Tool
-Our Green Metrics Tool is designed to empower organizations with actionable insights into their environmental impact. 
+Our Green Metrics Tool is designed to empower organizations with actionable insights into their environmental impact.
 By analyzing resource usage, energy consumption, and carbon footprint, the tool helps businesses make data-driven decisions to reduce their ecological footprint.
 
 Key features of the Green Metrics Tool include:
@@ -99,12 +99,12 @@ Key features of the Green Metrics Tool include:
 
 The certification validates that the Green Metrics Tool not only supports sustainability efforts but also embodies eco-friendly design principles.
 
-Please find some more details about the Green Metrics Tool on it's product page: [Green Metrics Tool product page](/prudcts/green-metrics-tool/)
+Please find some more details about the Green Metrics Tool on it's product page: [Green Metrics Tool product page](/products/green-metrics-tool/)
 
 
 ## Why Resource- and Energy-Efficient Software Matters
 
-The global IT sector's energy consumption and carbon emissions are growing rapidly, making software efficiency a critical part of the solution. 
+The global IT sector's energy consumption and carbon emissions are growing rapidly, making software efficiency a critical part of the solution.
 
 Sustainable software, like the Green Metrics Tool helps:
 - Reduces energy usage for software

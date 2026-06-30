@@ -18,7 +18,7 @@ If you wann get the details of our journey, why we are integrating it into our t
 ## Why?
 
 Current energy measurement in software that works in a small time resolution is mostly done in with
-[RAPL](https://01.org/blogs/2014/running-average-power-limit-%E2%80%93-rapl) interfaces.
+[RAPL](http://web.archive.org/web/20190220011235/https://01.org/blogs/2014/running-average-power-limit-%E2%80%93-rapl) interfaces.
 
 Typically either [directly](https://web.eece.maine.edu/~vweaver/projects/rapl/) or through tools like [Scaphandre](https://github.com/hubblo-org/scaphandre).
 
@@ -95,7 +95,7 @@ The linux measurement client is a breeze and signals looked directly accurate wi
 
 For inital testing we opted for a simple 0.5 Ohms inline shunt resistor that is measured in the differential measurement mode.
 
-The code for importing the measurements is very simple Python. If you want to have a look at it, you can find it in our [dev branch](https://github.com/green-coding-solutions/green-metrics-tool/blob/dev/tools/dc_converter.py).
+The code for importing the measurements is very simple Python. If you want to have a look at it, you can find it in our [dev branch](https://github.com/green-coding-solutions/green-metrics-tool/blob/1c085bf4/tools/dc_converter.py).
 
 
 ## Judgment of the measurement quality
