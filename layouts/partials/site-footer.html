@@ -17,11 +17,13 @@
 
     <div class="credits" style="margin-top: 10px;">
         {{ $sections := where $.Site.Pages ".Kind" "section" }}
+        {{ $feeds := dict "newsroom" "Newsroom" "blog" "Blog" "case-studies" "Case Studies" }}
         {{ range $sections }}
-              {{ $site_title_rss := .Site.Title }}
-              {{ $page_title_rss := .Page.Title }}
-              {{ with  .OutputFormats.Get "rss" }}
-                  <a type="application/rss+xml" title="{{ $site_title_rss }} - {{ $page_title_rss }} Feed" href="{{.Permalink}}"><img src="/img/rss.webp" height="20"> {{ $page_title_rss }}</a>&nbsp; &nbsp;
+              {{ $label := index $feeds .Section }}
+              {{ if and $label .Parent.IsHome }}
+                  {{ with .OutputFormats.Get "rss" }}
+                      <a type="application/rss+xml" title="{{ $.Site.Title }} - {{ $label }} Feed" href="{{.Permalink}}"><img src="/img/rss.webp" height="20"> {{ $label }}</a>&nbsp; &nbsp;
+                  {{ end }}
               {{ end }}
         {{ end }}
     </div>
