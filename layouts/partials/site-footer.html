@@ -17,7 +17,7 @@
 
     <div class="credits" style="margin-top: 10px;">
         {{ $sections := where $.Site.Pages ".Kind" "section" }}
-        {{ range $sections }}
+        {{ range where $sections ".Page.Title" "Newsroom" }}
               {{ $site_title_rss := .Site.Title }}
               {{ $page_title_rss := .Page.Title }}
               {{ with  .OutputFormats.Get "rss" }}
