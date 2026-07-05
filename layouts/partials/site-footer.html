@@ -16,11 +16,10 @@
     <div style="text-align: center; margin-left: -40px;">👉 <a href="https://us14.campaign-archive.com/home/?u=95bb62bd0ea664ca96566837e&id=772d3b0db9" style="color: #fff;">View our previous newsletters (Archive)</a></div>
 
     <div class="credits" style="margin-top: 10px;">
-        {{ $sections := where $.Site.Pages ".Kind" "section" }}
-        {{ $feeds := dict "newsroom" "Newsroom" "blog" "Blog" "case-studies" "Case Studies" }}
-        {{ range $sections }}
-              {{ $label := index $feeds .Section }}
-              {{ if and $label .Parent.IsHome }}
+        {{ $feeds := slice (dict "path" "/newsroom/news" "label" "News") (dict "path" "/blog" "label" "Blog") (dict "path" "/case-studies" "label" "Case Studies") }}
+        {{ range $feeds }}
+              {{ $label := .label }}
+              {{ with $.Site.GetPage .path }}
                   {{ with .OutputFormats.Get "rss" }}
                       <a type="application/rss+xml" title="{{ $.Site.Title }} - {{ $label }} Feed" href="{{.Permalink}}"><img src="/img/rss.webp" height="20"> {{ $label }}</a>&nbsp; &nbsp;
                   {{ end }}
