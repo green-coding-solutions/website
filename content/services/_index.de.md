@@ -10,7 +10,7 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 Wir helfen Ihnen bei der Transformation Ihrer Software zu einem nachhaltigen Produkt.
 
-Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien]({{< relref path="#nav-meetups" >}}), entwickeln
+Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien]({{< relref path="/#nav-conference" >}}), entwickeln
 [Projekte]({{< relref path="products" >}}) sowie [Open-Source-Tools zur Messung von CO2 in Containern]({{< relref path="products/green-metrics-tool" >}}) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling]({{< relref path="products/eco-ci" >}})
 durch Zertifizierungen wie den [Blauen Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) oder unser Projekt [Energy-ID]({{< relref path="products/energy-id" >}}).
 

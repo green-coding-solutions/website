@@ -1,0 +1,51 @@
+name: Check internal links
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "link-check-${{ github.ref }}"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.161.1
+      HTMLTEST_VERSION: 0.17.0
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      # Build with a root-relative baseURL so every in-site link resolves against
+      # ./public and can be checked on disk, with no server or network needed.
+      - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+        run: hugo --minify --gc --baseURL "/"
+      - name: Install htmltest
+        run: |
+          wget -O ${{ runner.temp }}/htmltest.tar.gz \
+            "https://github.com/wjdp/htmltest/releases/download/v${HTMLTEST_VERSION}/htmltest_${HTMLTEST_VERSION}_linux_amd64.tar.gz"
+          tar -xzf ${{ runner.temp }}/htmltest.tar.gz -C ${{ runner.temp }} htmltest
+          sudo install ${{ runner.temp }}/htmltest /usr/local/bin/htmltest
+      - name: Check internal links
+        run: htmltest
