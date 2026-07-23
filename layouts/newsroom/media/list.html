@@ -12,9 +12,11 @@
                 {{ range $media.ByDate.Reverse }}
 
                 <div class="item">
+                    {{ with .Params.picture }}
                     <div class="ui tiny image">
-                        <img src="{{.Params.picture}}" loading="lazy">
+                        <img src="{{ . }}" loading="lazy">
                     </div>
+                    {{ end }}
                     <div class="content">
                         <a class="header" href="{{.Params.link}}">{{.Title}}</a>
                         <div class="meta">

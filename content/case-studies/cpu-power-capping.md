@@ -65,15 +65,7 @@ Agenda
                         <i class="right triangle icon"></i>
                         <div class="content">
                             <div class="header">
-                                <a href="#energy-for-compression">Measurements</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <i class="right triangle icon"></i>
-                        <div class="content">
-                            <div class="header">
-                                <a href="#summary">Evaluation of possible drawbacks</a>
+                                <a href="#measurements">Measurements</a>
                             </div>
                         </div>
                     </div>
@@ -97,7 +89,7 @@ What do we want to find out?
     How much energy can we save through CPU power capping on a workload and what are the drawbacks of using it?
 {{< /research_question >}}
 
-{{< greenblock >}}
+{{< greenblock id="setup" >}}
 Setting up power capping on Linux
 {{< /greenblock >}}
 
@@ -154,7 +146,7 @@ $ echo "10000000" | sudo tee  /sys/class/powercap/intel-rapl/intel-rapl:0/constr
 
 We recommend to always set both limits unless you have specific reason not to. The rationale is to even catch power spikes which are not untypical in transacational workloads. The values `constraint_1_time_window_us` and `constraint_1_time_window_us` that govern this usually do not need to be touched.
 
-{{< whiteblock >}}
+{{< whiteblock id="measurements" >}}
 Measurements
 {{< /whiteblock >}}
 
@@ -288,7 +280,7 @@ The optimal operating point here shifts from **40%** to **60%**.
 
 When we look even further and factor in the embodied carbon (through the [Green Software Foundation's SCI](https://sci-guide.greensoftware.foundation/)) we see that the operating point of the machine shifts again, now to **80%**.
 
-{{< greenblock >}}
+{{< greenblock id="summary" >}}
 Summary and further considerations
 {{< /greenblock >}}
 

@@ -58,7 +58,7 @@ Agenda
                         <i class="right triangle icon"></i>
                         <div class="content">
                             <div class="header">
-                                <a href="#setup">Setting up power capping on Linux</a>
+                                <a href="#benchmarking">Benchmarking with the Green Metrics Tool</a>
                             </div>
                         </div>
                     </div>
@@ -66,15 +66,7 @@ Agenda
                         <i class="right triangle icon"></i>
                         <div class="content">
                             <div class="header">
-                                <a href="#energy-for-compression">Measurements</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <i class="right triangle icon"></i>
-                        <div class="content">
-                            <div class="header">
-                                <a href="#summary">Evaluation of possible drawbacks</a>
+                                <a href="#results">Results</a>
                             </div>
                         </div>
                     </div>
@@ -98,7 +90,7 @@ What do we want to find out?
     How has the energy efficiency changed with Python 3.9 and Python 3.12 and how does PyPy and Mojo compare to C?
 {{< /research_question >}}
 
-{{< greenblock >}}
+{{< greenblock id="benchmarking" >}}
 Benchmarking with the Green Metrics Tool
 {{< /greenblock >}}
 
@@ -122,7 +114,7 @@ During the run we are mainly looking at the CPU energy and the total machine ene
 
 **Pro Tip**: If you do not know what the Green Metrics Tool is: It is our all-in-one open source professional software benchmarking and optimization solution. [Find infos here]({{< relref path="products/green-metrics-tool" >}})
 
-{{< whiteblock >}}
+{{< whiteblock id="results" >}}
 Results
 {{< /whiteblock >}}
 
@@ -251,7 +243,7 @@ Mojo showed no relevant improvements which is mostly due to the fact that it can
 It will just wrap the Python code and import it as a module and then run it with the native Python interpreter (`libpython`). See our [discussion on their Github](https://github.com/modularml/mojo/discussions/1983)
 
 
-{{< greenblock >}}
+{{< greenblock id="summary" >}}
 Summary and further considerations
 {{< /greenblock >}}
 

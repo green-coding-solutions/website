@@ -180,7 +180,7 @@ In this detailed article we will look at the potential backlash when using polyf
                 </div>
                 <div class="ui segment" id="calculating-savings">
                     <div class="header">
-                        <a class="ui orange ribbon label" href="#calculating savings">
+                        <a class="ui orange ribbon label" href="#calculating-savings">
                             <h3 style="color: #fff;">Calculating savings</h3>
                         </a>
                     </div>
@@ -221,7 +221,7 @@ In this detailed article we will look at the potential backlash when using polyf
                         </div>
                     </div>
                     <h3>Calculate CO2 savings</h3>
-                    <p>Since every network transmission has an energy and CO2 budget attached to it we no use our formulas from <a href="#TODO">TODO:_ CO2 formulas for software engineering</a> and then we plug in to calculate the savings per day. We also use the <a href="https://app.electricitymaps.com/zone/DE">avg. grid intensity in Germany</a> for today (280g / kWh).</p>
+                    <p>Since every network transmission has an energy and CO2 budget attached to it we no use our formulas from <a href="/blog/co2-formulas-and-case-studies">CO2 formulas for software engineering</a> and then we plug in to calculate the savings per day. We also use the <a href="https://app.electricitymaps.com/zone/DE">avg. grid intensity in Germany</a> for today (280g / kWh).</p>
                     <div class="ui ten mini statistics">
                         <div class="statistic">
                             <div class="value">135</div>

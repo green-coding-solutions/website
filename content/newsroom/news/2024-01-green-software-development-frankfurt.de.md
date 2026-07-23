@@ -1,7 +1,7 @@
 ---
 title: "Sustainable Software: Ansätze zum Messen der Energieeffizienz von Software"
 picture: "/img/newsroom/news/gsd-frankfurt.webp"
-link: "/talks-and-events/green-software-development-frankfurt-2023-01-18/"
+link: "/talks-and-events/green-software-development-frankfurt-2024-01-18/"
 date: 2024-01-18
 draft: false
 type: "news"

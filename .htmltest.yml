@@ -1,0 +1,20 @@
+# Config for htmltest — checks that internal links resolve to real pages/assets.
+# Run via .github/workflows/link-check.yml, or locally:
+#   hugo --minify --gc --baseURL "/" && htmltest
+DirectoryPath: "public"
+
+# Only internal links: no network calls, so the check is fast and never flaky.
+CheckExternal: false
+
+CheckLinks: true
+CheckImages: true
+CheckScripts: true
+CheckAnchors: true
+
+# Not link correctness — accessibility/markup lint we are deliberately not gating on here.
+IgnoreAltMissing: true
+IgnoreInternalEmptyHash: true
+IgnoreEmptyHref: true
+
+# Hugo emits pretty URLs (/foo/); don't complain about the missing trailing slash form.
+IgnoreDirectoryMissingTrailingSlash: true

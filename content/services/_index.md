@@ -12,7 +12,7 @@ We help you to transform your software to a sustainable product.
 
 Scroll down and see how we work with companies in our 5 stage approach. 
 
-We are [regular speaker at conferences and industry symposiums]({{< relref path="/#nav-meetups" >}}), developing
+We are [regular speaker at conferences and industry symposiums]({{< relref path="/#nav-conference" >}}), developing
 [open source industry advancing container native carbon measurement tools]({{< relref path="products/green-metrics-tool" >}}) as well as
 [state of the art carbon pipeline tooling]({{< relref path="products/eco-ci" >}}), active advocates and consultants for energy and carbon transparency
 through certifications like the [Blauer Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) or our [Energy-ID]({{< relref path="products/energy-id" >}}) project.
