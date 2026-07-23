@@ -54,7 +54,7 @@ A full readme and documentation can be found in the GitHub repo.
 
 ## Screenshots
 
-<img class="ui large rounded bordered image" src="/img/products/hog-mac-app.webp" alt="HOG Screenshot" srcset="/img/products/hog-mac-app.webp 1x, /img/products/hog-mac-app@4x.webp"  loading="lazy" style="margin:auto;">
+<img class="ui large rounded bordered image" src="/img/products/hog-mac-app.webp" alt="HOG Screenshot" srcset="/img/products/hog-mac-app.webp 1x, /img/products/hog-mac-app@2x.webp"  loading="lazy" style="margin:auto;">
 <br>
 <br>
 <img class="ui large rounded bordered image" src="/img/products/hog-embodied-carbon.webp" alt="HOG Screenshot" srcset="/img/products/hog-embodied-carbon.webp 1x, /img/products/hog-embodied-carbon@2x.webp"  loading="lazy" style="margin:auto;">
