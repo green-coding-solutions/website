@@ -49,3 +49,9 @@ jobs:
           sudo install ${{ runner.temp }}/htmltest /usr/local/bin/htmltest
       - name: Check internal links
         run: htmltest
+      # htmltest only inspects a[href], img[src], script[src] and link[href].
+      # The JS-driven nav (<option value>) and retina variants (srcset) fall
+      # outside those attributes, so they are checked separately.
+      - name: Check links htmltest does not cover
+        if: always()
+        run: python3 scripts/check-unchecked-links.py public
