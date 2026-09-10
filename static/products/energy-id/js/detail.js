@@ -98,7 +98,7 @@ function fetchComparable(taskId, name, currentMachineId) {
       const sec = document.getElementById(`comparable-${taskId}`);
       if (!json?.data?.length) { sec?.remove(); return; }
 
-      let html = '<div class="comparable-heading"><i class="exchange alternate icon"></i> Similar Tasks</div>';
+      let html = '<div class="comparable-heading"><i class="exchange alternate icon"></i> Similar Softwares</div>';
       json.data.forEach(item => { html += renderComparableItem(item, currentMachineId); });
       sec.innerHTML = html;
     })
