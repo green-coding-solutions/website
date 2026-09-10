@@ -56,12 +56,6 @@ function makeBadge(cssClass, label, valueStr, unit) {
   </div>`;
 }
 
-function isStandardMetric(name) {
-  return name.includes('energy') || name.includes('power') ||
-         name.includes('carbon') || name.includes('sci') ||
-         name.startsWith('network_') || name === 'phase_time_syscall_system';
-}
-
 function renderCardMetrics(pm) {
   if (!pm || !Object.keys(pm).length) return '<span class="no-metrics-label">No metrics available</span>';
 
@@ -70,11 +64,11 @@ function renderCardMetrics(pm) {
 
   let machineTotal = 0, hasEnergy = false;
   for (const [k, v] of Object.entries(pm)) {
-    if (k.includes('energy')) { machineTotal += v.value; hasEnergy = true; }
+    if (k.startsWith('psu_energy') && k.endsWith('_machine')) { machineTotal += v.value; hasEnergy = true; }
   }
   const machineStr = hasEnergy ? (machineTotal / 3_600_000).toFixed(4) : null;
 
-  const custom = Object.entries(pm).filter(([k]) => !isStandardMetric(k));
+  const custom = Object.entries(pm).filter(([k]) => k.startsWith('custom_'));
   let customStr = null, customUnit = '';
   if (custom.length === 1) {
     const [, v] = custom[0];
