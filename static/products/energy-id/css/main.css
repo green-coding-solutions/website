@@ -23,7 +23,7 @@ body { background-color: #f5f7f6; }
 .loader-text    { margin-top: 1.5em; color: #6C7E91; }
 
 /* ── Badge pills ───────────────────────────────── */
-.badge-row       { display: flex; align-items: center; margin-bottom: 4px; font-size: 0.78em; line-height: 1; }
+.badge-row       { display: flex; align-items: center; font-size: 0.78em; line-height: 1; }
 .badge-label,
 .badge-value     { display: inline-flex; align-items: center; height: 20px; padding: 0 8px; white-space: nowrap; }
 .badge-label     { background: #2C654F; color: #D3E8DC; border-radius: 4px 0 0 4px; font-weight: 600; gap: 4px; }
@@ -40,6 +40,8 @@ body { background-color: #f5f7f6; }
 .badge-row.metric-machine .badge-dot { background: #449977; }
 
 /* ── Shared card elements ──────────────────────── */
+.task-metrics,
+.comparable-metrics { display: flex; flex-wrap: wrap; gap: 4px 8px; }
 .metrics-content    { padding-top: 0.5em; }
 .metrics-content h5 { margin: 0 0 0.5em 0; color: #6C7E91; font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.05em; }
 .phase-tag          { display: inline-block; margin-top: 0.35em; padding: 2px 8px; background: #D3E8DC; border-radius: 3px; font-size: 0.78em; color: #2C654F; font-weight: 700; font-family: monospace; }
