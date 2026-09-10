@@ -50,18 +50,6 @@ function renderCardMetrics(pm) {
   }
   const machineStr = hasEnergy ? (machineTotal / 3_600_000).toFixed(4) : null;
 
-  let customStr = null, customUnit = '';
-  if (customEntries.length === 1) {
-    const [, v] = customEntries[0];
-    const abs = Math.abs(v.value);
-    const dec = abs < 0.001 ? 6 : abs < 0.1 ? 4 : 3;
-    customStr = v.value.toFixed(dec);
-    customUnit = v.unit || '';
-  } else if (customEntries.length > 1) {
-    customStr = String(customEntries.length);
-    customUnit = 'metrics';
-  }
-
   let durStr = null, durUnit = 's';
   if (dur) {
     const us = dur.value;
@@ -70,10 +58,18 @@ function renderCardMetrics(pm) {
     else                  { durStr = String(us);                  durUnit = 'µs'; }
   }
 
+  // Each custom metric gets its own badge, showing its own unit (e.g. "Frames
+  // rendered") rather than a generic count — custom metrics have no shared unit.
+  const customBadges = customEntries.map(([, v]) => {
+    const abs = Math.abs(v.value);
+    const dec = abs < 0.001 ? 6 : abs < 0.1 ? 4 : 3;
+    return makeBadge('generic', 'Custom', v.value.toFixed(dec), v.unit || '');
+  }).join('');
+
   return makeBadge('energy',  'CPU Energy',     cpuEnergyStr, 'mWh')
        + makeBadge('machine', 'Machine Energy', machineStr,   'mWh')
        + makeBadge('time',    'Duration',       durStr,       durUnit)
-       + makeBadge('generic', 'Custom',         customStr,    customUnit);
+       + customBadges;
 }
 
 /* ── Task rendering ────────────────────────────── */
