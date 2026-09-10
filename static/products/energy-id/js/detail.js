@@ -168,7 +168,7 @@ function buildCompareTableUrl(runIds, phase, metrics) {
 }
 
 function fetchComparable(taskId, name, currentMachineId, phase, phaseMetrics) {
-  const url = `${API_BASE}/v1/software/similar?name=${encodeURIComponent(name)}&exclude_software_id=${encodeURIComponent(softwareId)}&categories=${encodeURIComponent(swCategories)}`;
+  const url = `${API_BASE}/v1/software/similar?name=${encodeURIComponent(name)}&exclude_software_id=${encodeURIComponent(softwareId)}&categories=${encodeURIComponent(swCategories)}&limit=20`;
 
   fetch(url)
     .then(res => (res.ok && res.status !== 204) ? res.json() : null)
