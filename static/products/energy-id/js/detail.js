@@ -11,6 +11,71 @@ function showError(msg) {
   show('error-message');
 }
 
+/* ── Metric badges ─────────────────────────────── */
+
+// Single source of truth for which phase_metrics key feeds which badge
+// (CPU Energy, Machine Energy, Duration, Custom) in renderCardMetrics() below,
+// and which keys are exposed to the GMT compare table via badgeMetricKeys().
+function classifyMetric(name) {
+  if (name === 'cpu_energy_rapl_msr_component') return 'cpu';
+  if (name.startsWith('psu_energy') && name.endsWith('_machine')) return 'machine';
+  if (name === 'phase_time_syscall_system') return 'duration';
+  if (name.startsWith('custom_')) return 'custom';
+  return null;
+}
+
+function makeBadge(cssClass, label, valueStr, unit) {
+  if (valueStr == null) return '';
+  return `<div class="badge-row metric-${cssClass}">
+    <span class="badge-label"><span class="badge-dot"></span>${label}</span>
+    <span class="badge-value">${valueStr}<small> ${unit}</small></span>
+  </div>`;
+}
+
+function renderCardMetrics(pm) {
+  if (!pm || !Object.keys(pm).length) return '<span class="no-metrics-label">No metrics available</span>';
+
+  let cpuEnergyStr = null;
+  let machineTotal = 0, hasEnergy = false;
+  let dur = null;
+  const customEntries = [];
+
+  for (const [k, v] of Object.entries(pm)) {
+    switch (classifyMetric(k)) {
+      case 'cpu':      cpuEnergyStr = (v.value / 3_600_000).toFixed(4); break;
+      case 'machine':  machineTotal += v.value; hasEnergy = true;       break;
+      case 'duration': dur = v;                                        break;
+      case 'custom':   customEntries.push([k, v]);                     break;
+    }
+  }
+  const machineStr = hasEnergy ? (machineTotal / 3_600_000).toFixed(4) : null;
+
+  let customStr = null, customUnit = '';
+  if (customEntries.length === 1) {
+    const [, v] = customEntries[0];
+    const abs = Math.abs(v.value);
+    const dec = abs < 0.001 ? 6 : abs < 0.1 ? 4 : 3;
+    customStr = v.value.toFixed(dec);
+    customUnit = v.unit || '';
+  } else if (customEntries.length > 1) {
+    customStr = String(customEntries.length);
+    customUnit = 'metrics';
+  }
+
+  let durStr = null, durUnit = 's';
+  if (dur) {
+    const us = dur.value;
+    if (us >= 1_000_000) { durStr = (us / 1_000_000).toFixed(2); durUnit = 's'; }
+    else if (us >= 1_000) { durStr = (us / 1_000).toFixed(2);    durUnit = 'ms'; }
+    else                  { durStr = String(us);                  durUnit = 'µs'; }
+  }
+
+  return makeBadge('energy',  'CPU Energy',     cpuEnergyStr, 'mWh')
+       + makeBadge('machine', 'Machine Energy', machineStr,   'mWh')
+       + makeBadge('time',    'Duration',       durStr,       durUnit)
+       + makeBadge('generic', 'Custom',         customStr,    customUnit);
+}
+
 /* ── Task rendering ────────────────────────────── */
 
 function buildTimelineUrl(uri, branch, filename, machine_id, phase) {
@@ -89,7 +154,20 @@ function renderComparableItem(item, currentMachineId) {
     </div>`;
 }
 
-function fetchComparable(taskId, name, currentMachineId) {
+function badgeMetricKeys(pm) {
+  if (!pm) return [];
+  return Object.keys(pm).filter(k => classifyMetric(k) !== null);
+}
+
+function buildCompareTableUrl(runIds, phase, metrics) {
+  const p = new URLSearchParams();
+  p.set('ids', runIds.join(','));
+  if (phase) p.set('phase', phase);
+  if (metrics.length) p.set('metrics', metrics.join(','));
+  return `${GMT_BASE}/compare-simple.html?${p.toString()}`;
+}
+
+function fetchComparable(taskId, name, currentMachineId, phase, phaseMetrics) {
   const url = `${API_BASE}/v1/software/similar?name=${encodeURIComponent(name)}&exclude_software_id=${encodeURIComponent(softwareId)}&categories=${encodeURIComponent(swCategories)}`;
 
   fetch(url)
@@ -98,9 +176,42 @@ function fetchComparable(taskId, name, currentMachineId) {
       const sec = document.getElementById(`comparable-${taskId}`);
       if (!json?.data?.length) { sec?.remove(); return; }
 
-      let html = '<div class="comparable-heading"><i class="exchange alternate icon"></i> Similar Softwares</div>';
-      json.data.forEach(item => { html += renderComparableItem(item, currentMachineId); });
-      sec.innerHTML = html;
+      const runIds = [...new Set(json.data.map(item => item.run_id).filter(Boolean))];
+
+      const metricKeys = new Set(badgeMetricKeys(phaseMetrics));
+      json.data.forEach(item => badgeMetricKeys(item.phase_metrics).forEach(k => metricKeys.add(k)));
+
+      const compareLink = runIds.length
+        ? `<a class="comparable-compare-link" href="${escHtml(buildCompareTableUrl(runIds, phase, [...metricKeys]))}" target="_blank" rel="noopener">
+             <i class="table icon"></i>Compare all similar software in table view
+           </a>`
+        : '';
+
+      let itemsHtml = '';
+      json.data.forEach(item => { itemsHtml += renderComparableItem(item, currentMachineId); });
+
+      sec.innerHTML = `
+        <div class="comparable-toggle" role="button" tabindex="0" aria-expanded="false">
+          <span class="comparable-toggle-label"><i class="angle right icon comparable-toggle-icon"></i>Similar Softwares</span>
+          ${compareLink}
+        </div>
+        <div class="comparable-body" hidden>${itemsHtml}</div>`;
+
+      const toggle = sec.querySelector('.comparable-toggle');
+      const body   = sec.querySelector('.comparable-body');
+      const toggleOpen = () => {
+        const willOpen = body.hidden;
+        body.hidden = !willOpen;
+        toggle.classList.toggle('open', willOpen);
+        toggle.setAttribute('aria-expanded', String(willOpen));
+      };
+      toggle.addEventListener('click', (e) => {
+        if (e.target.closest('.comparable-compare-link')) return;
+        toggleOpen();
+      });
+      toggle.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleOpen(); }
+      });
     })
     .catch(() => document.getElementById(`comparable-${taskId}`)?.remove());
 }
@@ -126,7 +237,7 @@ if (!softwareId) {
       container.innerHTML = `<h1 class="sw-page-title">${escHtml(swName || '—')}</h1>`;
       items.forEach(task => {
         container.insertAdjacentHTML('beforeend', renderTask(task));
-        fetchComparable(task.id, task.name, task.machine_id);
+        fetchComparable(task.id, task.name, task.machine_id, task.phase, task.phase_metrics);
       });
 
       show('content');
