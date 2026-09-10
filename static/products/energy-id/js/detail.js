@@ -24,6 +24,36 @@ function classifyMetric(name) {
   return null;
 }
 
+// Known abbreviations/units kept upper-case instead of Title-cased (e.g. "mb" -> "MB").
+const CUSTOM_METRIC_KNOWN_UNITS = new Set([
+  'mb', 'kb', 'gb', 'tb', 'cpu', 'gpu', 'ram', 'io', 'id', 'url',
+  'sci', 'co2', 'ghz', 'mhz', 'khz', 'hz', 'kwh', 'mwh', 'wh', 'uj',
+  'ms', 'us', 'ns', 'http', 'https', 'api', 'json', 'html', 'css',
+  'sql', 'xml', 'ip', 'os', 'ui', 'db', 'ai', 'ml', 'llm', 'ci', 'cd',
+]);
+
+function customMetricWord(word) {
+  return CUSTOM_METRIC_KNOWN_UNITS.has(word.toLowerCase())
+    ? word.toUpperCase()
+    : word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+// custom_compressed_mb_sci_global -> "Compressed MB (SCI)"
+// custom_compressed_mb            -> "Compressed MB"
+function customMetricLabel(key) {
+  let name = key.startsWith('custom_') ? key.slice('custom_'.length) : key;
+
+  let isSci = false;
+  if (name.endsWith('_sci_global')) {
+    name = name.slice(0, -'_sci_global'.length);
+    isSci = true;
+  }
+
+  const label = name.split('_').filter(Boolean).map(customMetricWord).join(' ');
+
+  return isSci ? `${label} (SCI)` : label;
+}
+
 function makeBadge(cssClass, label, valueStr, unit) {
   if (valueStr == null) return '';
   return `<div class="badge-row metric-${cssClass}">
@@ -60,10 +90,10 @@ function renderCardMetrics(pm) {
 
   // Each custom metric gets its own badge, showing its own unit (e.g. "Frames
   // rendered") rather than a generic count — custom metrics have no shared unit.
-  const customBadges = customEntries.map(([, v]) => {
+  const customBadges = customEntries.map(([k, v]) => {
     const abs = Math.abs(v.value);
     const dec = abs < 0.001 ? 6 : abs < 0.1 ? 4 : 3;
-    return makeBadge('generic', 'Custom', v.value.toFixed(dec), v.unit || '');
+    return makeBadge('generic', customMetricLabel(k), v.value.toFixed(dec), v.unit || '');
   }).join('');
 
   return makeBadge('energy',  'CPU Energy',     cpuEnergyStr, 'mWh')
