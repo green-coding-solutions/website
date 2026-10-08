@@ -39,7 +39,7 @@ Our tools auto-generate the application annexes. It also seamlessly imports meas
 
 ### Automated, reliable and audit-read
 
-One core intention of the Blue Angel is to motivate and empower companies to learn about their software energy consumption. The Green Metrics Tool takes an extra step here and tracks your performance and sustainability over time. More importantly, it is a detailed analysis tool that helps to detect energy inefficiencies and provides detailed recommendations to decrease unnecessary emissions. Our tool also ensures every software update automatically triggers performance and energy-efficiency tests so that companies are aware of energy consumption of new feature updates.
+One core intention of the Blue Angel is to motivate and empower companies to learn about their software energy consumption. The Green Metrics Tool takes an extra step here and tracks your performance and energy consumption over time. More importantly, it is a detailed analysis tool that helps to detect energy inefficiencies and provides detailed recommendations to decrease unnecessary emissions. Our tool also ensures every software update automatically triggers performance and energy-efficiency tests so that companies are aware of energy consumption of new feature updates.
 
 This tracking over time also enables you easliy extend and renew your certification after one year with new and updated energy values (Required by the Blue Angel Award criteria).
  

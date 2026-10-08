@@ -39,7 +39,7 @@ Two main methodologies are used to estimate network emissions:
 - **Energy Intensity Model**: Estimates emissions based on data valume using factors like kilowatt-hours per gigabyte (kWh/GB)
 - **Power Model**: Acconts for the constant energy use of network hardware over time, even when idle, making them less tied to data valume.
 
-Now we will break down how each model works, including their pros and cons, and see which one offers more actionable insights greener software.
+Now we will break down how each model works, including their pros and cons, and see which one offers more actionable insights for reducing software emissions.
 
 <br>
 

@@ -24,7 +24,7 @@ Although very similar it is not always identical. Full resource utilization is a
 
 
 #### Why is green software needed?
-Green Software is the natural answer to a world that needs software but has limited resources. Therefore we see it as a mandatory and non-negiotiable building block when designing software.
+Green Software, meaning software that is designed to measure and minimize its energy and resource use, is our answer to a world that needs software but has limited resources. Therefore we see it as a mandatory and non-negiotiable building block when designing software.
 
 {{< rawhtml >}}
 <script type="application/ld+json">
@@ -61,7 +61,7 @@ Green Software is the natural answer to a world that needs software but has limi
                 "name": "Why is green software needed?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Green Software is the natural answer to a world that needs software but has limited resources. Therefore we see it as a mandatory and non-negiotiable building block when designing software."
+                    "text": "Green Software, meaning software that is designed to measure and minimize its energy and resource use, is our answer to a world that needs software but has limited resources. Therefore we see it as a mandatory and non-negiotiable building block when designing software."
                 }
             }
         ]

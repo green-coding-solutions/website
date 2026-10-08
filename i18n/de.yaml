@@ -1,7 +1,7 @@
 - id: home_what_we_do
-  translation: "Wir machen Software nachhaltig"
+  translation: "Software Emissionen senken."
 - id: home_teaser
-  translation: "Wir unterstützen Unternehmen, Behörden und Open-Source-Communites dabei, die CO2-Emissionen ihrer digitalen Dienste zu analysieren und zu reduzieren, um umweltfreundlichere digitale Lösungen zu fördern."
+  translation: "Wir unterstützen Unternehmen, Behörden und Open-Source-Communites dabei, die CO2-Emissionen ihrer digitalen Dienste zu analysieren und zu reduzieren."
 - id: home_cta
   translation: "Mehr erfahren ⇨"
 - id: home_about_details
@@ -25,7 +25,7 @@
   translation: "Alle Events"
 
 - id: home_research_teaser
-  translation: "Wir arbeiten mit Organisationen, Universitäten und Regierungsstellen als Forschungspartner zusammen, um den Bereich nachhaltiger Software voranzutreiben<br>–<br>Für eine grünere digitale Zukunft"
+  translation: "Wir arbeiten mit Organisationen, Universitäten und Regierungsstellen als Forschungspartner zusammen, um die Forschung zu Energieverbrauch und CO2-Emissionen von Software voranzutreiben<br>–<br>Für transparente und messbare Software-Emissionen"
 
 - id: research_dbu
   translation: "Datenbank für green software dependencies"

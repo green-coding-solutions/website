@@ -1,12 +1,12 @@
 ---
 title: "Junior Green Software Developer"
-description: "Open role for Junior Green Software Developer at Green Coding Solutions GmbH to work on sustainable software."
+description: "Open role for Junior Green Software Developer at Green Coding Solutions GmbH to work on measuring and reducing the energy consumption of software."
 draft: true
 ---
 
 At Green Coding Solutions we create a green software community and ecosystem in Berlin.
 
-Our goal is to shape the industry for the better in terms of using software in a sustainable way.
+Our goal is to shape the industry for the better in terms of using software with awareness of its energy and resource use.
 We strongly believe in the positive impact of digitalization. But we believe it must be done responsibly with awareness of consumption and
 with strong planning to avoid rebound effects.
 
@@ -91,7 +91,7 @@ Just shoot us an email at jobs@green-coding.io with a quick intro and why you wo
 
 Please also include a quick comment on your skills regarding the aforementioned skills.
 
-Also very interesting for us is if you have any current experience with sustainable software design and / or what drives your interest in the field.
+Also very interesting for us is if you have any current experience with measuring or optimizing the energy consumption of software and / or what drives your interest in the field.
 
 A link to your LinkedIn and Github profile is usually helpful.
 

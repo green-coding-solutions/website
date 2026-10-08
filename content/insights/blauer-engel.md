@@ -44,13 +44,12 @@ Certification process
 {{< /whiteblock >}}
 
 
-The primary objective is to reduce environmental burden by making energy and resource consumption transparent and accountable. The Blue Angel label for software signals:
-- Longer hardware usage
-- Energy efficiency
-- Long-lasting usability through standard exports
-- Respect for user autonomy
+The primary objective is to reduce environmental burden by making energy and resource consumption transparent and accountable. The official claims of the Blue Angel label for software are:
 
-This label fosters a holistic view of software sustainability.
+**Benefits to the environment and health**
+- transparent about energy and hardware use
+- backwards compatible and guaranteed updates
+- free of advertising and tracking
 
 <br>
 

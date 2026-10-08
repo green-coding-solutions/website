@@ -25,7 +25,7 @@ We develop [industry wide used state of the art open source software]({{< relref
           <div class="description">
             <br>
             <p>Understanding how much your product is using in terms of CO2 is not only key for optimizations and reporting, but also an important marketing and transparency gain.</p>
-            <p>To make certain claims about the carbon efficiency or even carbon neutrality of your product it is important that real time metrics of the application are present in a very granular layer.</p>
+            <p>To make specific and verifiable claims about the energy consumption and carbon emissions of your product it is important that real time metrics of the application are present in a very granular layer.</p>
             <p>We benchmark and profile your application with our open source tooling and automate the profiling for every commit that you check in - DevOps ready.</p>
             <p>Carbon transparent applications report this values typically as an SCI value. We have done numerous of these profilings already and also submit use-cases to the Green Software Foundation for open source tools.</p>
             <p>Application carbon profiles can be used to drive optimizations, drive team and talent engagement and for external communication like reportings and marketing.</p>

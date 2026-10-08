@@ -43,13 +43,12 @@ Zertifizierungsprozess
 {{< /whiteblock>}}
 
 
-Das Hauptziel de Blauen Engel ist es, die Umweltbelastung zu verringern, indem Energie- und Ressourcenverbrauch transparent und verantwortlich gemacht werden. Die Softwaresignale hierbei sind:
-- Längere Hardware-Nutzungsdauer
-- Energieeffizienz
-- lang anhaltende Softwarenutzung durch Standardexporte
-- Respekt vor der Benutzerautonomie
+Das Hauptziel de Blauen Engel ist es, die Umweltbelastung zu verringern, indem Energie- und Ressourcenverbrauch transparent und verantwortlich gemacht werden. Die offiziellen Aussagen des Blauen Engels für Software sind:
 
-Der Blaue Engel fördert hier eine ganzheitliche Sichtweise der Nachhaltigkeit der Software.
+**Vorteile für Umwelt und Gesundheit**
+- transparent in Energie- und Hardwarenutzung
+- abwärtskompatibel und gesicherte Updates
+- werbe- und trackingfrei
 
 <br>
 

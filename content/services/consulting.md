@@ -1,7 +1,7 @@
 ---
 title: "Consulting"
 draft: false
-description: "See our services to help you make your software stack greener"
+description: "See our services to help you measure and reduce the energy consumption and carbon emissions of your software stack"
 date: 2023-09-14 08:00:00
 author: "Arne Tarara"
 authorlink: "https://de.linkedin.com/in/arne-tarara"

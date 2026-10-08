@@ -4,7 +4,7 @@ date: 2024-02-20 19:00:00
 publishDate: 2024-02-20
 draft: false
 icon: "journal whills"
-desc: "CarbonDB unterstützt Unternehmen aller Größen bei der Verwaltung von Energie-Daten und CO2-Emissionen, vereinfacht die Einhaltung neuer EU-Richtlinien und fördert nachhaltige Praktiken. Eine zentrale Plattform für präzise CO2-Berichterstattung und effektive Reduktionsstrategien."
+desc: "CarbonDB unterstützt Unternehmen aller Größen bei der Verwaltung von Energie-Daten und CO2-Emissionen, vereinfacht die Einhaltung neuer EU-Richtlinien und liefert die Datengrundlage für Emissionsberichte. Eine zentrale Plattform für präzise CO2-Berichterstattung und effektive Reduktionsstrategien."
 ordering: 6
 ---
 
@@ -29,7 +29,7 @@ Zu den Funktionen gehören:
 ### Vorteile
 
 - **Vereinfachtes Berichtswesen**: CarbonDB vereinfacht den komplexen Prozess der Sammlung, Umwandlung und Berichterstattung von Energie- und Kohlenstoffdaten und macht die Einhaltung von Berichtsrichtlinien unkompliziert.
-- **Verbesserte Nachhaltigkeit**: Durch die Bereitstellung genauer Daten zu Kohlenstoffemissionen hilft CarbonDB Unternehmen, effektivere Nachhaltigkeitsstrategien umzusetzen.
+- **Gezielte Reduktionen**: Durch die Bereitstellung genauer Daten zu Kohlenstoffemissionen hilft CarbonDB Unternehmen, gezielte Emissionsreduktionen zu planen und nachzuverfolgen.
 - **Kosteneinsparungen**: Die Identifizierung von Bereichen mit hohem Energieverbrauch und Kohlenstoffemissionen ermöglicht es Unternehmen, ihre Reduktionsbemühungen zu zielgerichteten, was zu erheblichen Kosteneinsparungen führen kann.
 - **Verbessertes Unternehmensimage**: Ein Engagement für Umweltverantwortung verbessert das Image eines Unternehmens bei Verbrauchern, Investoren und Regulierungsbehörden.
 

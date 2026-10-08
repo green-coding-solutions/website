@@ -1,5 +1,5 @@
 - id: home_what_we_do
-  translation: "We make software sustainable"
+  translation: "Let's reduce software emissions"
 - id: home_teaser
   translation: "We help companies, goverment bodies and open source communites to understand and optimize the carbon emissions of their digital services"
 - id: home_cta
@@ -25,7 +25,7 @@
   translation: "All events"
 
 - id: home_research_teaser
-  translation: "We work with organizations, universities and government bodies as <br>research partners to advance the field of sustainable software<br>-</br>For a greener digital future"
+  translation: "We work with organizations, universities and government bodies as <br>research partners to advance research on the energy consumption and carbon emissions of software<br>-</br>For transparent and measurable software emissions"
 
 - id: research_dbu
   translation: "Database for green software dependencies"

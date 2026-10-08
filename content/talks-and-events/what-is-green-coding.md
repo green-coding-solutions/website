@@ -18,7 +18,7 @@ So here it is!
 We will present to you the basic philosophies behind green software development.
 How it differes from classical performance / feature oriented software development and where the similarities are.
 
-We go over the four pillars of green coding according to the Green Software Foundation (https://greensoftware.foundation) and present techniques how to actually measure software energy consumption and how to optimize code to be greener.
+We go over the four pillars of green coding according to the Green Software Foundation (https://greensoftware.foundation) and present techniques how to actually measure software energy consumption and how to optimize code to use less energy.
 
 Finally we talk about calculation models for network traffic and show typical green coding practices in the four domains operational, architectural, hardware and energy efficiency.
 

@@ -24,7 +24,7 @@ amount of compute, if not the most significant compute out there.
 
 The power capping feature in CPUs is most renowned through the RAPL interface in modern Intel and AMD processors. If similar features exist in ARM etc. processors it is not know to us and not part of this article. We will focus on Intel / AMD only.
 
-When getting aware of this feature as a Green Coder what first comes to mind is: Can I use this feature to make my code greener? Are there any negative effects from using power capping and which metric should I use to not run into rebound effects or drawbacks?
+When getting aware of this feature as a Green Coder what first comes to mind is: Can I use this feature to reduce the energy consumption of my code? Are there any negative effects from using power capping and which metric should I use to not run into rebound effects or drawbacks?
 
 In order to answer this question we will look through a synthetic benchmark at the **CPU energy** at first and then also at the **energy of the total machine** and include **embodied carbon**.
 Afterwards we will use a real-world use-case by using a **CI/CD workload**. The unit tests from the [Django](https://github.com/green-coding-solutions/django
