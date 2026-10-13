@@ -51,7 +51,7 @@ and carbon values of the whole system.
 We believe in open source and that for advancing sustainable software the measurement tools must be freely accessible
 and falsifyable.
 
-The **community version** gives you all the functionality for energy and carbon estimation a <u>free open source AGPL-v3 license.</u>
+The **community version** gives you all the functionality for energy and carbon estimation a <u>free open source MIT license.</u>
 
 However the accompanying **API & Dashboard** we offer as **SaaS** which includes some premium features and a support plan.
 
@@ -69,7 +69,7 @@ However the accompanying **API & Dashboard** we offer as **SaaS** which includes
                     Fully featured estimation directly on GitHub / GitLab / locally
                 </div></div>
                 <div class="item"><i class="icon checkmark"></i> <div class="content">
-                    AGPLv3 licensed
+                    MIT licensed
                 </div></div>
                 <div class="item"><i class="icon checkmark"></i> <div class="content">
                     Free API & Dashboard SaaS tier for open source communities
