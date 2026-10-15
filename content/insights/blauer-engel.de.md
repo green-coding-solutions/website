@@ -8,12 +8,12 @@ authorlink: "https://www.linkedin.com/in/jenndhanaraj/"
 
 ---
 
-# Zeigen Sie Ihr Engagement für Nachhaltigkeit
+# Belegen Sie die Umweltaussagen Ihrer Software mit einem Zertifikat
 
 Der Blaue Engel für Software -Ökolabel ist mehr als ein Label. Der Sektor für Informations- und Kommunikationstechnologie (IKT) für 1,8 - 3,8% der globalen CO2-Emissionen verantwortlich ist [1]. Dies ist ungefähr das gleiche wie die gesamte Luftfahrtindustrie. \
 \
-Für Unternehmen, die mit Nachhaltigkeitszielen übereinstimmen, ist es wichtig, ihr Engagement für die Entwicklung von Software, die nicht nur innovativ - sondern verantwortlich ist, klar zu demonstrieren. \
-In dieser Hinsicht stellt der Blue Angel for Software sicher, dass Ihre Nachhaltigkeitsanstrengungen sichtbar, überprüfbar und wirkungsvoll sind.
+Für Unternehmen mit Klimazielen ist es wichtig, mit überprüfbaren Daten zu zeigen, wie viel Energie und Hardware ihre Software tatsächlich nutzt. \
+Der Blaue Engel für Software macht diese Werte sichtbar und lässt sie durch eine unabhängige, staatlich getragene Zertifizierung prüfen.
 
 {{< greenblock >}}
 Vorteile für Unternehmen
@@ -43,7 +43,7 @@ Zertifizierungsprozess
 {{< /whiteblock>}}
 
 
-Das Hauptziel de Blauen Engel ist es, die Umweltbelastung zu verringern, indem Energie- und Ressourcenverbrauch transparent und verantwortlich gemacht werden. Die offiziellen Aussagen des Blauen Engels für Software sind:
+Das Hauptziel de Blauen Engel ist es, die Umweltbelastung zu verringern, indem Energie- und Ressourcenverbrauch transparent und verantwortlich gemacht werden. Die offiziellen Aussagen des Blauen Engels für Software ([DE-UZ 215](https://www.blauer-engel.de/de/produktwelt/software)) sind:
 
 **Vorteile für Umwelt und Gesundheit**
 - transparent in Energie- und Hardwarenutzung

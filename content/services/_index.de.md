@@ -12,7 +12,7 @@ Wir helfen Ihnen, den Energieverbrauch und die CO2-Emissionen Ihrer Software zu 
 
 Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien]({{< relref path="/#nav-conference" >}}), entwickeln
 [Projekte]({{< relref path="products" >}}) sowie [Open-Source-Tools zur Messung von CO2 in Containern]({{< relref path="products/green-metrics-tool" >}}) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling]({{< relref path="products/eco-ci" >}})
-durch Zertifizierungen wie den [Blauen Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) oder unser Projekt [Energy-ID]({{< relref path="products/energy-id" >}}).
+durch Zertifizierungen wie den [Blauen Engel für Software](https://www.blauer-engel.de/de/produktwelt/software) oder unser Projekt [Energy-ID]({{< relref path="products/energy-id" >}}).
 
 Einige unserer jüngsten anerkannten Arbeiten in der Forschung umfassen
 [maßgeschneiderte Open-Source-Maschinenmodelle zur Energieabschätzung in Cloud-Umgebungen]({{< relref path="products/cloud-energy" >}}), veröffentlichte Positionspapiere, akademische Paper für Software-Lebenszyklus-Bewertung und Software-Energiemessung, Arbeit an
@@ -24,7 +24,7 @@ Unser Ansatz
 {{</ greenblock >}}
 
 
-Mit unseren Kunden arbeiten wir in einem Programm mit fünf Modulen. Wenn si auf ihrem Weg zur Nachhaltigkeit bereits fortgeschritten sind, bieten wir die Module jedoch auch separat an, je nach Bedarf im Unternehmen.
+Mit unseren Kunden arbeiten wir in einem Programm mit fünf Modulen. Wenn Sie die Emissionen Ihrer Software bereits messen und steuern, bieten wir die Module jedoch auch separat an, je nach Bedarf im Unternehmen.
 
 Z.b. macht es bei Unternehmen mit bestehender Nachhaltigkeits-Strategie und CO2-KPIs Sinn einen Mess- und Optimierungsworkshop, um Ihre Entwickler auf den neuesten Stand der Green Coding-Techniken zu bringen durchzuführen. Oder wenn bereits Backend-Software nach CO2-Best-Practices entwicklet wird sich dediziert die CI/CD-Pipelines oder kundenorientierten Websites Teil anzugucken
 
@@ -200,7 +200,7 @@ Details
             <span class="ui label">Operations</span><span class="ui label">Tools</span><span class="ui label">Integrations</span>
           </div>
           <div class="description">
-            <p>Nachhaltige Software ist ein kontinuierlicher Prozess. Nach der ersten Identifizierung von Schwachstellen und Optimierungszielen automatisieren wir den Reporting-/Transparenzteil durch DevOps-Praktiken nach Industriestandards, indem wir unsere spezialisierten CI/CD-Pipeline-Tools integrieren (siehe zum Beispiel unsere <a href="/products/eco-ci/">Eco-CI Produkte</a> für Github / Gitlab oder unsere <a href="/products/cloud-energy/">Cloud Energy</a> tools für beliebige Pipelines sowie unsere speziellen CI/CD-Dedicated-Services für Unternehmen).</p>
+            <p>Die Senkung von Software-Emissionen ist ein kontinuierlicher Prozess. Nach der ersten Identifizierung von Schwachstellen und Optimierungszielen automatisieren wir den Reporting-/Transparenzteil durch DevOps-Praktiken nach Industriestandards, indem wir unsere spezialisierten CI/CD-Pipeline-Tools integrieren (siehe zum Beispiel unsere <a href="/products/eco-ci/">Eco-CI Produkte</a> für Github / Gitlab oder unsere <a href="/products/cloud-energy/">Cloud Energy</a> tools für beliebige Pipelines sowie unsere speziellen CI/CD-Dedicated-Services für Unternehmen).</p>
             <p>In einem zweiten Schritt integrieren wir Optimierungen auch direkt in die Software-Build-Chain durch statische Ode-Optimierungen und auch Green AI / ML-Optimierungen.</p>
           </div>
           <a class="ui right floated primary button distance-top" href="/services/development-and-integrations">

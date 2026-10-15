@@ -8,12 +8,12 @@ authorlink: "https://www.linkedin.com/in/jenndhanaraj/"
 
 ---
 
-# Show your commitment to sustainability
+# Back up your software's environmental claims with a certificate
 
 The Blue Angel for Software ecolabel is more than a label. Given that the Information and Communications (ICT) sector is responsible for 1.8 – 3.8% of global carbon emissions [1].This is about the same as the whole aviation industry.\
 \
-It is important for companies that are aligned with sustainability goals to clearly demonstrate their commitment to developing software that is not just innovative – but responsible.\
-In this regard, the Blue Angel for Software ensures that your sustainability efforts are visible, verifiable and impactful.
+For companies with climate targets it is important to show with verifiable data how much energy and hardware their software actually uses.\
+The Blue Angel for Software makes these values visible and has them checked through an independent, government-backed certification.
 
 {{< greenblock >}}
 
@@ -44,7 +44,7 @@ Certification process
 {{< /whiteblock >}}
 
 
-The primary objective is to reduce environmental burden by making energy and resource consumption transparent and accountable. The official claims of the Blue Angel label for software are:
+The primary objective is to reduce environmental burden by making energy and resource consumption transparent and accountable. The official claims of the Blue Angel label for software ([DE-UZ 215](https://www.blauer-engel.de/en/productworld/software)) are:
 
 **Benefits to the environment and health**
 - transparent about energy and hardware use

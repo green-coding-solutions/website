@@ -29,7 +29,7 @@ The environmental cost of AI is all over the news, which has caused some concern
 
 For instance, with one of our clients, we sought to compare the efficiency and effectiveness of three different models to ascertain which model was not only more accurate but also consumed fewer resources.  We did this by collecting the 50 most typical queries used in the organisation and had these three different models process these tasks. We wrote a paper for the [HotCarbon 24](https://hotcarbon.org/2024) [workshop](https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final109.pdf) in which we measured various models and created a system that saves considerable amounts of resources in the inference stage.
 
-How did we do this? In this post, we will give you a simplified version of that case study and walk you through the key steps and show how straightforward it can be to start benchmarking AI models for energy consumption. This is a great example of how innovating sustainably can help you save on AI interaction time while potentially reducing costs. 
+How did we do this? In this post, we will give you a simplified version of that case study and walk you through the key steps and show how straightforward it can be to start benchmarking AI models for energy consumption. This is a great example of how measuring energy consumption can help you save on AI interaction time while potentially reducing costs. 
 
 ## Tools you will need to start benchmarking
 
@@ -100,6 +100,6 @@ You can also use our AI Benchmark machine in our cluster which has a GTX 1080 8 
 
 ## Next steps
 
-AI rollouts should always be accompanied by sustainability measurements to understand the ecological but also cost impact of the project. While small AI endeavours might not have a significant negative impact, they can quickly scale and lead to significant costs and emissions. Building in sustainable measurements early during the design and model selection phase helps you make more sustainable and responsible choices.
+AI rollouts should always be accompanied by energy measurements to understand the ecological but also cost impact of the project. While small AI endeavours might not have a significant negative impact, they can quickly scale and lead to significant costs and emissions. Building in energy measurements early during the design and model selection phase helps you choose models with lower energy consumption and emissions.
 
-Contact us to learn more how to steer your AI implementation sustainably [info@green-coding.io](mailto:info@green-coding.io)
+Contact us to learn more about measuring and reducing the energy consumption of your AI implementation [info@green-coding.io](mailto:info@green-coding.io)

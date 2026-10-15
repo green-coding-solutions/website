@@ -30,7 +30,7 @@ Please see all the details on Github and in the documentation.
 
 ## Community Version / Enterprise Version
 
-We believe in open source and that for advancing sustainable software the measurement tools must be freely accessible
+We believe in open source and that for reducing the energy consumption of software the measurement tools must be freely accessible
 and falsifyable.
 
 The **community version** gives you all the functionality for measurement and benchmarking with an <u>free open source AGPL-v3 license.</u>
@@ -46,7 +46,7 @@ However we also offer a **hosted version** as **SaaS** which includes some premi
 ## Blue Angel Certification
 
 
-<p>Our Tool is Blue Angel for Software certified!</p>
+<p>Our Tool is certified with the Blue Angel for resource- and energy-efficient software (DE-UZ 215). <a href="https://www.blauer-engel.de/en/products/green-metrics-tool">See the certificate</a>.</p>
 <img class="ui rounded image" src="/img/products/GMT_and_BE@1x.webp" srcset="/img/products/GMT_and_BE@2x.webp 2x, /img/products/GMT_and_BE@1x.webp 1x" width=450>
 <br>
 <a class="ui orange button" href="{{< relref path="insights/blauer-engel" >}}"><i class="right chevron icon"></i> Find out more details.</a>

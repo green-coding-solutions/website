@@ -6,7 +6,7 @@ draft: true
 
 Bei Green Coding Solutions unterstützen wir Unternehmen und NGOs dabei, den Energieverbrauch ihrer Software zu messen und zu senken.
 
-Wir möchten die Technologiebranche bewusster für die Entwicklung und Nutzung von Software machen – und dabei Nachhaltigkeit in jedem Schritt berücksichtigen. Wir sind überzeugt, dass die Digitalisierung positive Auswirkungen haben kann, aber nur, wenn sie verantwortungsvoll, mit Bewusstsein für den Energieverbrauch und einer durchdachten Planung umgesetzt wird, um Rebound-Effekte zu vermeiden.
+Wir möchten die Technologiebranche bewusster für die Entwicklung und Nutzung von Software machen – und dabei Energie- und Ressourcenverbrauch in jedem Schritt berücksichtigen. Wir sind überzeugt, dass die Digitalisierung positive Auswirkungen haben kann, aber nur, wenn sie verantwortungsvoll, mit Bewusstsein für den Energieverbrauch und einer durchdachten Planung umgesetzt wird, um Rebound-Effekte zu vermeiden.
 
 Um dies zu unterstützen, entwickeln wir Tools, die den Energieverbrauch von Software messen – egal, ob sie in CI-Build-Pipelines, virtuellen Maschinen, Containern oder auf Benutzer-Desktops ausgeführt wird.
 

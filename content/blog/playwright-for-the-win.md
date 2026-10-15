@@ -15,7 +15,7 @@ We’re excited to announce a new feature in the [Green Metrics Tool](https://gi
 
 ## Why Playwright?
 
-Playwright has become a standard tool in modern testing pipelines. It allows developers to automate realistic user journeys across multiple browsers with minimal code. Since the Green Metrics Tool focuses on assessing software sustainability under real-world conditions, seamless Playwright integration was a natural next step.
+Playwright has become a standard tool in modern testing pipelines. It allows developers to automate realistic user journeys across multiple browsers with minimal code. Since the Green Metrics Tool focuses on measuring the energy consumption of software under real-world conditions, seamless Playwright integration was a natural next step.
 
 ---
 
