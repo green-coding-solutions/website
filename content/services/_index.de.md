@@ -1,14 +1,14 @@
 ---
 title: "Warum für uns entscheiden?"
 draft: false
-description: "Sehen Sie sich unsere Dienstleistungen an, mit denen Sie Ihren Software-Stack grüner gestalten können"
+description: "Sehen Sie sich unsere Dienstleistungen an, mit denen Sie Energieverbrauch und CO2-Emissionen Ihres Software-Stacks messen und senken können"
 date: 2023-09-14 08:00:00
 author: "Arne Tarara"
 authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-Wir helfen Ihnen bei der Transformation Ihrer Software zu einem nachhaltigen Produkt.
+Wir helfen Ihnen, den Energieverbrauch und die CO2-Emissionen Ihrer Software zu messen und zu senken.
 
 Wir sind [regelmäßige Sprecher auf Konferenzen und Branchensymposien]({{< relref path="/#nav-conference" >}}), entwickeln
 [Projekte]({{< relref path="products" >}}) sowie [Open-Source-Tools zur Messung von CO2 in Containern]({{< relref path="products/green-metrics-tool" >}}) und aktive Befürworter und Berater für Energie- und CO2 transparenz [State of the art carbon pipeline tooling]({{< relref path="products/eco-ci" >}})
@@ -171,7 +171,7 @@ Details
             <i class="icon tachometer alternate"></i><span class="ui label">Operations</span><span class="ui label">Tools</span><span class="ui label">Integrations</span>
           </div>
           <div class="description">
-            <p>Die Verringerung der Emissionen ist für den gesamten Prozess der Schaffung eines nachhaltigen digitalen Produkts und einer nachhaltigen Infrastruktur der wichtigste Schritt.</p>
+            <p>Die Verringerung der Emissionen ist bei der Optimierung digitaler Produkte und Infrastruktur der wichtigste Schritt.</p>
             <p>Wir nutzen unsere Tools, um automatisierte Empfehlungen selbst für komplexe Softwarearchitekturen zu erstellen.</p>
             <p>Indem wir maßgeschneiderte Optimierungskonzepte für Ihr Unternehmen und Ihre Produktanforderungen vorschlagen, identifizieren und quantifizieren wir die Emissionseinsparungen und integrieren die Optimierungen mit Ihnen.</p>
             <p>Quick Wins können oft mit minimalem Aufwand erzielt werden, während langfristige Ziele durch ständige Überwachung und ständige Optimierungen bei jeder Softwareerstellung leicht erreicht werden können.</p>

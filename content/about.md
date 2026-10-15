@@ -1,5 +1,5 @@
 ---
-title: "Sustainable Software"
+title: "Carbon Emissions of Software"
 draft: false
 description: "Find out what we do at Green Coding and why the carbon impact of software matters"
 date: 2022-07-21 08:00:00
@@ -14,7 +14,7 @@ translationKey: about
 Software will always have carbon emissions. The same way that all technology, even solar power, has some carbon emissions
 and human life does too.
 
-However we believe that using software is the way to be more green and more sustainable and digitalizing every sector is one building block to tackle climate change.
+However we believe that software, when its own energy consumption is measured and kept in check, can help reduce emissions in other sectors and digitalizing every sector is one building block to tackle climate change.
 
 As with every technological domain measuring and understanding how much you use
 is the most important step to approach any task.
@@ -137,7 +137,7 @@ talks at conferences or coding bootcamps like [WBS Coding School](https://www.wb
 On the technical site we highlight the network emissions in our [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}}) and show
 recommendations like
 - Moving connection from mobile to fixed-line
-- Demand Shifting to do network requests in carbon-friendly times
+- Demand Shifting to do network requests at times of low grid carbon intensity
 - Using compression techniques
 - Altering connection formats like HTTP -> HTTP2
 - NOT delivering content that has no strong benefit

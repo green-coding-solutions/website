@@ -7,10 +7,10 @@ authorlink: "https://www.linkedin.com/in/alexandre-oliv"
 ---
 
 {{< rawhtml >}}
-<img src="/img/blog/youtube_extension.webp" alt="Greener Youtube extension" loading="lazy" style="max-width: 600px; width: 80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;">
+<img src="/img/blog/youtube_extension.webp" alt="Greener Youtube extension: disables autoplay and lowers video resolution" loading="lazy" style="max-width: 600px; width: 80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;">
 {{< /rawhtml >}}
 
-How many times do we use Youtube only to listen to songs, or to watch videos without the necessity of going for that fancy 4k/HD resolution? Also: do we really want to automatically watch other (algorithmically-chosen) videos after the current video is finished? In other words, how can we have a carbon-friendly approach while still getting the content we wanted?
+How many times do we use Youtube only to listen to songs, or to watch videos without the necessity of going for that fancy 4k/HD resolution? Also: do we really want to automatically watch other (algorithmically-chosen) videos after the current video is finished? In other words, how can we reduce the transferred data and energy use while still getting the content we wanted?
 
 During the onboarding process at Green Coding Solutions, I was given the task of creating a simple Chrome extension that would turn off the Autoplay feature of Youtube, and would also scale down the videos to the lowest available quality.
 

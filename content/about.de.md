@@ -1,5 +1,5 @@
 ---
-title: "Nachhaltige Software"
+title: "CO2-Emissionen von Software"
 draft: false
 description: "Finden Sie heraus, was wir bei Green Coding tun und warum die Auswirkungen von Software auf die Umwelt wichtig sind"
 date: 2022-07-21 08:00:00
@@ -13,7 +13,7 @@ translationKey: about
 
 Software wird immer CO2 emissionen haben. Genauso wie jede Technologie, selbst die Solarenergie, CO2 in der Herstellung produziert und das menschliche Leben auch.
 
-Wir glauben jedoch, dass die Nutzung von Software der Weg zu mehr Umweltfreundlichkeit und Nachhaltigkeit ist und dass die Digitalisierung jedes Sektors ein Baustein zur Bekämpfung des Klimawandels ist.
+Wir glauben jedoch, dass Software – wenn ihr eigener Energieverbrauch gemessen und begrenzt wird – helfen kann, Emissionen in anderen Sektoren zu senken, und dass die Digitalisierung jedes Sektors ein Baustein zur Bekämpfung des Klimawandels ist.
 
 Wie in jedem technologischen Bereich ist das Messen und Verstehen des eigenen Verbrauchs der wichtigste Schritt, um eine Aufgabe anzugehen.
 
@@ -135,7 +135,7 @@ Vorträge auf Konferenzen oder Coding Bootcamps wie [WBS Coding School](https://
 Auf der technischen Seite heben wir die Netzwerkemissionen in unserem [Green Metrics Tool]({{< relref path="products/green-metrics-tool" >}}) hervor und zeigen Empfehlungen wie:
 
 - Verlagerung von Mobilfunk- zu Festnetzanschlüssen
-- Demand Shifting, um Netzwerkanfragen zu CO2 freundlichen Zeiten zu erledigen
+- Demand Shifting, um Netzwerkanfragen zu Zeiten mit niedriger CO2-Intensität im Stromnetz zu erledigen
 - Verwendung von Kompressionstechniken
 - Änderung von Verbindungsformaten wie HTTP -> HTTP2
 - NICHT liefern von Inhalten, die keinen großen Nutzen haben

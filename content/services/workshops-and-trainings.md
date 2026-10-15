@@ -8,7 +8,7 @@ authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-Training your developers to write more carbon efficient software or just starting out with your team and setting first impulses to start a sustainable software journey. We have you covered with a wide selection of Workshops & Trainings wich are battle tested in SMEs and Enterprise size companies.
+Training your developers to write more carbon efficient software or just starting out with your team and taking the first steps in measuring the energy consumption of your software. We have you covered with a wide selection of Workshops & Trainings wich are battle tested in SMEs and Enterprise size companies.
 
 <br>
 
@@ -166,7 +166,7 @@ Training your developers to write more carbon efficient software or just startin
             <p>When you schedule a call with us we first want to understand what are your current needs for your team and for your business.</p>
             <p>To tailor a workshop to your needs we want to understand if you just want to increase buy-in and engagement in your management or if you want to engage your dev team.</p>
             <p>To give you the best results we also want to understand the tools and progamming languages you work with to make individual recommendations for best-practices and optimizations.</p>
-            <p>The goal of any workshop with us is to leave your team empowered and autonomous to start and continue the digital sustainability journey.</p>
+            <p>The goal of any workshop with us is to leave your team empowered and autonomous to keep measuring and optimizing the energy consumption and carbon emissions of your software.</p>
           </div>
           <!-- TODO
           <div class="extra">

@@ -137,7 +137,7 @@ Further insights on the data set:
 - Changes over time matter! In our data set pages constantly change. Some get better, but most get worse. The wildest one is [ZDF.de](https://www.zdf.de), which
 had a very bad day on [Nov 2nd 2025 and clocked in at 35 MB Download size with 9.16 W rendering power](https://metrics.green-coding.io/stats.html?id=69b62408-939b-4669-abbd-2ab7957ccecd)!!!
 
-If you thought a smaller page was automatically greener, think again – with some help from webNRG to quantify your claims.
+If you thought a smaller page automatically had lower emissions, think again – with some help from webNRG to quantify your claims.
 
 ### Why does this matter?
 

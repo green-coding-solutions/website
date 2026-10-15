@@ -1,14 +1,14 @@
 ---
 title: "Why choose us?"
 draft: false
-description: "See our services to help you make your software stack greener"
+description: "See our services to help you measure and reduce the energy consumption and carbon emissions of your software stack"
 date: 2023-09-14 08:00:00
 author: "Arne Tarara"
 authorlink: "https://de.linkedin.com/in/arne-tarara"
 
 ---
 
-We help you to transform your software to a sustainable product. 
+We help you to measure and reduce the energy consumption and carbon emissions of your software. 
 
 Scroll down and see how we work with companies in our 5 stage approach. 
 
@@ -179,7 +179,7 @@ Details
             <i class="icon tachometer alternate"></i><span class="ui label">Operations</span><span class="ui label">Tools</span><span class="ui label">Integrations</span>
           </div>
           <div class="description">
-            <p>Driving carbon emissions down is paramount in the whole process of creating a sustainable digital product and infrastructure.</p>
+            <p>Driving carbon emissions down is the central step when optimizing digital products and infrastructure.</p>
             <p>We leverage our tools to generate automated recommendations even for complex software architectures.</p>
             <p>By suggesting tailored optimisation concepts to your company and product needs we identify and quantify carbon savings and integrate them with you.</p>
             <p>Quick wins can often be gained with minimal effort while long-term goals can often easily attained by employing constant monitoring and constant optimizations with every software build.</p>

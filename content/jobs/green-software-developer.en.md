@@ -1,12 +1,12 @@
 ---
 title: "Green Software Developer (permanent / freelance)"
-description: "Open role for Green Software Developer with 5+ years experience at Green Coding Solutions GmbH to work on sustainable software."
+description: "Open role for Green Software Developer with 5+ years experience at Green Coding Solutions GmbH to work on measuring and reducing the energy consumption of software."
 draft: true
 ---
 
-At Green Coding Solutions, we support companies and NGOs on their journey toward more sustainable software practices.
+At Green Coding Solutions, we support companies and NGOs in measuring and reducing the energy consumption of their software.
 
-We aim to make the tech industry more mindful of how software is built and used—focusing on sustainability every step of the way. We believe digitalization can have a positive impact, but only if it’s done responsibly, with awareness of energy use and thoughtful planning to avoid rebound effects.
+We aim to make the tech industry more mindful of how software is built and used—focusing on energy and resource use every step of the way. We believe digitalization can have a positive impact, but only if it’s done responsibly, with awareness of energy use and thoughtful planning to avoid rebound effects.
 
 To help with that, we build tools that measure the energy consumption of software—whether it’s running in CI build pipelines, virtual machines, containers, or user desktops.
 
@@ -111,7 +111,7 @@ Just shoot us an email at jobs@green-coding.io with a quick intro and why you wo
 
 Please also include a quick comment regarding the aforementioned skills.
 
-Also very interesting for us is if you have any current experience with sustainable software design and / or what drives your interest in the field.
+Also very interesting for us is if you have any current experience with measuring or optimizing the energy consumption of software and / or what drives your interest in the field.
 
 A link to your LinkedIn and GitHub profile is usually helpful.
 

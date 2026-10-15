@@ -17,7 +17,7 @@ The Green Metrics Tool aims to be the "Codecheck" or "Yuka" of software
 with the goal to provide answers like:
 
 - How much does this software consume?
-- Is there a more carbon friendly alternative?
+- Is there an alternative with lower carbon emissions?
 - Is there a software that makes less network requests?
 - Energy efficiency of Wordpress vs. static site? 
 - Is podman more effective than docker for building?
