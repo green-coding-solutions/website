@@ -34,7 +34,7 @@ Der größte Aufwand im Zertifizierungsprozess liegt in der ordnungsgemäßen Ei
 
 Mit dem [Green Metrics Tool](/products/green-metrics-tool), ebenfalls [mit dem Blauen Engel für Software zertifiziert](https://www.blauer-engel.de/de/produkte/green-metrics-tool), haben wir eine Open-Source-Lösung entwickelt, die diesen Prozess vereinfacht. Zusätzlich bieten wir unsere Serverinfrastruktur als Software-as-a-Service an, einschließlich eines kostenpflichtigen Add-ons zum Open-Source-Tool, das speziell Blauer-Engel-kompatible Exporte ermöglicht.
 
-Unsere Tools generieren automatisch die Antragsanhänge. Außerdem werden die Messdaten aus dem Green Metrics Tool nahtlos in die offizielle Antragsvorlage importiert. Integrierte Textvorschläge und Vorlagen reduzieren den Aufwand für Unternehmen drastisch. So können Sie sich auf nachhaltiges Produktdesign konzentrieren. Wir sorgen dafür, dass Ihre Nachhaltigkeitsbemühungen sichtbar werden.
+Unsere Tools generieren automatisch die Antragsanhänge. Außerdem werden die Messdaten aus dem Green Metrics Tool nahtlos in die offizielle Antragsvorlage importiert. Integrierte Textvorschläge und Vorlagen reduzieren den Aufwand für Unternehmen drastisch. So können Sie sich auf die Ressourcen- und Energieeffizienz Ihres Produkts konzentrieren. Wir sorgen dafür, dass Ihre Messergebnisse sichtbar werden.
 
 ### Automatisiert, zuverlässig und auditsicher
 
@@ -71,7 +71,7 @@ Eines der Ziele von Green Coding Solutions ist die Reduzierung der Energieemissi
 
 Wir sind selbst mit der Blauen Engel-Software zertifiziert und wissen daher, wie anspruchsvoll und zeitaufwändig der Prozess sein kann. Unsere Tools helfen Ihnen dabei, die Zertifizierung einfach, präzise und effizient zu gestalten.
 
-Wir verfügen über ein engagiertes Team, das davon überzeugt ist, dass die Blaue Engel-Zertifizierung ein wichtiger Schritt zur Verwirklichung unserer Vision einer verantwortungsvolleren IKT-Branche ist.
+Wir verfügen über ein engagiertes Team, das davon überzeugt ist, dass die Blaue Engel-Zertifizierung ein wichtiger Schritt zur Verwirklichung unserer Vision einer IKT-Branche ist, die ihren Energieverbrauch kennt und senkt.
 
 {{< greenblock >}}
 Interessiert?

@@ -124,7 +124,7 @@ We go with clients through the journey of first understanding the background of 
           <div class="description">
             <p>The cases above are just an examplary list of our field of consulting work.</p>
             <p>If you have some other specific need for your digital product do not hesitate to contact us. Our experience with a variety of clients spans many more domains like:</p>
-            <p>Software carbon strategy planning, Cloud carbon efficient migrations, Consultant trainings, Green software development guidelines, Application carbon profiling, Sustainable UI / UX, Sustainablity labels, Digital Carbon Certifications</p>
+            <p>Software carbon strategy planning, Cloud carbon efficient migrations, Consultant trainings, Green software development guidelines, Application carbon profiling, Energy-aware UI / UX, Ecolabel certifications like the Blue Angel, Digital Carbon Certifications</p>
           </div>
           <!-- TODO
           <div class="extra">            

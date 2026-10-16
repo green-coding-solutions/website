@@ -4,7 +4,7 @@ date: 2023-01-15 19:00:00
 publishDate: 2023-01-15
 draft: false
 icon: "leaf"
-desc: "Eco CI berechnet den Energieverbrauch Ihrer CI/CD-Umgebungen und unterstützt GitHub sowie GitLab. Es verfolgt den Energieverbrauch der Durchläufe für ein genaues Energiemanagement und Budgetierung. Zu den Schlüsselfunktionen gehören Echtzeitmessungen und Datenexport, die nachhaltige Entwicklungspraktiken ermöglichen."
+desc: "Eco CI berechnet den Energieverbrauch Ihrer CI/CD-Umgebungen und unterstützt GitHub sowie GitLab. Es verfolgt den Energieverbrauch der Durchläufe für ein genaues Energiemanagement und Budgetierung. Zu den Schlüsselfunktionen gehören Echtzeitmessungen und Datenexport, mit denen Sie die Energiekosten Ihrer Pipelines verfolgen und senken können."
 ordering: 2
 ---
 
@@ -48,7 +48,7 @@ und CO2-Werte des gesamten Systems aus.
 
 ## Community Version / Enterprise Version
 
-Wir glauben an Open Source und daran, dass für die Unterstützung nachhaltiger Software die Messwerkzeuge frei zugänglich
+Wir glauben an Open Source und daran, dass für die Unterstützung energie- und Hardwareressourcen-sparender Software die Messwerkzeuge frei zugänglich
 und falsifizierbar sein müssen.
 
 Die **Community Version** bietet alle Funktionen für die Energie- und CO2-Abschätzung mit einer <u>kostenlosen Open Source MIT Lizenz.</u>
@@ -227,5 +227,25 @@ Der Eco CI Activity Checker überspringt dann den Testlauf und spart so Energie 
 &nbsp;
 
 ---
+
+## Gitlab Plugin
+
+Bitte beachten Sie für Gitlab unsere zentrale [Github repository Dokumentation](https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab), die alles über die Gitlab-Funktionalität beinhaltet.
+
+{{< button "book" "Blog arcticle" "blog/eco-ci-gitlab-release" >}}
+
+{{< button "code branch" " Github Repository (für Gitlab Dokumentation)" "https://github.com/green-coding-solutions/eco-ci-energy-estimation/blob/main/README.md#gitlab" >}}
+
+&nbsp;
+
+---
+
+## Wie geht es mit dem Eco CI-Projekt weiter?
+
+Eine weitere Einsparung kann durch die Umplanung von Arbeit, die nicht zeitabhängig ist, auf Zeiten mit niedriger CO2-Intensität im Stromnetz erzielt werden. Dies ist eine geplante Funktion, die bald als separate Aktion entwickelt wird.
+
+Auch hängende und im Leerlauf befindliche VMs werden derzeit in einem unserer Projekte angegangen, um sie abzuschalten und die Verschwendung von Leerlaufstrom zu stoppen
+
+Schauen Sie doch auch gerne in unseren [Blog]({{< relref path="blog" lang="en" >}}) um auf dem Laufenden zu bleiben.
 
 <div class="clear"></div>

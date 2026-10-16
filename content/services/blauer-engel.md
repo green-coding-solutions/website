@@ -35,7 +35,7 @@ The most work in the certification process lies in the proper setup and procurem
  
 With the [Green Metrics Tool](/products/green-metrics-tool), also [certified under the Blue Angel](https://www.blauer-engel.de/de/produkte/green-metrics-tool), we have created an open source solution that streamlines this process. Additionally we offer our server infrastructure as a Software as a Service including a paid add-on to the open source tool that can specifcally make Blue Angel compatible exports.
 
-Our tools auto-generate the application annexes. It also seamlessly imports measurement data from the Green Metrics Tool into the official application template. Built-in text suggestions and templates drastically reduce effort for companies so you can focus on sustainable product design and we work on making your sustainability efforts visible.
+Our tools auto-generate the application annexes. It also seamlessly imports measurement data from the Green Metrics Tool into the official application template. Built-in text suggestions and templates drastically reduce effort for companies so you can focus on the resource and energy efficiency of your product and we work on making your measured results visible.
 
 ### Automated, reliable and audit-read
 
@@ -73,7 +73,7 @@ One of Green Coding Solutions’ objectives is to reduce energy emissions in sof
 We ourselves have been certified with the Blue Angel software so we know how rigorous and time-consuming the process can be. Our tools help you ensure that the certification is simple, accurate and efficient.
 
 
-We have a dedicated team that believes that the Blue Angel Certification process is a key step to realising our vision for a more responsible ICT industry.
+We have a dedicated team that believes that the Blue Angel Certification process is a key step to realising our vision of an ICT industry that knows and reduces its energy consumption.
 
 {{< greenblock >}}
 Interested?

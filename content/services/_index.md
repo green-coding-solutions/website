@@ -15,7 +15,7 @@ Scroll down and see how we work with companies in our 5 stage approach.
 We are [regular speaker at conferences and industry symposiums]({{< relref path="/#nav-conference" >}}), developing
 [open source industry advancing container native carbon measurement tools]({{< relref path="products/green-metrics-tool" >}}) as well as
 [state of the art carbon pipeline tooling]({{< relref path="products/eco-ci" >}}), active advocates and consultants for energy and carbon transparency
-through certifications like the [Blauer Engel für Software](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) or our [Energy-ID]({{< relref path="products/energy-id" >}}) project.
+through certifications like the [Blauer Engel für Software](https://www.blauer-engel.de/en/productworld/software) or our [Energy-ID]({{< relref path="products/energy-id" >}}) project.
 
 Some of our recent recognized works in research include
 [tailored open source machine models for energy estimation in cloud environments]({{< relref path="products/cloud-energy" >}}), published positional
@@ -28,7 +28,7 @@ papers and academical papers for software lifecycle assessment and software ener
 How we work
 {{</ greenblock >}}
 
-We usually work with clients in a five module program. However for clients who are already advanced in their sustainability journey we provide the modules separately according to clients needs.
+We usually work with clients in a five module program. However for clients who already measure and manage their software emissions we provide the modules separately according to clients needs.
 
 So also only a measurement & optimize workshop to bring your developers up to code with current Green Coding techniques or carbon-optimizing your CI/CD pipelines or customer facing websites is part of our portfolio. 
 
@@ -208,7 +208,7 @@ Details
             <span class="ui label">Operations</span><span class="ui label">Tools</span><span class="ui label">Integrations</span>
           </div>
           <div class="description">
-            <p>Sustainable software is a continuous process. After the first identification of weak spots and optimization targets we automate the reporting / transparency part through industry standard DevOps practices by integrating our specialized CI/CD pipeline tools (See for example our <a href="{{< relRef "products/eco-ci/" >}}">Eco-CI products</a> for Github / Gitlab or our <a href="{{< relRef "products/cloud-energy/" >}}">Cloud Energy</a> tools for arbitrary pipelines as well as our dedicated runners for enterprises).</p>
+            <p>Reducing software emissions is a continuous process. After the first identification of weak spots and optimization targets we automate the reporting / transparency part through industry standard DevOps practices by integrating our specialized CI/CD pipeline tools (See for example our <a href="{{< relRef "products/eco-ci/" >}}">Eco-CI products</a> for Github / Gitlab or our <a href="{{< relRef "products/cloud-energy/" >}}">Cloud Energy</a> tools for arbitrary pipelines as well as our dedicated runners for enterprises).</p>
             <p>In a second step we integrate optimizations also directly into the software build-chain through static ode optimizations and also Green AI / ML optimizations.</p>
           </div>
           <a class="ui right floated primary button distance-top" href="{{< relRef "services/development-and-integrations" >}}">

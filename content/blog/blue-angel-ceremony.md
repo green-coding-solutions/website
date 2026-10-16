@@ -8,7 +8,7 @@ socialmedia_preview: "/img/newsroom/news/blue_angel.webp"
 
 # Green Metrics Tool has been certified with the Blue Angel for Software Label
 
-Big news: Our Green Metrics Tool just now also physically received the Blue Angel ecolabel for software after getting certified in 2024! 
+Big news: Our Green Metrics Tool just now also physically received the [Blue Angel ecolabel for software](https://www.blauer-engel.de/en/products/green-metrics-tool) after getting certified in 2024! 
 That makes us one of just three software products in Germany to get this recognition — alongside Nextcloud Server and KDE's Okular.
 
 <img class="ui large floated right rounded bordered image" src="/img/blog/csm_250611_green_it_fachtagung_lp_1200_55393f48f2.jpg" alt="Green Coding Solutions recieving Blue Angel for Software award" loading="lazy">
@@ -21,9 +21,9 @@ We’re proud to be part of the first wave setting this standard.
 
 ## Why we wanted to be one of the first
 
-At Green Coding Solutions, we've always believed that software should work *with* the planet, not against it. But in the tech world, sustainability is often left out of the conversation — especially when it comes to code.
+At Green Coding Solutions, we've always believed that software should work *with* the planet, not against it.. But in the tech world, energy consumption and carbon emissions are often left out of the conversation, especially when it comes to code.
 
-That’s why being one of the first tools to receive the Blue Angel for Software was a big deal for us. It’s not just about the recognition — it’s about showing that it *is* possible to build efficient, transparent, and responsible digital products. And that others can (and should) do it too.
+That’s why being one of the first tools to receive the Blue Angel for Software was a big deal for us. It’s not just about the recognition. It’s about showing that it *is* possible to build resource- and energy-efficient, transparent digital products. And that others can (and should) do it too.
 
 ---
 
@@ -69,7 +69,7 @@ We’re hopeful that more and more companies will go for this label, and we’d 
 And if you’re interested in getting certified yourself? We’ve been through the process and are happy to help however we can. Find out more about [our services here](/services/blauer-engel/)
 
 
-Because in the end, **sustainable software isn't just the future — it's already happening**.  
+Because in the end, **certified resource- and energy-efficient software isn't just the future. It's already happening**.  
 And yep, we still stand by it: **good code is green code**.
 
 

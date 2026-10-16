@@ -58,7 +58,7 @@ As said before we found the work from Bob Adolf most interesting.
 It was the first holistic approach to combine many energy measurement forms into one system
 and also use mostly off-the shelf hardware.
 
-Our PC we wanted to use was a [Fujitsu Esprimo P956](https://www.astinashop.de/wp-content/uploads/2018/06/P956.pdf). Reason being that this machine is officially required by the [Blauer Engel for Software](https://www.blauer-engel.de/en/productworld/resources-and-energy-efficient-software-products) we have here in Germany, which is an eco label for Software.
+Our PC we wanted to use was a [Fujitsu Esprimo P956](https://www.astinashop.de/wp-content/uploads/2018/06/P956.pdf). Reason being that this machine is officially required by the [Blauer Engel for Software](https://www.blauer-engel.de/en/productworld/software) we have here in Germany, which is an eco label for Software.
 
 In order to reproduce and falsify their (AC)-measurements this system was a needed and logical starting point.
 

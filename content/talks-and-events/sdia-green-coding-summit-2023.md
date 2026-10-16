@@ -34,7 +34,7 @@ Get your ticket & join us! (Limited places!)
 The unique two day Summit starts with a Conference hosted within Berlin’s historic French Dome, sharing Knowledge, Debate & Insights - The conference will showcase and share the extensive work being developed by the thought leaders advancing Green Coding tools & practices.
 Learn, Connect, Code - See the full Summit details here
 
-Join us in making software more sustainable!
+Join us in measuring and reducing the energy consumption of software!
 
 *English speaking event*
 

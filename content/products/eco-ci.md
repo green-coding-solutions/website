@@ -4,7 +4,7 @@ date: 2023-01-15 19:00:00
 publishDate: 2023-01-15
 draft: false
 icon: "leaf"
-desc: Eco CI calculates the energy consumption of your CI/CD environments, supporting GitHub and GitLab. It tracks the power usage of the runs for accurate energy management and budgeting. Key features include real-time measurements and data export, aiding in sustainable development practices"
+desc: "Eco CI calculates the energy consumption of your CI/CD environments, supporting GitHub and GitLab. It tracks the power usage of the runs for accurate energy management and budgeting. Key features include real-time measurements and data export, so you can track and reduce the energy cost of your pipelines."
 ordering: 2
 ---
 
@@ -48,7 +48,7 @@ and carbon values of the whole system.
 
 ## Community Version / Enterprise Version
 
-We believe in open source and that for advancing sustainable software the measurement tools must be freely accessible
+We believe in open source and that for reducing the energy consumption of software the measurement tools must be freely accessible
 and falsifyable.
 
 The **community version** gives you all the functionality for energy and carbon estimation a <u>free open source MIT license.</u>

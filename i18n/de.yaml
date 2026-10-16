@@ -1,5 +1,5 @@
 - id: home_what_we_do
-  translation: "Software Emissionen senken."
+  translation: "Software-Emissionen senken"
 - id: home_teaser
   translation: "Wir unterstützen Unternehmen, Behörden und Open-Source-Communites dabei, die CO2-Emissionen ihrer digitalen Dienste zu analysieren und zu reduzieren."
 - id: home_cta
@@ -79,7 +79,7 @@
 
 
 - id: home_conference_teaser
-  translation: "Wir organisieren die größte **Nachhaltigkeits-Konferenz** für **Software** in Europa <br> und bringen Softwareentwickler, Hardwaredesigner und Rechenzentrumsexperten zusammen,<br> um eine nachhaltige digitale Zukunft zu schaffen"
+  translation: "Wir organisieren die größte **Nachhaltigkeits-Konferenz** für **Software** in Europa <br> und bringen Softwareentwickler, Hardwaredesigner und Rechenzentrumsexperten zusammen,<br> um den Energieverbrauch und die Emissionen digitaler Technik zu messen und zu senken"
 
 - id: newsroom_welcome
   translation: "Herzlich Willkommen im Newsroom von Green Coding Solutions. Hier bieten wir JournalistInnen, sonstigen MultiplikatorInnen und allen Interessierten Zugang zu unseren neuesten Nachrichten und Aktivitäten.  Zudem die wichtigsten Medienmaterialien zum Download, jüngste Beiträge in Publikationen sowie anstehende Events."

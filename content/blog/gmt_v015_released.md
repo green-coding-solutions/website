@@ -9,7 +9,7 @@ authorlink: "https://www.linkedin.com/in/arne-tarara"
 
 The long awaited feature to make comparisons with the Green Metrics Tool is finally live 🔥
 
-Our measurement workflow now includes phases (Baseline, Idle, Installation, Boot, Runtime, Remove) which makes our tool compatible with the requirements specified by the [Blue Angel for Software](https://www.blauer-engel.de/en/productworld/resources-and-energy-efficient-software-products).
+Our measurement workflow now includes phases (Baseline, Idle, Installation, Boot, Runtime, Remove) which makes our tool compatible with the requirements specified by the [Blue Angel for Software](https://www.blauer-engel.de/en/productworld/software).
 
 Having these phases in the measurement workflow is an essential first step towards a more real-life quantification of an application, as most of the cost of an application can actually be occuring in the installation phase for the containers or just simply starting / stopping them.
 

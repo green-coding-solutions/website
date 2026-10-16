@@ -69,7 +69,7 @@ To make the calculation similar to our reported values we thus get:
 **[5.73 W (load) - 4.77 W (idle)] x 217 s / 3.6 = 57.86 mWh** 
 
 
-**Info:** In the official application [documents from the Blauer Engel specification](https://www.blauer-engel.de/de/produktwelt/ressourcen-und-energieeffiziente-softwareprodukte) this *Baseline* is called Grundlast.
+**Info:** In the official application [documents from the Blauer Engel specification](https://www.blauer-engel.de/de/produktwelt/software) this *Baseline* is called Grundlast.
 
 ## Getting it running on Ubuntu 22.04
 

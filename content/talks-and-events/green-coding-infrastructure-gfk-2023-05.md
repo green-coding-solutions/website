@@ -31,7 +31,7 @@ Arne Tarara will share insights on **Understanding Software Carbon emissions**. 
 
 In addition to the speakers, there will be enough time for networking and discussion among attendees. We encourage everyone to bring their own ideas and questions to share with the community.
 
-We look forward to seeing you there and working together to create a more sustainable future through green coding and infrastructure practices!
+We look forward to seeing you there and working together on measuring and reducing the energy consumption of software and infrastructure!
 
 
 ## Slide-Deck PDF
