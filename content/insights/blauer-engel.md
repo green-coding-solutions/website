@@ -8,7 +8,7 @@ authorlink: "https://www.linkedin.com/in/jenndhanaraj/"
 
 ---
 
-# Back up your software's environmental claims with a certificate
+# Show your commitment to sustainability
 
 The Blue Angel for Software ecolabel is more than a label. Given that the Information and Communications (ICT) sector is responsible for 1.8 – 3.8% of global carbon emissions [1].This is about the same as the whole aviation industry.\
 \

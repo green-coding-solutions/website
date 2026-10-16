@@ -21,7 +21,7 @@ We’re proud to be part of the first wave setting this standard.
 
 ## Why we wanted to be one of the first
 
-At Green Coding Solutions, we've always believed that the energy and resource use of software should be measured and kept in check. But in the tech world, energy consumption is often left out of the conversation, especially when it comes to code.
+At Green Coding Solutions, we've always believed that software should work *with* the planet, not against it.. But in the tech world, energy consumption and carbon emissions are often left out of the conversation, especially when it comes to code.
 
 That’s why being one of the first tools to receive the Blue Angel for Software was a big deal for us. It’s not just about the recognition. It’s about showing that it *is* possible to build resource- and energy-efficient, transparent digital products. And that others can (and should) do it too.
 

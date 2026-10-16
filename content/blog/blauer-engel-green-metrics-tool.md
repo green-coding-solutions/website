@@ -16,6 +16,7 @@ Wir freuen uns, dass unser Green Metrics Tool nun mit dem renommierten **Blauer 
 Diese Zertifizierung unterstreicht unser Engagement für transparente Energiemessung und Innovation in der Softwareentwicklung.
 
 ### Was ist die Blauer Engel Zertifizierung?
+
 Der Blaue Engel ist das offizielle deutsche Umweltzeichen, das seit 1978 vergeben wird. 
 Es legt strenge Umweltkriterien für Produkte und Dienstleistungen fest. 
 Für Software ([DE-UZ 215](https://www.blauer-engel.de/de/produktwelt/software)) lauten die offiziellen Aussagen des Umweltzeichens:
@@ -46,7 +47,7 @@ Zu den wichtigsten Funktionen des Green Metrics Tool gehören:
 
 - Überwachung in Echtzeit: Verfolgen Sie die Energienutzung und den Ressourcenverbrauch in allen Systemen.
 - Optimierungsempfehlungen: Identifizieren Sie Ineffizienzen und schlagen Sie Verbesserungen vor.
-- Berichte: Erstellen Sie detaillierte Energie- und CO2-Berichte für jede Messung, zum Beispiel als SCI-Wert.
+- Umfassende Berichterstattung: Erstellen Sie detaillierte Nachhaltigkeitsberichte, die den gesetzlichen und unternehmensinternen Standards entsprechen.
 
 Die Zertifizierung bestätigt, dass das Green Metrics Tool selbst die Kriterien des Blauen Engels für ressourcen- und energieeffiziente Software (DE-UZ 215) erfüllt.
 
@@ -103,7 +104,7 @@ Key features of the Green Metrics Tool include:
 
 - Real-time Monitoring: Track energy usage and resource consumption across systems.
 - Optimization Recommendations: Identify inefficiencies and suggest improvements.
-- Reporting: Generate detailed energy and carbon reports for every measurement, for example as an SCI value.
+- Reporting: Generate detailed sustainability reports aligned with regulatory and corporate standards.
 
 The certification validates that the Green Metrics Tool itself meets the Blue Angel criteria for resource- and energy-efficient software (DE-UZ 215).
 

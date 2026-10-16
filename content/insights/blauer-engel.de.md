@@ -8,7 +8,7 @@ authorlink: "https://www.linkedin.com/in/jenndhanaraj/"
 
 ---
 
-# Belegen Sie die Umweltaussagen Ihrer Software mit einem Zertifikat
+# Zeigen Sie Ihr Engagement für Nachhaltigkeit
 
 Der Blaue Engel für Software -Ökolabel ist mehr als ein Label. Der Sektor für Informations- und Kommunikationstechnologie (IKT) für 1,8 - 3,8% der globalen CO2-Emissionen verantwortlich ist [1]. Dies ist ungefähr das gleiche wie die gesamte Luftfahrtindustrie. \
 \
